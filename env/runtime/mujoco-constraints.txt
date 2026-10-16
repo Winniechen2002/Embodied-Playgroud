@@ -1,0 +1,16 @@
+# Engineering environment exercised by the native MuJoCo checks.
+mujoco==3.3.7
+gymnasium==1.2.1
+numpy==1.26.4
+Pillow==11.3.0
+scipy==1.15.3
+# Transitive runtime dependencies observed in the same engineering interpreter.
+absl-py==2.5.0
+etils==1.14.0
+glfw==2.10.2
+PyOpenGL==3.1.10
+cloudpickle==3.1.2
+typing_extensions==4.16.0
+Farama-Notifications==0.0.6
+fsspec==2026.9.0
+zipp==4.1.1

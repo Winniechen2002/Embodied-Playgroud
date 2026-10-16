@@ -1,0 +1,22 @@
+# Local runtimes, credentials and generated artifacts
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+output/
+outputs/
+logs/
+*.log
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+*.sqlite
+*.sqlite-*
+session.json
+private/

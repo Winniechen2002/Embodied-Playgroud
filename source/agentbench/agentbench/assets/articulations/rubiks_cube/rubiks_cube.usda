@@ -1,0 +1,2651 @@
+#usda 1.0
+(
+    defaultPrim = "RubiksCube"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "RubiksCube" (
+    kind = "component"
+)
+{
+    def Scope "Materials"
+    {
+        def Material "cubie_physics_material" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            float physics:staticFriction = 2
+            float physics:dynamicFriction = 1.5
+            float physics:restitution = 0
+        }
+    }
+
+    def Scope "Mechanism"
+    {
+        def Xform "world_anchor" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = true
+            float physics:mass = 0.010000000
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Xform "core" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.010000000
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Xform "carrier_x" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Xform "carrier_y" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Xform "carrier_z" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Scope "Cubies"
+    {
+        def Xform "cubie_m1_m1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, -0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_m1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, -0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_m1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, -0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_z0_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0000000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_z0_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, 0.0000000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_z0_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0000000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_p1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_p1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, 0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_p1_m1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0240000, -0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_D"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.8200000, 0.0200000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, -0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_m1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, -0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_m1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, -0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_m1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, -0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_z0_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0000000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_z0_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0000000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_p1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_p1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, 0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_p1_z0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0240000, 0.0000000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_m1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, -0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_m1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, -0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_m1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, -0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_F"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.5500000, 0.1200000)]
+                double3 xformOp:translate = (0.0000000, -0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_z0_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0000000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_z0_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, 0.0000000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_z0_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0000000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_m1_p1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (-0.0240000, 0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_L"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(1.0000000, 0.3200000, 0.0200000)]
+                double3 xformOp:translate = (-0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_z0_p1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0000000, 0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "cubie_p1_p1_p1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physxRigidBody:linearDamping = 0.05
+            float physxRigidBody:angularDamping = 0.2
+            bool physics:kinematicEnabled = false
+            float physics:mass = 0.003807692
+            double3 xformOp:translate = (0.0240000, 0.0240000, 0.0240000)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "body" (
+                prepend apiSchemas = ["PhysicsCollisionAPI"]
+            )
+            {
+                double size = 0.0230000
+                color3f[] primvars:displayColor = [(0.015, 0.015, 0.015)]
+                rel material:binding:physics = </RubiksCube/Materials/cubie_physics_material> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            def Cube "sticker_U"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.9500000, 0.9500000, 0.9500000)]
+                double3 xformOp:translate = (0.0000000, 0.0000000, 0.0117000)
+                double3 xformOp:scale = (0.0195000, 0.0195000, 0.0004000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_B"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.0200000, 0.2000000, 0.8500000)]
+                double3 xformOp:translate = (0.0000000, 0.0117000, 0.0000000)
+                double3 xformOp:scale = (0.0195000, 0.0004000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "sticker_R"
+            {
+                double size = 1
+                color3f[] primvars:displayColor = [(0.8500000, 0.0300000, 0.0300000)]
+                double3 xformOp:translate = (0.0117000, 0.0000000, 0.0000000)
+                double3 xformOp:scale = (0.0004000, 0.0195000, 0.0195000)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+    }
+
+    def Scope "Joints"
+    {
+        def PhysicsFixedJoint "world_core_anchor"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/world_anchor>
+            rel physics:body1 = </RubiksCube/Mechanism/core>
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "carrier_hinge_x"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_x>
+            uniform token physics:axis = "X"
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "carrier_hinge_y"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_y>
+            uniform token physics:axis = "Y"
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "carrier_hinge_z"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_z>
+            uniform token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_transport_lock_x"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_x>
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_transport_lock_y"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_y>
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_transport_lock_z"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Mechanism/carrier_z>
+            point3f physics:localPos0 = (0, 0, 0)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_m1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_m1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_m1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_z0>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_z0>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_z0>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_z0>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_p1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_p1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_p1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_m1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_z0_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "core_anchor_cubie_p1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/core>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = true
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_m1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_m1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_m1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_z0>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_z0>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_z0>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_z0>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_p1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_p1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_p1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_m1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_z0_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_x_cubie_p1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_x>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_m1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_m1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_m1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_z0>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_z0>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_z0>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_z0>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_p1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_p1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_p1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_m1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_z0_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_y_cubie_p1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_y>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_m1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_m1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_m1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_m1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_z0_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_m1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_m1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_p1_m1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_m1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, -0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_z0>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_z0>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_m1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_z0>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_z0_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_z0>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_z0>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_p1_z0"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_z0>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0000000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_m1_p1>
+            point3f physics:localPos0 = (-0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_m1_p1>
+            point3f physics:localPos0 = (0.0000000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_m1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_m1_p1>
+            point3f physics:localPos0 = (0.0240000, -0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_z0_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_z0_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_z0_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_z0_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0000000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_m1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_m1_p1_p1>
+            point3f physics:localPos0 = (-0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_z0_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_z0_p1_p1>
+            point3f physics:localPos0 = (0.0000000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "carrier_attachment_z_cubie_p1_p1_p1"
+        {
+            rel physics:body0 = </RubiksCube/Mechanism/carrier_z>
+            rel physics:body1 = </RubiksCube/Cubies/cubie_p1_p1_p1>
+            point3f physics:localPos0 = (0.0240000, 0.0240000, 0.0240000)
+            bool physics:collisionEnabled = false
+            bool physics:excludeFromArticulation = true
+            bool physics:jointEnabled = false
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+    }
+}

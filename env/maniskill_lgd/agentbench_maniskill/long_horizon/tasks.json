@@ -1,0 +1,7702 @@
+[
+  {
+    "id": 1,
+    "code": "L1",
+    "title": "Prepare a shared writing desk",
+    "instruction": "Clear the central writing area. Put the two books in the rear book rack and the marker and tape in the left drawer, then close the drawer. Leave the mug and remote on your colleague’s right-hand mat exactly where they are.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.73,
+        0.78,
+        0.75
+      ],
+      "floor": [
+        0.43,
+        0.31,
+        0.2
+      ],
+      "accent": [
+        0.23,
+        0.46,
+        0.46
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0,
+          0.1
+        ],
+        "size": [
+          1.85,
+          0.8,
+          0.76
+        ],
+        "color": [
+          0.67,
+          0.53,
+          0.36
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "desk_drawer",
+        "position": [
+          -0.54,
+          0.12,
+          0.49
+        ],
+        "size": [
+          0.5,
+          0.43,
+          0.2
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "book_rack",
+        "position": [
+          -0.5,
+          0.36,
+          0.762
+        ],
+        "shapes": [
+          [
+            [
+              0.27,
+              0.125,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.27,
+              0.012,
+              0.125
+            ],
+            [
+              0,
+              0.125,
+              0.125
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.125,
+              0.125
+            ],
+            [
+              -0.27,
+              0,
+              0.125
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.125,
+              0.125
+            ],
+            [
+              0.27,
+              0,
+              0.125
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.27,
+              0.125,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.25
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "colleague_mat",
+        "position": [
+          0.64,
+          0.18,
+          0.76
+        ],
+        "shapes": [
+          [
+            [
+              0.2,
+              0.25,
+              0.002
+            ],
+            [
+              0,
+              0,
+              0.002
+            ],
+            [
+              0.24,
+              0.38,
+              0.43
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "blue_book",
+        "initial": {
+          "xy": [
+            0.02,
+            0.02
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0.1
+          ]
+        },
+        "asset": "book_blue",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.024,
+          "frame": "book_rack",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "red_book",
+        "initial": {
+          "xy": [
+            0.19,
+            0.25
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            -0.15
+          ]
+        },
+        "asset": "book_red",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.024,
+          "frame": "book_rack",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "marker",
+        "initial": {
+          "xy": [
+            -0.16797035932540894,
+            -0.08006281405687332
+          ],
+          "bottom": 0.7600000216488113,
+          "gap": 0.0001,
+          "rpy": [
+            0.00664379505884997,
+            0.2104711644525974,
+            0.00013110275928057604
+          ]
+        },
+        "asset": "large_marker",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "desk_drawer/tray"
+        }
+      },
+      {
+        "name": "tape",
+        "initial": {
+          "xy": [
+            0.22,
+            -0.1
+          ],
+          "bottom": 0.76
+        },
+        "asset": "tape",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.11,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "desk_drawer/tray"
+        }
+      },
+      {
+        "name": "colleague_mug",
+        "initial": {
+          "xy": [
+            0.71,
+            0.32
+          ],
+          "bottom": 0.764
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1
+      },
+      {
+        "name": "colleague_remote",
+        "initial": {
+          "xy": [
+            0.57,
+            0.06
+          ],
+          "bottom": 0.764
+        },
+        "asset": "remote",
+        "source": "prepared",
+        "scale": 1
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "colleague_mug",
+      "colleague_remote"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "joint",
+        "key": "desk_drawer/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "marker",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "desk_drawer/tray",
+        "half": [
+          0.075,
+          0.13
+        ],
+        "tolerance": 0.016,
+        "support": "desk_drawer/tray"
+      },
+      {
+        "type": "region",
+        "object": "tape",
+        "xy": [
+          0.11,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "desk_drawer/tray",
+        "half": [
+          0.095,
+          0.13
+        ],
+        "tolerance": 0.016,
+        "support": "desk_drawer/tray"
+      },
+      {
+        "type": "region",
+        "object": "blue_book",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.024,
+        "frame": "book_rack",
+        "half": [
+          0.108,
+          0.111
+        ],
+        "tolerance": 0.016,
+        "support": "book_rack"
+      },
+      {
+        "type": "region",
+        "object": "red_book",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.024,
+        "frame": "book_rack",
+        "half": [
+          0.108,
+          0.111
+        ],
+        "tolerance": 0.016,
+        "support": "book_rack"
+      },
+      {
+        "type": "clear",
+        "xy": [
+          0.03,
+          0.0
+        ],
+        "half": [
+          0.29,
+          0.18
+        ],
+        "z": 0.76
+      }
+    ],
+    "milestones": [
+      {
+        "id": "drawer_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "desk_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "drawer_marker",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "desk_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "marker",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "desk_drawer/tray",
+            "half": [
+              0.075,
+              0.13
+            ],
+            "tolerance": 0.016,
+            "support": "desk_drawer/tray"
+          }
+        ],
+        "requires": [
+          "drawer_access"
+        ]
+      },
+      {
+        "id": "drawer_tape",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "desk_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "tape",
+            "xy": [
+              0.11,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "desk_drawer/tray",
+            "half": [
+              0.095,
+              0.13
+            ],
+            "tolerance": 0.016,
+            "support": "desk_drawer/tray"
+          }
+        ],
+        "requires": [
+          "drawer_access"
+        ]
+      },
+      {
+        "id": "drawer_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "desk_drawer/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "drawer_marker",
+          "drawer_tape"
+        ]
+      },
+      {
+        "id": "blue_book_stored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "blue_book",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.024,
+            "frame": "book_rack",
+            "half": [
+              0.108,
+              0.111
+            ],
+            "tolerance": 0.016,
+            "support": "book_rack"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "red_book_stored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "red_book",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.024,
+            "frame": "book_rack",
+            "half": [
+              0.108,
+              0.111
+            ],
+            "tolerance": 0.016,
+            "support": "book_rack"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "writing_area_clear",
+        "conditions": [
+          {
+            "type": "clear",
+            "xy": [
+              0.03,
+              0.0
+            ],
+            "half": [
+              0.29,
+              0.18
+            ],
+            "z": 0.76
+          }
+        ],
+        "requires": [
+          "blue_book_stored",
+          "red_book_stored",
+          "drawer_closed"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 2,
+    "code": "L2",
+    "title": "Reset the kitchen after baking",
+    "instruction": "Put the sugar and flour containers in the cupboard and the spoon and fork in the utensil drawer. Retract the oven rack before closing the oven door, set both oven knobs to OFF, and close the cupboard and drawer. Leave the cooling loaf untouched.",
+    "robot": {
+      "uid": "everyday_robot_09",
+      "position": [
+        -0.12,
+        -0.3,
+        0.9
+      ],
+      "yaw": 0
+    },
+    "palette": {
+      "wall": [
+        0.84,
+        0.78,
+        0.67
+      ],
+      "floor": [
+        0.45,
+        0.31,
+        0.21
+      ],
+      "accent": [
+        0.5,
+        0.28,
+        0.18
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.5,
+        -3.6,
+        2.65
+      ],
+      "target": [
+        -0.1,
+        0.25,
+        0.85
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0.42,
+          0.28
+        ],
+        "size": [
+          1.25,
+          0.9,
+          0.9
+        ],
+        "color": [
+          0.82,
+          0.79,
+          0.69
+        ]
+      },
+      {
+        "kind": "source",
+        "name": "oven",
+        "asset": "oven",
+        "scale": 1.08,
+        "position": [
+          -0.77,
+          0.42,
+          0.42086938966810705
+        ]
+      },
+      {
+        "kind": "cupboard",
+        "name": "pantry",
+        "position": [
+          0.61,
+          0.53,
+          0.902
+        ],
+        "size": [
+          0.55,
+          0.3,
+          0.4
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "utensils",
+        "position": [
+          0.48,
+          0.28,
+          0.61
+        ],
+        "size": [
+          0.52,
+          0.44,
+          0.21
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "robot_pedestal",
+        "position": [
+          -0.12,
+          -0.3,
+          0
+        ],
+        "shapes": [
+          [
+            [
+              0.105,
+              0.105,
+              0.45
+            ],
+            [
+              0,
+              0,
+              0.45
+            ],
+            [
+              0.24,
+              0.27,
+              0.29
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "sugar",
+        "initial": {
+          "xy": [
+            0.23445338010787964,
+            0.15894071757793427
+          ],
+          "bottom": 0.9000000153285874,
+          "gap": 0.0001,
+          "rpy": [
+            0.012433096356073318,
+            -0.06467136144125818,
+            -0.001014183745320833
+          ]
+        },
+        "asset": "sugar_box",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.125,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "pantry/body"
+        }
+      },
+      {
+        "name": "flour",
+        "initial": {
+          "xy": [
+            0.48,
+            0.02
+          ],
+          "bottom": 0.9
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.052,
+              0.042,
+              0.095
+            ],
+            "color": [
+              0.82,
+              0.69,
+              0.48
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.054,
+              0.044,
+              0.008
+            ],
+            "color": [
+              0.49,
+              0.33,
+              0.19
+            ],
+            "p": [
+              0,
+              0,
+              0.1
+            ]
+          }
+        ],
+        "mass": 0.5,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "pantry/body"
+        }
+      },
+      {
+        "name": "spoon",
+        "initial": {
+          "xy": [
+            0.05,
+            0.02
+          ],
+          "bottom": 0.9
+        },
+        "asset": "spoon",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "utensils/tray"
+        }
+      },
+      {
+        "name": "fork",
+        "initial": {
+          "xy": [
+            0.24565322697162628,
+            -0.10001147538423538
+          ],
+          "bottom": 0.9000000139567906,
+          "gap": 0.0001,
+          "rpy": [
+            0.0005147184783624501,
+            -0.5312764004127497,
+            -0.004298592959117434
+          ]
+        },
+        "asset": "fork",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "utensils/tray"
+        }
+      },
+      {
+        "name": "cooling_loaf",
+        "initial": {
+          "xy": [
+            0.91,
+            0.23
+          ],
+          "bottom": 0.9
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.072,
+              0.11,
+              0.044
+            ],
+            "color": [
+              0.58,
+              0.3,
+              0.09
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.3
+      }
+    ],
+    "initial_joints": {
+      "oven/door_joint": 1.05,
+      "oven/rack0_joint": 0.23,
+      "oven/knob_temp_joint": 1.0,
+      "oven/knob_time_joint": 1.2
+    },
+    "goal_joints": {},
+    "protected": [
+      "cooling_loaf"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "joint",
+        "key": "pantry/door",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "sugar",
+        "xy": [
+          -0.125,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "pantry/body",
+        "half": [
+          0.115,
+          0.125
+        ],
+        "tolerance": 0.016,
+        "support": "pantry/body"
+      },
+      {
+        "type": "region",
+        "object": "flour",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "pantry/body",
+        "half": [
+          0.11,
+          0.12
+        ],
+        "tolerance": 0.016,
+        "support": "pantry/body"
+      },
+      {
+        "type": "joint",
+        "key": "utensils/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "spoon",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "utensils/tray",
+        "half": [
+          0.09,
+          0.13
+        ],
+        "tolerance": 0.016,
+        "support": "utensils/tray"
+      },
+      {
+        "type": "region",
+        "object": "fork",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "utensils/tray",
+        "half": [
+          0.09,
+          0.15
+        ],
+        "tolerance": 0.016,
+        "support": "utensils/tray"
+      },
+      {
+        "type": "joint",
+        "key": "oven/rack0_joint",
+        "min": -0.005,
+        "max": 0.01
+      },
+      {
+        "type": "joint",
+        "key": "oven/door_joint",
+        "min": -0.012,
+        "max": 0.03
+      },
+      {
+        "type": "joint",
+        "key": "oven/knob_temp_joint",
+        "min": -0.02,
+        "max": 0.04
+      },
+      {
+        "type": "joint",
+        "key": "oven/knob_time_joint",
+        "min": -0.02,
+        "max": 0.04
+      }
+    ],
+    "milestones": [
+      {
+        "id": "pantry_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "pantry/door",
+            "min": -1.61,
+            "max": -1.0
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "pantry_sugar",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "pantry/door",
+            "min": -1.61,
+            "max": -1.0
+          },
+          {
+            "type": "region",
+            "object": "sugar",
+            "xy": [
+              -0.125,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "pantry/body",
+            "half": [
+              0.115,
+              0.125
+            ],
+            "tolerance": 0.016,
+            "support": "pantry/body"
+          }
+        ],
+        "requires": [
+          "pantry_access"
+        ]
+      },
+      {
+        "id": "pantry_flour",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "pantry/door",
+            "min": -1.61,
+            "max": -1.0
+          },
+          {
+            "type": "region",
+            "object": "flour",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "pantry/body",
+            "half": [
+              0.11,
+              0.12
+            ],
+            "tolerance": 0.016,
+            "support": "pantry/body"
+          }
+        ],
+        "requires": [
+          "pantry_access"
+        ]
+      },
+      {
+        "id": "pantry_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "pantry/door",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "pantry_sugar",
+          "pantry_flour"
+        ]
+      },
+      {
+        "id": "utensils_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "utensils/slide",
+            "min": 0.24,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "utensils_spoon",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "utensils/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "spoon",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "utensils/tray",
+            "half": [
+              0.09,
+              0.13
+            ],
+            "tolerance": 0.016,
+            "support": "utensils/tray"
+          }
+        ],
+        "requires": [
+          "utensils_access"
+        ]
+      },
+      {
+        "id": "utensils_fork",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "utensils/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "fork",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "utensils/tray",
+            "half": [
+              0.09,
+              0.15
+            ],
+            "tolerance": 0.016,
+            "support": "utensils/tray"
+          }
+        ],
+        "requires": [
+          "utensils_access"
+        ]
+      },
+      {
+        "id": "utensils_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "utensils/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "utensils_spoon",
+          "utensils_fork"
+        ]
+      },
+      {
+        "id": "rack_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "oven/door_joint",
+            "min": 0.9,
+            "max": 1.15
+          },
+          {
+            "type": "joint",
+            "key": "oven/rack0_joint",
+            "min": 0.18,
+            "max": 0.33
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "rack_retracted",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "oven/rack0_joint",
+            "min": -0.005,
+            "max": 0.01
+          },
+          {
+            "type": "joint",
+            "key": "oven/door_joint",
+            "min": 0.7,
+            "max": 1.15
+          }
+        ],
+        "requires": [
+          "rack_access"
+        ]
+      },
+      {
+        "id": "oven_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "oven/door_joint",
+            "min": -0.012,
+            "max": 0.03
+          }
+        ],
+        "requires": [
+          "rack_retracted"
+        ]
+      },
+      {
+        "id": "oven_off",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "oven/knob_temp_joint",
+            "min": -0.02,
+            "max": 0.04
+          },
+          {
+            "type": "joint",
+            "key": "oven/knob_time_joint",
+            "min": -0.02,
+            "max": 0.04
+          }
+        ],
+        "requires": []
+      }
+    ],
+    "forbidden": [
+      {
+        "name": "closed_oven_with_extended_rack",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "oven/door_joint",
+            "min": -0.01,
+            "max": 0.15
+          },
+          {
+            "type": "joint",
+            "key": "oven/rack0_joint",
+            "min": 0.08,
+            "max": 0.4
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation.",
+      "OFF means knob configuration only; heat and electrical state are not simulated."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 3,
+    "code": "L3",
+    "title": "Prepare a tea station for two",
+    "instruction": "Take two mugs from the rear cupboard and two spoons from the drawer. Move the book off the serving area, arrange one mug and one spoon at each of the two front settings, and close both storage units. Leave the third setting at the back right undisturbed.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.77,
+        0.82,
+        0.79
+      ],
+      "floor": [
+        0.43,
+        0.33,
+        0.24
+      ],
+      "accent": [
+        0.19,
+        0.43,
+        0.43
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0,
+          0.18
+        ],
+        "size": [
+          1.9,
+          0.93,
+          0.8
+        ],
+        "color": [
+          0.61,
+          0.42,
+          0.27
+        ]
+      },
+      {
+        "kind": "cupboard",
+        "name": "mug_cupboard",
+        "position": [
+          -0.49,
+          0.44,
+          0.802
+        ],
+        "size": [
+          0.52,
+          0.3,
+          0.32
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "spoon_drawer",
+        "position": [
+          0.35,
+          0.25,
+          0.51
+        ],
+        "size": [
+          0.52,
+          0.44,
+          0.21
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "book_rest",
+        "position": [
+          0.12,
+          0.3,
+          0.802
+        ],
+        "shapes": [
+          [
+            [
+              0.125,
+              0.12,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.125,
+              0.012,
+              0.085
+            ],
+            [
+              0,
+              0.12,
+              0.085
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.12,
+              0.085
+            ],
+            [
+              -0.125,
+              0,
+              0.085
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.12,
+              0.085
+            ],
+            [
+              0.125,
+              0,
+              0.085
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.125,
+              0.12,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.17
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "mug_one",
+        "initial": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "mug_cupboard/body"
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.29,
+            -0.04
+          ],
+          "bottom": 0.8
+        }
+      },
+      {
+        "name": "mug_two",
+        "initial": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "mug_cupboard/body"
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.29,
+            -0.04
+          ],
+          "bottom": 0.8
+        }
+      },
+      {
+        "name": "spoon_one",
+        "initial": {
+          "xy": [
+            -0.1,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "spoon_drawer/tray"
+        },
+        "asset": "spoon",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.1,
+            -0.06
+          ],
+          "bottom": 0.8
+        }
+      },
+      {
+        "name": "spoon_two",
+        "initial": {
+          "xy": [
+            0.1,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "spoon_drawer/tray"
+        },
+        "asset": "spoon",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.48,
+            -0.06
+          ],
+          "bottom": 0.8
+        }
+      },
+      {
+        "name": "reading_book",
+        "initial": {
+          "xy": [
+            0.04,
+            -0.03
+          ],
+          "bottom": 0.8,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "asset": "book_blue",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0,
+            0
+          ],
+          "bottom": 0.024,
+          "frame": "book_rest",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "third_mug",
+        "initial": {
+          "xy": [
+            0.73,
+            0.4
+          ],
+          "bottom": 0.8
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1
+      },
+      {
+        "name": "third_spoon",
+        "initial": {
+          "xy": [
+            0.89,
+            0.36
+          ],
+          "bottom": 0.8
+        },
+        "asset": "spoon",
+        "source": "ycb",
+        "scale": 1
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "third_mug",
+      "third_spoon"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "joint",
+        "key": "mug_cupboard/door",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "mug_one",
+        "xy": [
+          -0.29,
+          -0.04
+        ],
+        "bottom": 0.8,
+        "half": [
+          0.085,
+          0.12
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "region",
+        "object": "mug_two",
+        "xy": [
+          0.29,
+          -0.04
+        ],
+        "bottom": 0.8,
+        "half": [
+          0.085,
+          0.12
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "joint",
+        "key": "spoon_drawer/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "spoon_one",
+        "xy": [
+          -0.1,
+          -0.06
+        ],
+        "bottom": 0.8,
+        "half": [
+          0.085,
+          0.12
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "region",
+        "object": "spoon_two",
+        "xy": [
+          0.48,
+          -0.06
+        ],
+        "bottom": 0.8,
+        "half": [
+          0.085,
+          0.12
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "region",
+        "object": "reading_book",
+        "xy": [
+          0,
+          0
+        ],
+        "bottom": 0.024,
+        "frame": "book_rest",
+        "half": [
+          0.105,
+          0.108
+        ],
+        "tolerance": 0.016,
+        "support": "book_rest"
+      },
+      {
+        "type": "orientation",
+        "object": "mug_one",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "world": [
+          0,
+          0,
+          1
+        ],
+        "tolerance": 12
+      },
+      {
+        "type": "orientation",
+        "object": "mug_two",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "world": [
+          0,
+          0,
+          1
+        ],
+        "tolerance": 12
+      }
+    ],
+    "milestones": [
+      {
+        "id": "mugs_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "mug_cupboard/door",
+            "min": -1.61,
+            "max": -1
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "mugs_mug_one",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "mug_cupboard/door",
+            "min": -1.61,
+            "max": -1
+          },
+          {
+            "type": "region",
+            "object": "mug_one",
+            "xy": [
+              -0.29,
+              -0.04
+            ],
+            "bottom": 0.8,
+            "half": [
+              0.085,
+              0.12
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": [
+          "mugs_access"
+        ]
+      },
+      {
+        "id": "mugs_mug_two",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "mug_cupboard/door",
+            "min": -1.61,
+            "max": -1
+          },
+          {
+            "type": "region",
+            "object": "mug_two",
+            "xy": [
+              0.29,
+              -0.04
+            ],
+            "bottom": 0.8,
+            "half": [
+              0.085,
+              0.12
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": [
+          "mugs_access"
+        ]
+      },
+      {
+        "id": "mugs_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "mug_cupboard/door",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "mugs_mug_one",
+          "mugs_mug_two"
+        ]
+      },
+      {
+        "id": "spoons_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "spoon_drawer/slide",
+            "min": 0.24,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "spoons_spoon_one",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "spoon_drawer/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "spoon_one",
+            "xy": [
+              -0.1,
+              -0.06
+            ],
+            "bottom": 0.8,
+            "half": [
+              0.085,
+              0.12
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": [
+          "spoons_access"
+        ]
+      },
+      {
+        "id": "spoons_spoon_two",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "spoon_drawer/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "spoon_two",
+            "xy": [
+              0.48,
+              -0.06
+            ],
+            "bottom": 0.8,
+            "half": [
+              0.085,
+              0.12
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": [
+          "spoons_access"
+        ]
+      },
+      {
+        "id": "spoons_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "spoon_drawer/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "spoons_spoon_one",
+          "spoons_spoon_two"
+        ]
+      },
+      {
+        "id": "serving_area_cleared",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "reading_book",
+            "xy": [
+              0,
+              0
+            ],
+            "bottom": 0.024,
+            "frame": "book_rest",
+            "half": [
+              0.105,
+              0.108
+            ],
+            "tolerance": 0.016,
+            "support": "book_rest"
+          }
+        ],
+        "requires": []
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 4,
+    "code": "L4",
+    "title": "Pack a cabinet-handle repair kit",
+    "instruction": "Prepare a kit for replacing the loose cabinet handle: pack the Phillips screwdriver, replacement handle, and both slim M4 screws into the open repair case. Leave the drill, wrench, and larger M6 screw on the bench. Close the lid and engage the latch.",
+    "robot": {
+      "uid": "everyday_robot_03",
+      "position": [
+        0.14,
+        -0.24,
+        0.84
+      ],
+      "yaw": 0
+    },
+    "palette": {
+      "wall": [
+        0.62,
+        0.68,
+        0.72
+      ],
+      "floor": [
+        0.33,
+        0.29,
+        0.24
+      ],
+      "accent": [
+        0.65,
+        0.34,
+        0.14
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0.05,
+          0.16
+        ],
+        "size": [
+          1.75,
+          0.96,
+          0.84
+        ],
+        "color": [
+          0.4,
+          0.29,
+          0.2
+        ]
+      },
+      {
+        "kind": "case",
+        "name": "repair_case",
+        "position": [
+          0.25,
+          0.32,
+          0.842
+        ],
+        "size": [
+          0.67,
+          0.38,
+          0.14
+        ],
+        "color": [
+          0.19,
+          0.27,
+          0.31
+        ],
+        "dividers": [
+          0.02
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "robot_pedestal",
+        "position": [
+          0.14,
+          -0.24,
+          0
+        ],
+        "shapes": [
+          [
+            [
+              0.105,
+              0.105,
+              0.42
+            ],
+            [
+              0,
+              0,
+              0.42
+            ],
+            [
+              0.24,
+              0.27,
+              0.29
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "phillips",
+        "initial": {
+          "xy": [
+            -0.07148198038339615,
+            -0.08985346555709839
+          ],
+          "bottom": 0.8400000622935683,
+          "gap": 0.0001,
+          "rpy": [
+            -0.036229019900231696,
+            0.4428963117648692,
+            0.0014256034226321247
+          ]
+        },
+        "asset": "phillips_screwdriver",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.19,
+            0
+          ],
+          "bottom": 0.009,
+          "frame": "repair_case/body"
+        }
+      },
+      {
+        "name": "handle",
+        "initial": {
+          "xy": [
+            0.16,
+            -0.1
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.071,
+              0.013,
+              0.009
+            ],
+            "color": [
+              0.6,
+              0.64,
+              0.67
+            ],
+            "p": [
+              0,
+              0,
+              0.03
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.01,
+              0.013,
+              0.016
+            ],
+            "color": [
+              0.6,
+              0.64,
+              0.67
+            ],
+            "p": [
+              -0.061,
+              0,
+              0.007
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.01,
+              0.013,
+              0.016
+            ],
+            "color": [
+              0.6,
+              0.64,
+              0.67
+            ],
+            "p": [
+              0.061,
+              0,
+              0.007
+            ]
+          }
+        ],
+        "mass": 0.1,
+        "goal": {
+          "xy": [
+            0.17,
+            0.07
+          ],
+          "bottom": 0.009,
+          "frame": "repair_case/body"
+        }
+      },
+      {
+        "name": "M4_screw_1",
+        "initial": {
+          "xy": [
+            0.34,
+            -0.1
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.002,
+            "height": 0.032,
+            "color": [
+              0.68,
+              0.68,
+              0.66
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.004,
+            "height": 0.003,
+            "color": [
+              0.74,
+              0.74,
+              0.73
+            ],
+            "p": [
+              0,
+              0,
+              0.0175
+            ]
+          }
+        ],
+        "mass": 0.004,
+        "goal": {
+          "xy": [
+            0.1,
+            -0.09
+          ],
+          "bottom": 0.009,
+          "frame": "repair_case/body"
+        }
+      },
+      {
+        "name": "M4_screw_2",
+        "initial": {
+          "xy": [
+            0.43,
+            -0.1
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.002,
+            "height": 0.032,
+            "color": [
+              0.68,
+              0.68,
+              0.66
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.004,
+            "height": 0.003,
+            "color": [
+              0.74,
+              0.74,
+              0.73
+            ],
+            "p": [
+              0,
+              0,
+              0.0175
+            ]
+          }
+        ],
+        "mass": 0.004,
+        "goal": {
+          "xy": [
+            0.22,
+            -0.09
+          ],
+          "bottom": 0.009,
+          "frame": "repair_case/body"
+        }
+      },
+      {
+        "name": "drill",
+        "initial": {
+          "xy": [
+            -0.5800989270210266,
+            0.34058570861816406
+          ],
+          "bottom": 0.8399999486609661,
+          "gap": 0.0001,
+          "rpy": [
+            -0.021599412698451705,
+            -0.0060646999054547734,
+            -0.0005212720425581841
+          ]
+        },
+        "asset": "power_drill",
+        "source": "ycb",
+        "scale": 1
+      },
+      {
+        "name": "wrench",
+        "initial": {
+          "xy": [
+            -0.5,
+            0.03
+          ],
+          "bottom": 0.84
+        },
+        "asset": "adjustable_wrench",
+        "source": "ycb",
+        "scale": 1
+      },
+      {
+        "name": "M6_screw",
+        "initial": {
+          "xy": [
+            0.76,
+            -0.05
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.003,
+            "height": 0.047,
+            "color": [
+              0.48,
+              0.49,
+              0.48
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.005,
+            "height": 0.004,
+            "color": [
+              0.64,
+              0.64,
+              0.61
+            ],
+            "p": [
+              0,
+              0,
+              0.0255
+            ]
+          }
+        ],
+        "mass": 0.009
+      }
+    ],
+    "initial_joints": {
+      "repair_case/lid": -1.45,
+      "repair_case/latch": 0.045
+    },
+    "goal_joints": {
+      "repair_case/lid": 0,
+      "repair_case/latch": 0
+    },
+    "protected": [
+      "drill",
+      "wrench",
+      "M6_screw"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "region",
+        "object": "phillips",
+        "xy": [
+          -0.19,
+          0
+        ],
+        "bottom": 0.009,
+        "frame": "repair_case/body",
+        "half": [
+          0.105,
+          0.175
+        ],
+        "tolerance": 0.016,
+        "support": "repair_case/body"
+      },
+      {
+        "type": "region",
+        "object": "handle",
+        "xy": [
+          0.17,
+          0.07
+        ],
+        "bottom": 0.009,
+        "frame": "repair_case/body",
+        "half": [
+          0.11,
+          0.048
+        ],
+        "tolerance": 0.016,
+        "support": "repair_case/body"
+      },
+      {
+        "type": "region",
+        "object": "M4_screw_1",
+        "xy": [
+          0.1,
+          -0.09
+        ],
+        "bottom": 0.009,
+        "frame": "repair_case/body",
+        "half": [
+          0.035,
+          0.035
+        ],
+        "tolerance": 0.016,
+        "support": "repair_case/body"
+      },
+      {
+        "type": "region",
+        "object": "M4_screw_2",
+        "xy": [
+          0.22,
+          -0.09
+        ],
+        "bottom": 0.009,
+        "frame": "repair_case/body",
+        "half": [
+          0.035,
+          0.035
+        ],
+        "tolerance": 0.016,
+        "support": "repair_case/body"
+      },
+      {
+        "type": "joint",
+        "key": "repair_case/lid",
+        "min": -0.03,
+        "max": 0.02
+      },
+      {
+        "type": "joint",
+        "key": "repair_case/latch",
+        "min": -0.003,
+        "max": 0.006
+      }
+    ],
+    "milestones": [
+      {
+        "id": "case_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -1.66,
+            "max": -1.1
+          },
+          {
+            "type": "joint",
+            "key": "repair_case/latch",
+            "min": 0.035,
+            "max": 0.05
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "packed_phillips",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "phillips",
+            "xy": [
+              -0.19,
+              0
+            ],
+            "bottom": 0.009,
+            "frame": "repair_case/body",
+            "half": [
+              0.105,
+              0.175
+            ],
+            "tolerance": 0.016,
+            "support": "repair_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -1.66,
+            "max": -0.7
+          }
+        ],
+        "requires": [
+          "case_access"
+        ]
+      },
+      {
+        "id": "packed_handle",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "handle",
+            "xy": [
+              0.17,
+              0.07
+            ],
+            "bottom": 0.009,
+            "frame": "repair_case/body",
+            "half": [
+              0.11,
+              0.048
+            ],
+            "tolerance": 0.016,
+            "support": "repair_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -1.66,
+            "max": -0.7
+          }
+        ],
+        "requires": [
+          "case_access"
+        ]
+      },
+      {
+        "id": "packed_M4_screw_1",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "M4_screw_1",
+            "xy": [
+              0.1,
+              -0.09
+            ],
+            "bottom": 0.009,
+            "frame": "repair_case/body",
+            "half": [
+              0.035,
+              0.035
+            ],
+            "tolerance": 0.016,
+            "support": "repair_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -1.66,
+            "max": -0.7
+          }
+        ],
+        "requires": [
+          "case_access"
+        ]
+      },
+      {
+        "id": "packed_M4_screw_2",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "M4_screw_2",
+            "xy": [
+              0.22,
+              -0.09
+            ],
+            "bottom": 0.009,
+            "frame": "repair_case/body",
+            "half": [
+              0.035,
+              0.035
+            ],
+            "tolerance": 0.016,
+            "support": "repair_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -1.66,
+            "max": -0.7
+          }
+        ],
+        "requires": [
+          "case_access"
+        ]
+      },
+      {
+        "id": "case_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "repair_case/lid",
+            "min": -0.03,
+            "max": 0.02
+          }
+        ],
+        "requires": [
+          "packed_phillips",
+          "packed_handle",
+          "packed_M4_screw_1",
+          "packed_M4_screw_2"
+        ]
+      },
+      {
+        "id": "case_secured",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "repair_case/latch",
+            "min": -0.003,
+            "max": 0.006
+          }
+        ],
+        "requires": [
+          "case_closed"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 5,
+    "code": "L5",
+    "title": "Unload cups and cutlery from the dishwasher",
+    "instruction": "Open the dishwasher and extend its upper rack. Put both mugs in the cupboard and the spoon and fork in the drawer; leave the bowl in the lower rack. Retract the upper rack before closing the dishwasher, then close the cupboard and drawer.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.81,
+        0.82,
+        0.78
+      ],
+      "floor": [
+        0.43,
+        0.35,
+        0.27
+      ],
+      "accent": [
+        0.24,
+        0.41,
+        0.47
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.6,
+        -3.3,
+        2.35
+      ],
+      "target": [
+        0,
+        0.26,
+        0.79
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "source",
+        "name": "dishwasher",
+        "asset": "dishwasher",
+        "scale": 0.9,
+        "position": [
+          -0.61,
+          0.45,
+          0.4426145846820437
+        ],
+        "extras": {
+          "rack1": [
+            {
+              "half": [
+                0.215,
+                0.205,
+                0.006
+              ],
+              "p": [
+                0,
+                0.02,
+                0.158
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.062
+              ],
+              "p": [
+                -0.19,
+                -0.16,
+                0.096
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.062
+              ],
+              "p": [
+                -0.19,
+                0.2,
+                0.096
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.062
+              ],
+              "p": [
+                0.19,
+                -0.16,
+                0.096
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.062
+              ],
+              "p": [
+                0.19,
+                0.2,
+                0.096
+              ]
+            }
+          ],
+          "rack0": [
+            {
+              "half": [
+                0.215,
+                0.205,
+                0.006
+              ],
+              "p": [
+                0,
+                0.02,
+                -0.119
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.065
+              ],
+              "p": [
+                -0.19,
+                -0.16,
+                -0.184
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.065
+              ],
+              "p": [
+                -0.19,
+                0.2,
+                -0.184
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.065
+              ],
+              "p": [
+                0.19,
+                -0.16,
+                -0.184
+              ]
+            },
+            {
+              "half": [
+                0.009,
+                0.009,
+                0.065
+              ],
+              "p": [
+                0.19,
+                0.2,
+                -0.184
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0.36,
+          0.38
+        ],
+        "size": [
+          1.13,
+          0.77,
+          0.94
+        ],
+        "color": [
+          0.8,
+          0.8,
+          0.75
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "over_dishwasher",
+        "position": [
+          -0.61,
+          0.45,
+          0.914
+        ],
+        "shapes": [
+          [
+            [
+              0.34,
+              0.36,
+              0.026
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0.8,
+              0.8,
+              0.75
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "cupboard",
+        "name": "cup_store",
+        "position": [
+          0.4,
+          0.54,
+          0.942
+        ],
+        "size": [
+          0.56,
+          0.3,
+          0.35
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "cutlery",
+        "position": [
+          0.4,
+          0.37,
+          0.63
+        ],
+        "size": [
+          0.56,
+          0.46,
+          0.23
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "clean_mug_one",
+        "initial": {
+          "xy": [
+            -0.12,
+            0.04
+          ],
+          "bottom": 0.1476,
+          "frame": "dishwasher/rack1"
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "cup_store/body"
+        }
+      },
+      {
+        "name": "clean_mug_two",
+        "initial": {
+          "xy": [
+            0.12,
+            0.04
+          ],
+          "bottom": 0.1476,
+          "frame": "dishwasher/rack1"
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "cup_store/body"
+        }
+      },
+      {
+        "name": "clean_spoon",
+        "initial": {
+          "xy": [
+            -0.105,
+            -0.13
+          ],
+          "bottom": 0.1476,
+          "frame": "dishwasher/rack1",
+          "rpy": [
+            0,
+            0,
+            1.5707963267948966
+          ]
+        },
+        "asset": "spoon",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "cutlery/tray"
+        }
+      },
+      {
+        "name": "clean_fork",
+        "initial": {
+          "xy": [
+            0.10108768939971924,
+            -0.1303582489490509
+          ],
+          "bottom": 0.14758657411046833,
+          "frame": "dishwasher/rack1",
+          "rpy": [
+            -0.01803445060295572,
+            -0.24607024384640086,
+            1.590459227717004
+          ],
+          "gap": 0.0001
+        },
+        "asset": "fork",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "cutlery/tray"
+        }
+      },
+      {
+        "name": "lower_bowl",
+        "initial": {
+          "xy": [
+            0,
+            0.02
+          ],
+          "bottom": -0.1017,
+          "frame": "dishwasher/rack0"
+        },
+        "asset": "bowl",
+        "source": "ycb",
+        "scale": 1
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "lower_bowl"
+    ],
+    "protected_joints": [
+      "dishwasher/rack0_joint"
+    ],
+    "final": [
+      {
+        "type": "joint",
+        "key": "cup_store/door",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "clean_mug_one",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "cup_store/body",
+        "half": [
+          0.105,
+          0.15
+        ],
+        "tolerance": 0.016,
+        "support": "cup_store/body"
+      },
+      {
+        "type": "region",
+        "object": "clean_mug_two",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "cup_store/body",
+        "half": [
+          0.105,
+          0.15
+        ],
+        "tolerance": 0.016,
+        "support": "cup_store/body"
+      },
+      {
+        "type": "joint",
+        "key": "cutlery/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "clean_spoon",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "cutlery/tray",
+        "half": [
+          0.105,
+          0.15
+        ],
+        "tolerance": 0.016,
+        "support": "cutlery/tray"
+      },
+      {
+        "type": "region",
+        "object": "clean_fork",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "cutlery/tray",
+        "half": [
+          0.105,
+          0.15
+        ],
+        "tolerance": 0.016,
+        "support": "cutlery/tray"
+      },
+      {
+        "type": "joint",
+        "key": "dishwasher/rack1_joint",
+        "min": -0.004,
+        "max": 0.009
+      },
+      {
+        "type": "joint",
+        "key": "dishwasher/door_joint",
+        "min": -0.01,
+        "max": 0.025
+      }
+    ],
+    "milestones": [
+      {
+        "id": "dishwasher_open",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "dishwasher/door_joint",
+            "min": 0.54,
+            "max": 0.63
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "upper_rack_extended",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "dishwasher/door_joint",
+            "min": 0.54,
+            "max": 0.63
+          },
+          {
+            "type": "joint",
+            "key": "dishwasher/rack1_joint",
+            "min": 0.24,
+            "max": 0.3
+          }
+        ],
+        "requires": [
+          "dishwasher_open"
+        ]
+      },
+      {
+        "id": "cups_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cup_store/door",
+            "min": -1.61,
+            "max": -1
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "cups_clean_mug_one",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cup_store/door",
+            "min": -1.61,
+            "max": -1
+          },
+          {
+            "type": "region",
+            "object": "clean_mug_one",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "cup_store/body",
+            "half": [
+              0.105,
+              0.15
+            ],
+            "tolerance": 0.016,
+            "support": "cup_store/body"
+          }
+        ],
+        "requires": [
+          "cups_access",
+          "upper_rack_extended"
+        ]
+      },
+      {
+        "id": "cups_clean_mug_two",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cup_store/door",
+            "min": -1.61,
+            "max": -1
+          },
+          {
+            "type": "region",
+            "object": "clean_mug_two",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "cup_store/body",
+            "half": [
+              0.105,
+              0.15
+            ],
+            "tolerance": 0.016,
+            "support": "cup_store/body"
+          }
+        ],
+        "requires": [
+          "cups_access",
+          "upper_rack_extended"
+        ]
+      },
+      {
+        "id": "cups_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cup_store/door",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "cups_clean_mug_one",
+          "cups_clean_mug_two"
+        ]
+      },
+      {
+        "id": "cutlery_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cutlery/slide",
+            "min": 0.24,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "cutlery_clean_spoon",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cutlery/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "clean_spoon",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "cutlery/tray",
+            "half": [
+              0.105,
+              0.15
+            ],
+            "tolerance": 0.016,
+            "support": "cutlery/tray"
+          }
+        ],
+        "requires": [
+          "cutlery_access",
+          "upper_rack_extended"
+        ]
+      },
+      {
+        "id": "cutlery_clean_fork",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cutlery/slide",
+            "min": 0.24,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "clean_fork",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "cutlery/tray",
+            "half": [
+              0.105,
+              0.15
+            ],
+            "tolerance": 0.016,
+            "support": "cutlery/tray"
+          }
+        ],
+        "requires": [
+          "cutlery_access",
+          "upper_rack_extended"
+        ]
+      },
+      {
+        "id": "cutlery_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "cutlery/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "cutlery_clean_spoon",
+          "cutlery_clean_fork"
+        ]
+      },
+      {
+        "id": "upper_rack_retracted",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "dishwasher/rack1_joint",
+            "min": -0.004,
+            "max": 0.009
+          },
+          {
+            "type": "joint",
+            "key": "dishwasher/door_joint",
+            "min": 0.54,
+            "max": 0.63
+          }
+        ],
+        "requires": [
+          "cups_clean_mug_one",
+          "cups_clean_mug_two",
+          "cutlery_clean_spoon",
+          "cutlery_clean_fork"
+        ]
+      },
+      {
+        "id": "dishwasher_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "dishwasher/door_joint",
+            "min": -0.01,
+            "max": 0.025
+          }
+        ],
+        "requires": [
+          "upper_rack_retracted"
+        ]
+      }
+    ],
+    "forbidden": [
+      {
+        "name": "door_closed_onto_extended_rack",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "dishwasher/door_joint",
+            "min": -0.01,
+            "max": 0.18
+          },
+          {
+            "type": "joint",
+            "key": "dishwasher/rack1_joint",
+            "min": 0.09,
+            "max": 0.4
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation.",
+      "Added collision-bearing rack liners above the native tines; original rack joints, limits, geometry and textures retained.",
+      "Native dishwasher door travel is 0.624 rad; preserved from source rather than silently widened."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 6,
+    "code": "L6",
+    "title": "Pack a picnic basket",
+    "instruction": "Pack the two water bottles from the refrigerator into the lower layer of the basket, place the rigid divider over them, then add the snack box and apple above it. Take the snack box from the cupboard, preserve the work lunch on the separate side stand, and close both refrigerator doors and the cupboard.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.8,
+        0.81,
+        0.72
+      ],
+      "floor": [
+        0.49,
+        0.36,
+        0.23
+      ],
+      "accent": [
+        0.31,
+        0.44,
+        0.24
+      ]
+    },
+    "camera": {
+      "eye": [
+        3.6,
+        -4.25,
+        2.95
+      ],
+      "target": [
+        -0.16,
+        0.4,
+        1.0
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "source",
+        "name": "fridge",
+        "asset": "fridge",
+        "scale": 1.0,
+        "position": [
+          -1.02,
+          0.73,
+          0.934539563626051
+        ]
+      },
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0.46,
+          0.32
+        ],
+        "size": [
+          1.53,
+          0.86,
+          0.9
+        ],
+        "color": [
+          0.7,
+          0.55,
+          0.36
+        ]
+      },
+      {
+        "kind": "cupboard",
+        "name": "snack_cupboard",
+        "position": [
+          0.78,
+          0.53,
+          0.902
+        ],
+        "size": [
+          0.58,
+          0.32,
+          0.43
+        ]
+      },
+      {
+        "kind": "container",
+        "name": "basket",
+        "position": [
+          0.14,
+          0.15,
+          0.902
+        ],
+        "size": [
+          0.56,
+          0.4,
+          0.26
+        ],
+        "handles": true,
+        "color": [
+          0.58,
+          0.39,
+          0.19
+        ],
+        "rails": true
+      },
+      {
+        "kind": "static",
+        "name": "lunch_shelf",
+        "position": [
+          1.46,
+          0.31,
+          0
+        ],
+        "shapes": [
+          [
+            [
+              0.2,
+              0.23,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.2,
+              0.012,
+              0.45
+            ],
+            [
+              0,
+              0.23,
+              0.45
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.23,
+              0.45
+            ],
+            [
+              -0.2,
+              0,
+              0.45
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.23,
+              0.45
+            ],
+            [
+              0.2,
+              0,
+              0.45
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.2,
+              0.23,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.9
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "water_1",
+        "initial": {
+          "xy": [
+            -0.16,
+            -0.08
+          ],
+          "bottom": 0.243012,
+          "frame": "fridge/object"
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.028,
+            "height": 0.16,
+            "color": [
+              0.37,
+              0.62,
+              0.7
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.012,
+            "height": 0.028,
+            "color": [
+              0.46,
+              0.68,
+              0.72
+            ],
+            "p": [
+              0,
+              0,
+              0.094
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.014,
+            "height": 0.01,
+            "color": [
+              0.18,
+              0.29,
+              0.45
+            ],
+            "p": [
+              0,
+              0,
+              0.113
+            ]
+          }
+        ],
+        "mass": 0.55,
+        "goal": {
+          "xy": [
+            -0.12,
+            0
+          ],
+          "bottom": 0.008,
+          "frame": "basket",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "water_2",
+        "initial": {
+          "xy": [
+            0.16,
+            -0.08
+          ],
+          "bottom": 0.243012,
+          "frame": "fridge/object"
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.028,
+            "height": 0.16,
+            "color": [
+              0.37,
+              0.62,
+              0.7
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.012,
+            "height": 0.028,
+            "color": [
+              0.46,
+              0.68,
+              0.72
+            ],
+            "p": [
+              0,
+              0,
+              0.094
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.014,
+            "height": 0.01,
+            "color": [
+              0.18,
+              0.29,
+              0.45
+            ],
+            "p": [
+              0,
+              0,
+              0.113
+            ]
+          }
+        ],
+        "mass": 0.55,
+        "goal": {
+          "xy": [
+            0.12,
+            0
+          ],
+          "bottom": 0.008,
+          "frame": "basket",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "basket_divider",
+        "initial": {
+          "xy": [
+            0.74,
+            0.1
+          ],
+          "bottom": 0.9,
+          "gap": 0.0001
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.254,
+              0.174,
+              0.012
+            ],
+            "color": [
+              0.76,
+              0.61,
+              0.39
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.18,
+        "goal": {
+          "xy": [
+            0,
+            0
+          ],
+          "bottom": 0.073,
+          "frame": "basket"
+        }
+      },
+      {
+        "name": "snack_box",
+        "initial": {
+          "xy": [
+            -0.002472817897796631,
+            -0.0008412003517150879
+          ],
+          "bottom": 0.01599991282713964,
+          "frame": "snack_cupboard/body",
+          "gap": 0.0001,
+          "rpy": [
+            0.010720593925653795,
+            -0.02944440224670708,
+            0.0022784291985033355
+          ]
+        },
+        "asset": "cracker_box",
+        "source": "ycb",
+        "scale": 0.75,
+        "goal": {
+          "xy": [
+            -0.11,
+            0
+          ],
+          "bottom": 0.097,
+          "frame": "basket",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "picnic_apple",
+        "initial": {
+          "xy": [
+            1.1,
+            0.1
+          ],
+          "bottom": 0.8999998413924614,
+          "gap": 0.0001,
+          "rpy": [
+            0.01394680414636874,
+            -0.06906023176586196,
+            -0.008670723727657585
+          ]
+        },
+        "asset": "apple",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.15,
+            0.02
+          ],
+          "bottom": 0.097,
+          "frame": "basket"
+        }
+      },
+      {
+        "name": "work_lunch",
+        "initial": {
+          "xy": [
+            0,
+            0
+          ],
+          "bottom": 0.912,
+          "frame": "lunch_shelf"
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.115,
+              0.08,
+              0.045
+            ],
+            "color": [
+              0.21,
+              0.39,
+              0.41
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.119,
+              0.084,
+              0.008
+            ],
+            "color": [
+              0.65,
+              0.73,
+              0.7
+            ],
+            "p": [
+              0,
+              0,
+              0.05
+            ]
+          }
+        ],
+        "mass": 0.5
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "work_lunch"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "region",
+        "object": "water_1",
+        "xy": [
+          -0.12,
+          0
+        ],
+        "bottom": 0.008,
+        "frame": "basket",
+        "half": [
+          0.09,
+          0.16
+        ],
+        "tolerance": 0.016,
+        "support": "basket"
+      },
+      {
+        "type": "region",
+        "object": "water_2",
+        "xy": [
+          0.12,
+          0
+        ],
+        "bottom": 0.008,
+        "frame": "basket",
+        "half": [
+          0.09,
+          0.16
+        ],
+        "tolerance": 0.016,
+        "support": "basket"
+      },
+      {
+        "type": "region",
+        "object": "basket_divider",
+        "xy": [
+          0,
+          0
+        ],
+        "bottom": 0.073,
+        "frame": "basket",
+        "half": [
+          0.263,
+          0.183
+        ],
+        "tolerance": 0.016,
+        "support": "basket"
+      },
+      {
+        "type": "region",
+        "object": "snack_box",
+        "xy": [
+          -0.11,
+          0
+        ],
+        "bottom": 0.097,
+        "frame": "basket",
+        "half": [
+          0.13,
+          0.16
+        ],
+        "tolerance": 0.016,
+        "support": "basket_divider"
+      },
+      {
+        "type": "region",
+        "object": "picnic_apple",
+        "xy": [
+          0.15,
+          0.02
+        ],
+        "bottom": 0.097,
+        "frame": "basket",
+        "half": [
+          0.1,
+          0.13
+        ],
+        "tolerance": 0.016,
+        "support": "basket_divider"
+      },
+      {
+        "type": "joint",
+        "key": "fridge/fridge_left_door_joint",
+        "min": -0.01,
+        "max": 0.025
+      },
+      {
+        "type": "joint",
+        "key": "fridge/fridge_right_door_joint",
+        "min": -0.01,
+        "max": 0.025
+      },
+      {
+        "type": "joint",
+        "key": "snack_cupboard/door",
+        "min": -0.01,
+        "max": 0.025
+      }
+    ],
+    "milestones": [
+      {
+        "id": "fridge_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "fridge/fridge_left_door_joint",
+            "min": 1.05,
+            "max": 1.58
+          },
+          {
+            "type": "joint",
+            "key": "fridge/fridge_right_door_joint",
+            "min": 1.05,
+            "max": 1.58
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "water_1_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "water_1",
+            "xy": [
+              -0.12,
+              0
+            ],
+            "bottom": 0.008,
+            "frame": "basket",
+            "half": [
+              0.09,
+              0.16
+            ],
+            "tolerance": 0.016,
+            "support": "basket"
+          }
+        ],
+        "requires": [
+          "fridge_access"
+        ]
+      },
+      {
+        "id": "water_2_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "water_2",
+            "xy": [
+              0.12,
+              0
+            ],
+            "bottom": 0.008,
+            "frame": "basket",
+            "half": [
+              0.09,
+              0.16
+            ],
+            "tolerance": 0.016,
+            "support": "basket"
+          }
+        ],
+        "requires": [
+          "fridge_access"
+        ]
+      },
+      {
+        "id": "divider_installed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "basket_divider",
+            "xy": [
+              0,
+              0
+            ],
+            "bottom": 0.073,
+            "frame": "basket",
+            "half": [
+              0.263,
+              0.183
+            ],
+            "tolerance": 0.016,
+            "support": "basket"
+          }
+        ],
+        "requires": [
+          "water_1_packed",
+          "water_2_packed"
+        ]
+      },
+      {
+        "id": "snack_storage_open",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "snack_cupboard/door",
+            "min": -1.61,
+            "max": -1
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "snack_box_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "snack_box",
+            "xy": [
+              -0.11,
+              0
+            ],
+            "bottom": 0.097,
+            "frame": "basket",
+            "half": [
+              0.13,
+              0.16
+            ],
+            "tolerance": 0.016,
+            "support": "basket_divider"
+          }
+        ],
+        "requires": [
+          "divider_installed",
+          "snack_storage_open"
+        ]
+      },
+      {
+        "id": "picnic_apple_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "picnic_apple",
+            "xy": [
+              0.15,
+              0.02
+            ],
+            "bottom": 0.097,
+            "frame": "basket",
+            "half": [
+              0.1,
+              0.13
+            ],
+            "tolerance": 0.016,
+            "support": "basket_divider"
+          }
+        ],
+        "requires": [
+          "divider_installed"
+        ]
+      },
+      {
+        "id": "left_fridge_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "fridge/fridge_left_door_joint",
+            "min": -0.01,
+            "max": 0.025
+          }
+        ],
+        "requires": [
+          "snack_box_packed",
+          "picnic_apple_packed"
+        ]
+      },
+      {
+        "id": "right_fridge_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "fridge/fridge_right_door_joint",
+            "min": -0.01,
+            "max": 0.025
+          }
+        ],
+        "requires": [
+          "snack_box_packed",
+          "picnic_apple_packed"
+        ]
+      },
+      {
+        "id": "pantry_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "snack_cupboard/door",
+            "min": -0.01,
+            "max": 0.025
+          }
+        ],
+        "requires": [
+          "snack_box_packed",
+          "picnic_apple_packed"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation.",
+      "Basket is anchored; bottles are sealed rigid props, and the divider is a movable rigid board supported by side rails."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 7,
+    "code": "L7",
+    "title": "Prepare a drawing kit",
+    "instruction": "Set out exactly three colored markers and the drawing book on the activity mat. Put the three construction blocks in the drawer and close it. Leave the toy airplane and the extra black marker on the side shelf.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.8,
+        0.79,
+        0.86
+      ],
+      "floor": [
+        0.54,
+        0.41,
+        0.31
+      ],
+      "accent": [
+        0.4,
+        0.32,
+        0.56
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0,
+          0.12
+        ],
+        "size": [
+          1.8,
+          0.86,
+          0.76
+        ],
+        "color": [
+          0.76,
+          0.63,
+          0.46
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "toy_drawer",
+        "position": [
+          0.46,
+          0.2,
+          0.47
+        ],
+        "size": [
+          0.58,
+          0.45,
+          0.21
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "side_shelf",
+        "position": [
+          -0.5,
+          0.42,
+          0.762
+        ],
+        "shapes": [
+          [
+            [
+              0.29,
+              0.145,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.29,
+              0.012,
+              0.11
+            ],
+            [
+              0,
+              0.145,
+              0.11
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.145,
+              0.11
+            ],
+            [
+              -0.29,
+              0,
+              0.11
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.145,
+              0.11
+            ],
+            [
+              0.29,
+              0,
+              0.11
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.29,
+              0.145,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.22
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "activity_mat",
+        "position": [
+          0.12,
+          -0.05,
+          0.76
+        ],
+        "shapes": [
+          [
+            [
+              0.28,
+              0.23,
+              0.002
+            ],
+            [
+              0,
+              0,
+              0.002
+            ],
+            [
+              0.63,
+              0.75,
+              0.78
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "drawing_book",
+        "initial": {
+          "xy": [
+            0.6,
+            0.37
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0.2
+          ]
+        },
+        "asset": "book_blue",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.03,
+            -0.06
+          ],
+          "bottom": 0.764,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "colored_marker_1",
+        "initial": {
+          "xy": [
+            -0.22,
+            0.1
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.007,
+            "height": 0.13,
+            "color": [
+              0.78,
+              0.16,
+              0.12
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.008,
+            "height": 0.022,
+            "color": [
+              0.12,
+              0.13,
+              0.14
+            ],
+            "p": [
+              0,
+              0,
+              0.073
+            ]
+          }
+        ],
+        "mass": 0.026,
+        "goal": {
+          "xy": [
+            0.23,
+            -0.08
+          ],
+          "bottom": 0.764,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "colored_marker_2",
+        "initial": {
+          "xy": [
+            0.27,
+            0.1
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.007,
+            "height": 0.13,
+            "color": [
+              0.14,
+              0.39,
+              0.67
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.008,
+            "height": 0.022,
+            "color": [
+              0.12,
+              0.13,
+              0.14
+            ],
+            "p": [
+              0,
+              0,
+              0.073
+            ]
+          }
+        ],
+        "mass": 0.026,
+        "goal": {
+          "xy": [
+            0.273,
+            -0.08
+          ],
+          "bottom": 0.764,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "colored_marker_3",
+        "initial": {
+          "xy": [
+            0.48,
+            0.1
+          ],
+          "bottom": 0.76,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.007,
+            "height": 0.13,
+            "color": [
+              0.2,
+              0.57,
+              0.31
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.008,
+            "height": 0.022,
+            "color": [
+              0.12,
+              0.13,
+              0.14
+            ],
+            "p": [
+              0,
+              0,
+              0.073
+            ]
+          }
+        ],
+        "mass": 0.026,
+        "goal": {
+          "xy": [
+            0.316,
+            -0.08
+          ],
+          "bottom": 0.764,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "construction_1",
+        "initial": {
+          "xy": [
+            -0.08,
+            -0.08
+          ],
+          "bottom": 0.76
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.03,
+              0.028,
+              0.028
+            ],
+            "color": [
+              0.8,
+              0.59,
+              0.1
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.8,
+              0.59,
+              0.1
+            ],
+            "p": [
+              -0.016,
+              0,
+              0.031
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.8,
+              0.59,
+              0.1
+            ],
+            "p": [
+              0.016,
+              0,
+              0.031
+            ]
+          }
+        ],
+        "mass": 0.08,
+        "goal": {
+          "xy": [
+            -0.16,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "toy_drawer/tray"
+        }
+      },
+      {
+        "name": "construction_2",
+        "initial": {
+          "xy": [
+            0.25,
+            -0.16
+          ],
+          "bottom": 0.76
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.03,
+              0.028,
+              0.028
+            ],
+            "color": [
+              0.18,
+              0.48,
+              0.64
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.18,
+              0.48,
+              0.64
+            ],
+            "p": [
+              -0.016,
+              0,
+              0.031
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.18,
+              0.48,
+              0.64
+            ],
+            "p": [
+              0.016,
+              0,
+              0.031
+            ]
+          }
+        ],
+        "mass": 0.08,
+        "goal": {
+          "xy": [
+            0.0,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "toy_drawer/tray"
+        }
+      },
+      {
+        "name": "construction_3",
+        "initial": {
+          "xy": [
+            0.36,
+            0.32
+          ],
+          "bottom": 0.76
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.03,
+              0.028,
+              0.028
+            ],
+            "color": [
+              0.65,
+              0.23,
+              0.26
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.65,
+              0.23,
+              0.26
+            ],
+            "p": [
+              -0.016,
+              0,
+              0.031
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.01,
+            "height": 0.007,
+            "color": [
+              0.65,
+              0.23,
+              0.26
+            ],
+            "p": [
+              0.016,
+              0,
+              0.031
+            ]
+          }
+        ],
+        "mass": 0.08,
+        "goal": {
+          "xy": [
+            0.16,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "toy_drawer/tray"
+        }
+      },
+      {
+        "name": "airplane",
+        "initial": {
+          "xy": [
+            -0.06185483932495117,
+            -0.003313988447189331
+          ],
+          "bottom": 0.02399998484703969,
+          "frame": "side_shelf",
+          "gap": 0.0001,
+          "rpy": [
+            0.14012267637858106,
+            -0.08353834444233632,
+            0.0038701481026634926
+          ]
+        },
+        "asset": "b_toy_airplane",
+        "source": "ycb",
+        "scale": 0.75
+      },
+      {
+        "name": "black_marker",
+        "initial": {
+          "xy": [
+            0.2021203339099884,
+            -6.502866744995117e-05
+          ],
+          "bottom": 0.02399996359396772,
+          "frame": "side_shelf",
+          "gap": 0.0001,
+          "rpy": [
+            0.006642971286356511,
+            0.21045544201108468,
+            0.0010761620198291885
+          ]
+        },
+        "asset": "large_marker",
+        "source": "ycb",
+        "scale": 1
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "airplane",
+      "black_marker"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "joint",
+        "key": "toy_drawer/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "construction_1",
+        "xy": [
+          -0.16,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "toy_drawer/tray",
+        "half": [
+          0.06,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "toy_drawer/tray"
+      },
+      {
+        "type": "region",
+        "object": "construction_2",
+        "xy": [
+          0.0,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "toy_drawer/tray",
+        "half": [
+          0.06,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "toy_drawer/tray"
+      },
+      {
+        "type": "region",
+        "object": "construction_3",
+        "xy": [
+          0.16,
+          0
+        ],
+        "bottom": 0.016,
+        "frame": "toy_drawer/tray",
+        "half": [
+          0.06,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "toy_drawer/tray"
+      },
+      {
+        "type": "region",
+        "object": "drawing_book",
+        "xy": [
+          0.03,
+          -0.06
+        ],
+        "bottom": 0.764,
+        "half": [
+          0.105,
+          0.13
+        ],
+        "tolerance": 0.016,
+        "support": "activity_mat"
+      },
+      {
+        "type": "region",
+        "object": "colored_marker_1",
+        "xy": [
+          0.23,
+          -0.08
+        ],
+        "bottom": 0.764,
+        "half": [
+          0.017,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "activity_mat"
+      },
+      {
+        "type": "region",
+        "object": "colored_marker_2",
+        "xy": [
+          0.273,
+          -0.08
+        ],
+        "bottom": 0.764,
+        "half": [
+          0.017,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "activity_mat"
+      },
+      {
+        "type": "region",
+        "object": "colored_marker_3",
+        "xy": [
+          0.316,
+          -0.08
+        ],
+        "bottom": 0.764,
+        "half": [
+          0.017,
+          0.09
+        ],
+        "tolerance": 0.016,
+        "support": "activity_mat"
+      }
+    ],
+    "milestones": [
+      {
+        "id": "toys_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "toy_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "toys_construction_1",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "toy_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "construction_1",
+            "xy": [
+              -0.16,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "toy_drawer/tray",
+            "half": [
+              0.06,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "toy_drawer/tray"
+          }
+        ],
+        "requires": [
+          "toys_access"
+        ]
+      },
+      {
+        "id": "toys_construction_2",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "toy_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "construction_2",
+            "xy": [
+              0.0,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "toy_drawer/tray",
+            "half": [
+              0.06,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "toy_drawer/tray"
+          }
+        ],
+        "requires": [
+          "toys_access"
+        ]
+      },
+      {
+        "id": "toys_construction_3",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "toy_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "construction_3",
+            "xy": [
+              0.16,
+              0
+            ],
+            "bottom": 0.016,
+            "frame": "toy_drawer/tray",
+            "half": [
+              0.06,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "toy_drawer/tray"
+          }
+        ],
+        "requires": [
+          "toys_access"
+        ]
+      },
+      {
+        "id": "toys_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "toy_drawer/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "toys_construction_1",
+          "toys_construction_2",
+          "toys_construction_3"
+        ]
+      },
+      {
+        "id": "drawing_book_ready",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "drawing_book",
+            "xy": [
+              0.03,
+              -0.06
+            ],
+            "bottom": 0.764,
+            "half": [
+              0.105,
+              0.13
+            ],
+            "tolerance": 0.016,
+            "support": "activity_mat"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "colored_marker_1_ready",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "colored_marker_1",
+            "xy": [
+              0.23,
+              -0.08
+            ],
+            "bottom": 0.764,
+            "half": [
+              0.017,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "activity_mat"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "colored_marker_2_ready",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "colored_marker_2",
+            "xy": [
+              0.273,
+              -0.08
+            ],
+            "bottom": 0.764,
+            "half": [
+              0.017,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "activity_mat"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "colored_marker_3_ready",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "colored_marker_3",
+            "xy": [
+              0.316,
+              -0.08
+            ],
+            "bottom": 0.764,
+            "half": [
+              0.017,
+              0.09
+            ],
+            "tolerance": 0.016,
+            "support": "activity_mat"
+          }
+        ],
+        "requires": []
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 8,
+    "code": "L8",
+    "title": "Prepare a repotting workspace",
+    "instruction": "Choose the planter that leaves space around the seedling pot, place it on its matching saucer, and set the scoop and sealed soil container beside the clear central work area. Put the two spare saucers on the rear shelf. Leave the existing potted plant and the small seedling pot undisturbed.",
+    "robot": {
+      "uid": "fetch",
+      "position": [
+        -0.65,
+        -0.79,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "palette": {
+      "wall": [
+        0.69,
+        0.75,
+        0.66
+      ],
+      "floor": [
+        0.38,
+        0.31,
+        0.23
+      ],
+      "accent": [
+        0.32,
+        0.47,
+        0.24
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0,
+          0.16
+        ],
+        "size": [
+          1.8,
+          0.94,
+          0.84
+        ],
+        "color": [
+          0.47,
+          0.35,
+          0.22
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "garden_shelf",
+        "position": [
+          0.48,
+          0.35,
+          0.842
+        ],
+        "shapes": [
+          [
+            [
+              0.29,
+              0.125,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.29,
+              0.012,
+              0.13
+            ],
+            [
+              0,
+              0.125,
+              0.13
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.125,
+              0.13
+            ],
+            [
+              -0.29,
+              0,
+              0.13
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.125,
+              0.13
+            ],
+            [
+              0.29,
+              0,
+              0.13
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.29,
+              0.125,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.26
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "drawer",
+        "name": "garden_drawer",
+        "position": [
+          0.5,
+          0.26,
+          0.55
+        ],
+        "size": [
+          0.56,
+          0.44,
+          0.21
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "matching_saucer",
+        "initial": {
+          "xy": [
+            0.37,
+            -0.14
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.105,
+              0.105,
+              0.008
+            ],
+            "color": [
+              0.64,
+              0.31,
+              0.18
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.1,
+        "goal": {
+          "xy": [
+            0.27,
+            0.07
+          ],
+          "bottom": 0.84
+        }
+      },
+      {
+        "name": "large_planter",
+        "initial": {
+          "xy": [
+            -0.13,
+            0.4
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.08,
+              0.08,
+              0.008
+            ],
+            "color": [
+              0.58,
+              0.29,
+              0.17
+            ],
+            "p": [
+              0,
+              0,
+              0.008
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.08,
+              0.08
+            ],
+            "color": [
+              0.58,
+              0.29,
+              0.17
+            ],
+            "p": [
+              -0.08,
+              0,
+              0.08
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.08,
+              0.08
+            ],
+            "color": [
+              0.58,
+              0.29,
+              0.17
+            ],
+            "p": [
+              0.08,
+              0,
+              0.08
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.08,
+              0.006,
+              0.08
+            ],
+            "color": [
+              0.58,
+              0.29,
+              0.17
+            ],
+            "p": [
+              0,
+              -0.08,
+              0.08
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.08,
+              0.006,
+              0.08
+            ],
+            "color": [
+              0.58,
+              0.29,
+              0.17
+            ],
+            "p": [
+              0,
+              0.08,
+              0.08
+            ]
+          }
+        ],
+        "mass": 0.3,
+        "goal": {
+          "xy": [
+            0.27,
+            0.07
+          ],
+          "bottom": 0.858
+        }
+      },
+      {
+        "name": "small_planter",
+        "initial": {
+          "xy": [
+            0.76,
+            0.12
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.0475,
+              0.0475,
+              0.008
+            ],
+            "color": [
+              0.44,
+              0.54,
+              0.4
+            ],
+            "p": [
+              0,
+              0,
+              0.008
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.0475,
+              0.045
+            ],
+            "color": [
+              0.44,
+              0.54,
+              0.4
+            ],
+            "p": [
+              -0.0475,
+              0,
+              0.045
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.0475,
+              0.045
+            ],
+            "color": [
+              0.44,
+              0.54,
+              0.4
+            ],
+            "p": [
+              0.0475,
+              0,
+              0.045
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.0475,
+              0.006,
+              0.045
+            ],
+            "color": [
+              0.44,
+              0.54,
+              0.4
+            ],
+            "p": [
+              0,
+              -0.0475,
+              0.045
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.0475,
+              0.006,
+              0.045
+            ],
+            "color": [
+              0.44,
+              0.54,
+              0.4
+            ],
+            "p": [
+              0,
+              0.0475,
+              0.045
+            ]
+          }
+        ],
+        "mass": 0.15
+      },
+      {
+        "name": "seedling_pot",
+        "initial": {
+          "xy": [
+            -0.19,
+            0.05
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.0525,
+              0.0525,
+              0.008
+            ],
+            "color": [
+              0.25,
+              0.31,
+              0.23
+            ],
+            "p": [
+              0,
+              0,
+              0.008
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.0525,
+              0.05
+            ],
+            "color": [
+              0.25,
+              0.31,
+              0.23
+            ],
+            "p": [
+              -0.0525,
+              0,
+              0.05
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.0525,
+              0.05
+            ],
+            "color": [
+              0.25,
+              0.31,
+              0.23
+            ],
+            "p": [
+              0.0525,
+              0,
+              0.05
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.0525,
+              0.006,
+              0.05
+            ],
+            "color": [
+              0.25,
+              0.31,
+              0.23
+            ],
+            "p": [
+              0,
+              -0.0525,
+              0.05
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.0525,
+              0.006,
+              0.05
+            ],
+            "color": [
+              0.25,
+              0.31,
+              0.23
+            ],
+            "p": [
+              0,
+              0.0525,
+              0.05
+            ]
+          }
+        ],
+        "mass": 0.13
+      },
+      {
+        "name": "spare_saucer_1",
+        "initial": {
+          "xy": [
+            -0.02,
+            0.1
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.068,
+              0.068,
+              0.007
+            ],
+            "color": [
+              0.48,
+              0.52,
+              0.41
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.07,
+        "goal": {
+          "xy": [
+            -0.16,
+            0
+          ],
+          "bottom": 0.024,
+          "frame": "garden_shelf"
+        }
+      },
+      {
+        "name": "spare_saucer_2",
+        "initial": {
+          "xy": [
+            0.15,
+            -0.12
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.068,
+              0.068,
+              0.007
+            ],
+            "color": [
+              0.48,
+              0.52,
+              0.41
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.07,
+        "goal": {
+          "xy": [
+            0.12000000000000002,
+            0
+          ],
+          "bottom": 0.024,
+          "frame": "garden_shelf"
+        }
+      },
+      {
+        "name": "scoop",
+        "initial": {
+          "xy": [
+            0,
+            0
+          ],
+          "bottom": 0.016,
+          "frame": "garden_drawer/tray"
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.025,
+              0.043,
+              0.007
+            ],
+            "color": [
+              0.53,
+              0.57,
+              0.55
+            ],
+            "p": [
+              0,
+              -0.02,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.006,
+              0.055,
+              0.008
+            ],
+            "color": [
+              0.44,
+              0.29,
+              0.14
+            ],
+            "p": [
+              0,
+              0.065,
+              0.004
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.004,
+              0.043,
+              0.02
+            ],
+            "color": [
+              0.53,
+              0.57,
+              0.55
+            ],
+            "p": [
+              -0.027,
+              -0.02,
+              0.02
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.004,
+              0.043,
+              0.02
+            ],
+            "color": [
+              0.53,
+              0.57,
+              0.55
+            ],
+            "p": [
+              0.027,
+              -0.02,
+              0.02
+            ]
+          }
+        ],
+        "mass": 0.12,
+        "goal": {
+          "xy": [
+            0.48,
+            0.04
+          ],
+          "bottom": 0.84
+        }
+      },
+      {
+        "name": "soil_container",
+        "initial": {
+          "xy": [
+            0.69,
+            -0.09
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.05,
+              0.045,
+              0.1
+            ],
+            "color": [
+              0.36,
+              0.43,
+              0.25
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.054,
+              0.049,
+              0.009
+            ],
+            "color": [
+              0.59,
+              0.49,
+              0.31
+            ],
+            "p": [
+              0,
+              0,
+              0.105
+            ]
+          }
+        ],
+        "mass": 0.6,
+        "goal": {
+          "xy": [
+            0.64,
+            0.06
+          ],
+          "bottom": 0.84
+        }
+      },
+      {
+        "name": "established_plant_pot",
+        "initial": {
+          "xy": [
+            -0.48,
+            0.42
+          ],
+          "bottom": 0.84
+        },
+        "asset": "pot_green",
+        "source": "prepared",
+        "scale": 1.6
+      }
+    ],
+    "initial_joints": {
+      "garden_drawer/slide": 0
+    },
+    "goal_joints": {},
+    "protected": [
+      "small_planter",
+      "seedling_pot",
+      "established_plant_pot"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "region",
+        "object": "matching_saucer",
+        "xy": [
+          0.27,
+          0.07
+        ],
+        "bottom": 0.84,
+        "half": [
+          0.114,
+          0.114
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "region",
+        "object": "large_planter",
+        "xy": [
+          0.27,
+          0.07
+        ],
+        "bottom": 0.858,
+        "half": [
+          0.095,
+          0.095
+        ],
+        "tolerance": 0.016,
+        "support": "matching_saucer"
+      },
+      {
+        "type": "region",
+        "object": "soil_container",
+        "xy": [
+          0.64,
+          0.06
+        ],
+        "bottom": 0.84,
+        "half": [
+          0.064,
+          0.06
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "joint",
+        "key": "garden_drawer/slide",
+        "min": -0.012,
+        "max": 0.012
+      },
+      {
+        "type": "region",
+        "object": "scoop",
+        "xy": [
+          0.48,
+          0.04
+        ],
+        "bottom": 0.84,
+        "half": [
+          0.05,
+          0.132
+        ],
+        "tolerance": 0.016,
+        "support": "worktop"
+      },
+      {
+        "type": "region",
+        "object": "spare_saucer_1",
+        "xy": [
+          -0.16,
+          0
+        ],
+        "bottom": 0.024,
+        "frame": "garden_shelf",
+        "half": [
+          0.087,
+          0.108
+        ],
+        "tolerance": 0.016,
+        "support": "garden_shelf"
+      },
+      {
+        "type": "region",
+        "object": "spare_saucer_2",
+        "xy": [
+          0.12000000000000002,
+          0
+        ],
+        "bottom": 0.024,
+        "frame": "garden_shelf",
+        "half": [
+          0.087,
+          0.108
+        ],
+        "tolerance": 0.016,
+        "support": "garden_shelf"
+      },
+      {
+        "type": "clear",
+        "xy": [
+          -0.01,
+          0.12
+        ],
+        "half": [
+          0.075,
+          0.095
+        ],
+        "z": 0.84
+      }
+    ],
+    "milestones": [
+      {
+        "id": "matching_saucer_selected",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "matching_saucer",
+            "xy": [
+              0.27,
+              0.07
+            ],
+            "bottom": 0.84,
+            "half": [
+              0.114,
+              0.114
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "fitting_planter_selected",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "large_planter",
+            "xy": [
+              0.27,
+              0.07
+            ],
+            "bottom": 0.858,
+            "half": [
+              0.095,
+              0.095
+            ],
+            "tolerance": 0.016,
+            "support": "matching_saucer"
+          }
+        ],
+        "requires": [
+          "matching_saucer_selected"
+        ]
+      },
+      {
+        "id": "soil_ready",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "soil_container",
+            "xy": [
+              0.64,
+              0.06
+            ],
+            "bottom": 0.84,
+            "half": [
+              0.064,
+              0.06
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "scoop_access",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "garden_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "scoop_scoop",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "garden_drawer/slide",
+            "min": 0.23,
+            "max": 0.32
+          },
+          {
+            "type": "region",
+            "object": "scoop",
+            "xy": [
+              0.48,
+              0.04
+            ],
+            "bottom": 0.84,
+            "half": [
+              0.05,
+              0.132
+            ],
+            "tolerance": 0.016,
+            "support": "worktop"
+          }
+        ],
+        "requires": [
+          "scoop_access"
+        ]
+      },
+      {
+        "id": "scoop_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "garden_drawer/slide",
+            "min": -0.012,
+            "max": 0.012
+          }
+        ],
+        "requires": [
+          "scoop_scoop"
+        ]
+      },
+      {
+        "id": "spare_saucer_1_stored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "spare_saucer_1",
+            "xy": [
+              -0.16,
+              0
+            ],
+            "bottom": 0.024,
+            "frame": "garden_shelf",
+            "half": [
+              0.087,
+              0.108
+            ],
+            "tolerance": 0.016,
+            "support": "garden_shelf"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "spare_saucer_2_stored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "spare_saucer_2",
+            "xy": [
+              0.12000000000000002,
+              0
+            ],
+            "bottom": 0.024,
+            "frame": "garden_shelf",
+            "half": [
+              0.087,
+              0.108
+            ],
+            "tolerance": 0.016,
+            "support": "garden_shelf"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "workspace_clear",
+        "conditions": [
+          {
+            "type": "clear",
+            "xy": [
+              -0.01,
+              0.12
+            ],
+            "half": [
+              0.075,
+              0.095
+            ],
+            "z": 0.84
+          }
+        ],
+        "requires": [
+          "spare_saucer_1_stored",
+          "spare_saucer_2_stored"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation.",
+      "Preparation task only. Planter inner clearance 148 mm accommodates the 117 mm seedling container; no soil transfer or plant deformation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 9,
+    "code": "L9",
+    "title": "Pack camera equipment for travel",
+    "instruction": "Place the two padded dividers into their slots in the camera case. Pack the camera in the wide compartment, the lens in the middle compartment, and both batteries in the small compartment. Remove the cloth block from the lid rim, put it on the side mat, then close the case and engage the latch.",
+    "robot": {
+      "uid": "everyday_robot_01",
+      "position": [
+        0.12,
+        -0.3,
+        0.84
+      ],
+      "yaw": 0
+    },
+    "palette": {
+      "wall": [
+        0.71,
+        0.76,
+        0.8
+      ],
+      "floor": [
+        0.37,
+        0.29,
+        0.24
+      ],
+      "accent": [
+        0.23,
+        0.32,
+        0.46
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0.02,
+          0.18
+        ],
+        "size": [
+          1.85,
+          0.98,
+          0.84
+        ],
+        "color": [
+          0.45,
+          0.34,
+          0.24
+        ]
+      },
+      {
+        "kind": "case",
+        "name": "camera_case",
+        "position": [
+          0.2,
+          0.25,
+          0.842
+        ],
+        "size": [
+          0.78,
+          0.46,
+          0.18
+        ],
+        "color": [
+          0.2,
+          0.23,
+          0.25
+        ],
+        "divider_slots": [
+          -0.07,
+          0.15
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "side_mat",
+        "position": [
+          -0.28,
+          0.36,
+          0.84
+        ],
+        "shapes": [
+          [
+            [
+              0.13,
+              0.13,
+              0.002
+            ],
+            [
+              0,
+              0,
+              0.002
+            ],
+            [
+              0.42,
+              0.52,
+              0.57
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "robot_pedestal",
+        "position": [
+          0.12,
+          -0.3,
+          0
+        ],
+        "shapes": [
+          [
+            [
+              0.105,
+              0.105,
+              0.42
+            ],
+            [
+              0,
+              0,
+              0.42
+            ],
+            [
+              0.24,
+              0.27,
+              0.29
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "divider_1",
+        "initial": {
+          "xy": [
+            -0.55,
+            -0.05
+          ],
+          "bottom": 0.84,
+          "rpy": [
+            0,
+            1.5707963267948966,
+            0
+          ]
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.012,
+              0.209,
+              0.07
+            ],
+            "color": [
+              0.42,
+              0.43,
+              0.42
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.1,
+        "goal": {
+          "xy": [
+            -0.07,
+            0
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "divider_2",
+        "initial": {
+          "xy": [
+            -0.36000000000000004,
+            -0.05
+          ],
+          "bottom": 0.84,
+          "rpy": [
+            0,
+            1.5707963267948966,
+            0
+          ]
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.012,
+              0.209,
+              0.07
+            ],
+            "color": [
+              0.42,
+              0.43,
+              0.42
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.1,
+        "goal": {
+          "xy": [
+            0.15,
+            0
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "camera",
+        "initial": {
+          "xy": [
+            -0.03,
+            -0.08
+          ],
+          "bottom": 0.84
+        },
+        "asset": "camera",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.22,
+            0
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "lens",
+        "initial": {
+          "xy": [
+            0.17,
+            -0.12
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "cylinder",
+            "radius": 0.043,
+            "height": 0.12,
+            "color": [
+              0.12,
+              0.14,
+              0.15
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "cylinder",
+            "radius": 0.045,
+            "height": 0.013,
+            "color": [
+              0.26,
+              0.28,
+              0.28
+            ],
+            "p": [
+              0,
+              0,
+              0.05
+            ]
+          }
+        ],
+        "mass": 0.3,
+        "goal": {
+          "xy": [
+            0.055,
+            0
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "battery_1",
+        "initial": {
+          "xy": [
+            0.35,
+            -0.09
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.032,
+              0.024,
+              0.015
+            ],
+            "color": [
+              0.17,
+              0.18,
+              0.18
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.015,
+              0.002,
+              0.002
+            ],
+            "color": [
+              0.7,
+              0.64,
+              0.37
+            ],
+            "p": [
+              0,
+              -0.025,
+              0.01
+            ]
+          }
+        ],
+        "mass": 0.065,
+        "goal": {
+          "xy": [
+            0.27,
+            -0.07
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "battery_2",
+        "initial": {
+          "xy": [
+            0.44999999999999996,
+            -0.09
+          ],
+          "bottom": 0.84
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.032,
+              0.024,
+              0.015
+            ],
+            "color": [
+              0.17,
+              0.18,
+              0.18
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "box",
+            "half": [
+              0.015,
+              0.002,
+              0.002
+            ],
+            "color": [
+              0.7,
+              0.64,
+              0.37
+            ],
+            "p": [
+              0,
+              -0.025,
+              0.01
+            ]
+          }
+        ],
+        "mass": 0.065,
+        "goal": {
+          "xy": [
+            0.27,
+            0.07
+          ],
+          "bottom": 0.009,
+          "frame": "camera_case/body"
+        }
+      },
+      {
+        "name": "rim_cloth_block",
+        "initial": {
+          "xy": [
+            0.5911624431610107,
+            0.2499975711107254
+          ],
+          "bottom": 1.021983643736605,
+          "gap": 0.0001,
+          "rpy": [
+            9.618275602531364e-05,
+            0.0062338522239007155,
+            -1.585314216770185e-05
+          ]
+        },
+        "asset": "foam_brick",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0,
+            0
+          ],
+          "bottom": 0.004,
+          "frame": "side_mat"
+        }
+      }
+    ],
+    "initial_joints": {
+      "camera_case/lid": -1.5,
+      "camera_case/latch": 0.045
+    },
+    "goal_joints": {},
+    "protected": [],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "region",
+        "object": "divider_1",
+        "xy": [
+          -0.07,
+          0
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.027,
+          0.22
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "divider_2",
+        "xy": [
+          0.15,
+          0
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.027,
+          0.22
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "camera",
+        "xy": [
+          -0.22,
+          0
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.12,
+          0.18
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "lens",
+        "xy": [
+          0.055,
+          0
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.075,
+          0.1
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "battery_1",
+        "xy": [
+          0.27,
+          -0.07
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.065,
+          0.06
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "battery_2",
+        "xy": [
+          0.27,
+          0.07
+        ],
+        "bottom": 0.009,
+        "frame": "camera_case/body",
+        "half": [
+          0.065,
+          0.06
+        ],
+        "tolerance": 0.016,
+        "support": "camera_case/body"
+      },
+      {
+        "type": "region",
+        "object": "rim_cloth_block",
+        "xy": [
+          0,
+          0
+        ],
+        "bottom": 0.004,
+        "frame": "side_mat",
+        "half": [
+          0.1,
+          0.1
+        ],
+        "tolerance": 0.016,
+        "support": "side_mat"
+      },
+      {
+        "type": "joint",
+        "key": "camera_case/lid",
+        "min": -0.03,
+        "max": 0.02
+      },
+      {
+        "type": "joint",
+        "key": "camera_case/latch",
+        "min": -0.003,
+        "max": 0.006
+      }
+    ],
+    "milestones": [
+      {
+        "id": "case_open",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -1.66,
+            "max": -1.1
+          },
+          {
+            "type": "joint",
+            "key": "camera_case/latch",
+            "min": 0.035,
+            "max": 0.05
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "divider_1_installed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "divider_1",
+            "xy": [
+              -0.07,
+              0
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.027,
+              0.22
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          }
+        ],
+        "requires": [
+          "case_open"
+        ]
+      },
+      {
+        "id": "divider_2_installed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "divider_2",
+            "xy": [
+              0.15,
+              0
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.027,
+              0.22
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          }
+        ],
+        "requires": [
+          "case_open"
+        ]
+      },
+      {
+        "id": "camera_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "camera",
+            "xy": [
+              -0.22,
+              0
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.12,
+              0.18
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -1.66,
+            "max": -0.8
+          }
+        ],
+        "requires": [
+          "divider_1_installed",
+          "divider_2_installed"
+        ]
+      },
+      {
+        "id": "lens_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "lens",
+            "xy": [
+              0.055,
+              0
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.075,
+              0.1
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -1.66,
+            "max": -0.8
+          }
+        ],
+        "requires": [
+          "divider_1_installed",
+          "divider_2_installed"
+        ]
+      },
+      {
+        "id": "battery_1_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "battery_1",
+            "xy": [
+              0.27,
+              -0.07
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.065,
+              0.06
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -1.66,
+            "max": -0.8
+          }
+        ],
+        "requires": [
+          "divider_1_installed",
+          "divider_2_installed"
+        ]
+      },
+      {
+        "id": "battery_2_packed",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "battery_2",
+            "xy": [
+              0.27,
+              0.07
+            ],
+            "bottom": 0.009,
+            "frame": "camera_case/body",
+            "half": [
+              0.065,
+              0.06
+            ],
+            "tolerance": 0.016,
+            "support": "camera_case/body"
+          },
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -1.66,
+            "max": -0.8
+          }
+        ],
+        "requires": [
+          "divider_1_installed",
+          "divider_2_installed"
+        ]
+      },
+      {
+        "id": "lid_rim_clear",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "rim_cloth_block",
+            "xy": [
+              0,
+              0
+            ],
+            "bottom": 0.004,
+            "frame": "side_mat",
+            "half": [
+              0.1,
+              0.1
+            ],
+            "tolerance": 0.016,
+            "support": "side_mat"
+          }
+        ],
+        "requires": [
+          "case_open"
+        ]
+      },
+      {
+        "id": "case_closed",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "camera_case/lid",
+            "min": -0.03,
+            "max": 0.02
+          }
+        ],
+        "requires": [
+          "camera_packed",
+          "lens_packed",
+          "battery_1_packed",
+          "battery_2_packed",
+          "lid_rim_clear"
+        ]
+      },
+      {
+        "id": "latch_secured",
+        "conditions": [
+          {
+            "type": "joint",
+            "key": "camera_case/latch",
+            "min": -0.003,
+            "max": 0.006
+          }
+        ],
+        "requires": [
+          "case_closed"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation.",
+      "Cloth and padding represented as rigid proxies; no fabric deformation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  },
+  {
+    "id": 10,
+    "code": "L10",
+    "title": "Retrieve a book hidden behind a box",
+    "instruction": "Retrieve the book behind the small box beside the mug and put it on the reading mat. Temporarily move the box and mug to the side tray to create access, then restore them to their original places. Leave the other book and remote undisturbed.",
+    "robot": {
+      "uid": "everyday_robot_09",
+      "position": [
+        -0.55,
+        -0.34,
+        0.84
+      ],
+      "yaw": 0
+    },
+    "palette": {
+      "wall": [
+        0.8,
+        0.73,
+        0.65
+      ],
+      "floor": [
+        0.46,
+        0.33,
+        0.23
+      ],
+      "accent": [
+        0.5,
+        0.29,
+        0.2
+      ]
+    },
+    "camera": {
+      "eye": [
+        2.25,
+        -2.7,
+        2.48
+      ],
+      "target": [
+        0,
+        0.2,
+        0.9
+      ]
+    },
+    "furniture": [
+      {
+        "kind": "table",
+        "name": "worktop",
+        "xy": [
+          0,
+          0.15
+        ],
+        "size": [
+          1.8,
+          0.9,
+          0.84
+        ],
+        "color": [
+          0.49,
+          0.31,
+          0.19
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "bookcase",
+        "position": [
+          0.16,
+          0.39,
+          0.842
+        ],
+        "shapes": [
+          [
+            [
+              0.42,
+              0.22,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.012
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.42,
+              0.012,
+              0.22
+            ],
+            [
+              0,
+              0.22,
+              0.22
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.22,
+              0.22
+            ],
+            [
+              -0.42,
+              0,
+              0.22
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.012,
+              0.22,
+              0.22
+            ],
+            [
+              0.42,
+              0,
+              0.22
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ],
+          [
+            [
+              0.42,
+              0.22,
+              0.012
+            ],
+            [
+              0,
+              0,
+              0.44
+            ],
+            [
+              0.48,
+              0.31,
+              0.18
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "container",
+        "name": "side_tray",
+        "position": [
+          0.63,
+          -0.1,
+          0.842
+        ],
+        "size": [
+          0.4,
+          0.28,
+          0.025
+        ],
+        "color": [
+          0.38,
+          0.44,
+          0.44
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "reading_mat",
+        "position": [
+          -0.22,
+          -0.12,
+          0.84
+        ],
+        "shapes": [
+          [
+            [
+              0.18,
+              0.12,
+              0.002
+            ],
+            [
+              0,
+              0,
+              0.002
+            ],
+            [
+              0.59,
+              0.53,
+              0.4
+            ]
+          ]
+        ]
+      },
+      {
+        "kind": "static",
+        "name": "robot_pedestal",
+        "position": [
+          -0.55,
+          -0.34,
+          0
+        ],
+        "shapes": [
+          [
+            [
+              0.105,
+              0.105,
+              0.42
+            ],
+            [
+              0,
+              0,
+              0.42
+            ],
+            [
+              0.24,
+              0.27,
+              0.29
+            ]
+          ]
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "name": "target_book",
+        "initial": {
+          "xy": [
+            0.04,
+            0.08
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "asset": "book_blue",
+        "source": "prepared",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            -0.22,
+            -0.12
+          ],
+          "bottom": 0.844,
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "small_box",
+        "initial": {
+          "xy": [
+            0.02,
+            -0.11
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase"
+        },
+        "shapes": [
+          {
+            "type": "box",
+            "half": [
+              0.085,
+              0.052,
+              0.06
+            ],
+            "color": [
+              0.7,
+              0.57,
+              0.36
+            ],
+            "p": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "mass": 0.22,
+        "goal": {
+          "xy": [
+            0.02,
+            -0.11
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase"
+        }
+      },
+      {
+        "name": "shelf_mug",
+        "initial": {
+          "xy": [
+            0.24,
+            -0.1
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase"
+        },
+        "asset": "mug",
+        "source": "ycb",
+        "scale": 1,
+        "goal": {
+          "xy": [
+            0.24,
+            -0.1
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase"
+        }
+      },
+      {
+        "name": "red_book",
+        "initial": {
+          "xy": [
+            -0.25,
+            0.04
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase",
+          "rpy": [
+            1.5707963267948966,
+            0,
+            0
+          ]
+        },
+        "asset": "book_red",
+        "source": "prepared",
+        "scale": 1
+      },
+      {
+        "name": "remote",
+        "initial": {
+          "xy": [
+            -0.1,
+            0.1
+          ],
+          "bottom": 0.024,
+          "frame": "bookcase"
+        },
+        "asset": "remote",
+        "source": "prepared",
+        "scale": 1
+      }
+    ],
+    "initial_joints": {},
+    "goal_joints": {},
+    "protected": [
+      "red_book",
+      "remote"
+    ],
+    "protected_joints": [],
+    "final": [
+      {
+        "type": "region",
+        "object": "target_book",
+        "xy": [
+          -0.22,
+          -0.12
+        ],
+        "bottom": 0.844,
+        "half": [
+          0.13,
+          0.102
+        ],
+        "tolerance": 0.016,
+        "support": "reading_mat"
+      },
+      {
+        "type": "region",
+        "object": "small_box",
+        "xy": [
+          0.02,
+          -0.11
+        ],
+        "bottom": 0.024,
+        "frame": "bookcase",
+        "half": [
+          0.095,
+          0.065
+        ],
+        "tolerance": 0.016,
+        "support": "bookcase"
+      },
+      {
+        "type": "region",
+        "object": "shelf_mug",
+        "xy": [
+          0.24,
+          -0.1
+        ],
+        "bottom": 0.024,
+        "frame": "bookcase",
+        "half": [
+          0.083,
+          0.074
+        ],
+        "tolerance": 0.016,
+        "support": "bookcase"
+      }
+    ],
+    "milestones": [
+      {
+        "id": "box_temporarily_moved",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "small_box",
+            "xy": [
+              -0.1,
+              0
+            ],
+            "bottom": 0.008,
+            "frame": "side_tray",
+            "half": [
+              0.102,
+              0.1
+            ],
+            "tolerance": 0.016,
+            "support": "side_tray"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "mug_temporarily_moved",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "shelf_mug",
+            "xy": [
+              0.1,
+              0
+            ],
+            "bottom": 0.008,
+            "frame": "side_tray",
+            "half": [
+              0.087,
+              0.1
+            ],
+            "tolerance": 0.016,
+            "support": "side_tray"
+          }
+        ],
+        "requires": []
+      },
+      {
+        "id": "book_retrieved",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "target_book",
+            "xy": [
+              -0.22,
+              -0.12
+            ],
+            "bottom": 0.844,
+            "half": [
+              0.13,
+              0.102
+            ],
+            "tolerance": 0.016,
+            "support": "reading_mat"
+          }
+        ],
+        "requires": [
+          "box_temporarily_moved",
+          "mug_temporarily_moved"
+        ]
+      },
+      {
+        "id": "small_box_restored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "small_box",
+            "xy": [
+              0.02,
+              -0.11
+            ],
+            "bottom": 0.024,
+            "frame": "bookcase",
+            "half": [
+              0.095,
+              0.065
+            ],
+            "tolerance": 0.016,
+            "support": "bookcase"
+          }
+        ],
+        "requires": [
+          "book_retrieved"
+        ]
+      },
+      {
+        "id": "shelf_mug_restored",
+        "conditions": [
+          {
+            "type": "region",
+            "object": "shelf_mug",
+            "xy": [
+              0.24,
+              -0.1
+            ],
+            "bottom": 0.024,
+            "frame": "bookcase",
+            "half": [
+              0.083,
+              0.074
+            ],
+            "tolerance": 0.016,
+            "support": "bookcase"
+          }
+        ],
+        "requires": [
+          "book_retrieved"
+        ]
+      }
+    ],
+    "forbidden": [],
+    "limitations": [
+      "Rigid-body dynamics; no deformable material, fluid, thermal, or electrical simulation."
+    ],
+    "provenance": "Category 1 approved proposals; existing YCB/ReplicaCAD and Lightwheel assets plus functional procedural fixtures.",
+    "metrics": {
+      "position_tolerance_m": 0.016,
+      "protected_position_tolerance_m": 0.025,
+      "protected_orientation_tolerance_deg": 20,
+      "linear_stability_m_s": 0.025,
+      "angular_stability_rad_s": 0.15,
+      "release_contact_force_N": 0.05,
+      "final_hold_seconds": 1.0
+    },
+    "evaluation_note": "Success requires all final geometric/contact predicates, stable released state, 1 s dwell, milestone dependencies, and no latched preservation/fall violation. Goal fixtures and synthetic histories are validation tests, not robot demonstrations."
+  }
+]

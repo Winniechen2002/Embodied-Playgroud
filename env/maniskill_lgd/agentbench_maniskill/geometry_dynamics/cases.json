@@ -1,0 +1,282 @@
+[
+  {
+    "task_id": 1,
+    "code": "P1",
+    "key": "01",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 2,
+    "code": "P2",
+    "key": "02",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 3,
+    "code": "P3",
+    "key": "03",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 4,
+    "code": "P4",
+    "key": "04",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 5,
+    "code": "P5",
+    "key": "05",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 6,
+    "code": "P6",
+    "key": "06",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 7,
+    "code": "P7",
+    "key": "07",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 8,
+    "code": "P8",
+    "key": "08",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 9,
+    "code": "P9",
+    "key": "09",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 10,
+    "code": "P10",
+    "key": "10",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 11,
+    "code": "D1",
+    "key": "11",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 12,
+    "code": "D2",
+    "key": "12",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 13,
+    "code": "D3",
+    "key": "13",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 14,
+    "code": "D4",
+    "key": "14",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 15,
+    "code": "D5",
+    "key": "15",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 16,
+    "code": "D6",
+    "key": "16",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 17,
+    "code": "D7",
+    "key": "17",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 18,
+    "code": "D8",
+    "key": "18",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 19,
+    "code": "D9",
+    "key": "19",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 20,
+    "code": "D10",
+    "key": "20",
+    "label_variant": 0,
+    "physics_variant": 0
+  },
+  {
+    "task_id": 11,
+    "code": "D1",
+    "key": "11_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 11,
+    "code": "D1",
+    "key": "11_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 12,
+    "code": "D2",
+    "key": "12_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 12,
+    "code": "D2",
+    "key": "12_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 13,
+    "code": "D3",
+    "key": "13_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 13,
+    "code": "D3",
+    "key": "13_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 14,
+    "code": "D4",
+    "key": "14_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 14,
+    "code": "D4",
+    "key": "14_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 15,
+    "code": "D5",
+    "key": "15_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 15,
+    "code": "D5",
+    "key": "15_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 16,
+    "code": "D6",
+    "key": "16_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 16,
+    "code": "D6",
+    "key": "16_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 17,
+    "code": "D7",
+    "key": "17_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 17,
+    "code": "D7",
+    "key": "17_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 18,
+    "code": "D8",
+    "key": "18_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 18,
+    "code": "D8",
+    "key": "18_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 19,
+    "code": "D9",
+    "key": "19_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 19,
+    "code": "D9",
+    "key": "19_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  },
+  {
+    "task_id": 20,
+    "code": "D10",
+    "key": "20_physics1",
+    "label_variant": 0,
+    "physics_variant": 1
+  },
+  {
+    "task_id": 20,
+    "code": "D10",
+    "key": "20_physics2",
+    "label_variant": 0,
+    "physics_variant": 2
+  }
+]

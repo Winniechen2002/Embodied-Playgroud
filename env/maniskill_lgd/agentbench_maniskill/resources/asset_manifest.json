@@ -1,0 +1,2229 @@
+{
+  "schema_version": 1,
+  "bundle": "assets.tar.gz",
+  "bundle_sha256": "35c15809631f358cc47055d700c37310caf8777defa231a8d24ef56c2b00d364",
+  "bundle_bytes": 49628571,
+  "files": [
+    {
+      "path": "native_robots/fetch/fetch.urdf",
+      "bytes": 21703,
+      "sha256": "b585ed20a26a2b481f7d329dd35f74cf8239c671b6a2763900366fbbab8162b1"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/base_link_collision.STL",
+      "bytes": 236084,
+      "sha256": "ddbbecaa94eebb923a153935b9ff02893ca159361ce4fb40363fe64ee6733b81"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/base_link_repaired.glb",
+      "bytes": 1264116,
+      "sha256": "ba0541e14db7584a5938212252937486d2a9553a021565eb6b97af68b747ef2f"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/bellows_link.STL",
+      "bytes": 71884,
+      "sha256": "90902856fe2d931ca099558378e89c2de22048075bc05def4fd5af311c398f29"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/bellows_link_collision.STL",
+      "bytes": 1084,
+      "sha256": "23b1ad0022edb12a65859bedf65dd6d018ee3769c1e48665c8ba2868c845306e"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/elbow_flex_link.glb",
+      "bytes": 413232,
+      "sha256": "5900b7b8ac80c324fd3681586cfb728700a44e8d87702dfa41affb45551babc8"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/elbow_flex_link_collision.STL",
+      "bytes": 48684,
+      "sha256": "fa200b07d6ffe096eb7823b2c2154cc8ce8e22ea5516f557719b9fb308283cb1"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/estop_link.STL",
+      "bytes": 386884,
+      "sha256": "08ee8f343d047983477a5c57292ec6b4a4d317e9a999c8fbfd45b3249c8226fe"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/estop_link.glb",
+      "bytes": 431916,
+      "sha256": "25387f034f7794e06fde2e335283174a89765569a7903a69a5d1df73b6d0f0e0"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/forearm_roll_link.glb",
+      "bytes": 599608,
+      "sha256": "016c822303f08729f2ac2681859982e3214912e1db63118e62e8926ad28fe695"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/forearm_roll_link_collision.STL",
+      "bytes": 50084,
+      "sha256": "a74b8d891845f56c58cdc9c4fb115b5ad1a89893cf9d5902310ea5bd7c70c81e"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/gripper_link.STL",
+      "bytes": 75384,
+      "sha256": "d292a962df7d90eb13919ae8dd269e5ca55f2f54e2f6fa035c562684ff7ec26f"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/gripper_link.glb",
+      "bytes": 396972,
+      "sha256": "abb22e3fb4f73abc2cbe4cc005a0515e3cc9f3be5ae939f90cc28f21a3da7426"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/head_pan_link.glb",
+      "bytes": 302684,
+      "sha256": "bddc7824d8f2018757276de3e6902554e99627780276bc2a7e9aec927b122545"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/head_pan_link_collision.STL",
+      "bytes": 105984,
+      "sha256": "36362238ca8c68d5aec127130014aa5c7b0ae5613b52ebd82603f6d9b03cf426"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/head_tilt_link.glb",
+      "bytes": 262236,
+      "sha256": "e0d2ba7bd7e5735124f7603fbbeac9b1583607b8c82d33cf679bff1d24248c6b"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/head_tilt_link_collision.STL",
+      "bytes": 35384,
+      "sha256": "3444f186e3faa628654ba7c9ee096d422c34d07948fd5f502918ac4781238919"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/l_gripper_finger_link.STL",
+      "bytes": 11484,
+      "sha256": "aca440e0444fd8bcbbade739ea27ed3755d23bf823eb4d900bec00ee1c3b709c"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/l_wheel_link.STL",
+      "bytes": 104384,
+      "sha256": "f00a69358c8af5c74cfd49d8990707e22e8318370209fe32dbf98610dcf05a6b"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/l_wheel_link_collision.STL",
+      "bytes": 68684,
+      "sha256": "0be83a03318e7f2d51b59c2b13e56a5ecdfeaa2ba465bbd841f3605334be6a63"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/laser_link.STL",
+      "bytes": 355884,
+      "sha256": "285e57045df959a58c14d0b26c1a24203bd213acd17554f5b07bc526dfbc0747"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/r_gripper_finger_link.STL",
+      "bytes": 11484,
+      "sha256": "0f10460121e2bcacaa63a409cc1ea30f78fb96fe4d2ddaa2b616aac3e300ffbd"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/r_wheel_link.STL",
+      "bytes": 104384,
+      "sha256": "e805e07d57faa72b957229538aec68ed935f656c599b9556530ddc6f45874aa5"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/r_wheel_link_collision.STL",
+      "bytes": 68684,
+      "sha256": "1280da184382df0ab072c91024046fc82c70d4f46c8d6697245d328af97aeeac"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/shoulder_lift_link.glb",
+      "bytes": 1144296,
+      "sha256": "516628243f35f531a3d6561c4ed93715f994b69c977aef1a98210d36cb83d27f"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/shoulder_lift_link_collision.STL",
+      "bytes": 45384,
+      "sha256": "af0703cad45527a1e7e5c76e15a43a81600b8482e479e1ecceedff3624b381af"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/shoulder_pan_link.glb",
+      "bytes": 1263296,
+      "sha256": "68be34715162c13d0e632cb5f1b1991f939cc4f0911f654a29b501c7fb7d910f"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/shoulder_pan_link_collision.STL",
+      "bytes": 65684,
+      "sha256": "7d6e74913589c3b7ee113c6b55170a40b3cc7d4095c7c1c520464655e6e2d301"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/torso_fixed_link.STL",
+      "bytes": 5884,
+      "sha256": "ee88311cd5ae20727c4ea7af579edea4da832b54a86b77d6804e4be30c638158"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/torso_fixed_link.glb",
+      "bytes": 8108,
+      "sha256": "d583f910c04d0808988b2289280ffccd80c6415c7a3a974fd0d6eac4132881e0"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/torso_lift_link.glb",
+      "bytes": 1704876,
+      "sha256": "7638c671fde4d76f8f9d5ea136041ba225d2e3ba0f1686ff0179e480b1adeada"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/torso_lift_link_collision.STL",
+      "bytes": 50084,
+      "sha256": "4f24652be8a346b040ee199d3586af874ca0359460d91b86d893ff2a85afdfde"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/upperarm_roll_link.glb",
+      "bytes": 503148,
+      "sha256": "63c41994c08a29137a2f708db7262459c7393b61ccb0710d636b83acd9d89e28"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/upperarm_roll_link_collision.STL",
+      "bytes": 49984,
+      "sha256": "b52550449cfa148390cbbcb3879ff3ee67a484e98bbd2ad91046c09d49dae9d1"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/wrist_flex_link.glb",
+      "bytes": 236248,
+      "sha256": "cb7a58057e912676429dbae26c16e7584f3ff7a3db9822d3eb3e6264b012ee0d"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/wrist_flex_link_collision.STL",
+      "bytes": 49784,
+      "sha256": "435f181dea365137f63e74f718911b7dfd780af6fc92ce5c74908e7d0790413b"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/wrist_roll_link.glb",
+      "bytes": 227160,
+      "sha256": "4992cd11b16f8b811e6bc4c9d0595ab04da483914055c0275f84b1f0d5d3b1af"
+    },
+    {
+      "path": "native_robots/fetch/fetch_description/meshes/wrist_roll_link_collision.STL",
+      "bytes": 26084,
+      "sha256": "942ca8736eecefd12c6d5397292c5725546b70c0826d9daf67b68d69255011d5"
+    },
+    {
+      "path": "native_robots/fetch/provenance.json",
+      "bytes": 2345,
+      "sha256": "608433db2700be495e513c14e8f60c4752f28bb352ee656bd92b62e603f4d760"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/hand.stl",
+      "bytes": 10084,
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link0.stl",
+      "bytes": 10084,
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link1.stl",
+      "bytes": 15084,
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link2.stl",
+      "bytes": 15084,
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link3.stl",
+      "bytes": 15084,
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link4.stl",
+      "bytes": 15084,
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link5.stl",
+      "bytes": 15084,
+      "sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link6.stl",
+      "bytes": 10084,
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/collision/link7.stl",
+      "bytes": 10084,
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/finger.glb",
+      "bytes": 50032,
+      "sha256": "0a71d057c0afb3e8587129539ec4161b726cf55dcb8935c4e6094f2b13558ed3"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/hand.glb",
+      "bytes": 590608,
+      "sha256": "3c2de5514714f7f8232a51b008eadb2eb421d290bfdc7341e5a12887cb70b661"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link0.glb",
+      "bytes": 1519800,
+      "sha256": "672626c2bbf38cd2ea28837e5dafdc2f264959761200177e9e256d532b9be4f9"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link1.glb",
+      "bytes": 970348,
+      "sha256": "8376fac9a80cd04767a3749a723a68809c5b85fe34110f056e83b9c984c1f052"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link2.glb",
+      "bytes": 983620,
+      "sha256": "bbab9909c2b0572d256cd60e6a9c1b63ca9b55047ac3da7124a99b8b1fe6b8fc"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link3.glb",
+      "bytes": 1105564,
+      "sha256": "f904d2d91255086a5706ca9c039cac62de4b7877b4a91b8ef387f461b9fa915b"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link4.glb",
+      "bytes": 1131436,
+      "sha256": "3e301a20f05f81d007741c2f8e199452a705ec4a489b729ff389ef14769c2283"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link5.glb",
+      "bytes": 1423144,
+      "sha256": "80d620e7d92b38a90a9ff2536e2d278cf2d0fa665f6bf4982e7069589b5cbb02"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link6.glb",
+      "bytes": 1666640,
+      "sha256": "20f04024218fdafdf41926143e9038b970e27f0c84f574d34c2dd05df6a7a74f"
+    },
+    {
+      "path": "native_robots/panda/franka_description/meshes/visual/link7.glb",
+      "bytes": 930244,
+      "sha256": "a207703b9d6d28c186949619e5c424072ee8331b8d51d6256ace975816a94a15"
+    },
+    {
+      "path": "native_robots/panda/panda_v2.urdf",
+      "bytes": 12821,
+      "sha256": "524c6986dbbabe244e05801f262862205e880834d01459b06ee273016d0579ba"
+    },
+    {
+      "path": "notices/franka_emika_panda/LICENSE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "path": "notices/franka_emika_panda/README.md",
+      "bytes": 2908,
+      "sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c"
+    },
+    {
+      "path": "notices/replicacad/LICENSE.txt",
+      "bytes": 1421,
+      "sha256": "25940e79f7b3bce9419a98bd862c75d35d589c2c560165876340b5245ff7f036"
+    },
+    {
+      "path": "notices/shadow_hand/LICENSE",
+      "bytes": 11355,
+      "sha256": "d42cae9a0f292b7a713597ba26e1e1e23d50df906c488f0d36fd3538af200bc1"
+    },
+    {
+      "path": "notices/shadow_hand/README.md",
+      "bytes": 1850,
+      "sha256": "451943a22b2312a3152a55e9ec47fd449e89e3c674ccd8c763364e61cfe3f137"
+    },
+    {
+      "path": "notices/sharpa/LICENSE.txt",
+      "bytes": 556,
+      "sha256": "f6a348fca3d77ddf60e66a3288b060e09b12afdebeabc6fc490b272ecfa10e43"
+    },
+    {
+      "path": "notices/sharpa/NOTICE.txt",
+      "bytes": 842,
+      "sha256": "bee17b99ba47b327197e75f2d62e3fadbff246f6e4b84e15550afe12fbd2f3d6"
+    },
+    {
+      "path": "notices/ufactory_xarm7/LICENSE",
+      "bytes": 1522,
+      "sha256": "4fe659325706d0fc41592c8743d085a0bdf778056249f2a108943d22be916fb2"
+    },
+    {
+      "path": "notices/ufactory_xarm7/README.md",
+      "bytes": 1117,
+      "sha256": "42f9df53f08a54251e832a6454107fe9eec52581d250212856e345f06b53ca76"
+    },
+    {
+      "path": "notices/universal_robots_ur10e/LICENSE",
+      "bytes": 1470,
+      "sha256": "5ec71ccf66c8d03261448f2441a586765b97f2248c860a1ae19689fb1c45cee6"
+    },
+    {
+      "path": "notices/universal_robots_ur10e/README.md",
+      "bytes": 2106,
+      "sha256": "69af5118815feba60c683415231fcd2c27d4a240c9e613731596583440a96ed3"
+    },
+    {
+      "path": "notices/wonik_allegro/LICENSE",
+      "bytes": 1289,
+      "sha256": "09c187439ecece8b00330e71eb988d3d30f29373c580dc31ab54200d0aa4deb4"
+    },
+    {
+      "path": "notices/wonik_allegro/README.md",
+      "bytes": 1543,
+      "sha256": "10d8795ad8682bdab403aab8fb7b5d4c051b68e025accfe58ebf0d440188665b"
+    },
+    {
+      "path": "notices/ycb_loader/LICENSE",
+      "bytes": 1066,
+      "sha256": "900da6c77e31f709a7eed29d73b6a9fdd86dcb4d213d686f9e6dcd3db59ef1f8"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_011.stl",
+      "bytes": 10084,
+      "sha256": "a37675914bb9cfe9106e2cfd0854d0bc6977bc661ddb8fa0851b2f064bf774c7"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_013.stl",
+      "bytes": 15084,
+      "sha256": "b6a1c3f5f5c5c4f1caecdc4626e2e08aff71d524f8100938c68d182d922caeb8"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_015.stl",
+      "bytes": 15084,
+      "sha256": "00a3c497dedf5b06f67a5b9d695f297541f264c93a47147b180f0d70833242fc"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_020.stl",
+      "bytes": 15084,
+      "sha256": "e84132b57e914738043a7915541ed5c7ca6fd44ef2c82054a89d2846602d5b17"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_025.stl",
+      "bytes": 15084,
+      "sha256": "52448ec76e11dc9ec2d998c3d887e16b66139bc2ed8dacc1a134214665b3fc3b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_029.stl",
+      "bytes": 6284,
+      "sha256": "bb4facbc4f8dad201a9eade1a3b64330b5ca162ab70a4235f7e50dbacbfec3f3"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_030.stl",
+      "bytes": 3984,
+      "sha256": "9f945bd31c2aea85f29aa7104b6d2277f51d28cda4ae2a9d058369605360a574"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_031.stl",
+      "bytes": 6284,
+      "sha256": "d21b0dcf8532408f79623f9f8bd6348b236976effc304b858288ddd8c7dd05ad"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_049.stl",
+      "bytes": 10084,
+      "sha256": "60b92fbbfa094dd79d110c440e6c025afb61ba90e95528a9ef3f5a237a2e867f"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_058.stl",
+      "bytes": 10084,
+      "sha256": "1050487c38d16ab7b246c8070f3b3f5bee7aed1832ea760728211eaf7e0ec2fe"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_061.stl",
+      "bytes": 11684,
+      "sha256": "7f015e209e550ea7fbbd273836bca5aa1e8d8711a206d6d41fbd8705c749f6fa"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_063.stl",
+      "bytes": 174184,
+      "sha256": "d14b2ab27cc683a45cb03fee9189f7d2b238d1664889d458cb15981ddde2baea"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_066.stl",
+      "bytes": 149584,
+      "sha256": "d4c576b6ec59afbb7ff568585ece025b7b9b1b40320e876c89f9fbe44e5cb6a1"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_069.stl",
+      "bytes": 85884,
+      "sha256": "20280aa1b95302370bb603ddc3ab791ec6066ea8b1ce66230a7f441697ea2b83"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_071.stl",
+      "bytes": 189684,
+      "sha256": "7c739f5fa4e8309d942eade9acf8acee0ef6339469c51f36d01423693c80273b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_073.stl",
+      "bytes": 211384,
+      "sha256": "55e55d4cb87af7218053754359df4183e8251f197f0bdbbf1979a6405f324c77"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_075.stl",
+      "bytes": 75184,
+      "sha256": "fbc70ad169480913e3fd553caefcd12a0bd14d14cdd0e9e741c3db623331da03"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_077.stl",
+      "bytes": 81784,
+      "sha256": "432c7064d1a2401f7ff33d1d438a832335c9a8bc6145871197ce5f993f414e51"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_079.stl",
+      "bytes": 37084,
+      "sha256": "4af25244da84ebcc8fa3c8ed7ecaf8f1bfe963d6fa55bc22b4375d5627515153"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_081.stl",
+      "bytes": 191684,
+      "sha256": "0dce30609dab26d3106c1d5617099d896baed95d059137116e68e2426f594b22"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_083.stl",
+      "bytes": 149884,
+      "sha256": "470f9166f51d5d6f8b8bbd3a9d319bb33ef52a4d254418df1ff7f69b4dc22965"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_085.stl",
+      "bytes": 75184,
+      "sha256": "fbc70ad169480913e3fd553caefcd12a0bd14d14cdd0e9e741c3db623331da03"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_087.stl",
+      "bytes": 81784,
+      "sha256": "432c7064d1a2401f7ff33d1d438a832335c9a8bc6145871197ce5f993f414e51"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_089.stl",
+      "bytes": 37084,
+      "sha256": "4af25244da84ebcc8fa3c8ed7ecaf8f1bfe963d6fa55bc22b4375d5627515153"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_091.stl",
+      "bytes": 191684,
+      "sha256": "0dce30609dab26d3106c1d5617099d896baed95d059137116e68e2426f594b22"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_093.stl",
+      "bytes": 149884,
+      "sha256": "470f9166f51d5d6f8b8bbd3a9d319bb33ef52a4d254418df1ff7f69b4dc22965"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_095.stl",
+      "bytes": 75184,
+      "sha256": "fbc70ad169480913e3fd553caefcd12a0bd14d14cdd0e9e741c3db623331da03"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_097.stl",
+      "bytes": 81784,
+      "sha256": "432c7064d1a2401f7ff33d1d438a832335c9a8bc6145871197ce5f993f414e51"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_099.stl",
+      "bytes": 37084,
+      "sha256": "4af25244da84ebcc8fa3c8ed7ecaf8f1bfe963d6fa55bc22b4375d5627515153"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_101.stl",
+      "bytes": 191684,
+      "sha256": "0dce30609dab26d3106c1d5617099d896baed95d059137116e68e2426f594b22"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_103.stl",
+      "bytes": 149884,
+      "sha256": "470f9166f51d5d6f8b8bbd3a9d319bb33ef52a4d254418df1ff7f69b4dc22965"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_105.stl",
+      "bytes": 41884,
+      "sha256": "f9ecf81a1d0bdd09401a1904593caa5999299b2982c11b8536744cb425ee7fe8"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_107.stl",
+      "bytes": 75184,
+      "sha256": "fbc70ad169480913e3fd553caefcd12a0bd14d14cdd0e9e741c3db623331da03"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_109.stl",
+      "bytes": 81784,
+      "sha256": "432c7064d1a2401f7ff33d1d438a832335c9a8bc6145871197ce5f993f414e51"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_111.stl",
+      "bytes": 37084,
+      "sha256": "4af25244da84ebcc8fa3c8ed7ecaf8f1bfe963d6fa55bc22b4375d5627515153"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_113.stl",
+      "bytes": 191684,
+      "sha256": "0dce30609dab26d3106c1d5617099d896baed95d059137116e68e2426f594b22"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/collisions/collision_115.stl",
+      "bytes": 149884,
+      "sha256": "470f9166f51d5d6f8b8bbd3a9d319bb33ef52a4d254418df1ff7f69b4dc22965"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/joint_pose.json",
+      "bytes": 961,
+      "sha256": "3f78eb39068b60a8e71a24a08f48973103f1417e608dd1e35cc38703742cfc54"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_010.obj",
+      "bytes": 147420,
+      "sha256": "088f949fe35fb3cac52612468f33d566870f32ef36cbbc0371e4964437e185ce"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_011.obj",
+      "bytes": 51036,
+      "sha256": "5703a167c45bf10c36725396d470e313d40d79ec8ea02d4abdb58f8ee3ebbc41"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_012.obj",
+      "bytes": 289734,
+      "sha256": "0336104017da2cbdd96285911fb674f71f3666e2431aec31cebc7e34e3b3e1d2"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_013.obj",
+      "bytes": 23414,
+      "sha256": "953b0f47084ac384a39663d84d6f5159425729be1a16909b5fc05d931d021e27"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_014.obj",
+      "bytes": 103057,
+      "sha256": "7c926e9173210350635a703ad41c4428426fd1349e042d50514e3b3069b98278"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_015.obj",
+      "bytes": 8434,
+      "sha256": "292f6829c658ba225be8cc6464625c42eea7c0430d99dfc168e03a5acb87338c"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_016.obj",
+      "bytes": 15341,
+      "sha256": "25bbecef9be05fe3ff8a4d134075380b7630b89960bcc7c68c5a69bf166f3034"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_017.obj",
+      "bytes": 1611549,
+      "sha256": "079ac3aa3f7c7de3269ce06f9d33bc0cbda43f3d44c6a824f67c9bf894948723"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_018.obj",
+      "bytes": 52103,
+      "sha256": "28b4eaa9607903a5e1bd73625840be871601247caa1b301d9cf8684c81a5516b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_019.obj",
+      "bytes": 168060,
+      "sha256": "02ba566659d33a3deb6c888f9e2200c5a4ff9297db7e2678582580fe77f70415"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_020.obj",
+      "bytes": 11200,
+      "sha256": "81e3830837ee6c754b30e7f439ea5254015ae4b7e9b02e9b8404d130919b9a13"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_021.obj",
+      "bytes": 1599228,
+      "sha256": "fd3a6e428bb0d5eaf8af6782b25458eef83ef230b2e2ebfdf8ae3d4baf9bdd9d"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_022.obj",
+      "bytes": 1621794,
+      "sha256": "b64e40d65f86a99b13b773ed20482270c484fc070834477e515020dd63928873"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_023.obj",
+      "bytes": 1512365,
+      "sha256": "7f05eb07093eee40fda84fbd0a7d4e6f21b1498cb251a96f7c841e397a62e21f"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_024.obj",
+      "bytes": 31827,
+      "sha256": "f6a1f569547677ff1e18bd9c52a26b29349afe4895fc516e1e49856693382496"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_025.obj",
+      "bytes": 41184,
+      "sha256": "f2a7b309d6826828c64581baceb3e3c51785a156c32b08b646171191fb2c1dda"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_026.obj",
+      "bytes": 229284,
+      "sha256": "8ca7e8e3b3ca392116ed4c38838384aba1f7435828654e1c951d693b5eae141b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_027.obj",
+      "bytes": 41319,
+      "sha256": "7f1ced9cea9bcef5f05eaa8d9af8182f41540ce72db5985a3d2ca034d5845f5b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_028.obj",
+      "bytes": 1556168,
+      "sha256": "cf907338039f1b06edadcce9ee8dea80fe939a4f975f3bb24e87168d736b5c01"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_029.obj",
+      "bytes": 227604,
+      "sha256": "b830dfad13df844e667fa0964bf623f05c66a33ccd3570794e17abfdc9170008"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_030.obj",
+      "bytes": 32807,
+      "sha256": "acdc9e80416ffefcd0e1d309f98a151c0c0133d659644005bd6593026c31ab4b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_031.obj",
+      "bytes": 405016,
+      "sha256": "1dde6d7a3c50d1d9fa196ea2abe46e1beadf3c4a08ad57bb1afd8afdb2485363"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_032.obj",
+      "bytes": 30459,
+      "sha256": "ec5012319105f0b15eaebf94f322db52fc4c49e6b90aa988ff3953aa9fd036e7"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_033.obj",
+      "bytes": 1894891,
+      "sha256": "bb298dba70ba7e02b1232c7956cb32e3b5065bc5e03df09027faefe1221f5c6a"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_034.obj",
+      "bytes": 75812,
+      "sha256": "0043a089df04723b1c86e9b7d828a4f2bddf803ed3c8f0f72ff554fd65f27b99"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_035.obj",
+      "bytes": 13475,
+      "sha256": "91facdae29b4deb5a08281f9c3ee3d2fc869429e39f347bec2e2cb9a3ad258d7"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_036.obj",
+      "bytes": 5013,
+      "sha256": "aa5fc808c60c5493ea61005fe71ffa1734989ab6da7d8cd0222c77c88b1b03d2"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_037.obj",
+      "bytes": 5978,
+      "sha256": "d4765460c58dcf7f41a4176b87f05063ad5d58d38b617845c4dfb0f31f908682"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_038.obj",
+      "bytes": 6962,
+      "sha256": "a22801bc805cb0a9e09bffae3493bc06f8345d81354bc14232ac3ec89d2a4b7c"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_039.obj",
+      "bytes": 5975,
+      "sha256": "902074a6b1c3be0d7b7890597c48f91cdeff850eadf1adb19f45a6400a841734"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_040.obj",
+      "bytes": 6333,
+      "sha256": "e682aeafe2a899b43e8fbfedc07f31cc809c586e7fb24d24f6bcf12bed05405e"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_041.obj",
+      "bytes": 2189,
+      "sha256": "b5fa024d0ad248bc21f5b9c3e64d451acbcc04abc27d857f67b79347cf3da12d"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_042.obj",
+      "bytes": 4622,
+      "sha256": "4cc00f6aac03b1492edd01dc78d71fbf05feda8cacd650243f2930ac3c49075f"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_043.obj",
+      "bytes": 8715,
+      "sha256": "d9ab5423e4cb01989746581649051eebc95690008b752ac088cb657cbfb1b213"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_044.obj",
+      "bytes": 184460,
+      "sha256": "9f38eb1316978addcf88f7cc46a7eb3840ecd515cc022bbe56e3fc9736b8bffa"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_045.obj",
+      "bytes": 16481,
+      "sha256": "852a7cffb7e206a28097bc11e49713f254522879890ffbed793e25b75da20b97"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_046.obj",
+      "bytes": 1950,
+      "sha256": "9824668f98239ec0f9a670779c454f20b805f2425c2c25e91adfeda284a1a06c"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_047.obj",
+      "bytes": 1958,
+      "sha256": "43b4b3a9636bee7fb05deb2cb18587ff05672c0c762dd8037038370a25664069"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_048.obj",
+      "bytes": 221658,
+      "sha256": "82ae9e7ce751333a7550794fbd5a499c7cdd05fcaacb5c16dc033b7a7e4132c3"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_049.obj",
+      "bytes": 334994,
+      "sha256": "52709844e221ab49e2c690b79db37bc7c6b8f7c254911217766c099fdb6869dc"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_050.obj",
+      "bytes": 1824599,
+      "sha256": "a997bdd3fc7859745bc365f848d17bc305110c721428588f9eb25e1365f24158"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_051.obj",
+      "bytes": 681022,
+      "sha256": "4c8da02c86a3fac9ec26dc65c692afd01670c0d82000b0900b690c65e6510cf6"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_052.obj",
+      "bytes": 60361,
+      "sha256": "40b15bbf0a02aef32a88633594c017c99970599559fd70a49579dad98b42eb9e"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_053.obj",
+      "bytes": 101628,
+      "sha256": "c4fa10bc43dfed09c510563a4f81d1ca0c72795f788e33539d3ca033b74d211b"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_054.obj",
+      "bytes": 60543,
+      "sha256": "ee7228141ae45bf5300c67665fdd09268e09cc558d126e935d174be6bce65c64"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_055.obj",
+      "bytes": 41888,
+      "sha256": "3c911a310bfd60a610b7399de11edc1fb6e054fa71cc29b0606947ae6a5745b5"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_056.obj",
+      "bytes": 113797,
+      "sha256": "fd91f4d9be2c8621968a2686a75f0d7f700d5780ef515558283d824e1212cca2"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_057.obj",
+      "bytes": 49937,
+      "sha256": "66e1ef3edeaac480cf5836ce281a47f474f52c8f8bd16eaea8851c954aeb2b79"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_058.obj",
+      "bytes": 390769,
+      "sha256": "938474702364d84f776dd60ab257dd86b6760b644ff4f57991945bf0f3221443"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_059.obj",
+      "bytes": 168583,
+      "sha256": "708e4cf822af96ce7ae4c25e5a237a359fe67e04ef5728d056d319bcc4cd76f1"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_060.obj",
+      "bytes": 353835,
+      "sha256": "79861652590dc0ccfc8b93d1951c91122144a7bf32415b6c26a424431df6d6dc"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_062.obj",
+      "bytes": 479605,
+      "sha256": "dd02427f37d2a1a9c26ec90923b2902b4d767d656c6df0257c79e272d2e69661"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_064.obj",
+      "bytes": 217384,
+      "sha256": "5a692f901a7226214bc52cac759b72f8f109c16d8a7b9b99aa1f3d7a480ceca2"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_065.obj",
+      "bytes": 475961,
+      "sha256": "7f37ed350068c4cff826d1b08c5c43ed9860df9e601f0f77d6810a582f9bd284"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_067.obj",
+      "bytes": 204471,
+      "sha256": "8ed94a9d0d8d497e1412b2e7efa7d656a97b91d52f0c19688f2aa99a3d2e8fd0"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_068.obj",
+      "bytes": 550572,
+      "sha256": "699f43f193b520f81e20306fe024ae5eedabce5eac0b94567087263d04abac30"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_070.obj",
+      "bytes": 231886,
+      "sha256": "89bf412fac05f45be20cb72af127a4e779981a97fb18831b0324a08a99a294f8"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_072.obj",
+      "bytes": 142575,
+      "sha256": "1d9c9a4e0f5925e91f60ce134999ac09ffec69985f0c3c72678068a191575b14"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_073.obj",
+      "bytes": 220316,
+      "sha256": "4de849cbfd79a6b607209386470e47d026e9b72722baa8c63c250b343a2b9f85"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_075.obj",
+      "bytes": 423560,
+      "sha256": "28776a25c3fbe84fccb4061607fb8f23a556230497e3b5d585d4aa3593f4c8e4"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_077.obj",
+      "bytes": 264330,
+      "sha256": "919d5fa1a732757b1d2d2e114af81c2b4ade623bcfe647af53050f3ba83e1481"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_079.obj",
+      "bytes": 276338,
+      "sha256": "8d8bc8c4cb1ab1fd9497fdbe7bc6a774d7a633c0afe57526189873b1f74f8002"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_081.obj",
+      "bytes": 98993,
+      "sha256": "432793f0a185cbb4065591068a46867563634993359a8ef68eec85e78edf8dc9"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/meshes/mesh_082.obj",
+      "bytes": 146958,
+      "sha256": "d11c56cfc4ddf55197aebd00e8bd63030117d031b554dd352b36d847f838ede8"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/physical_model.json",
+      "bytes": 4367,
+      "sha256": "8ae1972cca91f3ab235db2c8fd4005ed724adece4450778bde31506c8d6deb64"
+    },
+    {
+      "path": "robot_library/robots/01_breakfast_kitchen/robot.urdf",
+      "bytes": 61361,
+      "sha256": "2a362467350bc489b262e21177fd870cb9e1127622249b423eff42b4bf5526b0"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_000.stl",
+      "bytes": 304784,
+      "sha256": "8dfdbc18ad48d8b22da1b8638152eaef9361a093d0cbd20b044a7f7227f85698"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_001.stl",
+      "bytes": 184184,
+      "sha256": "de08e416e4f93f4eb56132d56fc437149c6c6389fec22378184b17ab77a9d96f"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_002.stl",
+      "bytes": 225584,
+      "sha256": "5271912f13e41d37a8541938ba51b470073e6396ee22fe75d3cc8e13c3b8162a"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_003.stl",
+      "bytes": 237084,
+      "sha256": "13f508b7af20526e5e66746e6178e73e4276c3c6a9f48f85e7176c5c6e6a31d5"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_004.stl",
+      "bytes": 243684,
+      "sha256": "8a0fb06a42047e0164e8bfe00b38c96d3a97eb6c70dad929228cbf3242215a1a"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_005.stl",
+      "bytes": 229084,
+      "sha256": "33bb01a590f3d2e4bcfa4069abade20725d865440a9b516882c306982de568e4"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_006.stl",
+      "bytes": 399384,
+      "sha256": "2ad99f20db5c972b01c34a77af189b813fea1db3ee0d3b8da445ae1b82c96102"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_007.stl",
+      "bytes": 13084,
+      "sha256": "389631e54588278f7ce925a7640b79398c3ef523a6ca2a5f7cfa33dc37bd7d95"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_019.stl",
+      "bytes": 14484,
+      "sha256": "e2c1aa402e5ab721210e18cc1fd6a73868d505d4702637a7dd6245182f0e86fc"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_029.stl",
+      "bytes": 14484,
+      "sha256": "e2c1aa402e5ab721210e18cc1fd6a73868d505d4702637a7dd6245182f0e86fc"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_039.stl",
+      "bytes": 14484,
+      "sha256": "e2c1aa402e5ab721210e18cc1fd6a73868d505d4702637a7dd6245182f0e86fc"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/collisions/collision_049.stl",
+      "bytes": 14484,
+      "sha256": "c00dabd40a0083ebdb8526171131da67acbd6e9dc6d17085151b67066e316d6f"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/joint_pose.json",
+      "bytes": 570,
+      "sha256": "eaa57cebaa9e995580eaf520ad36f567875e09dd7826377a09a42b0f624a0fd4"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_000.obj",
+      "bytes": 207870,
+      "sha256": "6d2c212fb27f26defabf923be63dec276cbf5f71e0223164837397a6be18c93e"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_001.obj",
+      "bytes": 123425,
+      "sha256": "31dcce529b13971da34612af3a3bfc5232b44f3ba4ef7798f00b75fcf3168d49"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_002.obj",
+      "bytes": 152418,
+      "sha256": "1c072a8d47e286ee40a4dc6faeab3f020aaed72099acd0c1b5f1387daef5c8af"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_003.obj",
+      "bytes": 160837,
+      "sha256": "e228b44e2686735c0986d4a153c074ac057bb5fecd916d06039e1bba2a5247cc"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_004.obj",
+      "bytes": 165292,
+      "sha256": "2c783a856bc7f649653b164e3d899faee21686769675491f36d0718bae71576d"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_005.obj",
+      "bytes": 154447,
+      "sha256": "397698ffa41902ef25656898bc529827c0e3d73a04261e159ff672f04eae4708"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_006.obj",
+      "bytes": 276050,
+      "sha256": "6aaad7509950065a3c2635685b93aefc765c433c5885f7e0d628a07c1c5079b5"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_008.obj",
+      "bytes": 7770,
+      "sha256": "5cbb644ae00a6fc5b0040a8d14a3db4a28703000047565d733b5d3ae4d7e141c"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_009.obj",
+      "bytes": 108025,
+      "sha256": "c484ed6ff377dee4cfb83c9cd5366f10746d358ecfb4552168d4a0a22eb090d4"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_010.obj",
+      "bytes": 36410,
+      "sha256": "3219834169d87e18e86d04242be7cc7299f6bf40c63d1b281639aae33bf26c43"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_011.obj",
+      "bytes": 45094,
+      "sha256": "114e8673ea5e3e85bc971601bbd519222deb8826e1436affc7fe257100935a6a"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_012.obj",
+      "bytes": 34118,
+      "sha256": "08e9a879cead4cfaf1df299b7ecc64d05bd8da5a2c44889312672b8cb5b7cd8b"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_013.obj",
+      "bytes": 11564,
+      "sha256": "190312973dca593996fa3814c6d5edc8fc701dde2d2f337f5320de136b71be54"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_014.obj",
+      "bytes": 47456,
+      "sha256": "20fe7dab4e4d35f09988e28590074cf01ed20bf07279fc44b48fcb01e102cc29"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_015.obj",
+      "bytes": 138222,
+      "sha256": "0dd589b4960fbe7c018075462a0ffa9e653cd414b6da30308555d8a6a07bbe8a"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_016.obj",
+      "bytes": 14047,
+      "sha256": "d09095fd6d725eaaf522e726d80a2d88366dca41681ad9f0203dd9efd380856a"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_017.obj",
+      "bytes": 29985,
+      "sha256": "f63684901e8a55ea419f7703f11d6d5397f7d100f50146f66b8018189e7db670"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_018.obj",
+      "bytes": 27978,
+      "sha256": "9425c7b6f73faf3ff33698c4a8ba3cb90cd6e0773fb9275b89a4d6794f390051"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/meshes/mesh_019.obj",
+      "bytes": 47456,
+      "sha256": "20fe7dab4e4d35f09988e28590074cf01ed20bf07279fc44b48fcb01e102cc29"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/physical_model.json",
+      "bytes": 3258,
+      "sha256": "664f6aed1c5d410689263a4404e193e716775c056da762957ceca5a5fb22619e"
+    },
+    {
+      "path": "robot_library/robots/03_home_office/robot.urdf",
+      "bytes": 33958,
+      "sha256": "b4c3ee6cc13ec892c25a346a9b9f820304eefcd9a447242f52855c2c283196b4"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_005.stl",
+      "bytes": 14484,
+      "sha256": "395f3173bcb1208abafd1e9c0c4a9027f1f372ed088057cfb1a6d97eee7215ad"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_010.stl",
+      "bytes": 14484,
+      "sha256": "e701f5e3966d8e45561b94f1856c3b69fc86a66fe975dcb1ea145753c7a98f40"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_011.stl",
+      "bytes": 14484,
+      "sha256": "ed3aea362ca7367b10bbf4de58d08a444dd8997252f691359dde34ed2a30b217"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_016.stl",
+      "bytes": 14484,
+      "sha256": "d3d52385e6db18eee7c82fdbf4aa400f3753ef6d39d89a9784536024f9e1bac8"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_017.stl",
+      "bytes": 14484,
+      "sha256": "dc61c9921c0078318c81269bc44d2108eae957f2ed8fbd91fee5c8abf472bbd7"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_021.stl",
+      "bytes": 14484,
+      "sha256": "8da0baeacb3bec29037864f758bfc730a1e75c5835fbf34b6204c7af38d594f0"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_025.stl",
+      "bytes": 14484,
+      "sha256": "10ebdc0a025da32a31b86794eb5701c503cd4bf58da32321b2cc25abfc5646f5"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_026.stl",
+      "bytes": 14484,
+      "sha256": "6db4981965bfd57788c66cb416846667db3ba11e4107aa5d6bfd4dce32cba463"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_031.stl",
+      "bytes": 22684,
+      "sha256": "3dc3d04582488b05d51c8d179b7261741305edade662ac4a9a89b8a558342538"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_051.stl",
+      "bytes": 14484,
+      "sha256": "5759af6fcc84087d3927468e5599f3f881d3c9ad529e1761b13351b829b1ddf5"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_053.stl",
+      "bytes": 14484,
+      "sha256": "3444a2e513f92cee5119820dd67786637a92bd7d9ea0ed20acb418785b15cc58"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_055.stl",
+      "bytes": 268784,
+      "sha256": "c039413a9a1197698c7d5b3976745195fd91c94293897acf219b2dd902e7120c"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_059.stl",
+      "bytes": 14484,
+      "sha256": "5759af6fcc84087d3927468e5599f3f881d3c9ad529e1761b13351b829b1ddf5"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_061.stl",
+      "bytes": 14484,
+      "sha256": "3444a2e513f92cee5119820dd67786637a92bd7d9ea0ed20acb418785b15cc58"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_063.stl",
+      "bytes": 268784,
+      "sha256": "c039413a9a1197698c7d5b3976745195fd91c94293897acf219b2dd902e7120c"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_067.stl",
+      "bytes": 14484,
+      "sha256": "5759af6fcc84087d3927468e5599f3f881d3c9ad529e1761b13351b829b1ddf5"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_069.stl",
+      "bytes": 14484,
+      "sha256": "3444a2e513f92cee5119820dd67786637a92bd7d9ea0ed20acb418785b15cc58"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_071.stl",
+      "bytes": 268784,
+      "sha256": "c039413a9a1197698c7d5b3976745195fd91c94293897acf219b2dd902e7120c"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_077.stl",
+      "bytes": 14484,
+      "sha256": "5759af6fcc84087d3927468e5599f3f881d3c9ad529e1761b13351b829b1ddf5"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_079.stl",
+      "bytes": 14484,
+      "sha256": "3444a2e513f92cee5119820dd67786637a92bd7d9ea0ed20acb418785b15cc58"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_081.stl",
+      "bytes": 268784,
+      "sha256": "c039413a9a1197698c7d5b3976745195fd91c94293897acf219b2dd902e7120c"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_084.stl",
+      "bytes": 14484,
+      "sha256": "9e2c016236b45354fe36f8e67869993674ce454fe0b2de14a242e61cc6096ce3"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_087.stl",
+      "bytes": 14484,
+      "sha256": "3c250be5c243d442fac8adf0fc3b3cde76442d9a6e74e3ffc37682870917c41c"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/collisions/collision_090.stl",
+      "bytes": 237684,
+      "sha256": "6f7410c8c3c687c74fe60628b3abd95d8e708181f9d143f3b2ccca7fc04df9fc"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/joint_pose.json",
+      "bytes": 803,
+      "sha256": "e0d42e1201121ced3cf70fde82c751903d752e4de842df74a6dc2aa0af559931"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_000.obj",
+      "bytes": 285648,
+      "sha256": "c6f3ff4d9784e04c5caaeb9cf8898956dcd34d592f26a47bea586ae61faa5508"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_001.obj",
+      "bytes": 327469,
+      "sha256": "d93665415cc25a3679be6d7a296e99f0fcd1d59cb5409006805e9bd4fb79b897"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_002.obj",
+      "bytes": 1737819,
+      "sha256": "95d7482d3672987ed56d943194e6515fa125209ffb4ecdb65df6fda76cbff953"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_003.obj",
+      "bytes": 272760,
+      "sha256": "00cc8c3647db4a54cce6b160733359489268ce6e9a6f7465291e3e8293d222dc"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_004.obj",
+      "bytes": 1826554,
+      "sha256": "91e9ed2f9df5c544f88ef6f06f919fff7e0049fbd548f673d40288de6297bb63"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_005.obj",
+      "bytes": 482847,
+      "sha256": "6d4c1fccf94b47d14a29b194fdfd812d636de189e8728058bcd07f66a3cf6a91"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_006.obj",
+      "bytes": 1933857,
+      "sha256": "8fb55b48668858aaf046d0a5587184048c574dc3b04a2bd864f487be2090bfd0"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_007.obj",
+      "bytes": 2740560,
+      "sha256": "53fc7c202f611453026ac32485502d353ad08a9d12577ae86c7f90acb57989ae"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_008.obj",
+      "bytes": 64578,
+      "sha256": "d6c6863d7f6b6becfc282b032061d9e2a99c2402b24eaafa400ed7b2a8f779f4"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_009.obj",
+      "bytes": 1507222,
+      "sha256": "92579c51ad3f8ccec8e5993cb342b9697119e3d99773d34eaeee98bfa194ee48"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_010.obj",
+      "bytes": 567803,
+      "sha256": "edb05839a051a881f87e5004d6072d947d8f59082ec172e4d09878649e743aa0"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_011.obj",
+      "bytes": 147836,
+      "sha256": "c0bcba2724a147180993db72b2df461b93ee2fedd87984de3b14775b9d998317"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_012.obj",
+      "bytes": 57082,
+      "sha256": "4f785a6ad62ac19d39f5a2b2cb6809ddb344e4612cb8fdd8b2cd091765b04f05"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_013.obj",
+      "bytes": 279469,
+      "sha256": "38407ea9ea56b2672b110903060ebbea6af5dbe4faed36661083198850ab3171"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_014.obj",
+      "bytes": 1640027,
+      "sha256": "6383796d27485102fbaa05353e760d687573291277a06b805e378b4cd197c53e"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_015.obj",
+      "bytes": 118716,
+      "sha256": "6f4567a43fb7afc475d4fee554964cedb4c90a0176c479c0ac8fbcbd95f25019"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_016.obj",
+      "bytes": 431894,
+      "sha256": "c3cb70591fbea10f73926aa53fe91351a41a74af198a366fc4fad54c7f050b71"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_017.obj",
+      "bytes": 1783234,
+      "sha256": "ec095fbefe410a58c5f2cceb91828d671d88add94f6e9bc85b4e4a7f8b249e33"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_018.obj",
+      "bytes": 133425,
+      "sha256": "8005df170f936daad9caa655bae91966d9796b2630d4a208424be6e184d5cc0a"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_019.obj",
+      "bytes": 113490,
+      "sha256": "6738c85c6b371272927cee7e305881136c8a4b0c389663c62955ce14a8ba0690"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_020.obj",
+      "bytes": 38789,
+      "sha256": "c7ec761172f0db83fed165b71b5159dc3ff8bffd4dd50696c1850541f5063c6b"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_021.obj",
+      "bytes": 680079,
+      "sha256": "47ce2b25f925c3b0af3ea904c621f725e910811ccce2e4defa9a5b33309064a7"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_023.obj",
+      "bytes": 59066,
+      "sha256": "5a8665b580ab47e0bf42263faec7da1784c2763445a1c86077dedb45b0d5acef"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_024.obj",
+      "bytes": 410806,
+      "sha256": "97a2223cc204bbc4333ca1e96698f9c2754273cc81e1d600b24cd816612ddae7"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_025.obj",
+      "bytes": 18442,
+      "sha256": "cc25d9391301e2fb2c64cb9a1d93787a0f8a85c4a6de94d1b8b3d2b6095821f9"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_026.obj",
+      "bytes": 34639,
+      "sha256": "5a3355090ef1d073df3ac002d250705927171b595d67dd2e98c6bca662e6ff51"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_027.obj",
+      "bytes": 13792,
+      "sha256": "5bb348d99a2a94ced38e5627e6d2d7757d659d5f307325d3cbe59893c0451806"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_028.obj",
+      "bytes": 182002,
+      "sha256": "fe6c809175ef97d289013b5c8bc4c96aa26ce96decce22e1cfc1cd9f92bf869d"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_029.obj",
+      "bytes": 47363,
+      "sha256": "9813ad2a8db5639c57ea5d06b47bab139b0d9f52b9803f890eb8e7d986be0aee"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_030.obj",
+      "bytes": 12693,
+      "sha256": "73146c7191203fadcd81c35bf3a1ae07d1b450ecd769a8148c031efdf07b9b75"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_031.obj",
+      "bytes": 40095,
+      "sha256": "90e1f0e9f1f38582ca8727c5df254fea57ad429860157e7ee1e43853bc1f53c8"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/meshes/mesh_032.obj",
+      "bytes": 160009,
+      "sha256": "b8a07807adecab7b8c4c8edee3b042947e3f0bc17fbddef92d7b4b448721da29"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/physical_model.json",
+      "bytes": 4128,
+      "sha256": "0e0a1b3f0cb27592e06596b64dbe3f5652a4ebcc4be5ed4e7e25068d5f9a482f"
+    },
+    {
+      "path": "robot_library/robots/09_dining_table/robot.urdf",
+      "bytes": 44920,
+      "sha256": "21f502d99445d25fea92ae1227615ba37ced587b5b075c4a3a36c4a36b1c0580"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/000_button_lock.glb",
+      "bytes": 3640,
+      "sha256": "b79cc63edd94bcfd0f0a1c4f47b8cc2433149852f97c2e228c6eae72d5d4b5cb"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/001_button_power.glb",
+      "bytes": 3640,
+      "sha256": "d2c75bc5acb558a4504a0dee2cf7a835d54594b2d9b19af5776bb00a739693b2"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/002_Body001.glb",
+      "bytes": 201432,
+      "sha256": "749963c355370ab0787eb4a4a543387b707f28498f39196e48afe0d83b7d42b6"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/003_door.glb",
+      "bytes": 26048,
+      "sha256": "dddf57534ce098db4f7738cd28229425f6fb5e126feb92e7fadd2bb79631cd81"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/004_rack0.glb",
+      "bytes": 144872,
+      "sha256": "f1d8123fef93ee23ceb570822b4e7c61195c97e7c5135075c2a796203f476c45"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/005_rack1.glb",
+      "bytes": 144872,
+      "sha256": "69e9636cd7dae3e093f17c31c14cab878c16e421950e2222608c06ef8955773c"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/006_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/007_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/008_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/009_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/010_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/011_T_BC001.png",
+      "bytes": 110691,
+      "sha256": "f45b2a9f6603d38d3991c45515a18f15fa08ef31379bac1967754a8c8e23b31a"
+    },
+    {
+      "path": "scenes/articulated/dishwasher/model.xml",
+      "bytes": 34596,
+      "sha256": "d149b48093d345fa2746af92836217a955488b6a6e68f056193f752243c792ed"
+    },
+    {
+      "path": "scenes/articulated/fridge/000_freezer0.glb",
+      "bytes": 138904,
+      "sha256": "1fc9238853f070c40a7ed012e69e439a436c39eee36b6078ffbf6cfa8edda61d"
+    },
+    {
+      "path": "scenes/articulated/fridge/001_freezer1.glb",
+      "bytes": 136016,
+      "sha256": "5a67ba4997bfa095326785457df45df3a18c85b8f8607d7ee745cb1a8295c9b1"
+    },
+    {
+      "path": "scenes/articulated/fridge/002_fridge_drawer0.glb",
+      "bytes": 45232,
+      "sha256": "4b1609d72ff0ecdf51ebc0f9328d10a449d1e0cec9c495b7db8611b239fe75e8"
+    },
+    {
+      "path": "scenes/articulated/fridge/003_fridge_left_door.glb",
+      "bytes": 69328,
+      "sha256": "a43114972d01b863cf48f82dc1a02970d11ae638b42d9e4e7437f79399431b00"
+    },
+    {
+      "path": "scenes/articulated/fridge/004_fridge_left_door_Clear.glb",
+      "bytes": 17064,
+      "sha256": "214614c84f00f9013a60fe0041e0d6b2f6b252acb1cba0524d09369967004e73"
+    },
+    {
+      "path": "scenes/articulated/fridge/005_fridge_right_door.glb",
+      "bytes": 74728,
+      "sha256": "83b89ab56bbcfedf0502a0eddc06ee6fe20df04b3ac16fb551e8d2ec3b2c3336"
+    },
+    {
+      "path": "scenes/articulated/fridge/006_fridge_right_door_Clear.glb",
+      "bytes": 16480,
+      "sha256": "83ec50f733f10a6ea2fd757b197e78b3379cf099ea1bc074a226f278a1267134"
+    },
+    {
+      "path": "scenes/articulated/fridge/007_Body001.glb",
+      "bytes": 225688,
+      "sha256": "0fcd347bbe72d5ebad106be4cdca454842974f2e97bec0f24c9f049bbae06381"
+    },
+    {
+      "path": "scenes/articulated/fridge/008_Body001_Clear.glb",
+      "bytes": 2800,
+      "sha256": "e81a6e159089ea48fe59d6eb0f1dc875d4b9f0955466807da9007b89fb0b556e"
+    },
+    {
+      "path": "scenes/articulated/fridge/009_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/010_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/011_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/012_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/013_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/014_T_BC001.png",
+      "bytes": 158347,
+      "sha256": "f67f9644900b25719e5478baff7dd15c5448fe2b068d5552a43f9bbaa6f72d71"
+    },
+    {
+      "path": "scenes/articulated/fridge/model.xml",
+      "bytes": 27810,
+      "sha256": "8a52ccc44515fec0cf8c07a8365d7db0ace0d6ad39efc64d8e8acfc425e062cc"
+    },
+    {
+      "path": "scenes/articulated/metadata.json",
+      "bytes": 24614,
+      "sha256": "2a128cc3e39263eea21ef2bb24c1ed40cf675c09980241a3fd11686be3841f61"
+    },
+    {
+      "path": "scenes/articulated/oven/000_door.glb",
+      "bytes": 23580,
+      "sha256": "f2fcd692358f533aabe9362c7867ba591e915061748495e2d66980a67bcb6b90"
+    },
+    {
+      "path": "scenes/articulated/oven/001_door_Clear.glb",
+      "bytes": 3096,
+      "sha256": "a9811d0bc7cd473484ec2358e1c86b77f576f99a02cc57ec557bffc202860d33"
+    },
+    {
+      "path": "scenes/articulated/oven/002_knob_temp.glb",
+      "bytes": 46996,
+      "sha256": "8f346b7617e043d00a39ec69a5ec20cded5ef4b4d2df70398487d787d959e522"
+    },
+    {
+      "path": "scenes/articulated/oven/003_knob_time.glb",
+      "bytes": 46996,
+      "sha256": "91e771219c71b6a1682c4f486b1ec3e7f36d71a4ceb8e379995af2a67771f701"
+    },
+    {
+      "path": "scenes/articulated/oven/004_Body001.glb",
+      "bytes": 356880,
+      "sha256": "fc404cbe0065a1f82adaa24f3fa6df9a8806c2b4fcf9e2bed61935637bf27039"
+    },
+    {
+      "path": "scenes/articulated/oven/005_rack0.glb",
+      "bytes": 71636,
+      "sha256": "21d81f48138e0dfea17ede8e151fc06224631243eb4cf269b3341e7702a68a6c"
+    },
+    {
+      "path": "scenes/articulated/oven/006_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/007_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/008_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/009_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/010_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/011_T_BC001.png",
+      "bytes": 155661,
+      "sha256": "9429613b4aea39805f99435a7727befdfd34778f361715fd362ba593074d952d"
+    },
+    {
+      "path": "scenes/articulated/oven/model.xml",
+      "bytes": 11631,
+      "sha256": "e210926f86624f34c87ea624cb163f7ebe755d20c0ee5b1b0c88878b86e4d866"
+    },
+    {
+      "path": "scenes/prepared/book_blue/collision.stl",
+      "bytes": 1984,
+      "sha256": "7092d6ddbc61bd34596b615c428b1f77d5b872375233b818cba282aaae07536e"
+    },
+    {
+      "path": "scenes/prepared/book_blue/model.glb",
+      "bytes": 603752,
+      "sha256": "945282764980250c6204cc8b1dab14c6016026cef575bf3893d490847c25249e"
+    },
+    {
+      "path": "scenes/prepared/book_blue/physics.json",
+      "bytes": 1260,
+      "sha256": "949363b2752a2b53e9354fda552297045c89c4f0c1642eb59d313002dab7741b"
+    },
+    {
+      "path": "scenes/prepared/book_red/collision.stl",
+      "bytes": 1984,
+      "sha256": "e45a95c2773a5610db0fe6df098584bdb978bb5a1b43b34db44dc1ff0eb6865d"
+    },
+    {
+      "path": "scenes/prepared/book_red/model.glb",
+      "bytes": 555548,
+      "sha256": "61fe437784eab2bdf9bd49b871e3e8946138906de276994ab9b2468853f32b6b"
+    },
+    {
+      "path": "scenes/prepared/book_red/physics.json",
+      "bytes": 1256,
+      "sha256": "6c8abe7360768e700c90045e8f27573e3ea56f36ae98b12971f327dea68bb376"
+    },
+    {
+      "path": "scenes/prepared/camera/collision.stl",
+      "bytes": 1484,
+      "sha256": "a5284d97136055c1a32fe90eae1cce4d290874b4ebe0a5c35d9e240eca431905"
+    },
+    {
+      "path": "scenes/prepared/camera/model.glb",
+      "bytes": 38224,
+      "sha256": "968c8fc50a95cd9f798ac741a2d5514c6ae05aeb13e26c35f74e1b55d6aed438"
+    },
+    {
+      "path": "scenes/prepared/camera/physics.json",
+      "bytes": 1250,
+      "sha256": "7bd200168b18e8db2f629ffa0daeb543ed0f664d13862154046811d8e56d2233"
+    },
+    {
+      "path": "scenes/prepared/pot_green/collision.stl",
+      "bytes": 60684,
+      "sha256": "5d2ce36135176422ac2efcf2ea5e575aa2798bfd67ecfe9ab7444cc436a7c7f8"
+    },
+    {
+      "path": "scenes/prepared/pot_green/model.glb",
+      "bytes": 10107068,
+      "sha256": "92865a8d48286988905a16b856977922e37becc49b3425d95a945264d228671d"
+    },
+    {
+      "path": "scenes/prepared/pot_green/physics.json",
+      "bytes": 1248,
+      "sha256": "e38451f3be58561761fd3f37d8f052d5249d27ae48e67e7e69f0f1691e01e723"
+    },
+    {
+      "path": "scenes/prepared/remote/collision.stl",
+      "bytes": 3884,
+      "sha256": "e6d93ea87abadc0eb7d4d82ac4240fa40e016d1eba5156f1456cbde0f99db638"
+    },
+    {
+      "path": "scenes/prepared/remote/model.glb",
+      "bytes": 140296,
+      "sha256": "5a5e7da40c3415bf583ef6f03600dac51a51e68675303d01e3d027407af4097d"
+    },
+    {
+      "path": "scenes/prepared/remote/physics.json",
+      "bytes": 1265,
+      "sha256": "fb98c3bc29ce5b524c2d9f93381867be4aa03302eb6cedf4490e8bc8a81f693f"
+    },
+    {
+      "path": "scenes/prepared/tape/collision.stl",
+      "bytes": 100384,
+      "sha256": "658963ab6b4574ba68d54b0ae292ff877fcd6bfa4737b7ada0cb461b07e05b80"
+    },
+    {
+      "path": "scenes/prepared/tape/model.glb",
+      "bytes": 3260488,
+      "sha256": "79e7490c3c2bbcc4dae8310a6c5b799cbb27be76363171353e3f36cb58dcd6f4"
+    },
+    {
+      "path": "scenes/prepared/tape/physics.json",
+      "bytes": 1256,
+      "sha256": "47e470a2d9a6c3ee52f29b1d2b5a47d5c70dfd7e86b20f711f1a629f1230e593"
+    },
+    {
+      "path": "scenes/robot_poses/01.json",
+      "bytes": 966,
+      "sha256": "a58b80256556e2af387e34429afa23f4c9c0119e3e832d477cdbe479351a6a96"
+    },
+    {
+      "path": "scenes/robot_poses/03.json",
+      "bytes": 575,
+      "sha256": "16eda0ea6ae7f3210196257b0f1c1cf47f122e4f639b0f5bcf8e26e6b9bb9970"
+    },
+    {
+      "path": "scenes/robot_poses/09.json",
+      "bytes": 802,
+      "sha256": "42efb81411a08c50462c95be8ebb999fcbaeb316680f52558a3df73696e26cc5"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "84a6269d214b9b47580bddfa2e247b1e9f40cd12bffc26c37a9b8d540635b526"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "33939bdc725692de70d9c1d4313472766f38d9d06b15d09825200c1744bfe3c7"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "20d2ed9edba2dcdad56a50d9ac7e49e3c33e27eb03009ce149794c0d3fad3214"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "fb2a3adfd9616a791d90765eea6d0571b3577ac1136ae64a6d06355b1fc48123"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "ca1946da6775c67fa0ee69bb35559b1a698ca8f1f0d7e54215ccaa677928b5bc"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/physics.json",
+      "bytes": 2460,
+      "sha256": "fc9547da0bee13bb502e71b16a0a926a63f00ec20357c8f9f57202746e8b5004"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/visual/texture_map.png",
+      "bytes": 562637,
+      "sha256": "b1ecf299641f99553fa944728b706ba67ffb5ad0a0da72dad298ba9f4803972c"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/adjustable_wrench/visual/textured.obj",
+      "bytes": 1654411,
+      "sha256": "488395e0a19180db2e812f27554c1ef26be22d982955f0988aeb6609ff9dcb71"
+    },
+    {
+      "path": "ycb/objects/apple/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "5f84e7ce8b923e8e38b83c1386d9f5805d5a7e5e96588f150695a95a4750e5b1"
+    },
+    {
+      "path": "ycb/objects/apple/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "4114b8f1491bba9fb8d2836dd6af69cb8567f6d215786f42e0b1de9d4b13233d"
+    },
+    {
+      "path": "ycb/objects/apple/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "f4493ea0f429656f3814b6c20b19ac161b92f6977c455938298e97b04c597531"
+    },
+    {
+      "path": "ycb/objects/apple/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "05c170ba316030a3d6d9b563c33b040b0b497211007967e81a630e872042128e"
+    },
+    {
+      "path": "ycb/objects/apple/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "712a88015dbb7a23c71097fe80292bf899ff384d567af286839be7114de85a3a"
+    },
+    {
+      "path": "ycb/objects/apple/physics.json",
+      "bytes": 2414,
+      "sha256": "4d5568bf57c449640a0f37c1124c89676b00fab202f316b8c11d5b60d20a8e1f"
+    },
+    {
+      "path": "ycb/objects/apple/visual/texture_map.png",
+      "bytes": 434142,
+      "sha256": "6a4a3a4e8dd69b27bda0ab1f5da220835aee56cfb4cd2dc8e01506a9040609d1"
+    },
+    {
+      "path": "ycb/objects/apple/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/apple/visual/textured.obj",
+      "bytes": 1579888,
+      "sha256": "722b58dda2949393288126a77137b03d074feec55d907b2cce295968006a94ce"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "91f6f321155fb8cb194f47816fa076c9ad45aa858546ba1cce62e6112ef9bd2f"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "59d6cff2174e2c6cf0c370719412eb8957639558686741a03234f8470964d4dd"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "da6e6ecd416b69cdad9ec2af8b88c474a7b3c75ebb7a68473d69961cf51977ab"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "76dc13e03f57a6464d46f6a2cacd5060062e5f67f163346029949b98dbf94fa4"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "e4daff3eafa80892c3d1c33bc23e8253bcb3277336059fd77aed30bf041cfee3"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/physics.json",
+      "bytes": 2475,
+      "sha256": "20f42723f1cf87af071e554d8c5351106090a190a6355c168d9eb8871812e14d"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/visual/texture_map.png",
+      "bytes": 599536,
+      "sha256": "4a7c895066b4c197907719272a1d55f72b8d07fc30dddb0dbe828e23c531e245"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/b_toy_airplane/visual/textured.obj",
+      "bytes": 1584402,
+      "sha256": "bc45b201fd3ec4d385f895b3f917ab500a2e9be1fa24c7f191bb26e371b42b11"
+    },
+    {
+      "path": "ycb/objects/bowl/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "c04dc90664026f36251ff696147de0bca95138bd44cf140d0db6c872827c24af"
+    },
+    {
+      "path": "ycb/objects/bowl/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "9778812ff4f7e2011a0b7e07c4b2299d0b39dd2fd6e81aca72a3e6925c60889b"
+    },
+    {
+      "path": "ycb/objects/bowl/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "4f3ff0fdd422aec169f9d7aa81b62207987cbf1bbfcbaf8453f21b99b9cad311"
+    },
+    {
+      "path": "ycb/objects/bowl/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "4d80a8b46d6072c2bdbf57aafb9890137fd055100ee6c9a1fbbc3896363cd51c"
+    },
+    {
+      "path": "ycb/objects/bowl/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "eb22563123ccb79ed09c61d90d0a41a7ad844922e514cb99c1879ee115ca7998"
+    },
+    {
+      "path": "ycb/objects/bowl/physics.json",
+      "bytes": 2471,
+      "sha256": "e46c13237c94e981b53a9323fa60f61f3acff750e907d29fd28673167518bb89"
+    },
+    {
+      "path": "ycb/objects/bowl/visual/texture_map.png",
+      "bytes": 524320,
+      "sha256": "934683f03a6e59c58015331b863fc8e4fd030bc75e43cfb7a85133106c073eae"
+    },
+    {
+      "path": "ycb/objects/bowl/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/bowl/visual/textured.obj",
+      "bytes": 1584843,
+      "sha256": "de05bec5747bbd984482309f73965f5cf6d2b01c486a927be496e60bb9c67db0"
+    },
+    {
+      "path": "ycb/objects/cracker_box/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "33ec8385739bb632ec8a7ebcce0530827836fa1c20944d3699a823eeb85441d4"
+    },
+    {
+      "path": "ycb/objects/cracker_box/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "5fc9716ca0aa1104ac8be901e887e4206c1ff687ff2001b2cf690dd8ddd42d0d"
+    },
+    {
+      "path": "ycb/objects/cracker_box/physics.json",
+      "bytes": 2264,
+      "sha256": "e98f38623bb3aecbb22f55d60a50303b54e10ee20eba946ae8623983f1c44f3d"
+    },
+    {
+      "path": "ycb/objects/cracker_box/visual/texture_map.png",
+      "bytes": 896397,
+      "sha256": "ad8add85b34d23424da97782fbfb8c83e6d56175e998ba09cc2e0fb0f002ff87"
+    },
+    {
+      "path": "ycb/objects/cracker_box/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/cracker_box/visual/textured.obj",
+      "bytes": 1580964,
+      "sha256": "939603438456281573565808a1a9099ab75dad92268c4bd2357f1f9639b147b2"
+    },
+    {
+      "path": "ycb/objects/foam_brick/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "341f7bb5f7e111eab3cff94a8bef0dc1b1f64aa4a63759f6ae5f96c010f83dd8"
+    },
+    {
+      "path": "ycb/objects/foam_brick/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "2a7213467cd39009647476df402507e8d642c0d36afa8d162661f717914d5fdb"
+    },
+    {
+      "path": "ycb/objects/foam_brick/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "8adb6e940fa3c8f2b172e26141295189c5d8c96244e6d411582cc27a839103fe"
+    },
+    {
+      "path": "ycb/objects/foam_brick/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "55d995444c10d30a9b8bfe4907e50ab84c3a5b1ce9e4ef823818676818b959eb"
+    },
+    {
+      "path": "ycb/objects/foam_brick/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "1eadf1d02166bd1eb67cb2ca27aed1ae346cfc9ed005832136366d936aa03da5"
+    },
+    {
+      "path": "ycb/objects/foam_brick/physics.json",
+      "bytes": 2437,
+      "sha256": "4cc477a1ea943c9a49da5a7806345aa456e1e32631e5683673f9e0359d202826"
+    },
+    {
+      "path": "ycb/objects/foam_brick/visual/texture_map.png",
+      "bytes": 443031,
+      "sha256": "5ad89e25745f8840e9b55ab9869736e0d938e7eadf06a973b4de0f91d040f976"
+    },
+    {
+      "path": "ycb/objects/foam_brick/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/foam_brick/visual/textured.obj",
+      "bytes": 1584323,
+      "sha256": "9229b914df538c1c206968a5909783b1a90a17602f0c44b286d706f6d271d32a"
+    },
+    {
+      "path": "ycb/objects/fork/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "9c506bd6797383aa947d4f72050719bcdf06f61334b592834b86ff4418565d74"
+    },
+    {
+      "path": "ycb/objects/fork/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "cb35f2db72450b7214f5809ac3d4e160081870295c3f4c8aedbc3cad0befcb48"
+    },
+    {
+      "path": "ycb/objects/fork/physics.json",
+      "bytes": 2278,
+      "sha256": "e86363f0e3e81a32708df5192ccb48d3286429d3c695fd9e5843c3319f765320"
+    },
+    {
+      "path": "ycb/objects/fork/visual/texture_map.png",
+      "bytes": 295407,
+      "sha256": "56d933e1e141f1552965a4cee912b1c713240d97dc457a9b0603aed09b8e12b2"
+    },
+    {
+      "path": "ycb/objects/fork/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/fork/visual/textured.obj",
+      "bytes": 1615005,
+      "sha256": "1726cb516835aa8eb1e6040e9aa332cf01f5064255cae9b84aee789782d4f9a0"
+    },
+    {
+      "path": "ycb/objects/large_marker/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "525384c0eed63bb4b39493ff06822f317a0ed1db269de431dd89b1176422ca5b"
+    },
+    {
+      "path": "ycb/objects/large_marker/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "42e9c2b4586c7716cadfbc772cb6b0f3e28a0645057fb33ba39fb9dab5bf948b"
+    },
+    {
+      "path": "ycb/objects/large_marker/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "295a79f2757781f1aea2e62afae5d2b30da9d2c51c059e51299c481b164d104f"
+    },
+    {
+      "path": "ycb/objects/large_marker/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "0737ed3648757931f0a8072281641901c2f5024ce0429af70d08ac8d6e4a53a0"
+    },
+    {
+      "path": "ycb/objects/large_marker/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "4f7f95919d6f45c1dbc286da7023a95f227990b6f3df585b072e6ab99c7fe3d7"
+    },
+    {
+      "path": "ycb/objects/large_marker/physics.json",
+      "bytes": 2376,
+      "sha256": "bd3aab8fc7f2e8dc84c7e6b01d940b5d2d67cfe468e8977173a4191b17b6ccca"
+    },
+    {
+      "path": "ycb/objects/large_marker/visual/texture_map.png",
+      "bytes": 358673,
+      "sha256": "f92828db2c770a93fb50713b6dc29844c3448727a59d200796c9be17fb986817"
+    },
+    {
+      "path": "ycb/objects/large_marker/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/large_marker/visual/textured.obj",
+      "bytes": 1586376,
+      "sha256": "dfaa1eb4fcd02262cdd60863ca1165a5bdeb50d69d82966403768a0806742ad5"
+    },
+    {
+      "path": "ycb/objects/mug/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "3592650ef48eb0329ce94b8cc4cb6bd7b6245be2b725f358acdbdd068583bb2b"
+    },
+    {
+      "path": "ycb/objects/mug/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "8b74c1a5de191ef1b992250ae4c51a55a48f3248529d44bd5d77576e98df5cdb"
+    },
+    {
+      "path": "ycb/objects/mug/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "2970a3c4452e9e3eff2d22afca2216918fd4a7f25f8ea6acfa46ab2778dde3ae"
+    },
+    {
+      "path": "ycb/objects/mug/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "d6b61fd5865ead6a5ba17732ed2c72b01f65cab6f3fd361d75bfd6e6e71b5e43"
+    },
+    {
+      "path": "ycb/objects/mug/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "4430fff7d3c7b0dfb9e1ad64cd97953f1e8605007d757e3d6444734c2f6b1ff6"
+    },
+    {
+      "path": "ycb/objects/mug/physics.json",
+      "bytes": 2462,
+      "sha256": "b2dfe60bb693460e4ff6d28e0b5e1fafb1514545b23e0bec6b616acda175ddd6"
+    },
+    {
+      "path": "ycb/objects/mug/visual/texture_map.png",
+      "bytes": 672639,
+      "sha256": "793ac0eeeaac44cb640564d59d533f73fae7bfb257b1b97eae8634822c0c1b7b"
+    },
+    {
+      "path": "ycb/objects/mug/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/mug/visual/textured.obj",
+      "bytes": 1644373,
+      "sha256": "227550f093c445a76e836a14e74ee1c2fcf63808ff5dbbb4d2a6ca0d4fea6d91"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "96e7942ea9c3e5d293e5163a19753613e824a72d6b6ee47d97444dd1f3652a17"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "47d6f58e8d672b74b70d8734ffc96b9f045edc1a0c0ccc35cea923637d1bcb4c"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "2a5d211a563ef0197bed983e5546a1b6ccd043519960acba3b909b4313720a15"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/physics.json",
+      "bytes": 2313,
+      "sha256": "05e21b4f818ecceb50798521f51442dee4f938eb903830f9ca81d30f90998236"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/visual/texture_map.png",
+      "bytes": 382845,
+      "sha256": "0067f302a8d9055a4ee6202697746c533d51e263942a1bffc611ceb22398b809"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/phillips_screwdriver/visual/textured.obj",
+      "bytes": 1581985,
+      "sha256": "5946c947d13b463d193711927c7bf3388c58ccdc9c5ba6f5c163409df6037a9d"
+    },
+    {
+      "path": "ycb/objects/power_drill/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "38c4a10734e7b552c36c3998179f1e99f626f4d39fcab277e57589206888afe9"
+    },
+    {
+      "path": "ycb/objects/power_drill/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "76eda42fff333c5e9078e0d45892a3357a5fde0986b2ee07bc8c04a70cf64664"
+    },
+    {
+      "path": "ycb/objects/power_drill/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "40b17a20360e7a04e3e8ed58920770733a65f37af14977dfd8c75608547c2b22"
+    },
+    {
+      "path": "ycb/objects/power_drill/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "b231779a59cf9989f517a5f563886f91c785b3c9a8d8528c6de93869ea51f50a"
+    },
+    {
+      "path": "ycb/objects/power_drill/collision/convex_004.stl",
+      "bytes": 1684,
+      "sha256": "02c4d573a24e911f2417effef5a44d0e94383b5a2b904fbb894c5c840bae9719"
+    },
+    {
+      "path": "ycb/objects/power_drill/physics.json",
+      "bytes": 2430,
+      "sha256": "07a48ab3f6bafd8def665f5ae07894038436c41ccbba25252d60862cd21bd1e5"
+    },
+    {
+      "path": "ycb/objects/power_drill/visual/texture_map.png",
+      "bytes": 557603,
+      "sha256": "9998d317e0e77a549c069a682d33ba37e735ce779ee7d84b1e371003a8050bac"
+    },
+    {
+      "path": "ycb/objects/power_drill/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/power_drill/visual/textured.obj",
+      "bytes": 1599725,
+      "sha256": "51e5ff2bb61dbc3a98c34283be56fb9cdf2292448d098d6cdec3d3fccd1d9ee7"
+    },
+    {
+      "path": "ycb/objects/spoon/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "c7569f58ca807619beb88624633d7a189a0fac48104ba1fa125683bd22738c07"
+    },
+    {
+      "path": "ycb/objects/spoon/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "e173bf03560f2973c21fc07539524b09237a2d29a170f136a6aea87dd261550c"
+    },
+    {
+      "path": "ycb/objects/spoon/collision/convex_002.stl",
+      "bytes": 1684,
+      "sha256": "711d01a286a6fea2c1c2a12bfa48a82bcfd077239dff8c3aadd991cf27b18dbf"
+    },
+    {
+      "path": "ycb/objects/spoon/collision/convex_003.stl",
+      "bytes": 1684,
+      "sha256": "0f47598d2a47853598c42ba1c57fdbf83b01d4538cc98ef1024952d6f40914f5"
+    },
+    {
+      "path": "ycb/objects/spoon/physics.json",
+      "bytes": 2323,
+      "sha256": "9df872969096bb86aba5b4aee0061036c955e1ee30943a10ccbdb58618b2aba5"
+    },
+    {
+      "path": "ycb/objects/spoon/visual/texture_map.png",
+      "bytes": 306846,
+      "sha256": "4ed6278cd3d0c667fbdf72790f695cc7dbec2ee64c2b540f14639164965d13c3"
+    },
+    {
+      "path": "ycb/objects/spoon/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/spoon/visual/textured.obj",
+      "bytes": 1590106,
+      "sha256": "ed43f9f942f1553e630517e560c7f37a83c6d24818e527de2f0d8c7782636037"
+    },
+    {
+      "path": "ycb/objects/sugar_box/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "1f1c4191d1ac4c20aec3881e5e9e68f6840d1de3349079f93d69fc6263cacef8"
+    },
+    {
+      "path": "ycb/objects/sugar_box/collision/convex_001.stl",
+      "bytes": 1684,
+      "sha256": "e6ec8aa7a246aebc0d76e29bc3287243776041034e7f48ce5b0df50b81bebc3e"
+    },
+    {
+      "path": "ycb/objects/sugar_box/physics.json",
+      "bytes": 2257,
+      "sha256": "1ee5dc9ad2efada30e614bb5e1fe7544973bfc36e4fe7953940831597746ff3d"
+    },
+    {
+      "path": "ycb/objects/sugar_box/visual/texture_map.png",
+      "bytes": 1130835,
+      "sha256": "e0f5f117276b3a37734f7d8c8382d1451be7c56cf1820a08ca7e83c0b3ca787b"
+    },
+    {
+      "path": "ycb/objects/sugar_box/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/sugar_box/visual/textured.obj",
+      "bytes": 1580501,
+      "sha256": "6a89908a3724071e609576969019030844aff7d8b49912dc758ca7853e0d3cf5"
+    },
+    {
+      "path": "ycb/objects/wood_block/collision/convex_000.stl",
+      "bytes": 1684,
+      "sha256": "3bfb9dcc6601e8561e40379a614ed7861adeb61bc58444c6bea93cb4f04dbc1b"
+    },
+    {
+      "path": "ycb/objects/wood_block/physics.json",
+      "bytes": 2239,
+      "sha256": "519a0eb3dc70196b203cc3f5b3cd1d16b3acb167e7aadd48fe5937be83a97824"
+    },
+    {
+      "path": "ycb/objects/wood_block/visual/texture_map.png",
+      "bytes": 906297,
+      "sha256": "5ac6e7d835ae502b3b5ceae599cd95d08165cdd4fa1aa4d9fa0245bd94a4ce03"
+    },
+    {
+      "path": "ycb/objects/wood_block/visual/textured.mtl",
+      "bytes": 65,
+      "sha256": "acfbc0a7e757a16e631591fd9388571931a9f05ba4fdc2080540eac866c06cfe"
+    },
+    {
+      "path": "ycb/objects/wood_block/visual/textured.obj",
+      "bytes": 1581470,
+      "sha256": "7191466ba7367c8fac4f45d4c9a5f88a0e1b4bab91eae1128f60a0d9c450a3e5"
+    }
+  ],
+  "scope": "Exact dependency closure for L1-L10, P1-P10 and D1-D10. Original dataset/robot asset terms apply; no project-wide license is granted by bundling."
+}

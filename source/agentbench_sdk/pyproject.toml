@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Original project code; third-party exceptions are defined in repository LICENSING.md.
+license = {text = "Apache-2.0"}
+name = "agentbench-sdk"
+version = "1.0.0"
+description = "Pure Python client for the AgentBench v1 public protocol"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false
+where = ["."]
+include = ["agentbench_sdk*"]

@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-11",
+  "texts": [
+    {
+      "path": "LICENSE",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/a0dac18d1a773b4cdb7d8dd5d9bf4efab7901030/docs/licenses/by/4.0/legalcode.txt",
+      "canonical_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "revision": "a0dac18d1a773b4cdb7d8dd5d9bf4efab7901030",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    }
+  ]
+}

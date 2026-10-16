@@ -1,0 +1,19 @@
+"""Runtime injection contracts. Implementations are trusted, never agent-loaded."""
+from typing import Protocol
+
+
+class Backend(Protocol):
+    def describe(self) -> dict: ...
+    def snapshot(self, camera_ids=()) -> dict: ...
+    def step(self, action: list[float]) -> dict: ...
+    def finish(self) -> dict: ...
+
+
+class ToolDispatcher(Protocol):
+    """Registry supplies ONLY public descriptions/results; service authorizes names.
+
+    Runtime tool implementation owns schema validation and output declassification.
+    It must not advance physics, expose reference data, or return host paths.
+    """
+    def list(self) -> list[dict]: ...
+    def call(self, name: str, arguments: dict) -> dict: ...

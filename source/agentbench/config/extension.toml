@@ -1,0 +1,23 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+category = "isaaclab"
+readme  = "../../README.md"
+
+title = "Agentbench"
+author = "Chen Feng"
+maintainer = "Chen Feng"
+description="Agentbench tasks and assets for Isaac Lab"
+repository = "https://github.com/Winniechen2002/Agent-bench.git"
+keywords = ["agentbench", "extension", "isaaclab"]
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_tasks" = {}
+[[python.module]]
+name = "agentbench"
+

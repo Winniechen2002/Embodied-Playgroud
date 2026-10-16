@@ -1,0 +1,112 @@
+{
+  "repository": "https://github.com/sharpa-robotics/sharpa-urdf-usd-xml",
+  "revision": "6eea427eb24189519f32b9f21674cd534d3f973c",
+  "declared_license": "Apache-2.0",
+  "license_files": [
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "verification": "Local bytes matched to Git blob IDs in the official pinned tree",
+  "retrieval": [
+    "git clone https://github.com/sharpa-robotics/sharpa-urdf-usd-xml.git",
+    "git checkout --detach 6eea427eb24189519f32b9f21674cd534d3f973c",
+    "Copy the listed upstream_paths; verify each destination SHA-256 before use"
+  ],
+  "files": {
+    "LICENSE.txt": {
+      "sha256": "f6a348fca3d77ddf60e66a3288b060e09b12afdebeabc6fc490b272ecfa10e43",
+      "bytes": 556,
+      "upstream_paths": [
+        "LICENSE.txt"
+      ],
+      "git_blob_sha1": "9f25be800f19b4aee922e2517c918fe8d204f074"
+    },
+    "NOTICE.txt": {
+      "sha256": "bee17b99ba47b327197e75f2d62e3fadbff246f6e4b84e15550afe12fbd2f3d6",
+      "bytes": 842,
+      "upstream_paths": [
+        "NOTICE.txt"
+      ],
+      "git_blob_sha1": "b6a83f58ba4d6719abfa89cde0d981fd54dd40ec"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange.urdf": {
+      "sha256": "261c1a5284e04bc9690e0f5ac39d7a7cace0a16d335d663a1d3c7fcf4e4daf31",
+      "bytes": 36489,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange.urdf"
+      ],
+      "git_blob_sha1": "e29a679136404870790b56de40e47672b1026cc2"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange.usda": {
+      "sha256": "93b536684aa4e140718e52363c4f5fada518211cd053fbf42b499aee57ad4ef7",
+      "bytes": 26732,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange.usda"
+      ],
+      "git_blob_sha1": "2a2a495b2c23bb1e4d4d298263f2aea3f3ea1b43"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/config.yaml": {
+      "sha256": "3982cc9f5091de9ccc923de07c2b65073138350bfc085a42b555a118e79d9a41",
+      "bytes": 758,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/config.yaml"
+      ],
+      "git_blob_sha1": "ad4606de4f9883f4be4145b32ba763e9c880d0f8"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/.asset_hash": {
+      "sha256": "df4b52f9f4ee53ddee61a0b79f4711615c1715f5a08ffb96d82f570455d9b1b5",
+      "bytes": 32,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/.asset_hash"
+      ],
+      "git_blob_sha1": "9322e5665cd76502cec65ca3562faf2a1635c378"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/right_sharpa_wave_with_flange.usd": {
+      "sha256": "985f7d0ce42b441ca6bedacee86a400318427a0dae117fa3b7770e390dfedba7",
+      "bytes": 1476,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/right_sharpa_wave_with_flange.usd"
+      ],
+      "git_blob_sha1": "36c265016b6eccfe7a0e2fb75920a2ece5ad43e4"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_robot.usd": {
+      "sha256": "36edee7b159c0d8a14b6297dc7970fdc6bd8945f86b9007974949c5944c2c42a",
+      "bytes": 2763,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_robot.usd"
+      ],
+      "git_blob_sha1": "577e5d7ba4c4e7cd497b72dbd61907bf99271f20"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_physics.usd": {
+      "sha256": "f7e1189835db7c7934060a0783bfbe7578997b52b236fd7163c8133a783626b6",
+      "bytes": 9673,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_physics.usd"
+      ],
+      "git_blob_sha1": "4880e13378fc2e27ac3adc4b76483d5802cec608"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_sensor.usd": {
+      "sha256": "86636e59b54a62d4a7ab4afbcedd87baa6ee0f2c4b9a46d8a05c777a85cdb76e",
+      "bytes": 657,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave/configuration/right_sharpa_wave_sensor.usd",
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_sensor.usd",
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_wrist/configuration/right_sharpa_wave_with_wrist_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base_with_flange/configuration/right_sharpa_wave_with_float_base_with_flange_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base_with_wrist/configuration/right_sharpa_wave_with_float_base_with_wrist_sensor.usd"
+      ],
+      "git_blob_sha1": "15d4e177cc96cfd737a4fbb2e49d9067572c3dc5"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_base.usd": {
+      "sha256": "f2b19b22a57dc70ba7536a9084c33f2915f1e67639f67b00aa91d21268c6b1dd",
+      "bytes": 10130125,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_base.usd"
+      ],
+      "git_blob_sha1": "db9612dafa68f85654de2a5c2a1e37c16094c744"
+    }
+  },
+  "unmatched_files": [],
+  "redistribution_review": "Upstream notice recorded; project-level and converted/combined-asset rights remain separate"
+}

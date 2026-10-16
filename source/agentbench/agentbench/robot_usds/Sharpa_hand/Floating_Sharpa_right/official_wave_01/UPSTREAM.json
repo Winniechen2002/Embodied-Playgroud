@@ -1,0 +1,112 @@
+{
+  "repository": "https://github.com/sharpa-robotics/sharpa-urdf-usd-xml",
+  "revision": "6eea427eb24189519f32b9f21674cd534d3f973c",
+  "declared_license": "Apache-2.0",
+  "license_files": [
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "verification": "Local bytes matched to Git blob IDs in the official pinned tree",
+  "retrieval": [
+    "git clone https://github.com/sharpa-robotics/sharpa-urdf-usd-xml.git",
+    "git checkout --detach 6eea427eb24189519f32b9f21674cd534d3f973c",
+    "Copy the listed upstream_paths; verify each destination SHA-256 before use"
+  ],
+  "files": {
+    "LICENSE.txt": {
+      "sha256": "f6a348fca3d77ddf60e66a3288b060e09b12afdebeabc6fc490b272ecfa10e43",
+      "bytes": 556,
+      "upstream_paths": [
+        "LICENSE.txt"
+      ],
+      "git_blob_sha1": "9f25be800f19b4aee922e2517c918fe8d204f074"
+    },
+    "NOTICE.txt": {
+      "sha256": "bee17b99ba47b327197e75f2d62e3fadbff246f6e4b84e15550afe12fbd2f3d6",
+      "bytes": 842,
+      "upstream_paths": [
+        "NOTICE.txt"
+      ],
+      "git_blob_sha1": "b6a83f58ba4d6719abfa89cde0d981fd54dd40ec"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base.urdf": {
+      "sha256": "6a98c572314fa037b9c958854de2eb711c9e1f992f9bca4b5a8277f34fd9a412",
+      "bytes": 37796,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base.urdf"
+      ],
+      "git_blob_sha1": "47457e4a0a8433f9e0335e8106484452810af7e2"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base.usda": {
+      "sha256": "5a94d613867e2640861c941dc969b5c4315df2d27b0d2563125f89f28f1bdd00",
+      "bytes": 29036,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base.usda"
+      ],
+      "git_blob_sha1": "70737f5d66d4d15f4fd07aca382bc1da3bdbd56e"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/config.yaml": {
+      "sha256": "fcbe0077128dfb96797415860af436f2eccf0846b94970e18ee6af03ff9cb6a9",
+      "bytes": 866,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/config.yaml"
+      ],
+      "git_blob_sha1": "21f64345758491a0a4a28f3cac27d501e62bf3d3"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base.usd": {
+      "sha256": "04aa57c8dfb0c75d4680a0bbdc64103269564ba00230d8394356eb2827914bb1",
+      "bytes": 1480,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base.usd"
+      ],
+      "git_blob_sha1": "fa2a33f40cd843f151137f423a61cbeba095a502"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/.asset_hash": {
+      "sha256": "012bc0b982345a70c8760f3c1f4b8a5aee2a6cbcb7a183680ab4420b8e8d2177",
+      "bytes": 32,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/.asset_hash"
+      ],
+      "git_blob_sha1": "4e42481134e6e8ead9199058d4e0d5c2f6447a9b"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_physics.usd": {
+      "sha256": "0ee761d35731747353be32b2b95bf246bbaf3922322b6c21217721475d110553",
+      "bytes": 10171,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_physics.usd"
+      ],
+      "git_blob_sha1": "955ba0329966a9b6eba9636f04ac4adc718304c3"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_sensor.usd": {
+      "sha256": "86636e59b54a62d4a7ab4afbcedd87baa6ee0f2c4b9a46d8a05c777a85cdb76e",
+      "bytes": 657,
+      "upstream_paths": [
+        "wave_01/right_sharpa_wave/right_sharpa_wave/configuration/right_sharpa_wave_sensor.usd",
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_sensor.usd",
+        "wave_01/right_sharpa_wave/right_sharpa_wave_with_wrist/configuration/right_sharpa_wave_with_wrist_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base_with_flange/configuration/right_sharpa_wave_with_float_base_with_flange_sensor.usd",
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base_with_wrist/configuration/right_sharpa_wave_with_float_base_with_wrist_sensor.usd"
+      ],
+      "git_blob_sha1": "15d4e177cc96cfd737a4fbb2e49d9067572c3dc5"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_base.usd": {
+      "sha256": "f3f5d625307638fb49523428bfec73924b70b139605503d9e0dbce484a05275c",
+      "bytes": 9014514,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_base.usd"
+      ],
+      "git_blob_sha1": "56dae826090e67d57b13b5a46576d532f591069d"
+    },
+    "right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_robot.usd": {
+      "sha256": "0ebcebc3d0ab657298169e6b53cde16ec72b4e9b8e11ac4cf934fcd7beba6555",
+      "bytes": 2885,
+      "upstream_paths": [
+        "wave_01/sharpa_wave_float_base_urdf_usd/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_robot.usd"
+      ],
+      "git_blob_sha1": "efadd641040bd6a6071174cce43f7383d38316d3"
+    }
+  },
+  "unmatched_files": [],
+  "redistribution_review": "Upstream notice recorded; project-level and converted/combined-asset rights remain separate"
+}

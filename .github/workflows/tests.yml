@@ -1,0 +1,22 @@
+name: Source checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  portable-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU test dependencies
+        run: python -m pip install -r env/runtime/mujoco-constraints.txt pytest==9.1.1 "setuptools>=68" wheel
+      - name: Validate permissions and source contracts
+        run: |
+          python scripts/check_tool_policy_docs.py
+          python -m pytest -q tests

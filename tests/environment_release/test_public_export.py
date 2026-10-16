@@ -1,0 +1,85 @@
+"""Source distribution regressions; no simulator or agent is launched."""
+import hashlib
+import json
+from pathlib import Path
+
+from agentbench_platform.environment_catalog import ROOT
+from agentbench_platform.environment_contracts import action_contracts
+from agentbench_platform.environment_release import build, export_content, source_files
+from agentbench_platform.public_content import public_files
+
+
+def test_native_contracts_remain_source_bound_and_original_records_preserved():
+    source = ROOT/'source/agentbench_platform/agentbench_platform/action_contracts.json'
+    data = json.loads(source.read_text())
+    assert action_contracts() == data['records']
+    projection = json.dumps(data['records'], sort_keys=True, separators=(',', ':')).encode()
+    provenance = data['release_provenance']
+    assert provenance['native_records_sha256'] == hashlib.sha256(projection).hexdigest()
+    assert provenance['native_records_changed'] is False
+    assert provenance['validation_limitation']
+    for name, expected in data['sources'].items():
+        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest() == expected
+
+
+def test_export_is_closed_over_rules_protocol_tests_and_fixture_inputs():
+    files = set(public_files())
+    for name in ('rules.md', 'rules.zh-CN.md', 'docs/evaluation/tasks.json',
+                 'scripts/franka_marble_test_protocol.py',
+                 'tests/benchmark_platform/test_protocol.py'):
+        assert name in files
+    snapshots = [name for name in files if '/evidence/' in name]
+    assert len(snapshots) == 100
+    assert {Path(name).name for name in snapshots} == {'initial_state.json', 'goal_fixture_state.json'}
+
+
+def test_public_sources_exclude_reference_solvers_and_transform_idempotently():
+    forbidden = {'controller.py', 'baseline.py', 'joint_planner.py', 'cube_solver.py',
+                 'rubiks_cube_continuous_plan.py', 'rubiks_cube_planner.py',
+                 'rubiks_cube_reconcile.py', 'rubiks_cube_session.py', 'rubiks_cube_reorientation.py', 'rubiks_cube_continuous_pose.py'}
+    for path in source_files():
+        assert path.name not in forbidden
+        content = (ROOT/path).read_bytes()
+        once = export_content(path, content)
+        assert export_content(path, once) == once
+    from agentbench_hanoi40 import catalog as hanoi
+    assert not hasattr(hanoi, 'plan')
+    assert hanoi.shortest_distance((0,)*5, (2,)*5) == 31
+
+
+def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragments(tmp_path):
+    destination = tmp_path/'source-package'
+    status = build(destination)
+    assert not status['release_ready']
+    assert (destination/'DISTRIBUTION_STATUS').read_text() == 'staging-not-qualified\n'
+    assert (destination/'docs/evaluation/tasks.json').is_file()
+    assert (destination/'rules.md').read_bytes() == (ROOT/'rules.md').read_bytes()
+    assert not any('#' in str(path.relative_to(destination)) for path in destination.rglob('*'))
+    assert not (destination/'source/agentbench_platform/agentbench_platform/cube_solver.py').exists()
+    manifest = json.loads((destination/'distribution-manifest.json').read_text())
+    for name in ('docs/evaluation/tasks.json', 'rules.md', 'scripts/franka_marble_test_protocol.py'):
+        assert manifest[name]['sha256'] == hashlib.sha256((destination/name).read_bytes()).hexdigest()
+
+
+def test_public_launcher_rejects_development_demo_and_recording_options():
+    import importlib.util
+    import pytest
+    spec=importlib.util.spec_from_file_location('public_runtime', ROOT/'scripts/agentbench_platform_runtime.py')
+    runtime=importlib.util.module_from_spec(spec);spec.loader.exec_module(runtime)
+    class Launcher:
+        @staticmethod
+        def add_app_launcher_args(parser):parser.add_argument('--device')
+    for option in ('--dual-sharpa-demo', '--record-video', '--video-control-stride'):
+        with pytest.raises(SystemExit):
+            runtime.parse_runtime_args(Launcher, ['--output','/tmp/parse-only',option])
+
+
+def test_optional_grasp_adapter_retains_runtime_without_private_build_helpers():
+    from agentbench_platform import graspnet, graspnet_cpu
+    assert not hasattr(graspnet, 'freeze_setup')
+    assert not hasattr(graspnet_cpu, 'freeze_container_setup')
+    assert not hasattr(graspnet_cpu, 'export_container_context')
+    assert callable(graspnet.registry_from_setup)
+    assert callable(graspnet_cpu.verify_container_setup)
+    assert graspnet.descriptor()['name']=='graspnet'
+    assert len(graspnet_cpu.worker_digest())==64

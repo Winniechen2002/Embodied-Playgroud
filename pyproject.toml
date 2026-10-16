@@ -1,0 +1,16 @@
+[project]
+# Original project code; third-party exceptions are defined in repository LICENSING.md.
+license = {text = "Apache-2.0"}
+name = "agent-bench"
+version = "0.1.0"
+description = "Embodied Playground environments and source workspace."
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "agentbench",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+agentbench = { path = "source/agentbench", editable = true }

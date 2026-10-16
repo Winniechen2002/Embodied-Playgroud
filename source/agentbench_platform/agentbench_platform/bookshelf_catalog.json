@@ -1,0 +1,2737 @@
+{
+  "sources": {
+    "variants.py": "50dc9ad0acd987eff623dac5313224f296cea53a06875a423de4698c86555de4",
+    "catalog.py": "83d90b8f226c124c1312953504fc99ca8c630ba5df748ef9f0ae5946071488a3",
+    "geometry.py": "c9d5ee4ac319f36313989476e3771748679a73545c165f9d77c540c9e5526e8e",
+    "sampling.py": "8e93f0bd2fc281f3f64eb323c39a36d48846f38cd2170451074f03c0d57a104b"
+  },
+  "variants": [
+    {
+      "id": "BooksTableD1",
+      "level": 1,
+      "goal": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Objects present: 3 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD1-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "BooksTableD1",
+        "setting": "BooksTable",
+        "level": "D1",
+        "name": "Three upright books onto the middle shelf",
+        "order": [
+          1,
+          1
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD1-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD1-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l"
+          ],
+          "display": [],
+          "large": [],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "upright",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "books",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 90.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 3,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Objects present: 3 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D1",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing"
+          ],
+          "scenario": [
+            "single_layer_rule"
+          ],
+          "object_count": 3,
+          "objects_to_place": 3,
+          "layers_used": [
+            "middle"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "5280351be1663de7345f02c6ceac28fd0bcdbb96b31f10cf5a107a83548b321c"
+      }
+    },
+    {
+      "id": "BooksTableD2",
+      "level": 2,
+      "goal": "Organize the shelf in front of you. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Objects present: 5 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD2-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "BooksTableD2",
+        "setting": "BooksTable",
+        "level": "D2",
+        "name": "Five books, some lying flat",
+        "order": [
+          1,
+          2
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD2-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD2-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [],
+          "large": [],
+          "trash": [],
+          "slots": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "books",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 130.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 5,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Objects present: 5 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D2",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp"
+          ],
+          "scenario": [
+            "single_layer_rule"
+          ],
+          "object_count": 5,
+          "objects_to_place": 5,
+          "layers_used": [
+            "middle"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "cd804ece935c398282d1788a1dfa9ebc335e023ed7ff478f803545b72d7eea26"
+      }
+    },
+    {
+      "id": "BooksTableD3",
+      "level": 3,
+      "goal": "Organize the shelf in front of you. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Objects present: 8 books. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD3-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "BooksTableD3",
+        "setting": "BooksTable",
+        "level": "D3",
+        "name": "Books onto the middle shelf",
+        "order": [
+          1,
+          3
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD3-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD3-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w"
+          ],
+          "display": [],
+          "large": [],
+          "trash": [],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "books",
+        "row_books": 3,
+        "stacked_start": true,
+        "episode_length_s": 190.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 8,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Objects present: 8 books. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D3",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles"
+          ],
+          "scenario": [
+            "single_layer_rule"
+          ],
+          "object_count": 8,
+          "objects_to_place": 8,
+          "layers_used": [
+            "middle"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": true,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "9cae9dc5d50726b60ae8e030b3e1b9fef691df07b6b110866fda3e8919481273"
+      }
+    },
+    {
+      "id": "BooksTableD4",
+      "level": 4,
+      "goal": "Organize the shelf in front of you. Middle layer: the 10 books, standing upright and packed tightly together against the left side wall. Objects present: 10 books. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD4-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "BooksTableD4",
+        "setting": "BooksTable",
+        "level": "D4",
+        "name": "Ten books against a named wall",
+        "order": [
+          1,
+          4
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD4-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-BooksTableD4-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w"
+          ],
+          "display": [],
+          "large": [],
+          "trash": [],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "negative_y",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "books",
+        "row_books": 5,
+        "stacked_start": true,
+        "episode_length_s": 230.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 10,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 10 books, standing upright and packed tightly together against the left side wall. Objects present: 10 books. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D4",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles"
+          ],
+          "scenario": [
+            "single_layer_rule",
+            "named_wall_anchor"
+          ],
+          "object_count": 10,
+          "objects_to_place": 10,
+          "layers_used": [
+            "middle"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": true,
+          "named_wall": true
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "d732a0b8a2455688b1594cfcd46cb2db4459acddd8b9f8f7b572d0fdc932a7bc"
+      }
+    },
+    {
+      "id": "ShelfTableD1",
+      "level": 1,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage box, standing upright on the desk under the first board. The box has no handles or lid features: carry it between both hands. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 4 books, a trophy and a storage box. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD1-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfTableD1",
+        "setting": "ShelfTable",
+        "level": "D1",
+        "name": "Books, a trophy and one box",
+        "order": [
+          2,
+          1
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD1-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD1-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy"
+          ],
+          "large": [
+            "box_s"
+          ],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "",
+            "",
+            "box_s",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "upright",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 180.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 6,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage box, standing upright on the desk under the first board. The box has no handles or lid features: carry it between both hands. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 4 books, a trophy and a storage box. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D1",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification"
+          ],
+          "object_count": 6,
+          "objects_to_place": 6,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "1d8a89a5c52bf77f2b550f4a3d8311afb2587c1789a1095a354516633a8f40e0"
+      }
+    },
+    {
+      "id": "ShelfTableD2",
+      "level": 2,
+      "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 6 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 6 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 3 books and the remaining objects lie scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD2-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfTableD2",
+        "setting": "ShelfTable",
+        "level": "D2",
+        "name": "Books, three display objects and two boxes",
+        "order": [
+          2,
+          2
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD2-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD2-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_s",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy",
+            "frame",
+            "lamp"
+          ],
+          "large": [
+            "box_s",
+            "box_l"
+          ],
+          "trash": [],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_s",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "lamp",
+            "box_s",
+            "box_l",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 3,
+        "stacked_start": false,
+        "episode_length_s": 310.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 11,
+          "two_arm_objects": 2
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 6 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 6 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 3 books and the remaining objects lie scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D2",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification"
+          ],
+          "object_count": 11,
+          "objects_to_place": 11,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "573f3ebdc0ca3964ee27b0327d7c9f9bc5260285599e4a5ca2b88639ed8963bc"
+      }
+    },
+    {
+      "id": "ShelfTableD3",
+      "level": 3,
+      "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 8 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD3-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfTableD3",
+        "setting": "ShelfTable",
+        "level": "D3",
+        "name": "Organize a full desk hutch from the desk",
+        "order": [
+          2,
+          3
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD3-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD3-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w"
+          ],
+          "display": [
+            "trophy",
+            "frame",
+            "lamp"
+          ],
+          "large": [
+            "box_s",
+            "box_l"
+          ],
+          "trash": [],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "lamp",
+            "box_s",
+            "box_l",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 3,
+        "stacked_start": true,
+        "episode_length_s": 350.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 13,
+          "two_arm_objects": 2
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 8 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D3",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification"
+          ],
+          "object_count": 13,
+          "objects_to_place": 13,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": true,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "07723288504c943ee0208971ce6ca91965306e3a4dd1d471c42555fd7726f061"
+      }
+    },
+    {
+      "id": "ShelfTableD4",
+      "level": 4,
+      "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 10 books, standing upright and packed tightly together against one side wall. Top layer: the photo frame, desk lamp and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 10 books, a photo frame, a desk lamp, a globe and 2 storage boxes of different sizes. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD4-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfTableD4",
+        "setting": "ShelfTable",
+        "level": "D4",
+        "name": "A crowded desk with flat books and awkward display objects",
+        "order": [
+          2,
+          4
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD4-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfTableD4-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w"
+          ],
+          "display": [
+            "frame",
+            "lamp",
+            "globe"
+          ],
+          "large": [
+            "box_s",
+            "box_l"
+          ],
+          "trash": [],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "book_w",
+            "frame",
+            "lamp",
+            "globe",
+            "box_s",
+            "box_l",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "flat",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 5,
+        "stacked_start": true,
+        "episode_length_s": 390.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 15,
+          "two_arm_objects": 2
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 10 books, standing upright and packed tightly together against one side wall. Top layer: the photo frame, desk lamp and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 10 books, a photo frame, a desk lamp, a globe and 2 storage boxes of different sizes. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D4",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification"
+          ],
+          "object_count": 15,
+          "objects_to_place": 15,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": true,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "b1966e720523815e00b4ef91adca97d0dece1e36d0cb2c823ece4c0d10bd26c7"
+      }
+    },
+    {
+      "id": "ShelfCrateD1",
+      "level": 1,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 2 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 2 books, a trophy and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD1-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateD1",
+        "setting": "ShelfCrate",
+        "level": "D1",
+        "name": "Unpack a neatly packed crate",
+        "order": [
+          3,
+          1
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD1-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD1-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m"
+          ],
+          "display": [
+            "trophy"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "",
+            "",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "packed",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 200.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 4,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 2 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 2 books, a trophy and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D1",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf"
+          ],
+          "object_count": 4,
+          "objects_to_place": 4,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "980d4400496d5d3bb8d760ae2373f96d36883b4bf89f796376218f56855456d9"
+      }
+    },
+    {
+      "id": "ShelfCrateD2",
+      "level": 2,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 3 books, a trophy, a photo frame and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD2-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateD2",
+        "setting": "ShelfCrate",
+        "level": "D2",
+        "name": "Unpack a small jumbled crate",
+        "order": [
+          3,
+          2
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD2-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD2-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l"
+          ],
+          "display": [
+            "trophy",
+            "frame"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 240.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 6,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 3 books, a trophy, a photo frame and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D2",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach",
+            "clear_obstructing_objects"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "random_pile_planning"
+          ],
+          "object_count": 6,
+          "objects_to_place": 6,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "023e4ad9596fa961c6fbcd14b5d279834711d891363be6c006fb4945cf1cab87"
+      }
+    },
+    {
+      "id": "ShelfCrateD3",
+      "level": 3,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD3-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateD3",
+        "setting": "ShelfCrate",
+        "level": "D3",
+        "name": "Unpack a jumbled moving crate onto the hutch",
+        "order": [
+          3,
+          3
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD3-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD3-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "plant",
+            "frame",
+            "globe"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "plant",
+            "frame",
+            "globe",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 300.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 9,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D3",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach",
+            "clear_obstructing_objects"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "random_pile_planning"
+          ],
+          "object_count": 9,
+          "objects_to_place": 9,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "407c6bd9d21c6ea2d162ed6c0a443ebf10e43a7a187bc053b5d07cce6bb95476"
+      }
+    },
+    {
+      "id": "ShelfCrateD4",
+      "level": 4,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 7 books, standing upright and packed tightly together against the right side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 7 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD4-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateD4",
+        "setting": "ShelfCrate",
+        "level": "D4",
+        "name": "Unpack a full crate against a named wall",
+        "order": [
+          3,
+          4
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD4-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateD4-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_m",
+            "book_l",
+            "book_x",
+            "book_w"
+          ],
+          "display": [
+            "plant",
+            "frame",
+            "globe"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_m",
+            "book_l",
+            "book_x",
+            "book_w",
+            "",
+            "",
+            "",
+            "plant",
+            "frame",
+            "globe",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "positive_y",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 340.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 11,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 7 books, standing upright and packed tightly together against the right side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 7 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D4",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach",
+            "clear_obstructing_objects"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "random_pile_planning",
+            "named_wall_anchor"
+          ],
+          "object_count": 11,
+          "objects_to_place": 11,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": true
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "72cafa4881f0d7963488a097887a2f2d778d06be5587b825b5776c83612ccc16"
+      }
+    },
+    {
+      "id": "ShelfCrateFixD1",
+      "level": 1,
+      "goal": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 4 books, a trophy and a photo frame. All objects start on the shelf. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD1-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateFixD1",
+        "setting": "ShelfCrateFix",
+        "level": "D1",
+        "name": "One book on the wrong layer of a tidy shelf",
+        "order": [
+          4,
+          1
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD1-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD1-Play-v0",
+        "start_container": "shelf",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy",
+            "frame"
+          ],
+          "large": [],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [
+          {
+            "object": "book_m",
+            "slot": 1,
+            "level": 2
+          }
+        ],
+        "preshelved_slots": [
+          0,
+          2,
+          3,
+          10,
+          11
+        ],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 50.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 1,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 4 books, a trophy and a photo frame. All objects start on the shelf. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D1",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "high_shelf_reach"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "misplaced_object_correction"
+          ],
+          "object_count": 6,
+          "objects_to_place": 1,
+          "layers_used": [
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": false,
+          "correction_required": true,
+          "misplaced_count": 1,
+          "hand_over_required": false,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "0a9d5b86199b57c5635d447f8ebbd289bbee468ed2fdb22cfc69cac1b1d378d6"
+      }
+    },
+    {
+      "id": "ShelfCrateFixD2",
+      "level": 2,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 3 books, a potted plant, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD2-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateFixD2",
+        "setting": "ShelfCrateFix",
+        "level": "D2",
+        "name": "Unpack a packed crate and correct a misplaced globe",
+        "order": [
+          4,
+          2
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD2-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD2-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l"
+          ],
+          "display": [
+            "plant",
+            "globe"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "plant",
+            "globe",
+            "",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "packed",
+        "wall_anchor": "either",
+        "misplaced": [
+          {
+            "object": "globe",
+            "slot": 11,
+            "level": 1
+          }
+        ],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 240.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 6,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 3 books, a potted plant, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D2",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "spaced_placement",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "misplaced_object_correction"
+          ],
+          "object_count": 6,
+          "objects_to_place": 6,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": true,
+          "misplaced_count": 1,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "82ce474b055d25f52b2a506344e70dd075e8582f285327f709d1507de7ebe7cf"
+      }
+    },
+    {
+      "id": "ShelfCrateFixD3",
+      "level": 3,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD3-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateFixD3",
+        "setting": "ShelfCrateFix",
+        "level": "D3",
+        "name": "Unpack the crate and correct a misplaced globe",
+        "order": [
+          4,
+          3
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD3-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD3-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "plant",
+            "frame",
+            "globe"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "plant",
+            "frame",
+            "globe",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [
+          {
+            "object": "globe",
+            "slot": 12,
+            "level": 1
+          }
+        ],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 300.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 9,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D3",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach",
+            "clear_obstructing_objects"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "random_pile_planning",
+            "misplaced_object_correction"
+          ],
+          "object_count": 9,
+          "objects_to_place": 9,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": true,
+          "misplaced_count": 1,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "407c6bd9d21c6ea2d162ed6c0a443ebf10e43a7a187bc053b5d07cce6bb95476"
+      }
+    },
+    {
+      "id": "ShelfCrateFixD4",
+      "level": 4,
+      "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD4-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "ShelfCrateFixD4",
+        "setting": "ShelfCrateFix",
+        "level": "D4",
+        "name": "Unpack the crate and correct two misplaced objects",
+        "order": [
+          4,
+          4
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD4-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-ShelfCrateFixD4-Play-v0",
+        "start_container": "crate",
+        "object_set": {
+          "books": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "plant",
+            "frame",
+            "globe"
+          ],
+          "large": [
+            "crate"
+          ],
+          "trash": [],
+          "slots": [
+            "book_xs",
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "plant",
+            "frame",
+            "globe",
+            "crate",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [
+          {
+            "object": "globe",
+            "slot": 12,
+            "level": 1
+          },
+          {
+            "object": "book_l",
+            "slot": 3,
+            "level": 2
+          }
+        ],
+        "preshelved_slots": [],
+        "layout": "offset",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 300.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 9,
+          "two_arm_objects": 1
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D4",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "pinch_from_crate",
+            "bimanual_rim_carry",
+            "hand_over_between_arms",
+            "low_shelf_reach",
+            "clear_obstructing_objects"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "ordering_crate_before_shelf",
+            "random_pile_planning",
+            "misplaced_object_correction",
+            "multiple_misplaced_objects"
+          ],
+          "object_count": 9,
+          "objects_to_place": 9,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top"
+          ],
+          "ordering_dependency": true,
+          "correction_required": true,
+          "misplaced_count": 2,
+          "hand_over_required": true,
+          "trash_disposal": false,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "407c6bd9d21c6ea2d162ed6c0a443ebf10e43a7a187bc053b5d07cce6bb95476"
+      }
+    },
+    {
+      "id": "TableCleanD1",
+      "level": 1,
+      "goal": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 3 books and 2 pieces of trash (a crumpled paper ball and an empty drink can). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD1-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "TableCleanD1",
+        "setting": "TableClean",
+        "level": "D1",
+        "name": "Three books and two pieces of trash",
+        "order": [
+          5,
+          1
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD1-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD1-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l"
+          ],
+          "display": [],
+          "large": [],
+          "trash": [
+            "paper_a",
+            "can_slim"
+          ],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "paper_a",
+            "can_slim",
+            "",
+            ""
+          ]
+        },
+        "book_start_mode": "upright",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 130.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 5,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 3 books and 2 pieces of trash (a crumpled paper ball and an empty drink can). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D1",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "drop_into_bin",
+            "irregular_object_grasp"
+          ],
+          "scenario": [
+            "single_layer_rule",
+            "trash_disposal",
+            "distractor_objects"
+          ],
+          "object_count": 5,
+          "objects_to_place": 5,
+          "layers_used": [
+            "middle",
+            "bin"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": true,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "68f720447d07c05960db488cdb7d8cb65cc35a2265d12ac7560a71a32cb3a6d8"
+      }
+    },
+    {
+      "id": "TableCleanD2",
+      "level": 2,
+      "goal": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 4 books, a trophy, a photo frame and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD2-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "TableCleanD2",
+        "setting": "TableClean",
+        "level": "D2",
+        "name": "Books, display objects and four pieces of trash",
+        "order": [
+          5,
+          2
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD2-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD2-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy",
+            "frame"
+          ],
+          "large": [],
+          "trash": [
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ],
+          "slots": [
+            "book_s",
+            "book_m",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "",
+            "",
+            "",
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 0,
+        "stacked_start": false,
+        "episode_length_s": 230.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 10,
+          "two_arm_objects": 0
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 4 books, a trophy, a photo frame and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D2",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "spaced_placement",
+            "frame_orientation",
+            "high_shelf_reach",
+            "drop_into_bin",
+            "irregular_object_grasp"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "trash_disposal",
+            "distractor_objects"
+          ],
+          "object_count": 10,
+          "objects_to_place": 10,
+          "layers_used": [
+            "middle",
+            "top",
+            "bin"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": true,
+          "stacked_start": false,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "d0a5c98fe0ef2352cb3255627f245331c0d28d7b7230b8c46cddcbd2338455cb"
+      }
+    },
+    {
+      "id": "TableCleanD3",
+      "level": 3,
+      "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD3-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "TableCleanD3",
+        "setting": "TableClean",
+        "level": "D3",
+        "name": "Organize the hutch and throw the trash away",
+        "order": [
+          5,
+          3
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD3-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD3-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy",
+            "frame",
+            "lamp"
+          ],
+          "large": [
+            "box_s",
+            "box_l"
+          ],
+          "trash": [
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "lamp",
+            "box_s",
+            "box_l",
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 3,
+        "stacked_start": true,
+        "episode_length_s": 410.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 16,
+          "two_arm_objects": 2
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D3",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry",
+            "drop_into_bin",
+            "irregular_object_grasp"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "trash_disposal",
+            "distractor_objects"
+          ],
+          "object_count": 16,
+          "objects_to_place": 16,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top",
+            "bin"
+          ],
+          "ordering_dependency": false,
+          "correction_required": false,
+          "misplaced_count": 0,
+          "hand_over_required": false,
+          "trash_disposal": true,
+          "stacked_start": true,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "5b54d68d4a1e2ba04cef420960647308fcf5509e884f45d55746a92701ff0008"
+      }
+    },
+    {
+      "id": "TableCleanD4",
+      "level": 4,
+      "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+      "gym_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD4-Play-v0",
+      "record": {
+        "version": 1,
+        "variant_id": "TableCleanD4",
+        "setting": "TableClean",
+        "level": "D4",
+        "name": "Organize the hutch with trash already hidden on it",
+        "order": [
+          5,
+          4
+        ],
+        "environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD4-v0",
+        "play_environment_id": "Agentbench-OrganizeBookshelf-DualFranka-TableCleanD4-Play-v0",
+        "start_container": "table",
+        "object_set": {
+          "books": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x"
+          ],
+          "display": [
+            "trophy",
+            "frame",
+            "lamp"
+          ],
+          "large": [
+            "box_s",
+            "box_l"
+          ],
+          "trash": [
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ],
+          "slots": [
+            "book_m",
+            "book_m",
+            "book_m",
+            "book_xs",
+            "book_s",
+            "book_l",
+            "book_x",
+            "",
+            "",
+            "",
+            "trophy",
+            "frame",
+            "lamp",
+            "box_s",
+            "box_l",
+            "paper_a",
+            "paper_b",
+            "can_crushed",
+            "can_slim"
+          ]
+        },
+        "book_start_mode": "mixed",
+        "crate_books": "jumbled",
+        "wall_anchor": "either",
+        "misplaced": [
+          {
+            "object": "paper_b",
+            "slot": 16,
+            "level": 1
+          },
+          {
+            "object": "can_crushed",
+            "slot": 17,
+            "level": 2
+          }
+        ],
+        "preshelved_slots": [],
+        "layout": "centered",
+        "row_books": 3,
+        "stacked_start": true,
+        "episode_length_s": 410.0,
+        "time_limit_basis": {
+          "base_s": 30.0,
+          "per_object_s": 20.0,
+          "per_two_arm_object_s": 30.0,
+          "crate_start_s": 60.0,
+          "objects_to_place": 16,
+          "two_arm_objects": 2
+        },
+        "layer_rules": {
+          "bottom": "the storage crate or boxes, standing upright on the desk under the first board",
+          "middle": "the books, standing upright and packed tightly together against one side wall",
+          "top": "the display objects, standing upright, at least 5 cm apart and 2 cm from the side walls; a photo frame faces outward",
+          "bin": "trash objects, inside the waste bin standing on the floor beside the desk"
+        },
+        "instruction": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
+        "difficulty_axes": {
+          "level": "D4",
+          "manipulation": [
+            "pinch_grasp",
+            "shelf_insertion",
+            "row_packing",
+            "flat_book_regrasp",
+            "topple_or_pull_from_packed_row",
+            "unstack_piles",
+            "spaced_placement",
+            "frame_orientation",
+            "occluded_grasp_feature",
+            "high_shelf_reach",
+            "low_shelf_reach",
+            "bimanual_squeeze_carry",
+            "drop_into_bin",
+            "irregular_object_grasp"
+          ],
+          "scenario": [
+            "layer_rules",
+            "object_classification",
+            "trash_disposal",
+            "distractor_objects",
+            "misplaced_object_correction",
+            "multiple_misplaced_objects"
+          ],
+          "object_count": 16,
+          "objects_to_place": 16,
+          "layers_used": [
+            "bottom",
+            "middle",
+            "top",
+            "bin"
+          ],
+          "ordering_dependency": false,
+          "correction_required": true,
+          "misplaced_count": 2,
+          "hand_over_required": false,
+          "trash_disposal": true,
+          "stacked_start": true,
+          "named_wall": false
+        },
+        "grading_basis": "authored_task_demands_not_empirical_rank",
+        "action_schema": {
+          "dims": 16,
+          "order": [
+            "left_arm[7]",
+            "left_gripper",
+            "right_arm[7]",
+            "right_gripper"
+          ],
+          "arm_action": "joint_position_offset_from_default",
+          "arm_action_scale": 0.5,
+          "gripper_action": "binary_symmetric_position",
+          "gripper_open_half_width_m": 0.04,
+          "gripper_closed_half_width_m": 0.0,
+          "control_hz": 30
+        },
+        "control_sha256": "b7f0869a26c9b35cfbc84dbf2404e3b89b8174df94ff5ee777b3edbf1485b572",
+        "object_set_sha256": "5b54d68d4a1e2ba04cef420960647308fcf5509e884f45d55746a92701ff0008"
+      }
+    }
+  ],
+  "release_provenance": {
+    "excluded_reference_source": {
+      "panda_kinematics.py": "bce5e5f7a0469913ec5c7c4ee5f7ae7235d23587ee125f29d2b3df10abda31ac"
+    },
+    "variants_changed": false,
+    "reason": "Unused reference-policy IK helper excluded from the public environment distribution."
+  }
+}

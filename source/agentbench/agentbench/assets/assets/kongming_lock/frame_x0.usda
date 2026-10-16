@@ -1,0 +1,85 @@
+#usda 1.0
+(
+    defaultPrim = "Piece"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Piece" (
+    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+)
+{
+    uniform string pieceName = "frame_x0"
+    uniform string pieceFamily = "A"
+    float physics:mass = 0.10
+
+    def Scope "Looks"
+    {
+        def Material "WoodMaterial"
+        {
+            token outputs:surface.connect = </Piece/Looks/WoodMaterial/PreviewSurface.outputs:surface>
+            def Shader "PreviewSurface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.48, 0.24, 0.08)
+                float inputs:roughness = 0.62
+                token outputs:surface
+            }
+        }
+    }
+
+    def Xform "Visuals"
+    {
+    def Cube "Box_000"
+    {
+        double3 xformOp:translate = (-0.07500000, 0.00000000, 0.00000000)
+        float3 xformOp:scale = (0.02400000, 0.02400000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        rel material:binding = </Piece/Looks/WoodMaterial>
+    }
+    def Cube "Box_001"
+    {
+        double3 xformOp:translate = (0.00000000, -0.01250000, 0.00000000)
+        float3 xformOp:scale = (0.09900000, 0.01150000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        rel material:binding = </Piece/Looks/WoodMaterial>
+    }
+    def Cube "Box_002"
+    {
+        double3 xformOp:translate = (0.07500000, 0.00000000, 0.00000000)
+        float3 xformOp:scale = (0.02400000, 0.02400000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        rel material:binding = </Piece/Looks/WoodMaterial>
+    }
+    }
+    def Xform "Colliders"
+    {
+    def Cube "Box_000" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        double3 xformOp:translate = (-0.07500000, 0.00000000, 0.00000000)
+        float3 xformOp:scale = (0.02400000, 0.02400000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        token visibility = "invisible"
+    }
+    def Cube "Box_001" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        double3 xformOp:translate = (0.00000000, -0.01250000, 0.00000000)
+        float3 xformOp:scale = (0.09900000, 0.01150000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        token visibility = "invisible"
+    }
+    def Cube "Box_002" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        double3 xformOp:translate = (0.07500000, 0.00000000, 0.00000000)
+        float3 xformOp:scale = (0.02400000, 0.02400000, 0.02400000)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        token visibility = "invisible"
+    }
+    }
+}

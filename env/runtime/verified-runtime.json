@@ -1,0 +1,29 @@
+{
+  "scope": "observed_engineering_runtime_combinations",
+  "platform": "Linux x86_64",
+  "python": "3.11.15",
+  "isaac_lab_source": {
+    "revision": "b4c321024792976150ca55fddb26fa34480d974e"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "nvidia_driver": "580.173.02",
+  "torch_cuda_runtime": "12.6",
+  "mujoco_rendering": "Mesa EGL surfaceless",
+  "constraints": {
+    "mujoco": "mujoco-constraints.txt",
+    "isaac": "isaac-binary-constraints.txt",
+    "maniskill": "../../env/maniskill_lgd/requirements-simulator.txt"
+  },
+  "installation": "Use separate MuJoCo, Isaac and ManiSkill environments. Isaac uses the official standalone Isaac Sim 5.1.0 binary and the recorded Isaac Lab revision; no simulator or optional model is fetched implicitly.",
+  "reproducibility_limit": "Runtime pins do not establish full engineering qualification or cross-hardware bitwise reproducibility.",
+  "torch_build": "2.7.0+cu126",
+  "maniskill": {
+    "python": "3.11.15",
+    "physical_backend": "SAPIEN CPU, one scene",
+    "physics_hz": 240,
+    "control_hz": 20,
+    "rendering": "Vulkan"
+  },
+  "isaac_sim": "5.1.0",
+  "isaac_route": "official_standalone_binary_plus_isolated_venv"
+}

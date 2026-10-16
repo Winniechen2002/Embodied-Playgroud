@@ -1,0 +1,52 @@
+[
+  {
+    "task_id": 1,
+    "key": "01",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 2,
+    "key": "02",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 3,
+    "key": "03",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 4,
+    "key": "04",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 5,
+    "key": "05",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 6,
+    "key": "06",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 7,
+    "key": "07",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 8,
+    "key": "08",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 9,
+    "key": "09",
+    "physics_variant": 0
+  },
+  {
+    "task_id": 10,
+    "key": "10",
+    "physics_variant": 0
+  }
+]
