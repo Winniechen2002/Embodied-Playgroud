@@ -1,0 +1,445 @@
+{
+  "scope": "isaac_installation_worker",
+  "status": "passed_installation_worker",
+  "tasks": [
+    {
+      "task_id": "kongming_lock/dual-panda/A01",
+      "configuration_sha256": "6c7cc4ca7fe99053a69ae6b830bd206bba6b3692205ac8073cd8b206ac054842",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "render": {
+        "byte_length": 921600,
+        "sha256": "632b540631b6f096f01e0e1592b6f3c4a4aec6969f49195c131df13ab6c99af7",
+        "width": 640,
+        "height": 480
+      },
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A02",
+      "configuration_sha256": "4fd9c486eff516bb723d21f6e0715eca4660491aea76212a5964a8b4d8c90551",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A03",
+      "configuration_sha256": "f7130677fe9f91253230998d18ec8ff33d2d6c5d6fafe6dd29176a90a697e48e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A04",
+      "configuration_sha256": "42a1667eeaea07f4a70dc0cd8022d74a97f629a0001353298404f177da41f9f7",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A05",
+      "configuration_sha256": "20d087cd843f255ecbd31a1c0835fe35c18fd023f7a6d377a41771816afc8ee2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A06",
+      "configuration_sha256": "138f2c0cfb1e5bd81e1538eac98254591d476951fb0fcecd0ef3dac18f786822",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A07",
+      "configuration_sha256": "a658fa2d1dc79f3ad54d69684b29374dd01ad6872d610c0d3ee57e2dd92d9c1d",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A08",
+      "configuration_sha256": "efd8111925eda3f2e1428d7ba1ab72e75feea113c204b4220f047b604cce6158",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A09",
+      "configuration_sha256": "a310244e05e263dd92d16df2c0412e52832124fc6c7808e898edb888b4dc129d",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A10",
+      "configuration_sha256": "f03e4085670cb48f0666aed2db8ebb4756f0b8ec8886e50609499ac330974b9b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A11",
+      "configuration_sha256": "572d404837465fe71e51fb32f5c97094ee0a19579628fbef60d393707e37a84b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A12",
+      "configuration_sha256": "58c942b6e521ab971b522965047b2417273a63271892da6e55e1a5ff9675f594",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A13",
+      "configuration_sha256": "6e541c086dd1cab724abe4277e0714e39823f8ebdf2deca731ee8639a407bef9",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A14",
+      "configuration_sha256": "2269bd1c5bf2a6fe21ad7441217f37c1c85cd8d3baacddd4f8ee0ee2e2accdf0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/A15",
+      "configuration_sha256": "ef77c0e3bc6eb6f9bfaf4453ca74cd116ca84a89c372a56be225863798dc0c32",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D01",
+      "configuration_sha256": "7b7e9b8eedc1d6e18fe2733a06fafd3bd2a5643c4e69c5418bf0aad9a1bdfaf3",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D02",
+      "configuration_sha256": "d986ce605592eeae8c066d0ab89ba3f4f61c66666aa73215b281f04627d58d60",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D03",
+      "configuration_sha256": "5c653e4840241ef4b19dbb7b05f183dc2b7765636d1a731c3b2f110c3d7e0307",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D04",
+      "configuration_sha256": "185ddba7f6ea37b50b5923ab954a1e8b0016b84b9be69ba4acffeb33a4862d2c",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D05",
+      "configuration_sha256": "41bdd72e8f5263d5bffc9ea4d4c6cdf9c4dbca0c71dfdcc08c780dfaf67dbc3e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D06",
+      "configuration_sha256": "8a568d013582d318ca2aac807383afca0f094ed77a0fce8b50c0b3e25bfb0344",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D07",
+      "configuration_sha256": "461be36756d59eaaf77bc6083aee9e22e5b8e50f613051a9e190ba586013011b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D08",
+      "configuration_sha256": "c5909c5bb54600bdfb9d6b4ba393853f2ac00dde6ec72c4595e0b4f8587f91e0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D09",
+      "configuration_sha256": "9930abeca9e699fe6fef9e62abd98fe083bd90e0a18d2d285e9cfff91ee448a4",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D10",
+      "configuration_sha256": "081dcbe47fe3ceaca167dd294e2b75273267f0581fe439be744e766faac959d4",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D11",
+      "configuration_sha256": "6c1a4bd0c22c33674309a2a3523afd1c18228f8efe57b41b1553bea8c64b1be2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D12",
+      "configuration_sha256": "e673ffd5508b40f1dbe2ebe7a5983955a90528e93f42d75bbfff7c7f45f4f568",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D13",
+      "configuration_sha256": "bd7d53fa40e12a1693276b7fa9ab3b93cb6d5e1270a9291781c33d77a046dd3e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D14",
+      "configuration_sha256": "0fd47e129c2976fc197249b6d985c3eed6683d1f37878100820f6a5545541e09",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-panda/D15",
+      "configuration_sha256": "b8bbe8a8788d67514073b3883bd6bb3be3a73b01e30ff2772575ca60acbd3a7e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    }
+  ],
+  "http_packages": {
+    "fastapi": {
+      "version": "0.120.2",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/fastapi/__init__.py"
+    },
+    "starlette": {
+      "version": "0.49.1",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/starlette/__init__.py"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_build": "2.7.0+cu126",
+  "torch_path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/torch/__init__.py"
+}

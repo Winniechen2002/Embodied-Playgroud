@@ -1,0 +1,445 @@
+{
+  "scope": "isaac_installation_worker",
+  "status": "passed_installation_worker",
+  "tasks": [
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A01",
+      "configuration_sha256": "26842b32f3257c9a12f73729dac8090a5f63a61468773a478b24395a20fb3228",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "render": {
+        "byte_length": 921600,
+        "sha256": "4e44edda285e9a3361554e47ddc55dde619ba32e56de1cb32aaa9f97372c4714",
+        "width": 640,
+        "height": 480
+      },
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A02",
+      "configuration_sha256": "fb7c6a9d38483bf11809de1db6c7046bab7bbfedc5fe3e57c9abfe192600a93b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A03",
+      "configuration_sha256": "3424a768a09958f7fab7ff3f67967ced9f0ce9c578ad311819c0997512da1a1c",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A04",
+      "configuration_sha256": "6636e55a1be6e6c814d06cc16aed20e388c0b09cddca87cac384101affc2047e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A05",
+      "configuration_sha256": "c6882e4af4cfe555325f71193251be82d0351903f33a22fedf1bb9b14faa2374",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A06",
+      "configuration_sha256": "cc0a073cbeaf584843cad0ea23d8cca33cbf6cfb09b424b7a61526b3f27f55a2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A07",
+      "configuration_sha256": "d01d26ad0174ef4616249de511467f438faf7a75ea66fb8469ef6397bf848f91",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A08",
+      "configuration_sha256": "454708d2ae738299acbfd4564ec569c6d49dc71ed3bcc49ad91a18472b078053",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A09",
+      "configuration_sha256": "8767092bf3d4a0e75189d7bbda1d0a048918422d70c56025706b44e3b729cd48",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A10",
+      "configuration_sha256": "c6d36b03d05bb1f449caaceef3513af9df5fb22bf55425f35d978f85e88f6e34",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A11",
+      "configuration_sha256": "1c0cd16456eab0690d82fc46a887774c869bf2e7ead8bdb78f4a79e3ef3bbf51",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A12",
+      "configuration_sha256": "793b1d2d3c4e7d9e871f721ba8ec823f066b5e0cf4643775eb78a86fc5922721",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A13",
+      "configuration_sha256": "02225bfd09a4788a859b5a3593e179a4231a040ef53413813cdceffe8c51ef48",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A14",
+      "configuration_sha256": "575be8269956c027625b7620b6eca4e766f1b5cfeea61d1f0626675385ce25b7",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/A15",
+      "configuration_sha256": "f015242fd48935265386cb59e18686f811dc0645b0e95c3c86b7bc9202848825",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D01",
+      "configuration_sha256": "515d1749b9d0f97d47760fc5e8d86e3049d93c38f18c9787689b518af0a7a1f7",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D02",
+      "configuration_sha256": "4cf94b6146e780930c646e6e6133000fd89884f06cdcba9715aaaf35fe97334d",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D03",
+      "configuration_sha256": "00d48b776d80bc57fed98f434674aaadc7789c16e3b99f13cd525db052341f73",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D04",
+      "configuration_sha256": "c16b0a58875d64397dc1bd21a865ba4befd35e44daef5a4658d5404b4a480f95",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D05",
+      "configuration_sha256": "7c9b1a831ac060bee9ba984e35179d269f1f50d1a9317108d373852ce25cfe13",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D06",
+      "configuration_sha256": "c6d86b7ab04dcfdaa1a23153fcf1f89824960fd6a6e60bdff9bbad50a5987a14",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D07",
+      "configuration_sha256": "08c3534dc19b9996b3724abe5c2c778078d58095503fda907e5466d162cfcb38",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D08",
+      "configuration_sha256": "f32580241edf9e8b32977c14aba505f4d89b1d77dd3362580db654b073c92f6b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D09",
+      "configuration_sha256": "5b878bd27a5703be58cdcdfa1381a045a47088ae3259fdfe031c9fd965df56a7",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D10",
+      "configuration_sha256": "a462801ed6f713ea28ceabeb0fd732d6482fcbe8939523b1de0406cb4d8980ef",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D11",
+      "configuration_sha256": "870161bee9a2bd9f6e954a27416fe08a8f7040f5249c6e4dfabeaf24aee0365a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D12",
+      "configuration_sha256": "3fef3d8225c9d6e1de59dbff2d69b0499a7e285dcb63b824343fe7c2d863302a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D13",
+      "configuration_sha256": "cd9d4abf97ef96b1f776c0a584387839df494cf4e7f3f1c2167a12039416b473",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D14",
+      "configuration_sha256": "d680fcdc46997d81379bc5d2b828e0cf96c0d26dd3885a7e361c23e8c31b27a3",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "kongming_lock/dual-floating-sharpa/D15",
+      "configuration_sha256": "10fec462078e94a931842d9ba928674613d7888470230539f3f580dd5a5e706f",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 56,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": true,
+        "truncated": false
+      }
+    }
+  ],
+  "http_packages": {
+    "fastapi": {
+      "version": "0.120.2",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/fastapi/__init__.py"
+    },
+    "starlette": {
+      "version": "0.49.1",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/starlette/__init__.py"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_build": "2.7.0+cu126",
+  "torch_path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/torch/__init__.py"
+}

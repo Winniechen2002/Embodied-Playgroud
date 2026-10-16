@@ -1,0 +1,585 @@
+{
+  "scope": "isaac_installation_worker",
+  "status": "passed_installation_worker",
+  "tasks": [
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H01",
+      "configuration_sha256": "f47696cb41fbe0eee9ae71022e3d96708077cb9beaeb7b0b3b92c0fdb548336b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "render": {
+        "byte_length": 921600,
+        "sha256": "2f969e03599f170065c7bcfcb2d1c6b7445d0aface86320437cf45611a82ac85",
+        "width": 640,
+        "height": 480
+      },
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H02",
+      "configuration_sha256": "c4871a8ecfb84e1258e13b5f73bd69964749901f7be067a6ec7fcb4a9257c8fa",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H03",
+      "configuration_sha256": "4bbe06af3cf6333a751a19d3a67ea3032d09b8926047e199f69b2a48f2220e4f",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H04",
+      "configuration_sha256": "aca97a3f85191f04416cbc72d1bf674f9fefbfe365c18057239b67db283f4dda",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H05",
+      "configuration_sha256": "a64487979e8f6cb67d33c14e0fe62d5194681bbd93073c9f6b2a8b25b88ea219",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H06",
+      "configuration_sha256": "2df14877b637aaba8daa2f6959499e30276bf5bdf4514bd582934c969c8e33a2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H07",
+      "configuration_sha256": "cf1a751a3a340bdef9be9fa3bba7e3abe4e84e5695e65c2b7100d4482d82a00f",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H08",
+      "configuration_sha256": "a8d615e366eac82f37c9fd9bd9e325b68e6aaef30cea83404718d1ca6307c959",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H09",
+      "configuration_sha256": "4b1d33a826c62d420483e5bf88ca5eeda8894a7b1d6f2f3e96078583db47a374",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H10",
+      "configuration_sha256": "1bb89b4712ebe737b65fb449dfdee376669f0b5f6c506b0a6152dcb7ff774f2a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H11",
+      "configuration_sha256": "12a6f70e09b61a30a486a1134c30822f7411a27ad1f478d88b0dfbbadc105282",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H12",
+      "configuration_sha256": "24627c83d417f700a22a9f183425ff6907809d6777f1353f67f0f22b3552fe6a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H13",
+      "configuration_sha256": "83366b31a057d8a98cfde053038e89baf0a5110f2874829994a004db179d8bb5",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H14",
+      "configuration_sha256": "0bd7dd47adc380c62897ce6101907d0262d080cdf65ff66df26f47f107cdde0c",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H15",
+      "configuration_sha256": "c128eeef608c6f6122e69124eadc315c9a2920e36cdcdfeb007f88fb1bb31cf8",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H16",
+      "configuration_sha256": "b60be085afd8abcb5440303ef2a7cc07b52a3aeb28353db855e40787fb0b0895",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H17",
+      "configuration_sha256": "52fcb5329b632c8c477b4c96c779eb4dfc506b3fa3f64670a3267b7ded4f3d65",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H18",
+      "configuration_sha256": "f0bf1da5eaa810e819b950077626275e43e9f86daaf83c94b3bfbc4e973a892c",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H19",
+      "configuration_sha256": "a74ba3be9c0849867a71057e877643dfe8caa2b80af06631804b5e9f6afa75b9",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H20",
+      "configuration_sha256": "cb463fd79726dda92cfc149ef96a695eef40b17ec542895876ce9d5042f1da5a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H21",
+      "configuration_sha256": "4aa31c879638daee502c543b0021349aa5f40aeabe6d5c7a7f3ce4aad1f0e724",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H22",
+      "configuration_sha256": "ad265c2ece0fb316974d3e9269dfb84554cfe9b2fe90eb208a9ed0eb74ac5c3e",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H23",
+      "configuration_sha256": "22f33022ef6f1ac7208f300d45a2d31412a3eb4c620b8c0792a7b4cbf447edaf",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H24",
+      "configuration_sha256": "8088ef605cbde29170196c71f967cf19196ca36e06a62f099a8328ed068c50ee",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H25",
+      "configuration_sha256": "8452477f94fd77770e0428151e26224eb480c7cb67f4c3bfeaba236897de3518",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H26",
+      "configuration_sha256": "3b62c655fed37e2f71c8c45383a4cf12f53fdbee18eb8f8e80f7f8d151629476",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H27",
+      "configuration_sha256": "24b5cf30968846efde7e073b3c78236a45641c418f8da18c0131777a1f90a13b",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H28",
+      "configuration_sha256": "1069489dd7775194241a9cb1fdbd4cb609ff5c7aa8e89a0bbbe0990cd583873a",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H29",
+      "configuration_sha256": "dcb77a9903e6be6392bdcc15028cb1389f4db10f411658ba111d945d068a60c3",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H30",
+      "configuration_sha256": "e470d0b67ce19cd452f12ada507c5a46eaf591071732039b13ec22118ad0bf70",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H31",
+      "configuration_sha256": "69eb83bfe887ff002f2f91930dfdb50ac2891b3027e37aa13108c2beb1d63791",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H32",
+      "configuration_sha256": "be8ccfb791349a8e7d4a16260023b4e41e16064d1b60039fd1fa5563ad11f1d0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H33",
+      "configuration_sha256": "7329dc460085b05e19d8e6bb5a4f8a5de0e5ead6ccb13a4ee40bbc7e6f68f686",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H34",
+      "configuration_sha256": "8f3f6242185a013c50b6acaf20a5343550767c236822b0fd1dc1f5f893de1436",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H35",
+      "configuration_sha256": "d90c400b509dbca8aec241a6aeae0d20be3066ab97bff140729eb395f04a1cbe",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H36",
+      "configuration_sha256": "fb80a398ba0e43e23742b3473d5a44d07f78055136e1e7c454389a5c9cc0b284",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H37",
+      "configuration_sha256": "20f09c0320d1618e87bdffc0dd61d093082c0ed8d3f2c6d3bada07589574e426",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H38",
+      "configuration_sha256": "473f4e28000e14c3789843044b85abf6c0eeaf24275dd24ff9989111376d0d39",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H39",
+      "configuration_sha256": "e277e39ef3c61ba8eec9131ba19e1ec40f49525f3b7ddc10576068d0d2d50038",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "hanoi_floating/floating-sharpa/H40",
+      "configuration_sha256": "dd9d6ffadec4f4be939f33f5464544427bff791a3f3e370a557c4f22782c84e2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 28,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    }
+  ],
+  "http_packages": {
+    "fastapi": {
+      "version": "0.120.2",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/fastapi/__init__.py"
+    },
+    "starlette": {
+      "version": "0.49.1",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/starlette/__init__.py"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_build": "2.7.0+cu126",
+  "torch_path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/torch/__init__.py"
+}

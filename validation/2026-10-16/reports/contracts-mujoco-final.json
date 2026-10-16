@@ -1,0 +1,1319 @@
+{
+  "scope": "scorer_endpoint_fixtures_only",
+  "source_digest": "056123b29b389e5832b455cb14a34df8c68658d2eb5f8fe466bde6599e3f89e8",
+  "catalog_digest": "a26b7abe55b2f5590843fd6c20a88c6cac861748a35a317cc820aefd14490863",
+  "documentation_digest": "21dc23a6d308bf25172eb549903ecae2b55eabed3a048d41a57c282df3ce9b8a",
+  "asset_digest": "5f55dc2214938789a935a6f599001abb64c6a7b6c0020110d53bba5aceb2a5d8",
+  "scorer_digest": "f9bb8c55ad6973326c3d2c64b39515c2f4ff658a8abdc85c8fb32fe09ede12c3",
+  "matrix_version": "environment-conditions-v3",
+  "matrix_digest": "1839ad444220ab6987622ffa1ffb88e2eed9563efd20648f03d440296d06afad",
+  "capability_profile_version": "2026-10-09-environment-l0-l3",
+  "expected_tasks": 100,
+  "run_status": "completed",
+  "tasks": [
+    {
+      "task_id": "marble/dual-panda/A001",
+      "contract_sha256": "2a82c5c931c26d8cf8023f1edbd29f7df09404c12d4cf129fb19f28fffd908cb",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.5229788620054023
+    },
+    {
+      "task_id": "marble/dual-panda/A002",
+      "contract_sha256": "33b17efb322c32bc17a08657bad4cd4b5e2166f0e2996dae106669de7e107c59",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.10872619001020212
+    },
+    {
+      "task_id": "marble/dual-panda/A003",
+      "contract_sha256": "5933f2f832c0094d2d17e8fc5293b5b4095a2b292c689531d1a3b60b81e3df95",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08482178300619125
+    },
+    {
+      "task_id": "marble/dual-panda/A004",
+      "contract_sha256": "abff020957cbbfa8b575df613b3db2a4f10840c1e1d6843b4988b2d1e2e65c5d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08873443800257519
+    },
+    {
+      "task_id": "marble/dual-panda/A005",
+      "contract_sha256": "4a72ee08363df4d1175dfbce2dcfd92bcadda43dfb2efc0f7246217a8d280432",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08779435500036925
+    },
+    {
+      "task_id": "marble/dual-panda/A006",
+      "contract_sha256": "3f14e12ee2818c99b897c18f0b034549e43ad73a6f3707ce8c5f2fcda533468e",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09047266100242268
+    },
+    {
+      "task_id": "marble/dual-panda/A007",
+      "contract_sha256": "787d75e4cb550733de8a2bb85abb9c314ed64f2dc7cf0784339ebaf8cc88c588",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08542842700262554
+    },
+    {
+      "task_id": "marble/dual-panda/A008",
+      "contract_sha256": "4978e60fc35f1f568c68c6c2765922a51f484603e69632f5ca37959f6b5e7779",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07619180099572986
+    },
+    {
+      "task_id": "marble/dual-panda/A009",
+      "contract_sha256": "03bc26ce55d64f001d0ba3d1c956c9f6c4a86be95c859b2637a13c995b54681f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.10867734700150322
+    },
+    {
+      "task_id": "marble/dual-panda/A010",
+      "contract_sha256": "3e478536adcf211966ca43fa283ffb202edf6c36bff55ecacd236726c6fd273e",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08465107499796432
+    },
+    {
+      "task_id": "marble/dual-panda/A011",
+      "contract_sha256": "e98b23edbd17cc4a825d69a0b09c268f61fb583b76cb009f01f2019b1a2564cd",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08268245999352075
+    },
+    {
+      "task_id": "marble/dual-panda/A012",
+      "contract_sha256": "840da78aff20006866d598483bc10d60d44977f866c0c2f2f2991aebde1da787",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0854363019898301
+    },
+    {
+      "task_id": "marble/dual-panda/A013",
+      "contract_sha256": "e4b3c801fea947f21acc76911f9b17db99879a117dbe4ca79f42c4db29e8172d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0883791460073553
+    },
+    {
+      "task_id": "marble/dual-panda/A014",
+      "contract_sha256": "dc635cb8b0d4270dbdc5ca84e40d0362c8b8a3a5e45c9cd97012f5ff435bb5fd",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0766317249945132
+    },
+    {
+      "task_id": "marble/dual-panda/A015",
+      "contract_sha256": "b24c57d281d69296182048ecd39e910f57e558c09d07e4aaab76a179653c7735",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08527652600605506
+    },
+    {
+      "task_id": "marble/dual-panda/A016",
+      "contract_sha256": "263ced9a62e87e8e8e4ef66ad9fd0a8b0fcb70db638ba14d17c914761435e5dc",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08621017599944025
+    },
+    {
+      "task_id": "marble/dual-panda/A017",
+      "contract_sha256": "ed9362a61d184bfcff0d9c6b7fb017dc11de9adf762d716d2b9d3eb2e58bf1a4",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08361415698891506
+    },
+    {
+      "task_id": "marble/dual-panda/A018",
+      "contract_sha256": "fbc0a6846bafda51a2d117ee3ac11f75eca6f899de115ed59a82809dbb396d0d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0840975439932663
+    },
+    {
+      "task_id": "marble/dual-panda/A019",
+      "contract_sha256": "099b5de941a20277d57d550edcdd4e775806bfa12fd0da64f5844e77af22b1fc",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08912662000511773
+    },
+    {
+      "task_id": "marble/dual-panda/A020",
+      "contract_sha256": "e0ac89e583734eeb22deb2acaa6c8f654dcca436b37bcdfcdf9b2ae9838b7d85",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08898111101007089
+    },
+    {
+      "task_id": "marble/dual-panda/A021",
+      "contract_sha256": "edabdeffc1fa8aa1a17bb8434f5f397300531b873e5b83be320b8aa30fa5f939",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08063759798824321
+    },
+    {
+      "task_id": "marble/dual-panda/A022",
+      "contract_sha256": "143617a3af5bda06ec796365cc184771d1087a7bf8e9f1e42d370b2c5d7195da",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08795176600688137
+    },
+    {
+      "task_id": "marble/dual-panda/A023",
+      "contract_sha256": "c04129468e7fb2c9f72bd102543bc3b7e3fcab3a8ebab0d38b8738f4c582da91",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08367003400053363
+    },
+    {
+      "task_id": "marble/dual-panda/A024",
+      "contract_sha256": "634ab0638ddec913397cf6ebfee5ed061b875ca9949f634ed30a202f591b3024",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09968583099544048
+    },
+    {
+      "task_id": "marble/dual-panda/A025",
+      "contract_sha256": "f7d5ed30e67c4020116f66d640261f6e1c39032affe607364754d006edf20919",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08675423900422174
+    },
+    {
+      "task_id": "marble/dual-panda/A026",
+      "contract_sha256": "a4065d1ae7dddb7ebbfee18686fd2b4aba60126e842154d4551a57fd9fba8251",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08626822700898629
+    },
+    {
+      "task_id": "marble/dual-panda/A027",
+      "contract_sha256": "3e1e796a062e8621eebbb363486582d86eb75dcb54ac075bc0b0a5c2b2ad59b3",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07640849699964747
+    },
+    {
+      "task_id": "marble/dual-panda/A028",
+      "contract_sha256": "d8e574fc96b1a47ad414a9021c56b4fa64d8f204b3643bf81a9c6973af58ab40",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07403039500059094
+    },
+    {
+      "task_id": "marble/dual-panda/A029",
+      "contract_sha256": "efedc53dab5789fbd25bbab8c778aa507faceb153d87b50ad170fa2034937c9c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08248256701335777
+    },
+    {
+      "task_id": "marble/dual-panda/A030",
+      "contract_sha256": "867f35da5a2d83e42f7956d679019a3b26a1cadb733f72646da3996b45b05e11",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0827874209935544
+    },
+    {
+      "task_id": "marble/dual-panda/A031",
+      "contract_sha256": "e5f5fd7bfbca2fe8cba33d4ed0fd0c335d50533269a8b49d214c3c891df67fdf",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08340799200232141
+    },
+    {
+      "task_id": "marble/dual-panda/A032",
+      "contract_sha256": "2f362b59259bbad2537eba835b2b7ae969d75e6673c50b505fc1fdf83df7cf70",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09597390200360678
+    },
+    {
+      "task_id": "marble/dual-panda/A033",
+      "contract_sha256": "6130812be20c3c4404421da7105b954a432ff94e7541decc2de168ed9c520958",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.093930964008905
+    },
+    {
+      "task_id": "marble/dual-panda/A034",
+      "contract_sha256": "a3f8bb9125d5321da07f1d9d3b2947858077320ac168311ec249b22d0c27097c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08930347800196614
+    },
+    {
+      "task_id": "marble/dual-panda/A035",
+      "contract_sha256": "bb0039d91793cc7872d1ee9ce2fb2c479759662ae9dee83cc1b460dd098cfa22",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.10224387700145599
+    },
+    {
+      "task_id": "marble/dual-panda/A036",
+      "contract_sha256": "538ddb8a0f1c92d25a33b2456e7d8bc93a25b0b428bdda90ee5e159aaf2cd3a5",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09364969399757683
+    },
+    {
+      "task_id": "marble/dual-panda/A037",
+      "contract_sha256": "0d4081d3dab27b1deacdc2cc28c907c4dc774dda55bb3dccca003c441177fb8e",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07683415300562046
+    },
+    {
+      "task_id": "marble/dual-panda/A038",
+      "contract_sha256": "a93ea2296dedccc484ecbddcc880d0fdc35e307815d38c4199514a9f7da7070d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0976166119944537
+    },
+    {
+      "task_id": "marble/dual-panda/A039",
+      "contract_sha256": "9f0452287499b5cf0015c2925d7a8ef7b6c6cbc1df3ca752af7001d662811c2c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08225517999380827
+    },
+    {
+      "task_id": "marble/dual-panda/A040",
+      "contract_sha256": "1029d5c408e3a1c0326cc314357319cf5111d664826ea44e73baa63f54b96235",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07726481898862403
+    },
+    {
+      "task_id": "marble/dual-panda/A041",
+      "contract_sha256": "ea38f4554803d1b1b76a7477f096703030175a16a3a83aad157e0eb8fe2b7778",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07439486500516068
+    },
+    {
+      "task_id": "marble/dual-panda/A042",
+      "contract_sha256": "f3a8e973cf4c04e93ecf9c4b6c32ebf75cb46f873ba20de7302050b465664c34",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08375438500661403
+    },
+    {
+      "task_id": "marble/dual-panda/A043",
+      "contract_sha256": "210e6aca703ba183ae2c9c1b60268d7bf3f3c258665ae41bd0bb859ed08be304",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09234643400122877
+    },
+    {
+      "task_id": "marble/dual-panda/A044",
+      "contract_sha256": "33447c2ca61d5ea61391e8f5985a3ebdcf9389da7a5fb3d3282b1d8a7b34c58e",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07450442500703502
+    },
+    {
+      "task_id": "marble/dual-panda/A045",
+      "contract_sha256": "5c28c371fdfd0aa6fedf55c9324b890954291869439f9b083f78825e2429a82f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.1002480590104824
+    },
+    {
+      "task_id": "marble/dual-panda/A046",
+      "contract_sha256": "1f456cafa7f99669cbe4057a0b77274eb7c4ca9405f2c161c34125e6f52e7d36",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09067563001008239
+    },
+    {
+      "task_id": "marble/dual-panda/A047",
+      "contract_sha256": "b309f17c730913c30bb821a8f9a11d7f71556394235702782201308979978d4f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08703328500268981
+    },
+    {
+      "task_id": "marble/dual-panda/A048",
+      "contract_sha256": "421fdeb890d3ced8c0a18e64dc7bc644b86280dc119aea4f55d15e01a809f51d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.1006782740005292
+    },
+    {
+      "task_id": "marble/dual-panda/A049",
+      "contract_sha256": "e9abbabd28b16710570d19303f12f879af1b9efec55be756a2269c86d9aa631f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07610866100003477
+    },
+    {
+      "task_id": "marble/dual-panda/A050",
+      "contract_sha256": "ce964b51d7226cf11249fda90b833d3697216b45a8f3d9033aa12bb64a4e7566",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07808269700035453
+    },
+    {
+      "task_id": "marble/dual-panda/A051",
+      "contract_sha256": "055436fcb57977aa1f49c500f7cc10c56f9a654900dc1d78eaf8a8b8eb5911a7",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07974682901112828
+    },
+    {
+      "task_id": "marble/dual-panda/A052",
+      "contract_sha256": "cac22ee48c87dc5fc2e87b27a83817acdead83b0d3ed9ed83e19f1414f352f1a",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.076505883000209
+    },
+    {
+      "task_id": "marble/dual-panda/A053",
+      "contract_sha256": "3ed961ac992df8d83e581199a10e01e61a7ffbb7629b61e1985b5b2677aff165",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07643840400851332
+    },
+    {
+      "task_id": "marble/dual-panda/A054",
+      "contract_sha256": "c89a76295652f1c4be193290e6e16ef947fae56ee855a55cf4eb3516053277d9",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08472919600899331
+    },
+    {
+      "task_id": "marble/dual-panda/A055",
+      "contract_sha256": "07035d547dc8fe49565aba3114da7557812ad9998dfacfe7511efdc470bdcc12",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07858837700041477
+    },
+    {
+      "task_id": "marble/dual-panda/A056",
+      "contract_sha256": "251c7b85419df68c5eaf421bec21bb0424b733adc1e4fb086baf74f0a32eff46",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08466709598724265
+    },
+    {
+      "task_id": "marble/dual-panda/A057",
+      "contract_sha256": "5a0065f2ef92a80496f1bc8ef9a164c39bceff3db6d3973e9f44ff8a9ec5cae1",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0781454579991987
+    },
+    {
+      "task_id": "marble/dual-panda/A058",
+      "contract_sha256": "ba8f0f6467317232f49a726764eb7a4ef8b9198ff33e186540de1f2df9fc60c9",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08217194999451749
+    },
+    {
+      "task_id": "marble/dual-panda/A059",
+      "contract_sha256": "4fdf31d5ebe1716afa5bb1c95a0698a7b75bca51b3f3ad0928256056ce98ae1e",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07978802800062113
+    },
+    {
+      "task_id": "marble/dual-panda/A060",
+      "contract_sha256": "9489299fdbd668f6875218884b6db836fff8c39adc3be624d5ab4da239a5be8f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07904765900457278
+    },
+    {
+      "task_id": "marble/dual-panda/A061",
+      "contract_sha256": "9d19b6c7e405f0b091322fad802dac919bc6309691743e79043d27cd8143b858",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08925198999349959
+    },
+    {
+      "task_id": "marble/dual-panda/A062",
+      "contract_sha256": "cc504868425147bbfec06817fabc0a42713d7a2ce606037b4845d239536b587d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07967565300350543
+    },
+    {
+      "task_id": "marble/dual-panda/A063",
+      "contract_sha256": "6df62a9ec8202c6abc6ed180616a40ea3091ddb9d479d6b786ea4746444422ed",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0882975290005561
+    },
+    {
+      "task_id": "marble/dual-panda/A064",
+      "contract_sha256": "140c3bf9845fd442db95ad989cebbdd6c47aedfe11e0fe00b71ba3101965889d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08197555401420686
+    },
+    {
+      "task_id": "marble/dual-panda/A065",
+      "contract_sha256": "f00cb1dfc2daaf8b20d18dc4ce692d090304b5110e74609afec3399ba59ac400",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08270928099227604
+    },
+    {
+      "task_id": "marble/dual-panda/A066",
+      "contract_sha256": "372b8d6e28d84f3cd5d2eb8fa618c910e9d56a58c6893b377ae133b3b4ca9995",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08224799600429833
+    },
+    {
+      "task_id": "marble/dual-panda/A067",
+      "contract_sha256": "cf5fddc85c7df3cd9b26192cbdf01338d8339a44c3e00bbaf6f42cf5f48e8c43",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08447357499971986
+    },
+    {
+      "task_id": "marble/dual-panda/A068",
+      "contract_sha256": "828f8a80f9af3da210ecbfd2031627908bc35d2085cf2400347d98d0271985b8",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07939889200497419
+    },
+    {
+      "task_id": "marble/dual-panda/A069",
+      "contract_sha256": "c571615029a237959c98fe47a1cfa6196222a7aeb1f188b7905ba97b1c668eac",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.16091232899634633
+    },
+    {
+      "task_id": "marble/dual-panda/A070",
+      "contract_sha256": "2adb3186332518d0e918ae7d8eacd994c284e84cf631bace977c9ce9fadc268f",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0905982620024588
+    },
+    {
+      "task_id": "marble/dual-panda/A071",
+      "contract_sha256": "7923fa84d9020581f8f16a99dfb2e0ade7843a9abc018dda79edcb01aaf7742a",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07770312900538556
+    },
+    {
+      "task_id": "marble/dual-panda/A072",
+      "contract_sha256": "e1dbf397312ceda0f412abd1c26233762c5cc700ca15dfb1a3697e37b51f3bf9",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08705670900235418
+    },
+    {
+      "task_id": "marble/dual-panda/A073",
+      "contract_sha256": "f4c162196e9e36b95e5957fcd0ac4ae1a4e66b57ba5725a9ac59abfd246fc273",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0752327110094484
+    },
+    {
+      "task_id": "marble/dual-panda/A074",
+      "contract_sha256": "08323041705f4d3a60b6c6d60f3b15cf2effb5535d06519e3bb7632475ac4fc2",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09838567800761666
+    },
+    {
+      "task_id": "marble/dual-panda/A075",
+      "contract_sha256": "c2802afa193c6a7daa31256e80d5c31f93de08586540a738275525712b5782dd",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08097711799200624
+    },
+    {
+      "task_id": "marble/dual-panda/A076",
+      "contract_sha256": "c9b1178d44b72e10d1030ef8eb09c8a0bdc0d4edd2904dc6353f4433eb823abd",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.071228411004995
+    },
+    {
+      "task_id": "marble/dual-panda/A077",
+      "contract_sha256": "a0c5a7a8bb12e46ff6067805e3072f02fe39540684d39ca4cb1dbddbc2f93411",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.06192813398956787
+    },
+    {
+      "task_id": "marble/dual-panda/A078",
+      "contract_sha256": "bd6dd54b778af875e8c696ac058726ecd8aa74de51cbc4079975acbc2b562658",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.06871674400463235
+    },
+    {
+      "task_id": "marble/dual-panda/A079",
+      "contract_sha256": "e5d8cd15d10d7b8bcd405dd022fa8e4d3a084ae86df9a3f7237d99974ad1bbae",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08303102799982298
+    },
+    {
+      "task_id": "marble/dual-panda/A080",
+      "contract_sha256": "ff61b31cd8985f5a367dea40959db2d2bfd2dfc281d745243de01f05648dbaea",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07671943301102147
+    },
+    {
+      "task_id": "marble/dual-panda/A081",
+      "contract_sha256": "42b2a2d3b218474542f11cf11bb32bb7e358e60033d24527221fed845ca1a3bd",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08563094401324634
+    },
+    {
+      "task_id": "marble/dual-panda/A082",
+      "contract_sha256": "49bea04cf529e71f14022b46f42c7dfb481cd0cff83ce8b754a456a6d81cc820",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0906807999999728
+    },
+    {
+      "task_id": "marble/dual-panda/A083",
+      "contract_sha256": "756dac101e909f1513fe48f504e27f73be0f60e66aa98a5c7a25675a7963a1cc",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08767589699709788
+    },
+    {
+      "task_id": "marble/dual-panda/A084",
+      "contract_sha256": "78708c5a5fa0ebff277fce24b224e1cd34aff97dda483622ef4b05f386dab362",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08026876000803895
+    },
+    {
+      "task_id": "marble/dual-panda/A085",
+      "contract_sha256": "22cca220eac7382f75727b2342017016313541aa274c4ac443ca5e5715c5ccbe",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08513085500453599
+    },
+    {
+      "task_id": "marble/dual-panda/A086",
+      "contract_sha256": "93ee001049e9ecab4d90b9a2c4b9ccddb4d156874b18404a360db13e76e26a7d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09754554599930998
+    },
+    {
+      "task_id": "marble/dual-panda/A087",
+      "contract_sha256": "f8dd8aabb3950a4db98e7c7e8a223705386c445988cca8d72794040f4e48c6ea",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08741209001163952
+    },
+    {
+      "task_id": "marble/dual-panda/A088",
+      "contract_sha256": "e679836e3142e8120eaed49b8c36eab6e79f4f3193cde8af1ef86887ece9b07c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08220109599642456
+    },
+    {
+      "task_id": "marble/dual-panda/A089",
+      "contract_sha256": "c8bd147664d2640f8d9f36c426c774ce2c348fb5ce8741a6d1216ddecab490ab",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08122205799736548
+    },
+    {
+      "task_id": "marble/dual-panda/A090",
+      "contract_sha256": "66b6e6efd00075de77b589407530e1908a4d636af58c07208d3bb71d3c8d6a21",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09543701200163923
+    },
+    {
+      "task_id": "marble/dual-panda/A091",
+      "contract_sha256": "aeb00de8793c53e7dd38aa967b46f610c104a6854554a17418dbf9ff680aa36d",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08459861399023794
+    },
+    {
+      "task_id": "marble/dual-panda/A092",
+      "contract_sha256": "2c935e062f7bb0b9ba204cdbcbed3b5335d61f2902aca001ad6b19ee036317a1",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07644207999692298
+    },
+    {
+      "task_id": "marble/dual-panda/A093",
+      "contract_sha256": "db409906960e0f42fe0b6fd3267ea114c195c827b99fc2dbfc1f46778a7188db",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08960733001003973
+    },
+    {
+      "task_id": "marble/dual-panda/A094",
+      "contract_sha256": "12e07a6474e1162aefdf06cf50a4650f7e7d27818dbbc994a2214f41f7a0b1be",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.07706844199856278
+    },
+    {
+      "task_id": "marble/dual-panda/A095",
+      "contract_sha256": "3a0d80f93cd040f8110fd86a4cd88bc2b909f4eb9f7576025754ef6946f33b4b",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08196841999597382
+    },
+    {
+      "task_id": "marble/dual-panda/A096",
+      "contract_sha256": "568f83259b8d38a149a64f4b25466c282a7d7bee7a8ee03139e619beaa890d3c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.10538003200781532
+    },
+    {
+      "task_id": "marble/dual-panda/A097",
+      "contract_sha256": "2a0b40b7b1d5dbba0efab2cf2f6752d06ec7af414961622f7fe135eb2d596844",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0964179129950935
+    },
+    {
+      "task_id": "marble/dual-panda/A098",
+      "contract_sha256": "b4209c5c9a133ab674227aff61d9848374e15fcaeaa81e5f723d64e890a9dfe3",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "protected_window_checked",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.08585462300106883
+    },
+    {
+      "task_id": "marble/dual-panda/A099",
+      "contract_sha256": "87e03e3f915d5b740ce820cc16c29f191f5e69c47e67a0e41c2b1f826b641f4c",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.0761091820022557
+    },
+    {
+      "task_id": "marble/dual-panda/A100",
+      "contract_sha256": "73b2194e4d118c28c377fc9e8efca18e1ee71056dd167959e6f8042821f3e90a",
+      "status": "passed_fixture",
+      "measurements": {
+        "legal_goal": true,
+        "wrong_goal_rejected": true,
+        "first_violation_denies_success": true,
+        "stable_time": "no_hold_required_by_contract",
+        "scope": "scorer_endpoint_only"
+      },
+      "elapsed_seconds": 0.09565754499635659
+    }
+  ],
+  "limitations": [
+    "Fixtures do not prove physical solutions or full condition qualification",
+    "Native timeout, early finish and violation generation require separate backend fixtures"
+  ]
+}

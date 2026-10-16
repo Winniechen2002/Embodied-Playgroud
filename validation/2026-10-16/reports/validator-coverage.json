@@ -1,0 +1,53 @@
+{
+  "required_case_checks": [
+    "contract",
+    "necessary_geometry",
+    "physics",
+    "action_observation",
+    "scorer",
+    "gateway_l0",
+    "gateway_l1",
+    "gateway_l2",
+    "gateway_l3",
+    "lifecycle",
+    "repeat_initialization"
+  ],
+  "required_global_checks": [
+    "clean_install_mujoco",
+    "clean_install_isaac",
+    "clean_install_maniskill",
+    "assets",
+    "licenses",
+    "bilingual_docs",
+    "local_contact"
+  ],
+  "validators": {
+    "validate_environment_physics.py": {
+      "missing_required_check_literals": [
+        "necessary_geometry",
+        "scorer"
+      ],
+      "produces_passed_probe": true,
+      "note": "Literal inventory is static evidence only; individual passed check labels are not a qualified case status.",
+      "case_success_status": "passed_probe"
+    },
+    "validate_isaac_environments.py": {
+      "missing_required_check_literals": [
+        "necessary_geometry",
+        "scorer"
+      ],
+      "produces_passed_probe": true,
+      "note": "Literal inventory is static evidence only; individual passed check labels are not a qualified case status.",
+      "case_success_status": "passed_probe"
+    },
+    "validate_maniskill_environments.py": {
+      "missing_required_check_literals": [
+        "necessary_geometry",
+        "scorer"
+      ],
+      "produces_passed_probe": true,
+      "note": "Literal inventory is static evidence only; individual passed check labels are not a qualified case status.",
+      "case_success_status": "passed_probe"
+    }
+  }
+}

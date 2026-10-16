@@ -1,0 +1,165 @@
+{
+  "scope": "isaac_installation_worker",
+  "status": "passed_installation_worker",
+  "tasks": [
+    {
+      "task_id": "pocket_cube/aloha/C01",
+      "configuration_sha256": "2bdb5123e4735457c33ea3baa7cfc92a25284bd500ce6d2193b207c1f2c31d37",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "render": {
+        "byte_length": 921600,
+        "sha256": "525a9c1ec8a53b4f7a0aea39caaa52e3e0fc2c8f7ddc1a25fb75385a29db6b9e",
+        "width": 640,
+        "height": 480
+      },
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C03",
+      "configuration_sha256": "e6234a1bc36b6e475e647f3e6971ad08ca2affe70cc94cd2f5a416a021bcaef6",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C07",
+      "configuration_sha256": "aa63dbcc59798984a85b0a646c4be713c37d4dbfeb06df4fcf4d0eb678181787",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C08",
+      "configuration_sha256": "0349d2ab2c30b7938ef5648e2360bd723eb497fa581b0bb998cefcbcf3652fa5",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C09",
+      "configuration_sha256": "ae596e4ffd18719d7451e5629c91f87eab7546eb44ad40c0ce1e480287709cca",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C10",
+      "configuration_sha256": "c6110e7e56b5b9e5f4982c5d3f592e21c5cee47f1800f61d7fdf02388adbb6bf",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C14",
+      "configuration_sha256": "f829dd5fa8b00a2cced5d3263d2143571295ecf286120137dcc1321f5c9db0e2",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C15",
+      "configuration_sha256": "e05aacd3023681440145fed934e40ff1840aef4a9e383f3303f386e5529db417",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C17",
+      "configuration_sha256": "53df0033c6e82f58b40146544cead2d7b219972be85cd8eaf7e8f61b0e448930",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "pocket_cube/aloha/C20",
+      "configuration_sha256": "7c3fb7512855e9cbc4d1cb686da1563fb006cb0124d42adee45c34e2860360c4",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    }
+  ],
+  "http_packages": {
+    "fastapi": {
+      "version": "0.120.2",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/fastapi/__init__.py"
+    },
+    "starlette": {
+      "version": "0.49.1",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/starlette/__init__.py"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_build": "2.7.0+cu126",
+  "torch_path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/torch/__init__.py"
+}

@@ -1,0 +1,305 @@
+{
+  "scope": "isaac_installation_worker",
+  "status": "passed_installation_worker",
+  "tasks": [
+    {
+      "task_id": "bookshelf/dual-panda/BooksTableD1",
+      "configuration_sha256": "a2991454407f9257aa8e6404bee99856ecc42995673264cf4a5f40cac8e3ed39",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "render": {
+        "byte_length": 921600,
+        "sha256": "7377308c6badff65d415b850105d2eee76146066c21336141263c48bae7d32f8",
+        "width": 640,
+        "height": 480
+      },
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/BooksTableD2",
+      "configuration_sha256": "183d4e5a719cce279d2ac0280118d3e5bac60db8a7a00110c6cbb07453a48846",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/BooksTableD3",
+      "configuration_sha256": "ba5824cc58c1c5bec50b0c3caa783a8f45627592a052cef4889e268a79531241",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/BooksTableD4",
+      "configuration_sha256": "3aa29acf11d1b03e224a51a968058d2395c86edaa82475329ac5356d6a8900ef",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfTableD1",
+      "configuration_sha256": "35fef4189b3a6a2ee8856041f9c193692aec11fa267179e8b048cd6cecfda7b4",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfTableD2",
+      "configuration_sha256": "0321dddaaae5ba2da076c527b5c71d26410a2ee41348fb00b78eeee0da4ae7f6",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfTableD3",
+      "configuration_sha256": "c18991f989da55e922fb33f5d774d2ab4c8a575351343d9023cc4479d754acd0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfTableD4",
+      "configuration_sha256": "2088e580986a6796e8f9656980e51735e9757dd71697b10e102005734c2f10f9",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateD1",
+      "configuration_sha256": "b349ef131e26a3b171b7147b45426c0329e8c47bea541477054285dbffe4fb02",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateD2",
+      "configuration_sha256": "2d6a6aa4308b1e96451da9022113c0500a841efbd751bef32386c6b28679b077",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateD3",
+      "configuration_sha256": "2418181c95b522ba48fb68c086bac00c0b01766dad721caede43e8a81437dbb3",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateD4",
+      "configuration_sha256": "8f731f222982d8fb6aa5b75afa7ca4b3c74b0de85e2c929441d31ff48f31c9be",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateFixD1",
+      "configuration_sha256": "8077954a9f0382bb418e013d4ae5552c67e300a991b54ac5166b08b4cde631f9",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateFixD2",
+      "configuration_sha256": "0c2a0f52fc8ce5d2776b95526c262871dd8a4928630c0870d0b2df2f8de5bef0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateFixD3",
+      "configuration_sha256": "b4a73dd578801243680b1cdc0dc699f659093713fbd5694f2b41603f1e24fdc3",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/ShelfCrateFixD4",
+      "configuration_sha256": "334aa1b38376450d37d6138176118a04a5e96cfb04f7207ab974c8f0a8e09f97",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/TableCleanD1",
+      "configuration_sha256": "b7054ae5924cd06947ed5fcf22094b4031db98aee85a70845202fb111a8df242",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/TableCleanD2",
+      "configuration_sha256": "7fa77f15aa5d36e8014dfc751316e3e4028f76ffbc9a399de44fd3236768ae59",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/TableCleanD3",
+      "configuration_sha256": "c7b06f1167f59a22ebde5db9aa47c6dfa6c836eb85f43d6c4056b1007ef3edf4",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    },
+    {
+      "task_id": "bookshelf/dual-panda/TableCleanD4",
+      "configuration_sha256": "d91013755692090b25a1b6c3fc0e16c32b8c5e2f6034ae5ce6f734ebfd674da0",
+      "status": "loaded_stepped_finished",
+      "physics_steps": 4,
+      "action_size": 16,
+      "finish": {
+        "success": false,
+        "score": 0.0,
+        "step_count": 1,
+        "terminated": false,
+        "truncated": false
+      }
+    }
+  ],
+  "http_packages": {
+    "fastapi": {
+      "version": "0.120.2",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/fastapi/__init__.py"
+    },
+    "starlette": {
+      "version": "0.49.1",
+      "path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/starlette/__init__.py"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch_build": "2.7.0+cu126",
+  "torch_path": "/home/ubuntu/Agent-bench/output/agentbench100-codex-l3/runtime-dependencies/isaac-venv/lib/python3.11/site-packages/torch/__init__.py"
+}

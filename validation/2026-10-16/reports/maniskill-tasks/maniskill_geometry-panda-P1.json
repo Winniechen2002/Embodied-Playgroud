@@ -1,0 +1,3500 @@
+{
+  "scope": "maniskill_native_engineering",
+  "run_status": "completed",
+  "expected_cases": 1,
+  "source_manifest": {
+    ".gitattributes": {
+      "sha256": "b35ca087fda8d5a43e1d413a5d1c5d705078729075e5c5a074b4bd11a8147e10",
+      "bytes": 417
+    },
+    ".github/workflows/tests.yml": {
+      "sha256": "56baa5a603b0cdc42e29209c5cf3d1e9e20a8015b0a2e6149d9f8ea4f7aec498",
+      "bytes": 604
+    },
+    ".gitignore": {
+      "sha256": "3ea2a8ea0bc91a28e98b24659ec1ec35f2771ae6ece9ddee13d39dd48a6e889a",
+      "bytes": 249
+    },
+    "LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657
+    },
+    "LICENSES/IsaacLab-BSD-3-Clause.txt": {
+      "sha256": "df351ebfa8af317bf5a9ad83df63a8b68e4f5c04b71f30767cdb27aa434eac62",
+      "bytes": 1630
+    },
+    "LICENSING.md": {
+      "sha256": "d2d8bf8534d92b73165b97ec772d8b41da45f71170fe009c158c52de37c57694",
+      "bytes": 4136
+    },
+    "NOTICE": {
+      "sha256": "0d7aae359a28379115403d18964d7e9d3f24f3f74756996849b74302fb30a30d",
+      "bytes": 537
+    },
+    "README.en.md": {
+      "sha256": "003b2dea2f2eefe4ed3aff5d164a88f64574d589c144e31deb8b6de18aa0f0b4",
+      "bytes": 4719
+    },
+    "README.md": {
+      "sha256": "003b2dea2f2eefe4ed3aff5d164a88f64574d589c144e31deb8b6de18aa0f0b4",
+      "bytes": 4719
+    },
+    "README.zh-CN.md": {
+      "sha256": "1fcb1a20ff42c6b312e2362190f30cd300f88c1d47d60afe65ee7d8945a2271f",
+      "bytes": 4245
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "fbaad93a5174455d59573914687785ef06fa8782198787965b418efc6f57562b",
+      "bytes": 3129
+    },
+    "Vision_rules.en.md": {
+      "sha256": "0bc8a308f835a3ab423c5f99c1261ad8d210a5b0f3098525c5a02a78bfd42f2b",
+      "bytes": 7719
+    },
+    "Vision_rules.md": {
+      "sha256": "0bc8a308f835a3ab423c5f99c1261ad8d210a5b0f3098525c5a02a78bfd42f2b",
+      "bytes": 7719
+    },
+    "Vision_rules.zh-CN.md": {
+      "sha256": "3a26de80aa6290830c75a1a5d46221532b05683ee31e29949984d7d8d219f6c7",
+      "bytes": 7005
+    },
+    "docs/README.en.md": {
+      "sha256": "d0da3381708edb488a97da2aed13932ffdbf14b31bb29a2a21fa8a5c448a4aa8",
+      "bytes": 839
+    },
+    "docs/README.zh-CN.md": {
+      "sha256": "af91b530f480c0da36fdf682c623f8f5c57b4caaebc2794436b017d5f98316cf",
+      "bytes": 765
+    },
+    "docs/environment_assets.en.md": {
+      "sha256": "290a7c1fb213de308bbebf94d4ed0db412f86fbe3d75db249fc47c4b7c835d85",
+      "bytes": 2177
+    },
+    "docs/environment_assets.zh-CN.md": {
+      "sha256": "4e3f53fac2c2a7ad4f6dac6cbcedd58011a1aaa9fcbc5b21d60d9d806c8ab194",
+      "bytes": 1878
+    },
+    "docs/environment_installation.en.md": {
+      "sha256": "8b5cdf26d49b3ab8d55b244b3eafb5975f9cb762b5e7945147ec95c775849063",
+      "bytes": 4870
+    },
+    "docs/environment_installation.zh-CN.md": {
+      "sha256": "1fb1c2bfecd1b5d4d9540e0444aa6a5f5651c7a58d6534cecb3a86e745a1d7e2",
+      "bytes": 4491
+    },
+    "docs/environment_validation.en.md": {
+      "sha256": "58d094d0dbad9389e76283a66541c31fcd500c9938c36a12d4091d235146459a",
+      "bytes": 6060
+    },
+    "docs/environment_validation.zh-CN.md": {
+      "sha256": "8bd718f46b7978113f79111f49e962c038aed8ec0616d68f8f3ae75a75b4db03",
+      "bytes": 5364
+    },
+    "docs/ep_subsets/EP-100.en.md": {
+      "sha256": "1f4a553b928ff58187037432a1397772b7599bb01b0c9dd2e8c0d1c12bd1d8e1",
+      "bytes": 12806
+    },
+    "docs/ep_subsets/EP-100.zh-CN.md": {
+      "sha256": "93be170ba8ed1ee159dbceb43ddff0bdd3e74bcebf8861e8e0be7fdc4da9221d",
+      "bytes": 12569
+    },
+    "docs/ep_subsets/EP-20.en.md": {
+      "sha256": "9bfef6a05caa58d2846418acd471e059f4789f57f8f3573e765c46e07fb2dfd2",
+      "bytes": 5403
+    },
+    "docs/ep_subsets/EP-20.zh-CN.md": {
+      "sha256": "2285e31861c96f8f792153dc492d7a4ce660abdb1713c9196db7f1666a380258",
+      "bytes": 5419
+    },
+    "docs/ep_subsets/EP-Easy.en.md": {
+      "sha256": "a0fe7fa60d6271615afe1ae6a998967707d1a9cb05a99594f129fd425fb698aa",
+      "bytes": 7287
+    },
+    "docs/ep_subsets/EP-Easy.zh-CN.md": {
+      "sha256": "497269712d5ae9328fd5f29d85a4ba53f774503e95abdfcd786e58cd6c0579ef",
+      "bytes": 7266
+    },
+    "docs/ep_subsets/EP-Hard.en.md": {
+      "sha256": "724a8f92a16ddc03ee53f4e0b795bf7d8da3bcf42e8d20827bc0ad75cbdc852e",
+      "bytes": 7423
+    },
+    "docs/ep_subsets/EP-Hard.zh-CN.md": {
+      "sha256": "24c599e997b8bc150056c82618228ad9c9a87b9d3201a2175a4706b46846e847",
+      "bytes": 7422
+    },
+    "docs/ep_subsets/README.en.md": {
+      "sha256": "84cb391f4e265d802c3b7894c8802db89639f447a68f90728ee54f7700be97a3",
+      "bytes": 8722
+    },
+    "docs/ep_subsets/README.zh-CN.md": {
+      "sha256": "f31bc268506cf235b9f6785c3bb18ade6fb8bd9ecd2fe8a15d58eacdec90c41f",
+      "bytes": 8282
+    },
+    "docs/ep_subsets/tasks.json": {
+      "sha256": "48822f785220ed975924f905f92e6e5cdab502a7da107d5fe6690a77a9d913c8",
+      "bytes": 33180
+    },
+    "docs/evaluation/bookshelf.en.md": {
+      "sha256": "36369a6a4117b45deed19cdf626a8e8195641c369fc542d64a0e402d7c6a640a",
+      "bytes": 141866
+    },
+    "docs/evaluation/bookshelf.zh-CN.md": {
+      "sha256": "305846cdb6af3a90d26433ed156424cd8cd0d9a737a000258e5287a8b46d23f4",
+      "bytes": 141680
+    },
+    "docs/evaluation/hanoi_floating.en.md": {
+      "sha256": "8c48447b09a290732341c1943b0399a40c2e0f0645cc63785a1399bcd441b23e",
+      "bytes": 345760
+    },
+    "docs/evaluation/hanoi_floating.zh-CN.md": {
+      "sha256": "3f50a8b19cca855f35e250ae1ba6b3f66610342ec4ea6cb97f4a4476c5659420",
+      "bytes": 345461
+    },
+    "docs/evaluation/hanoi_panda.en.md": {
+      "sha256": "d86273ae60b65f851cfd00ddc20f45df5b78323328582705fa5cea14fcbdf003",
+      "bytes": 287350
+    },
+    "docs/evaluation/hanoi_panda.zh-CN.md": {
+      "sha256": "cd48bdfe8a4b5031c5f36d6a95fcf01fef3d2a7ce1ba0afa48472c667ed3d54c",
+      "bytes": 287051
+    },
+    "docs/evaluation/hanoi_sharpa.en.md": {
+      "sha256": "d582cfc62ef40d0972cdea66ae5819942f031754d0b0d04d4c7aa08076f24265",
+      "bytes": 379115
+    },
+    "docs/evaluation/hanoi_sharpa.zh-CN.md": {
+      "sha256": "f304708bce6cbf53db57a5682f81d1c53d874c32fa995df9d435f35ac8250b26",
+      "bytes": 378816
+    },
+    "docs/evaluation/index.en.md": {
+      "sha256": "f3e7671ac5e14b8eec43dc589d5a6a77ceac4fa34ebfd9afee1acca936cf04a5",
+      "bytes": 1352
+    },
+    "docs/evaluation/index.zh-CN.md": {
+      "sha256": "4cf0c1a418cfcffe39ecf9f815d11b7363a45df2486b6c650d8ea371b91ddc2a",
+      "bytes": 1354
+    },
+    "docs/evaluation/kongming_lock.en.md": {
+      "sha256": "68818a4ae90c1506e5de3eda69e58c2a3da233cc5f4311eb53a2bda4ab6d7aea",
+      "bytes": 744047
+    },
+    "docs/evaluation/kongming_lock.zh-CN.md": {
+      "sha256": "c9a3f1f91e3b71dc7cd86f10d7766c3923dcf6aafb521e31ec6dda9e6dbde860",
+      "bytes": 743620
+    },
+    "docs/evaluation/maniskill_dynamics.en.md": {
+      "sha256": "ed32bac9fa62964dfea73754fb86268d2773debbaf60484ff1849341356d236a",
+      "bytes": 220291
+    },
+    "docs/evaluation/maniskill_dynamics.zh-CN.md": {
+      "sha256": "71962c1f9aea18c734f233c57497ac654b3c8c47a16cce7c7d79514357874fd9",
+      "bytes": 220175
+    },
+    "docs/evaluation/maniskill_geometry.en.md": {
+      "sha256": "1e0eedfc80db5ba245aa69f45d2005b49cc73d542cec8ef3e7809dcfb07a3587",
+      "bytes": 286070
+    },
+    "docs/evaluation/maniskill_geometry.zh-CN.md": {
+      "sha256": "326b5167bd49696c8bebd6a47c4f85bd4a58559536f6c3028212ef4f239ad5de",
+      "bytes": 285951
+    },
+    "docs/evaluation/maniskill_long_horizon.en.md": {
+      "sha256": "1a18e916344f954034bf2a6ac85f1673739f73788a5909fd2e3c7d28d64891f7",
+      "bytes": 330635
+    },
+    "docs/evaluation/maniskill_long_horizon.zh-CN.md": {
+      "sha256": "7301b241c5ada91e7f88db01984223d22a870fc80f61c4c306a21777d4b626e9",
+      "bytes": 330512
+    },
+    "docs/evaluation/marble.en.md": {
+      "sha256": "e4d5cf658d4258f3bb5b5ec766a3f2e612f69ba88574846ef4797d74ce809d4a",
+      "bytes": 644890
+    },
+    "docs/evaluation/marble.zh-CN.md": {
+      "sha256": "d12d5556e790a5d8d62f8c97b8b219efb60766676ad84c8b7ee734637fe470ed",
+      "bytes": 643828
+    },
+    "docs/evaluation/pocket_cube.en.md": {
+      "sha256": "8464c1a169ca86ecd73a906446ae3c430a79f4ce42c52f8676015862530a7daf",
+      "bytes": 161527
+    },
+    "docs/evaluation/pocket_cube.zh-CN.md": {
+      "sha256": "17a2bc86ff07442e10e1c25745670f384c694e24b6441144ee40e507f80dfa50",
+      "bytes": 161345
+    },
+    "docs/evaluation/rubiks_panda.en.md": {
+      "sha256": "a62ac3cf1cc0b247d909a106e6a0ce7a4ecd83668aa3b5bb9932814fe43c5ba5",
+      "bytes": 134210
+    },
+    "docs/evaluation/rubiks_panda.zh-CN.md": {
+      "sha256": "fdca81348e0da34db1c550a85db0785235daa19c3648550ce66d9b790507e9ee",
+      "bytes": 133967
+    },
+    "docs/evaluation/rubiks_sharpa.en.md": {
+      "sha256": "ba9514196240a2fbf34848c896b43f8b229cf99269827186edc95e65d53e4ea4",
+      "bytes": 242880
+    },
+    "docs/evaluation/rubiks_sharpa.zh-CN.md": {
+      "sha256": "7b85387456b4badab0bd0566f5d129a4deddeab6179001aa9c0526ef614d2cc3",
+      "bytes": 242637
+    },
+    "docs/evaluation/tasks.json": {
+      "sha256": "4c91b7957ca233e4bf0bac3ea840d1fccf81ed9e60688d5a30958b63532e856f",
+      "bytes": 10452029
+    },
+    "docs/evaluation_protocol.en.md": {
+      "sha256": "6ae4949b94e6e26768a6f1321da50aec563f7e1454e5ad12d9e79f19f6c09e01",
+      "bytes": 15522
+    },
+    "docs/evaluation_protocol.md": {
+      "sha256": "913167789f08a756e9c3d306aeacda0712047a79065f738fa7c14c84b52e4a3f",
+      "bytes": 15499
+    },
+    "docs/evaluation_protocol.zh-CN.md": {
+      "sha256": "2eec3c2c702cd02316a2a131bcce45c5b9680a7fd8b9201845fed01d1e7347c7",
+      "bytes": 13458
+    },
+    "docs/tools/cedex-contactgen/README.en.md": {
+      "sha256": "5d4b61d08a33c962066c0a0d2b9a5a0c7edd60c46b9d41cade399fdbf924d3c6",
+      "bytes": 1197
+    },
+    "docs/tools/cedex-contactgen/README.md": {
+      "sha256": "5d4b61d08a33c962066c0a0d2b9a5a0c7edd60c46b9d41cade399fdbf924d3c6",
+      "bytes": 1197
+    },
+    "docs/tools/cedex-contactgen/README.zh-CN.md": {
+      "sha256": "f588baa3be3e986a46d403229c919a9e9665d4a3083be725b1ac97189f18ff91",
+      "bytes": 1059
+    },
+    "docs/tools/curobo-v1/README.en.md": {
+      "sha256": "9763b77abfdca9abdb1976ceb8a328722a42972d6125268b9af30e7f9a1051f5",
+      "bytes": 1185
+    },
+    "docs/tools/curobo-v1/README.md": {
+      "sha256": "9763b77abfdca9abdb1976ceb8a328722a42972d6125268b9af30e7f9a1051f5",
+      "bytes": 1185
+    },
+    "docs/tools/curobo-v1/README.zh-CN.md": {
+      "sha256": "883c97a52fcb1dfbad091a4593723ff3c8223afec4dda36a0b261c1403ad33e9",
+      "bytes": 1059
+    },
+    "docs/tools/curobo-v2/README.en.md": {
+      "sha256": "ab84f22af3866d0a031a908343d3ec7badf2fafebaebcc37ddf16c80525f79b1",
+      "bytes": 1174
+    },
+    "docs/tools/curobo-v2/README.md": {
+      "sha256": "ab84f22af3866d0a031a908343d3ec7badf2fafebaebcc37ddf16c80525f79b1",
+      "bytes": 1174
+    },
+    "docs/tools/curobo-v2/README.zh-CN.md": {
+      "sha256": "b87f3eedf017b5366c0d99f6074352e77463fd1382b05315805a44caf72cc960",
+      "bytes": 1044
+    },
+    "docs/tools/depth-anything-3/README.en.md": {
+      "sha256": "ef931d687823a264c74b499a898ed3ed1677a8a5d44930eefdc5cf5f57d29401",
+      "bytes": 1233
+    },
+    "docs/tools/depth-anything-3/README.md": {
+      "sha256": "ef931d687823a264c74b499a898ed3ed1677a8a5d44930eefdc5cf5f57d29401",
+      "bytes": 1233
+    },
+    "docs/tools/depth-anything-3/README.zh-CN.md": {
+      "sha256": "0c69b54b3de188fe6711c6b91c52cb0ccc7cbc99fb499c15b7f80e5c0686313d",
+      "bytes": 1101
+    },
+    "docs/tools/depth-pro/README.en.md": {
+      "sha256": "c6dbe3d5b1eeb83a66d72b1fe7441491716d3b036c7b475fe8e47109b8f1da97",
+      "bytes": 1130
+    },
+    "docs/tools/depth-pro/README.md": {
+      "sha256": "c6dbe3d5b1eeb83a66d72b1fe7441491716d3b036c7b475fe8e47109b8f1da97",
+      "bytes": 1130
+    },
+    "docs/tools/depth-pro/README.zh-CN.md": {
+      "sha256": "e7d8b44ef3a2283585d1b4510838c9a15b88b7ab590485e578660cbc79209888",
+      "bytes": 1008
+    },
+    "docs/tools/dexgraspnet2/README.en.md": {
+      "sha256": "bd813c6488a8994deed6a081c34ab7bf45a839b8c393106ddadc0a084de9efd6",
+      "bytes": 1231
+    },
+    "docs/tools/dexgraspnet2/README.md": {
+      "sha256": "bd813c6488a8994deed6a081c34ab7bf45a839b8c393106ddadc0a084de9efd6",
+      "bytes": 1231
+    },
+    "docs/tools/dexgraspnet2/README.zh-CN.md": {
+      "sha256": "fa1d4106c0fa697c2327d2fb1fc2ee4a91db753e3f9cfddcfee9ded737c6c18c",
+      "bytes": 1088
+    },
+    "docs/tools/gendexgrasp/README.en.md": {
+      "sha256": "d478e714d2f98790809aaf8ea35ffc72ab9abb2400db5de724bb4b0e81e8fa0c",
+      "bytes": 1171
+    },
+    "docs/tools/gendexgrasp/README.md": {
+      "sha256": "d478e714d2f98790809aaf8ea35ffc72ab9abb2400db5de724bb4b0e81e8fa0c",
+      "bytes": 1171
+    },
+    "docs/tools/gendexgrasp/README.zh-CN.md": {
+      "sha256": "809bff5020e7570179e09b350b94fac85b178a33280acd754494a2f0254b628b",
+      "bytes": 1031
+    },
+    "docs/tools/graspnet-baseline/README.en.md": {
+      "sha256": "1381ffa5d0aab190d25d423b1c092ea931e05375512f0f513d2f9e9c9dca87cb",
+      "bytes": 1426
+    },
+    "docs/tools/graspnet-baseline/README.md": {
+      "sha256": "1381ffa5d0aab190d25d423b1c092ea931e05375512f0f513d2f9e9c9dca87cb",
+      "bytes": 1426
+    },
+    "docs/tools/graspnet-baseline/README.zh-CN.md": {
+      "sha256": "1886fedff02127db5ce671d2c651f8163aa3a434b435945f89b0251ca8bd6834",
+      "bytes": 1260
+    },
+    "docs/tools/minkowski-engine/README.en.md": {
+      "sha256": "2f5213e93d05eede8e77a6b5f99d26f9a45001da73c5f8a2e8b5caf7388774c5",
+      "bytes": 1187
+    },
+    "docs/tools/minkowski-engine/README.md": {
+      "sha256": "2f5213e93d05eede8e77a6b5f99d26f9a45001da73c5f8a2e8b5caf7388774c5",
+      "bytes": 1187
+    },
+    "docs/tools/minkowski-engine/README.zh-CN.md": {
+      "sha256": "f1633f7ae9e4c5680ca559600bd310b8b1c131f7dd165b2653ad5c24e7dec179",
+      "bytes": 1066
+    },
+    "docs/tools/ompl/README.en.md": {
+      "sha256": "0836b9751c32b29cd01979b36e339b8c73d49a9a4b4b1c0e037ed7d1b85601f3",
+      "bytes": 1183
+    },
+    "docs/tools/ompl/README.md": {
+      "sha256": "0836b9751c32b29cd01979b36e339b8c73d49a9a4b4b1c0e037ed7d1b85601f3",
+      "bytes": 1183
+    },
+    "docs/tools/ompl/README.zh-CN.md": {
+      "sha256": "f536756c5cd2eff578038512e7083f8ba80894db2b4336e8bf16933bb24655f1",
+      "bytes": 1058
+    },
+    "docs/tools/optuna/README.en.md": {
+      "sha256": "d9c4439be50a949306217fd22902df9978a4948e21b65acb7dd6f94e90448e0c",
+      "bytes": 1257
+    },
+    "docs/tools/optuna/README.md": {
+      "sha256": "d9c4439be50a949306217fd22902df9978a4948e21b65acb7dd6f94e90448e0c",
+      "bytes": 1257
+    },
+    "docs/tools/optuna/README.zh-CN.md": {
+      "sha256": "78198c4881aff4b765071c1dfdb223d75748a5bda2afb9b011ef96c6704bb802",
+      "bytes": 1118
+    },
+    "docs/tools/pinocchio/README.en.md": {
+      "sha256": "ab5ca0b60640a76b7b2d14e99e7fdd1238232c8a2b008880b3eaa07d730660c4",
+      "bytes": 1203
+    },
+    "docs/tools/pinocchio/README.md": {
+      "sha256": "ab5ca0b60640a76b7b2d14e99e7fdd1238232c8a2b008880b3eaa07d730660c4",
+      "bytes": 1203
+    },
+    "docs/tools/pinocchio/README.zh-CN.md": {
+      "sha256": "7e84a33402b8777a6fb02a23cc74512e5cb298b191b6653539bdee9a50c60ccf",
+      "bytes": 1086
+    },
+    "docs/tools/pyroki/README.en.md": {
+      "sha256": "16fe93edfa8c953ab4c55d954c1323b3a6df674c1c0b1aeba75d2808b2980bf4",
+      "bytes": 1174
+    },
+    "docs/tools/pyroki/README.md": {
+      "sha256": "16fe93edfa8c953ab4c55d954c1323b3a6df674c1c0b1aeba75d2808b2980bf4",
+      "bytes": 1174
+    },
+    "docs/tools/pyroki/README.zh-CN.md": {
+      "sha256": "3b9c11680d3b72990a4946e15658bb86b9aff6c7b338ff62ecde7102b47285ac",
+      "bytes": 1038
+    },
+    "docs/tools/rsl-rl/README.en.md": {
+      "sha256": "984207d7b82e3aeeae497475be47f22d95aa80c5229a8a0688e94a8de563a624",
+      "bytes": 1250
+    },
+    "docs/tools/rsl-rl/README.md": {
+      "sha256": "984207d7b82e3aeeae497475be47f22d95aa80c5229a8a0688e94a8de563a624",
+      "bytes": 1250
+    },
+    "docs/tools/rsl-rl/README.zh-CN.md": {
+      "sha256": "c4fcff3da0d153b4dcc4799ba96a6d64e80893406e5cc021759001c2f63e0f2f",
+      "bytes": 1112
+    },
+    "docs/tools/sam-3d-objects/README.en.md": {
+      "sha256": "8d71bc9369eea882a58f9d0699c59572435cc3d90c9bf15a417bf9bb8c5899f2",
+      "bytes": 1250
+    },
+    "docs/tools/sam-3d-objects/README.md": {
+      "sha256": "8d71bc9369eea882a58f9d0699c59572435cc3d90c9bf15a417bf9bb8c5899f2",
+      "bytes": 1250
+    },
+    "docs/tools/sam-3d-objects/README.zh-CN.md": {
+      "sha256": "fca5dcacee9674612f42ed4486ff2b5c67887259b909195ed01807f72ba9441c",
+      "bytes": 1121
+    },
+    "docs/tools/scipy/README.en.md": {
+      "sha256": "a31928c7894d1d14181c5b6ec3ffe2fa243b568579ac4ea80d4857f4fe8c9642",
+      "bytes": 1179
+    },
+    "docs/tools/scipy/README.md": {
+      "sha256": "a31928c7894d1d14181c5b6ec3ffe2fa243b568579ac4ea80d4857f4fe8c9642",
+      "bytes": 1179
+    },
+    "docs/tools/scipy/README.zh-CN.md": {
+      "sha256": "37cab8561bb67d6885d64ab2237bb07caf761fb4ecae8002d5836cfa40af5450",
+      "bytes": 1059
+    },
+    "docs/tools/stream3d/README.en.md": {
+      "sha256": "85d3b4850636041f09dcf3f46a39f0f292181bae7431f8184a3a9532b422050b",
+      "bytes": 1325
+    },
+    "docs/tools/stream3d/README.md": {
+      "sha256": "85d3b4850636041f09dcf3f46a39f0f292181bae7431f8184a3a9532b422050b",
+      "bytes": 1325
+    },
+    "docs/tools/stream3d/README.zh-CN.md": {
+      "sha256": "693897bfc6bf633d22a5fc0db07512a8f35c2432eb3951973c18e315b23acee5",
+      "bytes": 1168
+    },
+    "env/maniskill_lgd/agentbench_maniskill/__init__.py": {
+      "sha256": "327d4adafc856812d58a99bf72d75a3e873c4e915cae247e7af9d0d1102d0db3",
+      "bytes": 1830
+    },
+    "env/maniskill_lgd/agentbench_maniskill/__main__.py": {
+      "sha256": "1979389638f0a1710b4b20a330f1ce68c043f4a1ebc7251af6ad19404eca0369",
+      "bytes": 2838
+    },
+    "env/maniskill_lgd/agentbench_maniskill/assets.py": {
+      "sha256": "ff239decf4ca45002d067cc28d972afa238a5b1ec85183ee724e66ff2089c471",
+      "bytes": 1249
+    },
+    "env/maniskill_lgd/agentbench_maniskill/checks/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "env/maniskill_lgd/agentbench_maniskill/checks/geometry_dynamics.py": {
+      "sha256": "8e7fa95abc980615d4e0740d2f95471755359df1e36cefc6df3f60ebecbee938",
+      "bytes": 4716
+    },
+    "env/maniskill_lgd/agentbench_maniskill/checks/long_horizon.py": {
+      "sha256": "119094efeee097cdab551e07dea35c6cb40afe5dcdc25e1111098ee369ce13a5",
+      "bytes": 4176
+    },
+    "env/maniskill_lgd/agentbench_maniskill/checks/run.py": {
+      "sha256": "3cd2c57538040ff75ffb5f2cdc06fa570c4080e9923e0f1ef9377d01722e5c07",
+      "bytes": 1484
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/asset_loader.py": {
+      "sha256": "f7cd21e3108aff8f5da4453784335a624ef85c1a0a8f5bfef8b5be21781d830b",
+      "bytes": 9864
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/collision_filters.py": {
+      "sha256": "f05c13487ae3ca34bd5f5c5dfdbbc1597f7ca3eced5fa65c5861fd8e545961b8",
+      "bytes": 2096
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/evaluation.py": {
+      "sha256": "4f8089cddb0a183f55f90c0bd117e266ee04b11175e2845f3209ea509244625e",
+      "bytes": 567
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/fixtures.py": {
+      "sha256": "80a5c4cb80082601623ad1dc207574ccc84685d60aba4aec1ad962e9caceaddf",
+      "bytes": 6611
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/foliage.py": {
+      "sha256": "fe64ad2e52744344e249571d9a801f9d763887eb65402c1a74b0f64be33deccf",
+      "bytes": 1421
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/mechanisms.py": {
+      "sha256": "eaf03d52e7d61f374f8a6cb06465271b6418c7c127b1e4092bc71170452959ef",
+      "bytes": 1486
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/paths.py": {
+      "sha256": "7d573b532edffe10ecc24cb82de6d567be4ea0717325165b603d7423019050f8",
+      "bytes": 567
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/preflight.py": {
+      "sha256": "ccf31d4b3783d9d6eb315103b08cf668b85a96d4b8941a21695a62d475214c04",
+      "bytes": 1070
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/robots.py": {
+      "sha256": "fe5833024d526ffc57681c0ac4c37f67002ae945299581ce258bf3580ead2d92",
+      "bytes": 2426
+    },
+    "env/maniskill_lgd/agentbench_maniskill/common/shapes.py": {
+      "sha256": "70964f7d3e270e450b01d6b0ece16b9c25214ec2e18a84f5bfb49e72cc7dbcf9",
+      "bytes": 1850
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/01/goal_fixture_state.json": {
+      "sha256": "091fd37b10e699b277c2ec425c631b8c83648c7631fe3d30844d59531a778a03",
+      "bytes": 77851
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/01/initial_state.json": {
+      "sha256": "be64653aa2d415a74eca7b3161091a7773c65370bac708cc176ab66171610b53",
+      "bytes": 78032
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/02/goal_fixture_state.json": {
+      "sha256": "8a39d0eb96d26519db7217ceef9d0a00bf3d9abcfc1e950ac7b6bc1f61de7927",
+      "bytes": 10336
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/02/initial_state.json": {
+      "sha256": "242c72a74d7114847f72b4eb46155057f7fb4665d3d44dc5e853d43b3bb52837",
+      "bytes": 10446
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/03/goal_fixture_state.json": {
+      "sha256": "cf8bbd5a006c088e2c5c23d394e09c38bfd13f2e68ee2a4f0782fdbf2da464d2",
+      "bytes": 4307
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/03/initial_state.json": {
+      "sha256": "e5b46b048af97b69f32bb2f064218015cc4b74acacd6113b537ac0fb7c1e45a7",
+      "bytes": 4377
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/04/goal_fixture_state.json": {
+      "sha256": "efed4488b93038ce2424732167da9c242ab80262703ca1f27afb1c11b9006138",
+      "bytes": 2193
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/04/initial_state.json": {
+      "sha256": "e1ca04fee3819edd8e2a66f3d4cc773f60921d960679afc6528609b167437957",
+      "bytes": 2204
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/05/goal_fixture_state.json": {
+      "sha256": "736c9cda8f6a06c92840a71447bb2b9ec5421b365b0475202407f1b14bd1d053",
+      "bytes": 16963
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/05/initial_state.json": {
+      "sha256": "c98cb829ae53a307d4fc14217dfe1133139ea7b1fdc879d65e7b8f63664a9d6b",
+      "bytes": 17362
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/06/goal_fixture_state.json": {
+      "sha256": "0f302ac447b628f1d5814b45515f72545a97bd28bb2cf98b518e7c4649b8681c",
+      "bytes": 4584
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/06/initial_state.json": {
+      "sha256": "934cd897f01c272400456e0dd91a96f3a34565ee68358cd369a4aff89b961a08",
+      "bytes": 4579
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/07/goal_fixture_state.json": {
+      "sha256": "c956112a8f7e3a1f39579b4a3f1b2a7eea936c4b81a1a61db543228bff3b161a",
+      "bytes": 3896
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/07/initial_state.json": {
+      "sha256": "73b5e746eb32167e6f6b725fa9aaae24ac0a592a00c59ae203058aaaa931aed3",
+      "bytes": 3904
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/08/goal_fixture_state.json": {
+      "sha256": "e6f8645e327aa01f428cd9d3c9ce522297854924f7595e9221d5180c27fae5bd",
+      "bytes": 8999
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/08/initial_state.json": {
+      "sha256": "b49fe07ef411b68010e7a62304938afb0f878ace5c1247be81b987712c6621b8",
+      "bytes": 9153
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/09/goal_fixture_state.json": {
+      "sha256": "480d3382efe42d7b3588fa7778eb6907f651dcea459eadea62035d7650bbfc24",
+      "bytes": 65011
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/09/initial_state.json": {
+      "sha256": "0994a0b4b9867a530a3d1116be1e38775f4119a669ccb83060f7fc0fddbb2e9f",
+      "bytes": 65012
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/10/goal_fixture_state.json": {
+      "sha256": "d2cf05e52a30ea67939d5a446cc18cfc5c5509dde0213e1149c759135bee1ffb",
+      "bytes": 71576
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/10/initial_state.json": {
+      "sha256": "a935e1fc6c66425a6acd5a18a1afa5ab2ae1f8852a122b73472a59f00f045b99",
+      "bytes": 71900
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11/goal_fixture_state.json": {
+      "sha256": "ed4a1c82e0f053b926ea23b5339df4d39619038526488b6b8d3936b29ca9bf6e",
+      "bytes": 34607
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11/initial_state.json": {
+      "sha256": "85bc0f6df010965a82ceef0aaba816531b1a8b40b92dfc08591857539f84a3a2",
+      "bytes": 34904
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11_physics1/goal_fixture_state.json": {
+      "sha256": "2a4522070f5c3bc26b640142e91d249cad940842b5fb6aa0ed3d21e609bd5ff1",
+      "bytes": 34610
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11_physics1/initial_state.json": {
+      "sha256": "07981fc6b6450746446e279cf9807b0d7801673962b8818918baa1b6b16e8cbc",
+      "bytes": 34907
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11_physics2/goal_fixture_state.json": {
+      "sha256": "ad5bc1d68a553edeed28ed1062c10cacd0168ff48cb4c36dd757dec09ef07322",
+      "bytes": 34620
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/11_physics2/initial_state.json": {
+      "sha256": "063f687ecd5377d5867c5a7c971e3f93b7efa88f5e8d564c0814658578a43e20",
+      "bytes": 34917
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12/goal_fixture_state.json": {
+      "sha256": "228977a4137ce0a7a97c1b08ade75fe63719c491d0510c95b97bb3a3bc5fd66e",
+      "bytes": 41399
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12/initial_state.json": {
+      "sha256": "ecd336e37b3dbf774e4b1442c94e0ef178f8f3ed589071d8588ae8fd8c82026b",
+      "bytes": 41950
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12_physics1/goal_fixture_state.json": {
+      "sha256": "9e82402c8153c13a8a86b5c4936dd060dab9b499a8f8ce09f161f1e93b42c3a3",
+      "bytes": 41402
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12_physics1/initial_state.json": {
+      "sha256": "ecd336e37b3dbf774e4b1442c94e0ef178f8f3ed589071d8588ae8fd8c82026b",
+      "bytes": 41950
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12_physics2/goal_fixture_state.json": {
+      "sha256": "61f3568ca2b437cbf5c80fae1b173423af8d4ca8c9ed7cc17c1aa9e7d02683d6",
+      "bytes": 41406
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/12_physics2/initial_state.json": {
+      "sha256": "ecd336e37b3dbf774e4b1442c94e0ef178f8f3ed589071d8588ae8fd8c82026b",
+      "bytes": 41950
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13/goal_fixture_state.json": {
+      "sha256": "ada832457288cea75ec73c185839de2f8f9bf7e1c42c47c5869cdea8c7ea85e2",
+      "bytes": 7093
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13/initial_state.json": {
+      "sha256": "033d3833d3f435d62289a7519537a7de73f255a7d36eefaaae3bf4292c670827",
+      "bytes": 7206
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13_physics1/goal_fixture_state.json": {
+      "sha256": "098c373ddc479cbf243619720e5d1f5b34ffa61eaed400bef97287d2963ba8d0",
+      "bytes": 7104
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13_physics1/initial_state.json": {
+      "sha256": "53773aecc8ff1f1a71867d524a994bbec91bcfa7b4bc2ca5343e47b036a08160",
+      "bytes": 7204
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13_physics2/goal_fixture_state.json": {
+      "sha256": "7e16c80370a701f6d92dc8760a42481817839bbaa34b13cc69d22caa00e63588",
+      "bytes": 7105
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/13_physics2/initial_state.json": {
+      "sha256": "b831b20940512c642dc4eeb0125a90021997f973402d02428bdb781cd95d8c3a",
+      "bytes": 7198
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14/goal_fixture_state.json": {
+      "sha256": "1dfc935470a8482477cc2239fb0f56161f78f98d4bc861e2f710fba547ebbfc5",
+      "bytes": 25138
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14/initial_state.json": {
+      "sha256": "c9eef0cda272ecc5c6fde2f0ee2c82094e5c65cf04649eb68914142a75fd9544",
+      "bytes": 26391
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14_physics1/goal_fixture_state.json": {
+      "sha256": "15da496788299f4a974108d53d260d2d051851d7fac40da458f4966b4c682a2e",
+      "bytes": 25162
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14_physics1/initial_state.json": {
+      "sha256": "55a361b20927a5a4c675189913679716bbcaf5a1e9e5981c56f26078e00e7ad0",
+      "bytes": 26395
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14_physics2/goal_fixture_state.json": {
+      "sha256": "a588b56bed5e58c2879b429aa1f29215cfd98794fd377cc3baaa2c8385b290f4",
+      "bytes": 25132
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/14_physics2/initial_state.json": {
+      "sha256": "8543c1d19d6e5dca1d68841681ea55962575c6b3c62055a9dc0049bed6a6a14a",
+      "bytes": 26422
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15/goal_fixture_state.json": {
+      "sha256": "28e13af5e9c7bd5da88bb9209932f4c58ea8c47cb24c03de54094c04a5246c51",
+      "bytes": 10095
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15/initial_state.json": {
+      "sha256": "3c84df77ecf071685412d5f7496260b29368a34e2c46735b612fbd6f7b051cf6",
+      "bytes": 10310
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15_physics1/goal_fixture_state.json": {
+      "sha256": "68f3dcd10015676972ea3402efe4c1939c9f07647f74203ce495f0c3951905b4",
+      "bytes": 10101
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15_physics1/initial_state.json": {
+      "sha256": "94825f1b4c3bba36eb79563ac24a53c80538e427106fc89d439c55a08f79d106",
+      "bytes": 10305
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15_physics2/goal_fixture_state.json": {
+      "sha256": "e296cbd19d0bb31b0e26845ad61c8931a6a0dc20270bced02a42e98f6ea243ed",
+      "bytes": 10105
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/15_physics2/initial_state.json": {
+      "sha256": "6c553c271f639897456f5fea242ed225f28d04b8a67517d389ffd7b6ffb17050",
+      "bytes": 10304
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16/goal_fixture_state.json": {
+      "sha256": "75581431258070128b332a0a3b2c50c8a0b554561e7f130436de6b32b3d6f91b",
+      "bytes": 16086
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16/initial_state.json": {
+      "sha256": "05b0c8b06c7cc8921fce14183deef19f51eaa9a6b31f156c2006c0fbfd0c7ba3",
+      "bytes": 16222
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16_physics1/goal_fixture_state.json": {
+      "sha256": "eede63f1793b1761a3445c63a6bdd7fac13a6a69300c479df2502d31e3e16c67",
+      "bytes": 16100
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16_physics1/initial_state.json": {
+      "sha256": "00879197925212c1b36e9039eeb6bc2e9495a1d158e476c61813d3c1553a80c2",
+      "bytes": 16246
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16_physics2/goal_fixture_state.json": {
+      "sha256": "e51e42174b159305f29e25f512899b2c4f2d4f04d600d1c86f9e79bd9621f18e",
+      "bytes": 16074
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/16_physics2/initial_state.json": {
+      "sha256": "544f34bc9fce75ebbbc1ee4d14c15ce6c305ef448e62017e8e7081d2ad0c77b8",
+      "bytes": 16241
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17/goal_fixture_state.json": {
+      "sha256": "942f1be067835255a008dbac9d697c6d241a23dd5cb33b52f099d644a37dedb2",
+      "bytes": 370536
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17/initial_state.json": {
+      "sha256": "38d2d8139878eb5e8d3bd5b6441506ac74ea2eface1d71c730cf86283e1e61a3",
+      "bytes": 378790
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17_physics1/goal_fixture_state.json": {
+      "sha256": "34b37d9cc0a1f251969f0f14f01bd3b8a74b4ea4cca11daed5ce2d257eff091e",
+      "bytes": 370553
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17_physics1/initial_state.json": {
+      "sha256": "55749f2ca95dbf7f0839e9fccfb5a408dd596b7e9e3698ae7f12a6b0364dc037",
+      "bytes": 378688
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17_physics2/goal_fixture_state.json": {
+      "sha256": "7f817139671454608819cc62adc093e0071e0dda1b8d4c01f615708b3fd98cc6",
+      "bytes": 370478
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/17_physics2/initial_state.json": {
+      "sha256": "07b11049e34db44bfda33e1e5b44d3f720c476ed3b83beacbe210ea2528b12bc",
+      "bytes": 378716
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18/goal_fixture_state.json": {
+      "sha256": "e4278231a489bbbf41c548149126e7a29248257dbdd4389c7e7bf6f50ae98072",
+      "bytes": 1151
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18/initial_state.json": {
+      "sha256": "f8de12558c88c9ddc9d7e3af14f6351c2e18de6bccd101d6d6317e6fb195d8ae",
+      "bytes": 1197
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18_physics1/goal_fixture_state.json": {
+      "sha256": "e4278231a489bbbf41c548149126e7a29248257dbdd4389c7e7bf6f50ae98072",
+      "bytes": 1151
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18_physics1/initial_state.json": {
+      "sha256": "f8de12558c88c9ddc9d7e3af14f6351c2e18de6bccd101d6d6317e6fb195d8ae",
+      "bytes": 1197
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18_physics2/goal_fixture_state.json": {
+      "sha256": "e4278231a489bbbf41c548149126e7a29248257dbdd4389c7e7bf6f50ae98072",
+      "bytes": 1151
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/18_physics2/initial_state.json": {
+      "sha256": "f8de12558c88c9ddc9d7e3af14f6351c2e18de6bccd101d6d6317e6fb195d8ae",
+      "bytes": 1197
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19/goal_fixture_state.json": {
+      "sha256": "6bd0e2fb8d0b9d62903b761928d24c71f092a0bca81d936dd13d2446a51d41c3",
+      "bytes": 30974
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19/initial_state.json": {
+      "sha256": "652ef7d3766640a0a1094979b208f1d8288078c7eb2e80a8066f3d432ee97257",
+      "bytes": 32286
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19_physics1/goal_fixture_state.json": {
+      "sha256": "32862423b8ca9ca6d0f6dfdf853fe9e466e83b532ce92887256ef87880c97250",
+      "bytes": 30938
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19_physics1/initial_state.json": {
+      "sha256": "b458a65115dea73e462c3e3492df6af51a415ce938b6a48dad7be9f508e4e5cf",
+      "bytes": 32327
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19_physics2/goal_fixture_state.json": {
+      "sha256": "2c611b16c593aad23d58bfeda8bf1a20e498c9a873ee4ba3cfd9a1c3c5c95fe9",
+      "bytes": 31004
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/19_physics2/initial_state.json": {
+      "sha256": "06b5584adc60684a42d19274a9a69629f0f40ed9988d9784c2f5fbe07f019616",
+      "bytes": 32339
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20/goal_fixture_state.json": {
+      "sha256": "00e23e796dce16e7049207ddcfa322738d5c7053a2ab496f52eb51b1a6ece350",
+      "bytes": 3361
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20/initial_state.json": {
+      "sha256": "9bf12639207a2640c017d914eed86d0f39a0f9351a6532964fbf9bd4e8ba5449",
+      "bytes": 3399
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20_physics1/goal_fixture_state.json": {
+      "sha256": "2da6e5a5a013e971d90e2daf88c5f77db9bd3ab55aa5a6282baacb2483fc1bbf",
+      "bytes": 3372
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20_physics1/initial_state.json": {
+      "sha256": "a6b4f414a2e358286f9d28185dd79df9e3c938d074e586d3fea08808c2f2d7a1",
+      "bytes": 3398
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20_physics2/goal_fixture_state.json": {
+      "sha256": "45be83905796f88d69c2faf111da1a796ae094bc7ee9941fe97f2bdd5307efc7",
+      "bytes": 3340
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/geometry_dynamics/20_physics2/initial_state.json": {
+      "sha256": "88868999a5a40be989ac874a1d4027cdbf5eb2b5a559c6bb5662026c09f5e34d",
+      "bytes": 3395
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/01/goal_fixture_state.json": {
+      "sha256": "aec936223e028bbe48c01ec61649c909dd8fbb2fadd5a6794c054aac1ce45fd2",
+      "bytes": 75931
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/01/initial_state.json": {
+      "sha256": "ae7360c2f5bcbcac3db84db6c42ee2dbf23f42fdc2e3bfec48802fc3fb52afd6",
+      "bytes": 76394
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/02/goal_fixture_state.json": {
+      "sha256": "8e74343b21fa9b3013f68ef344358099ad741c7c77058786e384187fe25faada",
+      "bytes": 10990
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/02/initial_state.json": {
+      "sha256": "28a228c8689ea373b79de885486cdd450540e1de74da7501c67a86fbf9d11763",
+      "bytes": 11157
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/03/goal_fixture_state.json": {
+      "sha256": "70c55bfccd34918000395f9e16454502df4a6ebb7cd2498169d5da1c06e969d4",
+      "bytes": 22806
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/03/initial_state.json": {
+      "sha256": "c64808deacf12041db4888e7abe9d609d4f6a31b4fdf9565c8463277480082ea",
+      "bytes": 22479
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/04/goal_fixture_state.json": {
+      "sha256": "cdd699e15f50432996847828e64830a7597e00e64b18b4c7dcef537dcd43f9ae",
+      "bytes": 22978
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/04/initial_state.json": {
+      "sha256": "73994b5563acd4a45d7e61b2254dce39725d2048d086246dbc09e21b97049956",
+      "bytes": 23308
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/05/goal_fixture_state.json": {
+      "sha256": "ea9fc0ef1dfdc2d9c474fea727b5eaf74e472a72f1005f21ffd8915c93138f70",
+      "bytes": 19766
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/05/initial_state.json": {
+      "sha256": "032e084177a4d1b643902568b45fa670fff94fa3922888f37cac6f5a56e61458",
+      "bytes": 20024
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/06/goal_fixture_state.json": {
+      "sha256": "802ff360c5c033a0a7320be42a05cf495a29881f58911fdb8fb2b71d4e3121d6",
+      "bytes": 20973
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/06/initial_state.json": {
+      "sha256": "58950c5ca4db4aecf17645e088f9033f6b471853b9fbb7274a5b8f99b8c1fda6",
+      "bytes": 20686
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/07/goal_fixture_state.json": {
+      "sha256": "440c56d6c524c5f42e787624e0e25f4eb9eeeace0f14d8a5ab37f57e0e97aa3a",
+      "bytes": 30146
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/07/initial_state.json": {
+      "sha256": "60009597c3ddc9fde7a6d7c8b1b7d05363d416e0ba504ab7f19e5b3d65c45569",
+      "bytes": 30028
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/08/goal_fixture_state.json": {
+      "sha256": "acc8207a596c769881b35d7745f9c638a59b12b222b7bb3100ca0b265714cb17",
+      "bytes": 37175
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/08/initial_state.json": {
+      "sha256": "2704d2d455aba28c7ddbf3e4995eed7d214d8ed98e31922b8f61a03e7013c218",
+      "bytes": 37190
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/09/goal_fixture_state.json": {
+      "sha256": "9ba748dbd1fbf02e188009444e20af478a61f700bba685a1534cc7cf8ec06caa",
+      "bytes": 14798
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/09/initial_state.json": {
+      "sha256": "a152376371cd9555301d7775d042324f54a1529036febc92c010c44b35cd036b",
+      "bytes": 15074
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/10/goal_fixture_state.json": {
+      "sha256": "c1151c04326e19c930585632537aed86397b1046bd245a1bf4ebf68c2432b508",
+      "bytes": 11498
+    },
+    "env/maniskill_lgd/agentbench_maniskill/evidence/long_horizon/10/initial_state.json": {
+      "sha256": "eef789b9c5819639e0c40bca1b6c86dd0b60b5243c37bb5380af162daa550978",
+      "bytes": 11436
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/camera_views.json": {
+      "sha256": "1c058e79375142148485898a07d281bf2f8a5c8233af594ce76e51e48948cea5",
+      "bytes": 1814
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/cases.json": {
+      "sha256": "58d52d5d96218e649d79fbfe9429d29fe66eb191bba5707e30f0859f85f3204e",
+      "bytes": 4658
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/dynamics.py": {
+      "sha256": "32d023b562e02431df6f9ef30f612f6648f86051120fd6d8079a9d7fceacd6f7",
+      "bytes": 1312
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/env.py": {
+      "sha256": "7a833be991ba67f959ec4ab21f106a60dc8a48fd402118d854acb087f37d200a",
+      "bytes": 14958
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/oracle.py": {
+      "sha256": "9f2521f3f0ecfa4b3a5227b9caf1d982e49706a82ac66e53898036fa8882ba25",
+      "bytes": 9666
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/paths.py": {
+      "sha256": "2704bed3a2b621379df27e9b6ca653cb95b461364114457c66df369b9668ec8e",
+      "bytes": 62
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/stowed_poses.json": {
+      "sha256": "ea8eff99bed76d0c401792c8f5400e6ff3cc6da544548572dc77ccd2829ed2b1",
+      "bytes": 2224
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json": {
+      "sha256": "5ec43ff4df096193480e64948486a1b48d6b4d93fccc8e91b281b3401ea31b51",
+      "bytes": 438512
+    },
+    "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/variants.py": {
+      "sha256": "8811e1d5fa6b44a175099f51b2059cdb83baa59cf2fc9408497d9cbf68519d53",
+      "bytes": 692
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/camera_views.json": {
+      "sha256": "e32e672182074616fded3fd293a56586c792525463acecb4fee0decbbbef599d",
+      "bytes": 127
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/cases.json": {
+      "sha256": "788b454ef2ac7c1f49f33cea629cb760deb580ef2c610b0a00f28ab1dddf51af",
+      "bytes": 694
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/env.py": {
+      "sha256": "b66e8b84cc54c2366ba7b8970fb64cae811a50894793585bf1de7376936d7a14",
+      "bytes": 11996
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/oracle.py": {
+      "sha256": "208d0e6966ac015a32fc1672f9db3930b264b8285ef41772617a5c8a747dd80d",
+      "bytes": 4957
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/paths.py": {
+      "sha256": "2704bed3a2b621379df27e9b6ca653cb95b461364114457c66df369b9668ec8e",
+      "bytes": 62
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/stowed_poses.json": {
+      "sha256": "5285443aa5f9f5c35a26b1d4b12a5a330006b41259f74e65a253f9a2c16bdcfd",
+      "bytes": 1051
+    },
+    "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json": {
+      "sha256": "cd2cef6f07a3345cce76fe483b0e6dc9c68258fc48ef83d139e1475414496973",
+      "bytes": 155672
+    },
+    "env/maniskill_lgd/agentbench_maniskill/resources/asset_manifest.json": {
+      "sha256": "ff9d089224c3b24b051b33794b53bcbfa3ae07f8bbf38b743bb3587ad908a362",
+      "bytes": 84479
+    },
+    "env/maniskill_lgd/agentbench_maniskill/resources/assets.tar.gz": {
+      "sha256": "35c15809631f358cc47055d700c37310caf8777defa231a8d24ef56c2b00d364",
+      "bytes": 49628571
+    },
+    "env/maniskill_lgd/agentbench_maniskill/runtime.py": {
+      "sha256": "809cbe5ed5fdb94775d385a5e3ca03f6ebc0a5d799ccb02609f4ffa9495da3f9",
+      "bytes": 5087
+    },
+    "env/maniskill_lgd/pyproject.toml": {
+      "sha256": "9f5841facf2c216c62ebc83fc8d32fcfb01c22836d83faeb88a34d368c940a8d",
+      "bytes": 854
+    },
+    "env/maniskill_lgd/requirements-simulator.txt": {
+      "sha256": "fd808d89a37f717b9452b7f2f0eeed3d55931d14c605b00e56f2c79043434c2a",
+      "bytes": 229
+    },
+    "env/runtime/isaac-binary-constraints.txt": {
+      "sha256": "8a72c528841e9555f9bcd80ad3a4cfa9aafe2836f5125db6a6494802c9a4e117",
+      "bytes": 510
+    },
+    "env/runtime/isaac-binary-lock.txt": {
+      "sha256": "e8f1fdaf7bdb98225312e47cc49973be340f9c37a984d420c3ed93fadf70f08d",
+      "bytes": 2307
+    },
+    "env/runtime/isaac-constraints.txt": {
+      "sha256": "fc2ef78327f57602f6fc9d7b3af5416ef1c317f7e4d409c083a00a3cb2d32dab",
+      "bytes": 244
+    },
+    "env/runtime/license-decisions.json": {
+      "sha256": "8204d1de9cb52d6517ccce5caf376425f730badfd1fa60ea42cb1193fd9e03a7",
+      "bytes": 2716
+    },
+    "env/runtime/license-text-sources.json": {
+      "sha256": "44c9c462fc26ce38c9334e0af8d81953b6152dbb3cef515216a190b80a53712b",
+      "bytes": 678
+    },
+    "env/runtime/mujoco-constraints.txt": {
+      "sha256": "1a829d11cd203b23059595af8a18493eaefa24146381f0227dcfb0534807c565",
+      "bytes": 380
+    },
+    "env/runtime/verified-runtime.json": {
+      "sha256": "9059a43a1f54a32ed0e86bf63cf159d6a966053b37f42a92e7f259b0488d9a0c",
+      "bytes": 1174
+    },
+    "pyproject.toml": {
+      "sha256": "6e6fe2c0dd8f452c4f42702c9d424606113870d9d52381aed623e1afb82cb976",
+      "bytes": 417
+    },
+    "pytest.ini": {
+      "sha256": "e5685409cf116ead9a49a4eeead8610a9d667a357e9f15a607654d76e5ff1b36",
+      "bytes": 125
+    },
+    "rules.en.md": {
+      "sha256": "365e8ef6aa77a16e9881ae2b56865ebc430405b8eb92ae1a51880b6da6241a82",
+      "bytes": 13507
+    },
+    "rules.md": {
+      "sha256": "365e8ef6aa77a16e9881ae2b56865ebc430405b8eb92ae1a51880b6da6241a82",
+      "bytes": 13507
+    },
+    "rules.zh-CN.md": {
+      "sha256": "72c82a6a297b141ffae19e7b835e8ac92b7af2bd1218c0e5e52e67f01b9abeb4",
+      "bytes": 12000
+    },
+    "rules_grasp.en.md": {
+      "sha256": "6815508572e0e2900691ab012ea0785b3dea6085df5339d18a25a79c89755f1a",
+      "bytes": 3447
+    },
+    "rules_grasp.md": {
+      "sha256": "6815508572e0e2900691ab012ea0785b3dea6085df5339d18a25a79c89755f1a",
+      "bytes": 3447
+    },
+    "rules_grasp.zh-CN.md": {
+      "sha256": "1041619af780243355d219581c3cb4874fb2ccdd3160aef65157e632a4e2aaa9",
+      "bytes": 3146
+    },
+    "rules_model_only.en.md": {
+      "sha256": "870cf3ded592ec83911b862802e9529322e21912e8a210b9e31cbab34b197e8c",
+      "bytes": 3066
+    },
+    "rules_model_only.md": {
+      "sha256": "870cf3ded592ec83911b862802e9529322e21912e8a210b9e31cbab34b197e8c",
+      "bytes": 3066
+    },
+    "rules_model_only.zh-CN.md": {
+      "sha256": "08d878cc331eaf2e67ee170a828ee960c0b8ca9eba457acff2d59e88bb3219ed",
+      "bytes": 2571
+    },
+    "rules_privileged.en.md": {
+      "sha256": "b2c2e7b12820a326cf04ef6bf2ea60b5c6590f84573f93fa2afb2eedf85ce3e8",
+      "bytes": 3577
+    },
+    "rules_privileged.md": {
+      "sha256": "b2c2e7b12820a326cf04ef6bf2ea60b5c6590f84573f93fa2afb2eedf85ce3e8",
+      "bytes": 3577
+    },
+    "rules_privileged.zh-CN.md": {
+      "sha256": "ed649562667ced73201a6aacdc86c71ce0cc375c579f294c3ba6578581bd6120",
+      "bytes": 3210
+    },
+    "scripts/agentbench_platform_runtime.py": {
+      "sha256": "ff6d901816cbfafe676051a4457b99f88f23fc5499319a0be1e809054d73a98a",
+      "bytes": 19438
+    },
+    "scripts/check_maniskill_dynamics.py": {
+      "sha256": "961e0932e68b2c668f75789ac4068aa437f5e21808e0c5d5fed2480725edf94b",
+      "bytes": 5048
+    },
+    "scripts/check_tool_policy_docs.py": {
+      "sha256": "79d08f3739f8024772f9085561ac3ff4676e9504bf79fd798defbf7fd27b76cf",
+      "bytes": 7693
+    },
+    "scripts/environment_client.py": {
+      "sha256": "63bcc9c8db215adf8a6066333908e79e8e5f9757407f515e0f2aa3898eeb58eb",
+      "bytes": 1266
+    },
+    "scripts/environment_release.py": {
+      "sha256": "287f1307f5eb36dec4c90dcdb8bf3b8312ad40a5dc2e86cf8a929743ada40a97",
+      "bytes": 2103
+    },
+    "scripts/environment_runtime.py": {
+      "sha256": "194a06059b514734090da42d69c149a82b7b3a719a7898f778ebc6a9f9fd4160",
+      "bytes": 9957
+    },
+    "scripts/environment_smoke.py": {
+      "sha256": "4b0c14488846ebccfff12a225354ca1128d57b2ddf9c0798b637732ececcd5f1",
+      "bytes": 9838
+    },
+    "scripts/environment_status.py": {
+      "sha256": "b2d8695b1c1662c100c90a747ad9421c4422626ea0a5745e5a63cf80a4a0d52b",
+      "bytes": 5829
+    },
+    "scripts/export_evaluation_protocol.py": {
+      "sha256": "345a525cc7d4f2376511d274e810c112b164ecb851bc7f9a7ea848bb3e3a5d4e",
+      "bytes": 8347
+    },
+    "scripts/franka_marble_test_protocol.py": {
+      "sha256": "6e83a3a5dc28057e819403948d24c1d1095f888b006359ffd64677f82e54e05f",
+      "bytes": 11331
+    },
+    "scripts/generate_hanoi_ring_assets.py": {
+      "sha256": "005c3bb9d1945a1c0a60c725bcac8dfb1466cf3f0590778e56c5ec46c7e534bd",
+      "bytes": 7522
+    },
+    "scripts/isaac_binary_bootstrap/sitecustomize.py": {
+      "sha256": "46b8151a40fee286093775ed6d69f1a1cc7ce934b7bb45b313d0381fe30b8911",
+      "bytes": 1024
+    },
+    "scripts/revalidate_action_contracts.py": {
+      "sha256": "5bcdd6e31b4e6733492d14b612cca9ae84c278d610bb22f2f26b9582f08e1751",
+      "bytes": 6870
+    },
+    "scripts/run_isaac_binary.sh": {
+      "sha256": "0230cc76f47f3d28633f1fbbbfc42828849aa253c0551da07bb421324935ce98",
+      "bytes": 1404
+    },
+    "scripts/validate_environment_contracts.py": {
+      "sha256": "9035e00c800975a1964da6a5900f7eb8bd9430905d47bf09c9c3777c39c59b4b",
+      "bytes": 4393
+    },
+    "scripts/validate_environment_physics.py": {
+      "sha256": "e343bc5e60f0c3b98015642ef69c3deca1f3072cad7a2f0d6d2ffee146529760",
+      "bytes": 10770
+    },
+    "scripts/validate_isaac_environments.py": {
+      "sha256": "f1f888423b0c745ed0867b3760c127b6439f8479bbf5a2f2ef32d8175d32e473",
+      "bytes": 21723
+    },
+    "scripts/validate_isaac_installation.py": {
+      "sha256": "e0b1e892674aa503573b69fdfa9d0fce9317b4fe88c48d0f5512c183f396baea",
+      "bytes": 10881
+    },
+    "scripts/validate_maniskill_environments.py": {
+      "sha256": "80f1c5f6d10fc6f1120ab780fcb04d12d5ceb453a86fe1f48794cb264cf91187",
+      "bytes": 12640
+    },
+    "scripts/validate_maniskill_fixtures.py": {
+      "sha256": "d5cebf23252e32565b1c8fe923b8fd6633fbf73301c3b4593bfe6569de2a546d",
+      "bytes": 3465
+    },
+    "scripts/validate_source_installation.py": {
+      "sha256": "234eea453bbb8b89007f93fb1148db273918b9a773f355bb2913d63e131a61bb",
+      "bytes": 6140
+    },
+    "source/agentbench/agentbench/__init__.py": {
+      "sha256": "e892531f0c2f2679a8da0852f3ba2a3e2e77d63ec957f5026a8f26e34ebcbe8c",
+      "bytes": 296
+    },
+    "source/agentbench/agentbench/assets/__init__.py": {
+      "sha256": "2a830b6980d14f89087a8ead72f4b830ddb3d06f83395ca7c628d3570a8b5e2d",
+      "bytes": 850
+    },
+    "source/agentbench/agentbench/assets/articulations/rubiks_cube/rubiks_cube.usda": {
+      "sha256": "84ce5ed4c10b1341ebb4096bf926f78973f99b225bcc5bae0f0df0d62bc64434",
+      "bytes": 117477
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink064/model_drink064.usd": {
+      "sha256": "8fed43e8be9d3db08758131ecf1bc4d26ccc72888607ee7366a70204638cda51",
+      "bytes": 2830
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink064/resource/img/fa6052bda579c9e2f851e851105183f7.png": {
+      "sha256": "a162216e5477498d34586e34abbcd58db64835e8cdcd558992d343f90b2f6297",
+      "bytes": 115144
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink064/resource/material.usd": {
+      "sha256": "7f338d39e65deef3dcee9d85028a861d5924fae08ba0d76b20c9317163724365",
+      "bytes": 2303
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink064/resource/v_0/element_path.json": {
+      "sha256": "72692d118db4169908b9c764cadd1cd681d8e6bbcd0165965e7ab668e35babf2",
+      "bytes": 36
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink064/resource/v_0/link_0.usd": {
+      "sha256": "bed5663d5aaf6bcbe032f23e656d04ad786d663463cdc5c2971df1dd1c742c55",
+      "bytes": 1046216
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink065/model_drink065.usd": {
+      "sha256": "4b056c565563204795ffb0ec4aac5b1389f9f1059134ad424f27e31eeb911a5c",
+      "bytes": 3568
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink065/resource/img/4f76a198da5ecf30576b291443a69366.png": {
+      "sha256": "26a0673f960e8ff4560c1fa6e0d1a2c171346baabf0855894b09292aecd53504",
+      "bytes": 304536
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink065/resource/material.usd": {
+      "sha256": "91eea21f84ae5b2ebef8a5ec7c24514ff6ce56bdd060a1499e318dc4ae5d3d53",
+      "bytes": 2303
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink065/resource/v_0/element_path.json": {
+      "sha256": "c90d7d4a0f14108e300ce7ef59d07df7a478a0aa4ea8c98c435909351ed4475d",
+      "bytes": 141
+    },
+    "source/agentbench/agentbench/assets/assets/debug_assets/drink065/resource/v_0/link_0.usd": {
+      "sha256": "2a2237900c3a42197a2a6d833ea65a4393c93a383eee233c39f32313a5db4ecb",
+      "bytes": 1668124
+    },
+    "source/agentbench/agentbench/assets/assets/hanoi_rings/RingLarge.usda": {
+      "sha256": "a838db33e140217841ffe6bb4fb88bf1fca88f0198c5f13ab0bd7e2b74ba69c3",
+      "bytes": 15228
+    },
+    "source/agentbench/agentbench/assets/assets/hanoi_rings/RingMedium.usda": {
+      "sha256": "9037d0f15499d70bdb1aff3394764a47aa1cc62c54bd3354acefc76f03b8319f",
+      "bytes": 15204
+    },
+    "source/agentbench/agentbench/assets/assets/hanoi_rings/RingSmall.usda": {
+      "sha256": "e044bdcb9aeaf91f026b1541da298e7ce9a295d349fff809e30c7569ca54f477",
+      "bytes": 15228
+    },
+    "source/agentbench/agentbench/assets/assets/hanoi_rings/RingXLarge.usda": {
+      "sha256": "2027d468c77329c0ebb23b46064e762e9ac1db0eb4b765e1adf427ef81b044f1",
+      "bytes": 15204
+    },
+    "source/agentbench/agentbench/assets/assets/hanoi_rings/RingXSmall.usda": {
+      "sha256": "3232c5bf2693a53623eff0d06627fccf3af1583b0806fcd96c64d8e0af9f7479",
+      "bytes": 15204
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/frame_x0.usda": {
+      "sha256": "5261c353a8962e7df34a58428ede9e827250d177f76528a9a6839cdcf7b32191",
+      "bytes": 2833
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/frame_x1.usda": {
+      "sha256": "ff51989d49bcad6db3f86f5d28453e2f4e946d2fe28de9d1c124307e071c8766",
+      "bytes": 2831
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/frame_y0.usda": {
+      "sha256": "00e7996ff66cba67271380eb29b8419b15122cd6e6a6bbcba549a4ff0ab13603",
+      "bytes": 4840
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/frame_y1.usda": {
+      "sha256": "f67805c6ace6f131c67ff7f87c93dc87d617fa5f263e98719f8ea1837ded27be",
+      "bytes": 4834
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/frame_z0.usda": {
+      "sha256": "c6756b95ac723224cad191a7ca9337c0144bd9ba8962cd4eba9bff6000c85e12",
+      "bytes": 2831
+    },
+    "source/agentbench/agentbench/assets/assets/kongming_lock/key.usda": {
+      "sha256": "ad02ab69f2a681605a9177b28b5937d288a5051e3537fc93bf325f1eaddfeb18",
+      "bytes": 1492
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/pocket_cube.urdf": {
+      "sha256": "9773ff0eb6b8d255bdce449d0b543efdfdffdf3aa2ee6556a150cf5f24fb5d90",
+      "bytes": 8112
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_dbl.usd": {
+      "sha256": "33b9d08d3e872fcf05f5ee5cf5a895701bda4c4b5fa2c402927ba442fe4eda19",
+      "bytes": 110088
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_dfr.usd": {
+      "sha256": "b3a6d5e294323e56d4cf7a40c3ed92e267d68f6e6c48f9e0321bf7c2ceca3eff",
+      "bytes": 114237
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_dlf.usd": {
+      "sha256": "e82219f8124c091570ae800677798f7a18848f70bc0017488a494d8bacef30b3",
+      "bytes": 113956
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_drb.usd": {
+      "sha256": "97da3a3b91874eadea3d321eb052b257f53da773697d76b509fc4fe14b388845",
+      "bytes": 113518
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_ubr.usd": {
+      "sha256": "41876a930b9b00d569f8c0323ecd5751fd142186c465d446652436bdd34fec9d",
+      "bytes": 114030
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_ufl.usd": {
+      "sha256": "596835b7b1b8b61e20d87161675d10f7f47773f4c4a6ac270595bc845da09c70",
+      "bytes": 113950
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_ulb.usd": {
+      "sha256": "750742c90bfc5d22dc2e32f15be4970d09bd28e755c5a17518ad7d9657037bc9",
+      "bytes": 113940
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/cubie_urf.usd": {
+      "sha256": "be6b26f1294f74548890f0214249a0eba19c41485131789ee002989d1c621c0a",
+      "bytes": 113847
+    },
+    "source/agentbench/agentbench/assets/assets/pocket_cube/scanned_gap_matched/textures/Mofang01.jpg": {
+      "sha256": "3b743942b7e6acb38ae098b2fc9cf420d987d8ceba6543ad5af52a6740001f4e",
+      "bytes": 2282026
+    },
+    "source/agentbench/agentbench/robot_agents/__init__.py": {
+      "sha256": "c0b254482200e3a43c2946adba728c04ecfb6930b2874d3b6dfefae759ef186f",
+      "bytes": 126
+    },
+    "source/agentbench/agentbench/robot_agents/agilex_piper.py": {
+      "sha256": "6f544bccd67b91d666c8c950c13664c3db01bc149aad73ad1099801a8a343453",
+      "bytes": 2862
+    },
+    "source/agentbench/agentbench/robot_agents/franka_sharpa_right.py": {
+      "sha256": "6184a98ed227775155d6e40ad3468f126c059ca262bce8a59955ebf8a12b408a",
+      "bytes": 11775
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/LICENSE": {
+      "sha256": "247944c63de1573653722ba784f96123da267105b7b48577e0c8826a24b809f6",
+      "bytes": 1065
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/UPSTREAM.en.md": {
+      "sha256": "36435ad298c4f4e81230ad2d303ba323bd21453fde14b6c138e03783f0b89e7d",
+      "bytes": 940
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/UPSTREAM.md": {
+      "sha256": "669bdf57659f360803175c790156c4fcbbddbba112985ca2aebf5662f249b58e",
+      "bytes": 917
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/UPSTREAM.zh-CN.md": {
+      "sha256": "5233131f77b3f5577320bce224268fd14301782dd56ed39236696ac5d46d04b9",
+      "bytes": 890
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/base_link.stl": {
+      "sha256": "fd4a3d6d0266205fe3f725f048645be66592c23564db22e08b0807d5569b2c64",
+      "bytes": 607384
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/base_link.dae": {
+      "sha256": "99cd5083e485e3eb739d967c57451f11e32e80b9f4f293815ba3b546d99bdc3c",
+      "bytes": 1006256
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/flange.dae": {
+      "sha256": "421c3e20c6109df3c96c5ce18ff0b2609b6604135ff790e4bfc1d9a281b0701a",
+      "bytes": 285243
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/gripper_base.dae": {
+      "sha256": "aaea10ec06709d6a3343dd3378553eee3df40b43ee276df10c5b68ac7f61bae2",
+      "bytes": 2721338
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/gripper_link1.dae": {
+      "sha256": "b4aaf0e024d09eb0454e70e0c5092638edcf7da7c253d1effdeeaec46f76427b",
+      "bytes": 176476
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/gripper_link2.dae": {
+      "sha256": "0da1350898b2787b76b84698253aeb1efd2ddb6360b2fa2ae03ecff389883af8",
+      "bytes": 176476
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link1.dae": {
+      "sha256": "ea11f3382f6b32ec6d2283db4320ba2065ee1d24358f9b236ce71cfd4cd352cd",
+      "bytes": 734613
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link2.dae": {
+      "sha256": "f6a723ff09c605a4bab19c1581b8879461967afe5626a3b7ca0a884e5f11a869",
+      "bytes": 6923319
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link3.dae": {
+      "sha256": "17cee6f92b741f21e29e4a3a3f600ba8093af3e1f61ae717747e03251a76982c",
+      "bytes": 3142573
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link4.dae": {
+      "sha256": "2a4d28b04341c22fdc38e9fc576c2386bf6f1e8ef0526d5b2cf179ea9ea650b3",
+      "bytes": 1402164
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link5.dae": {
+      "sha256": "fc7253ad4128731fded02700d5f35b94a30f3c219cd2b75b62b0abbd81bf7bff",
+      "bytes": 1362521
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/dae/link6.dae": {
+      "sha256": "92f67e27b573969b4a1806ff3bc427bf9219c8ff78fec80d91ce3f32d69b1b9d",
+      "bytes": 88161
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/flange.stl": {
+      "sha256": "f9ce752f93a6598858a779e3d8755a09e466b588efcffc3a1c3953773753a22b",
+      "bytes": 204584
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/gripper_base.stl": {
+      "sha256": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3",
+      "bytes": 1837884
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/gripper_link1.stl": {
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "bytes": 104384
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/gripper_link2.stl": {
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "bytes": 104384
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link1.stl": {
+      "sha256": "9ee6e1d67c0241f42a0dbaf5c676d19230375ed078ee1943bb8c4c37ab303d14",
+      "bytes": 447784
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link2.stl": {
+      "sha256": "0d37675b699b643f2e15348de99aed535fac10dc5f09a79b8e4b0acfaf4e0378",
+      "bytes": 3658384
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link3.stl": {
+      "sha256": "e8ae51f17c0c7f6d67b753922e2cc269f5e8372a65734f859231639a64fe8fad",
+      "bytes": 1845784
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link4.stl": {
+      "sha256": "efa33022976218f246f736a6133494b5d0e5486e8b50b52900c42f285ae85558",
+      "bytes": 877984
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link5.stl": {
+      "sha256": "a1c69d1c7f6f8c60e2c82331c0f444725200ed4053d3e5ec23aa82cb5db5b29f",
+      "bytes": 833684
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/meshes/link6.stl": {
+      "sha256": "88374973bc3bd9e7389b5853cd6e555af9731c30b658b1ee6f85be34a126cb92",
+      "bytes": 58884
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/urdf/piper_description.urdf": {
+      "sha256": "03578cf8f74c6e3d6e5a3e4680a01e00ae0d72efb2d678c680d822ad2c567c11",
+      "bytes": 7640
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/urdf/piper_with_gripper_description.urdf": {
+      "sha256": "1db37b935f7fa4876f5165459fb386c2d172350772102771961ba0dadfec5fb4",
+      "bytes": 10067
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/urdf/piper_with_gripper_description.xacro": {
+      "sha256": "cfc6a0a44cbbabd1069dd3dacc009cbb27cd24ec9f74681561cbd584b3d6df3c",
+      "bytes": 5073
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/urdf/piper_with_left_revo2_description.xacro": {
+      "sha256": "882eaefa468c08fbdc41b697f3fd6c4af36378b50e54ebb852635e7bc0168ca0",
+      "bytes": 1861
+    },
+    "source/agentbench/agentbench/robot_urdfs/agilex_piper/urdf/piper_with_right_revo2_description.xacro": {
+      "sha256": "026dcf5b1a283bec83e8c60b0749b478fbb186b462cc5768c39be55fe1f0f90a",
+      "bytes": 1863
+    },
+    "source/agentbench/agentbench/robot_urdfs/leap_hand_right_fixed.urdf": {
+      "sha256": "e03af83753424351721724b4c4388cb44910f2dafa896058e39ad9f7605b6ef6",
+      "bytes": 29521
+    },
+    "source/agentbench/agentbench/robot_urdfs/shadow_hand_right_woarm.urdf": {
+      "sha256": "93ec5d07a800cc369581c014fe58c7851d49e0d087d4b61e9d636d994ccc7cff",
+      "bytes": 26858
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/FR3_Sharpa_right.usd": {
+      "sha256": "df56c907ff56901223151e3d5359cefee89b3b7038ffb08c8234bdb63ef49e01",
+      "bytes": 1965
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/configuration/right_sharpa_wave_base.usd": {
+      "sha256": "b1d74a5321b18009070395cc0b21f7cea3f8ae76a79e26bf0d69d00cc793fefd",
+      "bytes": 3977633
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/configuration/right_sharpa_wave_physics.usd": {
+      "sha256": "9f3ad8c25f9edde653b5470a9e2f4cb42abbb55c1878d24eee48e34fbbaae8e3",
+      "bytes": 9525
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/configuration/right_sharpa_wave_robot.usd": {
+      "sha256": "03015ce74d3a3d3c5936371e66e2c56f35dfcb57baa9c01d85ac6208fac21f7e",
+      "bytes": 1575
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/configuration/right_sharpa_wave_sensor.usd": {
+      "sha256": "c310efb25eb1f8a1c4ac4efe775378b0ee7ee89d95e6f4bd7081844a7af6a970",
+      "bytes": 663
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/franka_arm.usd": {
+      "sha256": "c2fb04d368d27cb39020b0e237ca8103c3559fc10f0def1988f44fbbc533a6c4",
+      "bytes": 12612942
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/LICENSE.txt": {
+      "sha256": "f6a348fca3d77ddf60e66a3288b060e09b12afdebeabc6fc490b272ecfa10e43",
+      "bytes": 556
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/NOTICE.txt": {
+      "sha256": "bee17b99ba47b327197e75f2d62e3fadbff246f6e4b84e15550afe12fbd2f3d6",
+      "bytes": 842
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/UPSTREAM.json": {
+      "sha256": "30e4a9abc4bdf2c07ab3ddb626e0f4ada6c3a74d5ea0fc0228a90d26ec5d86f7",
+      "bytes": 5635
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange.urdf": {
+      "sha256": "261c1a5284e04bc9690e0f5ac39d7a7cace0a16d335d663a1d3c7fcf4e4daf31",
+      "bytes": 36489
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange.usda": {
+      "sha256": "93b536684aa4e140718e52363c4f5fada518211cd053fbf42b499aee57ad4ef7",
+      "bytes": 26732
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/.asset_hash": {
+      "sha256": "df4b52f9f4ee53ddee61a0b79f4711615c1715f5a08ffb96d82f570455d9b1b5",
+      "bytes": 32
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/config.yaml": {
+      "sha256": "3982cc9f5091de9ccc923de07c2b65073138350bfc085a42b555a118e79d9a41",
+      "bytes": 758
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_base.usd": {
+      "sha256": "f2b19b22a57dc70ba7536a9084c33f2915f1e67639f67b00aa91d21268c6b1dd",
+      "bytes": 10130125
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_physics.usd": {
+      "sha256": "f7e1189835db7c7934060a0783bfbe7578997b52b236fd7163c8133a783626b6",
+      "bytes": 9673
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_robot.usd": {
+      "sha256": "36edee7b159c0d8a14b6297dc7970fdc6bd8945f86b9007974949c5944c2c42a",
+      "bytes": 2763
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/configuration/right_sharpa_wave_with_flange_sensor.usd": {
+      "sha256": "86636e59b54a62d4a7ab4afbcedd87baa6ee0f2c4b9a46d8a05c777a85cdb76e",
+      "bytes": 657
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_flange/right_sharpa_wave_with_flange.usd": {
+      "sha256": "985f7d0ce42b441ca6bedacee86a400318427a0dae117fa3b7770e390dfedba7",
+      "bytes": 1476
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/right_sharpa_wave.usd": {
+      "sha256": "ca49b44916fe2e65eb1429da474040f6e3ce0a9d39ac7daee68a88bc559a9b7f",
+      "bytes": 1317
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/MCP_VL.STL": {
+      "sha256": "350f66d656fef760a7f4f0c4a026951e9d831ca65a9c5e4e34825b694ed6b11a",
+      "bytes": 75184
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/MCP_VL.obj": {
+      "sha256": "7d5ca3514040d445bb27c4ea201d47a71f23043520ef91160fcb5da13edacfca",
+      "bytes": 189791
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/elastomer.STL": {
+      "sha256": "1611f42070a8fb34226508417bb930af53bbe9e3b619113136b60cb0595ca4ed",
+      "bytes": 271584
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/elastomer.obj": {
+      "sha256": "56037ca1eda35bddcf475c42a64a560771314b93bda3371e603cb8bdf2883dd8",
+      "bytes": 698215
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/elastomer_surface.STL": {
+      "sha256": "7f88a20e862895e3bf97d35c600b9eb5c2f2e49f8918ef9fe07bd82e6572fae8",
+      "bytes": 362534
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/elastomer_surface.obj": {
+      "sha256": "364ca2a4f60cf4d06ece1fdb741910c625ac58f5aa9a93fd3adeec4f7858a16c",
+      "bytes": 932556
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_DP.STL": {
+      "sha256": "09ae5e485d42c651c70d025ef6bcd000f727dd1535836d7d8fa9de0686db4583",
+      "bytes": 101684
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_DP.obj": {
+      "sha256": "779c9718acf73b79ef8198ab3cae0bcdf584c729ba0aaad42db5aa4b71ae0acc",
+      "bytes": 255224
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_DP_visual.STL": {
+      "sha256": "f21c6a8d12a21b29ff05127ec1987135cc966a283707165d93a30f9e74d4a0ed",
+      "bytes": 320284
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_DP_visual.obj": {
+      "sha256": "acb0ce05df0c538503a4123d63575ffe6883878cab1c380f133003fafb7600c8",
+      "bytes": 816196
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MCP_VL_visual.STL": {
+      "sha256": "ec48548aaafa6589112e9b609ed58f1b5e7ec0157ca15e0e4e8c93bff706a9d0",
+      "bytes": 322584
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MCP_VL_visual.obj": {
+      "sha256": "cf4b228d8773836a7bd63721ad19ec4bee641225158d0bb3de46fbf60951525a",
+      "bytes": 825883
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MP.STL": {
+      "sha256": "98ad7e6e990f61857d6ad28860bba7e0dcba78761a513d60fdc527e9d56bbe8e",
+      "bytes": 37084
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MP.obj": {
+      "sha256": "39f109ba7761e644cb0d98620255e329f8439d24ecd98425f677af8cbd952626",
+      "bytes": 91742
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MP_visual.STL": {
+      "sha256": "af867d754ae0f3d5c38610f72cf4699789c82bb0391c2a406e6924f76e850ec6",
+      "bytes": 369384
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_MP_visual.obj": {
+      "sha256": "27523b375dfe1ad1a49d8315a919ee9a68711fa636fcdbe1e902b60e91259846",
+      "bytes": 937219
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_PP.STL": {
+      "sha256": "ed975b59e2569759ff28a397dab71d84667161d3b90b41d625bc5e1f5ac6536c",
+      "bytes": 81784
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_PP.obj": {
+      "sha256": "f586b32e169f2a5b536050c6ffd5136c36eeb2faaf712d11d8aabc421dbf6655",
+      "bytes": 203742
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_PP_visual.STL": {
+      "sha256": "aa8b0ac6b6a7769033daa149416035712b23b79af0a7ddeb83d62142f8ff8a14",
+      "bytes": 560734
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_PP_visual.obj": {
+      "sha256": "f75fc388f730140141c962ea23039b02af4724ef1cd98edf3d32a231c8e2aba3",
+      "bytes": 1424843
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC.STL": {
+      "sha256": "8c52941db271e9331f0b32ec581c078af7f8cb372fb97f021d5b1dec2d2426ae",
+      "bytes": 174184
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC.obj": {
+      "sha256": "4d52b56fd05a7dbe217b26ba44a4eb99b6281eeef6505ef9153b9ff9bc45c3ec",
+      "bytes": 431557
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC_visual.STL": {
+      "sha256": "496da9148b99a003ebbbb2eab879c3b9ab1509f74294599f22d79892e82879a4",
+      "bytes": 214484
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC_visual.obj": {
+      "sha256": "10c897c75a7e71bd5215020509447a32e8066c4d5114b10cf97fcca15240fa73",
+      "bytes": 535870
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC_visual_.STL": {
+      "sha256": "496da9148b99a003ebbbb2eab879c3b9ab1509f74294599f22d79892e82879a4",
+      "bytes": 214484
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_hand_C_MC_visual_.obj": {
+      "sha256": "10c897c75a7e71bd5215020509447a32e8066c4d5114b10cf97fcca15240fa73",
+      "bytes": 535870
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_pinky_MC.STL": {
+      "sha256": "1f8207aff0f2f6ca2f1de1a8bbbbcd4183300bc3778d55821c2aae9b490b7dd3",
+      "bytes": 41884
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_pinky_MC.obj": {
+      "sha256": "107a1ad0b3f423200da48e8657847c30a376cc644d0755115de8b2f479356002",
+      "bytes": 104716
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_pinky_MC_visual.STL": {
+      "sha256": "4b3902eda84c7f10cc7fd45f0512264a731d52ed8b9be91bf2fc9981d0e7c03d",
+      "bytes": 66184
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_pinky_MC_visual.obj": {
+      "sha256": "07fcf0660fe623fb746434c650a7f4386e1bba84251413ec0a2889002bab6bd6",
+      "bytes": 165996
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_CMC_VL_visual.STL": {
+      "sha256": "ebaf499965a51e4b539b7ec5481efbddaf2003b69d0e5e72425a430cecd187b0",
+      "bytes": 317984
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_CMC_VL_visual.obj": {
+      "sha256": "46046864b8d6af79db77b1aea5ec5be15d4c89291008864298c82530ec63517d",
+      "bytes": 817321
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_DP.STL": {
+      "sha256": "7bd0a9187d9cca7c3136d471784db39a3593b5264e16586002f73db42292dc6e",
+      "bytes": 66484
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_DP.obj": {
+      "sha256": "797a62c869f6496386bee5d61147f0ad25a64b8009ff86dd08c79a64e1d30c54",
+      "bytes": 165686
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_DP_visual.STL": {
+      "sha256": "7bac46dd5699d6b2fed60fdb384199cdab7407343d61db3fc8737866096fa440",
+      "bytes": 335484
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_DP_visual.obj": {
+      "sha256": "aac57b15c482390f1e65f502cd5e3d30c4696c5d0aeec4d5ca44261e0d13c9db",
+      "bytes": 855587
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MC.STL": {
+      "sha256": "deb6d97eb2d7223d72c23ebb32f874644dcf78848389f14dcabe3016aae5dd6c",
+      "bytes": 149584
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MC.obj": {
+      "sha256": "e08985de34cb05374748f8dd61cab7b114b4024c4ea7dfe40d19acc9e667f627",
+      "bytes": 373937
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MCP_VL_visual.STL": {
+      "sha256": "30d656738130093b7023100c73fac065a173aaba2e4314034c050c984005d634",
+      "bytes": 300784
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MCP_VL_visual.obj": {
+      "sha256": "8636efae0a1d795b0b34e28f632029dfe8c5a9c7a4d4763ae78ef087132b0a67",
+      "bytes": 773489
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MC_visual.STL": {
+      "sha256": "81f4bf8c39117b7bf7a4f0fdeb577948056139a84927adc55e9b049434a41a3b",
+      "bytes": 625334
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_MC_visual.obj": {
+      "sha256": "b9efb60df56ecf2d21bf8faeb63e67e51264a8d0ac22e8648e5e5659e961d8b6",
+      "bytes": 1587695
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_PP.STL": {
+      "sha256": "795b35f943c4272314d5e72497aaea2ef998458b0259a6609577d3694aeff869",
+      "bytes": 85884
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_PP.obj": {
+      "sha256": "3ff18d94aac06e3e316d377096cf5ee7cc31413fb4f037186eff50525f21d544",
+      "bytes": 213730
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_PP_visual.STL": {
+      "sha256": "1024905f9af3ad14160ce55d2e1d98fb7028274f7b267bee8b057754eb165faa",
+      "bytes": 719834
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/right_thumb_PP_visual.obj": {
+      "sha256": "8824f91cb2310aa8d18b4665daf21a683cd11b0de592464a6d35aadf606e9a97",
+      "bytes": 1830397
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/thumb_elastomer.STL": {
+      "sha256": "8fb5b2036eda97fe4c2ce50ad8e021775185961c478c0d6f25f5a776588d9b14",
+      "bytes": 270684
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/thumb_elastomer.obj": {
+      "sha256": "70224bc195501d70a3d695b6c7c055e4e4b8c6359e27aa220bc3d5f4f5687c7d",
+      "bytes": 695211
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/thumb_elastomer_surface.STL": {
+      "sha256": "1b25efc390f9db9eca87ed167e7baa2e3220a417bbd49924beb077da458c6241",
+      "bytes": 506484
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/meshes/thumb_elastomer_surface.obj": {
+      "sha256": "12f3db4261d12b328b2f3b4fabcd5cc32a16029751c17e0d4a9fbf5929df07ec",
+      "bytes": 1310806
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/right_sharpa_wave.xml": {
+      "sha256": "3296528f4b639209c482f7bbbae387ab7aa21fee667527fe966ed88ccb0344d4",
+      "bytes": 23271
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/FR3_Sharpa_right/source/right_sharpa_wave/right_sharpa_wave_isaac.xml": {
+      "sha256": "8eff7077888a7578072b57d23dbefa5d6e21edc8f3279fbf28d2662ac25dee8b",
+      "bytes": 23257
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/LICENSE.txt": {
+      "sha256": "f6a348fca3d77ddf60e66a3288b060e09b12afdebeabc6fc490b272ecfa10e43",
+      "bytes": 556
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/NOTICE.txt": {
+      "sha256": "bee17b99ba47b327197e75f2d62e3fadbff246f6e4b84e15550afe12fbd2f3d6",
+      "bytes": 842
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/UPSTREAM.json": {
+      "sha256": "2e7adbf6b9e5fba769a8bae4258ea60547b561ce89b3a0342b39e3392c976d4f",
+      "bytes": 6123
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base.urdf": {
+      "sha256": "6a98c572314fa037b9c958854de2eb711c9e1f992f9bca4b5a8277f34fd9a412",
+      "bytes": 37796
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base.usda": {
+      "sha256": "5a94d613867e2640861c941dc969b5c4315df2d27b0d2563125f89f28f1bdd00",
+      "bytes": 29036
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/.asset_hash": {
+      "sha256": "012bc0b982345a70c8760f3c1f4b8a5aee2a6cbcb7a183680ab4420b8e8d2177",
+      "bytes": 32
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/config.yaml": {
+      "sha256": "fcbe0077128dfb96797415860af436f2eccf0846b94970e18ee6af03ff9cb6a9",
+      "bytes": 866
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_base.usd": {
+      "sha256": "f3f5d625307638fb49523428bfec73924b70b139605503d9e0dbce484a05275c",
+      "bytes": 9014514
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_physics.usd": {
+      "sha256": "0ee761d35731747353be32b2b95bf246bbaf3922322b6c21217721475d110553",
+      "bytes": 10171
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_robot.usd": {
+      "sha256": "0ebcebc3d0ab657298169e6b53cde16ec72b4e9b8e11ac4cf934fcd7beba6555",
+      "bytes": 2885
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/configuration/right_sharpa_wave_with_float_base_sensor.usd": {
+      "sha256": "86636e59b54a62d4a7ab4afbcedd87baa6ee0f2c4b9a46d8a05c777a85cdb76e",
+      "bytes": 657
+    },
+    "source/agentbench/agentbench/robot_usds/Sharpa_hand/Floating_Sharpa_right/official_wave_01/right_sharpa_wave/right_sharpa_wave_with_float_base/right_sharpa_wave_with_float_base.usd": {
+      "sha256": "04aa57c8dfb0c75d4680a0bbdc64103269564ba00230d8394356eb2827914bb1",
+      "bytes": 1480
+    },
+    "source/agentbench/agentbench/sharpa_joint_names.py": {
+      "sha256": "4f6ee31a01d2bf9969b9480bbc00d1b0f8b398ec4ee41986971330fd0b343a28",
+      "bytes": 946
+    },
+    "source/agentbench/agentbench/tasks/__init__.py": {
+      "sha256": "098fcc6bb68a96b995f3dc47aa377afb9d5e1da108a4e404a754b70e3bcca9eb",
+      "bytes": 532
+    },
+    "source/agentbench/agentbench/tasks/manager_based/__init__.py": {
+      "sha256": "0f061c6be551c578c0bf4e7b9c217d86b5ff740adce37b99d70fd997feddcabe",
+      "bytes": 231
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/__init__.py": {
+      "sha256": "8a48e74cb1eb1417ebf27b2044ca31b67d67942974bdfbc0395c8e3ca114fc30",
+      "bytes": 346
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/__init__.py": {
+      "sha256": "4413c3723e9bc3c7f447bd8f3ad501f85dbcf89978c11cf69beeb6f9051788f7",
+      "bytes": 728
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/__init__.py": {
+      "sha256": "f09a1f86a45bb60f1e0210eaa0bd14e252432ae81e4402659cd56b451afe1930",
+      "bytes": 2251
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/hanoi_cfg.py": {
+      "sha256": "28ff35e8730186f2f01d19c6ad2ef98af6cc45d919ba0e1e979976c3f22ba860",
+      "bytes": 16285
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/hanoi_rules.py": {
+      "sha256": "fd93a1f37d0e7b2241998b47f9ce42b2c28ea53e2ab30e4e5b0207f19caa4aa3",
+      "bytes": 22314
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/hanoi_rules_test.py": {
+      "sha256": "23eb40d35611fd716f5ac543a06ca13a42f774f3a553bc999a257f3b5f2ddd8e",
+      "bytes": 9843
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/isaac_evaluator.py": {
+      "sha256": "15863531653203e6d618a827b07839881d5f47c7622c10f4cb628193b8ebc55f",
+      "bytes": 14388
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/private_evaluator.py": {
+      "sha256": "c7cc98294c8226e8fee08bc5805ea5101b8c4fc42cbd3d4e211a116da228fb5f",
+      "bytes": 7272
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/scene_fingerprint.py": {
+      "sha256": "00f70e4afb14ca4380dbd2b60c84286ff4658045af0be9c076f4efa415e0adf5",
+      "bytes": 4027
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/visible_shells.py": {
+      "sha256": "4916ba8b31bf36b2ff49f8ebd3ae76fb959c3740cd6b29dae998a12f1a37e876",
+      "bytes": 9179
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/hanoi/vision_env.py": {
+      "sha256": "42395b04b2e00247c83719d5fe0c190d2fd3c648341ba13e56bc8e491211dd4b",
+      "bytes": 5382
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/__init__.py": {
+      "sha256": "b4ff44c0b25ee6f83fc9d70517fd746a27307a7b16594d69d5f3aee1f957c9bc",
+      "bytes": 2698
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/dual_sharpa_mount_v1.json": {
+      "sha256": "268e945291fba09b7b7fc4c65b6b70c6156de656bc2df6a122f9fe606eef7d18",
+      "bytes": 7237
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/evaluation.py": {
+      "sha256": "04bb76aa9c7d5679cc6586528865f195e0d3a641280245ff1aad3943969c44f4",
+      "bytes": 7786
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/gripper_action.py": {
+      "sha256": "e4b2a61a22159012f0f21a93f466155f04ac82620a2a63b7f28cad58a2c004f1",
+      "bytes": 1251
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/kongming_lock_cfg.py": {
+      "sha256": "f968b4d84f47062655710c10df7b75c8aae2a8a55469746619d2211dacda15bf",
+      "bytes": 14418
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/kongming_lock_env.py": {
+      "sha256": "45347931e5f9e6ca7bb457aca946199d778fd84f092683d693fdb9b0c4dd50b3",
+      "bytes": 17796
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/kongming_lock_sharpa_cfg.py": {
+      "sha256": "d8ba8ac29ed934e9d526282540a78b65f58c941a5c47a0acdf42fcfe6f0e25cf",
+      "bytes": 10171
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/kongming_sharpa_benchmark.py": {
+      "sha256": "0a1c3a84b6ad87935e9990031e74d3d8f6b4a7dfcbdb72c97fd6670a8804e55f",
+      "bytes": 21124
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/lock_mdp.py": {
+      "sha256": "9d1ff7d56c43fcda1fb85b927331436ad0c7f1bcefb5fc1d21fd49876a94c8a6",
+      "bytes": 3050
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/shape_v1.json": {
+      "sha256": "efaadb22dbcf7c605495f80bda370cea24a246c21adef5fb347a22971c8550df",
+      "bytes": 11479
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/shapes.py": {
+      "sha256": "7e8a608f6df87031a4c3c9374fd9c868bfadf9bc0e1880f1922f391b4e2f3c36",
+      "bytes": 10121
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/kongming_lock/sharpa_calibration.py": {
+      "sha256": "83a4f20404bd121829281719317f5f1e1f8f8b81f543574a3670d7e991bb1191",
+      "bytes": 2899
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/__init__.py": {
+      "sha256": "91b0f53c71331467426b4b48b4d7d20563e88781a1fe0ab1fb0280e8bf750757",
+      "bytes": 1088
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/assets.py": {
+      "sha256": "471b649cfb476a561416418fee67bab0c29c9cada9b91e0feef003bc5cebc2ef",
+      "bytes": 30052
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py": {
+      "sha256": "83d90b8f226c124c1312953504fc99ca8c630ba5df748ef9f0ae5946071488a3",
+      "bytes": 15376
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/geometry.py": {
+      "sha256": "c9d5ee4ac319f36313989476e3771748679a73545c165f9d77c540c9e5526e8e",
+      "bytes": 22805
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/mdp.py": {
+      "sha256": "4d318a86c22f93e74843aa231be4f9db783b114ffe0e03028741efb18463a14b",
+      "bytes": 32507
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/organize_bookshelf_cfg.py": {
+      "sha256": "181a7f1b95c778d48b2539b26d1e5ec371315ad9a161c39de0b3f490c3b0c599",
+      "bytes": 20995
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/organize_bookshelf_env.py": {
+      "sha256": "2c110326fae31901d4f12691e69518160f24c6b6d2e323c34b200122c417df7d",
+      "bytes": 9726
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/rules.py": {
+      "sha256": "8a9ea1dd156afb2ba98d1e5a88106c6ebc6ae5a893019939f1ad032974bbd7d5",
+      "bytes": 15476
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/sampling.py": {
+      "sha256": "8e93f0bd2fc281f3f64eb323c39a36d48846f38cd2170451074f03c0d57a104b",
+      "bytes": 27499
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/variants.py": {
+      "sha256": "50dc9ad0acd987eff623dac5313224f296cea53a06875a423de4698c86555de4",
+      "bytes": 29153
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/__init__.py": {
+      "sha256": "4766382479571eb800e625288dca48fe0ed4cd19b82bc88ce134dab227e57e71",
+      "bytes": 1272
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/dual_aloha_cfg.py": {
+      "sha256": "2e494a535b6ac37bf4e5c13aca114a98c0bb7523a119c302c942a8f6ee107d7b",
+      "bytes": 10870
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/dual_sharpa_cfg.py": {
+      "sha256": "d4d121a3bdd95f5da943f353b91766911fd6f8d999fb2d506781fc009e875375",
+      "bytes": 7786
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_cfg.py": {
+      "sha256": "6c95fbfd69430915b5304587850ceca656c257d2498bb73eee19ffb8ec679bda",
+      "bytes": 17318
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_env.py": {
+      "sha256": "4d5d83489aa363d5fc9634ee2db26ca75c0070ecc723a80c7ecf182850444eb5",
+      "bytes": 77392
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_observations.py": {
+      "sha256": "64bcef17b8803cced05fe5872757fbc22ebfba9b532092bfe477c50bc249c654",
+      "bytes": 2439
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_rules.py": {
+      "sha256": "9154745e3beda98090ae7300d5fb05c7cefe161eaef39f0cfd62e7989205b8b3",
+      "bytes": 10734
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_rules_test.py": {
+      "sha256": "78ff4c08bcdc1a79d93875d8cf04e87eeb3a4c77b6e9a6e6869e624f337b9281",
+      "bytes": 4725
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/pocket_cube/pocket_cube_spawners.py": {
+      "sha256": "ce5bbb2e09785ef17d7edd7ad4ef6f8fb556fd0f84b1596098f1f5b67c0036e9",
+      "bytes": 5295
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/__init__.py": {
+      "sha256": "fbd755e36e2ac68ea6c2b961bfd1e79a1c5f42a1cbd69b878e59d1d780e477ce",
+      "bytes": 1716
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_benchmark.py": {
+      "sha256": "41a251f0021bba8820b1a43e223db2cbd9b2bf96fc5683d4eba38dcbdf4c39c8",
+      "bytes": 13850
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_cfg.py": {
+      "sha256": "814cd6622c5fdb32c084509b17054bb001a01e5752376ae00a882fdddc57fc91",
+      "bytes": 12206
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_constraint_audit.py": {
+      "sha256": "6792166ef2076dbb700e3ea2adf13038aa90d4df79482283e1b662330026fa1f",
+      "bytes": 10369
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_control.py": {
+      "sha256": "c5e3ff02c4ac289eb0385ce219ec15b475b40aa238e0d1349818ba5f4d3b59e8",
+      "bytes": 1110
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_embodiment.py": {
+      "sha256": "1fd8f1e63963de6f4519288785e8f0da0343e23dcbb1c1c357730e6fc97d41f3",
+      "bytes": 3737
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_env.py": {
+      "sha256": "14a3d06390c46cc5b8a971cfb953d1ffa315ede85f296f616acdc3b97f456cab",
+      "bytes": 22144
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_fixture.py": {
+      "sha256": "c8f465063be5abc4ce4e8051bde734486cb30b86eb1832028f2e7725dc5301c5",
+      "bytes": 3756
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_geometry.py": {
+      "sha256": "65fde0b07dcb6ecad177c8b842897fb6274292bb4ce2e299783e6d8a283a38b0",
+      "bytes": 1588
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_grasp_attachment.py": {
+      "sha256": "1f2e8e9c1de7d44c7130eedaa3fe4c9e460a2ebd4564442bfd127de8fd9cf408",
+      "bytes": 20473
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_initialization.py": {
+      "sha256": "0f486e64f1e16a961b3dc0cba9befcd44faa550754163aa7cd6eff2499d1dc3d",
+      "bytes": 7862
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_measured_events.py": {
+      "sha256": "4d57a3c915a8cf7b8a89d6a696075032712d782774b293bfba69f2c9cbd63cc0",
+      "bytes": 12216
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_mechanism.py": {
+      "sha256": "52e4e08342d13b9228bc23591ec87939d3d4a22ae1e6338469b52c1a690d94e7",
+      "bytes": 39606
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_native_observation.py": {
+      "sha256": "1b79beb8897760e12785945fb49f2595f1db38fd1ce57c4da39308b6bf187fdf",
+      "bytes": 22881
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_native_prefix.py": {
+      "sha256": "5a56019efd83a10e629799e3d9c19ae285c2c8d018c8389c4fde71c231d6781d",
+      "bytes": 13434
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_observer.py": {
+      "sha256": "f4d9148004941b6eb3ff362a263b6087c6ae0f052e54fa935c96ccab17574144",
+      "bytes": 10282
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_pose.py": {
+      "sha256": "92885373b3bd932ca678d05e9bc8a884deef2c92ae5f1621535b5eaded633c67",
+      "bytes": 27781
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_reset.py": {
+      "sha256": "5ef77ba37876ab0b27a9122d4bd7ff0ef9f563a0488f5498e6fb7c002d367422",
+      "bytes": 21249
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_rigid_pose.py": {
+      "sha256": "593838266edfd2df213d5de1de9b34cf7019e551c17c22381adb4e9b19b99b51",
+      "bytes": 9013
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_rules.py": {
+      "sha256": "dade2385c98b069966864f8ce804012311d7699d6be06d9b4879703f839cf92d",
+      "bytes": 39028
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_sharpa_benchmark.py": {
+      "sha256": "15d098c0991b1a568ef87dc311b855ec0c93acb053418c4e4a6b16884fff2de5",
+      "bytes": 14774
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_sharpa_cfg.py": {
+      "sha256": "63c19ef5b7f2825e55500b1c7fb6480ae8593f2a8c6c94fb2149d1a4aea86c1a",
+      "bytes": 5678
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_source_identity.py": {
+      "sha256": "52122d3f5f3c439f1973330dddb91b43993411c586d3e19456ea129b905ebfbb",
+      "bytes": 1430
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_stationarity.py": {
+      "sha256": "fe6b5ce8d95cdf481ef1c58c55dc371f1be9dab7f70f693f3eb74b312b4319bf",
+      "bytes": 9012
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_support_capture.py": {
+      "sha256": "c874a92de09ea3cbb626c29ef402da11b1ac8cac3b96c7ca5fb782351947b974",
+      "bytes": 8930
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_terminal.py": {
+      "sha256": "37c683202603296668ee7775cbbfa3ac16daf6c61c3b8dd9e35c2b78650ed7dd",
+      "bytes": 5247
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/rubiks_cube/rubiks_cube_usd_backend.py": {
+      "sha256": "f7fdd72292e5a46374f0e2b86e50616fe83dee9b4f0dda80e9507e214f55d41b",
+      "bytes": 21710
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/sharpa_hanoi/__init__.py": {
+      "sha256": "f7085736ff6fbb08f64937413e928cb7644517e1c530c22da7c770a531b31f1d",
+      "bytes": 4592
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/sharpa_hanoi/sharpa_hanoi_cfg.py": {
+      "sha256": "d948f27d87119df2c9d386df11222692f93b37cba8f736fceb2831c0d0a16f87",
+      "bytes": 8430
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/sharpa_hanoi_no_arm/__init__.py": {
+      "sha256": "19e3a52141c56300ed51f35b5c3b71b0022a25fc63f6797ebf690de9adbba36c",
+      "bytes": 3868
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/sharpa_hanoi_no_arm/sharpa_hanoi_no_arm_cfg.py": {
+      "sha256": "e05eecc7c154edd3fbd644b42300be27ff6697743ee1055030dae852e4405756",
+      "bytes": 10028
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/tabletop_background.py": {
+      "sha256": "3385f1f2b2b1c3745a865bfd26c04fcbf710588c1b2e458cd5720fb7b3f71890",
+      "bytes": 10361
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/tabletop_background_cfg.py": {
+      "sha256": "8c14bdfc7d6c8ae3b93141400c34e13a8233a1a559904f32ee009e3eb82cdc9e",
+      "bytes": 2081
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/__init__.py": {
+      "sha256": "7a9731abd5deb003e8a6284eb14fb7a042ba6eaab655a69d52426a1f5e3ce766",
+      "bytes": 602
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/commands/__init__.py": {
+      "sha256": "958cb74c514b7c457f0fac1a113405ccc9f5ecb9172c00c958aa8e9896ed1d42",
+      "bytes": 246
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/commands/pose_commands.py": {
+      "sha256": "f50e3c353b0c86bdd623221a1f81695dc871aee8165f0b5cb1547db6510bafa1",
+      "bytes": 10300
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/commands/pose_commands_cfg.py": {
+      "sha256": "439e7940cccf710e60483b447e8d18d1a2485e79a18248f889869b90f6e5e16c",
+      "bytes": 3499
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/curriculums.py": {
+      "sha256": "a88c6b0a56a449ff50aeaeac0cb6da4c0ad9fe3f613f987c970f77b81841cf62",
+      "bytes": 4960
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/observations.py": {
+      "sha256": "b22458d7979e93a24650523da66183b700a32cdd59db016f4e33f1a666e31f54",
+      "bytes": 22047
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/resets.py": {
+      "sha256": "b79a1bbe82edc41d7a0cecde7b366ec5474a7d561ef4f83dd7fd3e0062639a21",
+      "bytes": 44610
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/rewards.py": {
+      "sha256": "40731a42889ba041a3e977198d3a6169be8da7d8e3102b196fc413fa349ca131",
+      "bytes": 15625
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/terminations.py": {
+      "sha256": "deab9e35176c4211b7f5926df049a217724746ac069dfdc86ff2cf865698fca6",
+      "bytes": 20928
+    },
+    "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/mdp/utils.py": {
+      "sha256": "1532bc239186a53b2212006f08fd610e62a6bbb4865fba3eeb9ad5fa2bb4dee0",
+      "bytes": 10677
+    },
+    "source/agentbench/agentbench/tasks/utils/__init__.py": {
+      "sha256": "6b4fd81a644cd461377ab63372fd69aed6b30d5101ee9c34cbe61994ce546397",
+      "bytes": 90
+    },
+    "source/agentbench/agentbench/tasks/utils/parse_cfg.py": {
+      "sha256": "9fc2ec9c35460bba920786f5005f37d0a06dfd7609f691e32efc2ab00e7123cb",
+      "bytes": 3285
+    },
+    "source/agentbench/agentbench/visual_purpose.py": {
+      "sha256": "f8c784b4228d816d162ff28085192b6e9e1b3903272f78d8fe6b4bf3e9ed1841",
+      "bytes": 1394
+    },
+    "source/agentbench/agentbench_cube20/__init__.py": {
+      "sha256": "4e94f2326d6c8ae6124801172424dd5eaac36cd8b093ed20c3328310f76d5f46",
+      "bytes": 455
+    },
+    "source/agentbench/agentbench_cube20/batched.py": {
+      "sha256": "6b6616b887d8ee45f09ecb3ac2d8141a93e33f12a6a1f119749440aaea0cf005",
+      "bytes": 4854
+    },
+    "source/agentbench/agentbench_cube20/catalog.py": {
+      "sha256": "04011c76deb85ecb995288bb9b4e130352d76530772341da7e5187b85924645e",
+      "bytes": 7772
+    },
+    "source/agentbench/agentbench_cube20/evaluation.py": {
+      "sha256": "1ba4ca8764c3da708b57957d447d2bf8612817fb298884bc00aba2463c7ad418",
+      "bytes": 1767
+    },
+    "source/agentbench/agentbench_cube20/fingerprint.py": {
+      "sha256": "0c750dc1d5ef668f48b15ef20d705681309c24862fba00d3bb7f154720db665a",
+      "bytes": 3367
+    },
+    "source/agentbench/agentbench_cube20/geometry.py": {
+      "sha256": "cb8cd0e0e0fe2cc67b4961bd73947298a49a00000594e1666b4e6fee23c41d9c",
+      "bytes": 1672
+    },
+    "source/agentbench/agentbench_cube20/native.py": {
+      "sha256": "38bbfd600f613b76845b1d653c6072b05f3c87ec9adf201ff18be3eb41bd5190",
+      "bytes": 10360
+    },
+    "source/agentbench/agentbench_hanoi40/__init__.py": {
+      "sha256": "a0a177460ecc9b6d03118652578e48e30f67222811220fe5413ec038e148032e",
+      "bytes": 1581
+    },
+    "source/agentbench/agentbench_hanoi40/audit.py": {
+      "sha256": "cbecad735f8e5d7448fa0071c94ccc6494388eaadb0c85d1e3809389726236bc",
+      "bytes": 7198
+    },
+    "source/agentbench/agentbench_hanoi40/catalog.py": {
+      "sha256": "4b3b144d93534c60d163b209a6f1849b1dbbf4fd65e9e9a0e32f96b52c3162f9",
+      "bytes": 9763
+    },
+    "source/agentbench/agentbench_hanoi40/fingerprint.py": {
+      "sha256": "5661c5c6ab0b30045afe0db05700bdf9f14224f9a917fc1c7bd52342bc9c1777",
+      "bytes": 1876
+    },
+    "source/agentbench/agentbench_hanoi40/isaac_cfg.py": {
+      "sha256": "36b4ea0bc0d0803bcc9284acf7d3482753abd8fd19733e7bc7371b38b0abcd4f",
+      "bytes": 8199
+    },
+    "source/agentbench/agentbench_hanoi40/kinematics.py": {
+      "sha256": "ac54bc543b2506b81cc9c6f6ff9601c7e01251528c9fb2300382cd47501662da",
+      "bytes": 3481
+    },
+    "source/agentbench/agentbench_hanoi40/rules.py": {
+      "sha256": "f8873cbb42a35777c8f99abce2e224fc145d362de0f1dd9223b54fde930a297f",
+      "bytes": 6394
+    },
+    "source/agentbench/agentbench_hanoi40/sharpa.py": {
+      "sha256": "c5409bb9f3ed8724220da8cc3343a85f3a4dfa18908dcac174967d52f69ded99",
+      "bytes": 3012
+    },
+    "source/agentbench/agentbench_hanoi40/sharpa_no_arm.py": {
+      "sha256": "a57de443669f1cc1ba90a00605c074b8d8c9f57e895ec9dccea1cbc3e5454f3f",
+      "bytes": 3220
+    },
+    "source/agentbench/agentbench_mujoco/__init__.py": {
+      "sha256": "f4878ecd6aec045f236411310cd06b3810f8b96e63c5d71b088b22fdf5ea30b8",
+      "bytes": 2244
+    },
+    "source/agentbench/agentbench_mujoco/appearance.py": {
+      "sha256": "eb83b2ef1b5851585c392ed989b35ee096223b67b99599811ef5bede65aae003",
+      "bytes": 12558
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/LICENSE": {
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "bytes": 10173
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/README.md": {
+      "sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c",
+      "bytes": 2908
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/UPSTREAM.json": {
+      "sha256": "d23c3d210c9720140b653b13b5fc9f68791f8f0c729c37f0c29772eda26c4740",
+      "bytes": 9995
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/finger_0.obj": {
+      "sha256": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+      "bytes": 87872
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/finger_1.obj": {
+      "sha256": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+      "bytes": 64651
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand.stl": {
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "bytes": 10084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand_0.obj": {
+      "sha256": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2",
+      "bytes": 9091
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand_1.obj": {
+      "sha256": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb",
+      "bytes": 121863
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand_2.obj": {
+      "sha256": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3",
+      "bytes": 596001
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand_3.obj": {
+      "sha256": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c",
+      "bytes": 902145
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/hand_4.obj": {
+      "sha256": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff",
+      "bytes": 151988
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0.stl": {
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "bytes": 10084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_0.obj": {
+      "sha256": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c",
+      "bytes": 296497
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_1.obj": {
+      "sha256": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed",
+      "bytes": 103978
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_10.obj": {
+      "sha256": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848",
+      "bytes": 343308
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_11.obj": {
+      "sha256": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c",
+      "bytes": 22295
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_2.obj": {
+      "sha256": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05",
+      "bytes": 590892
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_3.obj": {
+      "sha256": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046",
+      "bytes": 47588
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_4.obj": {
+      "sha256": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26",
+      "bytes": 211200
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_5.obj": {
+      "sha256": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6",
+      "bytes": 17023
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_7.obj": {
+      "sha256": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb",
+      "bytes": 30699
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_8.obj": {
+      "sha256": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a",
+      "bytes": 3263194
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link0_9.obj": {
+      "sha256": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5",
+      "bytes": 105629
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link1.obj": {
+      "sha256": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae",
+      "bytes": 3274995
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link1.stl": {
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "bytes": 15084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link2.obj": {
+      "sha256": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b",
+      "bytes": 3295608
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link2.stl": {
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "bytes": 15084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link3.stl": {
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "bytes": 15084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link3_0.obj": {
+      "sha256": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178",
+      "bytes": 3046804
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link3_1.obj": {
+      "sha256": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118",
+      "bytes": 65260
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link3_2.obj": {
+      "sha256": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa",
+      "bytes": 83591
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link3_3.obj": {
+      "sha256": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd",
+      "bytes": 457684
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link4.stl": {
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "bytes": 15084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link4_0.obj": {
+      "sha256": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f",
+      "bytes": 83486
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link4_1.obj": {
+      "sha256": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0",
+      "bytes": 3148001
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link4_2.obj": {
+      "sha256": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175",
+      "bytes": 455522
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link4_3.obj": {
+      "sha256": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136",
+      "bytes": 67497
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_0.obj": {
+      "sha256": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71",
+      "bytes": 824158
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_1.obj": {
+      "sha256": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6",
+      "bytes": 63174
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_2.obj": {
+      "sha256": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4",
+      "bytes": 3856621
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_collision_0.obj": {
+      "sha256": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b",
+      "bytes": 3861
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_collision_1.obj": {
+      "sha256": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15",
+      "bytes": 2412
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link5_collision_2.obj": {
+      "sha256": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040",
+      "bytes": 3786
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6.stl": {
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "bytes": 10084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_0.obj": {
+      "sha256": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9",
+      "bytes": 157563
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_1.obj": {
+      "sha256": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1",
+      "bytes": 27106
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_10.obj": {
+      "sha256": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4",
+      "bytes": 368502
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_11.obj": {
+      "sha256": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901",
+      "bytes": 32653
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_12.obj": {
+      "sha256": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021",
+      "bytes": 3894
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_13.obj": {
+      "sha256": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d",
+      "bytes": 3798
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_14.obj": {
+      "sha256": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26",
+      "bytes": 444469
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_15.obj": {
+      "sha256": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6",
+      "bytes": 668552
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_16.obj": {
+      "sha256": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f",
+      "bytes": 3675358
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_2.obj": {
+      "sha256": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0",
+      "bytes": 9916
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_3.obj": {
+      "sha256": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27",
+      "bytes": 11943
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_4.obj": {
+      "sha256": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2",
+      "bytes": 13846
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_5.obj": {
+      "sha256": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6",
+      "bytes": 11841
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_6.obj": {
+      "sha256": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681",
+      "bytes": 12597
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_7.obj": {
+      "sha256": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73",
+      "bytes": 4382
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_8.obj": {
+      "sha256": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf",
+      "bytes": 9131
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link6_9.obj": {
+      "sha256": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a",
+      "bytes": 17616
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7.stl": {
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "bytes": 10084
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_0.obj": {
+      "sha256": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93",
+      "bytes": 1362355
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_1.obj": {
+      "sha256": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00",
+      "bytes": 121358
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_2.obj": {
+      "sha256": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5",
+      "bytes": 208907
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_3.obj": {
+      "sha256": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70",
+      "bytes": 123684
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_4.obj": {
+      "sha256": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018",
+      "bytes": 85732
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_5.obj": {
+      "sha256": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491",
+      "bytes": 226402
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_6.obj": {
+      "sha256": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb",
+      "bytes": 99900
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/assets/link7_7.obj": {
+      "sha256": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54",
+      "bytes": 792162
+    },
+    "source/agentbench/agentbench_mujoco/assets/panda/panda.xml": {
+      "sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+      "bytes": 14438
+    },
+    "source/agentbench/agentbench_mujoco/assets/park_dirt.png": {
+      "sha256": "a35e7af63cdac7ece15318bb24c115cb1d3c44840ad1d0c55dd4217cb4e148ab",
+      "bytes": 5148
+    },
+    "source/agentbench/agentbench_mujoco/assets/park_glass.png": {
+      "sha256": "3cb4daf1179daaafe03cce55d05774d114ce482bff864f3c7c36598e7feb350e",
+      "bytes": 3868
+    },
+    "source/agentbench/agentbench_mujoco/assets/park_grass.png": {
+      "sha256": "11ca65161d2f8d6acb8597a0493e8d873c39a7b0316b12a95b3f11abb6f33485",
+      "bytes": 22777
+    },
+    "source/agentbench/agentbench_mujoco/assets/park_rubber.png": {
+      "sha256": "055daa6d8a79e9426bc9922590ad1933394f1fc3148752767b99cc8e9b02493c",
+      "bytes": 2686
+    },
+    "source/agentbench/agentbench_mujoco/assets/park_stone.png": {
+      "sha256": "269af48cbe8d58b95d6bb91b5e98f98260156a36afc7fb5c8e44ad6e049a9c06",
+      "bytes": 5089
+    },
+    "source/agentbench/agentbench_mujoco/assets/shot_cube.png": {
+      "sha256": "83387e28c1f604868dd86e0c93e734625109ef36c4b9bd0df4b15b72a265d1e4",
+      "bytes": 3992
+    },
+    "source/agentbench/agentbench_mujoco/assets/shot_heavy.png": {
+      "sha256": "ac5c57b2da018ce16970bc8c5948bb28d7b2e96a9fd28d002513f8d2abed05ae",
+      "bytes": 4011
+    },
+    "source/agentbench/agentbench_mujoco/assets/shot_irregular.png": {
+      "sha256": "a0181c3851b0632e103a8a3c1d0fbf8fb4619b599aaaf96de3f0679a21644eb6",
+      "bytes": 3951
+    },
+    "source/agentbench/agentbench_mujoco/assets/shot_red.png": {
+      "sha256": "ee628d5554ffa82db0113270646b6a9b7d4b271eb2bd9f32334d06c50efefd53",
+      "bytes": 3974
+    },
+    "source/agentbench/agentbench_mujoco/assets/wood_grain.png": {
+      "sha256": "8e18fa1b0bccfdfa833af15e7c3efca99150b7fb61cf6f35139e7d905f6f5136",
+      "bytes": 7201
+    },
+    "source/agentbench/agentbench_mujoco/atlas_levels_a.py": {
+      "sha256": "b1e0b6ea7a89d13700c6d57e5a95a1a20db17bc75ef2684125aded2c9d56e17c",
+      "bytes": 32616
+    },
+    "source/agentbench/agentbench_mujoco/atlas_levels_b.py": {
+      "sha256": "7cb56d0df7eaac776bc3f0769b0f1343da31c39b20ca7e27acb068e8836269c6",
+      "bytes": 33626
+    },
+    "source/agentbench/agentbench_mujoco/backgrounds.py": {
+      "sha256": "35e141f746c4592528d8c4db9348742e047965c60bbb320960f02df78552c712",
+      "bytes": 21289
+    },
+    "source/agentbench/agentbench_mujoco/benchmark_levels.py": {
+      "sha256": "9673ef430bcb62a9ac1138ceee0c824c283899cba3299117d63a70dea4b35b6f",
+      "bytes": 4730
+    },
+    "source/agentbench/agentbench_mujoco/campaign_env.py": {
+      "sha256": "bd425106f47ba32fe2ec250666052c40c3e1a34da388928553246f7557128de0",
+      "bytes": 22076
+    },
+    "source/agentbench/agentbench_mujoco/campaign_scene.py": {
+      "sha256": "fe5a6e4d1a86f7a59bc8caaafee3415e8f2e12d553af7de808ca76af747296b5",
+      "bytes": 19628
+    },
+    "source/agentbench/agentbench_mujoco/defense_levels.py": {
+      "sha256": "9466bbfdda63f1bd404dd62f1bc7f60b6bcf77e4beca7472d42055d34d57b7f8",
+      "bytes": 13921
+    },
+    "source/agentbench/agentbench_mujoco/dual_scene.py": {
+      "sha256": "35528187baec28f00f20747640a90e27b0f592bc6183944985c43f8ebfbb642e",
+      "bytes": 6773
+    },
+    "source/agentbench/agentbench_mujoco/env.py": {
+      "sha256": "bd38fc2c7694b896e4238afd42364509b693f2f165c744507ae3ab4f8ad36d4a",
+      "bytes": 27996
+    },
+    "source/agentbench/agentbench_mujoco/fracture.py": {
+      "sha256": "7beffe5aad73098ebece79468e370c28fa05cb69c166b5ddc9f735df7bc41c48",
+      "bytes": 12991
+    },
+    "source/agentbench/agentbench_mujoco/launcher_variants.py": {
+      "sha256": "9ffa1a8946eac9ec8778e138287d144853afca689c985de39d07d5939c5eb585",
+      "bytes": 2820
+    },
+    "source/agentbench/agentbench_mujoco/multilevel_levels.py": {
+      "sha256": "ca0fea8383a2efc668ea17a948f344846d79646d5d1af6471ed173f3cf5b2ebd",
+      "bytes": 4271
+    },
+    "source/agentbench/agentbench_mujoco/positions.py": {
+      "sha256": "b74209b62a1ab6c90ec9a678259d642fc811261f153295f6d1bb9dfabe87c66c",
+      "bytes": 6542
+    },
+    "source/agentbench/agentbench_mujoco/projectiles.py": {
+      "sha256": "2f3a91a8f0786078a6b537a2de77b9ffd37b981eca61f6851fa10b100db96312",
+      "bytes": 2951
+    },
+    "source/agentbench/agentbench_mujoco/redesigned_levels.py": {
+      "sha256": "06e1c9d099b9f1c3179d1e8a988afb06c3f68f0dc263268ca78a01752b8ed7b0",
+      "bytes": 4213
+    },
+    "source/agentbench/agentbench_mujoco/rendering.py": {
+      "sha256": "56a8f51c812834dabe87a9b740e10615e97ebe5ab79a697b3dc0659c81db6f7f",
+      "bytes": 5115
+    },
+    "source/agentbench/agentbench_mujoco/scene.py": {
+      "sha256": "ab712b2badc021f8f250f9cf20dee57f6412e43cbd87da8a68575c06235a672e",
+      "bytes": 6516
+    },
+    "source/agentbench/agentbench_mujoco/structures.py": {
+      "sha256": "27e5f52d6cdbbdda355157b8aa99ae6c2111dbdd85ba716e8402091fd98a7e70",
+      "bytes": 3561
+    },
+    "source/agentbench/agentbench_mujoco/variants.py": {
+      "sha256": "6d84870babc1d5e38d336179fc60f0fa1af439b71612a589b4c439d24ec16134",
+      "bytes": 4038
+    },
+    "source/agentbench/config/extension.toml": {
+      "sha256": "49f1ed662f573e28816feb1d3367a79f134648c4e56c7e8e3518188a8d8c6d1b",
+      "bytes": 501
+    },
+    "source/agentbench/pyproject.toml": {
+      "sha256": "5427dcc108de1d2537775540acdd539d65a2f31506ba992bc95e5bfeefb6f288",
+      "bytes": 98
+    },
+    "source/agentbench/setup.py": {
+      "sha256": "0b9737668992bafed5514a115051748543302d2f49e34f339ff4b561a73e924c",
+      "bytes": 2249
+    },
+    "source/agentbench_platform/agentbench_platform/__init__.py": {
+      "sha256": "11371d9f21636ab45ef07ed456b23750f7e35df7ba97f15d8e6172fe4a03e44f",
+      "bytes": 76
+    },
+    "source/agentbench_platform/agentbench_platform/acceptance.py": {
+      "sha256": "c3ebdeff3dec38981b530403ea7bfd215247e43621f2c011699ede606eeb2111",
+      "bytes": 7301
+    },
+    "source/agentbench_platform/agentbench_platform/action_contracts.json": {
+      "sha256": "5714e23e4759b71c302ae4afce8fde7453b2c7ad3d14b672f78cacd08ad2e6bc",
+      "bytes": 804100
+    },
+    "source/agentbench_platform/agentbench_platform/backend.py": {
+      "sha256": "bd013f1a7b928cf453b22f3a86af3087a83efb9c4e9853beabfd42e0838ab564",
+      "bytes": 701
+    },
+    "source/agentbench_platform/agentbench_platform/bookshelf_catalog.json": {
+      "sha256": "9b7f406252b0fb0f753e3c12dce1ccda5face93f179d47799f826a9ef09cc188",
+      "bytes": 109858
+    },
+    "source/agentbench_platform/agentbench_platform/bundle.py": {
+      "sha256": "44af66b3f542547c8581efc24920820470b132acfb0d165fb40d047bb9908797",
+      "bytes": 8844
+    },
+    "source/agentbench_platform/agentbench_platform/container_engine.py": {
+      "sha256": "02bf47394ed77bc48e2f43df9745ee3e27a9dc2aedc2413378ebca5e12918575",
+      "bytes": 4631
+    },
+    "source/agentbench_platform/agentbench_platform/cube_rules.py": {
+      "sha256": "e4b941e8b9b778c07a5796969b56b1403650df725fb4e3db2554a6b53b23d699",
+      "bytes": 772
+    },
+    "source/agentbench_platform/agentbench_platform/environment_backend.py": {
+      "sha256": "6412e9fbbfea4d78f944d803771f0fff45a6903e81fba758b32d545edb892806",
+      "bytes": 18350
+    },
+    "source/agentbench_platform/agentbench_platform/environment_catalog.py": {
+      "sha256": "b5d018614d5be852f47b1fdffe7eac3bc4a5946e14459ff9580e0789731ddac5",
+      "bytes": 9402
+    },
+    "source/agentbench_platform/agentbench_platform/environment_contracts.py": {
+      "sha256": "cfa3fb08490c3726c3d6f9277615278e8ea15a03f8e9660f584a7aa97e89819f",
+      "bytes": 9101
+    },
+    "source/agentbench_platform/agentbench_platform/environment_matrix.py": {
+      "sha256": "626c6af2efe3aee022e799b4745dedf34f2d2cef9bde418a305f34dc8e47b54f",
+      "bytes": 7263
+    },
+    "source/agentbench_platform/agentbench_platform/environment_qa.py": {
+      "sha256": "7511c2f69feacb59ab449d046639ad0120af998551ee55e94950afcad5443992",
+      "bytes": 19458
+    },
+    "source/agentbench_platform/agentbench_platform/environment_release.py": {
+      "sha256": "9a3f5428b509028fd65cf7e9d6159aba1acdb1fb645861c640b74d5de3510b9e",
+      "bytes": 30312
+    },
+    "source/agentbench_platform/agentbench_platform/environment_supervisor.py": {
+      "sha256": "93c0d14dfabac5b7c6aaf89e282c754a3b8352ec1de3431d9ee9a5c0d125d376",
+      "bytes": 1178
+    },
+    "source/agentbench_platform/agentbench_platform/evaluation_protocol.py": {
+      "sha256": "b0f3498f0bc1d7174d0b06a23afeac4f775ba9366c3e5865956a0b1db5fe2c1e",
+      "bytes": 6382
+    },
+    "source/agentbench_platform/agentbench_platform/failure_diagnostics.py": {
+      "sha256": "a613ad3fa673e895b0917be8fb5f59d76abc6cd056484b5c7a17446ebd80df9a",
+      "bytes": 3901
+    },
+    "source/agentbench_platform/agentbench_platform/graspnet.py": {
+      "sha256": "0c1ef1f46d8c679bbcc259efd95d2ac2f7fc8c0b09d3c52c61e040860a86288e",
+      "bytes": 17070
+    },
+    "source/agentbench_platform/agentbench_platform/graspnet_cpu.py": {
+      "sha256": "0206486ef16a34f7aa9e03741a9711a899669c75cb81636c0ee8a8914e88e735",
+      "bytes": 2491
+    },
+    "source/agentbench_platform/agentbench_platform/graspnet_cpu_ops.py": {
+      "sha256": "d348c2764e4618991442db942afd291e7bda76b4d33fecde14aaf78b96d88234",
+      "bytes": 5928
+    },
+    "source/agentbench_platform/agentbench_platform/kongming_cases.py": {
+      "sha256": "1a9d95db6446efef78dd18bcefca265f82f3ed9ab57bb99661906168b387ab79",
+      "bytes": 10721
+    },
+    "source/agentbench_platform/agentbench_platform/kongming_scoring.py": {
+      "sha256": "21693f226902c482df812699c8cb10853bb4cbd7c0d0f94e1fba44788a758690",
+      "bytes": 22719
+    },
+    "source/agentbench_platform/agentbench_platform/maniskill_backend.py": {
+      "sha256": "972f16e1cd8b64e72e0dacee78b386851739202ba4da70bbf0285a11a63841b7",
+      "bytes": 9273
+    },
+    "source/agentbench_platform/agentbench_platform/marble_protocol.py": {
+      "sha256": "030aa7bd170ce45a618596455110e9f4102519fea2f2ba9fbd645a683ff39dba",
+      "bytes": 2288
+    },
+    "source/agentbench_platform/agentbench_platform/mechanisms.py": {
+      "sha256": "2918b202f58f7364d285c5eec6bd404156402bfad79ee0abdf887482cf2c8e74",
+      "bytes": 2254
+    },
+    "source/agentbench_platform/agentbench_platform/native_backend.py": {
+      "sha256": "b3483f8348b7dcab1098546080a6128b106d1dd6f0e638251ba05dde6eeebbdb",
+      "bytes": 12989
+    },
+    "source/agentbench_platform/agentbench_platform/native_cameras.py": {
+      "sha256": "2b6a9a11f4076d5d34a89fb43d812b16eb7af33698c64de417090cf4b0eb4972",
+      "bytes": 6583
+    },
+    "source/agentbench_platform/agentbench_platform/native_clock.py": {
+      "sha256": "94eeb653e77405b757359904f8523b71b0a07c971f4249536cbd53634ac4ed25",
+      "bytes": 1036
+    },
+    "source/agentbench_platform/agentbench_platform/native_environment.py": {
+      "sha256": "1766ebbb435dc28f8e0f3d38b8b4e77f5de8e223ba915196e2ee4def36db9056",
+      "bytes": 8824
+    },
+    "source/agentbench_platform/agentbench_platform/native_export.py": {
+      "sha256": "e99ea4afa5119c94d66a7516ba7c91897f9c576ff5915d86901d4a8452878b77",
+      "bytes": 4235
+    },
+    "source/agentbench_platform/agentbench_platform/native_recording.py": {
+      "sha256": "d0e813ae9577e894c3f3337baeefb6a4d0b52a98b7aa34e452ca519aad5e9094",
+      "bytes": 1737
+    },
+    "source/agentbench_platform/agentbench_platform/native_smoke.py": {
+      "sha256": "649b061e8fb07bf4b422e68a138169462d032ac305103d56b82977e2db3516e6",
+      "bytes": 6515
+    },
+    "source/agentbench_platform/agentbench_platform/native_state.py": {
+      "sha256": "52d17c0a5e4ab977d15fed577fe43b06eafcee675a8fa5f66d2af1b7e4d2c8e9",
+      "bytes": 13559
+    },
+    "source/agentbench_platform/agentbench_platform/native_storage.py": {
+      "sha256": "7a1d69119d4555a9598cc3cc3b28f52b154d44328186c26c4fa13a97a28efcbc",
+      "bytes": 6988
+    },
+    "source/agentbench_platform/agentbench_platform/plugins.py": {
+      "sha256": "2f84b34da5d561b489fa39e23b4d862f6df05ff00a0abf8732d22b5ce9f1c5ee",
+      "bytes": 16899
+    },
+    "source/agentbench_platform/agentbench_platform/profile_cli.py": {
+      "sha256": "d02b6c483ae9c65e152222539f7dc2436d5dafe23a813f489cb082d24fbb189e",
+      "bytes": 1971
+    },
+    "source/agentbench_platform/agentbench_platform/profiles.py": {
+      "sha256": "331eea4111fab424b9832f3b6e1c2324359df8d2ca8f067fd5584a960c4004d3",
+      "bytes": 11076
+    },
+    "source/agentbench_platform/agentbench_platform/protocol.py": {
+      "sha256": "b0935f1c30f3075d59fdc0d050a5abe1e04d968a974f700ab8488bcf0df7d50e",
+      "bytes": 30219
+    },
+    "source/agentbench_platform/agentbench_platform/public_content.py": {
+      "sha256": "875654d420ef04b262f96fa471545ab9a5358e5ed35ec3ae968258f41b58f760",
+      "bytes": 10737
+    },
+    "source/agentbench_platform/agentbench_platform/resources.py": {
+      "sha256": "5d7cef513b6af4021c9d5531a1ee107a2421e746fc8d9aafc7559865def98de8",
+      "bytes": 6869
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_acceptance.py": {
+      "sha256": "149bb44e3d1bd8355b6013d4d837307a9c391efeb217796a6f0b5f118b171307",
+      "bytes": 14399
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_case_evidence.py": {
+      "sha256": "23cd3224817c8ee123dfaa1a0f2b5d994c63c5b28f35d29df4dd0919fcc19c81",
+      "bytes": 2123
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_cases.py": {
+      "sha256": "935926c74af21851b1a93acd9950125f1fd27c73c7b12a312899ede8188731ff",
+      "bytes": 11639
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_endpoint_fixture.py": {
+      "sha256": "d476c288a7bb2eb3f9adec4bab82c910bbca917f5eb9df746be2cd7bb41927c4",
+      "bytes": 5278
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_initialization.py": {
+      "sha256": "da6bfc7fbb4e9b9122eaed4b2bffddb48b21f53564fdb97956e04abffbfdb1b6",
+      "bytes": 3911
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_native_smoke.py": {
+      "sha256": "7a70dadaa3c1f27a47ddd476cda4fa7c3be7b765ca608ae162977d36eac4c7f4",
+      "bytes": 8243
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_physics.py": {
+      "sha256": "35ef8cf292d4f5b614b02d395677d8892a6629bb5177c6fa20d930c64d9a9519",
+      "bytes": 1510
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_scoring.py": {
+      "sha256": "177064ec9cad2407001a00c07c2ddb1914b06887459063157ae6cfb8cbe45229",
+      "bytes": 20676
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_sharpa_reset.py": {
+      "sha256": "bc018d1353b6551f1c95d233842064743ade94490944628b4568cd421e41421d",
+      "bytes": 19679
+    },
+    "source/agentbench_platform/agentbench_platform/rubiks_sharpa_scoring.py": {
+      "sha256": "059ab23499cf82c63b8e3f3e85e8ace446d7bdef6d9d48fc384c834f33045133",
+      "bytes": 5535
+    },
+    "source/agentbench_platform/agentbench_platform/scorer_fixtures.py": {
+      "sha256": "bba9016b7c2cabe097caa18e00a1f69872e639fdbc2998d026ebe766aa0a1e65",
+      "bytes": 9712
+    },
+    "source/agentbench_platform/agentbench_platform/source_checkout.py": {
+      "sha256": "73596ce0eb0d47d59f3abc7cb7821b8a345a2366f53c2d0f22b89f1e2ff13edb",
+      "bytes": 2059
+    },
+    "source/agentbench_platform/agentbench_platform/tasks.py": {
+      "sha256": "12bcb5d758aaf7dfd0e05438d09d1fd69036e7184fd91b1406f2bf04a0d3adcb",
+      "bytes": 2251
+    },
+    "source/agentbench_platform/agentbench_platform/worker_limits.py": {
+      "sha256": "412fe5888a32f855497014e606b344483cd4120730047f852a9e4ad622f79e54",
+      "bytes": 2018
+    },
+    "source/agentbench_platform/pyproject.toml": {
+      "sha256": "7f643c90ef6674578b82fe8e6dadf12e6730306608f74bb1fadb945910ef59af",
+      "bytes": 689
+    },
+    "source/agentbench_sdk/agentbench_sdk/__init__.py": {
+      "sha256": "78b4747e026219366e66cfb3c27a5b369fc02076464e40510498ebac1f638856",
+      "bytes": 241
+    },
+    "source/agentbench_sdk/agentbench_sdk/client.py": {
+      "sha256": "a66d1eb29a4cb96d487ffe5de08222c69b87177fd189ba06df3d075342ad6464",
+      "bytes": 4920
+    },
+    "source/agentbench_sdk/agentbench_sdk/types.py": {
+      "sha256": "cb2fe18a630d1c3261b65a4efb730fcb33b07d0d015f623ccd866a053e10233f",
+      "bytes": 1404
+    },
+    "source/agentbench_sdk/pyproject.toml": {
+      "sha256": "2107cce16682ea6afd32a7da3df9b2569f73b7efc68498a0fb8140fcf4b96544",
+      "bytes": 520
+    },
+    "tests/benchmark_platform/test_failure_diagnostics.py": {
+      "sha256": "c00a2b40e101974853e4478ca68641b741192d240d74c8d46d5ab0b5756c7231",
+      "bytes": 5904
+    },
+    "tests/benchmark_platform/test_mechanism_protocol.py": {
+      "sha256": "a7ce71e450f0af65588e8f4e761e41e4fb27032208569294866896decd956563",
+      "bytes": 4882
+    },
+    "tests/benchmark_platform/test_native_clock.py": {
+      "sha256": "1d3529de297d0f95e4651097d1c4872de05a22273e1ac70ca7d7646263d12723",
+      "bytes": 1842
+    },
+    "tests/benchmark_platform/test_protocol.py": {
+      "sha256": "b6e43490bf9490febf1a4651a358a9017b988804b33a75c52bc9d7ddc6a50247",
+      "bytes": 25099
+    },
+    "tests/benchmark_platform/test_rubiks_constraint_audit.py": {
+      "sha256": "15cd6bc70f7749c40f97bad1272536b031f974378fd9212861c67fda95b5890d",
+      "bytes": 6906
+    },
+    "tests/benchmark_platform/test_rubiks_measured_events.py": {
+      "sha256": "b6112cb11967d8712ab241e36af89c39f632810bc9bb6cb093fd7bacbadf912f",
+      "bytes": 9528
+    },
+    "tests/benchmark_platform/test_rubiks_scoring.py": {
+      "sha256": "32383c836ecad2a3b6a9b9c8eb94382f259fef2dc46f1c38df1596d9e5e075dd",
+      "bytes": 10574
+    },
+    "tests/benchmark_platform/test_rubiks_state.py": {
+      "sha256": "c89c3d656c410b5bec8fdcac9a1d08407560246348c0f79e14c532211ba5bad9",
+      "bytes": 10013
+    },
+    "tests/benchmark_platform/test_run_profile.py": {
+      "sha256": "b50c3f2e2d842012ede2b1516c183099f896735db653f7c796f808702f708c29",
+      "bytes": 1176
+    },
+    "tests/environment_release/test_condition_matrix.py": {
+      "sha256": "3d59c59ede787d9bfcbfeba7afc6c07c11d842b2cb396893695a239d143dc53c",
+      "bytes": 3818
+    },
+    "tests/environment_release/test_contract.py": {
+      "sha256": "374ca34c033c4d59bf0e7d3a3022c06fa9433aa57dec4e51487f3e2b4926d036",
+      "bytes": 8329
+    },
+    "tests/environment_release/test_evaluation_protocol.py": {
+      "sha256": "69aefe132b15b033b1e57b9dbe50bea35c75c93bad157f785994d5a4fd0e1319",
+      "bytes": 7726
+    },
+    "tests/environment_release/test_kongming_case_endpoints.py": {
+      "sha256": "cb89420531387733faed34c841960648e0a25161dbd6e9499f96de91ed4b0624",
+      "bytes": 2043
+    },
+    "tests/environment_release/test_maniskill_alignment.py": {
+      "sha256": "65e4072f2a3e913776754a4fe184be182d3f6cf0ada0317b20509d898fd64575",
+      "bytes": 7672
+    },
+    "tests/environment_release/test_native_stability.py": {
+      "sha256": "287983a57877a7f28e08bf3a53bc044f7e0b6ffcfe5f82a68c1f06a4988cd5fd",
+      "bytes": 709
+    },
+    "tests/environment_release/test_progress.py": {
+      "sha256": "d019e7b150c5336f801a9a6420cf0bd685d450aa35acfcac618a4ea6a72544d6",
+      "bytes": 1246
+    },
+    "tests/environment_release/test_public_export.py": {
+      "sha256": "87a2254920aa209f2d5574aa8c9ffd4dc27b741b5dff89a2ff85f74ff7e58be0",
+      "bytes": 5078
+    },
+    "tests/environment_release/test_source_checkout.py": {
+      "sha256": "91729079e6e314b053b00d244f55e22a32782a3606c3d5b301ddc51e9eaad79c",
+      "bytes": 2125
+    },
+    "tests/environment_release/test_supervisor.py": {
+      "sha256": "d0dcf68d9315d79e3b359ca497149fd7cfb8dd4c64c6603b4d4fbec16fcfa067",
+      "bytes": 763
+    },
+    "tests/test_tool_policy_docs.py": {
+      "sha256": "5a50577dc1399aed641aa009c5834a236a2a35b4cd1525f6ca154cf625b02efb",
+      "bytes": 5171
+    }
+  },
+  "source_digest": "056123b29b389e5832b455cb14a34df8c68658d2eb5f8fe466bde6599e3f89e8",
+  "catalog_digest": "a26b7abe55b2f5590843fd6c20a88c6cac861748a35a317cc820aefd14490863",
+  "documentation_digest": "21dc23a6d308bf25172eb549903ecae2b55eabed3a048d41a57c282df3ce9b8a",
+  "asset_digest": "5f55dc2214938789a935a6f599001abb64c6a7b6c0020110d53bba5aceb2a5d8",
+  "scorer_digest": "f9bb8c55ad6973326c3d2c64b39515c2f4ff658a8abdc85c8fb32fe09ede12c3",
+  "matrix_version": "environment-conditions-v3",
+  "matrix_digest": "1839ad444220ab6987622ffa1ffb88e2eed9563efd20648f03d440296d06afad",
+  "capability_profile_version": "2026-10-09-environment-l0-l3",
+  "execution": {
+    "capture_contracts": false,
+    "no_render": false,
+    "probe_only": false,
+    "default_configurations": true,
+    "selected_keys": [
+      "a31f2691714b3d699044c47788b7d6010c789b8fe291dd057553c2096df5e423"
+    ]
+  },
+  "runtime": {
+    "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "mani-skill-nightly": "2026.8.2.400",
+      "sapien": "3.0.3",
+      "torch": "2.14.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gymnasium": "1.3.0",
+      "trimesh": "5.1.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "cases": [
+    {
+      "key": "a31f2691714b3d699044c47788b7d6010c789b8fe291dd057553c2096df5e423",
+      "task_id": "maniskill_geometry/panda/P1",
+      "condition": {
+        "seed": 0,
+        "split": "nominal",
+        "environment_parameters": {
+          "authored_light_scale": 1.0,
+          "physics_variant": 0
+        },
+        "budgets": {
+          "control_hz": 20,
+          "physics_hz": 240,
+          "simulation_seconds": 120,
+          "max_steps": 2400,
+          "wall_seconds": 3600
+        }
+      },
+      "configuration_sha256": "2f2b600180569d5ef17ed34cff9c6e174ab1e2b32ab9caf3686e0a30d7f59fb3",
+      "memberships": [
+        {
+          "suite": "legacy"
+        }
+      ],
+      "checks": {
+        "contract": "passed",
+        "gateway_l0": "passed",
+        "gateway_l1": "passed",
+        "gateway_l2": "passed",
+        "gateway_l3": "passed",
+        "action_observation": "passed",
+        "lifecycle": "passed",
+        "repeat_initialization": "passed"
+      },
+      "settle_seconds": 2.0,
+      "hold_seconds": 118.0,
+      "physics_acceptance": "static_stability",
+      "full_horizon_stability": true,
+      "episode_time_limit_seconds": 120,
+      "status": "passed_probe",
+      "versions": {
+        "source_digest": "056123b29b389e5832b455cb14a34df8c68658d2eb5f8fe466bde6599e3f89e8",
+        "catalog_digest": "a26b7abe55b2f5590843fd6c20a88c6cac861748a35a317cc820aefd14490863",
+        "documentation_digest": "21dc23a6d308bf25172eb549903ecae2b55eabed3a048d41a57c282df3ce9b8a",
+        "asset_digest": "5f55dc2214938789a935a6f599001abb64c6a7b6c0020110d53bba5aceb2a5d8",
+        "scorer_digest": "f9bb8c55ad6973326c3d2c64b39515c2f4ff658a8abdc85c8fb32fe09ede12c3",
+        "matrix_version": "environment-conditions-v3",
+        "matrix_digest": "1839ad444220ab6987622ffa1ffb88e2eed9563efd20648f03d440296d06afad",
+        "capability_profile_version": "2026-10-09-environment-l0-l3"
+      },
+      "measurements": {
+        "camera": {
+          "capture_id": "329e145511e440408420dac83908f8e6",
+          "camera_id": "scene",
+          "capture_step": 0,
+          "width": 640,
+          "height": 480,
+          "calibration": {
+            "intrinsics": [
+              [
+                657.48291015625,
+                0.0,
+                320.0
+              ],
+              [
+                0.0,
+                657.48291015625,
+                240.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "world_from_camera": [
+              [
+                0.8358690273628961,
+                0.20489393584337948,
+                -0.5092557020197681,
+                1.7999998251663007
+              ],
+              [
+                0.5489289303402742,
+                -0.31199760849380426,
+                0.7754576795509234,
+                -2.5000002074716594
+              ],
+              [
+                -8.568933169697749e-10,
+                -0.9277262641063021,
+                -0.37326135263327354,
+                2.2500000150983452
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "convention": "opencv_x_right_y_down_z_forward",
+            "near_m": 0.01,
+            "far_m": 30.0,
+            "pixel_center_offset": [
+              0.5,
+              0.5
+            ]
+          },
+          "depth_units": "m",
+          "rgb_resource_id": "9af0d86a5bbc47d6b1023808b9eba5b5",
+          "depth_resource_id": "f6cbb095847642db80bf6ddbd7c41f2a",
+          "validity_resource_id": "17ffff5e9047430e9e4c35c6440e4e68"
+        },
+        "initialization": {
+          "seed": 0,
+          "physics_variant": 0,
+          "light_scale": 1.0,
+          "lighting": {
+            "ambient": [
+              0.3199999928474426,
+              0.3499999940395355,
+              0.38999998569488525
+            ],
+            "directional": [
+              [
+                2.0,
+                1.8899999856948853,
+                1.75
+              ],
+              [
+                0.4300000071525574,
+                0.49000000953674316,
+                0.5799999833106995
+              ]
+            ]
+          },
+          "physics_hz": 240,
+          "control_hz": 20
+        },
+        "contract": {
+          "action_spec": {
+            "size": 8,
+            "low": [
+              -2.8973000049591064,
+              -1.7627999782562256,
+              -2.8973000049591064,
+              -3.0717999935150146,
+              -2.8973000049591064,
+              -0.017500000074505806,
+              -2.8973000049591064,
+              -1.0
+            ],
+            "high": [
+              2.8973000049591064,
+              1.7627999782562256,
+              2.8973000049591064,
+              -0.0697999969124794,
+              2.8973000049591064,
+              3.752500057220459,
+              2.8973000049591064,
+              1.0
+            ],
+            "names": [
+              "arm.panda_joint1",
+              "arm.panda_joint2",
+              "arm.panda_joint3",
+              "arm.panda_joint4",
+              "arm.panda_joint5",
+              "arm.panda_joint6",
+              "arm.panda_joint7",
+              "gripper[0]"
+            ],
+            "semantics": [
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+              "gripper: PDJointPosMimicController; joint order=['panda_finger_joint1', 'panda_finger_joint2']; normalize_action=True; use_delta=False; native_low=[-0.009999999776482582]; native_high=[0.03999999910593033]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second."
+            ],
+            "neutral_action": [
+              0.0,
+              0.39269909262657166,
+              0.0,
+              -1.9634953737258911,
+              0.0,
+              2.356194496154785,
+              0.7853981852531433,
+              1.0
+            ],
+            "control_period_s": 0.05,
+            "physics_period_s": 0.004166666666666667
+          },
+          "contract_sha256": "305f02fa87d51560bdaac0952ba647683a659c8428073e46273af54cab7978b6"
+        },
+        "gateway_l0": {
+          "allowed": [],
+          "denied": [
+            "reset",
+            "set_seed",
+            "set_state",
+            "unknown_fields",
+            "cross_instance_resource",
+            "file_paths",
+            "uninstalled_tools"
+          ],
+          "observation_digest": "fc8e1cfef486a57fd7f17d89f4fd882afe6ef1f74347f06afefee2324a6f0fc5",
+          "physics_unchanged": true,
+          "fixture_scope": "authorization_only_no_model"
+        },
+        "gateway_l1": {
+          "allowed": [
+            "pyroki"
+          ],
+          "denied": [
+            "reset",
+            "set_seed",
+            "set_state",
+            "unknown_fields",
+            "cross_instance_resource",
+            "file_paths",
+            "uninstalled_tools"
+          ],
+          "observation_digest": "fc8e1cfef486a57fd7f17d89f4fd882afe6ef1f74347f06afefee2324a6f0fc5",
+          "physics_unchanged": true,
+          "fixture_scope": "authorization_only_no_model"
+        },
+        "gateway_l2": {
+          "allowed": [
+            "pyroki",
+            "graspnet"
+          ],
+          "denied": [
+            "reset",
+            "set_seed",
+            "set_state",
+            "unknown_fields",
+            "cross_instance_resource",
+            "file_paths",
+            "uninstalled_tools"
+          ],
+          "observation_digest": "fc8e1cfef486a57fd7f17d89f4fd882afe6ef1f74347f06afefee2324a6f0fc5",
+          "physics_unchanged": true,
+          "fixture_scope": "authorization_only_no_model"
+        },
+        "gateway_l3": {
+          "allowed": [
+            "pyroki",
+            "graspnet"
+          ],
+          "denied": [
+            "reset",
+            "set_seed",
+            "set_state",
+            "unknown_fields",
+            "cross_instance_resource",
+            "file_paths",
+            "uninstalled_tools"
+          ],
+          "observation_digest": "a5bb4d8c4b1fcb1f12faf70977afc281f3d6785fefff42dc2a6f688f4d0c323a",
+          "physics_unchanged": true,
+          "fixture_scope": "authorization_only_no_model"
+        },
+        "action_observation": {
+          "robot_commands": [
+            {
+              "robot": "arm",
+              "action_index": 0,
+              "action_delta": 0.02,
+              "measured_joint_delta": 0.019995110109448433,
+              "minimum_motion": 1e-07
+            },
+            {
+              "robot": "gripper",
+              "action_index": 7,
+              "action_delta": -0.02,
+              "measured_joint_delta": -0.0004982240498065948,
+              "minimum_motion": 1e-07
+            }
+          ],
+          "physics_steps": 360,
+          "scope": "small_joint_actions_and_proprioception",
+          "contact_qualification": "not_established"
+        },
+        "lifecycle": {
+          "executed_physics_steps": 12,
+          "replayed_steps": 0,
+          "invalid_action_steps": 0,
+          "post_finish_steps": 0,
+          "early_finish_result": {
+            "version": 1,
+            "success": false,
+            "score": 0.0,
+            "step_count": 1,
+            "terminated": false,
+            "truncated": false
+          }
+        },
+        "repeat_initialization": {
+          "maximum_position_error_m": 0.0,
+          "maximum_orientation_error_rad": 2.9802322387695312e-08,
+          "maximum_joint_error": 0.0,
+          "tolerances": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.001,
+            "joint_coordinate": 0.001
+          }
+        },
+        "physics": {
+          "maximum_initial_displacement_m": 0.002204493561402743,
+          "maximum_hold_displacement_m": 0.0,
+          "finite": true,
+          "acceptance": "static_stability"
+        }
+      },
+      "physics_steps": 28800,
+      "native_description": {
+        "task": {
+          "id": "maniskill_geometry/panda/P1",
+          "family": "maniskill_geometry",
+          "case_id": "P1",
+          "embodiment": "panda",
+          "name": "Insert three matching pegs",
+          "description": "Insert the round and square pegs into their matching top sockets and the long peg into the front-facing socket. Seat each fully without moving the board.",
+          "max_steps": 2400
+        },
+        "action_spec": {
+          "size": 8,
+          "low": [
+            -2.8973000049591064,
+            -1.7627999782562256,
+            -2.8973000049591064,
+            -3.0717999935150146,
+            -2.8973000049591064,
+            -0.017500000074505806,
+            -2.8973000049591064,
+            -1.0
+          ],
+          "high": [
+            2.8973000049591064,
+            1.7627999782562256,
+            2.8973000049591064,
+            -0.0697999969124794,
+            2.8973000049591064,
+            3.752500057220459,
+            2.8973000049591064,
+            1.0
+          ],
+          "names": [
+            "arm.panda_joint1",
+            "arm.panda_joint2",
+            "arm.panda_joint3",
+            "arm.panda_joint4",
+            "arm.panda_joint5",
+            "arm.panda_joint6",
+            "arm.panda_joint7",
+            "gripper[0]"
+          ],
+          "semantics": [
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "arm: PDJointPosController; joint order=['panda_joint1', 'panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']; normalize_action=False; use_delta=False; native_low=[-2.8973000049591064, -1.7627999782562256, -2.8973000049591064, -3.0717999935150146, -2.8973000049591064, -0.017500000074505806, -2.8973000049591064]; native_high=[2.8973000049591064, 1.7627999782562256, 2.8973000049591064, -0.0697999969124794, 2.8973000049591064, 3.752500057220459, 2.8973000049591064]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second.",
+            "gripper: PDJointPosMimicController; joint order=['panda_finger_joint1', 'panda_finger_joint2']; normalize_action=True; use_delta=False; native_low=[-0.009999999776482582]; native_high=[0.03999999910593033]; rotational position targets use radians, prismatic position targets use metres; velocity controllers use units per second."
+          ],
+          "neutral_action": [
+            0.0,
+            0.39269909262657166,
+            0.0,
+            -1.9634953737258911,
+            0.0,
+            2.356194496154785,
+            0.7853981852531433,
+            1.0
+          ],
+          "control_period_s": 0.05,
+          "physics_period_s": 0.004166666666666667
+        },
+        "robots": {
+          "panda": {
+            "model": "panda",
+            "joint_names": [
+              "panda_joint1",
+              "panda_joint2",
+              "panda_joint3",
+              "panda_joint4",
+              "panda_joint5",
+              "panda_joint6",
+              "panda_joint7",
+              "panda_finger_joint1",
+              "panda_finger_joint2"
+            ],
+            "joint_limits": [
+              [
+                -2.8973000049591064,
+                2.8973000049591064
+              ],
+              [
+                -1.7627999782562256,
+                1.7627999782562256
+              ],
+              [
+                -2.8973000049591064,
+                2.8973000049591064
+              ],
+              [
+                -3.0717999935150146,
+                -0.0697999969124794
+              ],
+              [
+                -2.8973000049591064,
+                2.8973000049591064
+              ],
+              [
+                -0.017500000074505806,
+                3.752500057220459
+              ],
+              [
+                -2.8973000049591064,
+                2.8973000049591064
+              ],
+              [
+                0.0,
+                0.03999999910593033
+              ],
+              [
+                0.0,
+                0.03999999910593033
+              ]
+            ],
+            "default_joint_positions": [
+              0.0,
+              0.39269908169872414,
+              0.0,
+              -1.9634954084936207,
+              0.0,
+              2.356194490192345,
+              0.7853981633974483,
+              0.04,
+              0.04
+            ]
+          }
+        },
+        "cameras": {
+          "scene": {
+            "width": 640,
+            "height": 480
+          }
+        },
+        "goal": {
+          "description": "{'instruction': 'Insert the round and square pegs into their matching top sockets and the long peg into the front-facing socket. Seat each fully without moving the board.', 'final': [{'type': 'region', 'object': 'round_peg', 'xy': [0.04, 0.27], 'bottom': 0.87, 'half': [0.022, 0.022], 'tolerance': 0.005, 'support': 'socket_board'}, {'type': 'orientation', 'object': 'round_peg', 'axis': [0, 0, 1], 'world': [0, 0, 1], 'tolerance': 3}, {'type': 'region', 'object': 'square_peg', 'xy': [0.25, 0.27], 'bottom': 0.87, 'half': [0.022, 0.022], 'tolerance': 0.005, 'support': 'socket_board'}, {'type': 'orientation', 'object': 'square_peg', 'axis': [0, 0, 1], 'world': [0, 0, 1], 'tolerance': 3}, {'type': 'region', 'object': 'long_peg', 'xy': [0.43, 0.302], 'bottom': 0.947, 'half': [0.02, 0.055], 'tolerance': 0.006}, {'type': 'orientation', 'object': 'long_peg', 'axis': [0, 0, 1], 'world': [0, -1, 0], 'tolerance': 3}], 'milestones': [{'id': 'complete', 'conditions': [{'type': 'region', 'object': 'round_peg', 'xy': [0.04, 0.27], 'bottom': 0.87, 'half': [0.022, 0.022], 'tolerance': 0.005, 'support': 'socket_board'}, {'type': 'orientation', 'object': 'round_peg', 'axis': [0, 0, 1], 'world': [0, 0, 1], 'tolerance': 3}, {'type': 'region', 'object': 'square_peg', 'xy': [0.25, 0.27], 'bottom': 0.87, 'half': [0.022, 0.022], 'tolerance': 0.005, 'support': 'socket_board'}, {'type': 'orientation', 'object': 'square_peg', 'axis': [0, 0, 1], 'world': [0, 0, 1], 'tolerance': 3}, {'type': 'region', 'object': 'long_peg', 'xy': [0.43, 0.302], 'bottom': 0.947, 'half': [0.02, 0.055], 'tolerance': 0.006}, {'type': 'orientation', 'object': 'long_peg', 'axis': [0, 0, 1], 'world': [0, -1, 0], 'tolerance': 3}], 'requires': [], 'hold_steps': 2}]}",
+          "stable_seconds": 1.0
+        }
+      },
+      "actual_initialization": {
+        "seed": 0,
+        "split": "nominal",
+        "environment_parameters": {
+          "authored_light_scale": 1.0,
+          "physics_variant": 0
+        },
+        "budgets": {
+          "control_hz": 20,
+          "physics_hz": 240,
+          "simulation_seconds": 120,
+          "max_steps": 2400,
+          "wall_seconds": 3600
+        }
+      },
+      "simulation_seconds": 120.0,
+      "runtime": {
+        "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+        "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+        "packages": {
+          "mani-skill-nightly": "2026.8.2.400",
+          "sapien": "3.0.3",
+          "torch": "2.14.0",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1",
+          "gymnasium": "1.3.0",
+          "trimesh": "5.1.0",
+          "Pillow": "12.3.0"
+        }
+      },
+      "terminal": null
+    }
+  ]
+}

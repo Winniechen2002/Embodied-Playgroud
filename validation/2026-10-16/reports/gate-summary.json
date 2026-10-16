@@ -1,0 +1,442 @@
+{
+  "schema_version": 2,
+  "release_ready": false,
+  "environment_qualified": false,
+  "source_release_ready": false,
+  "distribution_validation": "not_executed",
+  "task_count": 410,
+  "required_case_count": 9390,
+  "source_digest": "056123b29b389e5832b455cb14a34df8c68658d2eb5f8fe466bde6599e3f89e8",
+  "matrix_digest": "1839ad444220ab6987622ffa1ffb88e2eed9563efd20648f03d440296d06afad",
+  "input_errors": [],
+  "runs": [
+    {
+      "path": "/tmp/ep-acceptance-20261016/physics-mujoco-defaults.json",
+      "sha256": "5fc80957d44c2cca19f64e85f0de102ede20d1a83f61f178dae96db4a674fb9d",
+      "scope": "environment_physics_only",
+      "version_status": "stale",
+      "version_mismatches": [
+        "source_digest",
+        "scorer_digest"
+      ],
+      "expected_conditions": 100,
+      "recorded_rows": 100,
+      "statuses": {
+        "passed_probe": 100
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/physics-maniskill-defaults.json",
+      "sha256": "c79ee8a429798ae179f5c793947f73591ccd876ac99765c66f99ac08ba009d38",
+      "scope": "maniskill_native_engineering",
+      "version_status": "stale",
+      "version_mismatches": [
+        "source_digest",
+        "scorer_digest"
+      ],
+      "expected_conditions": 30,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "interrupted"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-everyday_robot_01-D4.json",
+      "sha256": "f0e39fcbf5647f543f7b1eab1e0a56949ce9721352e3672f0c61f1461ab09b4e",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-everyday_robot_01-D9.json",
+      "sha256": "d98f34cc45295c1e934dc1e4eb75f5d58f90d591a636ac275fe1aec4e9eec121",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-everyday_robot_03-D7.json",
+      "sha256": "eb2c0835eb69a7437dca474c2e7ca86ea5b0c7becf3fe50dcb41ed08abf54698",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-fetch-D10.json",
+      "sha256": "746610fb81a1b979edbb1238b1a2e5e1df147a0e362e172a22df8e656910947d",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D1.json",
+      "sha256": "6f01063cc81d9d30f741ee940741788b6d67f4fe849074898bc7a7553f64482c",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D2.json",
+      "sha256": "3fe9a880be6c807e1ec646521329c92d15bcc24cff0988e9407c71fb5138804b",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D3.json",
+      "sha256": "43441927bedcb949d9ee3d32993b5531f5272ed4b47a13c660cbef3b7506fc0f",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D5.json",
+      "sha256": "934ddbf0e3025f1d6136213040c3f34fc4100ac9754f95fbe4643c00be9cbb1f",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D6.json",
+      "sha256": "3d8d2b753434fe6018dc593c70bf5c0264aa78ebd71565c270140524246627f3",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_dynamics-panda-D8.json",
+      "sha256": "3b62c681466f4c35ffbedce0ea90a647615dd5665f1d1141486ac862083b9f84",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-everyday_robot_01-P8.json",
+      "sha256": "0e5d3e6c837a63da395357433fbec0b861742550d509b6b0b74a2017ad13d2ee",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-everyday_robot_03-P4.json",
+      "sha256": "ac4b200c73fd7c6b944bf1f50d1e2b47a193a237231df440033fa8d1517cb3ad",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-everyday_robot_09-P2.json",
+      "sha256": "655e5054a14ded9d7a892345d458ea8708f1b3dc4d1a98283febc91116074a24",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-everyday_robot_09-P6.json",
+      "sha256": "124938a2cf82429201ab4dd8db18b2797ec5c5b81b064585c71114d624a08796",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-everyday_robot_09-P9.json",
+      "sha256": "62bd26836a01a75edc711e308026247fa97ca56e8c03162d3fc894b71f65774c",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-panda-P1.json",
+      "sha256": "08b29e2d72014a577f39272880a9284e1de42f0d1f7c2a83e91dfeda79c87d4e",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-panda-P10.json",
+      "sha256": "b98d538d53ac109f9b39fb5e0e0f9ba2d528b18930a644a203bec5db0bd05a19",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-panda-P3.json",
+      "sha256": "1cb477ea8cf62f21695926e28e8cb49841ea4be060dde1d67395fd1cd9d241b6",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-panda-P5.json",
+      "sha256": "e1cbe3db38d350b69c398a1a13c84a97e8e44e0f7e6d30fc163d11e3e99cbf9f",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_geometry-panda-P7.json",
+      "sha256": "3683d4e1aa9a4106aabdaf12349ce2c1ad68629548c73a591aefba2f1c353e80",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-everyday_robot_01-L9.json",
+      "sha256": "3adb46bf53c0d98127297aa5053f3775be52f8a99496584d70a60e5e5bc8b685",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-everyday_robot_03-L4.json",
+      "sha256": "235337a36185baed39ff22690ec8dc20f3a3d217d9ffdc5930db16e436bdb4b5",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-everyday_robot_09-L10.json",
+      "sha256": "266066ee8a9d5b831eadb5614e981e4156ca24971c0ebd3000cc001d1bee0f2c",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-everyday_robot_09-L2.json",
+      "sha256": "3e62d0ac136537fbcb1158176b8b57c476d0ad8311f820525c15a8599d587518",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-fetch-L3.json",
+      "sha256": "de424767ad3e8e7c19cf114011f2ef777a30ed0144db704743f09a9515eac78c",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-fetch-L5.json",
+      "sha256": "6e663cb6018dfdc987a963e70fa8ec783fb326ff4843528816a86f3b6d861231",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-fetch-L6.json",
+      "sha256": "bdda902c92b28caba2ef255af50fa60856178829452296789d0dd0305cb6157a",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-fetch-L7.json",
+      "sha256": "1a883c49ce3d0ec817de70dfef55b9b38a35207b151cace522b52cd58ba133c9",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    },
+    {
+      "path": "/tmp/ep-acceptance-20261016/maniskill-tasks/maniskill_long_horizon-fetch-L8.json",
+      "sha256": "5173de1d74d477a70e387da2bd996ae9cfebdc10ab65735620185aa91b7af347",
+      "scope": "maniskill_native_engineering",
+      "version_status": "current",
+      "version_mismatches": [],
+      "expected_conditions": 1,
+      "recorded_rows": 1,
+      "statuses": {
+        "passed_probe": 1
+      },
+      "run_status": "completed"
+    }
+  ],
+  "required_conditions": 9390,
+  "qualified_conditions": 0,
+  "observed_conditions": 29,
+  "missing_conditions": 9361,
+  "diagnostic_entries": 9501,
+  "diagnostic_categories": {
+    "missing_case_checks": 9390,
+    "case_not_qualified": 29,
+    "missing_measurement": 68,
+    "clean_install_mujoco": 1,
+    "missing_global_measurement": 7,
+    "clean_install_isaac": 1,
+    "clean_install_maniskill": 1,
+    "assets": 1,
+    "licenses": 1,
+    "bilingual_docs": 1,
+    "local_contact": 1
+  },
+  "note": "Summary of the current-source strict gate. Original older-source reports are retained but excluded; probes do not qualify a case. No synthesized global evidence was provided."
+}
