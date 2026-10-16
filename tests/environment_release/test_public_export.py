@@ -59,6 +59,16 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     manifest = json.loads((destination/'distribution-manifest.json').read_text())
     for name in ('docs/evaluation/tasks.json', 'rules.md', 'scripts/franka_marble_test_protocol.py'):
         assert manifest[name]['sha256'] == hashlib.sha256((destination/name).read_bytes()).hexdigest()
+    # Check discovery from the actual exported tree in a fresh interpreter;
+    # tests importing the development modules cannot detect changed source pins.
+    import subprocess
+    import sys
+    discovered = destination/'exported-catalog.json'
+    result = subprocess.run([sys.executable, '-I',
+        str(destination/'scripts/environment_release.py'), 'catalog',
+        '--output', str(discovered)], capture_output=True, text=True)
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert json.loads(discovered.read_text())['count'] == 410
 
 
 def test_public_launcher_rejects_development_demo_and_recording_options():

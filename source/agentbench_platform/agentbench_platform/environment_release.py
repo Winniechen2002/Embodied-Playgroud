@@ -56,9 +56,13 @@ def export_content(relative, content):
                    if not isinstance(k,ast.Constant) or k.value not in {'plan','yaw_plan','reference'}]
             node.keys=[k for k,v in pairs];node.values=[v for k,v in pairs]
             return node
-    source=content.decode();tree=PhysicalOnly().visit(ast.parse(source))
+    source=content.decode();tree=ast.parse(source);original=ast.dump(tree)
+    tree=PhysicalOnly().visit(tree)
     if tree.body and isinstance(tree.body[0],ast.Expr) and isinstance(tree.body[0].value,ast.Constant) and isinstance(tree.body[0].value.value,str):
         tree.body[0].value.value='Physical environment definitions for the independent distribution.'
+    # An already-sanitized source must remain byte-exact. ast.unparse formatting
+    # differs across Python versions and would invalidate native source pins.
+    if ast.dump(tree)==original:return content
     notices=[line for line in source.splitlines() if line.lstrip().startswith('#') and
              ('copyright' in line.lower() or 'SPDX' in line)]
     return ('\n'.join(notices+[ast.unparse(ast.fix_missing_locations(tree))])+'\n').encode()
