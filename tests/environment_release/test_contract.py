@@ -21,6 +21,7 @@ def test_inventory_contains_only_410_unique_environment_identities():
     assert sum(data['counts'].values())==410
     assert all('capability_levels' in t and 'difficulty' in t for t in data['tasks'])
     assert all('success_rate' not in t and 'completed' not in t for t in data['tasks'])
+    assert all((ROOT/t['authoring_source']).is_file() for t in data['tasks'])
     assert len(matrix(data))>410*3
 
 

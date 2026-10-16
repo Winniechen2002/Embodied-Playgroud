@@ -11,7 +11,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "34ba274d005fbf8c522f4d280b1321d93c3dadfcffe21c604c87f025650d6498",
       "goal": "Two targets, finite mixed ammunition; choose shot order and draw. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -684,7 +684,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "3fed1bc934b8de12b0459ddc678c0272a65d033a0314424f4fefcd2e8417bdfd",
       "goal": "A fixed low wall and roof restrict the firing corridor. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -1424,7 +1424,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "43b9d154ed6598ffba18c8e8d34de1bfcc948b1219c38af9ee2de5ad5d22d4d1",
       "goal": "Three elevated targets on immovable platforms. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -2148,7 +2148,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b921599813efeb177ab5cb0866dac3911af5265954268582963beede29a7f80c",
       "goal": "Collapse the bridge onto two sheltered targets. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -2889,7 +2889,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1642ee6851ac3bbcf218adbcf98d9bdf8752e770b50d89479b013c4bef1d92ba",
       "goal": "Arc over a fixed wall, then knock down the wooden tower. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -3676,7 +3676,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "3dab7da0f9e9f3002c74dff6220f445fe6db653ecc5a21aa390cb738e421b12e",
       "goal": "A chain reaction must reach both targets beside a fixed arch. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 3.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -4509,7 +4509,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "5bcd86c1f14f8d1d3f56f5e6950717ba6d498f5b49a6924b9e167e4fecd4ea5f",
       "goal": "One near target with a spare shot to learn draw control. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -5170,7 +5170,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "cdbdaec3dbdf439fdbea2388100f867f74e98995e5c07e264194bdb2c20ca2f3",
       "goal": "One distant target needs more spring energy. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -5831,7 +5831,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "18132ca7b66d37cd41b95c5db1f4980e2b0a57418bae00712bdcaef1a2165d1b",
       "goal": "Aim at a single elevated target on a fixed pedestal. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -6517,7 +6517,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ca429b9c6d52d2a12ef133e23abdad891d8c41959790296b40e3aa86acc27630",
       "goal": "Knock over the movable shield and reach the target behind it. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -7203,7 +7203,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7675b570051722111ef02e140f0323b1473f494eb67d3f0b0f4757efb5d188d5",
       "goal": "Clear an immovable front wall to hit the target. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -7889,7 +7889,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c0ef20cf3ca849a578dd3e3f11ffae1be244b8293d5c9bf1591fd36099b08029",
       "goal": "Two targets at different elevations require trajectory selection. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -8583,7 +8583,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "38c16a9dfcdfc267d0c8896e3dc1f70916b154d696c31908edfa25de63c81100",
       "goal": "Thread a shot between a fixed sill and lintel. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -9316,7 +9316,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a33f6c5b4936267fc00a0f4417b2945fdf811a116a9457aab401b1ccc03aef1d",
       "goal": "Three separated targets with different impulse thresholds. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -9996,7 +9996,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "6c1fcefbcb92b046cfa1a0765085266470094fd1c1a91d31926d6674da4c6903",
       "goal": "Collapse two separate bridges; only falling wood can pop targets. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -10808,7 +10808,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d200b0d06a6fac6b6b025531b1caf69d7e8ed02c3ac47a7e8b746d058cf291c7",
       "goal": "A single projectile must pass the fixed bunker and hit a small target. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -11515,7 +11515,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9f8326b3b57ef04f3a85e53bb031a5d484625ddadc29d3accec64da5a99db8be",
       "goal": "Push the wooden roller off its ledge and down the fixed slope. Only the roller can pop both targets. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['roller'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -12266,7 +12266,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ed5e9ba3624e009c4ad05c103c899fa39cdb1d844c077871ac1e0346b19800fe",
       "goal": "Dislodge glass columns and the triangular timber roof around a three-piece stone doorway; topple at least two pieces. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -13069,7 +13069,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9b5373a40120a959bab6a21b55f46cc193d4bc9498cdf14e0b8f056a7de3be40",
       "goal": "Dislodge the glass stage of a timber-and-glass stack, tipping its cradle so the stone crown drops onto the target. Only the crown can score damage. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['crown'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -13833,7 +13833,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "91280531983ef29ab620bfde062d335d97e564c507537998734c8769fcd7b9ce",
       "goal": "Clear two mixed-material houses on different fixed terrain heights, with four different projectile shapes. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -14690,7 +14690,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "8440b70b72d8e2dd7321f2ddd7099af948fcdb6eb3e88768193c43d690a5f7a7",
       "goal": "Bounce a released projectile off the fixed rubber bank before it can pop the target. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -15401,7 +15401,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "893e9b5cbf2eaa1e1c11dc99a8b2d8fb40aee8788a5d03fbad02d21d3f81e5e4",
       "goal": "Hit the glass foregate and round supports; collapse at least two parts of the stone-and-timber roof. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -16182,7 +16182,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e6de3d12f213bd664c2c5c1aa3526f14ce2b40ed45885e0520ec1a973535b4a8",
       "goal": "Break an anchored glass pane and clear the target beyond it; moving the intact pane cannot satisfy the fracture requirement. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['glass_gate'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -16874,7 +16874,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2976a4580730e0db724bea98e72feede43c21d5553abc6692af47baff5cfa94a",
       "goal": "Break a clamped glass support and release the guided cradle so its stone crown hits the target. Projectile and glass-fragment hits do not score target damage. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['crown']. Required fractures: ['glass_support'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -17693,7 +17693,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "92843ea95ce05c125f9db71f22c49e19bcb02eea51acc11f95509a3d6d750e18",
       "goal": "Break both glass barriers and clear the target with a finite sequence of differently shaped projectiles. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['glass_front', 'glass_back'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -18413,7 +18413,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e97c3d919b873c7f06e0f99c8bf37b9744bad249c5e4f92764949840853e5514",
       "goal": "Pop numbered target 1 at the far end before target 2 nearby. An otherwise valid hit in the wrong order fails the episode. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [1, 0] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -19092,7 +19092,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "53fce67801bf32f0f606894505c42ad3ca4415bc19e572483590f437d78ef9e8",
       "goal": "A single projectile must break the glass and clear the target. There is no reserve projectile for recovery. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['glass_screen'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -19783,7 +19783,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ba786a66238339430f983ece29a75455e0255f522c72a831e8a505273a25c506",
       "goal": "Clear the distant target while preserving the marked near target. A damaging hit on the protected target is an immediate failure. Target indices are zero-based. Required targets: [1]; protected targets: [0]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -20458,7 +20458,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "215f3fc8f9c112f9df879aaf38ec4ca59152ab216faa768f529cbb0070454913",
       "goal": "Pass the fixed stone sill and break the glass above it, then clear the target. The sill and lintel remain immovable. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['window_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -21199,7 +21199,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "f30e4877a07c4b08596a43bb072ac3f4bcddeffa16c7ad0a8d4986393647fcb5",
       "goal": "The demonstration deliberately underpowers its first shot; subsequent physical reloads must clear the still-present glass and target. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['recovery_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -21894,7 +21894,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "00cca634e9c9d6679774262c6a02c37b8d239150d3bc727b089d5998fb152c16",
       "goal": "Turn the launcher about its vertical column to reach targets in two lateral lanes; the right target is on a fixed raised pedestal. Clear both with three shots. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -22615,7 +22615,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ee4433f257dab0e9d646a8ba5e9adae165071168b7080894da6f5503ea84c8bb",
       "goal": "Clear the lower and upper pigs in a two-storey timber house and topple at least two structural pieces. The intermediate floor and roof rest on movable side columns. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -23429,7 +23429,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "51dd414b45ca6dcb1f6769cf35328c364850de17d8eb734f4b1cce9175419a4a",
       "goal": "Clear three vertically separated pigs and topple at least two pieces of the two stacked timber floors. The uppermost storey is open to the sky; four shots are available. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -24249,7 +24249,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "92ac672ad776ec7d07583592798ac98fadac80242dab243fd4516b67c3c1ae9b",
       "goal": "Clear two pigs in the low left tower and one high pig in the right tower. A fixed raised foundation and a heavier stone deck give the right tower a different collapse response. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -25092,7 +25092,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0a6fee36b444e6a001699729b042301e253f4878b96e1e95d3fdfd44c3c0cda0",
       "goal": "Fracture both anchored load-bearing glass columns and clear both pigs in a two-storey house. Intact glass motion cannot satisfy the fracture rule; pigs remain fixed after floor collapse. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['glass_left', 'glass_right'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -25912,7 +25912,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7841a3012e2f87dabaefd20ba8df7441fe27425861dfb11691f869cf210fe879",
       "goal": "Clear the upper pig while preserving the marked pig directly below it. Falling structural pieces also threaten the protected target; any damaging hit on it fails the episode. Target indices are zero-based. Required targets: [1]; protected targets: [0]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -26753,7 +26753,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "6635e4058c537f1a86ac04722572152a0738fa792ae1363fbf8011555cdf05dd",
       "goal": "Reach the sheltered pig through the opening between a fixed stone sill and lintel. A fixed ceiling removes the easy high arc; decorative movable roof pieces do not need to fall. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -27569,7 +27569,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "994ad043facd1ffe10f7c61d339a73c572f0b08d232cce40d618bb8137989c65",
       "goal": "Break the anchored outer glass screen, topple at least two logical pieces including that screen, and clear the pig behind an independent timber shield and a stone arch. The layers persist between shots. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['outer_screen'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -28349,7 +28349,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e79092ac63ced84c3c997ec1d1a0f45c2cb6f465ea72ede08d13c72106942762",
       "goal": "Only the falling gabled roof may clear the pig. Geometry, ammunition and scoring match heavy_roof_bunker, while roof mass differs. The pair is not assumed to have a monotonic difficulty order. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1. Allowed damage sources: ['falling_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -29153,7 +29153,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "326a80154ecd4ecc124db1aad3fbeb8e96bc40105279a756100f73f680c064c3",
       "goal": "Only the falling gabled roof may clear the pig. Geometry, ammunition and scoring match light_roof_bunker, while roof mass differs. The pair is not assumed to have a monotonic difficulty order. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1. Allowed damage sources: ['falling_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -29957,7 +29957,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e24cffe82d7b1327d9d40c7bbccdeaa11a9fcf9d5e038f2365e562e5afca72b4",
       "goal": "A released projectile must touch the rear inclined bank before it can damage the sheltered pig. This control uses the stone bank preset; geometry, ammunition and scoring match rubber_return_gallery. The preset changes contact and visual parameters together. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -30710,7 +30710,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "41f055e8bf59ec934cbc002f70468d734915f46d2af2da3b6d447992af33895d",
       "goal": "A released projectile must touch the rear inclined bank before it can damage the sheltered pig. Compared with stone_return_gallery, only the bank material preset changes. Its friction, compliant contact response and appearance change together; this is not a single-parameter restitution experiment. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -31463,7 +31463,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "aa157537430e5a2b819def6451880396a1da23f7423b244597c50d12a28ce5dd",
       "goal": "Fracture the anchored glass buttress above its fixed pedestal, then make the stone lintel hit the sheltered pig. Only that lintel scores target damage; projectile, gable and glass-fragment hits do not satisfy the causal rule. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['falling_lintel']. Required fractures: ['glass_buttress'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -32270,7 +32270,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "25d5c32cfb293a145f7732944e368098ad2ab4a30445cd8c210fbd55e735f51f",
       "goal": "Push the stone roller from its flat ledge onto the descending wedge and into the low-roofed redoubt. Only the roller may clear the pig; direct projectile hits cannot substitute for the gravity chain. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['stone_roller'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -33071,7 +33071,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1221f52286ba7d1f8ee5154684e91b7eb8294d1448a86c43cff23e14618eb440",
       "goal": "Break the foregate and clear both floors of the offset gatehouse, toppling at least two logical pieces. Glass, floor, round upper columns and gabled roof remain separate physical bodies. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['glass_foregate'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -33925,7 +33925,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "f487bc923471eeb84eecef82ab20d6597c40c334ceeee697eb55b1187d52ff60",
       "goal": "Clear the low western arch bunker and elevated eastern stone hall. Fracture the western screen and topple at least two pieces, changing both yaw and elevation between the two different support systems. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['west_screen'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -34802,7 +34802,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "304b8840ef9e12511abc835bf5a8d580cab32ac3e60c4d7f2a5e94acb24c5cdf",
       "goal": "Clear the upper chamber by targeting its exposed round wooden supports while preserving the marked pig below the movable stone floor. The fixed lower embrasure protects the lower chamber from low direct shots; debris can still violate the protection rule. Target indices are zero-based. Required targets: [1]; protected targets: [0]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -35656,7 +35656,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "be35e8d8faeedce3fb2d555fd29ed5eed477e730351cef071eae03d0840a03c2",
       "goal": "Clear numbered targets in far, raised, then near order across three firing lanes. Topple at least one piece while respecting the order; hitting a visible nearer pig first is a task violation. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [1, 2, 0] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -36522,7 +36522,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "319418953aa65109b2392dba9dc4bbdc705a52e9107762b1ad051ef44ff3951c",
       "goal": "Clear the target behind two fixed apertures at different heights. Neither frame moves; all hits obey the normal target damage rule. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -37300,7 +37300,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a305e2eb6a0e040feada66e285f70f8919c9389bb4e664cb02d1ac78e158b13f",
       "goal": "Clear an elevated target between a raised foundation and an inclined fixed ceiling. The ceiling and front sill cannot be toppled. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -38055,7 +38055,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ee150c8b37ef436438a8481948242cbeee003d48475832d7420743c8c1724c2b",
       "goal": "Clear the raised front target while preserving the marked rear target below its fixed canopy. Any damaging protected-target hit fails the task. Target indices are zero-based. Required targets: [0]; protected targets: [1]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -38799,7 +38799,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9760871fd16d91355b7405c93ccc881760af198aaa723b54d678df554c191dbb",
       "goal": "Clear the numbered targets in far-low, middle, near-high order. A damaging hit in any other order fails the task; all three supports remain fixed. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [2, 1, 0] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -39554,7 +39554,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bf083a50523c1c66691c298baf7189ab806662c2254df88093e56fcf2fff3dc4",
       "goal": "A projectile must contact the named descending ramp before it may damage the target beyond it. Direct untouched flights do not score. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -40287,7 +40287,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ac159617418c0d005ab7799d4662ab3aae7390b3808640b059a20f5729fad036",
       "goal": "Only projectiles that first touch the uphill ramp may damage the target on the upper landing. The ramp and landing are fixed. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -41022,7 +41022,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "04fe066c3b53447c820083b10a1ab0a78b93cb22cca257a91a665bab34482fb7",
       "goal": "Only the lower relay ball may clear the target. The upper roller and all projectiles are excluded as damage sources; using the upper roller to transfer momentum is an available strategy, not an extra rule. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['relay_ball'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -41807,7 +41807,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "cc4b69816d53c524b1220fe0306133d56d8c5bb9c4d2e1010e3e08b279f48699",
       "goal": "Only the wooden rectangular ram may clear the target. It starts on a level ledge connected to a descent; projectiles cannot score directly. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['sliding_ram'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -42593,7 +42593,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "630784d7a18d07f4e7adf763cd4cc4a2c37ad9d98c6ea994db3b72e5ad834b88",
       "goal": "Clear both targets using either of the two stone rollers. The broad timber pusher and all projectiles are excluded from target damage. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['left_roller', 'right_roller'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -43362,7 +43362,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "70ebb5a0597df6a1b950d8a4d59413148a28ccb27484019aaf59e71f1d075cba",
       "goal": "Only the long balanced beam may clear the target below its far end. The beam is a free rigid body resting on a fixed narrow fulcrum, with no hinge or motor. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['balanced_beam'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -44102,7 +44102,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "177d1fa74ab035da6c78b7bbc833d1e918f74c593a9297b3414e6dcfdd22b2b8",
       "goal": "Only the long beam may damage the target below its front span. One support is movable and the rear bearing is fixed; both remain ordinary contact supports. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['heel_beam'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -44864,7 +44864,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "95764767961689620e14f37de329f81cef35f9f51fa671a4cb7a3b8da3b22061",
       "goal": "Only the bridge slab may clear both sheltered targets, and at least two logical pieces must topple. Both piers are movable; the raised stone stop behind the bridge is fixed. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Allowed damage sources: ['wide_slab'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -45657,7 +45657,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "746e3e883c02a9a50e3b3d537de3cdca86e7085d5e4a91b33a32ac510bc09a0a",
       "goal": "Clear the target and topple at least three pieces from the free stack of round packing blocks and its timber cap. Direct and structural hits use the normal damage rule. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 3.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -46437,7 +46437,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "f121d89eff025c7dd06408afbb421d2887cabd34577f25a13588e1fd9887451b",
       "goal": "Only the overhanging beam may clear the target beneath its far end. A small load rests near the beam support; the load itself cannot damage the target. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['overhang_beam'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -47200,7 +47200,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "95e7d3dc5d840f574286adb6f5c3bf07ee852386f820a2576537b8ea388b114a",
       "goal": "Only the lower beam may clear the target; the upper roof and the projectiles cannot score. Topple at least two pieces. An upper-to-lower cascade is an available route rather than a required event sequence. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Allowed damage sources: ['lower_scoring_beam'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -48031,7 +48031,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0f112aa77105ad330640687bf7bed79c3e1494b4a4e62c4dccc2146ed31d9ce1",
       "goal": "Fracture the anchored low glass transom and clear the raised target beyond it. The fixed sill below the glass cannot be moved. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['low_glass_transom'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -48792,7 +48792,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "734923bb90e848235790c278c7172c8868ba9e5ff3680bef9a2cb0650f50edc2",
       "goal": "Fracture the anchored high glass transom and clear the ground target below the fixed rear canopy. Hitting the low target alone is insufficient. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['high_transom'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -49553,7 +49553,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2e9a51bbc67cff1e13571dda9ac4d81fda3b3d01761317290e41ff2b1764ad84",
       "goal": "Fracture the middle anchored glass, topple at least three logical pieces, and clear the target behind two timber shutters. Damage persists across the four shots. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 3. Required fractures: ['laminate_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -50316,7 +50316,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "160920f7ca535e7bf25549fdd29d4ac7482f32edc524c4353f9ba1c53b2656e2",
       "goal": "Fracture the anchored glass support and clear the ground target while preserving the marked upper target. Targets remain fixed sensors even if their supporting floor moves. Target indices are zero-based. Required targets: [0]; protected targets: [1]; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['lower_glass_support'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -51087,7 +51087,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0573b9de5ba1e0ffa5ae51cb281835f586f0b115d11fcfb342da321e445dba0f",
       "goal": "Break the elevated glass screen and clear the rear target while preserving the marked target in the near recess. Fragments can damage the protected target. Target indices are zero-based. Required targets: [1]; protected targets: [0]; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['overwell_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -51860,7 +51860,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b5ade922ed189b8ccdbfd048e8abc3a5bff8097778e9de739f0a83a984c1b383",
       "goal": "Fracture the front pane, topple at least four pieces including the pane, and clear the target using only the final domino. A complete chain reaction is an available route, not a separately detected event. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 4. Allowed damage sources: ['relay_3']. Required fractures: ['relay_screen'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -52674,7 +52674,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "8b186380d173967513968d4d3f1e6e03a5ce0d687bfbe561f37c949ac2b98bef",
       "goal": "Only the tall stone striker may clear the target; topple at least two logical pieces. A separate rubber pad lies in front of it and can alter contact transmission. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Allowed damage sources: ['stone_striker'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -53414,7 +53414,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e542d14256a7623514ec8ab6e289d126f1542b73a32cb41e53f616f0c9e896cb",
       "goal": "Only the separate stone crown may clear the target beyond the arch. The arch is one rigid movable body and does not disassemble into individual masonry stones. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['separate_crown'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -54154,7 +54154,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2a2448b101408bf91820da639d26a34fffcc61234421eaa7b1afa6931b80626f",
       "goal": "Topple the timber shutter and clear the target beyond the fixed sill and lintel. The shutter remains a physical body after it moves and may obstruct later shots. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -54911,7 +54911,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e5f9d34299157ee12ce745cfa086f09ca792acdb690923bdf594017c5c36b14f",
       "goal": "Clear the near target before the sheltered far target, and topple at least two structural pieces. Both projectile and structure damage are allowed; a far-first collapse violates the target order. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [0, 1] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -55682,7 +55682,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1c99f0e07c78a82f46e0e80babb0bfc1d410fa224475dc6fd2f49477252b4700",
       "goal": "Fracture the anchored glass, topple at least three logical pieces, and clear the target using only the stone lintel. Neither the front timber shutter nor the glass fragments may substitute for the lintel. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 3. Allowed damage sources: ['scoring_stone_lintel']. Required fractures: ['middle_glass_lock'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -56498,7 +56498,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e3a650a134d2d4cf73d57c349144242bd455a4140e23d3b6ea8060a5da3143f3",
       "goal": "Clear three separated ground targets across a fan. Four spherical shots permit one correction; no obstacle or ordering rule substitutes for bearing control. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -57195,7 +57195,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "3c844b26cde035ac9dda18c8fef5efcf5fca791b9c26a2390204d412fcef2e4f",
       "goal": "Reach a left-lane target through a fixed sill/lintel window; a central stone wall blocks the zero-yaw route. A loose rear banner is optional debris. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -57972,7 +57972,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1f8dfdf742da5d2c864d1b2456eb94ec2b6574feebc3df33eaafe884b91d422a",
       "goal": "Clear the left target beyond a high sill and the right target below a low ceiling. The two immovable constraints demand different trajectory heights. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -58711,7 +58711,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "5f47ab4429d0c8fb5d6293d589bbb9f6dde8d44f9db9d6a0fccf7e8e210e8d35",
       "goal": "Clear one ground target and two targets on fixed platforms of different heights. No collapse can lower a target, and each platform occupies a separate bearing. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -59457,7 +59457,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a3999c3417c856f37872521ff5e6019a449c4f507af0bee524cdbfeddd229229",
       "goal": "Fracture the western screen, clear both pigs, and topple two logical pieces. The eastern timber shield moves as one rigid body while the western glass splits into fragments. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['west_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -60203,7 +60203,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0983fb174ae76f63f30f771e1b9839e15834b71a31bb1ad19442a4f9ca644d3f",
       "goal": "Clear both wings and topple the rubber screen. One low stone barricade is immovable; the opposite tall rubber screen is a movable dissipative rigid body. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -60943,7 +60943,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c0033bb047962b1348c94792dc8694731de9ad248e88476dd5968d9d03ea4194",
       "goal": "Clear targets inside two staggered rigid arches and topple at least one arch. Both apertures face the launcher; each arch is one movable compound rigid body. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -61684,7 +61684,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bfd90b7706c1b7aa4a1815c340b5d2bdba8c6d8e281459031d4a35d1d99277d8",
       "goal": "Only the long stone roof may clear the pig. Four round columns support an oblique roof, so removing one column need not be enough to destabilize its support polygon. Target indices are zero-based. Required targets: [0]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['skew_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -62493,7 +62493,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c8b044630dd4b72502117dfbedce941e108aefbd4e189f66f36cd6654a1dcb6a",
       "goal": "Clear both lateral shelters using only their flat roof slabs. Direct ammunition, side-wall and crown-cap hits on pigs do not score; collapse persists while the launcher changes bearing. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['west_roof', 'east_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -63356,7 +63356,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "08fe6a221676af62bc0ba56e05a267ef6f4a3de122dd6d27221d5a9295b7504d",
       "goal": "Clear both targets using either of the two terminal dominoes. Multi-piece chain reactions are available strategies, not required event sequences; the two terminal bodies form a shared damage-source whitelist. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['west_domino2', 'east_domino2'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -64195,7 +64195,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "3a480cb00075558efef055e9685323563c6ba4edfe65b260276c02f81e63c28f",
       "goal": "Only a shared broad roof may clear both side-by-side pigs. Four corner columns support one roof; partial collapse can clear one chamber while leaving the other intact. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['shared_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -65010,7 +65010,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d276b736d4a88f884dda9d0852b1672140f654eadcf86c454014095a6d7b404f",
       "goal": "Fracture the load-bearing glass panel, clear its sheltered target, and clear a separate open right target. The annex roof is supported by glass at the front and timber at the rear. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['annex_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -65778,7 +65778,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e1c6b9e1c6a4915a76142241e20c7d566cf2e4f212077fdd279c3a7c7bf2f280",
       "goal": "Clear a lower sheltered pig and a raised pig whose pavilion sits behind and to the side. Topple two dynamic pieces; the fixed raised terrace itself cannot collapse. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -66657,7 +66657,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "fc172a6465afde2fea5896f696d5e3a9c8e8c34fbff03b7cd8df7f9a3f06f38a",
       "goal": "Clear the left sheltered pig using only its flat roof slab while preserving the marked right pig. A fixed divider separates floor-level debris routes, but trajectories can still pass above it. Target indices are zero-based. Required targets: [0]; protected targets: [1]; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['attack_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -67478,7 +67478,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "40f0e90f609bab8ff1e3bd22c867c1622f54d0e52b59a86731d779ca2440cb71",
       "goal": "Clear two pigs on separate fixed balconies and a lower pig between them. Each balcony has its own movable parapet; at least one parapet must be toppled. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 1.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -68271,7 +68271,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "6fcd0e077460a95e773b9bd50de665b5d190e11a27916ae86962c61394a84fbd",
       "goal": "Fracture the low western glass gate and clear both its pig and the eastern pig under a stone crown. Target order is unrestricted. At least two logical pieces must topple in total across the two independent zones. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['western_gate'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -69086,7 +69086,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "6ea541fb60707d1c37e2e44d2edc3b10eab0a03280482f71cb5da726b9fd53ac",
       "goal": "Clear the right, left, then central target in that marked order. The central target is closer, so a distance-only sweep violates the rule. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [2, 0, 1] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -69818,7 +69818,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "4542f2ac4c2affc1fdf4ba94ca23d307af4c9630db85797a8b4056f3834c7a80",
       "goal": "Clear the upper pig, then the pig below it, then the separate right courtyard. The two vertically aligned targets are separated by a fixed slab, with loose outer pennants as optional obstacles. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [1, 0, 2] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -70574,7 +70574,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2135983fafccc4d5529d9977e9590a228016da64902cf5e4128dcca8c65fe139",
       "goal": "Clear the glass wing, then the timber wing, then the open center; fracture the glass screen as a separate requirement. The visible central pig is deliberately last. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [0, 1, 2] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['ordered_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -71335,7 +71335,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "244a95d6f6db14b93d7669006aefcb6469ba449e984a45a718cde251c24c4e6e",
       "goal": "Clear far-left, middle-right, then near-center targets. Each lies in a different bearing, and a low central parapet prevents a single straight ground sweep. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [2, 1, 0] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -72091,7 +72091,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e43ed4590ef0a13841f30783cb28aff7c54d4d007f2f2c54d02ef56dba719953",
       "goal": "Clear both outer targets while preserving the central marked pig. A narrow central low shield protects against some ground shots but does not block high arcs or lateral debris. Target indices are zero-based. Required targets: [0, 1]; protected targets: [2]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -72866,7 +72866,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "78f2738022eec65b107f915defcefaee9dacabf42f6260a3a691ecc36954cf65",
       "goal": "Clear the west and central pigs using only their separate flat roof slabs while preserving the exposed right pig. The protected annex has no roof to remove; overshoot and debris still count against protection. Target indices are zero-based. Required targets: [0, 1]; protected targets: [2]; required order: [] (empty means unrestricted); minimum toppled structures: 0. Allowed damage sources: ['west_roof', 'middle_roof'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -73741,7 +73741,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1b8fc1b0fcc94f8824f4b644a97033b9e88b19c010064090539c4d1c2cc7425b",
       "goal": "Preserve the high marked lookout on a fixed deck while clearing a lower left pig and the right courtyard. A loose lower shield can be pushed without moving the lookout deck. Target indices are zero-based. Required targets: [0, 2]; protected targets: [1]; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -74516,7 +74516,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bd71a851e82bf6b190b714ce5dbde59c6efed5665c7e28e222c60f2076368c9f",
       "goal": "Fracture the left glass screen and clear its pig while preserving a neighboring right pig. A second angled rigid wooden screen can redirect later collisions toward either region. Target indices are zero-based. Required targets: [0]; protected targets: [1]; required order: [] (empty means unrestricted); minimum toppled structures: 0. Required fractures: ['refuge_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -75267,7 +75267,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a412faadde4fc23f8ae1faf6d73072ac405c155ddd4a5b64b5299652499ecb79",
       "goal": "A released projectile must first contact the broad inclined rear bank before it can clear either target. Two short fixed side roofs constrain high escape routes; the bank spans both lateral lanes. Target indices are zero-based. Required targets: [0, 1]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 0.",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -76030,7 +76030,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "5dc63b65b274bb02801322f8465f2e5a5abab5ddb80175be95da96540cd64c26",
       "goal": "Clear a western pig behind a fixed stone sill, a central pig behind breakable glass, and an eastern pig under a movable timber roof. Fracture the glass and topple two logical pieces. Target indices are zero-based. Required targets: [0, 1, 2]; protected targets: []; required order: [] (empty means unrestricted); minimum toppled structures: 2. Required fractures: ['central_glass'].",
-      "authoring_source": "env/franka_marble/task.md",
+      "authoring_source": "source/agentbench/agentbench_mujoco/campaign_scene.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 50,
@@ -76862,7 +76862,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -77411,7 +77411,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -77960,7 +77960,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -78509,7 +78509,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -79058,7 +79058,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -79607,7 +79607,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -80156,7 +80156,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -80705,7 +80705,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -81254,7 +81254,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -81803,7 +81803,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -82354,7 +82354,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -82903,7 +82903,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -83454,7 +83454,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -84003,7 +84003,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -84552,7 +84552,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -85103,7 +85103,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -85654,7 +85654,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -86203,7 +86203,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -86752,7 +86752,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -87303,7 +87303,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -87854,7 +87854,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -88403,7 +88403,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -88952,7 +88952,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -89503,7 +89503,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -90054,7 +90054,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -90605,7 +90605,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -91156,7 +91156,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -91707,7 +91707,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -92258,7 +92258,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -92818,7 +92818,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -93378,7 +93378,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -93938,7 +93938,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -94498,7 +94498,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -95047,7 +95047,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -95596,7 +95596,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -96147,7 +96147,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -96698,7 +96698,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -97249,7 +97249,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -97800,7 +97800,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -98362,7 +98362,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -98924,7 +98924,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -99677,7 +99677,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -100430,7 +100430,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -101183,7 +101183,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -101936,7 +101936,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -102689,7 +102689,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -103442,7 +103442,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -104195,7 +104195,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -104948,7 +104948,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -105701,7 +105701,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -106456,7 +106456,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -107209,7 +107209,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -107964,7 +107964,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -108717,7 +108717,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -109470,7 +109470,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -110225,7 +110225,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -110980,7 +110980,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -111733,7 +111733,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -112486,7 +112486,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -113241,7 +113241,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -113996,7 +113996,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -114749,7 +114749,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -115502,7 +115502,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -116257,7 +116257,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -117012,7 +117012,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -117767,7 +117767,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -118522,7 +118522,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -119277,7 +119277,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -120032,7 +120032,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -120796,7 +120796,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -121560,7 +121560,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -122324,7 +122324,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -123088,7 +123088,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -123841,7 +123841,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -124594,7 +124594,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -125349,7 +125349,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -126104,7 +126104,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -126859,7 +126859,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -127614,7 +127614,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -128380,7 +128380,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 29,
       "budgets": {
         "control_hz": 30,
@@ -129146,7 +129146,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -129890,7 +129890,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -130634,7 +130634,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -131378,7 +131378,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -132122,7 +132122,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -132866,7 +132866,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -133610,7 +133610,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -134354,7 +134354,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -135098,7 +135098,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -135842,7 +135842,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -136588,7 +136588,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -137332,7 +137332,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -138078,7 +138078,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -138822,7 +138822,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -139566,7 +139566,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -140312,7 +140312,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -141058,7 +141058,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -141802,7 +141802,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -142546,7 +142546,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -143292,7 +143292,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -144038,7 +144038,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -144782,7 +144782,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -145526,7 +145526,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -146272,7 +146272,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -147018,7 +147018,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -147764,7 +147764,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -148510,7 +148510,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -149256,7 +149256,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -150002,7 +150002,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -150757,7 +150757,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -151512,7 +151512,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -152267,7 +152267,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -153022,7 +153022,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -153766,7 +153766,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -154510,7 +154510,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -155256,7 +155256,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -156002,7 +156002,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -156748,7 +156748,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -157494,7 +157494,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -158251,7 +158251,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/sharpa_hanoi_no_arm40/README.md",
+      "authoring_source": "source/agentbench/agentbench_hanoi40/catalog.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -159019,7 +159019,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -159526,7 +159526,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -160435,7 +160435,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -160942,7 +160942,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -161851,7 +161851,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -162358,7 +162358,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -163267,7 +163267,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -163774,7 +163774,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -164683,7 +164683,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -165190,7 +165190,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -166099,7 +166099,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -166606,7 +166606,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -167515,7 +167515,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -168022,7 +168022,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -168931,7 +168931,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -169438,7 +169438,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -170347,7 +170347,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -170854,7 +170854,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -171763,7 +171763,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 60,
@@ -172271,7 +172271,7 @@
         ],
         "stable_seconds": 1
       },
-      "authoring_source": "env/cube20/README.md",
+      "authoring_source": "source/agentbench/agentbench_cube20/catalog.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 60,
@@ -173161,7 +173161,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d3c693c0b6c65d2a26007ad73c85ca74fc0d0658db90dc431980e4e060eead87",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -173504,7 +173504,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "48fb5d7aab214fe7bfed19caf8c60de018108780d527612e8a309f68b4d0b3b7",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -173847,7 +173847,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "26d2aecdffa3e3a57aa09d58d7e59deaf8e69537d01766308325e5e45af45587",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -174190,7 +174190,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d285a1621edf6e83cc2066b81f4e2e04ece03e9cea321ab78c41f79b6aca9721",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -174533,7 +174533,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "34c2b7481179ce797242d5fcd8079832343cdcf8200a977dacab8e52c4444245",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -174876,7 +174876,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a507120a7625bb379a6e6181f8b78338c37ff0872fa2d18631ae03613b16db6b",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -175219,7 +175219,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7af4b19a8dff8a724a19b94126c086e9232f0e950b54daac8681b1f3fe51f3de",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -175562,7 +175562,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9960872db430261e35440bab97b7a1542ea33d29c1ccc3d68eaf078013740403",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -175905,7 +175905,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "aea592338aecb21cefe0de4ad6756de501cf0644924c5e31fc7f79ad0570b4bf",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -176248,7 +176248,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "dcf7cab254c07f30314c083f65c79f2836ed218fee0fa5d5e0c04e186970e6a7",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -176591,7 +176591,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0ffeb3c0ebcca7ee6998fcb835a01341eaa82bb0b8a203ac5a6735adedd01262",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -176934,7 +176934,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bc60426fa8c8c3a9bb4c9d703cda8f829a030072231578dc4cf8b69f5e04f551",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -177277,7 +177277,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e2d1f6b010bc29fb897ec08cfd83ed50a35d0d00eabfdbd49860130036204b88",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -177620,7 +177620,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c86d77fbde072506f7dc2d915c9661d046b93d1bc80ef7bbd8300b4f6a6f632c",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -177963,7 +177963,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0f258c398314fe2b93e5a3fb747a46add8aabb00e5b1e8514d873122c322d093",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -178306,7 +178306,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "5e6db557c24ef1fcb4aa931439be22b59de84fa3c4cb0d9dd8e13ac6ab296bf4",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -178649,7 +178649,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7cb0850b900cb998a31b6458866d0326c10f0bcff195acf1a20dcbc05a10191e",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -178992,7 +178992,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ee93de43a23fc86a24015bfca50b9c8c0ef46bd30d122792baf70b1412ad8353",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -179335,7 +179335,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7df263693613a2db1f9a7a04fe3014adbff1e0ef696792aec9cf3ff687109721",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -179678,7 +179678,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bfb7c88a0685494d7dc1a57841b5da08693553993e9bee2e21ee305ddc6e2d46",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -180021,7 +180021,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "396f33177507d20b59650fc3112113243b3cc7b569347920ad514a2aedf041eb",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -180364,7 +180364,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1d31db067d7dddf30a23c6bbc689a5c9cc558952a98c1b1ecc3ad7d07eb26eb7",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -180707,7 +180707,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bc66de2ae115bc82161d428fe1f09ae75d27dad93d75f9d4544c4a1dfec5d9b5",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -181050,7 +181050,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "136616c4a6856b178b278b0f55b24aeb7cbe27dabdc6903b9399decdeae3ec5a",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -181393,7 +181393,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "697be2ffde1e8ba13200b91390c990c16541a925636a36960a3f8a5a136ef725",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -181736,7 +181736,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "404547bb1218d48cfca837e510a6edd9fd4bc160aad3a71fdb489f4880017d82",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -182079,7 +182079,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "04491e8a459ad936b3dddfccc875e3c7de50c0ef48661e48bdc5f6b888201350",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -182422,7 +182422,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7939709b91fdccf01e72f2a3f06dff56561ed81570438eacff45c3a26e0e1b98",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -182765,7 +182765,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "8af24c2536d36072d9f81a526bb4559129eae945d8df1022efeddfabf36623cf",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -183108,7 +183108,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b82fc9ad48c59e18b006d8abe61dde002744b76fcb41935290e15908e8d55274",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 8,
       "budgets": {
         "control_hz": 30,
@@ -183451,7 +183451,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "e02fcd244b9777c5fbd3454e59852cc93d3826716dd70d31705b38c60bd9dce1",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -184090,7 +184090,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "35800014d106bd0b0077094468f2196deab24c78218bfa28e80ba7444cf0c74d",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -184729,7 +184729,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c9c3eb89ff66e3755ee1c97c4c0ec61140d319627aeb9f3dfec5aafbd533ed61",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -185368,7 +185368,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ecf65c70d2bd66a230fd420279b05bd90a9d1580e72423f9e4b3fc6f75b4ba67",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -186007,7 +186007,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ed0150dce6c26e4c9917df6a9041e7fb2f38c273e27786a57f86ff8e3421fff1",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -186646,7 +186646,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "58531c378521d43da921811b55ba9b13926f4f8401ae7d3c3c2a50a437b3498c",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -187285,7 +187285,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "08bd32da4eeb19e6b2dd91cd48216e8482528c236fddf872af71f7c6ac72c245",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -187924,7 +187924,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9e783b1d9fc41ab9605e95a5db01194e7ebbce37da558acb460200fa5c0ac2bb",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -188563,7 +188563,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "24e282001545ed0a073d5c978a087df7a9805fd1bd843d69a89fee08bee2c5a7",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -189202,7 +189202,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "71acb722e901137023cc63b71dbcde934275bd7a55ae1900f5644f99f846211d",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -189841,7 +189841,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a61f957c0efff00ac51b97d7902eb7bf41def6eb4e99621ed727b626b7c3ec8e",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -190480,7 +190480,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1865a816e9b1c2712722937433aaade486d2a3e4baf03d8d4e2c624943227caf",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -191119,7 +191119,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "9ce36b13dd73db632414fe0a475024cc1cab3d1c318157f4830ea700bb4fd3af",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -191758,7 +191758,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "46fc1739c4de437401e6d66e04120198eb69bd4d7e37b12a1471c6461092aea4",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -192397,7 +192397,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "1c61290787951182b41823f26016eaf69456d08727d9b52bff7d47dec8dd74fa",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -193036,7 +193036,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a522ff24ddab4df5165b86070e9ae778108ae6d1b46a8b016cb43b64b7bb6a17",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -193675,7 +193675,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "db4f828c3b097374ce64c7bc89ebb25bd8217f090461b668d844555f959effb9",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -194314,7 +194314,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "4f5ec558b4b172471866b95a5818838107689b553142c5b521e74fd06b56b89e",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -194953,7 +194953,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "05be7fee3f0d907b8e4d01db2169212ef5e831854739bd200c457a58015648c5",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -195592,7 +195592,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "087c41517932514da1e7a7a9ca23f1780d01104e67173e4cd0d422524639a676",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -196231,7 +196231,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d3b79227a12c44db54bfd1f7b12be83e7401e597ac2c392ab88e71c1e366577a",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -196870,7 +196870,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "97397318805f5196ec53ce2c283c829edffdfe48b9766713bd4aa687dbf987ee",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -197509,7 +197509,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "69be2792148d1609aadd5abbc84f260873787ec0ad75a005af16f2f33d882335",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -198148,7 +198148,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "f8e03208cc6f0c7adb2818b92d0bb3a6f0fbb11ae429def8a67456095c8ba160",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -198787,7 +198787,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "bbc4801ca87aa5b7ca07fec96347ace624f3bc6751658ef835be6af6323d8b53",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -199426,7 +199426,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ac5b5b225108aa733587dc3153ef29651e277dba04f21ad74cf4f86cea49b0e1",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -200065,7 +200065,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "080fe50b9263a1c4b14e6dbaa5c2a15b7a39567c39fa22480cf08e6ad0464cfc",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -200704,7 +200704,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "5f4a8259427a17aa7062e5098324fce4a3069925f95aef0c9fe1a3474b3383fc",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -201343,7 +201343,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a53989ccdfd1268e9dfee268cbec3765143ed617bea5acf4e21207cc355fd906",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -201982,7 +201982,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "da0efdeffbcee268d268538e16e6520010cb1ac01d37094048fb1de07dcbd96b",
       "goal": "Restore uniform face colors and return home.",
-      "authoring_source": "docs/rubiks_cube.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/rubiks_cases.py",
       "action_size": 28,
       "budgets": {
         "control_hz": 30,
@@ -202635,7 +202635,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -203596,7 +203596,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -204557,7 +204557,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -205518,7 +205518,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -206479,7 +206479,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -207435,7 +207435,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -208390,7 +208390,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -209345,7 +209345,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -210300,7 +210300,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -211255,7 +211255,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -212211,7 +212211,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -213170,7 +213170,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -214129,7 +214129,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -215088,7 +215088,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -216047,7 +216047,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -217010,7 +217010,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -217971,7 +217971,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -218932,7 +218932,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -219893,7 +219893,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -220854,7 +220854,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -221810,7 +221810,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -222765,7 +222765,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -223720,7 +223720,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -224675,7 +224675,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -225630,7 +225630,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -226586,7 +226586,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -227545,7 +227545,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -228504,7 +228504,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -229463,7 +229463,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -230422,7 +230422,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -231385,7 +231385,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -232938,7 +232938,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -234491,7 +234491,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -236044,7 +236044,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -237597,7 +237597,7 @@
         ],
         "description": "Assemble all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -239145,7 +239145,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -240692,7 +240692,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -242239,7 +242239,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -243786,7 +243786,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -245333,7 +245333,7 @@
         ],
         "description": "Assemble key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -246881,7 +246881,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -248432,7 +248432,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -249983,7 +249983,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -251534,7 +251534,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -253085,7 +253085,7 @@
         ],
         "description": "Assemble key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -254640,7 +254640,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -256193,7 +256193,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -257746,7 +257746,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -259299,7 +259299,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -260852,7 +260852,7 @@
         ],
         "description": "Remove and park all six wooden pieces in the marked goal regions."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -262400,7 +262400,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -263947,7 +263947,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -265494,7 +265494,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -267041,7 +267041,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -268588,7 +268588,7 @@
         ],
         "description": "Remove and park key in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -270136,7 +270136,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -271687,7 +271687,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -273238,7 +273238,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -274789,7 +274789,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -276340,7 +276340,7 @@
         ],
         "description": "Remove and park key, frame_y1 in the marked goal regions. Keep all other pieces in their assembled configuration."
       },
-      "authoring_source": "env/kongming_lock/README.md",
+      "authoring_source": "source/agentbench_platform/agentbench_platform/kongming_cases.py",
       "action_size": 56,
       "budgets": {
         "control_hz": 30,
@@ -278122,7 +278122,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -279885,7 +279885,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 30,
       "budgets": {
         "control_hz": 20,
@@ -282112,7 +282112,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -283992,7 +283992,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 23,
       "budgets": {
         "control_hz": 20,
@@ -285937,7 +285937,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -288023,7 +288023,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -290099,7 +290099,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -292377,7 +292377,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -294781,7 +294781,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 29,
       "budgets": {
         "control_hz": 20,
@@ -297036,7 +297036,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json",
       "action_size": 30,
       "budgets": {
         "control_hz": 20,
@@ -298622,7 +298622,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -301531,7 +301531,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 30,
       "budgets": {
         "control_hz": 20,
@@ -304299,7 +304299,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -305389,7 +305389,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 23,
       "budgets": {
         "control_hz": 20,
@@ -306619,7 +306619,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -308924,7 +308924,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 30,
       "budgets": {
         "control_hz": 20,
@@ -310333,7 +310333,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -311343,7 +311343,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 29,
       "budgets": {
         "control_hz": 20,
@@ -314037,7 +314037,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 30,
       "budgets": {
         "control_hz": 20,
@@ -315146,7 +315146,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -316608,7 +316608,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -317428,7 +317428,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -319113,7 +319113,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -319960,7 +319960,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 29,
       "budgets": {
         "control_hz": 20,
@@ -322860,7 +322860,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -323921,7 +323921,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -325306,7 +325306,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 23,
       "budgets": {
         "control_hz": 20,
@@ -328536,7 +328536,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 8,
       "budgets": {
         "control_hz": 20,
@@ -329418,7 +329418,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 29,
       "budgets": {
         "control_hz": 20,
@@ -330937,7 +330937,7 @@
           }
         ]
       },
-      "authoring_source": "env/maniskill_lgd/README.md",
+      "authoring_source": "env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json",
       "action_size": 13,
       "budgets": {
         "control_hz": 20,
@@ -332258,7 +332258,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "a2991454407f9257aa8e6404bee99856ecc42995673264cf4a5f40cac8e3ed39",
       "goal": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Objects present: 3 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -332737,7 +332737,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "183d4e5a719cce279d2ac0280118d3e5bac60db8a7a00110c6cbb07453a48846",
       "goal": "Organize the shelf in front of you. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Objects present: 5 books. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -333219,7 +333219,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "ba5824cc58c1c5bec50b0c3caa783a8f45627592a052cef4889e268a79531241",
       "goal": "Organize the shelf in front of you. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Objects present: 8 books. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -333706,7 +333706,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "3aa29acf11d1b03e224a51a968058d2395c86edaa82475329ac5356d6a8900ef",
       "goal": "Organize the shelf in front of you. Middle layer: the 10 books, standing upright and packed tightly together against the left side wall. Objects present: 10 books. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -334196,7 +334196,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "35fef4189b3a6a2ee8856041f9c193692aec11fa267179e8b048cd6cecfda7b4",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage box, standing upright on the desk under the first board. The box has no handles or lid features: carry it between both hands. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 4 books, a trophy and a storage box. All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -334686,7 +334686,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0321dddaaae5ba2da076c527b5c71d26410a2ee41348fb00b78eeee0da4ae7f6",
       "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 6 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 6 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 3 books and the remaining objects lie scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -335186,7 +335186,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c18991f989da55e922fb33f5d774d2ab4c8a575351343d9023cc4479d754acd0",
       "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 8 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 8 books, a trophy, a photo frame, a desk lamp and 2 storage boxes of different sizes. 3 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -335689,7 +335689,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2088e580986a6796e8f9656980e51735e9757dd71697b10e102005734c2f10f9",
       "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 10 books, standing upright and packed tightly together against one side wall. Top layer: the photo frame, desk lamp and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 10 books, a photo frame, a desk lamp, a globe and 2 storage boxes of different sizes. 5 books start standing packed together in a row on the desk; the other 5 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -336194,7 +336194,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b349ef131e26a3b171b7147b45426c0329e8c47bea541477054285dbffe4fb02",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 2 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 2 books, a trophy and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -336685,7 +336685,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2d6a6aa4308b1e96451da9022113c0500a841efbd751bef32386c6b28679b077",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 3 books, a trophy, a photo frame and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -337183,7 +337183,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "2418181c95b522ba48fb68c086bac00c0b01766dad721caede43e8a81437dbb3",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -337685,7 +337685,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "8f731f222982d8fb6aa5b75afa7ca4b3c74b0de85e2c929441d31ff48f31c9be",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 7 books, standing upright and packed tightly together against the right side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 7 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -338190,7 +338190,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "8077954a9f0382bb418e013d4ae5552c67e300a991b54ac5166b08b4cde631f9",
       "goal": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 4 books, a trophy and a photo frame. All objects start on the shelf. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -338689,7 +338689,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "0c2a0f52fc8ce5d2776b95526c262871dd8a4928630c0870d0b2df2f8de5bef0",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. Objects present: 3 books, a potted plant, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start inside the storage crate on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -339191,7 +339191,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b4a73dd578801243680b1cdc0dc699f659093713fbd5694f2b41603f1e24fdc3",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -339700,7 +339700,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "334aa1b38376450d37d6138176118a04a5e96cfb04f7207ab974c8f0a8e09f97",
       "goal": "Organize the shelf in front of you. Bottom layer: the storage crate, emptied first, standing upright on the desk under the first board. The crate has no handles: hold it by its rim with both arms, or slide it over the desk. Middle layer: the 5 books, standing upright and packed tightly together against one side wall. Top layer: the potted plant, photo frame and globe, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Objects present: 5 books, a potted plant, a photo frame, a globe and a storage crate. The shelf stands on the left half of the desk and the crate on the right half. All objects start jumbled inside the storage crate on the desk, as they fell during the move. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -340215,7 +340215,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "b7054ae5924cd06947ed5fcf22094b4031db98aee85a70845202fb111a8df242",
       "goal": "Organize the shelf in front of you. Middle layer: the 3 books, standing upright and packed tightly together against one side wall. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 3 books and 2 pieces of trash (a crumpled paper ball and an empty drink can). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -340702,7 +340702,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "7fa77f15aa5d36e8014dfc751316e3e4028f76ffbc9a399de44fd3236768ae59",
       "goal": "Organize the shelf in front of you. Middle layer: the 4 books, standing upright and packed tightly together against one side wall. Top layer: the trophy and photo frame, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 4 books, a trophy, a photo frame and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). All objects start scattered on the desk. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -341201,7 +341201,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "c7b06f1167f59a22ebde5db9aa47c6dfa6c836eb85f43d6c4056b1007ef3edf4",
       "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -341713,7 +341713,7 @@
       "expected_trials_per_group": 4,
       "configuration_sha256": "d91013755692090b25a1b6c3fc0e16c32b8c5e2f6034ae5ce6f734ebfd674da0",
       "goal": "Organize the shelf in front of you. Bottom layer: the 2 storage boxes, standing upright side by side on the desk under the first board. The boxes have no handles or lid features: carry each between both hands. Middle layer: the 7 books, standing upright and packed tightly together against one side wall. Top layer: the trophy, photo frame and desk lamp, standing upright, at least 5 cm apart and 2 cm from the side walls. The photo frame must face outward. Trash: the crumpled paper balls and the empty drink cans go into the waste bin standing on the floor beside the desk's left edge; nothing else goes into the bin. Objects present: 7 books, a trophy, a photo frame, a desk lamp, 2 storage boxes of different sizes and 4 pieces of trash (2 crumpled paper balls and 2 empty drink cans). 3 books start standing packed together in a row on the desk; the other 4 books and the remaining objects lie scattered on the desk, some on top of each other. The task is complete once every object rests released and still in its place.",
-      "authoring_source": "env/organize_bookshelf/task.md",
+      "authoring_source": "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py",
       "action_size": 16,
       "budgets": {
         "control_hz": 30,
@@ -342240,7 +342240,7 @@
     "env/maniskill_lgd/agentbench_maniskill/checks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "env/maniskill_lgd/agentbench_maniskill/checks/geometry_dynamics.py": "8e7fa95abc980615d4e0740d2f95471755359df1e36cefc6df3f60ebecbee938",
     "env/maniskill_lgd/agentbench_maniskill/checks/long_horizon.py": "119094efeee097cdab551e07dea35c6cb40afe5dcdc25e1111098ee369ce13a5",
-    "env/maniskill_lgd/agentbench_maniskill/checks/run.py": "105fc224f5ceed8cf1ec72794258c7b35f34742783255f3a928fc99abbb5bdff",
+    "env/maniskill_lgd/agentbench_maniskill/checks/run.py": "3cd2c57538040ff75ffb5f2cdc06fa570c4080e9923e0f1ef9377d01722e5c07",
     "env/maniskill_lgd/agentbench_maniskill/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "env/maniskill_lgd/agentbench_maniskill/common/asset_loader.py": "f7cd21e3108aff8f5da4453784335a624ef85c1a0a8f5bfef8b5be21781d830b",
     "env/maniskill_lgd/agentbench_maniskill/common/collision_filters.py": "f05c13487ae3ca34bd5f5c5dfdbbc1597f7ca3eced5fa65c5861fd8e545961b8",
@@ -342264,10 +342264,10 @@
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/oracle.py": "208d0e6966ac015a32fc1672f9db3930b264b8285ef41772617a5c8a747dd80d",
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/paths.py": "2704bed3a2b621379df27e9b6ca653cb95b461364114457c66df369b9668ec8e",
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json": "cd2cef6f07a3345cce76fe483b0e6dc9c68258fc48ef83d139e1475414496973",
-    "env/maniskill_lgd/agentbench_maniskill/runtime.py": "454ac33bb13cd9320871700cf4ea1c5122cae6eecd206e68b629172f7a741a6b",
+    "env/maniskill_lgd/agentbench_maniskill/runtime.py": "809cbe5ed5fdb94775d385a5e3ca03f6ebc0a5d799ccb02609f4ffa9495da3f9",
     "scripts/agentbench_platform_runtime.py": "ff6d901816cbfafe676051a4457b99f88f23fc5499319a0be1e809054d73a98a",
     "scripts/environment_runtime.py": "194a06059b514734090da42d69c149a82b7b3a719a7898f778ebc6a9f9fd4160",
-    "scripts/export_evaluation_protocol.py": "5dffbc43fdc735db80aeffc834d16289e9f9ccacb4cb8710caeb8e5b6835e2c5",
+    "scripts/export_evaluation_protocol.py": "345a525cc7d4f2376511d274e810c112b164ecb851bc7f9a7ea848bb3e3a5d4e",
     "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/__init__.py": "91b0f53c71331467426b4b48b4d7d20563e88781a1fe0ab1fb0280e8bf750757",
     "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/assets.py": "471b649cfb476a561416418fee67bab0c29c9cada9b91e0feef003bc5cebc2ef",
     "source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py": "83d90b8f226c124c1312953504fc99ca8c630ba5df748ef9f0ae5946071488a3",
@@ -342315,10 +342315,10 @@
     "source/agentbench/agentbench_mujoco/scene.py": "ab712b2badc021f8f250f9cf20dee57f6412e43cbd87da8a68575c06235a672e",
     "source/agentbench/agentbench_mujoco/structures.py": "27e5f52d6cdbbdda355157b8aa99ae6c2111dbdd85ba716e8402091fd98a7e70",
     "source/agentbench/agentbench_mujoco/variants.py": "6d84870babc1d5e38d336179fc60f0fa1af439b71612a589b4c439d24ec16134",
-    "source/agentbench_platform/agentbench_platform/action_contracts.json": "8216fcb15da935fcef5acf0bfd95c3dee37caf4687a2b85cb10ff6f7f12d9251",
+    "source/agentbench_platform/agentbench_platform/action_contracts.json": "5714e23e4759b71c302ae4afce8fde7453b2c7ad3d14b672f78cacd08ad2e6bc",
     "source/agentbench_platform/agentbench_platform/bookshelf_catalog.json": "9b7f406252b0fb0f753e3c12dce1ccda5face93f179d47799f826a9ef09cc188",
     "source/agentbench_platform/agentbench_platform/environment_backend.py": "6412e9fbbfea4d78f944d803771f0fff45a6903e81fba758b32d545edb892806",
-    "source/agentbench_platform/agentbench_platform/environment_catalog.py": "31d0595372c61dabf7d5349a7742328e881c3db9ad960773b747b3c82224baf7",
+    "source/agentbench_platform/agentbench_platform/environment_catalog.py": "b5d018614d5be852f47b1fdffe7eac3bc4a5946e14459ff9580e0789731ddac5",
     "source/agentbench_platform/agentbench_platform/environment_contracts.py": "cfa3fb08490c3726c3d6f9277615278e8ea15a03f8e9660f584a7aa97e89819f",
     "source/agentbench_platform/agentbench_platform/evaluation_protocol.py": "b0f3498f0bc1d7174d0b06a23afeac4f775ba9366c3e5865956a0b1db5fe2c1e",
     "source/agentbench_platform/agentbench_platform/kongming_cases.py": "1a9d95db6446efef78dd18bcefca265f82f3ed9ab57bb99661906168b387ab79",

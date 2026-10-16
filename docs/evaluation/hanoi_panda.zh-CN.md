@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="hanoi_panda-panda-H01"></a>
 ## `hanoi_panda/panda/H01`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -172,7 +172,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H01 --capabili
 <a id="hanoi_panda-panda-H02"></a>
 ## `hanoi_panda/panda/H02`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -335,7 +335,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H02 --capabili
 <a id="hanoi_panda-panda-H03"></a>
 ## `hanoi_panda/panda/H03`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -498,7 +498,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H03 --capabili
 <a id="hanoi_panda-panda-H04"></a>
 ## `hanoi_panda/panda/H04`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -661,7 +661,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H04 --capabili
 <a id="hanoi_panda-panda-H05"></a>
 ## `hanoi_panda/panda/H05`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -824,7 +824,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H05 --capabili
 <a id="hanoi_panda-panda-H06"></a>
 ## `hanoi_panda/panda/H06`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -987,7 +987,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H06 --capabili
 <a id="hanoi_panda-panda-H07"></a>
 ## `hanoi_panda/panda/H07`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1150,7 +1150,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H07 --capabili
 <a id="hanoi_panda-panda-H08"></a>
 ## `hanoi_panda/panda/H08`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1313,7 +1313,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H08 --capabili
 <a id="hanoi_panda-panda-H09"></a>
 ## `hanoi_panda/panda/H09`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1476,7 +1476,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H09 --capabili
 <a id="hanoi_panda-panda-H10"></a>
 ## `hanoi_panda/panda/H10`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1639,7 +1639,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H10 --capabili
 <a id="hanoi_panda-panda-H11"></a>
 ## `hanoi_panda/panda/H11`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1802,7 +1802,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H11 --capabili
 <a id="hanoi_panda-panda-H12"></a>
 ## `hanoi_panda/panda/H12`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1965,7 +1965,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H12 --capabili
 <a id="hanoi_panda-panda-H13"></a>
 ## `hanoi_panda/panda/H13`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2128,7 +2128,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H13 --capabili
 <a id="hanoi_panda-panda-H14"></a>
 ## `hanoi_panda/panda/H14`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2291,7 +2291,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H14 --capabili
 <a id="hanoi_panda-panda-H15"></a>
 ## `hanoi_panda/panda/H15`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2454,7 +2454,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H15 --capabili
 <a id="hanoi_panda-panda-H16"></a>
 ## `hanoi_panda/panda/H16`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2617,7 +2617,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H16 --capabili
 <a id="hanoi_panda-panda-H17"></a>
 ## `hanoi_panda/panda/H17`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2780,7 +2780,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H17 --capabili
 <a id="hanoi_panda-panda-H18"></a>
 ## `hanoi_panda/panda/H18`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2943,7 +2943,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H18 --capabili
 <a id="hanoi_panda-panda-H19"></a>
 ## `hanoi_panda/panda/H19`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3106,7 +3106,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H19 --capabili
 <a id="hanoi_panda-panda-H20"></a>
 ## `hanoi_panda/panda/H20`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3269,7 +3269,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H20 --capabili
 <a id="hanoi_panda-panda-H21"></a>
 ## `hanoi_panda/panda/H21`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3432,7 +3432,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H21 --capabili
 <a id="hanoi_panda-panda-H22"></a>
 ## `hanoi_panda/panda/H22`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3595,7 +3595,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H22 --capabili
 <a id="hanoi_panda-panda-H23"></a>
 ## `hanoi_panda/panda/H23`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3758,7 +3758,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H23 --capabili
 <a id="hanoi_panda-panda-H24"></a>
 ## `hanoi_panda/panda/H24`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3921,7 +3921,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H24 --capabili
 <a id="hanoi_panda-panda-H25"></a>
 ## `hanoi_panda/panda/H25`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4084,7 +4084,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H25 --capabili
 <a id="hanoi_panda-panda-H26"></a>
 ## `hanoi_panda/panda/H26`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4247,7 +4247,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H26 --capabili
 <a id="hanoi_panda-panda-H27"></a>
 ## `hanoi_panda/panda/H27`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4410,7 +4410,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H27 --capabili
 <a id="hanoi_panda-panda-H28"></a>
 ## `hanoi_panda/panda/H28`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4573,7 +4573,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H28 --capabili
 <a id="hanoi_panda-panda-H29"></a>
 ## `hanoi_panda/panda/H29`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4736,7 +4736,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H29 --capabili
 <a id="hanoi_panda-panda-H30"></a>
 ## `hanoi_panda/panda/H30`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4899,7 +4899,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H30 --capabili
 <a id="hanoi_panda-panda-H31"></a>
 ## `hanoi_panda/panda/H31`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5062,7 +5062,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H31 --capabili
 <a id="hanoi_panda-panda-H32"></a>
 ## `hanoi_panda/panda/H32`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5225,7 +5225,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H32 --capabili
 <a id="hanoi_panda-panda-H33"></a>
 ## `hanoi_panda/panda/H33`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5388,7 +5388,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H33 --capabili
 <a id="hanoi_panda-panda-H34"></a>
 ## `hanoi_panda/panda/H34`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5551,7 +5551,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H34 --capabili
 <a id="hanoi_panda-panda-H35"></a>
 ## `hanoi_panda/panda/H35`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5714,7 +5714,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H35 --capabili
 <a id="hanoi_panda-panda-H36"></a>
 ## `hanoi_panda/panda/H36`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5877,7 +5877,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H36 --capabili
 <a id="hanoi_panda-panda-H37"></a>
 ## `hanoi_panda/panda/H37`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6040,7 +6040,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H37 --capabili
 <a id="hanoi_panda-panda-H38"></a>
 ## `hanoi_panda/panda/H38`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6203,7 +6203,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H38 --capabili
 <a id="hanoi_panda-panda-H39"></a>
 ## `hanoi_panda/panda/H39`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6366,7 +6366,7 @@ python scripts/environment_runtime.py --task-id hanoi_panda/panda/H39 --capabili
 <a id="hanoi_panda-panda-H40"></a>
 ## `hanoi_panda/panda/H40`
 
-作者来源：`env/hanoi40/README.md`。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

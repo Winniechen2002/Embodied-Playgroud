@@ -27,12 +27,7 @@ def save(path, data):
     temp.replace(path)
 
 
-def git_identity(path):
-    cmd = ['git', '-c', 'filter.lfs.process=', '-c', 'filter.lfs.required=false', '-C', str(path)]
-    state = subprocess.check_output(cmd + ['status', '--porcelain'], text=True)
-    if state.strip():
-        raise RuntimeError('Checkout is not clean: ' + str(path))
-    return dict(path=str(path), revision=subprocess.check_output(cmd + ['rev-parse', 'HEAD'], text=True).strip(), clean=True)
+from agentbench_platform.source_checkout import git_identity
 
 
 def worker(args, tasks):

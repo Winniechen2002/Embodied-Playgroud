@@ -17,8 +17,9 @@ These are licenses for distinct kinds of material, not a choice of either licens
 for every file. File-specific upstream notices take precedence for upstream
 material. No third-party rights are granted by the project declaration. A file's
 location, extension, public availability or conversion does not establish that it
-is independently authored. Assets whose provenance is unresolved are not classified
-as project-owned CC BY assets by default; their redistribution remains unverified.
+is independently authored. Third-party assets are not classified as project-owned CC BY assets.
+The maintainer has approved distribution of the complete included asset bundle
+under its original applicable licenses, preserving upstream notices and attribution.
 Code blocks intended to be executed, including examples in documentation, follow
 the code license unless an upstream notice specifies otherwise.
 
@@ -33,7 +34,7 @@ Isaac Lab file. Its Apache-2.0 package metadata identifies the original AgentBen
 code grant; it does not relicense that inherited file or the package's third-party
 assets. The [Isaac Lab BSD notice](LICENSES/IsaacLab-BSD-3-Clause.txt) is preserved.
 
-This declaration does not certify third-party asset redistribution or complete environment acceptance.
+The asset distribution decision records maintainer approval, not an independent legal audit. Complete environment acceptance remains a separate requirement.
 
 ## 简体中文
 
@@ -48,7 +49,7 @@ This declaration does not certify third-party asset redistribution or complete e
 两种许可证分别适用于不同内容，并非每个文件都可以任选其一。
 上游内容以其具体许可声明为准；项目声明不授予第三方权利。
 文件路径、扩展名、公开可见或经过转换，均不能证明资产为独立自制。
-来源不明的资产不会默认归入项目 CC BY 授权，其再分发状态仍为未验证。
+第三方资产不归入项目原创 CC BY 授权。维护者已确认随本源码提供的完整资产包可按原有适用许可证分发，保留上游通知与署名。
 文档中用于执行的代码示例遵循代码许可，已有上游声明的除外。
 
 对上述原创非代码内容，按许可要求署名 Chen Feng 和 AgentBench，保留其他已列明作者，
@@ -59,4 +60,4 @@ This declaration does not certify third-party asset redistribution or complete e
 Apache-2.0 包元数据说明原创 AgentBench 代码的授权，不改变该继承文件或第三方资产的许可。
 [Isaac Lab BSD 通知](LICENSES/IsaacLab-BSD-3-Clause.txt)保留。
 
-本声明不证明全部第三方资产可再分发或环境验收已完成。
+资产分发决定记录维护者批准，不代表独立法律审计；完整环境验收仍需单独完成。

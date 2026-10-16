@@ -1,5 +1,5 @@
 """Developer diagnostics. Only normal env.step() may advance an evaluated episode."""
-import copy,gc,hashlib,json,platform
+import copy,gc,json,platform
 from pathlib import Path
 import numpy as np
 from . import ROOT,make,catalog,specification
@@ -30,11 +30,10 @@ def validate(code,variant,output):
     try:
         for _ in range(initial_steps(e)):env.step(e.hold_action())
         initial=e.snapshot();ir=copy.deepcopy(e.report);held,steps=settle_goal(env);goal=e.snapshot();gr=e.oracle.assess(goal)
-        h=hashlib.sha256(json.dumps(e.task,sort_keys=True).encode()).hexdigest()
         for name,state in [('initial',initial),('goal_fixture',goal)]:
-            state['task_spec_sha256']=h;(output/(name+'_state.json')).write_text(json.dumps(state)+'\n')
+            (output/(name+'_state.json')).write_text(json.dumps(state)+'\n')
         initial_ok=all(ir[k] for k in ['stable','no_fall','protected_ok','released']) and not ir['success']
-        report=dict(code=code,physics_variant=variant,initial_passed=initial_ok,goal_passed=None if held else gr['final_state_valid'],passed=initial_ok and not held and gr['final_state_valid'],goal_steps=steps,initial=ir,goal=gr,task_spec_sha256=h,platform=platform.platform(),robot_execution=False,scope='Initialized reference fixture; unvalidated held pose' if held else 'Initialized and physically settled reference fixtures, not a robot demonstration')
+        report=dict(code=code,physics_variant=variant,initial_passed=initial_ok,goal_passed=None if held else gr['final_state_valid'],passed=initial_ok and not held and gr['final_state_valid'],goal_steps=steps,initial=ir,goal=gr,platform=platform.platform(),robot_execution=False,scope='Initialized reference fixture; unvalidated held pose' if held else 'Initialized and physically settled reference fixtures, not a robot demonstration')
         (output/'validation.json').write_text(json.dumps(report,indent=2)+'\n');return report
     finally:env.close()
 

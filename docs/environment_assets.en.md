@@ -6,9 +6,9 @@ The project grant covers original material as described in [LICENSING.md](../LIC
 
 Retain [third-party notices](../THIRD_PARTY_NOTICES.md), adjacent license texts and `UPSTREAM.json` records. These records identify pinned source revisions, file hashes and license scope. The known Sharpa hand component files are pinned to upstream revision `6eea427eb24189519f32b9f21674cd534d3f973c`; this does not cover every combined robot, adapter or converted mesh.
 
-ManiSkill bundles 444 integrity-recorded files. Its manifest and embedded notices must remain intact. Integrity does not resolve grants for native robot assets, YCB, Google Scanned Objects, RoboCasa/Lightwheel or converted robot components. The [asset license inventory](../env/runtime/license-decisions.json) records unresolved scope.
+ManiSkill bundles 444 integrity-recorded files. Its manifest and embedded notices must remain intact. Native robot assets, YCB, Google Scanned Objects, RoboCasa/Lightwheel and converted robot components retain their original applicable licenses. The [asset license inventory](../env/runtime/license-decisions.json) records the maintainer distribution decision and these individual scopes.
 
-Redistribution review remains incomplete for combined robots, adapters, converted meshes and parts of the ManiSkill asset bundle. These limitations are retained; the source-tree cleanup is not a license approval. Isaac Sim is obtained separately under NVIDIA terms. Optional perception and planning repositories are not bundled dependencies of this source distribution.
+On 2026-10-16, the maintainer approved distribution of the complete included asset bundle, including combined robots, adapters, converted meshes and ManiSkill assets, under their original applicable licenses. This decision preserves upstream terms and notices and is not an independent legal audit. Isaac Sim is obtained separately under NVIDIA terms. Optional perception and planning repositories are not bundled dependencies of this source distribution.
 
 For an inventory of included content and available notices, run:
 
@@ -16,4 +16,4 @@ For an inventory of included content and available notices, run:
 python scripts/environment_release.py audit --output /tmp/agentbench-public-content.json
 ```
 
-The audit checks file identities, LFS materialization, static imports, local links and embedded asset integrity. It cannot establish rights from file hashes or certify dynamic imports, native asset loading or clean installation. A public distribution requires the maintainer to resolve applicable asset provenance and redistribution scope.
+The audit checks file identities, LFS materialization, static imports, local links and embedded asset integrity. It cannot establish rights from file hashes or certify dynamic imports, native asset loading or clean installation. The audit reports the recorded maintainer approval separately from engineering qualification.

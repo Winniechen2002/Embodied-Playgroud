@@ -6,16 +6,52 @@
 
 ## 本地检查
 
-按[安装指南](environment_installation.zh-CN.md)使用对应模拟器的独立环境。先运行仅依赖 CPU 的契约检查，再执行原生检查：
+先按[安装指南](environment_installation.zh-CN.md)准备三个独立环境。以下命令均从仓库根目录运行；每个小节使用对应模拟器的解释器，不在 MuJoCo 环境中执行全部后端的评分检查。
+
+### 目录与协议检查
+
+在已配置的 MuJoCo 环境中执行；这些命令不启动原生仿真：
 
 ```bash
 python scripts/environment_release.py catalog --output /tmp/agentbench-catalog.json
-python scripts/validate_environment_contracts.py --output /tmp/agentbench-contracts.json
+python scripts/export_evaluation_protocol.py --check
 python scripts/environment_release.py matrix --matrix union --output /tmp/agentbench-conditions.json
-python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --output /tmp/agentbench-smoke.json
 ```
 
-目录包含 410 个任务。烟雾检查覆盖实际观测、时间推进、重复请求 ID、结束行为与进程退出。短探针不等于完整时长或全条件通过。Isaac 原生检查需要配置好的 GPU 运行时；ManiSkill 检查需要其独立依赖与资产。
+预期目录含 410 个任务，协议生成检查报告源码哈希与文档一致。
+
+### MuJoCo：100 个任务
+
+使用安装指南中的 MuJoCo 环境，并保留 `MUJOCO_GL=egl` 及所需的 EGL vendor 设置：
+
+```bash
+python scripts/validate_environment_contracts.py --backend mujoco --output /tmp/agentbench-mujoco-contracts.json
+python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --output /tmp/agentbench-mujoco-smoke.json
+```
+
+### Isaac：280 个任务
+
+配置 `ISAACSIM_PATH`、`ISAACLAB_PATH` 和 `AGENTBENCH_ISAAC_PYTHON`，通过安装指南的包装器使用 Isaac 独立环境。书架评分夹具需要该环境中的 Torch：
+
+```bash
+bash scripts/run_isaac_binary.sh scripts/validate_environment_contracts.py --backend isaac --output /tmp/agentbench-isaac-contracts.json
+bash scripts/run_isaac_binary.sh scripts/environment_smoke.py --task-id hanoi_panda/panda/H01 --output /tmp/agentbench-isaac-smoke.json
+```
+
+### ManiSkill：30 个任务
+
+切换到安装指南中的 ManiSkill 环境，完成资产解压，并设置 `AGENTBENCH_MANISKILL_ASSETS`：
+
+```bash
+python scripts/validate_environment_contracts.py --backend maniskill --output /tmp/agentbench-maniskill-contracts.json
+python scripts/environment_smoke.py --task-id maniskill_long_horizon/fetch/L1 --output /tmp/agentbench-maniskill-smoke.json
+```
+
+评分检查成功时，报告中的 `run_status` 为 `completed`，对应任务均为 `passed_fixture`；烟雾检查成功时为 `passed_probe`。失败时保留报告中的 `error` 和诊断信息。ManiSkill 保存的初始／目标夹具不再包含或校验任务定义哈希，评分检查直接执行当前评分器的断言；删除哈希不代表物理或评分断言自动通过。
+
+烟雾检查覆盖实际观测、时间推进、重复请求 ID、结束行为与进程退出。短探针不等于完整时长或全条件通过。Isaac 原生检查需要配置好的 GPU 运行时，ManiSkill 原生检查需要其独立依赖、资产与 Vulkan。
+
+干净安装验证使用安装指南中的对应脚本。验证器忽略内容与 Git LFS 索引指针匹配的实体资产，避免误报本地修改；真实源码、资产或暂存区修改仍须在干净检出中解决后再验证。
 
 ## 工程条件矩阵
 

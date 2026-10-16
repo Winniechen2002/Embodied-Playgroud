@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="marble-dual-panda-A001"></a>
 ## `marble/dual-panda/A001`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -202,7 +202,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A001 --capabil
 <a id="marble-dual-panda-A002"></a>
 ## `marble/dual-panda/A002`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -395,7 +395,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A002 --capabil
 <a id="marble-dual-panda-A003"></a>
 ## `marble/dual-panda/A003`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -589,7 +589,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A003 --capabil
 <a id="marble-dual-panda-A004"></a>
 ## `marble/dual-panda/A004`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -782,7 +782,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A004 --capabil
 <a id="marble-dual-panda-A005"></a>
 ## `marble/dual-panda/A005`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -975,7 +975,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A005 --capabil
 <a id="marble-dual-panda-A006"></a>
 ## `marble/dual-panda/A006`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -1168,7 +1168,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A006 --capabil
 <a id="marble-dual-panda-A007"></a>
 ## `marble/dual-panda/A007`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -1360,7 +1360,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A007 --capabil
 <a id="marble-dual-panda-A008"></a>
 ## `marble/dual-panda/A008`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -1552,7 +1552,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A008 --capabil
 <a id="marble-dual-panda-A009"></a>
 ## `marble/dual-panda/A009`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -1744,7 +1744,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A009 --capabil
 <a id="marble-dual-panda-A010"></a>
 ## `marble/dual-panda/A010`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -1936,7 +1936,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A010 --capabil
 <a id="marble-dual-panda-A011"></a>
 ## `marble/dual-panda/A011`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -2128,7 +2128,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A011 --capabil
 <a id="marble-dual-panda-A012"></a>
 ## `marble/dual-panda/A012`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -2321,7 +2321,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A012 --capabil
 <a id="marble-dual-panda-A013"></a>
 ## `marble/dual-panda/A013`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -2513,7 +2513,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A013 --capabil
 <a id="marble-dual-panda-A014"></a>
 ## `marble/dual-panda/A014`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -2707,7 +2707,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A014 --capabil
 <a id="marble-dual-panda-A015"></a>
 ## `marble/dual-panda/A015`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -2900,7 +2900,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A015 --capabil
 <a id="marble-dual-panda-A016"></a>
 ## `marble/dual-panda/A016`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -3092,7 +3092,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A016 --capabil
 <a id="marble-dual-panda-A017"></a>
 ## `marble/dual-panda/A017`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -3287,7 +3287,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A017 --capabil
 <a id="marble-dual-panda-A018"></a>
 ## `marble/dual-panda/A018`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -3479,7 +3479,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A018 --capabil
 <a id="marble-dual-panda-A019"></a>
 ## `marble/dual-panda/A019`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -3673,7 +3673,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A019 --capabil
 <a id="marble-dual-panda-A020"></a>
 ## `marble/dual-panda/A020`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -3866,7 +3866,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A020 --capabil
 <a id="marble-dual-panda-A021"></a>
 ## `marble/dual-panda/A021`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -4058,7 +4058,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A021 --capabil
 <a id="marble-dual-panda-A022"></a>
 ## `marble/dual-panda/A022`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -4250,7 +4250,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A022 --capabil
 <a id="marble-dual-panda-A023"></a>
 ## `marble/dual-panda/A023`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -4444,7 +4444,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A023 --capabil
 <a id="marble-dual-panda-A024"></a>
 ## `marble/dual-panda/A024`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -4640,7 +4640,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A024 --capabil
 <a id="marble-dual-panda-A025"></a>
 ## `marble/dual-panda/A025`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -4835,7 +4835,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A025 --capabil
 <a id="marble-dual-panda-A026"></a>
 ## `marble/dual-panda/A026`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -5031,7 +5031,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A026 --capabil
 <a id="marble-dual-panda-A027"></a>
 ## `marble/dual-panda/A027`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -5225,7 +5225,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A027 --capabil
 <a id="marble-dual-panda-A028"></a>
 ## `marble/dual-panda/A028`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -5420,7 +5420,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A028 --capabil
 <a id="marble-dual-panda-A029"></a>
 ## `marble/dual-panda/A029`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -5614,7 +5614,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A029 --capabil
 <a id="marble-dual-panda-A030"></a>
 ## `marble/dual-panda/A030`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -5808,7 +5808,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A030 --capabil
 <a id="marble-dual-panda-A031"></a>
 ## `marble/dual-panda/A031`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6001,7 +6001,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A031 --capabil
 <a id="marble-dual-panda-A032"></a>
 ## `marble/dual-panda/A032`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6194,7 +6194,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A032 --capabil
 <a id="marble-dual-panda-A033"></a>
 ## `marble/dual-panda/A033`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6388,7 +6388,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A033 --capabil
 <a id="marble-dual-panda-A034"></a>
 ## `marble/dual-panda/A034`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6582,7 +6582,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A034 --capabil
 <a id="marble-dual-panda-A035"></a>
 ## `marble/dual-panda/A035`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6778,7 +6778,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A035 --capabil
 <a id="marble-dual-panda-A036"></a>
 ## `marble/dual-panda/A036`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -6973,7 +6973,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A036 --capabil
 <a id="marble-dual-panda-A037"></a>
 ## `marble/dual-panda/A037`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -7165,7 +7165,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A037 --capabil
 <a id="marble-dual-panda-A038"></a>
 ## `marble/dual-panda/A038`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -7359,7 +7359,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A038 --capabil
 <a id="marble-dual-panda-A039"></a>
 ## `marble/dual-panda/A039`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -7553,7 +7553,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A039 --capabil
 <a id="marble-dual-panda-A040"></a>
 ## `marble/dual-panda/A040`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -7747,7 +7747,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A040 --capabil
 <a id="marble-dual-panda-A041"></a>
 ## `marble/dual-panda/A041`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -7939,7 +7939,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A041 --capabil
 <a id="marble-dual-panda-A042"></a>
 ## `marble/dual-panda/A042`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -8131,7 +8131,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A042 --capabil
 <a id="marble-dual-panda-A043"></a>
 ## `marble/dual-panda/A043`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -8327,7 +8327,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A043 --capabil
 <a id="marble-dual-panda-A044"></a>
 ## `marble/dual-panda/A044`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -8521,7 +8521,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A044 --capabil
 <a id="marble-dual-panda-A045"></a>
 ## `marble/dual-panda/A045`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -8716,7 +8716,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A045 --capabil
 <a id="marble-dual-panda-A046"></a>
 ## `marble/dual-panda/A046`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -8911,7 +8911,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A046 --capabil
 <a id="marble-dual-panda-A047"></a>
 ## `marble/dual-panda/A047`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -9106,7 +9106,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A047 --capabil
 <a id="marble-dual-panda-A048"></a>
 ## `marble/dual-panda/A048`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -9304,7 +9304,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A048 --capabil
 <a id="marble-dual-panda-A049"></a>
 ## `marble/dual-panda/A049`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -9496,7 +9496,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A049 --capabil
 <a id="marble-dual-panda-A050"></a>
 ## `marble/dual-panda/A050`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -9688,7 +9688,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A050 --capabil
 <a id="marble-dual-panda-A051"></a>
 ## `marble/dual-panda/A051`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -9883,7 +9883,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A051 --capabil
 <a id="marble-dual-panda-A052"></a>
 ## `marble/dual-panda/A052`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -10081,7 +10081,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A052 --capabil
 <a id="marble-dual-panda-A053"></a>
 ## `marble/dual-panda/A053`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -10273,7 +10273,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A053 --capabil
 <a id="marble-dual-panda-A054"></a>
 ## `marble/dual-panda/A054`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -10465,7 +10465,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A054 --capabil
 <a id="marble-dual-panda-A055"></a>
 ## `marble/dual-panda/A055`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -10659,7 +10659,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A055 --capabil
 <a id="marble-dual-panda-A056"></a>
 ## `marble/dual-panda/A056`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -10853,7 +10853,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A056 --capabil
 <a id="marble-dual-panda-A057"></a>
 ## `marble/dual-panda/A057`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -11049,7 +11049,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A057 --capabil
 <a id="marble-dual-panda-A058"></a>
 ## `marble/dual-panda/A058`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -11243,7 +11243,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A058 --capabil
 <a id="marble-dual-panda-A059"></a>
 ## `marble/dual-panda/A059`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -11437,7 +11437,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A059 --capabil
 <a id="marble-dual-panda-A060"></a>
 ## `marble/dual-panda/A060`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -11632,7 +11632,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A060 --capabil
 <a id="marble-dual-panda-A061"></a>
 ## `marble/dual-panda/A061`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -11824,7 +11824,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A061 --capabil
 <a id="marble-dual-panda-A062"></a>
 ## `marble/dual-panda/A062`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12018,7 +12018,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A062 --capabil
 <a id="marble-dual-panda-A063"></a>
 ## `marble/dual-panda/A063`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12212,7 +12212,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A063 --capabil
 <a id="marble-dual-panda-A064"></a>
 ## `marble/dual-panda/A064`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12406,7 +12406,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A064 --capabil
 <a id="marble-dual-panda-A065"></a>
 ## `marble/dual-panda/A065`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12600,7 +12600,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A065 --capabil
 <a id="marble-dual-panda-A066"></a>
 ## `marble/dual-panda/A066`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12794,7 +12794,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A066 --capabil
 <a id="marble-dual-panda-A067"></a>
 ## `marble/dual-panda/A067`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -12991,7 +12991,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A067 --capabil
 <a id="marble-dual-panda-A068"></a>
 ## `marble/dual-panda/A068`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -13188,7 +13188,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A068 --capabil
 <a id="marble-dual-panda-A069"></a>
 ## `marble/dual-panda/A069`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -13384,7 +13384,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A069 --capabil
 <a id="marble-dual-panda-A070"></a>
 ## `marble/dual-panda/A070`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -13578,7 +13578,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A070 --capabil
 <a id="marble-dual-panda-A071"></a>
 ## `marble/dual-panda/A071`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -13772,7 +13772,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A071 --capabil
 <a id="marble-dual-panda-A072"></a>
 ## `marble/dual-panda/A072`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -13964,7 +13964,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A072 --capabil
 <a id="marble-dual-panda-A073"></a>
 ## `marble/dual-panda/A073`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -14160,7 +14160,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A073 --capabil
 <a id="marble-dual-panda-A074"></a>
 ## `marble/dual-panda/A074`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -14356,7 +14356,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A074 --capabil
 <a id="marble-dual-panda-A075"></a>
 ## `marble/dual-panda/A075`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -14550,7 +14550,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A075 --capabil
 <a id="marble-dual-panda-A076"></a>
 ## `marble/dual-panda/A076`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -14742,7 +14742,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A076 --capabil
 <a id="marble-dual-panda-A077"></a>
 ## `marble/dual-panda/A077`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -14935,7 +14935,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A077 --capabil
 <a id="marble-dual-panda-A078"></a>
 ## `marble/dual-panda/A078`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -15129,7 +15129,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A078 --capabil
 <a id="marble-dual-panda-A079"></a>
 ## `marble/dual-panda/A079`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -15324,7 +15324,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A079 --capabil
 <a id="marble-dual-panda-A080"></a>
 ## `marble/dual-panda/A080`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -15517,7 +15517,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A080 --capabil
 <a id="marble-dual-panda-A081"></a>
 ## `marble/dual-panda/A081`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -15710,7 +15710,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A081 --capabil
 <a id="marble-dual-panda-A082"></a>
 ## `marble/dual-panda/A082`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -15904,7 +15904,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A082 --capabil
 <a id="marble-dual-panda-A083"></a>
 ## `marble/dual-panda/A083`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -16100,7 +16100,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A083 --capabil
 <a id="marble-dual-panda-A084"></a>
 ## `marble/dual-panda/A084`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -16296,7 +16296,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A084 --capabil
 <a id="marble-dual-panda-A085"></a>
 ## `marble/dual-panda/A085`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -16491,7 +16491,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A085 --capabil
 <a id="marble-dual-panda-A086"></a>
 ## `marble/dual-panda/A086`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -16686,7 +16686,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A086 --capabil
 <a id="marble-dual-panda-A087"></a>
 ## `marble/dual-panda/A087`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -16879,7 +16879,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A087 --capabil
 <a id="marble-dual-panda-A088"></a>
 ## `marble/dual-panda/A088`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -17076,7 +17076,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A088 --capabil
 <a id="marble-dual-panda-A089"></a>
 ## `marble/dual-panda/A089`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -17270,7 +17270,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A089 --capabil
 <a id="marble-dual-panda-A090"></a>
 ## `marble/dual-panda/A090`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -17465,7 +17465,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A090 --capabil
 <a id="marble-dual-panda-A091"></a>
 ## `marble/dual-panda/A091`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -17663,7 +17663,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A091 --capabil
 <a id="marble-dual-panda-A092"></a>
 ## `marble/dual-panda/A092`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -17861,7 +17861,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A092 --capabil
 <a id="marble-dual-panda-A093"></a>
 ## `marble/dual-panda/A093`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -18061,7 +18061,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A093 --capabil
 <a id="marble-dual-panda-A094"></a>
 ## `marble/dual-panda/A094`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -18259,7 +18259,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A094 --capabil
 <a id="marble-dual-panda-A095"></a>
 ## `marble/dual-panda/A095`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -18455,7 +18455,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A095 --capabil
 <a id="marble-dual-panda-A096"></a>
 ## `marble/dual-panda/A096`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -18654,7 +18654,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A096 --capabil
 <a id="marble-dual-panda-A097"></a>
 ## `marble/dual-panda/A097`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -18850,7 +18850,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A097 --capabil
 <a id="marble-dual-panda-A098"></a>
 ## `marble/dual-panda/A098`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -19047,7 +19047,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A098 --capabil
 <a id="marble-dual-panda-A099"></a>
 ## `marble/dual-panda/A099`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json
@@ -19240,7 +19240,7 @@ python scripts/environment_runtime.py --task-id marble/dual-panda/A099 --capabil
 <a id="marble-dual-panda-A100"></a>
 ## `marble/dual-panda/A100`
 
-作者来源：`env/franka_marble/task.md`。Action size: 16; 7500 controls / 150 s; wall: 600 s.
+作者来源：[source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py)。Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 目标（源数据）：
 ```json

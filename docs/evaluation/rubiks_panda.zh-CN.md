@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="rubiks_panda-panda-C01"></a>
 ## `rubiks_panda/panda/C01`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -159,7 +159,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C01 --capabil
 <a id="rubiks_panda-panda-C02"></a>
 ## `rubiks_panda/panda/C02`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -309,7 +309,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C02 --capabil
 <a id="rubiks_panda-panda-C03"></a>
 ## `rubiks_panda/panda/C03`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -459,7 +459,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C03 --capabil
 <a id="rubiks_panda-panda-C04"></a>
 ## `rubiks_panda/panda/C04`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -609,7 +609,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C04 --capabil
 <a id="rubiks_panda-panda-C05"></a>
 ## `rubiks_panda/panda/C05`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -759,7 +759,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C05 --capabil
 <a id="rubiks_panda-panda-C06"></a>
 ## `rubiks_panda/panda/C06`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -909,7 +909,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C06 --capabil
 <a id="rubiks_panda-panda-C07"></a>
 ## `rubiks_panda/panda/C07`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1059,7 +1059,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C07 --capabil
 <a id="rubiks_panda-panda-C08"></a>
 ## `rubiks_panda/panda/C08`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1209,7 +1209,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C08 --capabil
 <a id="rubiks_panda-panda-C09"></a>
 ## `rubiks_panda/panda/C09`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1359,7 +1359,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C09 --capabil
 <a id="rubiks_panda-panda-C10"></a>
 ## `rubiks_panda/panda/C10`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1509,7 +1509,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C10 --capabil
 <a id="rubiks_panda-panda-C11"></a>
 ## `rubiks_panda/panda/C11`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1659,7 +1659,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C11 --capabil
 <a id="rubiks_panda-panda-C12"></a>
 ## `rubiks_panda/panda/C12`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1809,7 +1809,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C12 --capabil
 <a id="rubiks_panda-panda-C13"></a>
 ## `rubiks_panda/panda/C13`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1959,7 +1959,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C13 --capabil
 <a id="rubiks_panda-panda-C14"></a>
 ## `rubiks_panda/panda/C14`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2109,7 +2109,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C14 --capabil
 <a id="rubiks_panda-panda-C15"></a>
 ## `rubiks_panda/panda/C15`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2259,7 +2259,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C15 --capabil
 <a id="rubiks_panda-panda-C16"></a>
 ## `rubiks_panda/panda/C16`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2409,7 +2409,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C16 --capabil
 <a id="rubiks_panda-panda-C17"></a>
 ## `rubiks_panda/panda/C17`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2559,7 +2559,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C17 --capabil
 <a id="rubiks_panda-panda-C18"></a>
 ## `rubiks_panda/panda/C18`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2709,7 +2709,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C18 --capabil
 <a id="rubiks_panda-panda-C19"></a>
 ## `rubiks_panda/panda/C19`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2859,7 +2859,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C19 --capabil
 <a id="rubiks_panda-panda-C20"></a>
 ## `rubiks_panda/panda/C20`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3009,7 +3009,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C20 --capabil
 <a id="rubiks_panda-panda-C21"></a>
 ## `rubiks_panda/panda/C21`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3159,7 +3159,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C21 --capabil
 <a id="rubiks_panda-panda-C22"></a>
 ## `rubiks_panda/panda/C22`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3309,7 +3309,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C22 --capabil
 <a id="rubiks_panda-panda-C23"></a>
 ## `rubiks_panda/panda/C23`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3459,7 +3459,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C23 --capabil
 <a id="rubiks_panda-panda-C24"></a>
 ## `rubiks_panda/panda/C24`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3609,7 +3609,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C24 --capabil
 <a id="rubiks_panda-panda-C25"></a>
 ## `rubiks_panda/panda/C25`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3759,7 +3759,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C25 --capabil
 <a id="rubiks_panda-panda-C26"></a>
 ## `rubiks_panda/panda/C26`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3909,7 +3909,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C26 --capabil
 <a id="rubiks_panda-panda-C27"></a>
 ## `rubiks_panda/panda/C27`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4059,7 +4059,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C27 --capabil
 <a id="rubiks_panda-panda-C28"></a>
 ## `rubiks_panda/panda/C28`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4209,7 +4209,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C28 --capabil
 <a id="rubiks_panda-panda-C29"></a>
 ## `rubiks_panda/panda/C29`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4359,7 +4359,7 @@ python scripts/environment_runtime.py --task-id rubiks_panda/panda/C29 --capabil
 <a id="rubiks_panda-panda-C30"></a>
 ## `rubiks_panda/panda/C30`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json

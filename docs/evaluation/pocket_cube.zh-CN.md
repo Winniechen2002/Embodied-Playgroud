@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="pocket_cube-aloha-C01"></a>
 ## `pocket_cube/aloha/C01`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -225,7 +225,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C01 --capabili
 <a id="pocket_cube-dual-sharpa-C01"></a>
 ## `pocket_cube/dual-sharpa/C01`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -603,7 +603,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C01 --ca
 <a id="pocket_cube-aloha-C03"></a>
 ## `pocket_cube/aloha/C03`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -819,7 +819,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C03 --capabili
 <a id="pocket_cube-dual-sharpa-C03"></a>
 ## `pocket_cube/dual-sharpa/C03`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1197,7 +1197,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C03 --ca
 <a id="pocket_cube-aloha-C07"></a>
 ## `pocket_cube/aloha/C07`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1413,7 +1413,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C07 --capabili
 <a id="pocket_cube-dual-sharpa-C07"></a>
 ## `pocket_cube/dual-sharpa/C07`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1791,7 +1791,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C07 --ca
 <a id="pocket_cube-aloha-C08"></a>
 ## `pocket_cube/aloha/C08`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2007,7 +2007,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C08 --capabili
 <a id="pocket_cube-dual-sharpa-C08"></a>
 ## `pocket_cube/dual-sharpa/C08`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2385,7 +2385,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C08 --ca
 <a id="pocket_cube-aloha-C09"></a>
 ## `pocket_cube/aloha/C09`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2601,7 +2601,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C09 --capabili
 <a id="pocket_cube-dual-sharpa-C09"></a>
 ## `pocket_cube/dual-sharpa/C09`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2979,7 +2979,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C09 --ca
 <a id="pocket_cube-aloha-C10"></a>
 ## `pocket_cube/aloha/C10`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3195,7 +3195,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C10 --capabili
 <a id="pocket_cube-dual-sharpa-C10"></a>
 ## `pocket_cube/dual-sharpa/C10`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3573,7 +3573,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C10 --ca
 <a id="pocket_cube-aloha-C14"></a>
 ## `pocket_cube/aloha/C14`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3789,7 +3789,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C14 --capabili
 <a id="pocket_cube-dual-sharpa-C14"></a>
 ## `pocket_cube/dual-sharpa/C14`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4167,7 +4167,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C14 --ca
 <a id="pocket_cube-aloha-C15"></a>
 ## `pocket_cube/aloha/C15`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4383,7 +4383,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C15 --capabili
 <a id="pocket_cube-dual-sharpa-C15"></a>
 ## `pocket_cube/dual-sharpa/C15`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4761,7 +4761,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C15 --ca
 <a id="pocket_cube-aloha-C17"></a>
 ## `pocket_cube/aloha/C17`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4977,7 +4977,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C17 --capabili
 <a id="pocket_cube-dual-sharpa-C17"></a>
 ## `pocket_cube/dual-sharpa/C17`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5355,7 +5355,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/dual-sharpa/C17 --ca
 <a id="pocket_cube-aloha-C20"></a>
 ## `pocket_cube/aloha/C20`
 
-作者来源：`env/cube20/README.md`。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5571,7 +5571,7 @@ python scripts/environment_runtime.py --task-id pocket_cube/aloha/C20 --capabili
 <a id="pocket_cube-dual-sharpa-C20"></a>
 ## `pocket_cube/dual-sharpa/C20`
 
-作者来源：`env/cube20/README.md`。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py)。Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

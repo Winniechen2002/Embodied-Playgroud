@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="maniskill_long_horizon-fetch-L1"></a>
 ## `maniskill_long_horizon/fetch/L1`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -437,7 +437,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-everyday_robot_09-L2"></a>
 ## `maniskill_long_horizon/everyday_robot_09/L2`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 30; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 30; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1076,7 +1076,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-fetch-L3"></a>
 ## `maniskill_long_horizon/fetch/L3`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1579,7 +1579,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-everyday_robot_03-L4"></a>
 ## `maniskill_long_horizon/everyday_robot_03/L4`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 23; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 23; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2068,7 +2068,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-fetch-L5"></a>
 ## `maniskill_long_horizon/fetch/L5`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2615,7 +2615,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-fetch-L6"></a>
 ## `maniskill_long_horizon/fetch/L6`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3102,7 +3102,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-fetch-L7"></a>
 ## `maniskill_long_horizon/fetch/L7`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3611,7 +3611,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-fetch-L8"></a>
 ## `maniskill_long_horizon/fetch/L8`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4100,7 +4100,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-everyday_robot_01-L9"></a>
 ## `maniskill_long_horizon/everyday_robot_01/L9`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 29; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 29; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4740,7 +4740,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_long_horizon-everyday_robot_09-L10"></a>
 ## `maniskill_long_horizon/everyday_robot_09/L10`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 30; 6000 controls / 300 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json). Action size: 30; 6000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json

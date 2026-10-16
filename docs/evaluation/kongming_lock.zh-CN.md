@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="kongming_lock-dual-panda-A01"></a>
 ## `kongming_lock/dual-panda/A01`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -351,7 +351,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A01 --c
 <a id="kongming_lock-dual-panda-A02"></a>
 ## `kongming_lock/dual-panda/A02`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -693,7 +693,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A02 --c
 <a id="kongming_lock-dual-panda-A03"></a>
 ## `kongming_lock/dual-panda/A03`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1035,7 +1035,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A03 --c
 <a id="kongming_lock-dual-panda-A04"></a>
 ## `kongming_lock/dual-panda/A04`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1377,7 +1377,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A04 --c
 <a id="kongming_lock-dual-panda-A05"></a>
 ## `kongming_lock/dual-panda/A05`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1719,7 +1719,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A05 --c
 <a id="kongming_lock-dual-panda-A06"></a>
 ## `kongming_lock/dual-panda/A06`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2063,7 +2063,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A06 --c
 <a id="kongming_lock-dual-panda-A07"></a>
 ## `kongming_lock/dual-panda/A07`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2407,7 +2407,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A07 --c
 <a id="kongming_lock-dual-panda-A08"></a>
 ## `kongming_lock/dual-panda/A08`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2751,7 +2751,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A08 --c
 <a id="kongming_lock-dual-panda-A09"></a>
 ## `kongming_lock/dual-panda/A09`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3095,7 +3095,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A09 --c
 <a id="kongming_lock-dual-panda-A10"></a>
 ## `kongming_lock/dual-panda/A10`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3439,7 +3439,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A10 --c
 <a id="kongming_lock-dual-panda-A11"></a>
 ## `kongming_lock/dual-panda/A11`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3784,7 +3784,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A11 --c
 <a id="kongming_lock-dual-panda-A12"></a>
 ## `kongming_lock/dual-panda/A12`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4129,7 +4129,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A12 --c
 <a id="kongming_lock-dual-panda-A13"></a>
 ## `kongming_lock/dual-panda/A13`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4474,7 +4474,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A13 --c
 <a id="kongming_lock-dual-panda-A14"></a>
 ## `kongming_lock/dual-panda/A14`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4819,7 +4819,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A14 --c
 <a id="kongming_lock-dual-panda-A15"></a>
 ## `kongming_lock/dual-panda/A15`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5164,7 +5164,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/A15 --c
 <a id="kongming_lock-dual-panda-D01"></a>
 ## `kongming_lock/dual-panda/D01`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5506,7 +5506,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D01 --c
 <a id="kongming_lock-dual-panda-D02"></a>
 ## `kongming_lock/dual-panda/D02`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5848,7 +5848,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D02 --c
 <a id="kongming_lock-dual-panda-D03"></a>
 ## `kongming_lock/dual-panda/D03`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6190,7 +6190,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D03 --c
 <a id="kongming_lock-dual-panda-D04"></a>
 ## `kongming_lock/dual-panda/D04`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6532,7 +6532,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D04 --c
 <a id="kongming_lock-dual-panda-D05"></a>
 ## `kongming_lock/dual-panda/D05`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6874,7 +6874,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D05 --c
 <a id="kongming_lock-dual-panda-D06"></a>
 ## `kongming_lock/dual-panda/D06`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7218,7 +7218,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D06 --c
 <a id="kongming_lock-dual-panda-D07"></a>
 ## `kongming_lock/dual-panda/D07`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7562,7 +7562,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D07 --c
 <a id="kongming_lock-dual-panda-D08"></a>
 ## `kongming_lock/dual-panda/D08`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7906,7 +7906,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D08 --c
 <a id="kongming_lock-dual-panda-D09"></a>
 ## `kongming_lock/dual-panda/D09`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8250,7 +8250,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D09 --c
 <a id="kongming_lock-dual-panda-D10"></a>
 ## `kongming_lock/dual-panda/D10`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8594,7 +8594,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D10 --c
 <a id="kongming_lock-dual-panda-D11"></a>
 ## `kongming_lock/dual-panda/D11`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8939,7 +8939,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D11 --c
 <a id="kongming_lock-dual-panda-D12"></a>
 ## `kongming_lock/dual-panda/D12`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9284,7 +9284,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D12 --c
 <a id="kongming_lock-dual-panda-D13"></a>
 ## `kongming_lock/dual-panda/D13`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9629,7 +9629,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D13 --c
 <a id="kongming_lock-dual-panda-D14"></a>
 ## `kongming_lock/dual-panda/D14`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9974,7 +9974,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D14 --c
 <a id="kongming_lock-dual-panda-D15"></a>
 ## `kongming_lock/dual-panda/D15`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -10319,7 +10319,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-panda/D15 --c
 <a id="kongming_lock-dual-floating-sharpa-A01"></a>
 ## `kongming_lock/dual-floating-sharpa/A01`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -10875,7 +10875,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A02"></a>
 ## `kongming_lock/dual-floating-sharpa/A02`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -11431,7 +11431,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A03"></a>
 ## `kongming_lock/dual-floating-sharpa/A03`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -11987,7 +11987,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A04"></a>
 ## `kongming_lock/dual-floating-sharpa/A04`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -12543,7 +12543,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A05"></a>
 ## `kongming_lock/dual-floating-sharpa/A05`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -13099,7 +13099,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A06"></a>
 ## `kongming_lock/dual-floating-sharpa/A06`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -13657,7 +13657,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A07"></a>
 ## `kongming_lock/dual-floating-sharpa/A07`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -14215,7 +14215,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A08"></a>
 ## `kongming_lock/dual-floating-sharpa/A08`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -14773,7 +14773,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A09"></a>
 ## `kongming_lock/dual-floating-sharpa/A09`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -15331,7 +15331,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A10"></a>
 ## `kongming_lock/dual-floating-sharpa/A10`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -15889,7 +15889,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A11"></a>
 ## `kongming_lock/dual-floating-sharpa/A11`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -16448,7 +16448,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A12"></a>
 ## `kongming_lock/dual-floating-sharpa/A12`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -17007,7 +17007,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A13"></a>
 ## `kongming_lock/dual-floating-sharpa/A13`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -17566,7 +17566,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A14"></a>
 ## `kongming_lock/dual-floating-sharpa/A14`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -18125,7 +18125,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-A15"></a>
 ## `kongming_lock/dual-floating-sharpa/A15`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -18684,7 +18684,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D01"></a>
 ## `kongming_lock/dual-floating-sharpa/D01`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -19240,7 +19240,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D02"></a>
 ## `kongming_lock/dual-floating-sharpa/D02`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -19796,7 +19796,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D03"></a>
 ## `kongming_lock/dual-floating-sharpa/D03`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -20352,7 +20352,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D04"></a>
 ## `kongming_lock/dual-floating-sharpa/D04`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -20908,7 +20908,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D05"></a>
 ## `kongming_lock/dual-floating-sharpa/D05`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -21464,7 +21464,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D06"></a>
 ## `kongming_lock/dual-floating-sharpa/D06`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -22022,7 +22022,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D07"></a>
 ## `kongming_lock/dual-floating-sharpa/D07`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -22580,7 +22580,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D08"></a>
 ## `kongming_lock/dual-floating-sharpa/D08`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -23138,7 +23138,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D09"></a>
 ## `kongming_lock/dual-floating-sharpa/D09`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -23696,7 +23696,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D10"></a>
 ## `kongming_lock/dual-floating-sharpa/D10`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -24254,7 +24254,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D11"></a>
 ## `kongming_lock/dual-floating-sharpa/D11`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -24813,7 +24813,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D12"></a>
 ## `kongming_lock/dual-floating-sharpa/D12`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -25372,7 +25372,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D13"></a>
 ## `kongming_lock/dual-floating-sharpa/D13`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -25931,7 +25931,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D14"></a>
 ## `kongming_lock/dual-floating-sharpa/D14`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -26490,7 +26490,7 @@ python scripts/environment_runtime.py --task-id kongming_lock/dual-floating-shar
 <a id="kongming_lock-dual-floating-sharpa-D15"></a>
 ## `kongming_lock/dual-floating-sharpa/D15`
 
-作者来源：`env/kongming_lock/README.md`。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+作者来源：[source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py)。Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

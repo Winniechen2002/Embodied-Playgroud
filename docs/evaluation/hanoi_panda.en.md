@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="hanoi_panda-panda-H01"></a>
 ## `hanoi_panda/panda/H01`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -172,7 +172,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H02"></a>
 ## `hanoi_panda/panda/H02`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -335,7 +335,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H03"></a>
 ## `hanoi_panda/panda/H03`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -498,7 +498,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H04"></a>
 ## `hanoi_panda/panda/H04`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -661,7 +661,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H05"></a>
 ## `hanoi_panda/panda/H05`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -824,7 +824,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H06"></a>
 ## `hanoi_panda/panda/H06`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -987,7 +987,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H07"></a>
 ## `hanoi_panda/panda/H07`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1150,7 +1150,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H08"></a>
 ## `hanoi_panda/panda/H08`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1313,7 +1313,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H09"></a>
 ## `hanoi_panda/panda/H09`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1476,7 +1476,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H10"></a>
 ## `hanoi_panda/panda/H10`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1639,7 +1639,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H11"></a>
 ## `hanoi_panda/panda/H11`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1802,7 +1802,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H12"></a>
 ## `hanoi_panda/panda/H12`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1965,7 +1965,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H13"></a>
 ## `hanoi_panda/panda/H13`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2128,7 +2128,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H14"></a>
 ## `hanoi_panda/panda/H14`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2291,7 +2291,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H15"></a>
 ## `hanoi_panda/panda/H15`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2454,7 +2454,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H16"></a>
 ## `hanoi_panda/panda/H16`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2617,7 +2617,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H17"></a>
 ## `hanoi_panda/panda/H17`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2780,7 +2780,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H18"></a>
 ## `hanoi_panda/panda/H18`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2943,7 +2943,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H19"></a>
 ## `hanoi_panda/panda/H19`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3106,7 +3106,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H20"></a>
 ## `hanoi_panda/panda/H20`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3269,7 +3269,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H21"></a>
 ## `hanoi_panda/panda/H21`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3432,7 +3432,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H22"></a>
 ## `hanoi_panda/panda/H22`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3595,7 +3595,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H23"></a>
 ## `hanoi_panda/panda/H23`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3758,7 +3758,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H24"></a>
 ## `hanoi_panda/panda/H24`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3921,7 +3921,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H25"></a>
 ## `hanoi_panda/panda/H25`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4084,7 +4084,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H26"></a>
 ## `hanoi_panda/panda/H26`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4247,7 +4247,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H27"></a>
 ## `hanoi_panda/panda/H27`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4410,7 +4410,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H28"></a>
 ## `hanoi_panda/panda/H28`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4573,7 +4573,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H29"></a>
 ## `hanoi_panda/panda/H29`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4736,7 +4736,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H30"></a>
 ## `hanoi_panda/panda/H30`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4899,7 +4899,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H31"></a>
 ## `hanoi_panda/panda/H31`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5062,7 +5062,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H32"></a>
 ## `hanoi_panda/panda/H32`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5225,7 +5225,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H33"></a>
 ## `hanoi_panda/panda/H33`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5388,7 +5388,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H34"></a>
 ## `hanoi_panda/panda/H34`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5551,7 +5551,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H35"></a>
 ## `hanoi_panda/panda/H35`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5714,7 +5714,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H36"></a>
 ## `hanoi_panda/panda/H36`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5877,7 +5877,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H37"></a>
 ## `hanoi_panda/panda/H37`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6040,7 +6040,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H38"></a>
 ## `hanoi_panda/panda/H38`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6203,7 +6203,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H39"></a>
 ## `hanoi_panda/panda/H39`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6366,7 +6366,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_panda-panda-H40"></a>
 ## `hanoi_panda/panda/H40`
 
-Authoring provenance: `env/hanoi40/README.md`. Action size: 8; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 8; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json

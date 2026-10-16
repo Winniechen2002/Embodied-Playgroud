@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Private physical scoring fixtures, not client actions or task-solving trajectories."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 import platform
@@ -33,13 +32,11 @@ def held_washer(output):
         goal=e.snapshot();o=goal['objects']['washer'];r=e.report
         assert not e.freeze_dynamics and r['success'] and r['dwell']>=20 and not r['violations'],r
         assert o['robot_force']>.03 and np.linalg.norm(o['v'])<.025 and np.linalg.norm(o['w'])<.15
-        fingerprint=hashlib.sha256(json.dumps(e.task,sort_keys=True).encode()).hexdigest()
         output.mkdir(parents=True,exist_ok=True)
         for name,state in [('initial',initial),('goal_fixture',goal)]:
-            state['task_spec_sha256']=fingerprint
             (output/(name+'_state.json')).write_text(json.dumps(state)+'\n')
         result=dict(code='P10',physics_variant=0,passed=True,goal_passed=True,initial_passed=not e.oracle.assess(initial)['success'],
-            task_spec_sha256=fingerprint,platform=platform.platform(),physics_steps=e.physics_steps,
+            platform=platform.platform(),physics_steps=e.physics_steps,
             contact_force_n=o['robot_force'],linear_speed_m_s=float(np.linalg.norm(o['v'])),
             angular_speed_rad_s=float(np.linalg.norm(o['w'])),stable_control_intervals=r['dwell'],
             scope='Private initialized physical hold fixture; no solution trajectory; normal gravity and contacts',

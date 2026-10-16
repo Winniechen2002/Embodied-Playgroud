@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="marble-dual-panda-A001"></a>
 ## `marble/dual-panda/A001`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -202,7 +202,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A002"></a>
 ## `marble/dual-panda/A002`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -395,7 +395,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A003"></a>
 ## `marble/dual-panda/A003`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -589,7 +589,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A004"></a>
 ## `marble/dual-panda/A004`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -782,7 +782,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A005"></a>
 ## `marble/dual-panda/A005`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -975,7 +975,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A006"></a>
 ## `marble/dual-panda/A006`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -1168,7 +1168,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A007"></a>
 ## `marble/dual-panda/A007`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -1360,7 +1360,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A008"></a>
 ## `marble/dual-panda/A008`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -1552,7 +1552,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A009"></a>
 ## `marble/dual-panda/A009`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -1744,7 +1744,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A010"></a>
 ## `marble/dual-panda/A010`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -1936,7 +1936,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A011"></a>
 ## `marble/dual-panda/A011`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -2128,7 +2128,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A012"></a>
 ## `marble/dual-panda/A012`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -2321,7 +2321,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A013"></a>
 ## `marble/dual-panda/A013`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -2513,7 +2513,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A014"></a>
 ## `marble/dual-panda/A014`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -2707,7 +2707,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A015"></a>
 ## `marble/dual-panda/A015`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -2900,7 +2900,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A016"></a>
 ## `marble/dual-panda/A016`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -3092,7 +3092,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A017"></a>
 ## `marble/dual-panda/A017`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -3287,7 +3287,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A018"></a>
 ## `marble/dual-panda/A018`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -3479,7 +3479,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A019"></a>
 ## `marble/dual-panda/A019`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -3673,7 +3673,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A020"></a>
 ## `marble/dual-panda/A020`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -3866,7 +3866,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A021"></a>
 ## `marble/dual-panda/A021`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -4058,7 +4058,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A022"></a>
 ## `marble/dual-panda/A022`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -4250,7 +4250,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A023"></a>
 ## `marble/dual-panda/A023`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -4444,7 +4444,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A024"></a>
 ## `marble/dual-panda/A024`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -4640,7 +4640,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A025"></a>
 ## `marble/dual-panda/A025`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -4835,7 +4835,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A026"></a>
 ## `marble/dual-panda/A026`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -5031,7 +5031,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A027"></a>
 ## `marble/dual-panda/A027`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -5225,7 +5225,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A028"></a>
 ## `marble/dual-panda/A028`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -5420,7 +5420,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A029"></a>
 ## `marble/dual-panda/A029`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -5614,7 +5614,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A030"></a>
 ## `marble/dual-panda/A030`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -5808,7 +5808,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A031"></a>
 ## `marble/dual-panda/A031`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6001,7 +6001,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A032"></a>
 ## `marble/dual-panda/A032`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6194,7 +6194,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A033"></a>
 ## `marble/dual-panda/A033`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6388,7 +6388,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A034"></a>
 ## `marble/dual-panda/A034`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6582,7 +6582,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A035"></a>
 ## `marble/dual-panda/A035`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6778,7 +6778,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A036"></a>
 ## `marble/dual-panda/A036`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -6973,7 +6973,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A037"></a>
 ## `marble/dual-panda/A037`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -7165,7 +7165,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A038"></a>
 ## `marble/dual-panda/A038`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -7359,7 +7359,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A039"></a>
 ## `marble/dual-panda/A039`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -7553,7 +7553,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A040"></a>
 ## `marble/dual-panda/A040`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -7747,7 +7747,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A041"></a>
 ## `marble/dual-panda/A041`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -7939,7 +7939,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A042"></a>
 ## `marble/dual-panda/A042`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -8131,7 +8131,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A043"></a>
 ## `marble/dual-panda/A043`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -8327,7 +8327,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A044"></a>
 ## `marble/dual-panda/A044`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -8521,7 +8521,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A045"></a>
 ## `marble/dual-panda/A045`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -8716,7 +8716,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A046"></a>
 ## `marble/dual-panda/A046`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -8911,7 +8911,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A047"></a>
 ## `marble/dual-panda/A047`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -9106,7 +9106,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A048"></a>
 ## `marble/dual-panda/A048`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -9304,7 +9304,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A049"></a>
 ## `marble/dual-panda/A049`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -9496,7 +9496,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A050"></a>
 ## `marble/dual-panda/A050`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -9688,7 +9688,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A051"></a>
 ## `marble/dual-panda/A051`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -9883,7 +9883,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A052"></a>
 ## `marble/dual-panda/A052`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -10081,7 +10081,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A053"></a>
 ## `marble/dual-panda/A053`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -10273,7 +10273,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A054"></a>
 ## `marble/dual-panda/A054`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -10465,7 +10465,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A055"></a>
 ## `marble/dual-panda/A055`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -10659,7 +10659,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A056"></a>
 ## `marble/dual-panda/A056`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -10853,7 +10853,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A057"></a>
 ## `marble/dual-panda/A057`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -11049,7 +11049,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A058"></a>
 ## `marble/dual-panda/A058`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -11243,7 +11243,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A059"></a>
 ## `marble/dual-panda/A059`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -11437,7 +11437,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A060"></a>
 ## `marble/dual-panda/A060`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -11632,7 +11632,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A061"></a>
 ## `marble/dual-panda/A061`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -11824,7 +11824,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A062"></a>
 ## `marble/dual-panda/A062`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12018,7 +12018,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A063"></a>
 ## `marble/dual-panda/A063`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12212,7 +12212,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A064"></a>
 ## `marble/dual-panda/A064`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12406,7 +12406,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A065"></a>
 ## `marble/dual-panda/A065`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12600,7 +12600,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A066"></a>
 ## `marble/dual-panda/A066`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12794,7 +12794,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A067"></a>
 ## `marble/dual-panda/A067`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -12991,7 +12991,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A068"></a>
 ## `marble/dual-panda/A068`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -13188,7 +13188,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A069"></a>
 ## `marble/dual-panda/A069`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -13384,7 +13384,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A070"></a>
 ## `marble/dual-panda/A070`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -13578,7 +13578,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A071"></a>
 ## `marble/dual-panda/A071`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -13772,7 +13772,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A072"></a>
 ## `marble/dual-panda/A072`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -13964,7 +13964,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A073"></a>
 ## `marble/dual-panda/A073`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -14160,7 +14160,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A074"></a>
 ## `marble/dual-panda/A074`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -14356,7 +14356,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A075"></a>
 ## `marble/dual-panda/A075`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -14550,7 +14550,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A076"></a>
 ## `marble/dual-panda/A076`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -14742,7 +14742,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A077"></a>
 ## `marble/dual-panda/A077`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -14935,7 +14935,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A078"></a>
 ## `marble/dual-panda/A078`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -15129,7 +15129,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A079"></a>
 ## `marble/dual-panda/A079`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -15324,7 +15324,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A080"></a>
 ## `marble/dual-panda/A080`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -15517,7 +15517,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A081"></a>
 ## `marble/dual-panda/A081`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -15710,7 +15710,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A082"></a>
 ## `marble/dual-panda/A082`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -15904,7 +15904,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A083"></a>
 ## `marble/dual-panda/A083`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -16100,7 +16100,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A084"></a>
 ## `marble/dual-panda/A084`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -16296,7 +16296,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A085"></a>
 ## `marble/dual-panda/A085`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -16491,7 +16491,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A086"></a>
 ## `marble/dual-panda/A086`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -16686,7 +16686,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A087"></a>
 ## `marble/dual-panda/A087`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -16879,7 +16879,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A088"></a>
 ## `marble/dual-panda/A088`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -17076,7 +17076,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A089"></a>
 ## `marble/dual-panda/A089`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -17270,7 +17270,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A090"></a>
 ## `marble/dual-panda/A090`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -17465,7 +17465,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A091"></a>
 ## `marble/dual-panda/A091`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -17663,7 +17663,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A092"></a>
 ## `marble/dual-panda/A092`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -17861,7 +17861,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A093"></a>
 ## `marble/dual-panda/A093`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -18061,7 +18061,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A094"></a>
 ## `marble/dual-panda/A094`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -18259,7 +18259,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A095"></a>
 ## `marble/dual-panda/A095`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -18455,7 +18455,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A096"></a>
 ## `marble/dual-panda/A096`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -18654,7 +18654,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A097"></a>
 ## `marble/dual-panda/A097`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -18850,7 +18850,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A098"></a>
 ## `marble/dual-panda/A098`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -19047,7 +19047,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A099"></a>
 ## `marble/dual-panda/A099`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json
@@ -19240,7 +19240,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="marble-dual-panda-A100"></a>
 ## `marble/dual-panda/A100`
 
-Authoring provenance: `env/franka_marble/task.md`. Action size: 16; 7500 controls / 150 s; wall: 600 s.
+Authoring source: [source/agentbench/agentbench_mujoco/campaign_scene.py](../../source/agentbench/agentbench_mujoco/campaign_scene.py). Action size: 16; 7500 controls / 150 s; wall: 600 s.
 
 Goal (source data):
 ```json

@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="maniskill_long_horizon-fetch-L1"></a>
 ## `maniskill_long_horizon/fetch/L1`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -437,7 +437,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L1 
 <a id="maniskill_long_horizon-everyday_robot_09-L2"></a>
 ## `maniskill_long_horizon/everyday_robot_09/L2`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 30; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 30; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1076,7 +1076,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/everyday_
 <a id="maniskill_long_horizon-fetch-L3"></a>
 ## `maniskill_long_horizon/fetch/L3`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1579,7 +1579,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L3 
 <a id="maniskill_long_horizon-everyday_robot_03-L4"></a>
 ## `maniskill_long_horizon/everyday_robot_03/L4`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 23; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 23; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2068,7 +2068,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/everyday_
 <a id="maniskill_long_horizon-fetch-L5"></a>
 ## `maniskill_long_horizon/fetch/L5`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2615,7 +2615,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L5 
 <a id="maniskill_long_horizon-fetch-L6"></a>
 ## `maniskill_long_horizon/fetch/L6`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3102,7 +3102,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L6 
 <a id="maniskill_long_horizon-fetch-L7"></a>
 ## `maniskill_long_horizon/fetch/L7`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3611,7 +3611,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L7 
 <a id="maniskill_long_horizon-fetch-L8"></a>
 ## `maniskill_long_horizon/fetch/L8`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 13; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4100,7 +4100,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/fetch/L8 
 <a id="maniskill_long_horizon-everyday_robot_01-L9"></a>
 ## `maniskill_long_horizon/everyday_robot_01/L9`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 29; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 29; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4740,7 +4740,7 @@ python scripts/environment_runtime.py --task-id maniskill_long_horizon/everyday_
 <a id="maniskill_long_horizon-everyday_robot_09-L10"></a>
 ## `maniskill_long_horizon/everyday_robot_09/L10`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 30; 6000 controls / 300 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json)。Action size: 30; 6000 controls / 300 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

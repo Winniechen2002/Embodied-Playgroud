@@ -53,7 +53,7 @@ Levels do not authorize state writes or automatically install tools. The gateway
 
 ## Scope and validation
 
-This source distribution contains environments, the SDK, rules and supporting validation tools. It includes no model results, solution trajectories or leaderboard. See [validation](docs/environment_validation.en.md) for the engineering checks and their limits. Complete engineering qualification and third-party asset redistribution review remain incomplete; preparation of this source tree does not establish either.
+This source distribution contains environments, the SDK, rules and supporting validation tools. It includes no model results, solution trajectories or leaderboard. See [validation](docs/environment_validation.en.md) for the engineering checks and their limits. Complete engineering qualification remains incomplete. The maintainer has approved distribution of the included asset bundle under its original applicable licenses; see the asset license inventory.
 
 ## License
 

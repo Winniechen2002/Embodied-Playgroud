@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="rubiks_panda-panda-C01"></a>
 ## `rubiks_panda/panda/C01`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -159,7 +159,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C02"></a>
 ## `rubiks_panda/panda/C02`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -309,7 +309,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C03"></a>
 ## `rubiks_panda/panda/C03`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -459,7 +459,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C04"></a>
 ## `rubiks_panda/panda/C04`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -609,7 +609,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C05"></a>
 ## `rubiks_panda/panda/C05`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -759,7 +759,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C06"></a>
 ## `rubiks_panda/panda/C06`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -909,7 +909,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C07"></a>
 ## `rubiks_panda/panda/C07`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1059,7 +1059,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C08"></a>
 ## `rubiks_panda/panda/C08`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1209,7 +1209,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C09"></a>
 ## `rubiks_panda/panda/C09`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1359,7 +1359,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C10"></a>
 ## `rubiks_panda/panda/C10`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1509,7 +1509,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C11"></a>
 ## `rubiks_panda/panda/C11`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1659,7 +1659,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C12"></a>
 ## `rubiks_panda/panda/C12`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1809,7 +1809,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C13"></a>
 ## `rubiks_panda/panda/C13`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1959,7 +1959,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C14"></a>
 ## `rubiks_panda/panda/C14`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2109,7 +2109,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C15"></a>
 ## `rubiks_panda/panda/C15`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2259,7 +2259,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C16"></a>
 ## `rubiks_panda/panda/C16`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2409,7 +2409,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C17"></a>
 ## `rubiks_panda/panda/C17`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2559,7 +2559,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C18"></a>
 ## `rubiks_panda/panda/C18`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2709,7 +2709,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C19"></a>
 ## `rubiks_panda/panda/C19`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2859,7 +2859,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C20"></a>
 ## `rubiks_panda/panda/C20`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3009,7 +3009,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C21"></a>
 ## `rubiks_panda/panda/C21`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3159,7 +3159,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C22"></a>
 ## `rubiks_panda/panda/C22`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3309,7 +3309,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C23"></a>
 ## `rubiks_panda/panda/C23`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3459,7 +3459,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C24"></a>
 ## `rubiks_panda/panda/C24`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3609,7 +3609,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C25"></a>
 ## `rubiks_panda/panda/C25`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3759,7 +3759,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C26"></a>
 ## `rubiks_panda/panda/C26`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3909,7 +3909,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C27"></a>
 ## `rubiks_panda/panda/C27`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4059,7 +4059,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C28"></a>
 ## `rubiks_panda/panda/C28`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4209,7 +4209,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C29"></a>
 ## `rubiks_panda/panda/C29`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4359,7 +4359,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_panda-panda-C30"></a>
 ## `rubiks_panda/panda/C30`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 8; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json

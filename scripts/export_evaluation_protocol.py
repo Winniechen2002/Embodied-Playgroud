@@ -71,7 +71,7 @@ def artifacts(base_seed=0):
                 anchor=row['task_id'].replace('/','-')
                 budget=row['budgets']
                 lines.extend([f'<a id="{anchor}"></a>',f'## `{row["task_id"]}`','',
-                    (f'Authoring provenance: `{row["authoring_source"]}`. ' if ix==0 else f'作者来源：`{row["authoring_source"]}`。')+
+                    (f'Authoring source: [{row["authoring_source"]}](../../{row["authoring_source"]}). ' if ix==0 else f'作者来源：[{row["authoring_source"]}](../../{row["authoring_source"]})。')+
                     f'Action size: {row["action_size"]}; {budget["max_steps"]} controls / {budget["simulation_seconds"]} s; wall: {budget["wall_seconds"]} s.',
                     '',('Goal (source data):' if ix==0 else '目标（源数据）：'),'```json',
                     json.dumps(row['goal'],ensure_ascii=False,sort_keys=True),'```','',

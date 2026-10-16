@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="bookshelf-dual-panda-BooksTableD1"></a>
 ## `bookshelf/dual-panda/BooksTableD1`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 2700 controls / 90.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 2700 controls / 90.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -212,7 +212,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-BooksTableD2"></a>
 ## `bookshelf/dual-panda/BooksTableD2`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 3900 controls / 130.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 3900 controls / 130.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -415,7 +415,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-BooksTableD3"></a>
 ## `bookshelf/dual-panda/BooksTableD3`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 5700 controls / 190.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 5700 controls / 190.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -618,7 +618,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-BooksTableD4"></a>
 ## `bookshelf/dual-panda/BooksTableD4`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 6900 controls / 230.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 6900 controls / 230.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -821,7 +821,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfTableD1"></a>
 ## `bookshelf/dual-panda/ShelfTableD1`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 5400 controls / 180.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 5400 controls / 180.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1024,7 +1024,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfTableD2"></a>
 ## `bookshelf/dual-panda/ShelfTableD2`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 9300 controls / 310.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 9300 controls / 310.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1227,7 +1227,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfTableD3"></a>
 ## `bookshelf/dual-panda/ShelfTableD3`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 10500 controls / 350.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 10500 controls / 350.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1430,7 +1430,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfTableD4"></a>
 ## `bookshelf/dual-panda/ShelfTableD4`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 11700 controls / 390.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 11700 controls / 390.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1633,7 +1633,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateD1"></a>
 ## `bookshelf/dual-panda/ShelfCrateD1`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 6000 controls / 200.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 6000 controls / 200.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1836,7 +1836,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateD2"></a>
 ## `bookshelf/dual-panda/ShelfCrateD2`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 7200 controls / 240.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 7200 controls / 240.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2039,7 +2039,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateD3"></a>
 ## `bookshelf/dual-panda/ShelfCrateD3`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2242,7 +2242,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateD4"></a>
 ## `bookshelf/dual-panda/ShelfCrateD4`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 10200 controls / 340.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 10200 controls / 340.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2445,7 +2445,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateFixD1"></a>
 ## `bookshelf/dual-panda/ShelfCrateFixD1`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 1500 controls / 50.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 1500 controls / 50.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2648,7 +2648,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateFixD2"></a>
 ## `bookshelf/dual-panda/ShelfCrateFixD2`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 7200 controls / 240.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 7200 controls / 240.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2851,7 +2851,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateFixD3"></a>
 ## `bookshelf/dual-panda/ShelfCrateFixD3`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3054,7 +3054,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-ShelfCrateFixD4"></a>
 ## `bookshelf/dual-panda/ShelfCrateFixD4`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 9000 controls / 300.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3257,7 +3257,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-TableCleanD1"></a>
 ## `bookshelf/dual-panda/TableCleanD1`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 3900 controls / 130.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 3900 controls / 130.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3460,7 +3460,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-TableCleanD2"></a>
 ## `bookshelf/dual-panda/TableCleanD2`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 6900 controls / 230.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 6900 controls / 230.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3663,7 +3663,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-TableCleanD3"></a>
 ## `bookshelf/dual-panda/TableCleanD3`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 12300 controls / 410.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 12300 controls / 410.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3866,7 +3866,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="bookshelf-dual-panda-TableCleanD4"></a>
 ## `bookshelf/dual-panda/TableCleanD4`
 
-Authoring provenance: `env/organize_bookshelf/task.md`. Action size: 16; 12300 controls / 410.0 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py](../../source/agentbench/agentbench/tasks/manager_based/table_top_manipulation/config/organize_bookshelf/catalog.py). Action size: 16; 12300 controls / 410.0 s; wall: 3600 s.
 
 Goal (source data):
 ```json

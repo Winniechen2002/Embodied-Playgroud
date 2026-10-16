@@ -53,7 +53,7 @@ python scripts/environment_client.py /tmp/agentbench-session/session.json
 
 ## 范围与验证
 
-本源码版本包含环境、SDK、规则及配套验证工具，不含模型结果、解题轨迹或排行榜。[验证说明](docs/environment_validation.zh-CN.md)列出工程检查及其局限。完整工程验收和第三方资产再分发审查尚未完成；整理源码目录并不代表这两项已通过。
+本源码版本包含环境、SDK、规则及配套验证工具，不含模型结果、解题轨迹或排行榜。[验证说明](docs/environment_validation.zh-CN.md)列出工程检查及其局限。完整工程验收尚未完成。维护者已确认随本源码提供的完整资产包可按原有适用许可证分发，详见资产许可清单。
 
 ## 许可
 

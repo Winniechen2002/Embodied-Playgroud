@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="kongming_lock-dual-panda-A01"></a>
 ## `kongming_lock/dual-panda/A01`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -351,7 +351,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A02"></a>
 ## `kongming_lock/dual-panda/A02`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -693,7 +693,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A03"></a>
 ## `kongming_lock/dual-panda/A03`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1035,7 +1035,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A04"></a>
 ## `kongming_lock/dual-panda/A04`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1377,7 +1377,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A05"></a>
 ## `kongming_lock/dual-panda/A05`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1719,7 +1719,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A06"></a>
 ## `kongming_lock/dual-panda/A06`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2063,7 +2063,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A07"></a>
 ## `kongming_lock/dual-panda/A07`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2407,7 +2407,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A08"></a>
 ## `kongming_lock/dual-panda/A08`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2751,7 +2751,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A09"></a>
 ## `kongming_lock/dual-panda/A09`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3095,7 +3095,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A10"></a>
 ## `kongming_lock/dual-panda/A10`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3439,7 +3439,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A11"></a>
 ## `kongming_lock/dual-panda/A11`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3784,7 +3784,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A12"></a>
 ## `kongming_lock/dual-panda/A12`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4129,7 +4129,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A13"></a>
 ## `kongming_lock/dual-panda/A13`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4474,7 +4474,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A14"></a>
 ## `kongming_lock/dual-panda/A14`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4819,7 +4819,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-A15"></a>
 ## `kongming_lock/dual-panda/A15`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5164,7 +5164,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D01"></a>
 ## `kongming_lock/dual-panda/D01`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5506,7 +5506,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D02"></a>
 ## `kongming_lock/dual-panda/D02`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5848,7 +5848,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D03"></a>
 ## `kongming_lock/dual-panda/D03`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6190,7 +6190,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D04"></a>
 ## `kongming_lock/dual-panda/D04`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6532,7 +6532,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D05"></a>
 ## `kongming_lock/dual-panda/D05`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6874,7 +6874,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D06"></a>
 ## `kongming_lock/dual-panda/D06`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7218,7 +7218,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D07"></a>
 ## `kongming_lock/dual-panda/D07`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7562,7 +7562,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D08"></a>
 ## `kongming_lock/dual-panda/D08`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7906,7 +7906,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D09"></a>
 ## `kongming_lock/dual-panda/D09`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8250,7 +8250,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D10"></a>
 ## `kongming_lock/dual-panda/D10`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8594,7 +8594,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D11"></a>
 ## `kongming_lock/dual-panda/D11`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8939,7 +8939,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D12"></a>
 ## `kongming_lock/dual-panda/D12`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9284,7 +9284,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D13"></a>
 ## `kongming_lock/dual-panda/D13`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9629,7 +9629,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D14"></a>
 ## `kongming_lock/dual-panda/D14`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9974,7 +9974,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-panda-D15"></a>
 ## `kongming_lock/dual-panda/D15`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 16; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -10319,7 +10319,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A01"></a>
 ## `kongming_lock/dual-floating-sharpa/A01`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -10875,7 +10875,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A02"></a>
 ## `kongming_lock/dual-floating-sharpa/A02`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -11431,7 +11431,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A03"></a>
 ## `kongming_lock/dual-floating-sharpa/A03`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -11987,7 +11987,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A04"></a>
 ## `kongming_lock/dual-floating-sharpa/A04`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -12543,7 +12543,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A05"></a>
 ## `kongming_lock/dual-floating-sharpa/A05`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -13099,7 +13099,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A06"></a>
 ## `kongming_lock/dual-floating-sharpa/A06`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -13657,7 +13657,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A07"></a>
 ## `kongming_lock/dual-floating-sharpa/A07`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -14215,7 +14215,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A08"></a>
 ## `kongming_lock/dual-floating-sharpa/A08`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -14773,7 +14773,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A09"></a>
 ## `kongming_lock/dual-floating-sharpa/A09`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -15331,7 +15331,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A10"></a>
 ## `kongming_lock/dual-floating-sharpa/A10`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -15889,7 +15889,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A11"></a>
 ## `kongming_lock/dual-floating-sharpa/A11`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -16448,7 +16448,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A12"></a>
 ## `kongming_lock/dual-floating-sharpa/A12`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -17007,7 +17007,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A13"></a>
 ## `kongming_lock/dual-floating-sharpa/A13`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -17566,7 +17566,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A14"></a>
 ## `kongming_lock/dual-floating-sharpa/A14`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -18125,7 +18125,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-A15"></a>
 ## `kongming_lock/dual-floating-sharpa/A15`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -18684,7 +18684,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D01"></a>
 ## `kongming_lock/dual-floating-sharpa/D01`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -19240,7 +19240,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D02"></a>
 ## `kongming_lock/dual-floating-sharpa/D02`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -19796,7 +19796,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D03"></a>
 ## `kongming_lock/dual-floating-sharpa/D03`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -20352,7 +20352,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D04"></a>
 ## `kongming_lock/dual-floating-sharpa/D04`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -20908,7 +20908,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D05"></a>
 ## `kongming_lock/dual-floating-sharpa/D05`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -21464,7 +21464,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D06"></a>
 ## `kongming_lock/dual-floating-sharpa/D06`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -22022,7 +22022,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D07"></a>
 ## `kongming_lock/dual-floating-sharpa/D07`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -22580,7 +22580,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D08"></a>
 ## `kongming_lock/dual-floating-sharpa/D08`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -23138,7 +23138,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D09"></a>
 ## `kongming_lock/dual-floating-sharpa/D09`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -23696,7 +23696,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D10"></a>
 ## `kongming_lock/dual-floating-sharpa/D10`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -24254,7 +24254,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D11"></a>
 ## `kongming_lock/dual-floating-sharpa/D11`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -24813,7 +24813,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D12"></a>
 ## `kongming_lock/dual-floating-sharpa/D12`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -25372,7 +25372,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D13"></a>
 ## `kongming_lock/dual-floating-sharpa/D13`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -25931,7 +25931,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D14"></a>
 ## `kongming_lock/dual-floating-sharpa/D14`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -26490,7 +26490,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="kongming_lock-dual-floating-sharpa-D15"></a>
 ## `kongming_lock/dual-floating-sharpa/D15`
 
-Authoring provenance: `env/kongming_lock/README.md`. Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/kongming_cases.py](../../source/agentbench_platform/agentbench_platform/kongming_cases.py). Action size: 56; 36000 controls / 1200 s; wall: 3600 s.
 
 Goal (source data):
 ```json

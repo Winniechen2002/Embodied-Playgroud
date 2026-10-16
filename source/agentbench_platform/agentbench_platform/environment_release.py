@@ -122,8 +122,19 @@ def inventory(root=ROOT):
     return rows
 
 
+def asset_distribution(root=ROOT):
+    """Report the maintainer's distribution decision without changing licenses."""
+    path=Path(root)/'env/runtime/license-decisions.json'
+    data=json.loads(path.read_text()) if path.is_file() else {}
+    decision=data.get('asset_distribution',{})
+    approved=(data.get('asset_distribution_ready') is True
+              and decision.get('status')=='maintainer_approved')
+    return dict(status='maintainer_approved' if approved else 'requires_individual_review',
+                original_licenses_retained=True,decision=decision)
+
+
 def license_inventory(files,root=ROOT):
-    """Record actual notices and unresolved author declarations without relicensing."""
+    """Record notices and maintainer distribution approval without relicensing."""
     notices={name:record for name,record in files.items()
              if Path(name).name.upper().startswith(('LICENSE','NOTICE','COPYING'))
              or name.startswith('LICENSES/') or name=='THIRD_PARTY_NOTICES.md'}
@@ -143,11 +154,12 @@ def license_inventory(files,root=ROOT):
         issues.append('Inherited BSD-3-Clause file and Apache-2.0 package scope require an explicit project license declaration')
     if not any((Path(root)/name).is_file() for name in ('LICENSE','LICENSE.txt','LICENSE.md','COPYING')):
         issues.append('No repository-level license text found; project redistribution grant requires maintainer confirmation')
-    return dict(status='unqualified',notices=notices,issues=issues,
+    distribution=asset_distribution(root)
+    return dict(status='maintainer_approved' if scoped and not issues and distribution['status']=='maintainer_approved' else 'unqualified',notices=notices,issues=issues,
         project_license='confirmed' if scoped else 'unconfirmed',
         copyright_holder=project.get('copyright_holder'),
-        third_party_redistribution='requires_individual_review',
-        scope='Notice inventory only; every redistributed asset still requires provenance verification')
+        third_party_redistribution=distribution['status'],asset_distribution=distribution,
+        scope='Original licenses and notices retained; distribution approval is a maintainer declaration, separate from engineering qualification')
 
 
 def bilingual_checks():

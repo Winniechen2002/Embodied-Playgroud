@@ -7,7 +7,7 @@
     "env/maniskill_lgd/agentbench_maniskill/checks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "env/maniskill_lgd/agentbench_maniskill/checks/geometry_dynamics.py": "8e7fa95abc980615d4e0740d2f95471755359df1e36cefc6df3f60ebecbee938",
     "env/maniskill_lgd/agentbench_maniskill/checks/long_horizon.py": "119094efeee097cdab551e07dea35c6cb40afe5dcdc25e1111098ee369ce13a5",
-    "env/maniskill_lgd/agentbench_maniskill/checks/run.py": "105fc224f5ceed8cf1ec72794258c7b35f34742783255f3a928fc99abbb5bdff",
+    "env/maniskill_lgd/agentbench_maniskill/checks/run.py": "3cd2c57538040ff75ffb5f2cdc06fa570c4080e9923e0f1ef9377d01722e5c07",
     "env/maniskill_lgd/agentbench_maniskill/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "env/maniskill_lgd/agentbench_maniskill/common/asset_loader.py": "f7cd21e3108aff8f5da4453784335a624ef85c1a0a8f5bfef8b5be21781d830b",
     "env/maniskill_lgd/agentbench_maniskill/common/collision_filters.py": "f05c13487ae3ca34bd5f5c5dfdbbc1597f7ca3eced5fa65c5861fd8e545961b8",
@@ -31,7 +31,7 @@
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/oracle.py": "208d0e6966ac015a32fc1672f9db3930b264b8285ef41772617a5c8a747dd80d",
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/paths.py": "2704bed3a2b621379df27e9b6ca653cb95b461364114457c66df369b9668ec8e",
     "env/maniskill_lgd/agentbench_maniskill/long_horizon/tasks.json": "cd2cef6f07a3345cce76fe483b0e6dc9c68258fc48ef83d139e1475414496973",
-    "env/maniskill_lgd/agentbench_maniskill/runtime.py": "454ac33bb13cd9320871700cf4ea1c5122cae6eecd206e68b629172f7a741a6b",
+    "env/maniskill_lgd/agentbench_maniskill/runtime.py": "809cbe5ed5fdb94775d385a5e3ca03f6ebc0a5d799ccb02609f4ffa9495da3f9",
     "source/agentbench/agentbench/__init__.py": "e892531f0c2f2679a8da0852f3ba2a3e2e77d63ec957f5026a8f26e34ebcbe8c",
     "source/agentbench/agentbench/assets/__init__.py": "2a830b6980d14f89087a8ead72f4b830ddb3d06f83395ca7c628d3570a8b5e2d",
     "source/agentbench/agentbench/robot_agents/__init__.py": "c0b254482200e3a43c2946adba728c04ecfb6930b2874d3b6dfefae759ef186f",
@@ -10725,6 +10725,20 @@
       "30ac060cb91145194617ba083bb46657ba71c565419bba8d01630a43bd2dcd21"
     ],
     "validation_limitation": "Native action records are preserved from the original source projection. Source hashes are rebound only for public-release removal of reference policies and authoring hints; this is not new native simulator qualification.",
-    "excluded_source_scope": "Reference policies and legacy environments outside the 410-task catalog only."
+    "excluded_source_scope": "Reference policies and legacy environments outside the 410-task catalog only.",
+    "fixture_metadata_update": {
+      "scope": "Remove task-definition hashes from saved diagnostic fixtures and their checks; native actions, controllers, task definitions and measured records unchanged",
+      "native_measurements_rerun": false,
+      "sources": {
+        "env/maniskill_lgd/agentbench_maniskill/checks/run.py": {
+          "before_sha256": "105fc224f5ceed8cf1ec72794258c7b35f34742783255f3a928fc99abbb5bdff",
+          "after_sha256": "3cd2c57538040ff75ffb5f2cdc06fa570c4080e9923e0f1ef9377d01722e5c07"
+        },
+        "env/maniskill_lgd/agentbench_maniskill/runtime.py": {
+          "before_sha256": "454ac33bb13cd9320871700cf4ea1c5122cae6eecd206e68b629172f7a741a6b",
+          "after_sha256": "809cbe5ed5fdb94775d385a5e3ca03f6ebc0a5d799ccb02609f4ffa9495da3f9"
+        }
+      }
+    }
   }
 }

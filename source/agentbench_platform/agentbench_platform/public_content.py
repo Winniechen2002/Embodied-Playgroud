@@ -8,7 +8,7 @@ import subprocess
 import tarfile
 from urllib.parse import unquote,urlsplit
 from .environment_catalog import ROOT,digest
-from .environment_release import source_files,license_inventory,export_content
+from .environment_release import source_files,license_inventory,export_content,asset_distribution
 
 
 def public_files(root=ROOT):
@@ -47,7 +47,7 @@ def audit_maniskill_archive(root):
             if name.startswith('notices/'):notices.append(name)
     failures.extend('missing_member:'+name for name in sorted(set(expected)-seen))
     return dict(status='passed_integrity' if not failures else 'failed',file_count=len(seen),
-        sha256=manifest['bundle_sha256'],failures=failures,notices=notices,redistribution='unqualified',
+        sha256=manifest['bundle_sha256'],failures=failures,notices=notices,redistribution=asset_distribution(root)['status'],
         limitation='Archive and file integrity do not establish third-party redistribution rights')
 
 
@@ -133,8 +133,9 @@ def audit(root=ROOT):
         provenance=[n for n in files if Path(n).name.upper().startswith('UPSTREAM')
             and any(i.startswith(str(Path(n).parent)+'/') for i in items)]
         assets.append(dict(path=prefix,file_count=len(items),sha256=digest({n:files[n] for n in items}),
-            notices=notices,provenance=provenance,redistribution='unverified',
-            blocker='Confirm upstream revision, scope of license and redistribution rights; notices alone are insufficient'))
+            notices=notices,provenance=provenance,redistribution=licenses['third_party_redistribution'],
+            original_licenses_retained=True,
+            blocker=None if licenses['third_party_redistribution']=='maintainer_approved' else 'Confirm asset redistribution scope'))
     pins=[]
     for name in files:
         if Path(name).name!='UPSTREAM.json':continue
@@ -162,4 +163,4 @@ def audit(root=ROOT):
         issues=issues,upstream_documentation_links=upstream_documentation_links,external_references=external,assets=assets,licenses=licenses,upstream_pins=pins,embedded_assets=dict(maniskill=embedded),
         optional_submodules=submodules,source_release_ready=False,distribution_validation='not_executed',
         limitations=['Static imports do not verify dynamic imports or remote asset resolution',
-                    'Asset license scope and provenance require explicit maintainer evidence'])
+                    'Asset distribution approval records the maintainer decision under original licenses; it is not an independent legal audit'])

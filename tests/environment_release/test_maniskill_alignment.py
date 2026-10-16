@@ -14,6 +14,15 @@ from agentbench_maniskill.common.evaluation import lighting_parameters
 from agentbench_maniskill.geometry_dynamics.oracle import TaskOracle
 
 
+def test_saved_fixtures_run_current_scoring_without_task_hashes():
+    from agentbench_maniskill.checks.run import run
+    for path in (ROOT/'env/maniskill_lgd/agentbench_maniskill/evidence').rglob('*.json'):
+        assert 'task_spec_sha256' not in json.loads(path.read_text())
+    result = run()
+    assert result['passed'], [row for row in result['reports'] if not row['passed']]
+    assert result['configurations'] == 50
+
+
 def fixture(code='P3'):
     _,task=specification(code)
     n=int(code[1:])+(10 if code.startswith('D') else 0)

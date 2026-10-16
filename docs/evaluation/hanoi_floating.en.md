@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="hanoi_floating-floating-sharpa-H01"></a>
 ## `hanoi_floating/floating-sharpa/H01`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -253,7 +253,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H02"></a>
 ## `hanoi_floating/floating-sharpa/H02`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -497,7 +497,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H03"></a>
 ## `hanoi_floating/floating-sharpa/H03`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -741,7 +741,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H04"></a>
 ## `hanoi_floating/floating-sharpa/H04`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -985,7 +985,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H05"></a>
 ## `hanoi_floating/floating-sharpa/H05`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1229,7 +1229,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H06"></a>
 ## `hanoi_floating/floating-sharpa/H06`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1473,7 +1473,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H07"></a>
 ## `hanoi_floating/floating-sharpa/H07`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1717,7 +1717,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H08"></a>
 ## `hanoi_floating/floating-sharpa/H08`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1961,7 +1961,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H09"></a>
 ## `hanoi_floating/floating-sharpa/H09`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2205,7 +2205,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H10"></a>
 ## `hanoi_floating/floating-sharpa/H10`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2449,7 +2449,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H11"></a>
 ## `hanoi_floating/floating-sharpa/H11`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2693,7 +2693,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H12"></a>
 ## `hanoi_floating/floating-sharpa/H12`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2937,7 +2937,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H13"></a>
 ## `hanoi_floating/floating-sharpa/H13`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3181,7 +3181,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H14"></a>
 ## `hanoi_floating/floating-sharpa/H14`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3425,7 +3425,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H15"></a>
 ## `hanoi_floating/floating-sharpa/H15`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3669,7 +3669,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H16"></a>
 ## `hanoi_floating/floating-sharpa/H16`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3913,7 +3913,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H17"></a>
 ## `hanoi_floating/floating-sharpa/H17`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4157,7 +4157,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H18"></a>
 ## `hanoi_floating/floating-sharpa/H18`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4401,7 +4401,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H19"></a>
 ## `hanoi_floating/floating-sharpa/H19`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4645,7 +4645,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H20"></a>
 ## `hanoi_floating/floating-sharpa/H20`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4889,7 +4889,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H21"></a>
 ## `hanoi_floating/floating-sharpa/H21`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5133,7 +5133,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H22"></a>
 ## `hanoi_floating/floating-sharpa/H22`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5377,7 +5377,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H23"></a>
 ## `hanoi_floating/floating-sharpa/H23`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5621,7 +5621,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H24"></a>
 ## `hanoi_floating/floating-sharpa/H24`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5865,7 +5865,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H25"></a>
 ## `hanoi_floating/floating-sharpa/H25`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6109,7 +6109,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H26"></a>
 ## `hanoi_floating/floating-sharpa/H26`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6353,7 +6353,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H27"></a>
 ## `hanoi_floating/floating-sharpa/H27`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6597,7 +6597,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H28"></a>
 ## `hanoi_floating/floating-sharpa/H28`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -6841,7 +6841,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H29"></a>
 ## `hanoi_floating/floating-sharpa/H29`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7085,7 +7085,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H30"></a>
 ## `hanoi_floating/floating-sharpa/H30`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7329,7 +7329,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H31"></a>
 ## `hanoi_floating/floating-sharpa/H31`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7573,7 +7573,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H32"></a>
 ## `hanoi_floating/floating-sharpa/H32`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -7817,7 +7817,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H33"></a>
 ## `hanoi_floating/floating-sharpa/H33`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8061,7 +8061,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H34"></a>
 ## `hanoi_floating/floating-sharpa/H34`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8305,7 +8305,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H35"></a>
 ## `hanoi_floating/floating-sharpa/H35`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8549,7 +8549,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H36"></a>
 ## `hanoi_floating/floating-sharpa/H36`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -8793,7 +8793,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H37"></a>
 ## `hanoi_floating/floating-sharpa/H37`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9037,7 +9037,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H38"></a>
 ## `hanoi_floating/floating-sharpa/H38`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9281,7 +9281,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H39"></a>
 ## `hanoi_floating/floating-sharpa/H39`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -9525,7 +9525,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="hanoi_floating-floating-sharpa-H40"></a>
 ## `hanoi_floating/floating-sharpa/H40`
 
-Authoring provenance: `env/sharpa_hanoi_no_arm40/README.md`. Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py). Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 Goal (source data):
 ```json

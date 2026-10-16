@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="rubiks_sharpa-floating-sharpa-C01"></a>
 ## `rubiks_sharpa/floating-sharpa/C01`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -266,7 +266,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C02"></a>
 ## `rubiks_sharpa/floating-sharpa/C02`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -523,7 +523,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C03"></a>
 ## `rubiks_sharpa/floating-sharpa/C03`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -780,7 +780,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C04"></a>
 ## `rubiks_sharpa/floating-sharpa/C04`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1037,7 +1037,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C05"></a>
 ## `rubiks_sharpa/floating-sharpa/C05`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1294,7 +1294,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C06"></a>
 ## `rubiks_sharpa/floating-sharpa/C06`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1551,7 +1551,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C07"></a>
 ## `rubiks_sharpa/floating-sharpa/C07`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -1808,7 +1808,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C08"></a>
 ## `rubiks_sharpa/floating-sharpa/C08`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2065,7 +2065,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C09"></a>
 ## `rubiks_sharpa/floating-sharpa/C09`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2322,7 +2322,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C0
 <a id="rubiks_sharpa-floating-sharpa-C10"></a>
 ## `rubiks_sharpa/floating-sharpa/C10`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2579,7 +2579,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C11"></a>
 ## `rubiks_sharpa/floating-sharpa/C11`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -2836,7 +2836,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C12"></a>
 ## `rubiks_sharpa/floating-sharpa/C12`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3093,7 +3093,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C13"></a>
 ## `rubiks_sharpa/floating-sharpa/C13`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3350,7 +3350,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C14"></a>
 ## `rubiks_sharpa/floating-sharpa/C14`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3607,7 +3607,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C15"></a>
 ## `rubiks_sharpa/floating-sharpa/C15`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -3864,7 +3864,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C16"></a>
 ## `rubiks_sharpa/floating-sharpa/C16`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4121,7 +4121,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C17"></a>
 ## `rubiks_sharpa/floating-sharpa/C17`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4378,7 +4378,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C18"></a>
 ## `rubiks_sharpa/floating-sharpa/C18`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4635,7 +4635,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C19"></a>
 ## `rubiks_sharpa/floating-sharpa/C19`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -4892,7 +4892,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C1
 <a id="rubiks_sharpa-floating-sharpa-C20"></a>
 ## `rubiks_sharpa/floating-sharpa/C20`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -5149,7 +5149,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C21"></a>
 ## `rubiks_sharpa/floating-sharpa/C21`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -5406,7 +5406,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C22"></a>
 ## `rubiks_sharpa/floating-sharpa/C22`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -5663,7 +5663,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C23"></a>
 ## `rubiks_sharpa/floating-sharpa/C23`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -5920,7 +5920,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C24"></a>
 ## `rubiks_sharpa/floating-sharpa/C24`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -6177,7 +6177,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C25"></a>
 ## `rubiks_sharpa/floating-sharpa/C25`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -6434,7 +6434,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C26"></a>
 ## `rubiks_sharpa/floating-sharpa/C26`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -6691,7 +6691,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C27"></a>
 ## `rubiks_sharpa/floating-sharpa/C27`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -6948,7 +6948,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C28"></a>
 ## `rubiks_sharpa/floating-sharpa/C28`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -7205,7 +7205,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C29"></a>
 ## `rubiks_sharpa/floating-sharpa/C29`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json
@@ -7462,7 +7462,7 @@ python scripts/environment_runtime.py --task-id rubiks_sharpa/floating-sharpa/C2
 <a id="rubiks_sharpa-floating-sharpa-C30"></a>
 ## `rubiks_sharpa/floating-sharpa/C30`
 
-作者来源：`docs/rubiks_cube.md`。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+作者来源：[source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py)。Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 目标（源数据）：
 ```json

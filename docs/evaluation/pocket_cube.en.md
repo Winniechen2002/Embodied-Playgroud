@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="pocket_cube-aloha-C01"></a>
 ## `pocket_cube/aloha/C01`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -225,7 +225,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C01"></a>
 ## `pocket_cube/dual-sharpa/C01`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -603,7 +603,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C03"></a>
 ## `pocket_cube/aloha/C03`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -819,7 +819,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C03"></a>
 ## `pocket_cube/dual-sharpa/C03`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1197,7 +1197,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C07"></a>
 ## `pocket_cube/aloha/C07`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1413,7 +1413,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C07"></a>
 ## `pocket_cube/dual-sharpa/C07`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1791,7 +1791,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C08"></a>
 ## `pocket_cube/aloha/C08`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2007,7 +2007,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C08"></a>
 ## `pocket_cube/dual-sharpa/C08`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2385,7 +2385,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C09"></a>
 ## `pocket_cube/aloha/C09`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2601,7 +2601,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C09"></a>
 ## `pocket_cube/dual-sharpa/C09`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2979,7 +2979,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C10"></a>
 ## `pocket_cube/aloha/C10`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3195,7 +3195,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C10"></a>
 ## `pocket_cube/dual-sharpa/C10`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3573,7 +3573,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C14"></a>
 ## `pocket_cube/aloha/C14`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -3789,7 +3789,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C14"></a>
 ## `pocket_cube/dual-sharpa/C14`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4167,7 +4167,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C15"></a>
 ## `pocket_cube/aloha/C15`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4383,7 +4383,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C15"></a>
 ## `pocket_cube/dual-sharpa/C15`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4761,7 +4761,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C17"></a>
 ## `pocket_cube/aloha/C17`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -4977,7 +4977,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C17"></a>
 ## `pocket_cube/dual-sharpa/C17`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5355,7 +5355,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-aloha-C20"></a>
 ## `pocket_cube/aloha/C20`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 16; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 16; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -5571,7 +5571,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="pocket_cube-dual-sharpa-C20"></a>
 ## `pocket_cube/dual-sharpa/C20`
 
-Authoring provenance: `env/cube20/README.md`. Action size: 56; 18000 controls / 300 s; wall: 3600 s.
+Authoring source: [source/agentbench/agentbench_cube20/catalog.py](../../source/agentbench/agentbench_cube20/catalog.py). Action size: 56; 18000 controls / 300 s; wall: 3600 s.
 
 Goal (source data):
 ```json

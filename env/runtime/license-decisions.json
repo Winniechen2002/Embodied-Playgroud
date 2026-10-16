@@ -1,5 +1,5 @@
 {
-  "version": "environment-license-review-v2",
+  "version": "environment-license-review-v3",
   "project": {
     "status": "confirmed",
     "confirmed_on": "2026-10-11",
@@ -26,19 +26,19 @@
       "revision": "6eea427eb24189519f32b9f21674cd534d3f973c",
       "declared_license": "Apache-2.0",
       "provenance": "50 files matched against upstream Git blob hashes; SHA-256 recorded in adjacent UPSTREAM.json",
-      "status": "pinned_upstream_provenance_verified_combined_assets_review_separate"
+      "status": "maintainer_approved_original_licenses_retained"
     },
     {
       "name": "combined robots, adapters, converted meshes and remaining scene assets",
-      "status": "redistribution_basis_requires_review"
+      "status": "maintainer_approved_original_licenses_retained"
     },
     {
       "name": "ManiSkill embedded assets",
       "files": 444,
       "archive_sha256": "35c15809631f358cc47055d700c37310caf8777defa231a8d24ef56c2b00d364",
-      "status": "integrity_verified_redistribution_scope_unresolved",
-      "provenance": "env/maniskill_lgd/ASSETS.md and per-file metadata",
-      "unresolved": [
+      "status": "maintainer_approved_original_licenses_retained",
+      "provenance": "env/maniskill_lgd/agentbench_maniskill/resources/asset_manifest.json and embedded per-file metadata",
+      "original_license_scopes": [
         "Native ManiSkill robot asset grants",
         "YCB individual dataset assets versus loader software license",
         "Google Scanned Objects asset terms",
@@ -48,5 +48,14 @@
     }
   ],
   "source_release_ready": false,
-  "remaining_scope": "Third-party redistribution and asset provenance are not approved by the project license decision."
+  "remaining_scope": "Asset distribution is maintainer-approved under original licenses. Complete engineering qualification and distribution validation remain separate requirements.",
+  "asset_distribution": {
+    "status": "maintainer_approved",
+    "confirmed_on": "2026-10-16",
+    "scope": "Complete asset bundle included in this source distribution",
+    "basis": "Explicit maintainer instruction to permit distribution under the original applicable licenses",
+    "license_policy": "Retain each original license, copyright notice, attribution and upstream scope; no relicensing",
+    "independent_legal_review": false
+  },
+  "asset_distribution_ready": true
 }

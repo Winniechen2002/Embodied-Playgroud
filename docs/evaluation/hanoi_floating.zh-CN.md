@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="hanoi_floating-floating-sharpa-H01"></a>
 ## `hanoi_floating/floating-sharpa/H01`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -253,7 +253,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H02"></a>
 ## `hanoi_floating/floating-sharpa/H02`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -497,7 +497,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H03"></a>
 ## `hanoi_floating/floating-sharpa/H03`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -741,7 +741,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H04"></a>
 ## `hanoi_floating/floating-sharpa/H04`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -985,7 +985,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H05"></a>
 ## `hanoi_floating/floating-sharpa/H05`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1229,7 +1229,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H06"></a>
 ## `hanoi_floating/floating-sharpa/H06`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1473,7 +1473,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H07"></a>
 ## `hanoi_floating/floating-sharpa/H07`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1717,7 +1717,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H08"></a>
 ## `hanoi_floating/floating-sharpa/H08`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1961,7 +1961,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H09"></a>
 ## `hanoi_floating/floating-sharpa/H09`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2205,7 +2205,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H10"></a>
 ## `hanoi_floating/floating-sharpa/H10`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2449,7 +2449,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H11"></a>
 ## `hanoi_floating/floating-sharpa/H11`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2693,7 +2693,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H12"></a>
 ## `hanoi_floating/floating-sharpa/H12`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2937,7 +2937,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H13"></a>
 ## `hanoi_floating/floating-sharpa/H13`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3181,7 +3181,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H14"></a>
 ## `hanoi_floating/floating-sharpa/H14`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3425,7 +3425,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H15"></a>
 ## `hanoi_floating/floating-sharpa/H15`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3669,7 +3669,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H16"></a>
 ## `hanoi_floating/floating-sharpa/H16`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -3913,7 +3913,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H17"></a>
 ## `hanoi_floating/floating-sharpa/H17`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4157,7 +4157,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H18"></a>
 ## `hanoi_floating/floating-sharpa/H18`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4401,7 +4401,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H19"></a>
 ## `hanoi_floating/floating-sharpa/H19`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4645,7 +4645,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H20"></a>
 ## `hanoi_floating/floating-sharpa/H20`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -4889,7 +4889,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H21"></a>
 ## `hanoi_floating/floating-sharpa/H21`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5133,7 +5133,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H22"></a>
 ## `hanoi_floating/floating-sharpa/H22`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5377,7 +5377,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H23"></a>
 ## `hanoi_floating/floating-sharpa/H23`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5621,7 +5621,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H24"></a>
 ## `hanoi_floating/floating-sharpa/H24`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -5865,7 +5865,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H25"></a>
 ## `hanoi_floating/floating-sharpa/H25`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6109,7 +6109,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H26"></a>
 ## `hanoi_floating/floating-sharpa/H26`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6353,7 +6353,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H27"></a>
 ## `hanoi_floating/floating-sharpa/H27`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6597,7 +6597,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H28"></a>
 ## `hanoi_floating/floating-sharpa/H28`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -6841,7 +6841,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H29"></a>
 ## `hanoi_floating/floating-sharpa/H29`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7085,7 +7085,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H30"></a>
 ## `hanoi_floating/floating-sharpa/H30`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7329,7 +7329,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H31"></a>
 ## `hanoi_floating/floating-sharpa/H31`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7573,7 +7573,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H32"></a>
 ## `hanoi_floating/floating-sharpa/H32`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -7817,7 +7817,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H33"></a>
 ## `hanoi_floating/floating-sharpa/H33`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8061,7 +8061,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H34"></a>
 ## `hanoi_floating/floating-sharpa/H34`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8305,7 +8305,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H35"></a>
 ## `hanoi_floating/floating-sharpa/H35`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8549,7 +8549,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H36"></a>
 ## `hanoi_floating/floating-sharpa/H36`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -8793,7 +8793,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H37"></a>
 ## `hanoi_floating/floating-sharpa/H37`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9037,7 +9037,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H38"></a>
 ## `hanoi_floating/floating-sharpa/H38`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9281,7 +9281,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H39"></a>
 ## `hanoi_floating/floating-sharpa/H39`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -9525,7 +9525,7 @@ python scripts/environment_runtime.py --task-id hanoi_floating/floating-sharpa/H
 <a id="hanoi_floating-floating-sharpa-H40"></a>
 ## `hanoi_floating/floating-sharpa/H40`
 
-作者来源：`env/sharpa_hanoi_no_arm40/README.md`。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
+作者来源：[source/agentbench/agentbench_hanoi40/catalog.py](../../source/agentbench/agentbench_hanoi40/catalog.py)。Action size: 28; 18000 controls / 600 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

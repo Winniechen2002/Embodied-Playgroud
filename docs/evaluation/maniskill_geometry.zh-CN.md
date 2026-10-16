@@ -9,7 +9,7 @@ Embodied Playground 论文仅评测发射器 loaded 初态：完整 410 项为 4
 <a id="maniskill_geometry-panda-P1"></a>
 ## `maniskill_geometry/panda/P1`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -362,7 +362,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/panda/P1 --ca
 <a id="maniskill_geometry-everyday_robot_09-P2"></a>
 ## `maniskill_geometry/everyday_robot_09/P2`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -729,7 +729,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/everyday_robo
 <a id="maniskill_geometry-panda-P3"></a>
 ## `maniskill_geometry/panda/P3`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -972,7 +972,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/panda/P3 --ca
 <a id="maniskill_geometry-everyday_robot_03-P4"></a>
 ## `maniskill_geometry/everyday_robot_03/P4`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 23; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 23; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1335,7 +1335,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/everyday_robo
 <a id="maniskill_geometry-panda-P5"></a>
 ## `maniskill_geometry/panda/P5`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1557,7 +1557,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/panda/P5 --ca
 <a id="maniskill_geometry-everyday_robot_09-P6"></a>
 ## `maniskill_geometry/everyday_robot_09/P6`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -1931,7 +1931,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/everyday_robo
 <a id="maniskill_geometry-panda-P7"></a>
 ## `maniskill_geometry/panda/P7`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2166,7 +2166,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/panda/P7 --ca
 <a id="maniskill_geometry-everyday_robot_01-P8"></a>
 ## `maniskill_geometry/everyday_robot_01/P8`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 29; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 29; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2587,7 +2587,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/everyday_robo
 <a id="maniskill_geometry-everyday_robot_09-P9"></a>
 ## `maniskill_geometry/everyday_robot_09/P9`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json
@@ -2887,7 +2887,7 @@ python scripts/environment_runtime.py --task-id maniskill_geometry/everyday_robo
 <a id="maniskill_geometry-panda-P10"></a>
 ## `maniskill_geometry/panda/P10`
 
-作者来源：`env/maniskill_lgd/README.md`。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+作者来源：[env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json)。Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 目标（源数据）：
 ```json

@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="rubiks_sharpa-floating-sharpa-C01"></a>
 ## `rubiks_sharpa/floating-sharpa/C01`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -266,7 +266,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C02"></a>
 ## `rubiks_sharpa/floating-sharpa/C02`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -523,7 +523,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C03"></a>
 ## `rubiks_sharpa/floating-sharpa/C03`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -780,7 +780,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C04"></a>
 ## `rubiks_sharpa/floating-sharpa/C04`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1037,7 +1037,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C05"></a>
 ## `rubiks_sharpa/floating-sharpa/C05`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1294,7 +1294,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C06"></a>
 ## `rubiks_sharpa/floating-sharpa/C06`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1551,7 +1551,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C07"></a>
 ## `rubiks_sharpa/floating-sharpa/C07`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -1808,7 +1808,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C08"></a>
 ## `rubiks_sharpa/floating-sharpa/C08`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2065,7 +2065,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C09"></a>
 ## `rubiks_sharpa/floating-sharpa/C09`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2322,7 +2322,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C10"></a>
 ## `rubiks_sharpa/floating-sharpa/C10`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2579,7 +2579,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C11"></a>
 ## `rubiks_sharpa/floating-sharpa/C11`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -2836,7 +2836,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C12"></a>
 ## `rubiks_sharpa/floating-sharpa/C12`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3093,7 +3093,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C13"></a>
 ## `rubiks_sharpa/floating-sharpa/C13`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3350,7 +3350,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C14"></a>
 ## `rubiks_sharpa/floating-sharpa/C14`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3607,7 +3607,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C15"></a>
 ## `rubiks_sharpa/floating-sharpa/C15`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -3864,7 +3864,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C16"></a>
 ## `rubiks_sharpa/floating-sharpa/C16`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4121,7 +4121,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C17"></a>
 ## `rubiks_sharpa/floating-sharpa/C17`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4378,7 +4378,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C18"></a>
 ## `rubiks_sharpa/floating-sharpa/C18`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4635,7 +4635,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C19"></a>
 ## `rubiks_sharpa/floating-sharpa/C19`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -4892,7 +4892,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C20"></a>
 ## `rubiks_sharpa/floating-sharpa/C20`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -5149,7 +5149,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C21"></a>
 ## `rubiks_sharpa/floating-sharpa/C21`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -5406,7 +5406,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C22"></a>
 ## `rubiks_sharpa/floating-sharpa/C22`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -5663,7 +5663,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C23"></a>
 ## `rubiks_sharpa/floating-sharpa/C23`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -5920,7 +5920,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C24"></a>
 ## `rubiks_sharpa/floating-sharpa/C24`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -6177,7 +6177,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C25"></a>
 ## `rubiks_sharpa/floating-sharpa/C25`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -6434,7 +6434,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C26"></a>
 ## `rubiks_sharpa/floating-sharpa/C26`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -6691,7 +6691,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C27"></a>
 ## `rubiks_sharpa/floating-sharpa/C27`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -6948,7 +6948,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C28"></a>
 ## `rubiks_sharpa/floating-sharpa/C28`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -7205,7 +7205,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C29"></a>
 ## `rubiks_sharpa/floating-sharpa/C29`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json
@@ -7462,7 +7462,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="rubiks_sharpa-floating-sharpa-C30"></a>
 ## `rubiks_sharpa/floating-sharpa/C30`
 
-Authoring provenance: `docs/rubiks_cube.md`. Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
+Authoring source: [source/agentbench_platform/agentbench_platform/rubiks_cases.py](../../source/agentbench_platform/agentbench_platform/rubiks_cases.py). Action size: 28; 109800 controls / 3660 s; wall: 19800 s.
 
 Goal (source data):
 ```json

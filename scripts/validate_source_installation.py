@@ -35,10 +35,8 @@ def main():
     def save():
         temporary=args.output.with_suffix('.tmp');temporary.write_text(json.dumps(report,indent=2,allow_nan=False)+'\n');temporary.replace(args.output)
     try:
-        opts=['git','-c','filter.lfs.process=','-c','filter.lfs.required=false','-C',str(ROOT)]
-        state=subprocess.run(opts+['status','--porcelain'],capture_output=True,text=True,check=True).stdout
-        assert not state,'Source checkout is not clean'
-        report['checkout']=dict(path=str(ROOT),revision=subprocess.check_output(opts+['rev-parse','HEAD'],text=True).strip(),clean=True)
+        from agentbench_platform.source_checkout import git_identity
+        report['checkout']=git_identity(ROOT)
         assert sys.prefix!=sys.base_prefix,'Separate virtual environment required'
         configuration=Path(sys.prefix,'pyvenv.cfg').read_text().lower()
         assert 'include-system-site-packages = false' in configuration,'System packages are inherited'

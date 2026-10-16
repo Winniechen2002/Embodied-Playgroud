@@ -9,7 +9,7 @@ Each task below has four trials per group at base seed 0. Parameters are private
 <a id="maniskill_geometry-panda-P1"></a>
 ## `maniskill_geometry/panda/P1`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -362,7 +362,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-everyday_robot_09-P2"></a>
 ## `maniskill_geometry/everyday_robot_09/P2`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -729,7 +729,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-panda-P3"></a>
 ## `maniskill_geometry/panda/P3`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -972,7 +972,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-everyday_robot_03-P4"></a>
 ## `maniskill_geometry/everyday_robot_03/P4`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 23; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 23; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1335,7 +1335,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-panda-P5"></a>
 ## `maniskill_geometry/panda/P5`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1557,7 +1557,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-everyday_robot_09-P6"></a>
 ## `maniskill_geometry/everyday_robot_09/P6`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -1931,7 +1931,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-panda-P7"></a>
 ## `maniskill_geometry/panda/P7`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2166,7 +2166,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-everyday_robot_01-P8"></a>
 ## `maniskill_geometry/everyday_robot_01/P8`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 29; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 29; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2587,7 +2587,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-everyday_robot_09-P9"></a>
 ## `maniskill_geometry/everyday_robot_09/P9`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 30; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 30; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
@@ -2887,7 +2887,7 @@ Repeat with indices 2, 3, 4 and fresh output paths; same group settings. See pro
 <a id="maniskill_geometry-panda-P10"></a>
 ## `maniskill_geometry/panda/P10`
 
-Authoring provenance: `env/maniskill_lgd/README.md`. Action size: 8; 2400 controls / 120 s; wall: 3600 s.
+Authoring source: [env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json](../../env/maniskill_lgd/agentbench_maniskill/geometry_dynamics/tasks.json). Action size: 8; 2400 controls / 120 s; wall: 3600 s.
 
 Goal (source data):
 ```json
