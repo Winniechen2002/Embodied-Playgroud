@@ -6,7 +6,6 @@ import json
 from pathlib import Path
 import sys
 import time
-import itertools
 from concurrent.futures import ProcessPoolExecutor, as_completed
 ROOT=Path(__file__).resolve().parents[1]
 for name in ('agentbench','agentbench_platform'):sys.path.insert(0,str(ROOT/'source'/name))
@@ -16,7 +15,7 @@ def check(task,seed,mode,stiffness,hold,required=None):
     import numpy as np
     import mujoco
     from agentbench_platform.environment_backend import MarbleBackend
-    from agentbench_platform.environment_matrix import effective_condition
+    from agentbench_platform.environment_conditions import effective_condition
     from agentbench_platform.environment_qa import marble_readback, gateway_probe, lifecycle_probe, contract_probe, local_action_probe
     import tempfile
     condition=required['condition'] if required else effective_condition(task,seed=seed,initial_mode=mode,parameters=dict(spring_stiffness=stiffness))
@@ -96,9 +95,6 @@ def main():
     p.add_argument('--spring-stiffness',type=float,choices=[22,24,26,28],default=22.)
     p.add_argument('--hold',type=float,default=3.);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--workers',type=int,default=1)
-    p.add_argument('--matrix',action='store_true',help='All three seeds, both initial modes and four spring configurations')
-    p.add_argument('--matrix-kind',choices=['legacy','protocol','union'],default='union')
-    p.add_argument('--condition-key',action='append')
     p.add_argument('--list-conditions',action='store_true',help='Write the selected schedule without running physics')
     p.add_argument('--resume',action='store_true',help='Resume only when source and catalog digests exactly match')
     args=p.parse_args()
@@ -109,22 +105,12 @@ def main():
     from agentbench_platform.environment_release import inventory
     from agentbench_platform.environment_catalog import digest
     rows=[];args.output.parent.mkdir(parents=True,exist_ok=True)
-    from agentbench_platform.environment_matrix import matrix,effective_condition,VERSION
+    from agentbench_platform.environment_conditions import condition_case
     from agentbench_platform.environment_release import evidence_identity
     identity=evidence_identity(catalog(),inventory())
     by_id={t['id']:t for t in tasks}
-    if args.matrix:
-        required=matrix(dict(tasks=tasks),args.matrix_kind)
-    else:
-        required=[]
-        for task in tasks:
-            condition=effective_condition(task,seed=args.seed,initial_mode=args.initial_mode,
-                parameters=dict(spring_stiffness=args.spring_stiffness))
-            required.append(dict(task_id=task['id'],condition=condition,
-                key=digest([VERSION,task['id'],task['configuration_sha256'],condition]),memberships=[]))
-    if args.condition_key:
-        if set(args.condition_key)-{r['key'] for r in required}:p.error('Unknown condition key')
-        required=[r for r in required if r['key'] in args.condition_key]
+    required=[condition_case(task,seed=args.seed,initial_mode=args.initial_mode,
+        parameters=dict(spring_stiffness=args.spring_stiffness)) for task in tasks]
     if args.list_conditions:
         args.output.write_text(json.dumps(dict(**identity,conditions=required),indent=2)+'\n')
         return
@@ -158,7 +144,7 @@ def main():
         for future in as_completed(pending):
             row=future.result()
             _,seed,mode,stiffness,_,required=pending[future]
-            row.update(key=required['key'],memberships=required['memberships'],versions=identity,
+            row.update(key=required['key'],versions=identity,
                 seed=seed,initial_mode=mode,spring_stiffness=stiffness)
             rows.append(row)
             save()

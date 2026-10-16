@@ -65,4 +65,4 @@ python scripts/validate_source_installation.py --backend maniskill --output /tmp
 
 ## 复现记录
 
-记录源码修订、本地改动、包版本、模拟器与驱动版本、资产哈希、任务与条件及命令行。单独的目录查询或烟雾检查不代表完成全部源码发布检查；验收标准及扩展验证见[验证说明](environment_validation.zh-CN.md)。本项目不声明跨硬件逐位一致。
+记录源码修订、本地改动、包版本、模拟器与驱动版本、资产哈希、任务与条件及命令行。单独的目录查询或烟雾检查不代表完成全部源码发布检查；源码发布验收标准见[验证说明](environment_validation.zh-CN.md)。本项目不声明跨硬件逐位一致。

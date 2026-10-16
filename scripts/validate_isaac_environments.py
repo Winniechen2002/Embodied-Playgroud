@@ -77,13 +77,9 @@ def main():
         choices=['hanoi_panda', 'hanoi_sharpa', 'hanoi_floating', 'pocket_cube', 'bookshelf',
                  'rubiks_panda','rubiks_sharpa','kongming_lock'])
     parser.add_argument('--task-id', action='append')
-    parser.add_argument('--seeds', nargs='+', type=int, default=[0, 1, 2])
+    parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--seconds', type=float, default=5.)
-    parser.add_argument('--matrix', action='store_true', help='Execute the selected complete condition matrix')
-    parser.add_argument('--matrix-kind', choices=['legacy','protocol','union'],default='union')
-    parser.add_argument('--condition-key',action='append')
-    parser.add_argument('--probe-only',action='store_true',help='Explicit short diagnostic; cannot qualify full-horizon conditions')
     parser.add_argument('--list-conditions',action='store_true')
     parser.add_argument('--capture-contracts', action='store_true', help='Record native action contracts in this scoped probe')
     parser.add_argument('--resume', action='store_true', help='Resume only the same source and exact selected schedule; preserve failed attempts')
@@ -101,25 +97,10 @@ def main():
     manifest = catalog(_native_records=bootstrap)
     tasks = [t for t in manifest['tasks'] if t['family'] in args.family and
         (args.task_id is None or t['id'] in args.task_id)]
-    if not tasks or any(s < 0 for s in args.seeds): parser.error('Invalid tasks or seeds')
+    if not tasks or args.seed < 0: parser.error('Invalid tasks or seeds')
     if args.task_id and set(args.task_id) != {t['id'] for t in tasks}: parser.error('Unknown task ID')
-    from agentbench_platform.environment_release import matrix
-    conditions={task['id']:[] for task in tasks}
-    if args.matrix:
-        for required in matrix(dict(tasks=tasks),args.matrix_kind):
-            conditions[required['task_id']].append(required)
-    else:
-        for task in tasks:
-            from agentbench_platform.environment_matrix import effective_condition, VERSION
-            conditions[task['id']]=[]
-            for seed in args.seeds:
-                condition=effective_condition(task,seed=seed)
-                conditions[task['id']].append(dict(condition=condition,
-                    key=digest([VERSION,task['id'],task['configuration_sha256'],condition]),memberships=[]))
-    if args.condition_key:
-        known={r['key'] for rows in conditions.values() for r in rows}
-        if set(args.condition_key)-known:parser.error('Unknown condition key')
-        conditions={task:[r for r in rows if r['key'] in args.condition_key] for task,rows in conditions.items()}
+    from agentbench_platform.environment_conditions import condition_case
+    conditions={task['id']:[condition_case(task,seed=args.seed)] for task in tasks}
     if args.list_conditions:
         args.output.parent.mkdir(parents=True,exist_ok=True)
         args.output.write_text(json.dumps(conditions,indent=2)+'\n');return 0
@@ -139,7 +120,7 @@ def main():
         run_status='running',expected_cases=sum(map(len,conditions.values())),
         runtime=dict(python=sys.version, torch=torch.__version__, gpu=torch.cuda.get_device_name()), cases=[])
     selected_keys={r['key'] for rows in conditions.values() for r in rows}
-    execution=dict(seconds=args.seconds,full_horizon=args.full_horizon,probe_only=args.probe_only,
+    execution=dict(seconds=args.seconds,full_horizon=args.full_horizon,
         capture_contracts=args.capture_contracts,selected_keys=sorted(selected_keys))
     report['execution']=execution
     completed=set()
@@ -164,7 +145,7 @@ def main():
                 if required['key'] in completed:continue
                 condition=required['condition'];seed=condition['seed']
                 row = dict(task_id=task['id'], seed=seed,condition=condition,
-                    key=required['key'],memberships=required['memberships'],
+                    key=required['key'],
                     configuration_sha256=task['configuration_sha256'],versions=identity,status='failed', checks={}, measurements={},physics_steps=0)
                 start = time.monotonic(); backend = None; services = []
                 with tempfile.TemporaryDirectory(prefix='ab-native-batch-') as temporary:
@@ -259,7 +240,7 @@ def main():
                         action = description['action_spec']['neutral_action']
                         dt = description['action_spec']['control_period_s']
                         episode_limit=description['task']['max_steps']*dt
-                        seconds=max(args.seconds,episode_limit) if args.full_horizon or (args.matrix and not args.probe_only and task.get('full_horizon_stability')) else args.seconds
+                        seconds=max(args.seconds,episode_limit) if args.full_horizon else args.seconds
                         control_count=math.ceil(seconds / dt-1e-8)
                         initial_positions={name:piece['position'] for name,piece in initial['privileged']['pieces'].items()}
                         baseline=None;peak_drift=0.;settling_drift=0.

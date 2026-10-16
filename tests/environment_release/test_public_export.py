@@ -51,8 +51,13 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     destination = tmp_path/'source-package'
     status = build(destination)
     assert not status['release_ready']
-    assert status['required_case_count']==0
     assert not (destination/'acceptance-matrix.json').exists()
+    for removed in ('scripts/environment_status.py',
+                    'source/agentbench_platform/agentbench_platform/environment_matrix.py',
+                    'tests/environment_release/test_condition_matrix.py',
+                    'tests/environment_release/test_progress.py'):
+        assert not (destination/removed).exists()
+    assert not any(key.startswith('matrix_') for key in status)
     assert (destination/'DISTRIBUTION_STATUS').read_text() == 'staging-not-qualified\n'
     assert (destination/'docs/evaluation/tasks.json').is_file()
     assert (destination/'rules.md').read_bytes() == (ROOT/'rules.md').read_bytes()
@@ -71,6 +76,24 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
         '--output', str(discovered)], capture_output=True, text=True)
     assert result.returncode == 0, result.stdout + result.stderr
     assert json.loads(discovered.read_text())['count'] == 410
+    for operation in ('matrix', 'check-matrix'):
+        rejected = subprocess.run([sys.executable, '-I',
+            str(destination/'scripts/environment_release.py'), operation,
+            '--output', str(destination/'removed-command.json')], capture_output=True, text=True)
+        assert rejected.returncode == 2
+    assert not (destination/'removed-command.json').exists()
+    # Retained native checks must still plan exactly one default per task,
+    # including when launched from the standalone package without repo imports.
+    for script, expected in [('validate_environment_physics.py', 100),
+                             ('validate_maniskill_environments.py', 30)]:
+        planned = destination/(script+'.json')
+        probe = subprocess.run([sys.executable, '-I', str(destination/'scripts'/script),
+            '--list-conditions', '--output', str(planned)], capture_output=True, text=True)
+        assert probe.returncode == 0, probe.stdout + probe.stderr
+        data = json.loads(planned.read_text())
+        rows = data['conditions'] if isinstance(data, dict) else data
+        assert len(rows) == len({row['task_id'] for row in rows}) == expected
+        assert all(row['condition']['seed'] == 0 for row in rows)
 
 
 def test_public_launcher_rejects_development_demo_and_recording_options():

@@ -8,17 +8,12 @@ from pathlib import Path
 from .environment_catalog import ROOT,catalog,digest
 from .profiles import CAPABILITY_VERSION
 
-CHECKS=('contract','necessary_geometry','physics','action_observation','scorer','gateway_l0',
-        'gateway_l1','gateway_l2','gateway_l3','lifecycle','repeat_initialization')
-GLOBAL_CHECKS=('clean_install_mujoco','clean_install_isaac','clean_install_maniskill','assets','licenses','bilingual_docs','local_contact')
-# Source publication uses the maintainer-approved checks documented in
-# docs/environment_validation.en.md. Contact qualification belongs to the
-# optional full-condition matrix, not this source-release scope.
-SOURCE_RELEASE_CHECKS=tuple(check for check in GLOBAL_CHECKS if check!='local_contact')+(
-    'source_regression','scorer_fixtures','default_physics','export_smoke')
+SOURCE_RELEASE_CHECKS=('clean_install_mujoco','clean_install_isaac','clean_install_maniskill',
+    'assets','licenses','bilingual_docs','source_regression','scorer_fixtures','default_physics','export_smoke')
+SOURCE_RELEASE_VERSION='source-release-checks-v1'
 SOURCE_ROOTS=('source/agentbench','source/agentbench_platform','source/agentbench_sdk','env/maniskill_lgd')
 SCRIPT_NAMES=('environment_runtime.py','environment_release.py','environment_smoke.py',
-    'environment_client.py','franka_marble_test_protocol.py','check_tool_policy_docs.py','validate_environment_physics.py','agentbench_platform_runtime.py','generate_hanoi_ring_assets.py','validate_isaac_environments.py','export_evaluation_protocol.py','validate_environment_contracts.py','environment_status.py','validate_source_installation.py','revalidate_action_contracts.py','validate_maniskill_environments.py','validate_maniskill_fixtures.py','check_maniskill_dynamics.py','validate_isaac_installation.py','run_isaac_binary.sh','isaac_binary_bootstrap/sitecustomize.py')
+    'environment_client.py','franka_marble_test_protocol.py','check_tool_policy_docs.py','validate_environment_physics.py','agentbench_platform_runtime.py','generate_hanoi_ring_assets.py','validate_isaac_environments.py','export_evaluation_protocol.py','validate_environment_contracts.py','validate_source_installation.py','revalidate_action_contracts.py','validate_maniskill_environments.py','validate_maniskill_fixtures.py','check_maniskill_dynamics.py','validate_isaac_installation.py','run_isaac_binary.sh','isaac_binary_bootstrap/sitecustomize.py')
 EXCLUDED_NAMES={'__pycache__','.pytest_cache','.git','.codex-local','outputs','output','baselines','tests','build','dist'}
 EXCLUDED_MODULES={'model_proxy.py','controller.py','baseline.py','campaign_baseline.py','dual_baseline.py','joint_planner.py','panda_kinematics.py'}
 PLATFORM_EXCLUDES={'runner.py','adapters.py','image_build.py','sandbox.py','rubiks_suite.py','cube_solver.py','native_video.py','dual_native_video.py','sampled_video.py'}
@@ -183,13 +178,7 @@ def bilingual_checks():
         limitation='Numeric, command and version checks do not replace a complete per-task semantic review')
 
 
-def matrix(manifest, selection='union'):
-    from .environment_matrix import matrix as generate
-    return generate(manifest, selection)
-
-
 def evidence_identity(manifest, files):
-    from .environment_matrix import VERSION
     from .public_content import public_files
     documentation={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
         for name in public_files() if name.endswith('.md') or name.startswith('docs/')}
@@ -197,97 +186,32 @@ def evidence_identity(manifest, files):
     scorers = {k:v for k,v in files.items() if Path(k).suffix == '.py'}
     return dict(source_digest=digest(files), catalog_digest=digest(manifest), documentation_digest=digest(documentation),
         asset_digest=digest(assets), scorer_digest=digest(scorers),
-        matrix_version=VERSION, matrix_digest=digest(matrix(manifest)),
+        validation_version=SOURCE_RELEASE_VERSION,
         capability_profile_version=CAPABILITY_VERSION)
 
 
 def gate(manifest,files,evidence):
-    """Check source-release evidence without requiring a condition-matrix rerun."""
-    return _gate(manifest,files,evidence,require_matrix=False)
+    """Require current, nonempty maintainer measurements for source publication.
 
-
-def matrix_gate(manifest,files,evidence):
-    """Optional full-matrix diagnostics, independent of source-release approval."""
-    return _gate(manifest,files,evidence,require_matrix=True)
-
-
-def _gate(manifest,files,evidence,*,require_matrix):
-    """Fail closed on stale or incomplete evidence within the selected scope.
-
-    Labels alone never qualify an environment. Evidence remains trusted owner
-    input; this validator is not a signature or a hostile-report attestation.
+    Evidence is trusted owner input, not a signature or hostile-report attestation.
     """
     import math
-    missing=[]; expected=matrix(manifest) if require_matrix else []; identity=evidence_identity(manifest,files)
-    for name,value in identity.items():
-        if evidence.get(name)!=value:missing.append(name)
-    observed={}; expected_keys={r['key'] for r in expected}
-    for row in evidence.get('cases',[]) if require_matrix else []:
-        key=row.get('key')
-        if key in observed:missing.append('duplicate:'+str(key))
-        observed[key]=row
-    if set(observed)-expected_keys:missing.append('unknown_case')
-    def finite(value):
-        return type(value) in (int,float) and math.isfinite(value)
+    identity=evidence_identity(manifest,files)
+    missing=[name for name,value in identity.items() if evidence.get(name)!=value]
     def valid_measurement(value):
         if type(value) is float:return math.isfinite(value)
         if isinstance(value,dict):return all(isinstance(k,str) and valid_measurement(v) for k,v in value.items())
         if isinstance(value,list):return all(valid_measurement(v) for v in value)
         return value is None or type(value) in (str,int,bool)
-    per_task={t['id']:dict(required=0,qualified=0,failed=0,missing=0) for t in manifest['tasks']}
-    for wanted in expected:
-        count=per_task[wanted['task_id']];count['required']+=1
-        row=observed.get(wanted['key'],{}); before=len(missing)
-        failures=[check for check in CHECKS if row.get('checks',{}).get(check)!='passed']
-        if failures:missing.append(dict(task_id=wanted['task_id'],condition=wanted['condition'],checks=failures))
-        if row:
-            for field in ('task_id','condition','configuration_sha256'):
-                if row.get(field)!=wanted[field]:missing.append('mismatched_'+field+':'+wanted['key'])
-            if row.get('actual_initialization')!=wanted['condition']:
-                missing.append('initialization_mismatch:'+wanted['key'])
-            if row.get('versions')!=identity:missing.append('stale_case_versions:'+wanted['key'])
-            if row.get('status')!='passed':missing.append('case_not_qualified:'+wanted['key'])
-            for check in CHECKS:
-                measure=row.get('measurements',{}).get(check)
-                if not isinstance(measure,dict) or not measure or not valid_measurement(measure):
-                    missing.append('missing_measurement:'+wanted['key']+':'+check)
-        if not failures:
-            steps=row.get('physics_steps'); settle=row.get('settle_seconds'); hold=row.get('hold_seconds')
-            seconds=row.get('no_operation_seconds'); hz=wanted['condition']['budgets']['physics_hz']
-            minimum=wanted['episode_time_limit_seconds'] if wanted['full_horizon_stability'] else 5.
-            dynamic=wanted.get('physics_acceptance')=='expected_dynamics'
-            duration_invalid=(not finite(settle) or settle<2 or not finite(hold) or hold<3) if not dynamic else False
-            if dynamic:
-                physics=row.get('measurements',{}).get('physics',{})
-                for audit in ('trigger_audit','contact_audit','terminal_audit'):
-                    if not isinstance(physics.get(audit),dict) or not physics[audit] or physics[audit].get('passed') is not True:
-                        missing.append('incomplete_dynamic_'+audit+':'+wanted['key'])
-            if (type(steps) is not int or steps < round(minimum*hz) or duration_invalid
-                    or not finite(seconds) or seconds<minimum-1e-6
-                    or not isinstance(row.get('runtime'),dict) or not row['runtime']):
-                missing.append('incomplete_native_measurement:'+wanted['key'])
-            if wanted['full_horizon_stability'] and (not finite(seconds) or seconds<minimum-1e-6):
-                missing.append('missing_full_horizon_stability:'+wanted['key'])
-        if len(missing)==before:count['qualified']+=1
-        elif not row:count['missing']+=1
-        else:count['failed']+=1
-    environmental_missing=list(missing)
-    required_global_checks=GLOBAL_CHECKS if require_matrix else SOURCE_RELEASE_CHECKS
-    for check in required_global_checks:
-        before=len(missing)
+    for check in SOURCE_RELEASE_CHECKS:
         if evidence.get('global_checks',{}).get(check)!='passed':missing.append(check)
         proof=evidence.get('global_measurements',{}).get(check,{})
         if (not isinstance(proof,dict) or proof.get('versions')!=identity
                 or not set(proof)-{'versions'} or not valid_measurement(proof)):
             missing.append('missing_global_measurement:'+check)
-        if check=='local_contact':environmental_missing.extend(missing[before:])
-    return dict(schema_version=3,release_ready=not missing,
-        environment_qualified=require_matrix and not environmental_missing,
-        matrix_validation='required' if require_matrix else 'not_required',
-        required_global_checks=list(required_global_checks),
-        source_release_ready=not missing,distribution_validation='not_executed',
-        task_count=manifest['count'],required_case_count=len(expected),missing=missing,
-        tasks=per_task,scope='environment_quality_only' if require_matrix else 'source_release_checks',**identity)
+    return dict(schema_version=4,release_ready=not missing,source_release_ready=not missing,
+        required_global_checks=list(SOURCE_RELEASE_CHECKS),distribution_validation='not_executed',
+        task_count=manifest['count'],missing=missing,scope='source_release_checks',**identity)
 
 
 EN='''# Embodied Playground environment distribution
@@ -357,7 +281,7 @@ error, speed <0.05 rad/s, a continuous 1-second hold, unchanged fixed physics,
 and <=0.25 mm visible-shell penetration. Panda Rubik uses explicitly assisted
 hybrid_fixture_v1 mechanics. Sharpa Rubik uses the same declared constraint
 mechanism with 28 native joints and five fingertip contact sensors. Both task
-scorers require native physical evidence; full-case qualification remains pending.
+scorers require native physical evidence.
 Neither is described as unassisted free manipulation. Kongming
 subtasks select the pieces to move; all other pieces retain their assembled
 configuration. Bookshelf instructions define category, placement and release
@@ -372,8 +296,7 @@ Consult catalog.json and runtime describe for each selected task's contract.
 `python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --seed 0 --output /tmp/agentbench-check.json`
 
 Provide locally collected evidence for the source-release checks using --evidence.
-These checks do not solve tasks or claim full-matrix qualification. Optional
-matrix diagnostics use check-matrix. Only a package with release_ready=true has
+These checks do not solve tasks. Only a package with release_ready=true has
 passed its source-release gates. A staging package is not a release candidate.
 '''
 ZH='''# Embodied Playground 环境发行包
@@ -405,7 +328,7 @@ L0 允许 Python、标准库、NumPy、Pillow 和自行实现的动力学／IK�
 
 ## 物理合同
 
-汉诺塔只移动顶环，遵守小环在上；落座容差为 XY 22 mm、Z 16 mm，可见壳体穿透不超过 5 mm，终态连续保持 1 秒。二阶魔方要求目标态、提交次数、定位误差不超过 1 度、速度低于 0.05 rad/s、连续保持 1 秒、固定物理指纹不变、可见壳体穿透不超过 0.25 mm。Panda 三阶魔方明确采用 hybrid_fixture_v1 辅助机构；Sharpa 三阶魔方使用相同的声明约束机构，包含 28 个原生关节和五个指尖接触传感器。两种任务评分器均要求原生物理证据；全案例验收仍待完成，两者均不描述成无辅助操作。孔明锁只移动子任务指定零件，其余保持组装态。书架按任务说明执行类别、放置和释放规则，并逐物理子步检查违规。小鸟在动作前公开弹簧刚度及 N/m 单位，保留目标顺序和保护对象约束。各项具体条件见 catalog.json 与运行时 describe。
+汉诺塔只移动顶环，遵守小环在上；落座容差为 XY 22 mm、Z 16 mm，可见壳体穿透不超过 5 mm，终态连续保持 1 秒。二阶魔方要求目标态、提交次数、定位误差不超过 1 度、速度低于 0.05 rad/s、连续保持 1 秒、固定物理指纹不变、可见壳体穿透不超过 0.25 mm。Panda 三阶魔方明确采用 hybrid_fixture_v1 辅助机构；Sharpa 三阶魔方使用相同的声明约束机构，包含 28 个原生关节和五个指尖接触传感器。两种任务评分器均要求原生物理证据，两者均不描述成无辅助操作。孔明锁只移动子任务指定零件，其余保持组装态。书架按任务说明执行类别、放置和释放规则，并逐物理子步检查违规。小鸟在动作前公开弹簧刚度及 N/m 单位，保留目标顺序和保护对象约束。各项具体条件见 catalog.json 与运行时 describe。
 
 ## 工程检查
 
@@ -413,7 +336,7 @@ L0 允许 Python、标准库、NumPy、Pillow 和自行实现的动力学／IK�
 
 `python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --seed 0 --output /tmp/agentbench-check.json`
 
-使用 --evidence 提供本地收集的源码发布检查证据。上述检查不进行解题，也不声明全条件矩阵已通过。可选矩阵诊断使用 check-matrix。只有 release_ready=true 才表示源码发布门槛通过，staging 包不是发布候选。
+使用 --evidence 提供本地收集的源码发布检查证据。上述检查不进行解题。只有 release_ready=true 才表示源码发布门槛通过，staging 包不是发布候选。
 '''
 
 

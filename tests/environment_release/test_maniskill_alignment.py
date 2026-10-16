@@ -81,21 +81,16 @@ def test_light_scaling_changes_only_colors():
     with pytest.raises(ValueError):lighting_parameters(float('nan'))
 
 
-def test_complete_schedule_preserves_old_cases_and_default_only_formal_physics():
+def test_formal_protocol_uses_default_maniskill_physics():
     from agentbench_platform.environment_catalog import catalog
-    from agentbench_platform.environment_matrix import schedule
-    m=catalog(_native_records={});s=schedule(m)
-    assert m['count']==410 and len({t['id'] for t in m['tasks']})==410
-    assert (s['unique_conditions'],s['planned_memberships'])==(9390,11090)
-    slots=0;extra=0;old=0
-    for row in s['conditions']:
-        for member in row['memberships']:
-            if member['suite']=='protocol':
-                slots+=1
-                if row['task_id'].startswith('maniskill_'):assert row['condition']['environment_parameters']['physics_variant']==0
-            if member['suite']=='additional_physics':extra+=1
-            if member['suite']=='legacy' and not row['task_id'].startswith('maniskill_') and '/dual-floating-sharpa/' not in row['task_id']:old+=1
-    assert slots==6120 and extra==240 and old==4490
+    from agentbench_platform.evaluation_protocol import trial_plan
+    tasks=[t for t in catalog()['tasks'] if t['backend']=='maniskill']
+    assert len(tasks)==30
+    for task in tasks:
+        for seed in (0,1,2):
+            trials=trial_plan(task,seed)
+            assert len(trials)==4
+            assert all(t['environment_parameters']['physics_variant']==0 for t in trials)
 
 
 def test_dual_sharpa_constructor_applies_private_parameters_before_make(monkeypatch):

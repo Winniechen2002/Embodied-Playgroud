@@ -21,15 +21,13 @@ def main():
     parser.add_argument('--capture-contracts',action='store_true')
     parser.add_argument('--default-configurations',action='store_true',help='Seed 0, nominal lighting and physics for each selected task')
     parser.add_argument('--probe-only',action='store_true',help='Explicit five-second diagnostic; never full-horizon qualification')
-    parser.add_argument('--matrix-kind',choices=['legacy','protocol','union'],default='union')
     parser.add_argument('--list-conditions',action='store_true')
-    parser.add_argument('--condition-key',action='append')
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--no-render',action='store_true',help='Physics diagnostic only; cannot satisfy observation/render checks')
     args=parser.parse_args()
     import numpy as np
     from agentbench_platform.environment_catalog import catalog
-    from agentbench_platform.environment_matrix import schedule
+    from agentbench_platform.environment_conditions import condition_case
     from agentbench_platform.environment_release import inventory,evidence_identity
     from agentbench_platform.maniskill_backend import ManiSkillBackend
     from agentbench_platform.resources import ResourceStore
@@ -37,19 +35,13 @@ def main():
     manifest=catalog(_native_records={} if args.capture_contracts else None)
     tasks={t['id']:t for t in manifest['tasks'] if t['backend']=='maniskill' and (not args.task_id or t['id'] in args.task_id)}
     if not tasks or args.task_id and set(args.task_id)!=set(tasks):parser.error('Unknown ManiSkill task')
-    planned=schedule(dict(tasks=list(tasks.values())),args.matrix_kind)
-    rows=planned['conditions']
-    if args.capture_contracts or args.default_configurations:
-        rows=[next(r for r in rows if r['task_id']==t and r['condition']['environment_parameters']==dict(authored_light_scale=1.,physics_variant=0) and r['condition']['seed']==0) for t in tasks]
-    if args.condition_key:
-        if set(args.condition_key)-{r['key'] for r in rows}:parser.error('Unknown condition key')
-        rows=[r for r in rows if r['key'] in args.condition_key]
+    rows=[condition_case(task) for task in tasks.values()]
     if args.list_conditions:
         args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(rows,indent=2)+'\n');return 0
     sources=inventory();identity=evidence_identity(manifest,sources)
     report=dict(scope='maniskill_native_engineering',run_status='running',expected_cases=len(rows),source_manifest=sources,
         **identity,execution=dict(capture_contracts=args.capture_contracts,no_render=args.no_render,
-            probe_only=args.probe_only,default_configurations=args.default_configurations,selected_keys=[r['key'] for r in rows]),
+            probe_only=args.probe_only,default_configurations=True,selected_keys=[r['key'] for r in rows]),
         runtime=dict(python=sys.version,platform=platform.platform(),packages={name:importlib.metadata.version(name)
             for name in ('mani-skill-nightly','sapien','torch','numpy','scipy','gymnasium','trimesh','Pillow')}),cases=[])
     if args.resume and args.output.exists():

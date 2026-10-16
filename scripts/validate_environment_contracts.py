@@ -12,7 +12,7 @@ for package in ('agentbench','agentbench_platform','agentbench_sdk'):
 
 def main():
     from agentbench_platform.environment_catalog import catalog
-    from agentbench_platform.environment_matrix import effective_condition
+    from agentbench_platform.environment_conditions import effective_condition
     from agentbench_platform.environment_release import inventory,evidence_identity
     from agentbench_platform.scorer_fixtures import marble_fixture,symbolic_fixture,kongming_fixture,bookshelf_fixture
     parser=argparse.ArgumentParser(description=__doc__)

@@ -65,4 +65,4 @@ The runtime uses one SAPIEN CPU scene, 240 Hz physics and 20 Hz control. Asset i
 
 ## Reproducibility
 
-Record source revision, local changes, package versions, simulator and driver versions, asset hashes, selected task/condition and command line. A catalog or smoke check alone does not cover all source-release checks. See [validation](environment_validation.en.md) for the acceptance standard and extended validation scope. Cross-hardware bitwise reproducibility is not asserted.
+Record source revision, local changes, package versions, simulator and driver versions, asset hashes, selected task/condition and command line. A catalog or smoke check alone does not cover all source-release checks. See [validation](environment_validation.en.md) for the source-release acceptance standard. Cross-hardware bitwise reproducibility is not asserted.

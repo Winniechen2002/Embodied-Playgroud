@@ -7,7 +7,7 @@ for name in ('agentbench','agentbench_platform','agentbench_sdk'):
     sys.path.insert(0,str(ROOT/'source'/name))
 from agentbench_platform.profiles import RunProfile,CAPABILITY_VERSION,sanitize_snapshot,sanitize_description
 from agentbench_platform.environment_catalog import catalog,digest
-from agentbench_platform.environment_release import gate,matrix,source_files
+from agentbench_platform.environment_release import gate,source_files
 
 
 def profile(level,**kwargs):
@@ -22,7 +22,6 @@ def test_inventory_contains_only_410_unique_environment_identities():
     assert all('capability_levels' in t and 'difficulty' in t for t in data['tasks'])
     assert all('success_rate' not in t and 'completed' not in t for t in data['tasks'])
     assert all((ROOT/t['authoring_source']).is_file() for t in data['tasks'])
-    assert len(matrix(data))>410*3
 
 
 @pytest.mark.parametrize('level',range(4))
@@ -89,19 +88,6 @@ def test_hanoi_observer_infers_motion_without_client_move_claims():
     assert not m.result(pos)['task_success']
 
 
-def test_matrix_gate_rejects_absent_stale_skipped_and_zero_step_evidence():
-    from agentbench_platform.environment_release import matrix_gate as gate
-    data=catalog();files={'source.py':{'sha256':'a','bytes':1}}
-    assert not gate(data,files,{})['release_ready']
-    evidence=dict(source_digest=digest(files),catalog_digest=digest(data),capability_profile_version=CAPABILITY_VERSION)
-    assert not gate(data,files,evidence)['release_ready']
-    required=matrix(data)[0]
-    evidence['cases']=[dict(key=required['key'],checks={k:'skipped' for k in required['checks']},physics_steps=0)]
-    report=gate(data,files,evidence)
-    assert not report['release_ready']
-    assert any(isinstance(r,dict) and r['task_id']==required['task_id'] for r in report['missing'])
-
-
 def test_allowlist_excludes_history_models_and_controllers():
     files=[str(p) for p in source_files()]
     assert files
@@ -139,20 +125,6 @@ def test_export_removes_shot_suggestions_without_changing_physical_arguments():
     assert exported['x']=={k:v for k,v in original['x'].items() if k not in {'plan','yaw_plan','reference'}}
     assert b'Old rollout' not in payload
     assert export_content('source/other.py',source)==source
-
-
-def test_full_horizon_gate_rejects_short_probe_even_when_all_labels_say_passed():
-    from agentbench_platform.environment_release import matrix_gate as gate
-    from agentbench_platform.environment_release import CHECKS,GLOBAL_CHECKS
-    task=next(t for t in catalog()['tasks'] if t['case_id']=='A024')
-    manifest=dict(count=1,tasks=[task]);files={}
-    evidence=dict(source_digest=digest(files),catalog_digest=digest(manifest),
-        capability_profile_version=CAPABILITY_VERSION,global_checks={k:'passed' for k in GLOBAL_CHECKS},
-        cases=[dict(key=r['key'],checks={k:'passed' for k in CHECKS},physics_steps=5000,
-            settle_seconds=2,hold_seconds=3,runtime={'mujoco':'fixture'},no_operation_seconds=5)
-            for r in matrix(manifest)])
-    assert not gate(manifest,files,evidence)['release_ready']
-    assert any(str(r).startswith('missing_full_horizon_stability:') for r in gate(manifest,files,evidence)['missing'])
 
 
 def test_explicit_profile_cli_never_loads_model_runner():
