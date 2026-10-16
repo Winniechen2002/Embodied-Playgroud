@@ -2,7 +2,24 @@
 
 [简体中文](environment_validation.zh-CN.md) · [Documentation](README.en.md)
 
-Validation checks environment implementation, asset loading, native actions and observations, scoring, permissions and episode lifecycle. It does not establish agent performance or prove that every seed is solvable. Complete engineering qualification remains incomplete.
+Validation checks environment implementation, asset loading, native actions and observations, scoring, permissions and episode lifecycle. It does not establish agent performance or prove that every seed is solvable. Engineering acceptance for this public source release has passed within the scope below.
+
+## Engineering acceptance standard for this source release
+
+On 2026-10-16, the maintainer approved the following executed, passing checks as the acceptance standard for this public source release. Engineering acceptance against this standard is **passed**.
+
+| Check | Passing coverage |
+| --- | --- |
+| Source regression | 287 tests, zero failures and zero skips |
+| Scorer endpoint fixtures | MuJoCo 100, Isaac 280 and ManiSkill 30: 410 tasks |
+| Native installation and basic operation | Loading, stepping and finish checks for all 410 tasks; rendering checks for 10 Isaac categories, plus MuJoCo and ManiSkill rendering/gateway smoke checks |
+| Default-condition physics | 100 MuJoCo tasks and 30 ManiSkill tasks |
+| Documentation and public content | Bilingual protocol generation consistency, permission documentation, 1,438 local link targets and a static audit of 742 public files |
+| Export usability | Independent source export, discovery of all 410 tasks and the MuJoCo A001 smoke check |
+
+Native checks used existing isolated runtimes with validated versions on an NVIDIA RTX 4090 with driver 580.173.02. They are not a claim that every simulator was freshly installed on an empty machine. Scorer fixtures exercise constructed states; physics coverage is limited to the default conditions listed above; the exported package smoke check covers MuJoCo. Assets retain their original applicable licenses and attributions.
+
+This standard applies to this public source release and does not require repeating the full condition matrix for release. Generated check reports belong in local output directories outside the repository and are not committed with the public source.
 
 ## Local checks
 
@@ -15,7 +32,6 @@ Use the configured MuJoCo environment. These commands do not start native simula
 ```bash
 python scripts/environment_release.py catalog --output /tmp/agentbench-catalog.json
 python scripts/export_evaluation_protocol.py --check
-python scripts/environment_release.py matrix --matrix union --output /tmp/agentbench-conditions.json
 ```
 
 Expect 410 catalog tasks and a protocol check confirming that generated documents and source hashes match.
@@ -53,27 +69,13 @@ Smoke checks exercise real observations, time advancement, repeated request IDs,
 
 Use the backend-specific clean-installation scripts from the installation guide. The validators ignore materialized assets whose contents match their Git LFS index pointers. Real source, asset or staged changes still require a clean checkout before installation validation.
 
-## Engineering condition matrix
+## Release checks and optional diagnostics
 
-The matrix version is `environment-conditions-v3`:
+`environment_release.py check` and `build --candidate` use the source-release scope. Their required evidence covers the three native installations, assets, licenses, bilingual documentation, source regression, scorer fixtures, default-condition physics and export smoke checks. The full matrix and its local-contact qualification are separate diagnostics.
 
-| Selection | Unique conditions | Memberships |
-| --- | ---: | ---: |
-| legacy | 4,970 | 4,970 |
-| protocol, base seeds 0/1/2 | 5,160 | 6,120 |
-| union | 9,390 | 11,090 |
+Pass locally collected evidence with `--evidence`; each required category needs a `passed` entry in `global_checks` and a nonempty measurement in `global_measurements`, bound to the current source identity. Missing, failed, stale or nonfinite evidence is rejected. Approval of this source release does not turn absent evidence into passing measurements.
 
-Memberships retain overlaps between groups. These engineering counts are distinct from the paper evaluation denominators. The general base-seed-0 schedule includes loaded and ground initialization: 510 groups and 2,040 conditions. The paper's loaded-only setting has 410 groups and 1,640 conditions; EP-100 has 400 conditions. See [EP definitions](ep_subsets/README.en.md).
-
-Matrix tools include `validate_environment_physics.py`, `validate_isaac_environments.py` and `validate_maniskill_environments.py`. Use each tool's `--help` and its correct simulator runtime. Preserve exact selected conditions, source identity and budgets when resuming. A changed source requires new evidence.
-
-## Acceptance and limitations
-
-Required checks cover contracts, necessary geometry, physics, native actions/observations, scoring, four permission levels, lifecycle and repeat initialization. Static scenes require at least 2 seconds settling and 3 seconds holding; specified support scenes retain full-horizon checks. Dynamic checks cover triggers, contacts, finite state and termination. An expected no-action task failure is not by itself an environment defect.
-
-Records bind actual initialization, source/catalog/assets/scorer versions, physical steps, measured quantities and failure causes. Unknown conditions, duplicates, stale sources, skips, missing measurements or insufficient duration cannot pass the gate. `passed_probe` is partial evidence. Full qualification also requires clean-installation checks, asset provenance and licensing review.
-
-The source tree is prepared for review; it does not assert `environment_qualified`, `source_release_ready` or completed distribution validation. Runtime compatibility, native installation probes, complete engineering qualification and redistribution rights are separate claims. Preserve these distinctions when reporting checks.
+Matrix generation and per-condition tools remain optional diagnostics. Use `environment_release.py check-matrix` or `environment_status.py` when needed to inspect evidence. Their full-matrix conclusions are not release prerequisites. Use each backend's simulator environment and keep generated results outside the repository.
 
 ## Contract changes
 

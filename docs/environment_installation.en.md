@@ -44,7 +44,7 @@ bash scripts/run_isaac_binary.sh scripts/validate_isaac_installation.py \
   --output /tmp/agentbench-isaac-installation.json
 ```
 
-Run Isaac scripts through `bash scripts/run_isaac_binary.sh <script> <arguments>`. The wrapper uses the standalone binary and isolated interpreter; it does not accept vendor terms automatically. Use the binary constraints above: the older Isaac Sim 5.1 pip dependency combination has incompatible FastAPI/Starlette pins. The installation validator loads native configurations and checks rendering, actions and clean exit; it does not solve tasks or establish complete engineering qualification.
+Run Isaac scripts through `bash scripts/run_isaac_binary.sh <script> <arguments>`. The wrapper uses the standalone binary and isolated interpreter; it does not accept vendor terms automatically. Use the binary constraints above: the older Isaac Sim 5.1 pip dependency combination has incompatible FastAPI/Starlette pins. The installation validator loads native configurations and checks rendering, actions and clean exit; it does not solve tasks. It supplies the installation and basic-operation checks used in source-release engineering acceptance.
 
 ## ManiSkill
 
@@ -65,4 +65,4 @@ The runtime uses one SAPIEN CPU scene, 240 Hz physics and 20 Hz control. Asset i
 
 ## Reproducibility
 
-Record source revision, local changes, package versions, simulator and driver versions, asset hashes, selected task/condition and command line. A successful catalog or smoke check is narrower than complete environment qualification. See [validation](environment_validation.en.md) for the remaining checks. Cross-hardware bitwise reproducibility is not asserted.
+Record source revision, local changes, package versions, simulator and driver versions, asset hashes, selected task/condition and command line. A catalog or smoke check alone does not cover all source-release checks. See [validation](environment_validation.en.md) for the acceptance standard and extended validation scope. Cross-hardware bitwise reproducibility is not asserted.

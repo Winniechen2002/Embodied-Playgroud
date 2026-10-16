@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-bound per-task engineering progress; never infer qualification from probes."""
+"""Optional full-matrix diagnostics; this is not the source-release gate."""
 import argparse
 from collections import Counter
 from datetime import datetime, timezone
@@ -13,7 +13,7 @@ sys.path.insert(0,str(ROOT/'source/agentbench_platform'))
 
 def summarize(paths, *, global_evidence=None):
     from agentbench_platform.environment_catalog import catalog
-    from agentbench_platform.environment_release import inventory,evidence_identity,matrix,gate,CHECKS
+    from agentbench_platform.environment_release import inventory,evidence_identity,matrix,matrix_gate,CHECKS
     manifest=catalog();identity=evidence_identity(manifest,inventory())
     required=matrix(manifest);known={r['key']:r for r in required}
     tasks={t['id']:dict(required_conditions=0,observed_conditions=0,qualified_conditions=0,
@@ -61,7 +61,7 @@ def summarize(paths, *, global_evidence=None):
             if row.get('status')=='failed':target['failed_conditions'].append(dict(key=key,reason=row.get('error')))
             for name in CHECKS:
                 if row.get('checks',{}).get(name)=='passed':target['checks_observed'][name]+=1
-    verdict=gate(manifest,inventory(),evidence)
+    verdict=matrix_gate(manifest,inventory(),evidence)
     for task_id,counts in verdict['tasks'].items():
         target=tasks[task_id];target['qualified_conditions']=counts['qualified']
         target['stale_reports']=sorted(set(target['stale_reports']))

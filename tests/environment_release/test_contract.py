@@ -89,7 +89,8 @@ def test_hanoi_observer_infers_motion_without_client_move_claims():
     assert not m.result(pos)['task_success']
 
 
-def test_release_gate_rejects_absent_stale_skipped_and_zero_step_evidence():
+def test_matrix_gate_rejects_absent_stale_skipped_and_zero_step_evidence():
+    from agentbench_platform.environment_release import matrix_gate as gate
     data=catalog();files={'source.py':{'sha256':'a','bytes':1}}
     assert not gate(data,files,{})['release_ready']
     evidence=dict(source_digest=digest(files),catalog_digest=digest(data),capability_profile_version=CAPABILITY_VERSION)
@@ -141,6 +142,7 @@ def test_export_removes_shot_suggestions_without_changing_physical_arguments():
 
 
 def test_full_horizon_gate_rejects_short_probe_even_when_all_labels_say_passed():
+    from agentbench_platform.environment_release import matrix_gate as gate
     from agentbench_platform.environment_release import CHECKS,GLOBAL_CHECKS
     task=next(t for t in catalog()['tasks'] if t['case_id']=='A024')
     manifest=dict(count=1,tasks=[task]);files={}

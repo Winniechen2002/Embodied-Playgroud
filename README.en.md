@@ -53,7 +53,11 @@ Levels do not authorize state writes or automatically install tools. The gateway
 
 ## Scope and validation
 
-This source distribution contains environments, the SDK, rules and supporting validation tools. It includes no model results, solution trajectories or leaderboard. See [validation](docs/environment_validation.en.md) for the engineering checks and their limits. Complete engineering qualification remains incomplete. The maintainer has approved distribution of the included asset bundle under its original applicable licenses; see the asset license inventory.
+This source distribution contains environments, the SDK, rules and supporting validation tools. It includes no model results, solution trajectories or leaderboard. See [validation](docs/environment_validation.en.md) for the engineering checks and their limits.
+
+Engineering acceptance for this public source release has passed against the maintainer-approved scope: source regression tests, all 410 scorer fixtures and native installation checks, 130 default-condition physics probes, documentation checks and a MuJoCo export smoke test.
+
+The maintainer has approved distribution of the included asset bundle under its original applicable licenses; see the asset license inventory.
 
 ## License
 

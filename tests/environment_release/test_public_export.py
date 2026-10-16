@@ -51,6 +51,8 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     destination = tmp_path/'source-package'
     status = build(destination)
     assert not status['release_ready']
+    assert status['required_case_count']==0
+    assert not (destination/'acceptance-matrix.json').exists()
     assert (destination/'DISTRIBUTION_STATUS').read_text() == 'staging-not-qualified\n'
     assert (destination/'docs/evaluation/tasks.json').is_file()
     assert (destination/'rules.md').read_bytes() == (ROOT/'rules.md').read_bytes()

@@ -1,8 +1,9 @@
 import copy
+import pytest
 from collections import Counter
 from agentbench_platform.environment_catalog import catalog, digest
 from agentbench_platform.environment_matrix import matrix, schedule
-from agentbench_platform.environment_release import CHECKS, GLOBAL_CHECKS, evidence_identity, gate
+from agentbench_platform.environment_release import CHECKS, GLOBAL_CHECKS, evidence_identity, matrix_gate as gate
 
 
 def test_union_preserves_every_legacy_and_protocol_membership():
@@ -65,3 +66,46 @@ def test_local_contact_is_an_environment_gate():
     manifest,evidence=evidence_fixture()
     evidence['global_checks']['local_contact']='not_executed'
     assert not gate(manifest,{},evidence)['environment_qualified']
+
+
+def source_release_evidence_fixture():
+    from agentbench_platform.environment_release import SOURCE_RELEASE_CHECKS
+    manifest,evidence=evidence_fixture()
+    evidence.pop('cases')
+    identity=evidence_identity(manifest,{})
+    evidence['global_checks']={k:'passed' for k in SOURCE_RELEASE_CHECKS}
+    evidence['global_measurements']={k:dict(versions=identity,fixture=True) for k in SOURCE_RELEASE_CHECKS}
+    return manifest,evidence
+
+
+def test_source_release_does_not_require_matrix_cases_or_local_contact():
+    from agentbench_platform.environment_release import gate as release_gate
+    manifest,evidence=source_release_evidence_fixture()
+    result=release_gate(manifest,{},evidence)
+    assert result['release_ready'] and result['source_release_ready']
+    assert result['required_case_count']==0
+    assert result['matrix_validation']=='not_required'
+    assert 'local_contact' not in result['required_global_checks']
+    assert not result['environment_qualified']  # No claim of full-matrix execution.
+    assert not gate(manifest,{},evidence)['release_ready']
+    evidence['global_checks']['assets']='failed'
+    assert not release_gate(manifest,{},evidence)['release_ready']
+
+
+def test_source_release_still_rejects_stale_global_evidence():
+    from agentbench_platform.environment_release import gate as release_gate
+    manifest,evidence=source_release_evidence_fixture()
+    evidence['global_measurements']['licenses']['versions']['source_digest']='stale'
+    assert not release_gate(manifest,{},evidence)['release_ready']
+
+
+@pytest.mark.parametrize('check',['source_regression','scorer_fixtures','default_physics','export_smoke'])
+@pytest.mark.parametrize('failure',['missing','failed','empty_measurement','nonfinite_measurement'])
+def test_source_release_requires_approved_validation_categories(check,failure):
+    from agentbench_platform.environment_release import gate as release_gate
+    manifest,evidence=source_release_evidence_fixture()
+    if failure=='missing':evidence['global_checks'].pop(check)
+    elif failure=='failed':evidence['global_checks'][check]='failed'
+    elif failure=='empty_measurement':evidence['global_measurements'][check].pop('fixture')
+    else:evidence['global_measurements'][check]['fixture']=float('nan')
+    assert not release_gate(manifest,{},evidence)['release_ready']

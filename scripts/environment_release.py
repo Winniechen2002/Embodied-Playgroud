@@ -10,9 +10,9 @@ sys.path.insert(0,str(ROOT/'source/agentbench_platform'))
 
 def main(argv=None):
     from agentbench_platform.environment_catalog import catalog
-    from agentbench_platform.environment_release import inventory,gate,build,matrix
+    from agentbench_platform.environment_release import inventory,gate,matrix_gate,build,matrix
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('operation',choices=['catalog','matrix','check','audit','build'])
+    p.add_argument('operation',choices=['catalog','matrix','check','check-matrix','audit','build'])
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--evidence',type=Path)
     p.add_argument('--candidate',action='store_true')
@@ -34,11 +34,12 @@ def main(argv=None):
         from agentbench_platform.environment_matrix import schedule
         selected=dict(manifest,tasks=[t for t in manifest['tasks'] if not args.task_id or t['id']==args.task_id])
         result=schedule(selected,args.matrix)
+    elif args.operation=='check-matrix':result=matrix_gate(manifest,inventory(),evidence)
     else:result=gate(manifest,inventory(),evidence)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(args.output)
-    if args.operation=='check' and not result['release_ready']:raise SystemExit(1)
+    if args.operation in ('check','check-matrix') and not result['release_ready']:raise SystemExit(1)
 
 
 if __name__=='__main__':main()

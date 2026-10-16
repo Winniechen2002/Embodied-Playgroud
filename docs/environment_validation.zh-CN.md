@@ -2,7 +2,24 @@
 
 [English](environment_validation.en.md) · [文档](README.zh-CN.md)
 
-验证检查环境实现、资产加载、原生动作与观测、评分、权限及回合生命周期，不代表 agent 表现，也不证明每个种子均可求解。完整工程验收尚未完成。
+验证检查环境实现、资产加载、原生动作与观测、评分、权限及回合生命周期，不代表 agent 表现，也不证明每个种子均可求解。本次公开源码发布的工程验收已通过，验收范围如下。
+
+## 本次源码发布的工程验收标准
+
+维护者于 2026-10-16 确认采用以下已执行且通过的检查作为本次源码发布标准，工程验收结论为**通过**。
+
+| 检查 | 已通过范围 |
+| --- | --- |
+| 源码回归 | 287 项测试，0 失败、0 跳过 |
+| 评分端点夹具 | MuJoCo 100、Isaac 280、ManiSkill 30，共 410 项 |
+| 原生安装与基本运行 | 三后端全部 410 项加载、步进和结束检查；Isaac 10 类渲染检查，以及 MuJoCo、ManiSkill 渲染与网关烟雾检查 |
+| 默认条件物理检查 | MuJoCo 100 项、ManiSkill 30 项 |
+| 文档与公开内容 | 双语协议生成一致性、权限文档、1,438 个本地链接目标、742 个公开文件的静态审计 |
+| 导出可用性 | 独立源码导出、410 项目录加载及 MuJoCo A001 烟雾检查 |
+
+原生检查使用隔离且版本受校验的现有运行时，测试硬件为 NVIDIA RTX 4090、驱动 580.173.02；不将其描述为在空机器上重新安装全部模拟器。评分夹具检查人工构造的状态，物理检查覆盖上表所列默认条件，导出包烟雾检查覆盖 MuJoCo。资产按原有适用许可证分发，许可与署名保持不变。
+
+本标准适用于此次公开源码发布，不要求为发布重复执行全条件矩阵。生成的检查报告放在仓库外的本地输出目录，不随公开源码提交。
 
 ## 本地检查
 
@@ -15,7 +32,6 @@
 ```bash
 python scripts/environment_release.py catalog --output /tmp/agentbench-catalog.json
 python scripts/export_evaluation_protocol.py --check
-python scripts/environment_release.py matrix --matrix union --output /tmp/agentbench-conditions.json
 ```
 
 预期目录含 410 个任务，协议生成检查报告源码哈希与文档一致。
@@ -53,27 +69,13 @@ python scripts/environment_smoke.py --task-id maniskill_long_horizon/fetch/L1 --
 
 干净安装验证使用安装指南中的对应脚本。验证器忽略内容与 Git LFS 索引指针匹配的实体资产，避免误报本地修改；真实源码、资产或暂存区修改仍须在干净检出中解决后再验证。
 
-## 工程条件矩阵
+## 发布检查与可选诊断
 
-矩阵版本为 `environment-conditions-v3`：
+`environment_release.py check` 和 `build --candidate` 使用源码发布标准，要求的证据覆盖三个后端的原生安装、资产、许可、双语文档、源码回归、评分夹具、默认条件物理检查和导出烟雾检查。全条件矩阵及其局部接触验收属于独立诊断。
 
-| 选择 | 唯一条件 | 成员关系数 |
-| --- | ---: | ---: |
-| legacy | 4,970 | 4,970 |
-| protocol，基准种子 0/1/2 | 5,160 | 6,120 |
-| union | 9,390 | 11,090 |
+通过 `--evidence` 提供本地收集的证据；每个必需检查项都需要 `global_checks` 中的 `passed` 状态，以及 `global_measurements` 中绑定当前源码身份的非空测量。缺失、失败、过期或包含非有限数值的证据不能通过。源码发布批准不会把缺失证据自动变为通过的测量。
 
-成员关系数保留组间重叠。这些工程数量与论文评测分母不同。基准种子为 0 的通用安排包含 loaded 与 ground，共 510 组、2,040 个条件；论文 loaded-only 设置为 410 组、1,640 个条件，EP-100 为 400 个条件。详见[EP 定义](ep_subsets/README.zh-CN.md)。
-
-矩阵工具包括 `validate_environment_physics.py`、`validate_isaac_environments.py` 和 `validate_maniskill_environments.py`。在对应模拟器运行时中查看各工具的 `--help`。恢复检查时保留相同的条件选择、源码身份与预算；源码变化后需要新证据。
-
-## 验收与局限
-
-必需检查覆盖契约、必要几何条件、物理、原生动作与观测、评分、四个权限等级、生命周期与重复初始化。静态场景至少稳定 2 秒并保持 3 秒，指定支撑场景仍需完整时长检查；动态检查覆盖触发、接触、有限状态与终止。符合预期的不操作任务失败，本身不等于环境缺陷。
-
-记录绑定实际初始化、源码／目录／资产／评分器版本、物理步数、测量值与失败原因。未知条件、重复记录、过期源码、跳过项、缺失测量或时长不足均不能通过验收；`passed_probe` 只是部分证据。完整验收还需要干净安装检查、资产来源与许可审查。
-
-本源码目录用于审核，不声明 `environment_qualified`、`source_release_ready` 或分发验证已经完成。运行时兼容、原生安装探针、完整工程验收及再分发权利是不同结论，报告中应保留这些区别。
+矩阵生成及逐条件工具保留为可选诊断。需要时可使用 `environment_release.py check-matrix` 或 `environment_status.py` 检查选定证据；这些诊断的全矩阵结论不构成发布前置要求。运行工具时使用对应模拟器环境，结果保存在仓库外。
 
 ## 契约变更
 

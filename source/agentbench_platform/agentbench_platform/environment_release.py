@@ -11,6 +11,11 @@ from .profiles import CAPABILITY_VERSION
 CHECKS=('contract','necessary_geometry','physics','action_observation','scorer','gateway_l0',
         'gateway_l1','gateway_l2','gateway_l3','lifecycle','repeat_initialization')
 GLOBAL_CHECKS=('clean_install_mujoco','clean_install_isaac','clean_install_maniskill','assets','licenses','bilingual_docs','local_contact')
+# Source publication uses the maintainer-approved checks documented in
+# docs/environment_validation.en.md. Contact qualification belongs to the
+# optional full-condition matrix, not this source-release scope.
+SOURCE_RELEASE_CHECKS=tuple(check for check in GLOBAL_CHECKS if check!='local_contact')+(
+    'source_regression','scorer_fixtures','default_physics','export_smoke')
 SOURCE_ROOTS=('source/agentbench','source/agentbench_platform','source/agentbench_sdk','env/maniskill_lgd')
 SCRIPT_NAMES=('environment_runtime.py','environment_release.py','environment_smoke.py',
     'environment_client.py','franka_marble_test_protocol.py','check_tool_policy_docs.py','validate_environment_physics.py','agentbench_platform_runtime.py','generate_hanoi_ring_assets.py','validate_isaac_environments.py','export_evaluation_protocol.py','validate_environment_contracts.py','environment_status.py','validate_source_installation.py','revalidate_action_contracts.py','validate_maniskill_environments.py','validate_maniskill_fixtures.py','check_maniskill_dynamics.py','validate_isaac_installation.py','run_isaac_binary.sh','isaac_binary_bootstrap/sitecustomize.py')
@@ -197,17 +202,27 @@ def evidence_identity(manifest, files):
 
 
 def gate(manifest,files,evidence):
-    """Fail closed on stale, unknown, duplicate or incomplete maintainer evidence.
+    """Check source-release evidence without requiring a condition-matrix rerun."""
+    return _gate(manifest,files,evidence,require_matrix=False)
+
+
+def matrix_gate(manifest,files,evidence):
+    """Optional full-matrix diagnostics, independent of source-release approval."""
+    return _gate(manifest,files,evidence,require_matrix=True)
+
+
+def _gate(manifest,files,evidence,*,require_matrix):
+    """Fail closed on stale or incomplete evidence within the selected scope.
 
     Labels alone never qualify an environment. Evidence remains trusted owner
     input; this validator is not a signature or a hostile-report attestation.
     """
     import math
-    missing=[]; expected=matrix(manifest); identity=evidence_identity(manifest,files)
+    missing=[]; expected=matrix(manifest) if require_matrix else []; identity=evidence_identity(manifest,files)
     for name,value in identity.items():
         if evidence.get(name)!=value:missing.append(name)
     observed={}; expected_keys={r['key'] for r in expected}
-    for row in evidence.get('cases',[]):
+    for row in evidence.get('cases',[]) if require_matrix else []:
         key=row.get('key')
         if key in observed:missing.append('duplicate:'+str(key))
         observed[key]=row
@@ -257,7 +272,8 @@ def gate(manifest,files,evidence):
         elif not row:count['missing']+=1
         else:count['failed']+=1
     environmental_missing=list(missing)
-    for check in GLOBAL_CHECKS:
+    required_global_checks=GLOBAL_CHECKS if require_matrix else SOURCE_RELEASE_CHECKS
+    for check in required_global_checks:
         before=len(missing)
         if evidence.get('global_checks',{}).get(check)!='passed':missing.append(check)
         proof=evidence.get('global_measurements',{}).get(check,{})
@@ -265,11 +281,13 @@ def gate(manifest,files,evidence):
                 or not set(proof)-{'versions'} or not valid_measurement(proof)):
             missing.append('missing_global_measurement:'+check)
         if check=='local_contact':environmental_missing.extend(missing[before:])
-    return dict(schema_version=2,release_ready=not missing,
-        environment_qualified=not environmental_missing,
+    return dict(schema_version=3,release_ready=not missing,
+        environment_qualified=require_matrix and not environmental_missing,
+        matrix_validation='required' if require_matrix else 'not_required',
+        required_global_checks=list(required_global_checks),
         source_release_ready=not missing,distribution_validation='not_executed',
         task_count=manifest['count'],required_case_count=len(expected),missing=missing,
-        tasks=per_task,scope='environment_quality_only',**identity)
+        tasks=per_task,scope='environment_quality_only' if require_matrix else 'source_release_checks',**identity)
 
 
 EN='''# Embodied Playground environment distribution
@@ -349,12 +367,14 @@ Consult catalog.json and runtime describe for each selected task's contract.
 
 ## Engineering verification
 
-`python scripts/environment_release.py check --output environment-check.json`
+`python scripts/environment_release.py check --evidence /tmp/agentbench-release-evidence.json --output /tmp/agentbench-release-check.json`
 
 `python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --seed 0 --output /tmp/agentbench-check.json`
 
-These checks do not solve tasks. Only a package with release_ready=true has
-passed every required release gate. A staging package is not a release candidate.
+Provide locally collected evidence for the source-release checks using --evidence.
+These checks do not solve tasks or claim full-matrix qualification. Optional
+matrix diagnostics use check-matrix. Only a package with release_ready=true has
+passed its source-release gates. A staging package is not a release candidate.
 '''
 ZH='''# Embodied Playground 环境发行包
 
@@ -389,11 +409,11 @@ L0 允许 Python、标准库、NumPy、Pillow 和自行实现的动力学／IK�
 
 ## 工程检查
 
-`python scripts/environment_release.py check --output environment-check.json`
+`python scripts/environment_release.py check --evidence /tmp/agentbench-release-evidence.json --output /tmp/agentbench-release-check.json`
 
 `python scripts/environment_smoke.py --task-id marble/dual-panda/A001 --seed 0 --output /tmp/agentbench-check.json`
 
-上述检查不进行解题。只有 release_ready=true 才表示所有发布门槛通过，staging 包不是发布候选。
+使用 --evidence 提供本地收集的源码发布检查证据。上述检查不进行解题，也不声明全条件矩阵已通过。可选矩阵诊断使用 check-matrix。只有 release_ready=true 才表示源码发布门槛通过，staging 包不是发布候选。
 '''
 
 
@@ -412,7 +432,7 @@ def build(destination,*,evidence=None,candidate=False,root=ROOT):
             target.write_bytes(export_content(name,(Path(root)/name).read_bytes()))
         # contract_source is a document URI with an anchor, never a filename.
         # The generated per-task protocol document is already in public_files.
-        for name,value in [('catalog.json',manifest),('acceptance-matrix.json',matrix(manifest)),
+        for name,value in [('catalog.json',manifest),
             ('source-manifest.json',files),
             ('release-gates.json',status),('license-inventory.json',license_inventory(files,root)),
             ('bilingual-checks.json',bilingual_checks()),

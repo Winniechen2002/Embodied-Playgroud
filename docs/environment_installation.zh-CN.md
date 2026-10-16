@@ -44,7 +44,7 @@ bash scripts/run_isaac_binary.sh scripts/validate_isaac_installation.py \
   --output /tmp/agentbench-isaac-installation.json
 ```
 
-通过 `bash scripts/run_isaac_binary.sh <script> <arguments>` 运行 Isaac 脚本。包装器使用独立二进制版本与隔离解释器，不自动接受供应商条款。使用上面的 binary 约束文件；旧 Isaac Sim 5.1 pip 组合的 FastAPI/Starlette 依赖不兼容。安装验证器加载原生配置，检查渲染、动作与正常退出，不求解任务，也不代表完整工程验收。
+通过 `bash scripts/run_isaac_binary.sh <script> <arguments>` 运行 Isaac 脚本。包装器使用独立二进制版本与隔离解释器，不自动接受供应商条款。使用上面的 binary 约束文件；旧 Isaac Sim 5.1 pip 组合的 FastAPI/Starlette 依赖不兼容。安装验证器加载原生配置，检查渲染、动作与正常退出，不求解任务；这是源码发布工程验收中的安装与基本运行检查。
 
 ## ManiSkill
 
@@ -65,4 +65,4 @@ python scripts/validate_source_installation.py --backend maniskill --output /tmp
 
 ## 复现记录
 
-记录源码修订、本地改动、包版本、模拟器与驱动版本、资产哈希、任务与条件及命令行。目录查询或烟雾检查成功不等同于完整工程验收，后续检查见[验证说明](environment_validation.zh-CN.md)。本项目不声明跨硬件逐位一致。
+记录源码修订、本地改动、包版本、模拟器与驱动版本、资产哈希、任务与条件及命令行。单独的目录查询或烟雾检查不代表完成全部源码发布检查；验收标准及扩展验证见[验证说明](environment_validation.zh-CN.md)。本项目不声明跨硬件逐位一致。
