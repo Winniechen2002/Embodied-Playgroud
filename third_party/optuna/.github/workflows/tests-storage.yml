@@ -1,0 +1,133 @@
+name: Tests (Storage with server)
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+  schedule:
+    - cron: '0 23 * * SUN-THU'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/master' && github.run_number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # TODO(masap): Modify job name to "tests-storage-with-server" because this test is not only for
+  # RDB. Since current name "tests-rdbstorage" is required in the Branch protection rules, you
+  # need to modify the Branch protection rules as well.
+  tests-rdbstorage:
+    if: (github.event_name == 'schedule' && github.repository == 'optuna/optuna') || (github.event_name != 'schedule')
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13', '3.14']
+        test-trigger-type:
+          - ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && 'Scheduled' || '' }}
+        exclude:
+          - test-trigger-type: ""
+            python-version: "3.10"
+          - test-trigger-type: ""
+            python-version: "3.11"
+          - test-trigger-type: ""
+            python-version: "3.12"
+
+    services:
+      mysql:
+        image: mysql:8
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_ROOT_PASSWORD: mandatory_arguments
+          MYSQL_DATABASE: optunatest
+          MYSQL_USER: user
+          MYSQL_PASSWORD: test
+        options: >-
+          --health-cmd "mysqladmin ping -h localhost"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      postgres:
+        image: postgres:latest
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_DB: optunatest
+          POSTGRES_USER: user
+          POSTGRES_PASSWORD: test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      with:
+        python-version: ${{ matrix.python-version }}
+        enable-cache: true
+
+    - name: Setup environment
+      run: |
+        sudo apt-get update
+        sudo apt-get -y install openmpi-bin libopenmpi-dev
+
+    - name: Install
+      run: |
+        # Install minimal dependencies and confirm that `import optuna` is successful.
+        uv sync
+        uv run python -c 'import optuna'
+        uv run optuna --version
+
+        uv sync --group test --extra optional
+
+    - name: Install DB bindings
+      run: |
+        uv pip install PyMySQL cryptography psycopg2-binary psycopg redis
+
+    - name: Output installed packages
+      run: |
+        uv pip freeze
+    - name: Output dependency tree
+      run: |
+        uv tree --group test
+
+    - name: Tests MySQL
+      run: |
+        uv run pytest tests/storages_tests/test_with_server.py
+      env:
+        SQLALCHEMY_WARN_20: 1
+        OMP_NUM_THREADS: 1
+        TEST_DB_URL: mysql+pymysql://user:test@127.0.0.1/optunatest
+
+    - name: Tests PostgreSQL with psycopg2
+      run: |
+        uv run pytest tests/storages_tests/test_with_server.py
+      env:
+        OMP_NUM_THREADS: 1
+        TEST_DB_URL: postgresql+psycopg2://user:test@127.0.0.1/optunatest
+
+    - name: Tests PostgreSQL with psycopg3
+      run: |
+        uv run pytest tests/storages_tests/test_with_server.py
+      env:
+        OMP_NUM_THREADS: 1
+        TEST_DB_URL: postgresql+psycopg://user:test@127.0.0.1/optunatest
+
+    - name: Tests Journal Redis
+      run: |
+        uv run pytest tests/storages_tests/test_with_server.py
+      env:
+        OMP_NUM_THREADS: 1
+        TEST_DB_URL: redis://localhost:6379
+        TEST_DB_MODE: journal-redis

@@ -1,0 +1,107 @@
+option(OMPL_BUILD_DEMOS "Build OMPL demos" ON)
+add_feature_info(OMPL_BUILD_DEMOS "${OMPL_BUILD_DEMOS}" "Whether to build the OMPL demo programs.")
+
+if (OMPL_BUILD_DEMOS)
+    file(TO_NATIVE_PATH "${CMAKE_SOURCE_DIR}/tests/resources" TEST_RESOURCES_DIR)
+    string(REPLACE "\\" "\\\\" TEST_RESOURCES_DIR "${TEST_RESOURCES_DIR}")
+    add_definitions(-DTEST_RESOURCES_DIR=\"${TEST_RESOURCES_DIR}\")
+
+    macro(add_ompl_demo demo_name)
+        add_executable(${ARGV})
+        target_link_libraries(${demo_name} PRIVATE
+            ompl::ompl
+            Eigen3::Eigen
+            Boost::program_options)
+    endmacro(add_ompl_demo)
+
+
+    add_ompl_demo(demo_SSTPinballPlanning SSTPinballPlanning.cpp)
+    add_ompl_demo(demo_PinballPlanning PinballPlanning.cpp)
+    add_ompl_demo(demo_BouncingBallPlanning BouncingBallPlanning.cpp)
+    add_ompl_demo(demo_RigidBodyPlanning RigidBodyPlanning.cpp)
+    add_ompl_demo(demo_RigidBodyPlanningWithIK RigidBodyPlanningWithIK.cpp)
+    add_ompl_demo(demo_RigidBodyPlanningWithControls RigidBodyPlanningWithControls.cpp)
+    add_ompl_demo(demo_RigidBodyPlanningWithIntegrationAndControls RigidBodyPlanningWithIntegrationAndControls.cpp)
+    add_ompl_demo(demo_RigidBodyPlanningWithODESolverAndControls RigidBodyPlanningWithODESolverAndControls.cpp)
+    add_ompl_demo(demo_StateSampling StateSampling.cpp)
+    add_ompl_demo(demo_GeometricCarPlanning GeometricCarPlanning.cpp)
+    add_ompl_demo(demo_DubinsAirplane DubinsAirplane.cpp)
+    add_ompl_demo(demo_Point2DPlanning Point2DPlanning.cpp)
+    add_ompl_demo(demo_HybridSystemPlanning HybridSystemPlanning.cpp)
+    add_ompl_demo(demo_KinematicChainBenchmark KinematicChainBenchmark.cpp)
+    add_ompl_demo(demo_HypercubeBenchmark HypercubeBenchmark.cpp)
+    aux_source_directory(Koules Koules_SRC)
+    add_ompl_demo(demo_Koules ${Koules_SRC})
+    add_ompl_demo(demo_PlannerData PlannerData.cpp)
+    add_ompl_demo(demo_ThunderLightning ThunderLightning.cpp)
+
+    add_ompl_demo(demo_OptimalPlanning OptimalPlanning.cpp)
+    add_ompl_demo(demo_PlannerProgressProperties PlannerProgressProperties.cpp)
+    add_ompl_demo(demo_CForestCircleGridBenchmark CForestCircleGridBenchmark.cpp)
+
+    add_ompl_demo(demo_Diagonal Diagonal.cpp)
+
+    add_ompl_demo(demo_VectorFieldConservative VFRRT/VectorFieldConservative.cpp)
+    add_ompl_demo(demo_VectorFieldNonconservative VFRRT/VectorFieldNonconservative.cpp)
+
+    add_ompl_demo(demo_ConstrainedPlanningSphere constraint/ConstrainedPlanningSphere.cpp)
+    add_ompl_demo(demo_ConstrainedPlanningTorus constraint/ConstrainedPlanningTorus.cpp)
+    add_ompl_demo(demo_ConstrainedPlanningImplicitChain constraint/ConstrainedPlanningImplicitChain.cpp)
+    add_ompl_demo(demo_ConstrainedPlanningImplicitParallel constraint/ConstrainedPlanningImplicitParallel.cpp)
+    add_ompl_demo(demo_ConstrainedPlanningKinematicChain constraint/ConstrainedPlanningKinematicChain.cpp)
+
+    add_ompl_demo(demo_MultiLevelPlanningRigidBody2D multilevel/MultiLevelPlanningRigidBody2D.cpp)
+    add_ompl_demo(demo_MultiLevelPlanningRigidBody3D multilevel/MultiLevelPlanningRigidBody3D.cpp)
+    add_ompl_demo(demo_MultiLevelPlanningKinematicChain multilevel/MultiLevelPlanningKinematicChain.cpp)
+    add_ompl_demo(demo_MultiLevelPlanningHyperCube multilevel/MultiLevelPlanningHyperCube.cpp)
+    add_ompl_demo(demo_MultiLevelPlanningHyperCubeBenchmark multilevel/MultiLevelPlanningHyperCubeBenchmark.cpp)
+
+    add_ompl_demo(demo_SpaceTimePlanning SpaceTimePlanning.cpp)
+
+    add_ompl_demo(demo_MulticopterPlanning
+                multicopter/MulticopterPlanning.cpp
+                multicopter/Quartic.cpp)
+
+    if (OMPL_HAVE_YAMLCPP)
+        add_ompl_demo(demo_PlanarManipulator
+            PlanarManipulator/PlanarManipulatorDemo.cpp
+            PlanarManipulator/PlanarManipulator.cpp
+            PlanarManipulator/PolyWorld.cpp
+        )
+        target_link_libraries(demo_PlanarManipulator PRIVATE yaml-cpp::yaml-cpp)
+
+        add_ompl_demo(demo_MultiLevelPlanarManipulator
+            multilevel/MultiLevelPlanarManipulatorDemo.cpp
+            PlanarManipulator/PlanarManipulator.cpp
+            PlanarManipulator/PolyWorld.cpp
+        )
+        target_link_libraries(demo_MultiLevelPlanarManipulator PRIVATE yaml-cpp::yaml-cpp)
+    endif()
+
+    if (OMPL_EXTENSION_TRIANGLE)
+        add_ompl_demo(demo_TriangulationDemo TriangulationDemo.cpp)
+        add_ompl_demo(demo_LTLWithTriangulation LTLWithTriangulation.cpp)
+    endif()
+
+    # Add VAMP demo only if VAMP is available and properly configured
+    if (OMPL_HAVE_VAMP)
+        add_ompl_demo(demo_VAMPPlanning vamp/VAMPPlanning.cpp)
+        target_include_directories(demo_VAMPPlanning PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vamp)
+        target_link_libraries(demo_VAMPPlanning PRIVATE vamp_cpp)
+
+        add_ompl_demo(demo_VAMPMotionBenchmaker vamp/MotionBenchmakerDemoMain.cpp vamp/MotionBenchmakerDemo.cpp)
+        target_include_directories(demo_VAMPMotionBenchmaker PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vamp)
+        target_link_libraries(demo_VAMPMotionBenchmaker PRIVATE vamp_cpp)
+    endif()
+
+endif(OMPL_BUILD_DEMOS)
+
+if(NOT SKBUILD)
+    file(GLOB OMPL_DEMO_CXX_FILES "*.cpp")
+    install(FILES ${OMPL_DEMO_CXX_FILES}
+        DESTINATION "${OMPL_DEMO_INSTALL_DIR}"
+        COMPONENT ompl)
+    install(DIRECTORY constraint Koules multilevel PlanarManipulator VFRRT
+        DESTINATION "${OMPL_DEMO_INSTALL_DIR}"
+        COMPONENT ompl)
+endif()

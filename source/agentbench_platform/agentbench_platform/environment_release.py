@@ -12,14 +12,14 @@ SOURCE_RELEASE_CHECKS=('clean_install_mujoco','clean_install_isaac','clean_insta
     'assets','licenses','bilingual_docs','source_regression','scorer_fixtures','default_physics','export_smoke')
 SOURCE_RELEASE_VERSION='source-release-checks-v1'
 SOURCE_ROOTS=('source/agentbench','source/agentbench_platform','source/agentbench_sdk','env/maniskill_lgd')
-SCRIPT_NAMES=('environment_runtime.py','environment_release.py','environment_smoke.py',
+SCRIPT_NAMES=('agentbench_cube_solver.py','agentbench_build_cube_solver.py','agentbench_build_graspnet_cpu.py','agentbench_graspnet.py','agentbench_graspnet_cpu_worker.py','check_embedded_sources.py','environment_runtime.py','environment_release.py','environment_smoke.py',
     'environment_client.py','franka_marble_test_protocol.py','check_tool_policy_docs.py','validate_environment_physics.py','agentbench_platform_runtime.py','generate_hanoi_ring_assets.py','validate_isaac_environments.py','export_evaluation_protocol.py','validate_environment_contracts.py','validate_source_installation.py','revalidate_action_contracts.py','validate_maniskill_environments.py','validate_maniskill_fixtures.py','check_maniskill_dynamics.py','validate_isaac_installation.py','run_isaac_binary.sh','isaac_binary_bootstrap/sitecustomize.py')
 EXCLUDED_NAMES={'__pycache__','.pytest_cache','.git','.codex-local','outputs','output','baselines','tests','build','dist'}
 EXCLUDED_MODULES={'model_proxy.py','controller.py','baseline.py','campaign_baseline.py','dual_baseline.py','joint_planner.py','panda_kinematics.py'}
-PLATFORM_EXCLUDES={'runner.py','adapters.py','image_build.py','sandbox.py','rubiks_suite.py','cube_solver.py','native_video.py','dual_native_video.py','sampled_video.py'}
+PLATFORM_EXCLUDES={'runner.py','adapters.py','sandbox.py','rubiks_suite.py','native_video.py','dual_native_video.py','sampled_video.py'}
 BASELINE_WRAPPERS={'kongming_lock/assembly_oracle.py','kongming_lock/oracle.py',
                    'kongming_lock/key_slot.py','kongming_lock/geometry.py','rubiks_cube/rubiks_cube_arm_plan.py',
-                   'rubiks_cube/rubiks_cube_route.py','rubiks_cube/rubiks_cube_solver.py',
+                   'rubiks_cube/rubiks_cube_route.py',
                    'rubiks_cube/rubiks_cube_continuous_plan.py','rubiks_cube/rubiks_cube_planner.py',
                    'rubiks_cube/rubiks_cube_session.py','rubiks_cube/rubiks_cube_reconcile.py',
                    'rubiks_cube/rubiks_cube_reorientation.py','rubiks_cube/rubiks_cube_continuous_pose.py'}
@@ -111,6 +111,12 @@ def source_files(root=ROOT):
                 raise ValueError(f'Unsafe upstream dependency: {relative}: {name}')
             if not target.is_file():raise ValueError(f'Missing upstream dependency: {relative}: {name}')
             files.append(target.relative_to(root))
+    # Optional tools and vendored sources are explicit release inputs. The vendor
+    # manifest excludes local caches, credentials and untracked upstream files.
+    files.extend(p.relative_to(root) for p in (root/'tools').rglob('*')
+                 if p.is_file() and not any(part in EXCLUDED_NAMES for part in p.relative_to(root).parts))
+    from .embedded_sources import embedded_files
+    files.extend(Path(name) for name in embedded_files(root))
     return sorted(set(files))
 
 

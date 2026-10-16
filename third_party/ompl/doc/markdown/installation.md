@@ -1,0 +1,145 @@
+# Installation {#installation}
+
+\htmlonly
+<div class="panel">
+  <h2>Select your operating system:</h2>
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item"><a class="nav-link active" id="ubuntu-tab" data-toggle="pill" href="#ubuntu" role="tab" aria-controls="ubuntu" aria-selected="true">Ubuntu</a></li>
+    <li class="nav-item"><a class="nav-link" id="fedora-tab" data-toggle="pill" href="#fedora" role="tab" aria-controls="fedora" aria-selected="false">Fedora</a></li>
+    <li class="nav-item"><a class="nav-link" id="linux-tab" data-toggle="pill" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux (generic)</a></li>
+    <li class="nav-item"><a class="nav-link" id="osx-tab" data-toggle="pill" href="#osx" role="tab" aria-controls="macos" aria-selected="false">macOS</a></li>
+    <li class="nav-item"><a class="nav-link" id="windows-tab" data-toggle="pill" href="#windows" role="tab" aria-controls="windows" aria-selected="false">MS Windows</a></li>
+    <li class="nav-item"><a class="nav-link" id="cmake-fetch-tab" data-toggle="pill" href="#cmakefetch" role="tab" aria-controls="cmakefetch" aria-selected="false">CMake Fetchcontent</a></li>
+    <li class="nav-item"><a class="nav-link" id="python-tab" data-toggle="pill" href="#python" role="tab" aria-controls="Python" aria-selected="false">Python</a></li>
+  </ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
+    <h2>Ubuntu</h2>
+    <nav>
+    <div class="nav nav-tabs" role="tablist">
+      <a class="nav-item nav-link active" data-toggle="tab" href="#ubuntubinary" aria-controls="ubuntubinary" role="tab" data-toggle="tab">Binary</a>
+      <a class="nav-item nav-link" data-toggle="tab" href="#ubunturos" aria-controls="ubunturos" role="tab" data-toggle="tab">ROS</a>
+    </div>
+    </nav>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade show active" id="ubuntubinary">
+        Simply type:
+        <pre class="fragment">apt-get install libompl-dev ompl-demos</pre>
+        Note that this package does not include Python bindings at this time.
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="ubunturos">
+        Debian packages for OMPL are also found in ROS distributions. Note that these packages do not include Python bindings. To install the ROS version of OMPL you need to add the ROS repository to your list of sources (you have probably have done this already if you are using ROS):
+        <pre class="fragment">sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -</pre>
+        and install OMPL:
+        <pre class="fragment">sudo apt-get update
+sudo apt-get install ros-`rosversion -d`-ompl</pre>
+        Please see <a href="https://moveit.ai">MoveIt</a> for further information.
+      </div>
+    </div>
+  </div>
+
+  <!-- Fedora -->
+  <div class="tab-pane fade" id="fedora" role="tabpanel" aria-labelledby="fedora-tab">
+    <h2>Fedora</h2>
+    Simply type:
+    <pre class="fragment">sudo yum install ompl</pre>
+    Note that this package does not include Python bindings at this time.
+  </div>
+
+  <!-- Linux (generic) -->
+  <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+    <h2>Linux (generic)</h2>
+    <p>OMPL requires <a href="https://www.boost.org">Boost</a> (version 1.68 or higher), <a href="https://www.cmake.org">CMake</a> (version 3.12 or higher), <a href="http://eigen.tuxfamily.org">Eigen</a> (version 3.3 or higher), and <a href="https://github.com/jbeder/yaml-cpp">yaml-cpp</a> (for parsing YAML configuration files, required for VAMP demos).
+    To be able to generate python bindings you need to install the <a href="https://www.python.org">Python</a> library and header files.
+    Finally, you need a C++17 compiler (g++-7 or newer).</p>
+    <p><strong>Note:</strong> OMPL includes VAMP (Vector-Accelerated Motion Planning) by default, which requires <code>git</code> for submodule initialization.</p>
+    <p>Once the dependencies are installed, OMPL can then be compiled like so:</p>
+    <ul>
+    <li>Create a build directory and run cmake: <pre class="fragment">cd ompl
+mkdir -p build/Release
+cd build/Release
+cmake ../..</pre></li>
+    <li>Compile OMPL by typing <code>make -j $(nproc)</code>.</li>
+    <li>Optionally, run the test programs by typing <code>make test</code>.</li>
+    <li>Optionally, generate the documentation (i.e., a local copy of this web site) by typing <code>make ompl_doc</code> (requires <a href="http://www.doxygen.org">Doxygen</a> and <a href="http://www.graphviz.org">Graphviz</a> to be installed).</li>
+    </ul>
+    <p>The build system includes a <a href="buildOptions.html">number of options</a> that you can enable or disable.</p>
+  </div>
+
+  <!-- macOS -->
+  <div class="tab-pane fade" id="osx" role="tabpanel" aria-labelledby="osx-tab">
+    <h2>macOS</h2>
+    <div class="nav nav-tabs" role="tablist">
+      <a class="nav-item nav-link active" data-toggle="tab" href="#osxmacports" aria-controls="osxmacports" role="tab">MacPorts</a>
+      <a class="nav-item nav-link" data-toggle="tab" href="#osxhomebrew" aria-controls="osxhomebrew" role="tab">Homebrew</a>
+    </div>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade show active" id="osxmacports">
+        Install <a href="https://www.macports.org">MacPorts</a> and type:<pre class="fragment">sudo port sync \; install ompl</pre>
+        If you want to build OMPL from source, you can install just the OMPL dependencies like so:
+        <pre class="fragment">sudo port install `port -q info --depends ompl | sed 's/,//g'`</pre>
+        <p><strong>Note:</strong> OMPL includes VAMP (Vector-Accelerated Motion Planning) by default, which requires <code>git</code> for submodule initialization.</p>
+        <p>Once the dependencies are installed, OMPL can then be compiled like so:</p>
+        <ul>
+        <li>Create a build directory and run cmake: <pre class="fragment">cd ompl
+mkdir -p build/Release
+cd build/Release
+cmake ../..</pre></li>
+        <li>Compile OMPL by typing <code>make -j 4</code>.</li>
+        </ul>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="osxhomebrew">
+        Install <a href="https://brew.sh">Homebrew</a> and type:
+        <pre class="fragment">brew install ompl</pre>
+        Note that the <a href="https://formulae.brew.sh/formula/ompl">Homebrew formula</a> does not include Python bindings at this time.
+        <p><strong>Note:</strong> OMPL includes VAMP (Vector-Accelerated Motion Planning) by default, which requires <code>git</code> for submodule initialization.</p>
+        <p>When building from source, initialize git submodules for VAMP:</p>
+        <pre class="fragment">git submodule update --init --recursive</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Windows -->
+  <div class="tab-pane fade" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+    <h2>MS Windows</h2>
+    It is recommended to use <a href="https://vcpkg.readthedocs.io/en/latest/">vcpkg</a>, a Microsoft-supported package manager for open source software. Once you have vcpkg installed, you can install OMPL like so:
+    <pre class="fragment">vcpkg install ompl</pre>
+    Note that the vcpkg installation does not include Python bindings.
+    <p>If you want to build OMPL from source on Windows:</p>
+    <p><strong>Note:</strong> OMPL includes VAMP (Vector-Accelerated Motion Planning) by default, which requires <code>git</code> for submodule initialization.</p>
+    <ul>
+    <li>Follow the standard CMake build process with your preferred compiler (Visual Studio, MinGW, etc.)</li>
+    </ul>
+  </div>
+  <!-- CMake Fetchcontent -->
+  <div class="tab-pane fade" id="cmakefetch" role="tabpanel" aria-labelledby="cmake-fetch-tab">
+    <h2>CMake Fetchcontent</h2>
+    If you want to build ompl from source as part of another repository, FetchContent is one approach. In CMake, you can fetch and link like so:
+    <pre class="fragment">
+include(FetchContent)
+FetchContent_Declare(
+  ompl
+  GIT_REPOSITORY https://github.com/ompl/ompl.git
+  GIT_SUBMODULES_RECURSE ON  # Required for VAMP integration
+)
+FetchContent_MakeAvailable(ompl)
+
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE ompl::ompl)
+    </pre>
+    <p><strong>Note:</strong> The <code>GIT_SUBMODULES_RECURSE ON</code> option ensures that VAMP submodules are automatically initialized.</p>
+  </div>
+
+  <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
+
+  <h2>Python</h2>
+  There are pre-built OMPL modules for several Python versions. They are available for Linux and macOS. You can install the OMPL Python module with, e.g., `pip`:
+  <pre class="fragment">pip install ompl</pre>
+  </div>
+</div>
+\endhtmlonly

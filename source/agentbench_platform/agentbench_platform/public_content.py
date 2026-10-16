@@ -54,7 +54,9 @@ def audit_maniskill_archive(root):
 def audit(root=ROOT):
     root=Path(root); names=public_files(root); present=set(names);files={};issues=[];contents={}
     present_dirs={str(parent) for name in present for parent in Path(name).parents}
-    pinned_documents=set();upstream_documentation_links=[]
+    from .embedded_sources import embedded_manifest, verify_embedded_sources
+    vendored=embedded_manifest(root).get('files',{})
+    pinned_documents={name for name in vendored if name.endswith('.md')};upstream_documentation_links=[]
     for name in names:
         if Path(name).name!='UPSTREAM.json':continue
         declaration=json.loads((root/name).read_text())
@@ -76,7 +78,10 @@ def audit(root=ROOT):
                 target=(path.parent/unquote(parts.path)).resolve()
                 try:relative=str(target.relative_to(root.resolve()))
                 except ValueError:
-                    issues.append(dict(kind='external_filesystem_link',path=name,target=url));continue
+                    if name in pinned_documents:
+                        upstream_documentation_links.append(dict(path=name,target=url,status='upstream_relative_link'))
+                    else:issues.append(dict(kind='external_filesystem_link',path=name,target=url))
+                    continue
                 if relative not in present and relative not in present_dirs:
                     record=dict(path=name,target=relative)
                     if name in pinned_documents:
@@ -119,6 +124,8 @@ def audit(root=ROOT):
                 re.match(r'https?://.*\.(usd|usda|urdf|zip)(?:$|\?)',node.value)):
                 external.append(dict(path=name,line=node.lineno,value=node.value))
     issues += [dict(kind='missing_internal_module',**row) for row in missing_imports]
+    embedded_sources=verify_embedded_sources(root,files=files)
+    issues += [dict(kind='embedded_source_integrity',**row) for row in embedded_sources['issues']]
     licenses=license_inventory(files,root)
     embedded=audit_maniskill_archive(root)
     if embedded['failures']:issues.append(dict(kind='embedded_asset_integrity',details=embedded['failures']))
@@ -161,6 +168,6 @@ def audit(root=ROOT):
     return dict(version='public-content-audit-v1',files=files,content_digest=digest(files),
         dependency_closure='failed' if missing_imports else 'static_imports_checked',
         issues=issues,upstream_documentation_links=upstream_documentation_links,external_references=external,assets=assets,licenses=licenses,upstream_pins=pins,embedded_assets=dict(maniskill=embedded),
-        optional_submodules=submodules,source_release_ready=False,distribution_validation='not_executed',
+        embedded_sources=embedded_sources,optional_submodules=submodules,source_release_ready=False,distribution_validation='not_executed',
         limitations=['Static imports do not verify dynamic imports or remote asset resolution',
                     'Asset distribution approval records the maintainer decision under original licenses; it is not an independent legal audit'])

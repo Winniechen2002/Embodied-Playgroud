@@ -1,0 +1,229 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "array-api-extra"
+authors = [
+    { name = "Lucas Colley", email = "lucas.colley8@gmail.com" },
+    { name = "Open Source Contributors" },
+]
+description = "Extra array functions built on top of the array API standard."
+readme = "README.md"
+license.file = "LICENSE"
+requires-python = ">=3.10"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+]
+dynamic = ["version"]
+dependencies = []
+
+[project.optional-dependencies]
+tests = [
+    "pytest >=6",
+    "pytest-cov >=3",
+    "array-api-strict",
+    "numpy",
+]
+docs = [
+    "sphinx>=7.0",
+    "myst_parser>=0.13",
+    "sphinx_copybutton",
+    "sphinx_autodoc_typehints",
+    "furo>=2023.08.17",
+]
+
+[project.urls]
+Homepage = "https://github.com/data-apis/array-api-extra"
+"Bug Tracker" = "https://github.com/data-apis/array-api-extra/issues"
+Discussions = "https://github.com/data-apis/array-api-extra/discussions"
+Changelog = "https://github.com/data-apis/array-api-extra/releases"
+
+
+# Hatch
+
+[tool.hatch]
+version.path = "src/array_api_extra/__init__.py"
+
+
+# Pixi
+
+[tool.pixi.project]
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[tool.pixi.dependencies]
+python = ">=3.10.15,<3.14"
+
+[tool.pixi.pypi-dependencies]
+array-api-extra = { path = ".", editable = true }
+
+[tool.pixi.feature.lint.dependencies]
+pre-commit = "*"
+mypy = "*"
+pylint = "*"
+# import dependencies for mypy:
+array-api-strict = "*"
+numpy = "*"
+pytest = "*"
+
+[tool.pixi.feature.lint.tasks]
+pre-commit-install = { cmd = "pre-commit install" }
+pre-commit = { cmd = "pre-commit run -v --all-files --show-diff-on-failure" }
+mypy = { cmd = "mypy", cwd = "." }
+pylint = { cmd = ["pylint", "array_api_extra"], cwd = "src" }
+lint = { depends-on = ["pre-commit", "pylint", "mypy"] }
+
+[tool.pixi.feature.tests.dependencies]
+pytest = ">=6"
+pytest-cov = ">=3"
+array-api-strict = "*"
+numpy = "*"
+
+[tool.pixi.feature.tests.tasks]
+tests = { cmd = "pytest" }
+tests-ci = { cmd = "pytest -ra --cov --cov-report=xml --cov-report=term --durations=20" }
+
+[tool.pixi.feature.docs.dependencies]
+sphinx = ">=7.0"
+furo = ">=2023.08.17"
+
+[tool.pixi.feature.docs.pypi-dependencies]
+myst_parser = ">=0.13"
+sphinx_copybutton = "*"
+sphinx_autodoc_typehints = "*"
+
+[tool.pixi.feature.docs.tasks]
+docs = { cmd = ["sphinx-build", ".", "build/"], cwd = "docs" }
+open-docs = { cmd = ["open", "build/index.html"], cwd = "docs" }
+
+[tool.pixi.feature.dev.dependencies]
+ipython = "*"
+
+[tool.pixi.feature.dev.tasks]
+ipython = { cmd = "ipython" }
+
+[tool.pixi.feature.py310.dependencies]
+python = "~=3.10.0"
+
+[tool.pixi.feature.py313.dependencies]
+python = "~=3.13.0"
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+lint = { features = ["lint"], solve-group = "default" }
+tests = { features = ["tests"], solve-group = "default" }
+docs = { features = ["docs"], solve-group = "default" }
+dev = { features = ["lint", "tests", "docs", "dev"], solve-group = "default" }
+ci-py310 = ["py310", "tests"]
+ci-py313 = ["py313", "tests"]
+
+
+# pytest
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = [
+    "error",
+]
+log_cli_level = "INFO"
+testpaths = [
+    "tests",
+]
+
+
+# Coverage
+
+[tool.coverage]
+run.source = ["array_api_extra"]
+report.exclude_also = [
+    '\.\.\.',
+    'if typing.TYPE_CHECKING:',
+]
+
+
+# mypy
+
+[tool.mypy]
+files = ["src", "tests"]
+python_version = "3.10"
+warn_unused_configs = true
+strict = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[[tool.mypy.overrides]]
+module = "array_api_extra.*"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+
+# Ruff
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+extend-select = [
+    "B",   # flake8-bugbear
+    "I",   # isort
+    "ARG", # flake8-unused-arguments
+    "C4",  # flake8-comprehensions
+    "EM",  # flake8-errmsg
+    "ICN", # flake8-import-conventions
+    "G",   # flake8-logging-format
+    "PGH", # pygrep-hooks
+    "PIE", # flake8-pie
+    "PL",  # pylint
+    "PT",  # flake8-pytest-style
+    "PTH", # flake8-use-pathlib
+    "RET", # flake8-return
+    "RUF", # Ruff-specific
+    "SIM", # flake8-simplify
+    "T20", # flake8-print
+    "UP",  # pyupgrade
+    "YTT", # flake8-2020
+    "EXE", # flake8-executable
+    "NPY", # NumPy specific rules
+    "PD",  # pandas-vet
+]
+ignore = [
+    "PLR09",   # Too many <...>
+    "PLR2004", # Magic value used in comparison
+    "ISC001",  # Conflicts with formatter
+]
+isort.required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["T20"]
+
+
+# Pylint
+
+[tool.pylint]
+py-version = "3.10"
+ignore-paths = [".*/_version.py"]
+reports.output-format = "colorized"
+similarities.ignore-imports = "yes"
+messages_control.disable = [
+    "design",
+    "fixme",
+    "line-too-long",
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "wrong-import-position",
+]

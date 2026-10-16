@@ -1,0 +1,2 @@
+urdf_path: robot_models/urdf/leap_hand_simplified.urdf
+meta_path: robot_models/meta/leap_hand/meta.yaml

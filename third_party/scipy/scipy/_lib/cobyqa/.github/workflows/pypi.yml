@@ -1,0 +1,49 @@
+# Publish to PyPI
+
+name: publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version upload to PyPI'
+        required: true
+      pypi_repo:
+        description: 'Repository to upload to (testpypi or pypi)'
+        default: 'testpypi'
+        required: true
+
+jobs:
+  run:
+    name: Upload cobyqa ${{ github.event.inputs.version }} to ${{ github.event.inputs.pypi_repo }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Download distributions from staging
+        run: bash .github/actions/pypi/download_anaconda.sh
+        env:
+          VERSION: ${{ github.event.inputs.version }}
+          URL: https://pypi.anaconda.org/cobyqa/simple/cobyqa/
+
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        if: ${{ github.event.inputs.pypi_repo == 'testpypi' }}
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        if: ${{ github.event.inputs.pypi_repo == 'pypi' }}
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_TOKEN }}

@@ -1,0 +1,208 @@
+[build-system]
+requires = ["setuptools >= 61.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optuna"
+description = "A hyperparameter optimization framework"
+readme = "README.md"
+authors = [
+  {name = "Takuya Akiba"}
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "alembic>=1.5.0",
+  "colorlog",
+  "numpy",
+  "packaging>=20.0",
+  "sqlalchemy>=1.4.2",
+  "tqdm",
+  "PyYAML",  # Only used in `optuna/cli.py`.
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+document = [
+  "ase",
+  "cmaes>=0.12.0",  # optuna/samplers/_cmaes.py.
+  "fvcore",
+  "kaleido<0.4,!=0.2.1.post1",  # TODO(nzw0301): Remove the version constraint by installing browser separately.
+  "lightgbm",
+  "matplotlib!=3.6.0",
+  "pandas",
+  "pillow",
+  "plotly>=4.9.0",  # optuna/visualization.
+  "scikit-learn",
+  "sphinx",
+  "sphinx-copybutton",
+  "sphinx-gallery",
+  "sphinx-notfound-page",
+  "sphinx_rtd_theme>=1.2.0",
+  "torch",
+  "torchvision",
+]
+optional = [
+  "boto3",  # optuna/artifacts/_boto3.py.
+  "cmaes>=0.12.0",  # optuna/samplers/_cmaes.py.
+  "google-cloud-storage",  # optuna/artifacts/_gcs.py.
+  "matplotlib!=3.6.0",  # optuna/visualization/matplotlib.
+  "pandas",  # optuna/study/_dataframe.py.
+  "plotly>=4.9.0",  # optuna/visualization.
+  "redis",  # optuna/storages/journal/_redis.py.
+  "scikit-learn>=0.24.2",  # optuna/importance.
+  "scipy",  # optuna/_gp.
+  "torch",  # optuna/_gp.
+  "greenlet",  # optuna/_gp. necessary for faster gp.
+  "grpcio",  # optuna/storages/_grpc.
+  "protobuf>=5.28.1",  # optuna/storages/_grpc.
+]
+
+[dependency-groups]
+checking = [
+  "mypy",
+  "mypy_boto3_s3",
+  "ruff",
+  "scipy-stubs; python_version>='3.10'",
+  "types-PyYAML",
+  "types-redis",
+  "types-setuptools",
+  "types-tqdm",
+  "typing_extensions>=3.10.0.0",
+]
+test = [
+  "fakeredis[lua]",
+  "kaleido<0.4,!=0.2.1.post1",  # TODO(nzw0301): Remove the version constraint by installing browser separately.
+  "moto",
+  "pytest",
+  "pytest-xdist",
+  "scipy>=1.9.2",
+  "torch",  # optuna/_gp.
+  "greenlet",  # optuna/_gp.
+  "grpcio",  # optuna/storages/_grpc.
+  "protobuf>=5.28.1",  # optuna/storages/_grpc.
+]
+
+[tool.uv]
+default-groups = []
+exclude-newer = "5 days"
+exclude-newer-package = { torch = false, optuna = false, optuna-integration = false }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[project.urls]
+homepage = "https://optuna.org/"
+repository = "https://github.com/optuna/optuna"
+documentation = "https://optuna.readthedocs.io"
+bugtracker = "https://github.com/optuna/optuna/issues"
+
+[project.scripts]
+optuna = "optuna.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["optuna*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "optuna.version.__version__"}
+
+[tool.setuptools.package-data]
+"optuna" = [
+  "storages/_rdb/alembic.ini",
+  "storages/_rdb/alembic/*.*",
+  "storages/_rdb/alembic/versions/*.*",
+  "py.typed",
+]
+
+[tool.ruff]
+line-length = 99
+target-version = "py39"
+exclude = [
+  ".eggs",
+  ".git",
+  ".hg",
+  ".ruff_cache",
+  ".mypy_cache",
+  ".venv",
+  "venv",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "docs",
+  "optuna/storages/_grpc/auto_generated",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["optuna", "tests", "docs"]
+lines-after-imports = 2
+force-single-line = true
+force-sort-within-sections = true
+order-by-type = false
+
+[tool.ruff.lint.per-file-ignores]
+"tutorial/**/*.py" = ["E", "W", "F", "I"]
+"**/alembic/versions/*.py" = ["I"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pytest.ini_options]
+addopts = "--color=yes"
+filterwarnings = 'ignore::optuna.exceptions.ExperimentalWarning'
+markers = [
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')"
+]
+
+[tool.mypy]
+# Options configure mypy's strict mode.
+warn_unused_configs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+strict_equality = true
+extra_checks = true
+no_implicit_reexport = true
+
+ignore_missing_imports = true
+exclude = [".venv", "venv", "build", "docs", "tutorial", "optuna/storages/_rdb/alembic", "optuna/storages/_grpc/auto_generated"]
+
+[[tool.mypy.overrides]]
+module = 'optuna.storages._grpc.auto_generated/*'
+follow_imports = "skip"

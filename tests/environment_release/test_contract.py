@@ -89,12 +89,12 @@ def test_hanoi_observer_infers_motion_without_client_move_claims():
 
 
 def test_allowlist_excludes_history_models_and_controllers():
-    files=[str(p) for p in source_files()]
+    files=[str(p) for p in source_files() if not str(p).startswith('third_party/')]
     assert files
     assert not any('/__pycache__/' in p or p.startswith(('outputs/','docs/','baselines/')) for p in files)
     assert not any(Path(p).name in ('controller.py','model_proxy.py','baseline.py') for p in files)
     assert all(not p.endswith(('.mp4','.pdf','.zip')) for p in files)
-    assert not any(Path(p).name in ('rubiks_cube_route.py','rubiks_cube_solver.py',
+    assert not any(Path(p).name in ('rubiks_cube_route.py',
         'rubiks_cube_sharpa_executor.py','rubiks_cube_sharpa_trajectory.py') for p in files)
 
 

@@ -1,0 +1,31 @@
+.. module:: optuna.terminator
+
+optuna.terminator
+=================
+
+The :mod:`~optuna.terminator` module implements a mechanism for automatically terminating the optimization process, accompanied by a callback class for the termination and evaluators for the estimated room for improvement in the optimization and statistical error of the objective function. The terminator stops the optimization process when the estimated potential improvement is smaller than the statistical error.
+
+.. warning::
+
+   Deprecated in v4.9.0. The :mod:`~optuna.terminator` module will be removed
+   in v6.0.0. Its functionality is planned to be published in
+   https://hub.optuna.org.
+
+.. autosummary::
+   :toctree: generated/
+   :nosignatures:
+
+   BaseTerminator
+   Terminator
+   BaseImprovementEvaluator
+   RegretBoundEvaluator
+   BestValueStagnationEvaluator
+   EMMREvaluator
+   BaseErrorEvaluator
+   CrossValidationErrorEvaluator
+   StaticErrorEvaluator
+   MedianErrorEvaluator
+   TerminatorCallback
+   report_cross_validation_scores
+
+For an example of using this module, please refer to `this example <https://github.com/optuna/optuna-examples/tree/main/terminator>`__.

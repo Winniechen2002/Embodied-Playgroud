@@ -11,3 +11,5 @@
 - [资产来源与许可](environment_assets.zh-CN.md)
 
 实现包：[`agentbench`](../source/agentbench)、[`agentbench_platform`](../source/agentbench_platform)、[`agentbench_sdk`](../source/agentbench_sdk)。运行示例均以仓库根目录为工作目录。每个模拟器使用独立环境。
+
+- [内嵌工具与求解器](embedded_tools.zh-CN.md)

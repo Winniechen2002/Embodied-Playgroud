@@ -1,0 +1,54 @@
+name: test-python-win
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # os: [self-hosted]
+        os: [windows-2019]
+        python: [3.12]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install correct python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install build dependencies
+        run: python -m pip install numpy setuptools wheel pytest meson ninja delvewheel build
+      
+      - name: Build project
+        run: |
+          meson setup bbdir --prefix=${{ github.workspace }}/local_install
+          meson compile -C bbdir
+
+      - name: Install project to custom directory
+        run: meson install -C bbdir
+
+      - name: Build Python package
+        run: python -m build
+
+      - name: Repair the wheel
+        shell: pwsh
+        run: |
+          $installedPath = "${{ github.workspace }}/local_install"
+          $wheels = Get-ChildItem -Path dist -Filter *.whl
+          foreach ($wheel in $wheels) {
+            delvewheel repair $wheel.FullName --add-path "$installedPath/bin;$installedPath/lib" -w repaired_wheels
+          }
+
+      - name: Install the repaired wheel
+        run: |
+          $wheels = Get-ChildItem -Path repaired_wheels -Filter *.whl
+          foreach ($wheel in $wheels){
+            pip install $wheel.FullName
+          }
+
+      - name: Test Python Examples
+        run: |
+         python ./examples/call_highs_from_python_highspy.py
+         python ./examples/call_highs_from_python_mps.py
+         python ./examples/minimal.py

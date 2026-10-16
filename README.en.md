@@ -4,6 +4,8 @@
 
 Embodied Playground is a robotics benchmark for closed-loop physical, strategic and spatial reasoning. This repository provides 410 task environments, robot and scene assets, a Python SDK, native scoring, and a shared permission gateway. The implementation retains the Agent-bench package and command names.
 
+The release also embeds [tools, solvers and third-party sources](docs/embedded_tools.en.md), preserving pinned versions and original terms. Prepare separate dependencies and explicit grants before use.
+
 | Environment family | Tasks | Runtime |
 | --- | ---: | --- |
 | Launcher, dual Panda | 100 | MuJoCo |

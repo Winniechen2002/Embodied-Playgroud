@@ -1,0 +1,65 @@
+name: Publish distributions to PyPI or TestPyPI
+
+# TestPyPI upload is scheduled in each weekday.
+# PyPI upload is only activated if the release is published.
+on:
+  schedule:
+    - cron: '0 15 * * *'
+  release:
+    types:
+      - published
+
+jobs:
+  build-n-publish:
+    name: Build and publish Python distributions to PyPI or TestPyPI
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+
+    # Not intended for forks.
+    if: github.repository == 'optuna/optuna'
+
+    steps:
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+    - name: Install uv
+      uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      with:
+        python-version: 3.13
+
+    - name: Install
+      run: uv sync
+
+    - name: Output installed packages
+      run: |
+        uv pip freeze
+    - name: Output dependency tree
+      run: |
+        uv tree
+
+    - name: Change the version file for scheduled TestPyPI upload
+      if: github.event_name == 'schedule'
+      run: |
+        OPTUNA_VERSION=$(cut -d '"' -f 2 optuna/version.py)
+        DATE=`date +"%Y%m%d"`
+        echo "__version__ = \"${OPTUNA_VERSION}${DATE}\"" > optuna/version.py
+
+    - name: Build a tar ball
+      run: |
+        uv build --sdist --wheel
+
+    - name: Publish distribution to TestPyPI
+      # The following upload action cannot be executed in the forked repository.
+      if: (github.event_name == 'schedule') || (github.event_name == 'release')
+      uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b  # v1.14.0
+
+      with:
+        repository-url: https://test.pypi.org/legacy/
+
+    - name: Publish distribution to PyPI
+      # The following upload action cannot be executed in the forked repository.
+      if: github.event_name == 'release'
+      uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b  # v1.14.0
+      with:
+        # See https://github.com/pypa/gh-action-pypi-publish/issues/283
+        attestations: false
+

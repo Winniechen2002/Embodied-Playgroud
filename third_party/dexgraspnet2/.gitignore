@@ -1,0 +1,8 @@
+__pycache__
+data
+experiments
+.vscode
+wandb
+DexGraspNet2.0-ckpts
+pretrained
+tmp

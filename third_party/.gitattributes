@@ -1,0 +1,14 @@
+** -filter !diff !merge -text
+/CEDex-Grasp/assets/rw_objects.gif filter=lfs diff=lfs merge=lfs -text
+/CEDex-Grasp/cedex/allegro.pt filter=lfs diff=lfs merge=lfs -text
+/CEDex-Grasp/cedex/barrett.pt filter=lfs diff=lfs merge=lfs -text
+/CEDex-Grasp/cedex/shadowhand.pt filter=lfs diff=lfs merge=lfs -text
+/Depth-Anything-3/assets/images/demo320-2.gif filter=lfs diff=lfs merge=lfs -text
+/Depth-Anything-3/da3_streaming/loop_utils/salad/datasets/Pittsburgh/pitts250k_test_gt.npy filter=lfs diff=lfs merge=lfs -text
+/ompl/doc/images/frontpage/capt_demo.gif filter=lfs diff=lfs merge=lfs -text
+/ompl/external/vamp/resources/capt_demo.gif filter=lfs diff=lfs merge=lfs -text
+/sam-3d-objects/notebook/images/id3_shutterstock_WildAnimal_Waterhole_2010559391/image.png filter=lfs diff=lfs merge=lfs -text
+/sam-3d-objects/notebook/images/shutterstock_1243680295/image.png filter=lfs diff=lfs merge=lfs -text
+/sam-3d-objects/notebook/images/shutterstock_1980085646/image.png filter=lfs diff=lfs merge=lfs -text
+/sam-3d-objects/notebook/images/shutterstock_modern_colorful_Interior_2620125197/image.png filter=lfs diff=lfs merge=lfs -text
+/sam-3d-objects/notebook/images/shutterstock_stylish_kidsroom_1640806567/image.png filter=lfs diff=lfs merge=lfs -text

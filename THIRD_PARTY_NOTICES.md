@@ -25,7 +25,13 @@ their individual license scopes, recorded in
 ManiSkill 内嵌归档的 444 个文件及其中的通知保持不变。维护者已确认完整随附资产包
 可按原有适用许可证分发；各数据集与机器人组件的许可范围见上述清单。
 
-Optional third-party submodules retain their own licenses and notices and are not
-included in the environment public-content allowlist. Isaac Sim is obtained
-separately under NVIDIA terms; the project license does not cover the simulator.
-可选第三方子模块保留原许可，不进入环境公开内容白名单；Isaac Sim 依 NVIDIA 条款单独获取。
+The [embedded source inventory](third_party/README.md) lists 17 upstream snapshots
+and 16 nested dependencies, with original license paths and revisions in
+[manifest.json](third_party/manifest.json). GenDexGrasp, DexGraspNet2 and STREAM3D
+have no repository-level license file at these revisions; inclusion supplies no
+additional license grant. Original upstream code, examples, data and notices
+retain their own terms. Isaac Sim is obtained separately under NVIDIA terms.
+
+[内嵌清单](third_party/README.md)记录 17 个上游源码及 16 个嵌套依赖的版本与原始许可路径。
+GenDexGrasp、DexGraspNet2 与 STREAM3D 在这些修订中没有仓库级许可文件；内嵌不授予额外权利。
+上游代码、示例、数据和通知保留原条款。Isaac Sim 依 NVIDIA 条款单独获取。

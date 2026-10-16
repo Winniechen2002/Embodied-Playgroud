@@ -216,6 +216,39 @@ def inference(payload,source,checkpoint,*,device='cuda'):
     return result_contract(payload,candidates,point_count=len(points))
 
 
+
+def freeze_setup(root,output,*,isolation='bwrap'):
+    """Maintainer-only manifest preparation; no download, rebuild or inference."""
+    import zipfile
+    if isolation not in ('bwrap','docker'):raise ValueError('Unknown worker isolation')
+    root=Path(root).resolve();source=root/'.codex-local/tool-sources/graspnet-baseline'
+    archive=root/f'.codex-local/setup/graspnet-{REVISION}.zip';checkpoint=root/'models/graspnet-baseline/checkpoint-rs.tar'
+    python=root/'.codex-local/tool-envs/graspnet/bin/python'
+    if _hash(archive)!=SOURCE_SHA256 or _hash(checkpoint)!=CHECKPOINT_SHA256:raise ValueError('Pinned asset digest mismatch')
+    files={}
+    # Verify installed source against the official pinned archive, including CUDA sources.
+    with zipfile.ZipFile(archive) as z:
+        for name in z.namelist():
+            rel=Path(*Path(name).parts[1:])
+            if name.endswith('/') or rel.suffix not in ('.py','.cpp','.cu','.h','.hpp'):continue
+            path=source/rel
+            digest=hashlib.sha256(z.read(name)).hexdigest()
+            if _hash(path)!=digest:raise ValueError('Installed source differs from pinned archive')
+            files[str(path)]=digest
+    for folder in (source,root/'.codex-local/tool-envs/graspnet/lib'):
+        for path in folder.rglob('*.so'):files[str(path)]=_hash(path)
+    verify_source_members(source,files)
+    files[str(python.resolve())]=_hash(python.resolve())
+    cfg=python.parent.parent/'pyvenv.cfg';files[str(cfg)]=_hash(cfg)
+    files[str(Path(__file__).resolve())]=_hash(__file__)
+    manifest=dict(version=1,isolation=isolation,image=DOCKER_IMAGE if isolation=='docker' else None,revision=REVISION,source_sha256=SOURCE_SHA256,checkpoint_sha256=CHECKPOINT_SHA256,
+        source=str(source),archive=str(archive),checkpoint=str(checkpoint),python=str(python),
+        base_environment=str(python.resolve().parent.parent),worker=str(Path(__file__).resolve()),files=files,
+        model=dict(input_feature_dim=0,num_view=300,num_angle=12,num_depth=4,cylinder_radius=.05,hmin=-.02,hmax_list=[.01,.02,.03,.04],is_training=False),
+        preprocessing=dict(sample_points=20000,seed=0,depth_units='m',frame='camera',pixel_centers='bound native calibration'))
+    output=Path(output);output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
+    return manifest
+
 if __name__=='__main__':
     if len(sys.argv)==4 and sys.argv[1]=='--preflight':
         import torch

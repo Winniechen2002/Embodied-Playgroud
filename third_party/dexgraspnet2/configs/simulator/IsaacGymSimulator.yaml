@@ -1,0 +1,63 @@
+env_spacing: 0.75
+env_hz: 60
+control_freq_inv: 1
+camera_pos: [3.0, 2.0, 1.0]
+camera_target: [0.6, 0.5, 0.0]
+table_height: 0.4
+
+
+asset:
+  object:
+    asset_config:
+      asset_options:
+        override_com: True
+        override_inertia: True
+        density: 500
+        fix_base_link: False
+        default_dof_drive_mode: gymapi.DOF_MODE_NONE
+  leap_hand:
+    asset_root: robot_models/urdf
+    asset_path: leap_hand_simplified.urdf
+    asset_config:
+      asset_options: 
+        disable_gravity: True
+        fix_base_link: True
+        collapse_fixed_joints: True
+        replace_cylinder_with_capsule: True
+        default_dof_drive_mode: gymapi.DOF_MODE_POS
+  leap_hand_free:
+    asset_root: robot_models/urdf
+    asset_path: leap_hand_simplified_free.urdf
+    asset_config:
+      asset_options: 
+        disable_gravity: True
+        fix_base_link: True
+        collapse_fixed_joints: True
+        replace_cylinder_with_capsule: True
+        default_dof_drive_mode: gymapi.DOF_MODE_POS
+
+actor:
+  object:
+    actor_config:
+      no_collision: False
+      filter: 0
+      segmentation_id: 0
+      friction: 0.2
+      dof_force_sensors: False
+      mass: 0.1
+  leap_hand:
+    actor_config:
+      no_collision: False
+      filter: 1
+      segmentation_id: 0
+      friction: 0.2
+      dof_props: { stiffness: 800, damping: 20, driveMode: pos }
+      dof_force_sensors: False
+  leap_hand_free:
+    actor_config:
+      no_collision: False
+      filter: 1
+      segmentation_id: 0
+      friction: 0.2
+      dof_props: { stiffness: 800, damping: 20, driveMode: pos }
+      dof_force_sensors: False

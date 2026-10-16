@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "dependencies": [
+        "boost-dynamic-bitset",
+        "boost-graph",
+        "boost-odeint",
+        "boost-program-options",
+        "boost-serialization",
+        "boost-test",
+        "eigen3",
+        "flann",
+        "yaml-cpp"
+    ]
+}

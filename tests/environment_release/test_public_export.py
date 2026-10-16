@@ -33,11 +33,12 @@ def test_export_is_closed_over_rules_protocol_tests_and_fixture_inputs():
     assert {Path(name).name for name in snapshots} == {'initial_state.json', 'goal_fixture_state.json'}
 
 
-def test_public_sources_exclude_reference_solvers_and_transform_idempotently():
-    forbidden = {'controller.py', 'baseline.py', 'joint_planner.py', 'cube_solver.py',
+def test_public_sources_preserve_optional_solver_and_exclude_private_controllers():
+    forbidden = {'controller.py', 'baseline.py', 'joint_planner.py',
                  'rubiks_cube_continuous_plan.py', 'rubiks_cube_planner.py',
                  'rubiks_cube_reconcile.py', 'rubiks_cube_session.py', 'rubiks_cube_reorientation.py', 'rubiks_cube_continuous_pose.py'}
     for path in source_files():
+        if str(path).startswith("third_party/"):continue
         assert path.name not in forbidden
         content = (ROOT/path).read_bytes()
         once = export_content(path, content)
@@ -62,8 +63,24 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     assert (destination/'docs/evaluation/tasks.json').is_file()
     assert (destination/'rules.md').read_bytes() == (ROOT/'rules.md').read_bytes()
     assert not any('#' in str(path.relative_to(destination)) for path in destination.rglob('*'))
-    assert not (destination/'source/agentbench_platform/agentbench_platform/cube_solver.py').exists()
+    assert (destination/'source/agentbench_platform/agentbench_platform/cube_solver.py').exists()
     manifest = json.loads((destination/'distribution-manifest.json').read_text())
+    upstream=json.loads((destination/'third_party/manifest.json').read_text())
+    assert len(upstream['projects'])==33
+    for name,record in upstream['files'].items():
+        assert manifest[name]['sha256']==record['sha256']
+        assert manifest[name]['bytes']==record['bytes']
+    for name in ('tools/cube_solver/Dockerfile','tools/graspnet_cpu/build.py',
+                 'tools/rubiks_cube/generate_asset.py','scripts/agentbench_graspnet_cpu_worker.py'):
+        assert name in manifest
+    import subprocess
+    import sys
+    for script in ('agentbench_cube_solver.py','agentbench_build_cube_solver.py',
+                   'agentbench_build_graspnet_cpu.py','agentbench_graspnet.py'):
+        result=subprocess.run([sys.executable,'-I',str(destination/'scripts'/script),'--help'],
+                              capture_output=True,text=True)
+        assert result.returncode==0,result.stdout+result.stderr
+
     for name in ('docs/evaluation/tasks.json', 'rules.md', 'scripts/franka_marble_test_protocol.py'):
         assert manifest[name]['sha256'] == hashlib.sha256((destination/name).read_bytes()).hexdigest()
     # Check discovery from the actual exported tree in a fresh interpreter;
@@ -109,11 +126,11 @@ def test_public_launcher_rejects_development_demo_and_recording_options():
             runtime.parse_runtime_args(Launcher, ['--output','/tmp/parse-only',option])
 
 
-def test_optional_grasp_adapter_retains_runtime_without_private_build_helpers():
+def test_optional_grasp_adapter_includes_offline_build_helpers():
     from agentbench_platform import graspnet, graspnet_cpu
-    assert not hasattr(graspnet, 'freeze_setup')
-    assert not hasattr(graspnet_cpu, 'freeze_container_setup')
-    assert not hasattr(graspnet_cpu, 'export_container_context')
+    assert callable(graspnet.freeze_setup)
+    assert callable(graspnet_cpu.freeze_container_setup)
+    assert callable(graspnet_cpu.export_container_context)
     assert callable(graspnet.registry_from_setup)
     assert callable(graspnet_cpu.verify_container_setup)
     assert graspnet.descriptor()['name']=='graspnet'

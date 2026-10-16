@@ -1,0 +1,153 @@
+batch_size: 8
+ckpt: null
+data:
+  camera: realsense
+  fraction: 1
+  grasp_data: poses_gn
+  graspness_data: dex_graspness_new
+  k: 64
+  max_point_dis: 0.006
+  num_points: 40000
+  rand_angle: 0
+  render: 1
+  resample: 1
+  robot: leap_hand
+  sample_total: 128
+  scene_fraction: 1
+  voxel_size: 0.005
+exp_name: dex_grasptta
+gpu: 0
+grad_clip: 10.0
+log_every: 10
+lr: 0.001
+lr_min: 1.0e-07
+max_iter: 50000
+model:
+  backbone: sparseconv
+  backbone_parameters:
+    pct:
+      dropout: 0.0
+      use_batch_norm: true
+      use_flash_attn: true
+    ptv3: {}
+    sparseconv: {}
+    sparse_glob_conv: {}
+  basic_inner:
+    t_dim: -1
+  contact:
+    dataset:
+      num_hand_points: 1024
+      num_obj_points: 1024
+    model:
+      network:
+        out_channel: 10
+  cvae:
+    cvae_condition_size: 512
+    cvae_decoder_sizes:
+    - 1024
+    - 256
+    - 22
+    cvae_encoder_sizes:
+    - 1024
+    - 512
+    - 256
+    cvae_latent_size: 64
+    obj_inchannel: 3
+  diffusion:
+    clip_sample: false
+    log_prob_type: accurate_cont
+    num_inference_timesteps: 200
+    ode: 1
+    scheduler:
+      num_train_timesteps: 1000
+      prediction_type: epsilon
+    scheduler_type: DDPMScheduler
+  dist_joint: 1
+  equi_inner:
+    equi: 0
+    t_dim: 16
+  euglow:
+    dataset:
+      num_hand_points: 1024
+      num_obj_points: 1024
+    model:
+      contact: experiments/v3.4_leap_contact/ckpt/ckpt_50000.pth
+      flow:
+        block: 2
+        feature_dim: 128
+        hidden_dim: 64
+        layer: 21
+        points: 16
+      ipdf: experiments/v3.4_leap_ipdf/ckpt/ckpt_50000.pth
+      network:
+        type: pointnet
+      sample_num: 1
+      tta:
+        normalize_factor: 60
+        thres_dis: 0.01
+        weight_cmap: 0.02
+        weight_dis: 0.0
+        weight_pen: 500
+        weight_spen: 10
+        weight_tpen: 50
+  feature_dim: 512
+  graspness_thresh: 0.1
+  ipdf:
+    feature_dim: 512
+    mlp_layer_sizes:
+    - 256
+    - 256
+    - 256
+    num_train_queries: 4096
+    number_fourier_components: 1
+  joint_num: 16
+  joint_scale: 1
+  mobius:
+    k: 32
+    layer: 24
+  norm_gt: 0
+  sample_num: 4
+  se3_diffusion:
+    inference_steps: 200
+    log_prob_type: accurate_cont
+    no_final_step_noise: 1
+    ode: 1
+    scale_loss: vel
+    schedule:
+      max: 0.02
+      min: 0.0001
+      steps: 1000
+      type: linear
+    score_euc_rep: vel
+    score_rot_rep: epsilon
+    train_sample_num: 15
+  trans_diffusion:
+    num_inference_timesteps: 1000
+    scheduler:
+      num_train_timesteps: 1000
+      prediction_type: epsilon
+    scheduler_type: DDPMScheduler
+    time_dim: 16
+  trans_scale: 25
+  type: graspness_cvae
+  weight:
+    diffusion: 10.0
+    euc: 1.0
+    euc_diff: 1.0
+    graspness: 1.0
+    joint: 1.0
+    nll: 1.0
+    objectness: 1.0
+    pose_rot: 1.0
+    pose_trans: 1.0
+    quat: 1.0
+    rot: 1.0
+    rot_diff: 1.0
+num_workers: 16
+save_every: 5000
+seed: 0
+train_split: train-part-none
+val_every: 1000
+val_num: 10
+val_split:
+- val

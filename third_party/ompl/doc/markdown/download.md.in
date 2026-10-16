@@ -1,0 +1,35 @@
+# Download {#download}
+
+## Releases
+
+- __OMPL__ @PROJECT_VERSION@, released @OMPL_RELEASE_DATE@ ([release notes](releaseNotes.html))
+
+  <a href="https://github.com/ompl/ompl/archive/@PROJECT_VERSION@.tar.gz
+" class="btn btn-primary btn-sm">TGZ</a>
+  <a href="https://github.com/ompl/ompl/archive/@PROJECT_VERSION@.zip" class="btn btn-primary btn-sm">ZIP</a>
+
+  OMPL is also available through through several package managers:
+  - [Debian](https://packages.debian.org/sid/libompl-dev),
+  - [Ubuntu (14.04 and higher)](http://packages.ubuntu.com/search?keywords=libompl-dev),
+  - [Fedora](https://apps.fedoraproject.org/packages/ompl),
+  - [MacPorts](https://www.macports.org),
+  - [Homebrew](http://brew.sh), and
+  - [vcpkg](https://vcpkg.readthedocs.io).
+  .
+  Note that these package managers may not always have the latest release.
+- Python wheels are available on the [github release page](https://github.com/ompl/ompl/releases)
+- [Installation instructions.](installation.html)
+- [Older releases.](https://github.com/ompl/ompl/releases) See the [release notes](releaseNotes.html) for a brief a description of changes for each release.
+
+## Repository {#download_repos}
+
+- The [latest source](https://github.com/ompl/ompl) is available on GitHub:
+
+      git clone --recurse-submodules https://github.com/ompl/ompl.git
+
+- [Installation instructions](installation.html) are the same as for a release.
+
+## OMPL in ROS
+
+- __OMPL__ is used as a system dependency in [ROS 2](http://www.ros.org), and the correct .deb file is installed automatically as needed.
+- __OMPL__ is also used as a planning plugin in [MoveIt2](https://moveit.ai).

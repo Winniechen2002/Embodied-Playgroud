@@ -1,0 +1,16 @@
+.DS_Store
+.registered
+.vscode
+*.dylib
+*.egg-info
+*.log
+*.pcd
+*.pyc
+*.pyi
+*.so
+*.so.*
+*.swp
+bin/
+build/
+lib/
+log/

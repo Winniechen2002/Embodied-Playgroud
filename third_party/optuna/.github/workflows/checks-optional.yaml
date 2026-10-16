@@ -1,0 +1,38 @@
+name: Checks (with optional dependencies)
+
+on:
+  schedule:
+    - cron: '0 23 * * SUN-THU'
+  workflow_dispatch:
+
+jobs:
+  checks:
+    if: (github.event_name == 'schedule' && github.repository == 'optuna/optuna') || (github.event_name != 'schedule')
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      with:
+        python-version: 3.12
+        enable-cache: true
+
+    - name: Install
+      run: |
+        uv sync --group checking --group test --extra document --extra optional
+
+    - name: Output installed packages
+      run: |
+        uv pip freeze
+    - name: Output dependency tree
+      run: |
+        uv tree --group checking --group test
+  
+    - name: ruff
+      run: |
+        uv run ruff check .
+        uv run ruff format . --check --diff
+    - name: mypy
+      run: uv run mypy . --warn-unused-ignores

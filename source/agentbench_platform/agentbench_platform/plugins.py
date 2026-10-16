@@ -213,9 +213,9 @@ def configured_registry(args,*,resources,private_directory):
     from .container_engine import ContainerEngine,engine_from_args
     granted=selected_tools(args)
     if not granted:return None
-    if (set(granted)-{'graspnet'} or len(set(granted))!=len(granted)
+    if (set(granted)-{'graspnet','cube_solver'} or len(set(granted))!=len(granted)
             or ('graspnet' in granted and (args.profile=='rgb' or not args.tool_setup))
-):
+            or ('cube_solver' in granted and not getattr(args,'cube_solver_setup',None))):
         raise ValueError('Selected tools unavailable')
     engine=engine_from_args(args) if hasattr(args,'container_engine') else ContainerEngine()
     registry=ToolRegistry(resources=resources,observation=args.profile,granted=granted)
@@ -223,6 +223,10 @@ def configured_registry(args,*,resources,private_directory):
         from .graspnet import registry_from_setup
         registry_from_setup(args.tool_setup,resources=resources,observation=args.profile,
             granted=granted,private_directory=Path(private_directory)/'graspnet',registry=registry,engine=engine)
+    if 'cube_solver' in granted:
+        from .cube_solver import register_from_setup
+        register_from_setup(args.cube_solver_setup,registry=registry,
+            private_directory=Path(private_directory)/'cube_solver',engine=engine)
     return registry
 
 

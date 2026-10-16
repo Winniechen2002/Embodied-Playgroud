@@ -1,0 +1,76 @@
+configure_file("${CMAKE_CURRENT_SOURCE_DIR}/config.h.in" "${CMAKE_CURRENT_BINARY_DIR}/config.h")
+if(NOT SKBUILD)
+    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/config.h"
+        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/ompl"
+        COMPONENT ompl)
+endif()
+
+file(GLOB_RECURSE OMPL_SOURCE_CODE datastructures/*.cpp util/*.cpp base/*.cpp
+  geometric/*.cpp control/*.cpp multilevel/*.cpp tools/*.cpp)
+file(GLOB_RECURSE OMPL_HEADERS datastructures/*.h util/*.h base/*.h
+  geometric/*.h control/*.h multilevel/*.h tools/*.h)
+
+#############################################
+# Add enabled extensions to the source code #
+#############################################
+
+## replace XXX by the extension
+#if (OMPL_EXTENSION_XXX)
+#    file(GLOB_RECURSE OMPL_XXX_EXTENSION_SOURCE_CODE extensions/XXX/*.cpp)
+#    list(APPEND OMPL_SOURCE_CODE ${OMPL_XXX_EXTENSION_SOURCE_CODE})
+#
+##    If additional libraries need to be linked, they are added to package.xml for ROS,
+##    or, they are added to the list of targets linked to ompl. Finally, add them to
+##    the config script as dependencies
+#
+#endif()
+
+if (OMPL_EXTENSION_TRIANGLE)
+    file(GLOB_RECURSE OMPL_TRIANGLE_EXTENSION_SOURCE_CODE extensions/triangle/*.cpp)
+    file(GLOB_RECURSE OMPL_TRIANGLE_EXTENSION_HEADERS extensions/triangle/*.h)
+    list(APPEND OMPL_SOURCE_CODE ${OMPL_TRIANGLE_EXTENSION_SOURCE_CODE})
+    list(APPEND OMPL_HEADERS ${OMPL_TRIANGLE_EXTENSION_HEADERS})
+endif()
+
+source_group("OMPL Source" FILES "${OMPL_SOURCE_CODE}")
+source_group("OMPL Headers" FILES "${OMPL_HEADERS}")
+
+# build the library
+if(OMPL_BUILD_SHARED)
+    add_library(ompl SHARED ${OMPL_SOURCE_CODE})
+else()
+    add_library(ompl STATIC ${OMPL_SOURCE_CODE})
+    if (OMPL_BUILD_PYTHON_BINDINGS)
+        set_target_properties(ompl PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+    endif()
+endif()
+add_library(ompl::ompl ALIAS ompl)
+target_link_libraries(ompl
+    PUBLIC
+        Boost::serialization
+        Eigen3::Eigen
+        "$<$<BOOL:${Threads_FOUND}>:Threads::Threads>"
+        "$<$<BOOL:${OMPL_HAVE_FLANN}>:flann::flann>"
+        "$<$<BOOL:${OMPL_EXTENSION_TRIANGLE}>:Triangle::Triangle>"
+    PRIVATE
+        "$<$<BOOL:${OMPL_HAVE_SPOT}>:Spot::Spot>")
+
+if(NOT SKBUILD)
+    set_target_properties(ompl PROPERTIES VERSION "${PROJECT_VERSION}")
+endif()
+
+if (OMPL_BUILD_SHARED)
+    if(NOT SKBUILD)
+        set_target_properties(ompl PROPERTIES SOVERSION "${OMPL_ABI_VERSION}")
+    endif()
+    if (MINGW)
+        target_link_libraries(ompl PRIVATE psapi ws2_32)
+        set_target_properties(ompl PROPERTIES LINK_FLAGS "-Wl,--export-all-symbols")
+    endif()
+else()
+    if (MSVC)
+        set_target_properties(ompl PROPERTIES STATIC_LIBRARY_FLAGS "psapi.lib ws2_32.lib")
+    elseif (MINGW)
+        target_link_libraries(ompl PRIVATE psapi ws2_32)
+    endif()
+endif()

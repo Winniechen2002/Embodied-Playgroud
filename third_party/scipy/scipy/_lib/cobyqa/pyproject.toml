@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobyqa"
+description = "Constrained Optimization BY Quadratic Approximations"
+readme = "README.rst"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Tom M. Ragonneau and Zaikun Zhang", email = "cobyqa@python.org"},
+]
+maintainers = [
+    {name = "Tom M. Ragonneau", email = "tom.ragonneau@gmail.com"},
+    {name = "Zaikun Zhang", email = "zaikun.zhang@polyu.edu.hk"},
+]
+keywords = [
+    "blackbox-optimization",
+    "constrained-optimization",
+    "derivative-free-optimization",
+    "hyperparameter-optimization",
+    "nonlinear-optimization",
+    "numerical-optimization",
+    "optimization",
+    "optimization-algorithms",
+    "optimization-methods",
+    "optimization-tools",
+    "simulation-based-optimization",
+    "unconstrained-optimization",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development",
+]
+dependencies = [
+    "numpy>=1.17.0",
+    "scipy>=1.10.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+doc = [
+    "matplotlib==3.9.2",
+    "numpydoc==1.8.0",
+    "pydata-sphinx-theme==0.15.4",
+    "Sphinx==8.0.2",
+    "sphinx-copybutton==0.5.2",
+    "Sphinx-Substitution-Extensions==2024.8.6",
+    "sphinxcontrib-bibtex==2.6.2",
+]
+examples = ["matplotlib"]
+tests = [
+    "pytest>=6.1.0",
+    "pytest-cov",
+]
+
+[project.urls]
+homepage = "https://www.cobyqa.com"
+documentation = "https://www.cobyqa.com"
+source = "https://github.com/cobyqa/cobyqa"
+download = "https://pypi.org/project/cobyqa/#files"
+tracker = "https://github.com/cobyqa/cobyqa/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "cobyqa.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["cobyqa*"]

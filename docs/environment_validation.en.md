@@ -10,11 +10,11 @@ On 2026-10-16, the maintainer approved the following executed, passing checks as
 
 | Check | Passing coverage |
 | --- | --- |
-| Source regression | 280 tests, zero failures and zero skips |
+| Source regression | 298 tests, zero failures and zero skips |
 | Scorer endpoint fixtures | MuJoCo 100, Isaac 280 and ManiSkill 30: 410 tasks |
 | Native installation and basic operation | Loading, stepping and finish checks for all 410 tasks; rendering checks for 10 Isaac categories, plus MuJoCo and ManiSkill rendering/gateway smoke checks |
 | Default-condition physics | 100 MuJoCo tasks and 30 ManiSkill tasks |
-| Documentation and public content | Bilingual protocol generation consistency, permission documentation, 1,438 local link targets and a static audit of 740 public files |
+| Documentation and public content | Bilingual protocol generation consistency, permission documentation, first-party local links, embedded-source integrity and a static audit of 18,199 public files |
 | Export usability | Independent source export, discovery of all 410 tasks and the MuJoCo A001 smoke check |
 
 Native checks used existing isolated runtimes with validated versions on an NVIDIA RTX 4090 with driver 580.173.02. They are not a claim that every simulator was freshly installed on an empty machine. Scorer fixtures exercise constructed states; physics coverage is limited to the default conditions listed above; the exported package smoke check covers MuJoCo. Assets retain their original applicable licenses and attributions.

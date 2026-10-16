@@ -1,0 +1,79 @@
+name: Tests with minimum versions
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+  schedule:
+    - cron: '0 23 * * SUN-THU'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/master' && github.run_number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests-with-minimum-versions:
+    if: (github.event_name == 'schedule' && github.repository == 'optuna/optuna') || (github.event_name != 'schedule')
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ['3.9']
+
+    services:
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      with:
+        python-version: ${{ matrix.python-version }}
+        enable-cache: true
+
+    - name: Install
+      run: |
+        # Install minimal dependencies and confirm that `import optuna` is successful.
+        uv sync
+        uv run python -c 'import optuna'
+        uv run optuna --version
+
+        uv sync --group test --extra optional
+
+    - name: Install dependencies with minimum versions
+      run: |
+        # Install dependencies with minimum versions.
+        uv pip uninstall alembic cmaes packaging sqlalchemy plotly scikit-learn pillow
+        uv pip install alembic==1.5.0 cmaes==0.12.0 packaging==20.0 sqlalchemy==1.4.2 tqdm==4.27.0 colorlog==3.0.0 PyYAML==5.1 'pillow<10.4.0'
+        uv pip uninstall matplotlib pandas scipy
+        if [ "${{ matrix.python-version }}" = "3.9" ]; then
+          uv pip install matplotlib==3.8.4 pandas==2.2.2 scipy==1.13.0 numpy==1.26.4
+        fi
+        uv pip install plotly==5.0.0 scikit-learn==0.24.2  # optional extras
+
+    - name: Output installed packages
+      run: |
+        uv pip freeze
+    - name: Output dependency tree
+      run: |
+        uv tree --group test
+
+    - name: Scheduled tests
+      if:  ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      run: |
+        uv run --no-sync pytest tests -n 8
+
+    - name: Tests
+      if:  ${{ github.event_name != 'schedule' && github.event_name != 'workflow_dispatch' }}
+      run: |
+        uv run --no-sync pytest tests -m "not slow" -n 8

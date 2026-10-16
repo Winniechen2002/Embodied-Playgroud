@@ -1,0 +1,80 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+  schedule:
+    - cron: '0 23 * * SUN-THU'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/master' && github.run_number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    if: (github.event_name == 'schedule' && github.repository == 'optuna/optuna') || (github.event_name != 'schedule')
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13', '3.14']
+        test-trigger-type:
+          - ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && 'Scheduled' || '' }}
+        exclude:
+          - test-trigger-type: ""
+            python-version: "3.10"
+          - test-trigger-type: ""
+            python-version: "3.11"
+          - test-trigger-type: ""
+            python-version: "3.12"
+
+    services:
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      with:
+        python-version: ${{ matrix.python-version }}
+        enable-cache: true
+
+    - name: Install
+      run: |
+        # Install minimal dependencies and confirm that `import optuna` is successful.
+        uv sync
+        uv run python -c 'import optuna'
+        uv run optuna --version
+
+        uv sync --group test --extra optional
+
+    - name: Output installed packages
+      run: |
+        uv pip freeze
+    - name: Output dependency tree
+      run: |
+        uv tree --group test
+
+    - name: Tests
+      run: |
+        if [ "${{ github.event_name }}" = "schedule" ] || \
+           [ "${{ github.event_name }}" = "workflow_dispatch" ] ; then
+          target=""
+        else
+          target="not slow"
+        fi
+
+        uv run pytest tests -m "$target" -n 8
+      env:
+        SQLALCHEMY_WARN_20: 1

@@ -18,7 +18,7 @@ def add_profile_arguments(parser):
     parser.add_argument('--experience-profile',choices=('none','reference'),default='none')
     parser.add_argument('--tool',action='append',default=[])
     parser.add_argument('--tool-setup',help='Trusted offline plugin setup manifest')
-    parser.add_argument('--cube-solver-setup',help='Legacy option; no cube solver is bundled in the environment distribution')
+    parser.add_argument('--cube-solver-setup',help='Trusted offline cube-solver setup manifest; requires --tool cube_solver')
     parser.add_argument('--disable-cube-solver',action='store_true',help='Compatibility flag; environment launchers never grant a solver by default')
 
 

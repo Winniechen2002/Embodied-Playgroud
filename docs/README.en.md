@@ -11,3 +11,5 @@
 - [Asset provenance and licensing](environment_assets.en.md)
 
 Implementation packages: [`agentbench`](../source/agentbench), [`agentbench_platform`](../source/agentbench_platform), [`agentbench_sdk`](../source/agentbench_sdk). All runtime examples assume the repository root as the working directory. Use a separate environment for each simulator.
+
+- [Embedded tools and solvers](embedded_tools.en.md)

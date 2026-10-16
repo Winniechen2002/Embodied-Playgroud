@@ -1,0 +1,18 @@
+robot_name: leap_hand
+
+urdf_path: robot_models/urdf/leap_hand_simplified.urdf
+meta_path: robot_models/meta/leap_hand/meta.yaml
+width_mapper_meta_path: robot_models/meta/leap_hand/width_mapper_meta.yaml
+simulator_type: IsaacGymSimulator
+headless: 1
+
+canonical_frame_rotation: [[0, 0, -1], [1, 0, 0], [0, -1, 0]]
+
+scene_pen_threshold: 0.00
+table_pen_threshold: 0.00
+
+waypoint_steps:
+- 40
+- 20
+- 20
+- 60
