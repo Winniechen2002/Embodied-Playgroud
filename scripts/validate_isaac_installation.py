@@ -38,7 +38,7 @@ def worker(args, tasks):
     try:
         app = AppLauncher(headless=True, enable_cameras=True, device='cuda:0').app
         for module in (fastapi, starlette):
-            assert Path(module.__file__).resolve().is_relative_to(Path(sys.prefix)), 'HTTP dependency shadowed by vendor bundle'
+            assert Path(module.__file__).resolve().is_relative_to(Path(sys.prefix).resolve()), 'HTTP dependency shadowed by vendor bundle'
         result['http_packages'] = {m.__name__:dict(version=m.__version__, path=str(Path(m.__file__).resolve())) for m in (fastapi, starlette)}
         import omni.usd
         from agentbench_platform.environment_backend import create_isaac_backend
@@ -49,7 +49,7 @@ def worker(args, tasks):
         result['gpu'] = torch.cuda.get_device_name()
         result['torch_build'] = torch.__version__
         result['torch_path'] = str(Path(torch.__file__).resolve())
-        assert Path(torch.__file__).resolve().is_relative_to(Path(sys.prefix)), 'Bundled PyTorch shadowed the isolated runtime'
+        assert Path(torch.__file__).resolve().is_relative_to(Path(sys.prefix).resolve()), 'Bundled PyTorch shadowed the isolated runtime'
         for task in tasks:
             row = dict(task_id=task['id'], configuration_sha256=task['configuration_sha256'], status='failed')
             backend = None
@@ -145,7 +145,7 @@ def main():
         import fastapi, starlette, isaaclab
         report['import_paths'] = {m.__name__:str(Path(m.__file__).resolve()) for m in (fastapi, starlette, isaaclab)}
         for m in (fastapi, starlette):
-            assert Path(m.__file__).resolve().is_relative_to(Path(sys.prefix)), 'Bundled HTTP package shadowed venv'
+            assert Path(m.__file__).resolve().is_relative_to(Path(sys.prefix).resolve()), 'Bundled HTTP package shadowed venv'
         assert Path(isaaclab.__file__).resolve().is_relative_to(args.isaac_lab_root.resolve())
         report['packages'] = json.loads(subprocess.check_output([sys.executable, '-m', 'pip', 'list', '--format=json'], env=env, text=True))
         assert manifest['count'] == 410
