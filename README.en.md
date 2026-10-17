@@ -2,7 +2,7 @@
 
 > Follow `Agent.md` to test this agent on **EP-20** at **L0** with **Pass@1**, and report the five suite scores, overall score and completed coverage.
 
-Copy this prompt to the agent that organizes your evaluation. Change **EP-20** and **L0** to choose another benchmark and access level.
+Copy this prompt to the agent that organizes your evaluation. Change **EP-20** and **L0** to choose another benchmark and access level. For reference attempt limits, replace **Pass@1** with **Pass@2**, **Pass@5** or **Pass@10**.
 
 [简体中文](README.zh-CN.md) · [Agent instructions](Agent.md) · [Rules](rules/rules.en.md)
 
@@ -41,7 +41,7 @@ A higher level does not automatically install or enable tools. Fix the tool list
 
 ## What the score means
 
-With **Pass@1**, each condition gets one valid attempt. Average the four conditions for each task, average tasks within each suite, then give each of the five suites 20% of the overall score. **Pass@2** allows at most two valid attempts per condition and must be reported separately. See [Agent.md](Agent.md#report-results) for failures, incomplete runs and reporting.
+With **Pass@1**, each condition gets one valid attempt. Average the four conditions for each task, average tasks within each suite, then give each of the five suites 20% of the overall score. **Pass@2**, **Pass@5** and **Pass@10** are reference options allowing at most 2, 5 and 10 valid attempts per condition. Stop at the first success. Declare the limit before testing and report each measured Pass@K score separately; larger limits do not change the four required conditions or their weights. See [Agent.md](Agent.md#report-results) for failures, incomplete runs and reporting.
 
 [Installation](docs/environment_installation.en.md) · [Tools and solvers](docs/embedded_tools.en.md) · [Validation](docs/environment_validation.en.md) · [All documentation](docs/README.en.md)
 

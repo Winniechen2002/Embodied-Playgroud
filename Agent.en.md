@@ -18,7 +18,7 @@ Read the user's prompt and record:
 
 - Benchmark: `EP-20`, `EP-100`, `EP-Easy` or `EP-Hard`.
 - Capability level: `L0`, `L1`, `L2` or `L3`.
-- Attempt policy: `Pass@1` unless the user requests `Pass@2`.
+- Attempt policy: default `Pass@1`; reference limits are `Pass@2`, `Pass@5` and `Pass@10`. Fix the maximum K and the requested reporting cutoffs before running.
 - Agent/model version, instructions, inference settings and any token/image budgets.
 - Observation profile, explicit tool grants and prepared tool setup manifests.
 - Repository revision, runtime versions and a new output directory outside the repository.
@@ -126,7 +126,11 @@ Reads do not advance simulation time. If a request's outcome is uncertain after 
 
 Use the trusted final result returned by `finish()` (`success`, `score`, `step_count`, `terminated`, `truncated`). Process exit code 0, a convincing image, a solved symbolic cube or an accepted action is not proof of task success. If the client cannot obtain a result, the host must inspect its private terminal evidence; the tested agent must not read it.
 
-For **Pass@1**, score the first valid attempt on each condition. For **Pass@2**, allow at most two valid attempts on the same condition, stop after success, and count condition success if either valid attempt succeeds. Report Pass@1 and Pass@2 separately. Ordinary agent failures, rule violations and exhausted budgets—including normal wall timeout—consume an attempt. Only evidence-confirmed non-agent infrastructure incidents may be excluded and replaced under the same condition. Preserve the original record and replacement link. Unresolved incidents remain pending; do not label them success or silently drop them.
+For **Pass@K** (K = 1, 2, 5 or 10), use the first K valid attempts in chronological order on the same condition, stopping at the first success. Pass@1 is the default; Pass@2, Pass@5 and Pass@10 are reference limits. Keep the condition, seed, settings and per-attempt budgets fixed, with a fresh environment and agent session each time. Do not increase K after seeing failures.
+
+Report each requested cutoff separately from the same ordered attempt records, never by extrapolating Pass@1 or selecting favorable attempts. At cutoff k, a condition succeeds if any of its first k valid attempts succeeds; it fails only after k valid failures. Otherwise it is pending for that cutoff. For example, first success on attempt 4 means Pass@1 and Pass@2 fail, while Pass@5 and Pass@10 succeed without further attempts. If only two failures have run, Pass@5 and Pass@10 remain pending. Apply coverage and scoring separately for each cutoff.
+
+Ordinary agent failures, rule violations and exhausted budgets—including normal wall timeout—consume an attempt. Only evidence-confirmed non-agent infrastructure incidents may be excluded and replaced under the same condition. Preserve the original record and replacement link. Unresolved incidents remain pending; do not label them success or silently drop them.
 
 For each fully evaluated setting:
 
@@ -138,4 +142,4 @@ Overall score = mean of Launch, Tower, Lock, Cube and Home scores
 
 Each suite has 20% weight. Do not pool all successful episodes into a single percentage or select the best condition. If any required condition remains unresolved, report the run as `partial`, set its final benchmark score to `null`, and show completed coverage and any clearly labeled observed-success lower bound using the original denominators.
 
-Report the benchmark, level, actual observation/tool setting, attempt policy, agent version, repository revision, planned/completed conditions, per-task outcomes, five suite scores, overall score, failures and excluded/pending incidents. Report token/image usage only when measured; missing usage is not zero. Retain per-attempt records locally outside the repository. Never commit session tokens, private state or generated evaluation reports to the source release. State exactly what completed; do not present setup checks or partial coverage as a completed benchmark.
+Report the benchmark, level, actual observation/tool setting, attempt policy, agent version, repository revision, planned/completed conditions per cutoff, actual valid-attempt counts, per-task outcomes, five suite scores, overall score, failures and excluded/pending incidents. Report token/image usage only when measured; missing usage is not zero. Retain per-attempt records locally outside the repository. Never commit session tokens, private state or generated evaluation reports to the source release. State exactly what completed; do not present setup checks or partial coverage as a completed benchmark.

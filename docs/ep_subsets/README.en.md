@@ -29,7 +29,7 @@ A configuration paired with a different robot may be a different task. Paper ind
 | [EP-Hard](EP-Hard.en.md) | 50 | 17 | 10 | 8 | 6 | 9 | 200 |
 | [EP-20](EP-20.en.md) | 20 | 6 | 4 | 3 | 3 | 4 | 80 |
 
-Counts apply to one fixed evaluation setting: one group per task and four conditions per group. Pass@1 uses one valid attempt per condition; Pass@2 uses at most two, stopping at first success. Condition counts are not actual Pass@2 execution counts.
+Counts apply to one fixed evaluation setting: one group per task and four conditions per group. Pass@1 uses one valid attempt per condition; Pass@2, Pass@5 and Pass@10 allow at most 2, 5 and 10 respectively, stopping at first success. These reference limits must be declared before running. Condition counts are not actual execution counts.
 
 ## Selection and difficulty
 
@@ -74,7 +74,7 @@ Subset rate S = (S_Launch + S_Tower + S_Lock + S_Cube + S_Home) / 5
 
 Each suite has **20%** weight. Pooled successful conditions divided by all conditions do not give the paper's headline score. Aggregate all-four indicators through the same task/suite/subset hierarchy; they differ from mean condition success.
 
-Pass@1 uses the first valid attempt. Pass@2 uses any success among the first two valid attempts in chronological order on the same condition; it is not inferred from Pass@1 probability. Every condition retains one quarter of its task's denominator. In the paper's experimental extension, ordinary agent failures and budget exhaustion (including wall-clock timeout) consume an opportunity; confirmed infrastructure incidents do not. Preserve all records and exclusion evidence.
+Pass@K (K = 1, 2, 5 or 10) uses any success among the first K valid attempts in chronological order on the same condition. Pass@5 and Pass@10 are additional playground reference limits. Report each requested cutoff separately from the same ordered records; never infer it from Pass@1 probability. A condition is complete at cutoff K only after success within its first K valid attempts or K valid failures; otherwise that cutoff remains partial. Stop after first success and keep all attempts isolated with identical conditions and per-attempt budgets. Every condition retains one quarter of its task's denominator. In the paper's experimental extension, ordinary agent failures and budget exhaustion (including wall-clock timeout) consume an opportunity; confirmed infrastructure incidents do not. Preserve all records and exclusion evidence.
 
 Groups with invalid or missing conditions remain partial. Retain the planned denominator, observed-success lower bound, completed coverage and invalid/missing counts; final metrics remain undefined. Report access settings, grants and attempt budgets separately. Time@S averages wall time to success over successful attempts; Tok@S averages their input (including cached input) plus output tokens. Missing usage is not zero.
 

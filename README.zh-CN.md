@@ -2,7 +2,7 @@
 
 > 请按 `Agent.md`，以 **L0** 在 **EP-20** 上测试当前 Agent 的能力，采用 **Pass@1**，并报告五个套件得分、总分和完成覆盖率。
 
-将这句话交给负责组织评测的 Agent。替换 **EP-20** 和 **L0**，即可指定要测的 benchmark 和能力等级。
+将这句话交给负责组织评测的 Agent。替换 **EP-20** 和 **L0**，即可指定要测的 benchmark 和能力等级。需要参考更多尝试机会时，将 **Pass@1** 换成 **Pass@2**、**Pass@5** 或 **Pass@10**。
 
 [English](README.en.md) · [Agent 操作说明](Agent.zh-CN.md) · [测试规则](rules/rules.zh-CN.md)
 
@@ -41,7 +41,7 @@ Embodied Playground 测试 Agent 能否观察仿真场景、选择动作并完�
 
 ## 如何看分数
 
-**Pass@1** 表示每个条件只有一次有效尝试。先平均任务的四个条件，再平均套件中的任务，最后让五个套件各占总分的 20%。**Pass@2** 允许每个条件最多两次有效尝试，必须单独报告。失败、未完成与结果记录方式见 [Agent 操作说明](Agent.zh-CN.md#报告结果)。
+**Pass@1** 表示每个条件只有一次有效尝试。先平均任务的四个条件，再平均套件中的任务，最后让五个套件各占总分的 20%。**Pass@2**、**Pass@5** 和 **Pass@10** 是参考选项，分别允许每个条件最多 2、5、10 次有效尝试，首次成功即停止。测试前声明上限，各档实测分数单独报告；增加尝试次数不改变四个必测条件及其权重。失败、未完成与结果记录方式见 [Agent 操作说明](Agent.zh-CN.md#报告结果)。
 
 [安装](docs/environment_installation.zh-CN.md) · [工具与求解器](docs/embedded_tools.zh-CN.md) · [验证](docs/environment_validation.zh-CN.md) · [全部文档](docs/README.zh-CN.md)
 
