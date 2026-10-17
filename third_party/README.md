@@ -16,8 +16,11 @@ or grant it evaluation access. Tool use follows the [capability rules](../rules/
 Git metadata, local caches and untracked files were not copied. Tracked upstream
 examples and data are retained. Two upstream symbolic links are materialized as
 ordinary files/directories. Upstream `.gitattributes` files are retained as
-`.gitattributes.upstream`; the release controls its own LFS handling. All other
-included upstream regular files retain their original bytes.
+`.gitattributes.upstream`; the release controls its own LFS handling. Six Boost
+Math HTML documents bundled by SciPy have unused Mapbox access tokens removed
+from Plotly chart configuration. Their manifest entries record `modification`,
+`upstream_sha256` and `upstream_bytes`, alongside the sanitized file identities.
+All other included upstream regular files retain their original bytes.
 
 One documentation image, `Depth-Anything-3/assets/images/da3_teaser.png`, is absent:
 the pinned LFS object returns HTTP 404 upstream. Its identity is recorded in
@@ -36,6 +39,8 @@ Check the upstream terms before using or redistributing a component. See also
 版本、来源、文件校验值及许可路径见清单。各工具仍需独立安装依赖，并按能力等级明确授权。
 未复制 Git 元数据、本地缓存或未跟踪文件；保留上游已跟踪示例与数据。
 两个符号链接已展开为普通文件／目录；上游 Git 属性保存为 `.gitattributes.upstream`。
+SciPy 附带的六份 Boost Math HTML 文档已移除 Plotly 配置中未使用的 Mapbox 访问 token。
+对应清单条目保留 `modification`、`upstream_sha256`、`upstream_bytes`，并记录清理后的文件校验值。
 其余随附上游普通文件字节保持不变。
 
 唯一缺失项为 Depth-Anything-3 的文档展示图片 `assets/images/da3_teaser.png`，

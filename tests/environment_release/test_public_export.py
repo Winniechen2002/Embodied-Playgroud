@@ -2,11 +2,28 @@
 import hashlib
 import json
 from pathlib import Path
+import pytest
 
 from agentbench_platform.environment_catalog import ROOT
 from agentbench_platform.environment_contracts import action_contracts
 from agentbench_platform.environment_release import build, export_content, source_files
-from agentbench_platform.public_content import public_files
+from agentbench_platform.public_content import public_files, credential_issues
+
+
+@pytest.mark.parametrize('prefix', [b'pk', b'sk', b'tk'])
+def test_public_audit_rejects_embedded_mapbox_tokens_without_echoing_them(prefix):
+    # Synthetic, nonfunctional token shape; never retain a real credential here.
+    token = prefix + b'.' + b'eyJ' + b'A' * 32 + b'.' + b'B' * 22
+    content = b'<script>config={"mapboxAccessToken":"' + token + b'"}</script>'
+    issues = credential_issues('third_party/example/chart.html', content)
+    assert issues == [dict(kind='embedded_access_token', provider='mapbox',
+                           path='third_party/example/chart.html')]
+    assert token.decode() not in json.dumps(issues)
+
+
+def test_public_audit_allows_empty_tokens_and_documentation_placeholders():
+    assert credential_issues('chart.html', b'{"mapboxAccessToken":""}') == []
+    assert credential_issues('example.md', b'pk.YOUR_ACCESS_TOKEN') == []
 
 
 def test_native_contracts_remain_source_bound_and_original_records_preserved():

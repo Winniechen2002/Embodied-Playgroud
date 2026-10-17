@@ -74004,10 +74004,13 @@
       "upstream_path": "doc/graphs/hypergeometric_1f1/boost-no-inspect"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_a.html": {
-      "sha256": "639dcc6719dfd2d882d495a17b8e85694b570e914e7106c3d4d377230cf72ca9",
-      "bytes": 1290,
+      "sha256": "26698184151ac7ccbf300c5ea620a8922029cafcbd28020019b106488fd9606a",
+      "bytes": 1175,
       "mode": "100644",
-      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_a.html"
+      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_a.html",
+      "upstream_sha256": "639dcc6719dfd2d882d495a17b8e85694b570e914e7106c3d4d377230cf72ca9",
+      "upstream_bytes": 1290,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_a.js": {
       "sha256": "fcda3a971998a6f46cddcc7a386596c880b1f6001f006a22f40b6a3d62d2831e",
@@ -74028,10 +74031,13 @@
       "upstream_path": "doc/graphs/hypergeometric_1f1/negative_a_bins.svg"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_ab.html": {
-      "sha256": "044cfeba1045e28c9d98df799fdf84527455a8d852b442ef13c00fdde555e640",
-      "bytes": 1567,
+      "sha256": "de52ded95cded8ede4c5ae11c5a2ba183e2d7cfcfcad1658b7e1833c14c6184e",
+      "bytes": 1452,
       "mode": "100644",
-      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_ab.html"
+      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_ab.html",
+      "upstream_sha256": "044cfeba1045e28c9d98df799fdf84527455a8d852b442ef13c00fdde555e640",
+      "upstream_bytes": 1567,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_ab.js": {
       "sha256": "2f655666cdf4060e3dee032f01f78c959c81a9ab7729e62ac2e0050c1f95fe1f",
@@ -74052,10 +74058,13 @@
       "upstream_path": "doc/graphs/hypergeometric_1f1/negative_ab_bins.svg"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_b.html": {
-      "sha256": "c7e5ef1f81de65e83ee35aa964f869f7a077d940a5a5252cbed673821f426a2d",
-      "bytes": 1570,
+      "sha256": "e27a1b0c0028b6ad8f162b6b3ee011b5af7afa16f3db9a4909cfa57082e9703d",
+      "bytes": 1455,
       "mode": "100644",
-      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_b.html"
+      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_b.html",
+      "upstream_sha256": "c7e5ef1f81de65e83ee35aa964f869f7a077d940a5a5252cbed673821f426a2d",
+      "upstream_bytes": 1570,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_b.js": {
       "sha256": "372079126ccd18a9a5e9e2437485511fc2ce2828a44b3e64bfe71dc33c8f3599",
@@ -74076,10 +74085,13 @@
       "upstream_path": "doc/graphs/hypergeometric_1f1/negative_b_bins.svg"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_b_incalculable.html": {
-      "sha256": "e8d19a4e9426fc84b09044cc2d071aa2b78d01f4513b88f85c15e9e0640f9404",
-      "bytes": 1613,
+      "sha256": "ee0b3b166c5b93a05930b9a3f6a69bf871acb710c756ba0610cf6eb2b92bd31c",
+      "bytes": 1498,
       "mode": "100644",
-      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_b_incalculable.html"
+      "upstream_path": "doc/graphs/hypergeometric_1f1/negative_b_incalculable.html",
+      "upstream_sha256": "e8d19a4e9426fc84b09044cc2d071aa2b78d01f4513b88f85c15e9e0640f9404",
+      "upstream_bytes": 1613,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/negative_b_incalculable.js": {
       "sha256": "b8d858e583e051195bc225534ee479e1967f25f6893640cf9676f788ba0a221c",
@@ -74100,10 +74112,13 @@
       "upstream_path": "doc/graphs/hypergeometric_1f1/plotlyjs-bundle.js"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/positive_abz.html": {
-      "sha256": "d87733103e6a2a611c8f500a27a93486d6ad52d5d8cc5441eb7b960c3cc4e512",
-      "bytes": 1298,
+      "sha256": "9115434560aa0a3892a623a211cd9c2437034dc747faccee741ff51b99bf4e73",
+      "bytes": 1183,
       "mode": "100644",
-      "upstream_path": "doc/graphs/hypergeometric_1f1/positive_abz.html"
+      "upstream_path": "doc/graphs/hypergeometric_1f1/positive_abz.html",
+      "upstream_sha256": "d87733103e6a2a611c8f500a27a93486d6ad52d5d8cc5441eb7b960c3cc4e512",
+      "upstream_bytes": 1298,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/graphs/hypergeometric_1f1/positive_abz.js": {
       "sha256": "a983820ba71da8a60ac53b42c991d353470998dd75d3645d6d444dc3569c2f04",
@@ -76860,10 +76875,13 @@
       "upstream_path": "doc/html/math_toolkit/hypergeometric/hypergeometric_1f0.html"
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/html/math_toolkit/hypergeometric/hypergeometric_1f1.html": {
-      "sha256": "185b1e8fa56dea75c3503a27d105ec0f2f305110aefc34294122cb27a70f7517",
-      "bytes": 50152,
+      "sha256": "477c74f901a80bff33577aea4ed790477c0346ca679ffa68cbc79f98354394de",
+      "bytes": 49577,
       "mode": "100644",
-      "upstream_path": "doc/html/math_toolkit/hypergeometric/hypergeometric_1f1.html"
+      "upstream_path": "doc/html/math_toolkit/hypergeometric/hypergeometric_1f1.html",
+      "upstream_sha256": "185b1e8fa56dea75c3503a27d105ec0f2f305110aefc34294122cb27a70f7517",
+      "upstream_bytes": 50152,
+      "modification": "Removed unused Mapbox access token from Plotly chart configuration."
     },
     "third_party/scipy/scipy/_lib/boost_math/doc/html/math_toolkit/hypergeometric/hypergeometric_2f0.html": {
       "sha256": "4336e3268eaaa13b8e63990b4cc8fb3c6c3c44f8bf6aa6931607a9eb14a23d39",

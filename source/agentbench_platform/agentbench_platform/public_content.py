@@ -11,6 +11,13 @@ from .environment_catalog import ROOT,digest
 from .environment_release import source_files,license_inventory,export_content,asset_distribution
 
 
+def credential_issues(name, content):
+    """Reject embedded Mapbox credentials without exposing token values in reports."""
+    if re.search(rb'\b(?:pk|sk|tk)\.eyJ[A-Za-z0-9_-]{16,}\.[A-Za-z0-9_-]{16,}\b', content):
+        return [dict(kind='embedded_access_token', provider='mapbox', path=str(name))]
+    return []
+
+
 def public_files(root=ROOT):
     root=Path(root)
     docs=['Agent.md','Agent.en.md','Agent.zh-CN.md','README.md','README.en.md','README.zh-CN.md','docs/README.en.md','docs/README.zh-CN.md']
@@ -67,6 +74,7 @@ def audit(root=ROOT):
         path=root/name
         if not path.is_file():issues.append(dict(kind='missing_public_file',path=name));continue
         original=path.read_bytes();content=export_content(name,original);contents[name]=content
+        issues.extend(credential_issues(name,content))
         files[name]=dict(sha256=hashlib.sha256(content).hexdigest(),bytes=len(content),
             source_sha256=hashlib.sha256(original).hexdigest(),transformed=content!=original)
         if content.startswith(b'version https://git-lfs.github.com/spec/v1'):
