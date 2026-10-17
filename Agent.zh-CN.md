@@ -2,7 +2,7 @@
 
 [English](Agent.en.md) · [人类使用入口](README.zh-CN.md) · [规则](rules/rules.zh-CN.md)
 
-收到“以 L0–L3 测试 EP-20、EP-100、EP-Easy 或 EP-Hard”的要求时，按本文组织测试并汇报真实结果。安装成功、烟雾检查通过或生成执行计划都不是 Agent 得分。
+收到“以 L0–L3 测试 EP-20、EP-100、EP-Easy、EP-Hard、Full test 或某个准确的环境任务 ID”的要求时，按本文组织测试并汇报真实结果。安装成功、烟雾检查通过或生成执行计划都不是 Agent 得分。
 
 ## 区分评测组织者与被测 Agent
 
@@ -16,14 +16,14 @@
 
 从用户 prompt 中读取并记录：
 
-- Benchmark：`EP-20`、`EP-100`、`EP-Easy` 或 `EP-Hard`。
+- 测试范围：`EP-20`、`EP-100`、`EP-Easy`、`EP-Hard`、`Full test` 或一个准确的 `task_id`。
 - 能力等级：`L0`、`L1`、`L2` 或 `L3`。
 - 尝试策略：默认 `Pass@1`；参考上限为 `Pass@2`、`Pass@5` 和 `Pass@10`。运行前固定最大 K 值和需要报告的档位。
 - Agent／模型版本、指令、推理设置及声明的 token／图像预算。
 - 观测配置、明确授权的工具及已准备的工具配置清单。
 - 仓库修订、运行时版本和仓库外的新输出目录。
 
-Easy／Hard 是任务难度划分，不是能力等级。使用用户指定的 benchmark 和 level；缺少其中一项时，在计分运行前确定。未授权工具时记录空工具清单，不擅自提升等级、在回合中安装新工具，或声称测过该等级允许的所有工具。
+Easy／Hard 是任务难度划分，不是能力等级。使用用户指定的测试范围和 level；缺少其中一项时，在计分运行前确定。未授权工具时记录空工具清单，不擅自提升等级、在回合中安装新工具，或声称测过该等级允许的所有工具。
 
 阅读[共享规则](rules/rules.zh-CN.md)和对应等级的规则：
 
@@ -40,11 +40,25 @@ Launcher 提供 RGB，不提供 RGB-D。高等级继承低等级权限，但工�
 
 按照[安装说明](docs/environment_installation.zh-CN.md)，分别准备 MuJoCo、Isaac 和 ManiSkill 环境。在计分运行前检查资产和模拟器访问能力。凭据留在宿主，不写入 prompt 或结果文件。
 
-仓库提供单回合启动器和 Python SDK，没有一条现成 CLI 可以自动选择 EP 子集、调用你的模型并生成完整 benchmark 得分。使用宿主的 Agent 适配器和调度器；缺少这些组件时，先接通 SDK，再开始测试。不能用固定保持动作的示例替代被测策略。
+仓库提供单回合启动器和 Python SDK，没有一条现成 CLI 可以自动选择测试范围、调用你的模型并生成完整 benchmark 得分。使用宿主的 Agent 适配器和调度器；缺少这些组件时，先接通 SDK，再开始测试。不能用固定保持动作的示例替代被测策略。
 
-从 [docs/ep_subsets/tasks.json](docs/ep_subsets/tasks.json) 读取成员名单：取 `subsets[name].indices`，按各行的 `index` 从 `tasks` 选出对应记录，再使用其中的 `task_id`、`suite` 和 `initial_mode`。不要猜测任务 ID，也不要按名字相似度挑任务。
+由宿主选择任务：
 
-采用 `paper-loaded-only-v1` 定义、`environment-four-trial-v2` 协议和 `2026-10-09-environment-l0-l3` 权限版本，标准 base seed 为 0。每个任务执行 trial index 1、2、3、4；Launcher 只使用 `loaded`。宿主读取[条件定义](docs/evaluation/tasks.json)和[尝试计次规则](docs/ep_subsets/README.zh-CN.md)，不要把这些清单发给被测 Agent。
+- **EP 子集：**从 [docs/ep_subsets/tasks.json](docs/ep_subsets/tasks.json) 读取成员名单，取 `subsets[name].indices`，按各行的 `index` 从 `tasks` 选出对应记录，再使用其中的 `task_id`、`suite` 和 `initial_mode`。
+- **Full test：**选取 [docs/evaluation/tasks.json](docs/evaluation/tasks.json) 中 `tasks` 的全部 410 行。每行从 `groups` 中选取 `marble` 系列的 `variant="loaded"` 组，其他系列选 `variant="default"` 组，再运行该组 `trials` 的四项条件，共 410 组、1,640 个条件。单独列出的 Launcher `ground` 组不计入此分数。
+- **单个环境：**在同一完整条件清单中精确匹配一个 `task_id`，按上面的方式选取其组和四项条件。例如，`marble/dual-panda/A007` 对应一个 loaded 组、四个条件。ID 不存在或不明确时，先确定 ID，不替换成名字相似的任务。用户另外指定 Launcher ground 测试时，明确标注初始化方式并单独报告。
+
+Full test 是本文定义的测试范围名称，不是 EP 子集成员文件中的键，也不是新增 CLI 参数。完整目录按 `task_id` 第一个 `/` 之前的系列前缀归入套件：
+
+| 套件 | 任务 ID 系列前缀 | Full test 任务数 |
+| --- | --- | ---: |
+| Launch | `marble` | 100 |
+| Tower | `hanoi_panda`、`hanoi_sharpa`、`hanoi_floating` | 120 |
+| Lock | `kongming_lock` | 60 |
+| Cube | `rubiks_panda`、`rubiks_sharpa`、`pocket_cube` | 80 |
+| Home | `bookshelf`、`maniskill_long_horizon`、`maniskill_geometry`、`maniskill_dynamics` | 50 |
+
+采用 `paper-loaded-only-v1` 定义、`environment-four-trial-v2` 协议和 `2026-10-09-environment-l0-l3` 权限版本，标准 base seed 为 0。每个任务执行 trial index 1、2、3、4；benchmark 和默认单环境测试中的 Launcher 只使用 `loaded`。宿主读取[条件定义](docs/evaluation/tasks.json)和[尝试计次规则](docs/ep_subsets/README.zh-CN.md)，不要把这些清单发给被测 Agent。
 
 | Benchmark | 任务数 | 必须完成的条件数 |
 | --- | ---: | ---: |
@@ -52,12 +66,14 @@ Launcher 提供 RGB，不提供 RGB-D。高等级继承低等级权限，但工�
 | EP-100 | 100 | 400 |
 | EP-Easy | 50 | 200 |
 | EP-Hard | 50 | 200 |
+| Full test | 410 | 1,640 |
+| 单个环境 | 1 | 4 |
 
 这些数量对应一套固定的 Agent／level／观测／工具设置。不同设置分别统计。四个条件是四项必测内容，不是四次重试后取最好结果。
 
 ## 启动每次尝试——仅供宿主
 
-每个条件、每次获准的尝试都使用全新的环境进程、输出目录和被测 Agent 会话。例如，在配置好的 MuJoCo 环境中，以 L0 启动 EP-20 任务 `marble/dual-panda/A007` 的第一个条件：
+每个条件、每次获准的尝试都使用全新的环境进程、输出目录和被测 Agent 会话。例如，单独以 L0 测试 `marble/dual-panda/A007` 时，在配置好的 MuJoCo 环境中启动第一个条件（EP-20 或 Full test 中测试此任务也使用相同命令）：
 
 ```bash
 python scripts/environment_runtime.py \
@@ -65,7 +81,7 @@ python scripts/environment_runtime.py \
   --capability-level 0 --profile rgb \
   --seed 0 --evaluation-protocol environment-four-trial-v2 --trial-index 1 \
   --initial-mode loaded --headless \
-  --output /tmp/ep20-l0-a007-c1-a1
+  --output /tmp/a007-l0-c1-a1
 ```
 
 保持该进程运行。等待 `session.json` 出现，只向被测客户端提供授权会话凭据与 SDK。输出目录还含宿主私有记录，不要共享整个目录。其他等级将 `--capability-level` 改为 1、2 或 3，观测配置与工具授权使用前面固定的设置。
@@ -81,6 +97,8 @@ bash scripts/run_isaac_binary.sh scripts/environment_runtime.py \
 ```
 
 ManiSkill 任务仍使用 `environment_runtime.py`，但必须切换到安装说明中的 ManiSkill 解释器、资产和环境变量，并使用所选成员记录的任务 ID。不要在同一个 Python 环境中运行三个后端。
+
+测试其他环境时，将准确 ID 传给 `--task-id`，并使用对应后端的解释器。Launcher 设置 `--initial-mode loaded`，其他系列省略此选项（`default` 是条件清单中的标记，不是 CLI 参数值）。单环境测试分别运行 trial index 1、2、3、4，每次使用新的输出目录和 Agent 会话。
 
 对全部任务及 trial index 重复执行。由协议选择每个条件的参数和预算，不覆盖已注册条件的 split、弹簧刚度、控制步数或墙钟限制。墙钟预算包含启动时间。不要更换条件、重置进行中的回合或在尝试之间复用 Agent 记忆。已批准的冻结工具安装可以复用，之前的观测、计划和轨迹不能复用。
 
@@ -132,7 +150,9 @@ def run_episode(session_path, choose_action):
 
 普通 Agent 失败、违规、预算耗尽（含正常墙钟超时）均消耗尝试机会。只有证据确认由非 Agent 原因造成的基础设施故障可排除，并在同一条件下补测；保留原始记录及补测关联。原因未明确的事件保持待处理，不记为成功，也不静默删除。
 
-对每套完成的设置，按以下顺序计算：
+单环境测试按要求的各个 Pass@K 档位报告任务 ID、初始化方式、四个条件的结果、任务得分和完成覆盖率。任务得分是四个条件成功值的平均；某档位尚有必测条件待完成时，该档位任务得分为 `null`。不从一个任务计算五套件分数或 benchmark 总分。
+
+对每套完成的 EP 子集或 Full test 设置，按以下顺序计算：
 
 ```text
 任务得分 = 四个条件成功值的平均
@@ -142,4 +162,4 @@ def run_episode(session_path, choose_action):
 
 五个套件各占 20%。不要将所有成功回合直接汇总成一个比例，也不要只取最好条件。任何必测条件尚未确定结果时，标为 `partial`，最终 benchmark 得分设为 `null`，报告完成覆盖率；如报告已观测成功率下界，须明确标注并保留原计划分母。
 
-报告 benchmark、level、实际观测／工具设置、尝试策略、Agent 版本、仓库修订、各档位计划／已完成条件数、实际有效尝试次数、各任务结果、五个套件分数、总分、失败及排除／待处理事件。只有实际测量时才报告 token／图像消耗，缺失值不是 0。逐次记录保存在仓库外，不向源码发布仓库提交 token、私有状态或生成的评测报告。准确说明完成范围，不把安装检查或部分覆盖包装成完整 benchmark 结果。
+报告测试范围、level、实际观测／工具设置、尝试策略、Agent 版本、仓库修订、各档位计划／已完成条件数、实际有效尝试次数、各任务结果、适用时的套件分数和总分、失败及排除／待处理事件。只有实际测量时才报告 token／图像消耗，缺失值不是 0。逐次记录保存在仓库外，不向源码发布仓库提交 token、私有状态或生成的评测报告。准确说明完成范围，不把安装检查或部分覆盖包装成完整 benchmark 结果。

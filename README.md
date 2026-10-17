@@ -25,8 +25,21 @@ The prompt directs an evaluation workflow. The repository provides environments 
 | **EP-100** | 100 | 400 | Full paper benchmark |
 | **EP-Easy** | 50 | 200 | Easier half of EP-100 |
 | **EP-Hard** | 50 | 200 | Harder half of EP-100 |
+| **Full test** | 410 | 1,640 | All tasks in the playground |
 
-Every task has four conditions. These benchmarks use loaded initialization for Launcher. Exact task lists are in the [benchmark definitions](docs/ep_subsets/README.en.md).
+Every task has four conditions. These benchmarks, including Full test, use loaded initialization for Launcher. See the [EP subset definitions](docs/ep_subsets/README.en.md) or the [full task catalog](docs/evaluation/index.en.md). Full test covers all tasks with this initialization choice; the catalog also lists separate ground-mode Launcher conditions.
+
+To run the full test:
+
+> Follow `Agent.md` to test this agent on **Full test** at **L0** with **Pass@1**, and report the five suite scores, overall score and completed coverage.
+
+### Test one environment
+
+Find its exact `task_id` in the [task catalog](docs/evaluation/index.en.md), then use this prompt:
+
+> Follow `Agent.md` to test this agent only on **marble/dual-panda/A007** at **L0** with **Pass@1**, and report the four condition outcomes, task score and completed coverage.
+
+Replace **marble/dual-panda/A007** with the desired ID. This tests one environment across its four conditions. Choose any supported level and Pass@K limit as above. [Agent.md](Agent.md#launch-each-attempt--host-only) explains how to launch it and connect your agent. A single-environment result is a task score, not a full benchmark score.
 
 ## Choose an access level
 

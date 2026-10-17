@@ -25,8 +25,21 @@ Embodied Playground 测试 Agent 能否观察仿真场景、选择动作并完�
 | **EP-100** | 100 | 400 | 完整论文基准 |
 | **EP-Easy** | 50 | 200 | EP-100 中较容易的一半 |
 | **EP-Hard** | 50 | 200 | EP-100 中较难的一半 |
+| **Full test** | 410 | 1,640 | playground 中的全部任务 |
 
-每个任务测试四个条件，Launcher 使用 loaded 初始化。具体任务名单见 [benchmark 定义](docs/ep_subsets/README.zh-CN.md)。
+每个任务测试四个条件，包括 Full test 在内均使用 Launcher loaded 初始化。任务名单见 [EP 子集定义](docs/ep_subsets/README.zh-CN.md)或[完整任务目录](docs/evaluation/index.zh-CN.md)。Full test 按此初始化方式覆盖全部任务；目录中另外列有 Launcher ground 条件。
+
+完整测试的 prompt：
+
+> 请按 `Agent.md`，以 **L0** 在 **Full test** 上测试当前 Agent 的能力，采用 **Pass@1**，并报告五个套件得分、总分和完成覆盖率。
+
+### 测试某个特定环境
+
+在[任务目录](docs/evaluation/index.zh-CN.md)中找到准确的 `task_id`，然后使用：
+
+> 请按 `Agent.md`，以 **L0** 仅测试环境 **marble/dual-panda/A007**，采用 **Pass@1**，并报告四个条件的结果、任务得分和完成覆盖率。
+
+将 **marble/dual-panda/A007** 换成目标 ID，即可测试该环境的四个条件。能力等级和 Pass@K 上限也可按前文替换。启动环境及接入 Agent 的步骤见 [Agent 操作说明](Agent.zh-CN.md#启动每次尝试仅供宿主)。单环境只报告任务得分，不作为完整 benchmark 总分。
 
 ## 选择能力等级
 

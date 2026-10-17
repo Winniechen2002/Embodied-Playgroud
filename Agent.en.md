@@ -2,7 +2,7 @@
 
 [简体中文](Agent.zh-CN.md) · [Human quick start](README.md) · [Rules](rules/rules.en.md)
 
-Use this guide when asked to test an agent on EP-20, EP-100, EP-Easy or EP-Hard at L0–L3. Run the requested evaluation and report measured results. A successful installation, smoke check or generated plan is not an agent score.
+Use this guide when asked to test an agent on EP-20, EP-100, EP-Easy, EP-Hard, Full test or one exact environment task ID at L0–L3. Run the requested evaluation and report measured results. A successful installation, smoke check or generated plan is not an agent score.
 
 ## Separate the evaluator from the tested agent
 
@@ -16,14 +16,14 @@ If the same model organizes and takes the test, keep the organizer's conversatio
 
 Read the user's prompt and record:
 
-- Benchmark: `EP-20`, `EP-100`, `EP-Easy` or `EP-Hard`.
+- Scope: `EP-20`, `EP-100`, `EP-Easy`, `EP-Hard`, `Full test` or one exact `task_id`.
 - Capability level: `L0`, `L1`, `L2` or `L3`.
 - Attempt policy: default `Pass@1`; reference limits are `Pass@2`, `Pass@5` and `Pass@10`. Fix the maximum K and the requested reporting cutoffs before running.
 - Agent/model version, instructions, inference settings and any token/image budgets.
 - Observation profile, explicit tool grants and prepared tool setup manifests.
 - Repository revision, runtime versions and a new output directory outside the repository.
 
-Do not confuse an Easy/Hard split with an access level. Use the user's chosen benchmark and level; if either is missing, resolve it before starting scored runs. When no tools are granted, record an empty tool list. Do not silently change the level, install new tools during an episode, or claim that all tools permitted by a level were tested.
+Do not confuse an Easy/Hard split with an access level. Use the user's chosen scope and level; if either is missing, resolve it before starting scored runs. When no tools are granted, record an empty tool list. Do not silently change the level, install new tools during an episode, or claim that all tools permitted by a level were tested.
 
 Read the [shared rules](rules/rules.en.md) and the level-specific document:
 
@@ -40,11 +40,25 @@ Launcher exposes RGB, not RGB-D. Higher levels inherit earlier permissions, but 
 
 Follow the [installation guide](docs/environment_installation.en.md) using separate MuJoCo, Isaac and ManiSkill environments. Check the required assets and simulator access before launching scored episodes. Keep credentials in the host, never in prompts or result files.
 
-The repository provides a single-episode launcher and a Python SDK. There is no bundled CLI that selects an EP subset, calls your model and produces a complete benchmark score. Use your host's agent adapter and scheduler; if these are missing, implement the SDK connection before testing. Do not substitute the fixed hold-action example for the tested policy.
+The repository provides a single-episode launcher and a Python SDK. There is no bundled CLI that selects an evaluation scope, calls your model and produces a complete benchmark score. Use your host's agent adapter and scheduler; if these are missing, implement the SDK connection before testing. Do not substitute the fixed hold-action example for the tested policy.
 
-Read membership from [docs/ep_subsets/tasks.json](docs/ep_subsets/tasks.json). For the selected benchmark, take `subsets[name].indices`, then select matching rows from `tasks` using each row's `index`. Use their `task_id`, `suite` and `initial_mode`; do not invent task IDs or select tasks by name similarity.
+Select tasks on the host:
 
-Use `paper-loaded-only-v1`, protocol `environment-four-trial-v2` and permission version `2026-10-09-environment-l0-l3`. The standard base seed is 0. Every task has trial indices 1, 2, 3 and 4; Launcher uses `loaded` only. Read the [condition definitions](docs/evaluation/tasks.json) and [attempt accounting](docs/ep_subsets/README.en.md) on the host. Do not send these manifests to the tested agent.
+- **EP subsets:** read [docs/ep_subsets/tasks.json](docs/ep_subsets/tasks.json). Take `subsets[name].indices`, then select matching rows from `tasks` using each row's `index`. Use their `task_id`, `suite` and `initial_mode`.
+- **Full test:** select all 410 rows in `tasks` from [docs/evaluation/tasks.json](docs/evaluation/tasks.json). For each row, take its `groups` entry with `variant="loaded"` for the `marble` family or `variant="default"` for other families, then run all four entries in `trials`. This gives 410 groups and 1,640 conditions. Do not include the separate Launcher `ground` groups in this score.
+- **One environment:** find exactly one matching `task_id` in that same full schedule and select its group and four trials as above. For example, `marble/dual-panda/A007` selects one loaded group and four conditions. An unknown or ambiguous ID must be resolved before running; do not substitute a similar task. A separately requested Launcher ground run must be labeled with its initialization and reported separately.
+
+Full test is a scope name in these instructions, not a key in the EP subset membership file or a new CLI flag. Use the family prefix before the first `/` in `task_id` to assign the full catalog to suites:
+
+| Suite | Task ID family prefixes | Full test tasks |
+| --- | --- | ---: |
+| Launch | `marble` | 100 |
+| Tower | `hanoi_panda`, `hanoi_sharpa`, `hanoi_floating` | 120 |
+| Lock | `kongming_lock` | 60 |
+| Cube | `rubiks_panda`, `rubiks_sharpa`, `pocket_cube` | 80 |
+| Home | `bookshelf`, `maniskill_long_horizon`, `maniskill_geometry`, `maniskill_dynamics` | 50 |
+
+Use `paper-loaded-only-v1`, protocol `environment-four-trial-v2` and permission version `2026-10-09-environment-l0-l3`. The standard base seed is 0. Every task has trial indices 1, 2, 3 and 4; benchmark runs and default single-environment tests use Launcher `loaded` only. Read the [condition definitions](docs/evaluation/tasks.json) and [attempt accounting](docs/ep_subsets/README.en.md) on the host. Do not send these manifests to the tested agent.
 
 | Benchmark | Tasks | Required conditions |
 | --- | ---: | ---: |
@@ -52,12 +66,14 @@ Use `paper-loaded-only-v1`, protocol `environment-four-trial-v2` and permission 
 | EP-100 | 100 | 400 |
 | EP-Easy | 50 | 200 |
 | EP-Hard | 50 | 200 |
+| Full test | 410 | 1,640 |
+| One environment | 1 | 4 |
 
 These counts are for one fixed agent/level/observation/tool setting. Keep results from different settings separate. Four conditions are four required tests, not four retries from which to choose the best.
 
 ## Launch each attempt — host only
 
-Start a new environment process, output directory and tested-agent session for every condition and every permitted attempt. For example, in the configured MuJoCo environment, start the first condition of the EP-20 task `marble/dual-panda/A007` at L0:
+Start a new environment process, output directory and tested-agent session for every condition and every permitted attempt. For a single-environment test of `marble/dual-panda/A007` at L0, start its first condition in the configured MuJoCo environment (the same command also applies when this task belongs to an EP-20 or Full test run):
 
 ```bash
 python scripts/environment_runtime.py \
@@ -65,7 +81,7 @@ python scripts/environment_runtime.py \
   --capability-level 0 --profile rgb \
   --seed 0 --evaluation-protocol environment-four-trial-v2 --trial-index 1 \
   --initial-mode loaded --headless \
-  --output /tmp/ep20-l0-a007-c1-a1
+  --output /tmp/a007-l0-c1-a1
 ```
 
 Keep this process running. Wait for its `session.json`, and give the tested client only the authorized session credentials and SDK. The output directory also contains host-private records: do not share the whole directory. Use `--capability-level 1`, `2` or `3` for other levels, with the observation profile and tool grants fixed above.
@@ -81,6 +97,8 @@ bash scripts/run_isaac_binary.sh scripts/environment_runtime.py \
 ```
 
 For ManiSkill tasks, run the same `environment_runtime.py` entry point using the ManiSkill interpreter, assets and environment variables from the installation guide. Replace the task ID with the selected membership row. Do not run all three backends in the same Python environment.
+
+For another environment, pass its exact ID to `--task-id` and use the interpreter for its backend. Set `--initial-mode loaded` for Launcher; omit this option for other families (`default` is a schedule label, not a CLI value). For a single-environment test, run trial indices 1, 2, 3 and 4 with a new output directory and agent session each time.
 
 Repeat for all selected tasks and trial indices. Let the protocol choose each condition's parameters and budgets. Do not override split, spring stiffness, control-step limits or wall limits for registered trials. The wall limit includes startup. Do not change conditions, reset a live episode or reuse agent memory between attempts. Approved frozen tool installations may be reused; prior observations, plans and trajectories may not.
 
@@ -132,7 +150,9 @@ Report each requested cutoff separately from the same ordered attempt records, n
 
 Ordinary agent failures, rule violations and exhausted budgets—including normal wall timeout—consume an attempt. Only evidence-confirmed non-agent infrastructure incidents may be excluded and replaced under the same condition. Preserve the original record and replacement link. Unresolved incidents remain pending; do not label them success or silently drop them.
 
-For each fully evaluated setting:
+For a single-environment test, report the task ID, initialization, four condition outcomes, task score and completed coverage separately for each requested Pass@K cutoff. The task score is the mean of its four condition success values; it remains `null` while any required condition is pending at that cutoff. Do not calculate five-suite or overall benchmark scores from one task.
+
+For each fully evaluated EP subset or Full test setting:
 
 ```text
 Task score = mean success over its four conditions
@@ -142,4 +162,4 @@ Overall score = mean of Launch, Tower, Lock, Cube and Home scores
 
 Each suite has 20% weight. Do not pool all successful episodes into a single percentage or select the best condition. If any required condition remains unresolved, report the run as `partial`, set its final benchmark score to `null`, and show completed coverage and any clearly labeled observed-success lower bound using the original denominators.
 
-Report the benchmark, level, actual observation/tool setting, attempt policy, agent version, repository revision, planned/completed conditions per cutoff, actual valid-attempt counts, per-task outcomes, five suite scores, overall score, failures and excluded/pending incidents. Report token/image usage only when measured; missing usage is not zero. Retain per-attempt records locally outside the repository. Never commit session tokens, private state or generated evaluation reports to the source release. State exactly what completed; do not present setup checks or partial coverage as a completed benchmark.
+Report the evaluation scope, level, actual observation/tool setting, attempt policy, agent version, repository revision, planned/completed conditions per cutoff, actual valid-attempt counts, per-task outcomes, suite and overall scores where applicable, failures and excluded/pending incidents. Report token/image usage only when measured; missing usage is not zero. Retain per-attempt records locally outside the repository. Never commit session tokens, private state or generated evaluation reports to the source release. State exactly what completed; do not present setup checks or partial coverage as a completed benchmark.
