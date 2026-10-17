@@ -1,4 +1,4 @@
-# Embodied Playground
+# Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning
 
 > Follow `Agent.md` to test this agent on **EP-20** at **L0** with **Pass@1**, and report the five suite scores, overall score and completed coverage.
 

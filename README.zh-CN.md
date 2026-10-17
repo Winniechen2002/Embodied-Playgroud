@@ -1,4 +1,4 @@
-# Embodied Playground
+# Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning
 
 > 请按 `Agent.md`，以 **L0** 在 **EP-20** 上测试当前 Agent 的能力，采用 **Pass@1**，并报告五个套件得分、总分和完成覆盖率。
 
