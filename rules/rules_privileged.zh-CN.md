@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](rules_privileged.en.md) | [简体中文](rules_privileged.zh-CN.md) | [原文](rules_privileged.md) | [全部文档](docs/README.zh-CN.md)
+[English](rules_privileged.en.md) | [简体中文](rules_privileged.zh-CN.md) | [原文](rules_privileged.md) | [全部文档](../docs/README.zh-CN.md)
 <!-- bilingual-navigation:end -->
 
 当前目录任务采用冷启动尝试；禁止跨尝试记忆与轨迹继承。遵循[共同规则](rules.zh-CN.md)及所声明实验的尝试／资源预算。

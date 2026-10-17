@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](rules_privileged.en.md) | [简体中文](rules_privileged.zh-CN.md) | [Original](rules_privileged.md) | [All documents](docs/README.en.md)
+[English](rules_privileged.en.md) | [简体中文](rules_privileged.zh-CN.md) | [Original](rules_privileged.md) | [All documents](../docs/README.en.md)
 <!-- bilingual-navigation:end -->
 
 Current catalog tasks use cold-start attempts with no cross-attempt memory or trajectory reuse. Follow the [shared rules](rules.en.md) and the declared experiment’s attempt and resource budgets.

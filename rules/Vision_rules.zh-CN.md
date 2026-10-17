@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](Vision_rules.en.md) | [简体中文](Vision_rules.zh-CN.md) | [原文](Vision_rules.md) | [全部文档](docs/README.zh-CN.md)
+[English](Vision_rules.en.md) | [简体中文](Vision_rules.zh-CN.md) | [原文](Vision_rules.md) | [全部文档](../docs/README.zh-CN.md)
 <!-- bilingual-navigation:end -->
 
 <a id="section-1"></a>
@@ -18,9 +18,9 @@
 宿主为当前回合公开的发射器弹簧刚度，是 Level 0–3 均可获得的明确任务参数。
 可以直接用于推理、控制，以及 Level 1/2 代理仿真的初始化，无需从 RGB 估计。
 这是隐藏动力学限制中的一个明确公开项，不提供其他仿真参数或场景几何；
-详见[四次测试协议](docs/evaluation/marble.zh-CN.md)。
+详见[四次测试协议](../docs/evaluation/marble.zh-CN.md)。
 
-原生深度、掩码、分割、ID、点云、光流、法向量、包围框和接触均为特权信息，除非明确声明为渲染传感器观测。两种汉诺塔 Vision 接口都只公开一个 `policy` 组：`rgb`、`joint_pos`、`joint_vel`、`actions`。环境 ID 见 [Franka](docs/evaluation/hanoi_panda.zh-CN.md) 和[Floating Sharpa](docs/evaluation/hanoi_floating.zh-CN.md)。仅运行环境不等于使用独立评分评测器。
+原生深度、掩码、分割、ID、点云、光流、法向量、包围框和接触均为特权信息，除非明确声明为渲染传感器观测。两种汉诺塔 Vision 接口都只公开一个 `policy` 组：`rgb`、`joint_pos`、`joint_vel`、`actions`。环境 ID 见 [Franka](../docs/evaluation/hanoi_panda.zh-CN.md) 和[Floating Sharpa](../docs/evaluation/hanoi_floating.zh-CN.md)。仅运行环境不等于使用独立评分评测器。
 
 不得读取仿真器物体/夹爪世界位姿、未公开的动力学、接触、允许的本体感知之外的物理张量、USD/场景图、物体句柄、重置种子/原点、任务物体资产/生成器或私有评测器状态。禁止用公开或记忆中的任务尺寸、名义坐标、堆叠高度和特定种子先验替代感知。当前尝试内的轨迹复用不允许引入其他回合数据或隐藏场景几何。将禁止的信息经文件、图像、提示词、缓存或辅助进程传递，并不会使其变得合法。
 
@@ -47,7 +47,7 @@ Level 1/2 可根据当前评测回合收集的观测新建代理仿真。代理�
 <a id="section-5"></a>
 ## 汉诺塔硬规则
 
-Franka 与Floating Sharpa 均遵循规范[汉诺塔任务](docs/evaluation/hanoi_panda.zh-CN.md)。它规定合法搬运、共享预算、就位/穿透容差、逐子步失败处理和精确目标匹配。机器人专用任务文件定义接口和评测器可用情况。这些评分标准不授予 Level 1/2 智能体特权测量；仅凭视觉估计不能判定成功。
+Franka 与Floating Sharpa 均遵循规范[汉诺塔任务](../docs/evaluation/hanoi_panda.zh-CN.md)。它规定合法搬运、共享预算、就位/穿透容差、逐子步失败处理和精确目标匹配。机器人专用任务文件定义接口和评测器可用情况。这些评分标准不授予 Level 1/2 智能体特权测量；仅凭视觉估计不能判定成功。
 
 <a id="section-6"></a>
 ## 证据与结果

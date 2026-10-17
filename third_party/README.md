@@ -11,7 +11,7 @@ python scripts/check_embedded_sources.py
 
 Run this command from the repository root. Install each tool's declared build and
 runtime dependencies in its own environment; inclusion does not install a tool
-or grant it evaluation access. Tool use follows the [capability rules](../rules.en.md).
+or grant it evaluation access. Tool use follows the [capability rules](../rules/rules.en.md).
 
 Git metadata, local caches and untracked files were not copied. Tracked upstream
 examples and data are retained. Two upstream symbolic links are materialized as

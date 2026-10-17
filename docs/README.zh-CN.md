@@ -2,11 +2,12 @@
 
 [English](README.en.md) · [简体中文](README.zh-CN.md) · [仓库首页](../README.zh-CN.md)
 
+- [Agent 测试操作说明](../Agent.zh-CN.md)
 - [安装与运行时依赖](environment_installation.zh-CN.md)
 - [EP-100、EP-20、EP-Easy 与 EP-Hard](ep_subsets/README.zh-CN.md)
 - [评测协议与尝试计次](evaluation_protocol.zh-CN.md)
 - [各任务的条件、种子与预算](evaluation/index.zh-CN.md)
-- [Agent 权限与规则](../rules.zh-CN.md)
+- [Agent 权限与规则](../rules/rules.zh-CN.md)
 - [环境验证](environment_validation.zh-CN.md)
 - [资产来源与许可](environment_assets.zh-CN.md)
 

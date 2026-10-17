@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](rules_grasp.en.md) | [简体中文](rules_grasp.zh-CN.md) | [Original](rules_grasp.md) | [All documents](docs/README.en.md)
+[English](rules_grasp.en.md) | [简体中文](rules_grasp.zh-CN.md) | [Original](rules_grasp.md) | [All documents](../docs/README.en.md)
 <!-- bilingual-navigation:end -->
 
 Current catalog tasks use cold-start attempts with no cross-attempt memory or trajectory reuse. Follow the [shared rules](rules.en.md) and the declared experiment’s attempt and resource budgets.
@@ -12,7 +12,7 @@ Level 2 additionally grants pretrained grasp-generation models.
 Method profile: `grasp_model`; inherits `vision_geometry_proxy_rl`.
 
 Use the selected environment's `task.md` and its shared task contract, indexed
-in [environment documentation](docs/evaluation/index.en.md). Task legality,
+in [environment documentation](../docs/evaluation/index.en.md). Task legality,
 scoring, and budgets are shared across robots performing the same task;
 robot-specific interfaces and evaluator support are documented separately.
 

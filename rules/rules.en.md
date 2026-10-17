@@ -1,8 +1,8 @@
 <!-- bilingual-navigation:start -->
-[English](rules.en.md) | [简体中文](rules.zh-CN.md) | [Original](rules.md) | [All documents](docs/README.en.md)
+[English](rules.en.md) | [简体中文](rules.zh-CN.md) | [Original](rules.md) | [All documents](../docs/README.en.md)
 <!-- bilingual-navigation:end -->
 
-Current catalog tasks use the [four-trial protocol](docs/evaluation_protocol.en.md) and cold-start attempts. Pass@2 applies only when explicitly declared for the experiment. Confirmed non-agent incidents are replaced under the [shared accounting rule](#non-agent-failures). The environment gateway does not meter model tokens or image reads.
+Current catalog tasks use the [four-trial protocol](../docs/evaluation_protocol.en.md) and cold-start attempts. Pass@2 applies only when explicitly declared for the experiment. Confirmed non-agent incidents are replaced under the [shared accounting rule](#non-agent-failures). The environment gateway does not meter model tokens or image reads.
 
 <a id="section-1"></a>
 # Shared Agent Rules
@@ -10,7 +10,7 @@ Current catalog tasks use the [four-trial protocol](docs/evaluation_protocol.en.
 These rules apply to all evaluation profiles and agent models, including all evaluated models. Read this file, the selected level and its inherited profiles,
 and the selected environment's task specification once; reread only changes.
 `task.md` means the environment task specification, not a required root file.
-[Environment documentation](docs/evaluation/index.en.md) indexes canonical
+[Environment documentation](../docs/evaluation/index.en.md) indexes canonical
 task contracts shared across robots. Robot-specific task files define the
 control interface, declared mounting exceptions, and evaluator integration.
 
@@ -38,7 +38,7 @@ with `variation_request.spring_stiffness_unit` set to `N/m`, and record
 `task_metadata_version: public-spring-v1`. Standard four-trial values are
 22, 24, 26, and 28 N/m; legacy uses its actual configured value (default 25 N/m).
 This is declared task information, not a tool result or privileged-state access.
-See the [four-trial protocol](docs/evaluation/marble.en.md). The model need
+See the [four-trial protocol](../docs/evaluation/marble.en.md). The model need
 not infer stiffness from appearance or trial interactions. It must still choose
 and execute robot actions under its selected profile; disclosure grants no
 access to other hidden dynamics, object poses, or evaluator state.
@@ -119,13 +119,13 @@ allowlist/documentation update. A model name alone grants no tool permission.
 
 | Minimum level | Tools and documentation |
 | --- | --- |
-| 1 | [Depth Pro](docs/tools/depth-pro/README.en.md), [Depth Anything 3](docs/tools/depth-anything-3/README.en.md) |
-| 1 | [Stream3D](docs/tools/stream3d/README.en.md) (SAM3D backend only), [SAM 3D Objects](docs/tools/sam-3d-objects/README.en.md) |
-| 1 | [Pinocchio](docs/tools/pinocchio/README.en.md), [SciPy](docs/tools/scipy/README.en.md), [Pyroki](docs/tools/pyroki/README.en.md) |
-| 1 | [cuRoboV2](docs/tools/curobo-v2/README.en.md) v0.8.0, [cuRobo v1](docs/tools/curobo-v1/README.en.md) v0.7.8 (legacy only), [OMPL](docs/tools/ompl/README.en.md) |
-| 1 | [RSL-RL](docs/tools/rsl-rl/README.en.md) v5.0.1, [Optuna](docs/tools/optuna/README.en.md) v4.9.0 |
-| 2 | [GraspNet Baseline](docs/tools/graspnet-baseline/README.en.md), [DexGraspNet 2.0](docs/tools/dexgraspnet2/README.en.md), [GenDexGrasp](docs/tools/gendexgrasp/README.en.md), [CEDex ContactGen](docs/tools/cedex-contactgen/README.en.md) |
-| 2 | [MinkowskiEngine](docs/tools/minkowski-engine/README.en.md), only as the DexGraspNet sparse-convolution dependency |
+| 1 | [Depth Pro](../docs/tools/depth-pro/README.en.md), [Depth Anything 3](../docs/tools/depth-anything-3/README.en.md) |
+| 1 | [Stream3D](../docs/tools/stream3d/README.en.md) (SAM3D backend only), [SAM 3D Objects](../docs/tools/sam-3d-objects/README.en.md) |
+| 1 | [Pinocchio](../docs/tools/pinocchio/README.en.md), [SciPy](../docs/tools/scipy/README.en.md), [Pyroki](../docs/tools/pyroki/README.en.md) |
+| 1 | [cuRoboV2](../docs/tools/curobo-v2/README.en.md) v0.8.0, [cuRobo v1](../docs/tools/curobo-v1/README.en.md) v0.7.8 (legacy only), [OMPL](../docs/tools/ompl/README.en.md) |
+| 1 | [RSL-RL](../docs/tools/rsl-rl/README.en.md) v5.0.1, [Optuna](../docs/tools/optuna/README.en.md) v4.9.0 |
+| 2 | [GraspNet Baseline](../docs/tools/graspnet-baseline/README.en.md), [DexGraspNet 2.0](../docs/tools/dexgraspnet2/README.en.md), [GenDexGrasp](../docs/tools/gendexgrasp/README.en.md), [CEDex ContactGen](../docs/tools/cedex-contactgen/README.en.md) |
+| 2 | [MinkowskiEngine](../docs/tools/minkowski-engine/README.en.md), only as the DexGraspNet sparse-convolution dependency |
 
 Pinocchio/SciPy are the default retargeting path. Isolate Pyroki when JAX
 conflicts with the main runtime. Keep cuRobo v1/v2 in separate environments;

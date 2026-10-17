@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](rules_model_only.en.md) | [简体中文](rules_model_only.zh-CN.md) | [原文](rules_model_only.md) | [全部文档](docs/README.zh-CN.md)
+[English](rules_model_only.en.md) | [简体中文](rules_model_only.zh-CN.md) | [原文](rules_model_only.md) | [全部文档](../docs/README.zh-CN.md)
 <!-- bilingual-navigation:end -->
 
 <a id="section-1"></a>

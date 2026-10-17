@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](rules_grasp.en.md) | [简体中文](rules_grasp.zh-CN.md) | [原文](rules_grasp.md) | [全部文档](docs/README.zh-CN.md)
+[English](rules_grasp.en.md) | [简体中文](rules_grasp.zh-CN.md) | [原文](rules_grasp.md) | [全部文档](../docs/README.zh-CN.md)
 <!-- bilingual-navigation:end -->
 
 当前目录任务采用冷启动尝试；禁止跨尝试记忆与轨迹继承。遵循[共同规则](rules.zh-CN.md)及所声明实验的尝试／资源预算。
@@ -9,7 +9,7 @@
 
 遵循[共享规则](rules.zh-CN.md)和 [Level 1](Vision_rules.zh-CN.md)，包括所声明实验的资源预算与冷启动要求。Level 2 额外允许预训练抓取生成模型。方法档位：`grasp_model`；继承 `vision_geometry_proxy_rl`。
 
-使用所选环境的 `task.md` 及其共享任务要求，索引见[环境文档](docs/evaluation/index.zh-CN.md)。执行同一任务的机器人共用任务合法性、评分和预算；机器人专用接口与评测器支持情况单独说明。
+使用所选环境的 `task.md` 及其共享任务要求，索引见[环境文档](../docs/evaluation/index.zh-CN.md)。执行同一任务的机器人共用任务合法性、评分和预算；机器人专用接口与评测器支持情况单独说明。
 
 各次尝试遵循共享规则中的冷启动隔离要求。
 遵循[共享尝试隔离规则](rules.zh-CN.md#section-6)。

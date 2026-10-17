@@ -95,12 +95,13 @@ def edition(name: str, suffix: str) -> str:
 
 
 def check_policy(root: Path = ROOT) -> list[str]:
+    rule_root = root / "rules"
     errors: list[str] = []
     texts: dict[str, str] = {}
     for name in RULE_NAMES:
         for suffix in LANGUAGE_SUFFIXES:
             filename = edition(name, suffix)
-            path = root / filename
+            path = rule_root / filename
             if not path.is_file():
                 errors.append(f"missing level/shared rule document: {filename}")
                 texts[filename] = ""
@@ -136,14 +137,14 @@ def check_policy(root: Path = ROOT) -> list[str]:
 
     for tool, relative in REQUIRED_DOCS.items():
         doc = root / relative
-        targets = {edition(relative, language) for language in LANGUAGE_SUFFIXES}
+        targets = {"../" + edition(relative, language) for language in LANGUAGE_SUFFIXES}
         if tool not in global_rules or not targets.intersection(LOCAL_LINK.findall(global_rules)):
             errors.append(f"rules.md does not index {tool} at {relative}")
         if not doc.is_file() or not doc.read_text(encoding="utf-8").strip():
             errors.append(f"missing or empty documentation: {relative}")
 
     for filename, text in texts.items():
-        rule_file = root / filename
+        rule_file = rule_root / filename
         for target in LOCAL_LINK.findall(text):
             if "://" in target or target.startswith("#"):
                 continue
@@ -168,7 +169,7 @@ def check_policy(root: Path = ROOT) -> list[str]:
 
     for suffix in LANGUAGE_SUFFIXES:
         retired_name = edition("rules_" + "policy.md", suffix)
-        if (root / retired_name).exists():
+        if (rule_root / retired_name).exists():
             errors.append(f"retired capability profile still exists: {retired_name}")
         if retired_name in all_rules:
             errors.append(f"retired capability profile reference found: {retired_name}")

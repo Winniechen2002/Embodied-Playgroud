@@ -1,13 +1,13 @@
 <!-- bilingual-navigation:start -->
-[English](rules.en.md) | [简体中文](rules.zh-CN.md) | [原文](rules.md) | [全部文档](docs/README.zh-CN.md)
+[English](rules.en.md) | [简体中文](rules.zh-CN.md) | [原文](rules.md) | [全部文档](../docs/README.zh-CN.md)
 <!-- bilingual-navigation:end -->
 
-当前目录任务采用[四条件协议](docs/evaluation_protocol.zh-CN.md)与冷启动尝试。Pass@2 仅适用于预先声明的实验。经确认的非 agent 异常按[共同计次规则](#non-agent-failures)补跑。环境网关不计量模型 token 或图像读取次数。
+当前目录任务采用[四条件协议](../docs/evaluation_protocol.zh-CN.md)与冷启动尝试。Pass@2 仅适用于预先声明的实验。经确认的非 agent 异常按[共同计次规则](#non-agent-failures)补跑。环境网关不计量模型 token 或图像读取次数。
 
 <a id="section-1"></a>
 # 共享智能体规则
 
-这些规则适用于所有评测档位和智能体模型。请通读一次本文件、选定等级及其继承的档位，以及选定环境的任务说明；之后只需重读变更部分。`task.md` 指环境的任务说明，并不要求仓库根目录存在该文件。[环境文档](docs/evaluation/index.zh-CN.md) 索引了不同机器人共享的规范任务要求。机器人专用任务文件定义控制接口、已声明的安装例外和评测器集成。
+这些规则适用于所有评测档位和智能体模型。请通读一次本文件、选定等级及其继承的档位，以及选定环境的任务说明；之后只需重读变更部分。`task.md` 指环境的任务说明，并不要求仓库根目录存在该文件。[环境文档](../docs/evaluation/index.zh-CN.md) 索引了不同机器人共享的规范任务要求。机器人专用任务文件定义控制接口、已声明的安装例外和评测器集成。
 
 <a id="section-2"></a>
 ## 能力等级档位
@@ -27,7 +27,7 @@
 设为 `N/m`，并记录 `task_metadata_version: public-spring-v1`。
 标准四次测试分别为 22、24、26、28 N/m；legacy 使用实际配置值，默认 25 N/m。
 这属于公开任务信息，不是工具输出或特权状态读取。
-详见[四次测试协议](docs/evaluation/marble.zh-CN.md)。
+详见[四次测试协议](../docs/evaluation/marble.zh-CN.md)。
 模型无需从外观或试探交互中猜测刚度，仍须按所选等级自行决定并执行机器人动作；
 此公开项不授予其他隐藏动力学、物体位姿或测评器状态的访问权限。
 
@@ -79,13 +79,13 @@ Level 0 可执行代码并使用基础依赖，但不得调用预置领域工具
 
 | 最低等级 | 工具与文档 |
 | --- | --- |
-| 1 | [Depth Pro](docs/tools/depth-pro/README.zh-CN.md)、[Depth Anything 3](docs/tools/depth-anything-3/README.zh-CN.md) |
-| 1 | [Stream3D](docs/tools/stream3d/README.zh-CN.md)（仅 SAM3D 后端）、[SAM 3D Objects](docs/tools/sam-3d-objects/README.zh-CN.md) |
-| 1 | [Pinocchio](docs/tools/pinocchio/README.zh-CN.md)、[SciPy](docs/tools/scipy/README.zh-CN.md)、[Pyroki](docs/tools/pyroki/README.zh-CN.md) |
-| 1 | [cuRoboV2](docs/tools/curobo-v2/README.zh-CN.md) v0.8.0、[cuRobo v1](docs/tools/curobo-v1/README.zh-CN.md) v0.7.8（仅旧版兼容）、[OMPL](docs/tools/ompl/README.zh-CN.md) |
-| 1 | [RSL-RL](docs/tools/rsl-rl/README.zh-CN.md) v5.0.1、[Optuna](docs/tools/optuna/README.zh-CN.md) v4.9.0 |
-| 2 | [GraspNet Baseline](docs/tools/graspnet-baseline/README.zh-CN.md)、[DexGraspNet 2.0](docs/tools/dexgraspnet2/README.zh-CN.md)、[GenDexGrasp](docs/tools/gendexgrasp/README.zh-CN.md)、[CEDex ContactGen](docs/tools/cedex-contactgen/README.zh-CN.md) |
-| 2 | [MinkowskiEngine](docs/tools/minkowski-engine/README.zh-CN.md)，仅作为 DexGraspNet 的稀疏卷积依赖 |
+| 1 | [Depth Pro](../docs/tools/depth-pro/README.zh-CN.md)、[Depth Anything 3](../docs/tools/depth-anything-3/README.zh-CN.md) |
+| 1 | [Stream3D](../docs/tools/stream3d/README.zh-CN.md)（仅 SAM3D 后端）、[SAM 3D Objects](../docs/tools/sam-3d-objects/README.zh-CN.md) |
+| 1 | [Pinocchio](../docs/tools/pinocchio/README.zh-CN.md)、[SciPy](../docs/tools/scipy/README.zh-CN.md)、[Pyroki](../docs/tools/pyroki/README.zh-CN.md) |
+| 1 | [cuRoboV2](../docs/tools/curobo-v2/README.zh-CN.md) v0.8.0、[cuRobo v1](../docs/tools/curobo-v1/README.zh-CN.md) v0.7.8（仅旧版兼容）、[OMPL](../docs/tools/ompl/README.zh-CN.md) |
+| 1 | [RSL-RL](../docs/tools/rsl-rl/README.zh-CN.md) v5.0.1、[Optuna](../docs/tools/optuna/README.zh-CN.md) v4.9.0 |
+| 2 | [GraspNet Baseline](../docs/tools/graspnet-baseline/README.zh-CN.md)、[DexGraspNet 2.0](../docs/tools/dexgraspnet2/README.zh-CN.md)、[GenDexGrasp](../docs/tools/gendexgrasp/README.zh-CN.md)、[CEDex ContactGen](../docs/tools/cedex-contactgen/README.zh-CN.md) |
+| 2 | [MinkowskiEngine](../docs/tools/minkowski-engine/README.zh-CN.md)，仅作为 DexGraspNet 的稀疏卷积依赖 |
 
 Pinocchio/SciPy 是默认重定向方案。JAX 与主运行时冲突时，将 Pyroki 隔离运行。cuRobo v1/v2 使用独立环境；新增集成采用 v2，任何回退到旧 v1 的情况都需记录。OMPL 要求调用方提供限位、碰撞检查和状态转换。精确版本、安装和运行注意事项见[工具索引](rules.zh-CN.md#section-8)。
 

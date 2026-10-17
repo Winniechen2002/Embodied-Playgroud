@@ -13,11 +13,11 @@ from .environment_release import source_files,license_inventory,export_content,a
 
 def public_files(root=ROOT):
     root=Path(root)
-    docs=['README.md','README.en.md','README.zh-CN.md','docs/README.en.md','docs/README.zh-CN.md']
+    docs=['Agent.md','Agent.en.md','Agent.zh-CN.md','README.md','README.en.md','README.zh-CN.md','docs/README.en.md','docs/README.zh-CN.md']
     for stem in ('evaluation_protocol','environment_validation','environment_installation','environment_assets'):
         docs += [f'docs/{stem}.{language}.md' for language in ('en','zh-CN')]
     docs += ['docs/evaluation_protocol.md']
-    docs += [str(p.relative_to(root)) for pattern in ('rules*.md','Vision_rules*.md') for p in root.glob(pattern)]
+    docs += [str(p.relative_to(root)) for p in (root/'rules').glob('*.md')]
     docs += [str(p.relative_to(root)) for p in (root/'docs').glob('*.md')]
     docs += [str(p.relative_to(root)) for p in (root/'docs/tools').rglob('*.md')]
     # Paper-facing definitions contain public task identities, not agent results.

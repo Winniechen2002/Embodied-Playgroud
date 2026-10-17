@@ -24,7 +24,7 @@ def test_native_contracts_remain_source_bound_and_original_records_preserved():
 
 def test_export_is_closed_over_rules_protocol_tests_and_fixture_inputs():
     files = set(public_files())
-    for name in ('rules.md', 'rules.zh-CN.md', 'docs/evaluation/tasks.json',
+    for name in ('Agent.md','Agent.en.md','Agent.zh-CN.md','rules/rules.md', 'rules/rules.zh-CN.md', 'docs/evaluation/tasks.json',
                  'scripts/franka_marble_test_protocol.py',
                  'tests/benchmark_platform/test_protocol.py'):
         assert name in files
@@ -53,6 +53,8 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     status = build(destination)
     assert not status['release_ready']
     assert not (destination/'acceptance-matrix.json').exists()
+    assert not (destination/'rules.md').exists()
+    assert not (destination/'Vision_rules.md').exists()
     for removed in ('scripts/environment_status.py',
                     'source/agentbench_platform/agentbench_platform/environment_matrix.py',
                     'tests/environment_release/test_condition_matrix.py',
@@ -61,7 +63,7 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
     assert not any(key.startswith('matrix_') for key in status)
     assert (destination/'DISTRIBUTION_STATUS').read_text() == 'staging-not-qualified\n'
     assert (destination/'docs/evaluation/tasks.json').is_file()
-    assert (destination/'rules.md').read_bytes() == (ROOT/'rules.md').read_bytes()
+    assert (destination/'rules/rules.md').read_bytes() == (ROOT/'rules/rules.md').read_bytes()
     assert not any('#' in str(path.relative_to(destination)) for path in destination.rglob('*'))
     assert (destination/'source/agentbench_platform/agentbench_platform/cube_solver.py').exists()
     manifest = json.loads((destination/'distribution-manifest.json').read_text())
@@ -81,7 +83,7 @@ def test_staging_export_preserves_protocol_document_and_never_writes_uri_fragmen
                               capture_output=True,text=True)
         assert result.returncode==0,result.stdout+result.stderr
 
-    for name in ('docs/evaluation/tasks.json', 'rules.md', 'scripts/franka_marble_test_protocol.py'):
+    for name in ('docs/evaluation/tasks.json', 'rules/rules.md', 'scripts/franka_marble_test_protocol.py'):
         assert manifest[name]['sha256'] == hashlib.sha256((destination/name).read_bytes()).hexdigest()
     # Check discovery from the actual exported tree in a fresh interpreter;
     # tests importing the development modules cannot detect changed source pins.

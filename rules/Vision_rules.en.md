@@ -1,5 +1,5 @@
 <!-- bilingual-navigation:start -->
-[English](Vision_rules.en.md) | [简体中文](Vision_rules.zh-CN.md) | [Original](Vision_rules.md) | [All documents](docs/README.en.md)
+[English](Vision_rules.en.md) | [简体中文](Vision_rules.zh-CN.md) | [Original](Vision_rules.md) | [All documents](../docs/README.en.md)
 <!-- bilingual-navigation:end -->
 
 <a id="section-1"></a>
@@ -27,14 +27,14 @@ The Launcher spring stiffness disclosed by the host for the current episode
 is an explicit public task parameter, available to Levels 0–3. It may be used
 for reasoning, control, and Level 1/2 proxy initialization without estimating it
 from RGB. This narrow exception to hidden-dynamics restrictions does not expose
-other simulator parameters or scene geometry; see the [four-trial protocol](docs/evaluation/marble.en.md).
+other simulator parameters or scene geometry; see the [four-trial protocol](../docs/evaluation/marble.en.md).
 
 Native depth, masks, segmentation, IDs, point clouds, flow, normals, boxes,
 and contacts are privileged unless explicitly declared as rendered sensor
 observations. Both Hanoi Vision interfaces expose one `policy` group:
 `rgb`, `joint_pos`, `joint_vel`, `actions`. See the environment IDs in
-[Franka](docs/evaluation/hanoi_panda.en.md) and
-[Floating Sharpa](docs/evaluation/hanoi_floating.en.md).
+[Franka](../docs/evaluation/hanoi_panda.en.md) and
+[Floating Sharpa](../docs/evaluation/hanoi_floating.en.md).
 A bare environment is not the independent scored evaluator.
 
 Do not read simulator object/gripper world poses, hidden dynamics, contacts, physics
@@ -104,7 +104,7 @@ checkpoints, and deployment observation schema separately from evaluator logs.
 <a id="section-5"></a>
 ## Hard Hanoi Rules
 
-Apply the canonical [Hanoi task](docs/evaluation/hanoi_panda.en.md) to both Franka and No-arm
+Apply the canonical [Hanoi task](../docs/evaluation/hanoi_panda.en.md) to both Franka and No-arm
 Sharpa. It defines legal moves, shared budgets, seating/penetration tolerances,
 substep failure handling, and exact target matching. Robot-specific task files
 define interfaces and evaluator availability. These scoring criteria do not
