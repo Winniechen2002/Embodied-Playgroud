@@ -3,6 +3,7 @@
 [English](README.en.md) · [简体中文](README.zh-CN.md) · [仓库首页](../README.zh-CN.md)
 
 - [Agent 测试操作说明](../Agent.zh-CN.md)
+- [被测 Agent 任务书模板](tested_agent_brief.zh-CN.md)
 - [安装与运行时依赖](environment_installation.zh-CN.md)
 - [EP-100、EP-20、EP-Easy 与 EP-Hard](ep_subsets/README.zh-CN.md)
 - [评测协议与尝试计次](evaluation_protocol.zh-CN.md)

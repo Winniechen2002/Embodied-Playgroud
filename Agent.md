@@ -10,6 +10,8 @@ The **evaluation host** selects conditions, starts environments, creates fresh a
 
 The **tested agent** receives its task through `describe()`, observations through the SDK, and the rules for its level. It controls the environment only through the public interface. Do not give it the repository checkout, private run directory, condition manifests, scorer internals or past attempts. The host should supply the relevant rules and interaction instructions, rather than the host-only setup and scheduling sections below. L3 exposes declared privileged fields through the gateway; it does not grant arbitrary filesystem access.
 
+Use the [tested-agent brief template](docs/tested_agent_brief.en.md) for each tested session: it lists exactly what to send (brief, rules, session credentials, tool grants) and what to withhold.
+
 If the same model organizes and takes the test, keep the organizer's conversation, workspace and private information out of the tested sessions. The gateway alone does not isolate an external agent's filesystem or enforce model token limits; the host must provide those boundaries.
 
 ## Fix the requested setting — host only
@@ -39,6 +41,27 @@ Launcher exposes RGB, not RGB-D. Higher levels inherit earlier permissions, but 
 ## Prepare the run — host only
 
 Follow the [installation guide](docs/environment_installation.en.md) using separate MuJoCo, Isaac and ManiSkill environments. Check the required assets and simulator access before launching scored episodes. Keep credentials in the host, never in prompts or result files.
+
+Before each block of scored runs, check:
+
+- **Asset server access (Isaac).** At startup, Isaac Lab tasks load some robot assets, such as the Franka Panda model `panda_instanceable.usd`, from NVIDIA's Omniverse content server (`omniverse-content-production.s3-us-west-2.amazonaws.com`). The host needs working DNS and outbound HTTPS to that server, or a local mirror configured for Isaac Lab. Check with `getent hosts omniverse-content-production.s3-us-west-2.amazonaws.com`. Without access, a Panda task waits 300 s for the server and exits without writing `session.json`, inside the episode's wall limit. MuJoCo (Launcher) and ManiSkill tasks do not use this server.
+- **GPU selection.** Pin each environment process to one GPU with `CUDA_VISIBLE_DEVICES=<index>` and keep the default `--device cuda:0`. Concurrent episodes on one GPU compete for memory and rendering time; verify before scheduling more than one per GPU.
+- **Agent latency.** Wall limits include simulator startup and every second the agent spends thinking. Size model reasoning settings and request timeouts to the budgets below, and decide them before testing.
+
+### Budgets by family
+
+The protocol sets these per task; `docs/evaluation/tasks.json` is authoritative (`budgets.wall_seconds`, `budgets.max_steps`, `budgets.simulation_seconds`). Do not override them for registered trials.
+
+| Family | Wall limit (s, includes startup) | Control-step limit | Simulated-time limit (s) |
+| --- | ---: | ---: | ---: |
+| `marble` (Launch) | 600 | 7,500 | 150 |
+| `hanoi_panda`, `hanoi_sharpa`, `hanoi_floating` | 3,600 | 18,000 | 600 |
+| `kongming_lock` | 3,600 | 36,000 | 1,200 |
+| `pocket_cube` | 3,600 | 18,000 | 300 |
+| `rubiks_panda`, `rubiks_sharpa` | 19,800 | 109,800 | 3,660 |
+| `bookshelf` | 3,600 | 1,500–12,300 (per task) | 50–410 (per task) |
+| `maniskill_geometry`, `maniskill_dynamics` | 3,600 | 2,400 | 120 |
+| `maniskill_long_horizon` | 3,600 | 6,000 | 300 |
 
 The repository provides a single-episode launcher and a Python SDK. There is no bundled CLI that selects an evaluation scope, calls your model and produces a complete benchmark score. Use your host's agent adapter and scheduler; if these are missing, implement the SDK connection before testing. Do not substitute the fixed hold-action example for the tested policy.
 
@@ -96,11 +119,30 @@ bash scripts/run_isaac_binary.sh scripts/environment_runtime.py \
   --headless --output /tmp/ep20-l0-h04-c1-a1
 ```
 
-For ManiSkill tasks, run the same `environment_runtime.py` entry point using the ManiSkill interpreter, assets and environment variables from the installation guide. Replace the task ID with the selected membership row. Do not run all three backends in the same Python environment.
+On a multi-GPU host, prefix the command with the GPU to use, for example `CUDA_VISIBLE_DEVICES=1 bash scripts/run_isaac_binary.sh ...`, and keep `--device cuda:0`.
+
+For ManiSkill tasks, run the same entry point in the ManiSkill environment from the installation guide:
+
+```bash
+source /tmp/agentbench-maniskill/bin/activate
+export AGENTBENCH_MANISKILL_ASSETS=/tmp/agentbench-maniskill-assets
+export PYTHONPATH="$PWD/source/agentbench:$PWD/source/agentbench_platform:$PWD/source/agentbench_sdk"
+python scripts/environment_runtime.py \
+  --task-id maniskill_geometry/panda/P1 \
+  --capability-level 0 --profile rgb \
+  --seed 0 --evaluation-protocol environment-four-trial-v2 --trial-index 1 \
+  --headless --output /tmp/p1-l0-c1-a1
+```
+
+Replace the task ID with the selected membership row. Do not run all three backends in the same Python environment.
+
+Redirect each process's stdout and stderr to a log file in its output directory. The process prints `Session: <path>` once `session.json` is written; it exits by itself when the episode ends or the wall limit expires.
 
 For another environment, pass its exact ID to `--task-id` and use the interpreter for its backend. Set `--initial-mode loaded` for Launcher; omit this option for other families (`default` is a schedule label, not a CLI value). For a single-environment test, run trial indices 1, 2, 3 and 4 with a new output directory and agent session each time.
 
 Repeat for all selected tasks and trial indices. Let the protocol choose each condition's parameters and budgets. Do not override split, spring stiffness, control-step limits or wall limits for registered trials. The wall limit includes startup. Do not change conditions, reset a live episode or reuse agent memory between attempts. Approved frozen tool installations may be reused; prior observations, plans and trajectories may not.
+
+If the process exits without writing `session.json`, the environment never started and the agent could not act. Read the log for the cause (for example, `Timed out after 300s while checking for USD` points to asset server access), fix the host, and record the launch as a non-agent incident; see [Classify failures](#classify-failures--host-only).
 
 ## Interact with one episode — tested agent
 
@@ -144,11 +186,58 @@ Reads do not advance simulation time. If a request's outcome is uncertain after 
 
 Use the trusted final result returned by `finish()` (`success`, `score`, `step_count`, `terminated`, `truncated`). Process exit code 0, a convincing image, a solved symbolic cube or an accepted action is not proof of task success. If the client cannot obtain a result, the host must inspect its private terminal evidence; the tested agent must not read it.
 
+The host can read the terminal record from the episode journal in the output directory, also after the process has exited:
+
+```python
+import json
+import sqlite3
+
+
+def terminal_record(output_dir):
+    db = sqlite3.connect(f"file:{output_dir}/requests.sqlite?mode=ro", uri=True)
+    row = db.execute("SELECT value FROM state WHERE key = 'finished'").fetchone()
+    errors = [r[0] for r in db.execute("SELECT detail FROM events WHERE kind = 'backend_error'")]
+    db.close()
+    return (json.loads(row[0]) if row else None), errors
+```
+
+`finished` holds the same result as `finish()` (`success`, `score`, `step_count`, `terminated`, `truncated`). If it is missing, the episode has no terminal record: classify the launch below before scoring it. `backend_error` events hold full tracebacks for requests that failed inside the environment.
+
+### Classify failures — host only
+
+The [shared rules](rules/rules.en.md#non-agent-failures-and-valid-attempt-accounting) decide which outcomes consume a valid attempt. Typical cases:
+
+| Evidence | Classification |
+| --- | --- |
+| `finished` present, `success` false: violation, limit, timeout, or the agent finished early | Agent failure; consumes the attempt |
+| A request returned `internal_error` ("The request failed. Contact the run owner."), the episode was sealed, and the `backend_error` traceback shows the agent's own action caused it (for example `ValueError: Action target outside joint limits`) | Agent failure; consumes the attempt |
+| `internal_error` with a traceback from the simulator, evaluator or a dependency that the agent's input did not cause | Non-agent incident; replace |
+| No `session.json`: the environment never started | Non-agent incident; replace |
+| The agent session was killed by the host (model service outage, quota exhaustion, host reboot) and `finished` was written **before** the interruption | Keep the recorded outcome |
+| The same interruption, but `finished` is missing or was written after the interruption | Non-agent incident; replace |
+| Host–agent transport failures during the attempt | Attribute by evidence. If you use a quantitative threshold (for example a share of failed remote calls), declare it before testing and apply it to successes and failures alike |
+
+Close any episode that is still running before you classify it, so it cannot keep acting after the decision.
+
 For **Pass@K** (K = 1, 2, 5 or 10), use the first K valid attempts in chronological order on the same condition, stopping at the first success. Pass@1 is the default; Pass@2, Pass@5 and Pass@10 are reference limits. Keep the condition, seed, settings and per-attempt budgets fixed, with a fresh environment and agent session each time. Do not increase K after seeing failures.
 
 Report each requested cutoff separately from the same ordered attempt records, never by extrapolating Pass@1 or selecting favorable attempts. At cutoff k, a condition succeeds if any of its first k valid attempts succeeds; it fails only after k valid failures. Otherwise it is pending for that cutoff. For example, first success on attempt 4 means Pass@1 and Pass@2 fail, while Pass@5 and Pass@10 succeed without further attempts. If only two failures have run, Pass@5 and Pass@10 remain pending. Apply coverage and scoring separately for each cutoff.
 
 Ordinary agent failures, rule violations and exhausted budgets—including normal wall timeout—consume an attempt. Only evidence-confirmed non-agent infrastructure incidents may be excluded and replaced under the same condition. Preserve the original record and replacement link. Unresolved incidents remain pending; do not label them success or silently drop them.
+
+A replacement takes its place in chronological order by its own launch time, not the slot of the excluded attempt. Example with Pass@2: attempt 1 is excluded, attempt 2 runs and fails, then the replacement for attempt 1 runs. The valid attempts are attempt 2 (first) and the replacement (second), so Pass@1 is decided by attempt 2. If attempt 2 had succeeded, the condition would already be a success and the replacement would not run.
+
+Keep one record per physical launch, for example as JSON lines:
+
+```json
+{"experiment_id": "ep20-l0-A007-c1-a1", "task_id": "marble/dual-panda/A007", "trial_index": 1,
+ "attempt_no": 1, "launched_at": "2026-10-18T05:07:12Z", "output_dir": "/runs/ep20-l0-A007-c1-a1",
+ "finished": {"success": false, "score": 0.0, "step_count": 387, "terminated": true, "truncated": false},
+ "classification": "agent_failure", "excluded": false, "replaced_by": null,
+ "tokens": 1769248, "images": 3, "brief_sha256": "…"}
+```
+
+Excluded launches keep `"excluded": true`, `"attribution": "non_agent"`, the cause and the `experiment_id` of their replacement.
 
 For a single-environment test, report the task ID, initialization, four condition outcomes, task score and completed coverage separately for each requested Pass@K cutoff. The task score is the mean of its four condition success values; it remains `null` while any required condition is pending at that cutoff. Do not calculate five-suite or overall benchmark scores from one task.
 

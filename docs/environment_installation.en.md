@@ -46,6 +46,21 @@ bash scripts/run_isaac_binary.sh scripts/validate_isaac_installation.py \
 
 Run Isaac scripts through `bash scripts/run_isaac_binary.sh <script> <arguments>`. The wrapper uses the standalone binary and isolated interpreter; it does not accept vendor terms automatically. Use the binary constraints above: the older Isaac Sim 5.1 pip dependency combination has incompatible FastAPI/Starlette pins. The installation validator loads native configurations and checks rendering, actions and clean exit; it does not solve tasks. It supplies the installation and basic-operation checks used in source-release engineering acceptance.
 
+### Network access for Isaac assets
+
+Isaac Lab resolves some robot assets at environment startup from NVIDIA's Omniverse content server. For example, Panda-based tasks (`hanoi_panda`, `kongming_lock/dual-panda`, `rubiks_panda`, `bookshelf`) load `Isaac/IsaacLab/Robots/FrankaEmika/panda_instanceable.usd` from `https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/`. The host therefore needs working DNS and outbound HTTPS to that server, or a local mirror of the Isaac 5.1 assets configured as Isaac Lab's asset root. Check before scored runs:
+
+```bash
+getent hosts omniverse-content-production.s3-us-west-2.amazonaws.com
+curl -sSI --max-time 20 https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Robots/FrankaEmika/panda_instanceable.usd | head -1
+```
+
+If the server cannot be reached, startup logs `Waiting for server response...`, gives up after 300 s (`Timed out after 300s while checking for USD`) and the process exits without writing `session.json`. That time counts against the episode's wall limit, and the launch must be classified as a non-agent incident. MuJoCo and ManiSkill tasks do not contact this server.
+
+### GPU selection
+
+On a multi-GPU host, pin each environment process with `CUDA_VISIBLE_DEVICES=<index>` and keep the default `--device cuda:0`, for example `CUDA_VISIBLE_DEVICES=1 bash scripts/run_isaac_binary.sh scripts/environment_runtime.py ...`.
+
 ## ManiSkill
 
 Use its own environment because this runtime requires NumPy 2.x while the MuJoCo environment pins NumPy 1.x. Native rendering requires Vulkan. Asset extraction requires sufficient disk space for the packaged archive.
