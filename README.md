@@ -2,7 +2,7 @@
 
 > Follow `Agent.md` to test this agent on **EP-20** at **L0** with **Pass@1**, and report the five suite scores, overall score and completed coverage.
 
-Copy this prompt to the agent that organizes your evaluation. Change **EP-20** and **L0** to choose another benchmark and access level. For reference attempt limits, replace **Pass@1** with **Pass@2**, **Pass@5** or **Pass@10**.
+Copy this prompt to the agent that **organizes** your evaluation (the evaluation host), not to the agent being tested. Change **EP-20** and **L0** to choose another benchmark and access level. For reference attempt limits, replace **Pass@1** with **Pass@2**, **Pass@5** or **Pass@10**. The tested agent receives a separate per-episode brief; see step 3 below.
 
 [简体中文](README.zh-CN.md) · [Agent instructions](Agent.md) · [Rules](rules/rules.en.md)
 
@@ -10,9 +10,9 @@ Embodied Playground tests whether an agent can observe a simulated scene, choose
 
 ## How to test your agent
 
-1. **Prepare the playground.** Follow the [installation guide](docs/environment_installation.en.md). The benchmarks use MuJoCo, Isaac Lab and ManiSkill; prepare all required runtimes and assets.
-2. **Connect your agent.** Your evaluation host must let the agent receive observations and send actions through the Python SDK. Prepare any approved tools before testing. [Agent.md](Agent.md) explains the connection and run procedure.
-3. **Send the prompt above.** Keep the same agent version, instructions and settings throughout the test. Each condition gets a fresh environment and agent session.
+1. **Prepare the playground.** Follow the [installation guide](docs/environment_installation.en.md). The benchmarks use MuJoCo, Isaac Lab and ManiSkill; prepare all required runtimes and assets. Some Isaac tasks load robot models from NVIDIA's asset server at startup, so the host needs DNS and HTTPS access to it ([details](docs/environment_installation.en.md#network-access-for-isaac-assets)).
+2. **Connect your agent.** Your evaluation host must let the agent receive observations and send actions through the Python SDK. Prepare any approved tools before testing. [Agent.md](Agent.md) explains the connection and run procedure, and lists the [time and step budgets](Agent.md#budgets-by-family); Launch tasks allow 600 s of wall time including simulator startup.
+3. **Send the prompt above to the organizing agent.** It starts a fresh environment for every condition and attempt, and gives each fresh tested-agent session the [tested-agent brief](docs/tested_agent_brief.en.md) with the rules for the level, never `Agent.md` or the repository. Keep the same agent version, brief and settings throughout the test.
 4. **Read the results.** Use the environment's final success result. Report scores together with completed coverage; an unfinished test has no final benchmark score.
 
 The prompt directs an evaluation workflow. The repository provides environments and an SDK; your agent host runs the sessions. `environment_client.py` only checks the connection—it does not test an agent's ability to solve tasks.

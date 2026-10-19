@@ -2,7 +2,7 @@
 
 > 请按 `Agent.md`，以 **L0** 在 **EP-20** 上测试当前 Agent 的能力，采用 **Pass@1**，并报告五个套件得分、总分和完成覆盖率。
 
-将这句话交给负责组织评测的 Agent。替换 **EP-20** 和 **L0**，即可指定要测的 benchmark 和能力等级。需要参考更多尝试机会时，将 **Pass@1** 换成 **Pass@2**、**Pass@5** 或 **Pass@10**。
+将这句话交给**负责组织评测**的 Agent（评测宿主），不要交给被测 Agent。替换 **EP-20** 和 **L0**，即可指定要测的 benchmark 和能力等级。需要参考更多尝试机会时，将 **Pass@1** 换成 **Pass@2**、**Pass@5** 或 **Pass@10**。被测 Agent 每个回合另收一份任务书，见下文第 3 步。
 
 [English](README.en.md) · [Agent 操作说明](Agent.zh-CN.md) · [测试规则](rules/rules.zh-CN.md)
 
@@ -10,9 +10,9 @@ Embodied Playground 测试 Agent 能否观察仿真场景、选择动作并完�
 
 ## 如何测试你的 Agent
 
-1. **准备环境。** 按[安装说明](docs/environment_installation.zh-CN.md)配置 MuJoCo、Isaac Lab、ManiSkill 及所需资产。各 benchmark 会用到这些环境。
-2. **接入 Agent。** 让你的评测宿主通过 Python SDK 把观测交给 Agent，并执行它生成的动作。需要的授权工具应提前准备好，具体流程见 [Agent 操作说明](Agent.zh-CN.md)。
-3. **发送开头的 prompt。** 整个测试固定 Agent 版本、指令和设置；每个条件使用全新的环境与 Agent 会话。
+1. **准备环境。** 按[安装说明](docs/environment_installation.zh-CN.md)配置 MuJoCo、Isaac Lab、ManiSkill 及所需资产。各 benchmark 会用到这些环境。部分 Isaac 任务启动时要从 NVIDIA 资产服务器加载机器人模型，宿主需要能通过 DNS 和 HTTPS 访问该服务器（[详见此处](docs/environment_installation.zh-CN.md#isaac-资产的网络访问)）。
+2. **接入 Agent。** 让你的评测宿主通过 Python SDK 把观测交给 Agent，并执行它生成的动作。需要的授权工具应提前准备好，具体流程和[时间与步数预算](Agent.zh-CN.md#各任务族预算)见 [Agent 操作说明](Agent.zh-CN.md)；Launch 任务的墙钟只有 600 秒，且包含模拟器启动时间。
+3. **把开头的 prompt 发给组织评测的 Agent。** 它为每个条件、每次尝试启动全新的环境，并为每个全新的被测 Agent 会话发送[被测 Agent 任务书](docs/tested_agent_brief.zh-CN.md)和对应等级的规则，不发送 `Agent.md` 或仓库内容。整个测试固定 Agent 版本、任务书和设置。
 4. **查看结果。** 以环境返回的最终成功结果计分，同时报告完成覆盖率；未完成的测试不能给出最终 benchmark 总分。
 
 这句 prompt 用于组织评测流程。仓库提供环境和 SDK，各轮会话由你的 Agent 宿主执行。`environment_client.py` 只检查连接，不代表 Agent 已完成解题测试。

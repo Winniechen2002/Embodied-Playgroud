@@ -3,6 +3,7 @@
 [English](README.en.md) · [简体中文](README.zh-CN.md) · [Repository](../README.md)
 
 - [Agent run instructions](../Agent.en.md)
+- [Tested-agent brief template](tested_agent_brief.en.md)
 - [Installation and runtime dependencies](environment_installation.en.md)
 - [EP-100, EP-20, EP-Easy and EP-Hard](ep_subsets/README.en.md)
 - [Evaluation protocol and attempt accounting](evaluation_protocol.en.md)
